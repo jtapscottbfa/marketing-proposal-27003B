@@ -1,0 +1,160 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# firm_profile.yml — firm-level metadata (template)
+#
+# Copy this file to ~/.bfa/firm_profile.yml (or wherever your firm prefers
+# to keep its global profile, then point $BFA_FIRM_PROFILE at it) and fill
+# in your firm's actual values.
+#
+# Read by:
+#   - new_proposal.sh                  pre-fills proposal_config.yml's
+#                                      firm.{name,short_name,address,website}
+#                                      at scaffold time (per-field
+#                                      PLACEHOLDER-skip; missing fields
+#                                      fall back to placeholders)
+#   - populate_ae_forms.py (ARCH-02)   AE-1 firm data, AE-1A insurance/SWaM
+#                                      narratives, AE-3 prime + narratives,
+#                                      AE-4 employer + signatures, AE-5/6 sigs
+#   - color_team_review.sh (ARCH-04)   firm-aware narrative review
+#
+# Per ARCH-11: firm-level data lives here, NOT in per-pursuit
+# proposal_config.yml. proposal_config.yml is for facts that change between
+# pursuits (RFP number, submission date, contract value, key personnel for
+# THIS pursuit, etc.). This file is for facts that are stable across
+# pursuits (firm legal name, FEIN, SCC registration, principal POCs,
+# ownership classifications, insurance, SWaM narrative, agency contracts,
+# AE-3 staffing/methodology/QA narratives).
+#
+# Fields marked PLACEHOLDER must be filled in before the firm profile is
+# usable. Fields marked optional can be left as empty strings.
+# ══════════════════════════════════════════════════════════════════════════════
+
+firm:
+  # Identity
+  name:                "PLACEHOLDER: Your Firm Name, Inc."
+  short_name:          "PLACEHOLDER: ShortName"     # used in filenames
+  legal_form:          "PLACEHOLDER: Professional Corporation | LLC | Sole Proprietor"
+  established:         "PLACEHOLDER: YYYY"
+
+  # Primary office
+  addr1:               "PLACEHOLDER: street address"
+  addr2:               "PLACEHOLDER: City, ST  ZIP"
+  phone:               "PLACEHOLDER: 555-555-5555"
+  fax:                 ""                            # optional
+  website:             "https://example.com"
+
+  # Federal & state IDs
+  fein:                "PLACEHOLDER: XX-XXXXXXX"
+  scc_id:              "PLACEHOLDER: 1234567-8"      # Virginia SCC registration
+  apelscidla:          "PLACEHOLDER: Virginia APELSCIDLA cert number"
+
+  # Other names the firm has operated under
+  other_names:         ""                            # e.g., "Old Name Co. (1971-2017)"
+
+  # Years operating under the CURRENT firm name (AE-1 box AR8). Optional;
+  # if omitted, the cell is left blank for manual completion.
+  years_under_current_name: 0                        # e.g. 9
+
+  # Parent entity (blank if independent)
+  parent_name:         ""
+  parent_addr:         ""
+  parent_phone:        ""                            # optional, AE-1 box H23
+  parent_fax:          ""                            # optional, AE-1 box T23
+
+# Ownership classifications (set true/false for each that applies)
+ownership:
+  large_business:        false
+  small_business:        false
+  micro_business:        false   # SWaM micro
+  minority_owned:        false
+  women_owned:           false
+  veteran_owned:         false
+  service_disabled_veteran_owned: false
+  dsbsd_cert_number:     ""      # Virginia DSBSD cert number (blank if not SWaM)
+
+# Principal points of contact
+contacts:
+  primary:
+    name:              "PLACEHOLDER: Full Name, PE"
+    title:             "PLACEHOLDER: Title"
+    email:             "PLACEHOLDER: email@example.com"
+    phone:             "PLACEHOLDER: 555-555-5555"
+  secondary:
+    name:              "PLACEHOLDER: Full Name"
+    title:             "PLACEHOLDER: Title"
+    email:             "PLACEHOLDER: email@example.com"
+    phone:             "PLACEHOLDER: 555-555-5555"
+
+
+
+# ── AE-1A SECTIONS ─────────────────────────────────────────────────────────────
+# The blocks below populate DGS-30-004 AE-1A (firm-data continued). All three
+# are OPTIONAL at firm-profile load time; populate_ae_forms.py raises a clear
+# error at AE-1A run time if any are missing or empty. Firms that don't submit
+# AE-1A can leave these absent.
+
+# Section 8 — Professional liability insurance (free text). Stable across
+# pursuits; written verbatim to AE-1A cell C7. Multi-line strings are
+# fine (rendered with wrap_text in the merged cell).
+insurance:
+  narrative: |
+    PLACEHOLDER: Professional Liability (E&O) carrier — limits per claim /
+    aggregate / deductible. Commercial General Liability limits. Automobile
+    Liability. Workers Compensation. Certificate of Insurance reference.
+
+# Section 9 — Default SWaM participation
+# default_percentage → AE-1A V13 (integer 0-100; pursuit-specific overrides
+#                     can be added later via proposal_config when needed).
+# narrative          → AE-1A C14 (free-text description of firm's SWaM status,
+#                     bench partners, project-by-project engagement model).
+swam:
+  default_percentage: 0
+  narrative: |
+    PLACEHOLDER: Description of firm's SWaM/DSBSD status and bench partners.
+
+# Section 10 — Active state agency contracts where the firm serves as prime
+# (last 10 years). Up to 20 entries fit on AE-1A rows 25-44; older entries
+# should be aged off here. Each entry: agency name + brief description.
+agency_contracts: []
+  # - agency: "Example State Agency"
+  #   description: "M&E Term Contract — multiple task orders (2017-2026)"
+
+# ── AE-3 NARRATIVES ────────────────────────────────────────────────────────────
+# Free-text narrative blocks consumed by AE-3 (Project Staffing Organization).
+# Stable across pursuits — describe the firm's standing approach, not pursuit
+# specifics. All three are OPTIONAL at load time; AE-3 populator requires
+# them at run time and rejects PLACEHOLDER values.
+#
+#   staff_availability  → AE-3 C20 (Section 2 — Staff availability)
+#   project_methodology → AE-3 C28 (Section 3 — Project methodology)
+#   quality_assurance   → AE-3 C44 (Section 4 — Quality assurance)
+narratives:
+  staff_availability: |
+    PLACEHOLDER: Staffing model — bench depth, surge capacity, response
+    time on new task orders, single-point-of-contact pattern, named
+    backups during absence.
+  project_methodology: |
+    PLACEHOLDER: Project order delivery process — receipt acknowledgment
+    cadence, scoping cadence, site-visit cadence, specialty engagement
+    model, design coordination platforms.
+  quality_assurance: |
+    PLACEHOLDER: QA/QC process — review layers, QA checklist process,
+    comment-response logging, code/standard currency tracking.
+
+# Discipline counts at the office where work will be performed and across
+# the entire firm. Format: [licensed_office, unlicensed_office, licensed_firm, unlicensed_firm]
+# Used for AE-1 personnel-by-discipline table.
+personnel_counts:
+  project_management:    [0, 0, 0, 0]
+  architecture:          [0, 0, 0, 0]
+  civil:                 [0, 0, 0, 0]
+  structural:            [0, 0, 0, 0]
+  mechanical:            [0, 0, 0, 0]
+  electrical:            [0, 0, 0, 0]
+  soils:                 [0, 0, 0, 0]
+  landscape:             [0, 0, 0, 0]
+  interior_design:       [0, 0, 0, 0]
+  asbestos:              [0, 0, 0, 0]
+  surveyor:              [0, 0, 0, 0]
+  construction_admin:    [0, 0, 0, 0]
+  cadd:                  [0, 0, 0, 0]
+  specifications:        [0, 0, 0, 0]

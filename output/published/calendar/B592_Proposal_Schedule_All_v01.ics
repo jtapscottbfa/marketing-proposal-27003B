@@ -1,0 +1,205 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BFA//Proposal Engine B592//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:B592 Proposal Schedule
+X-WR-TIMEZONE:America/New_York
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b592-20261109-bfa-internal-review-of-b592-draft-packag@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261109T150000
+DTEND;TZID=America/New_York:20261109T160000
+TRANSP:OPAQUE
+SUMMARY:[B592] BFA internal review of B592 draft package (v01)
+DESCRIPTION:Owner: J. Tapscott. Review shred\, fee\, narrative\; mark up fo
+ r v02. Files: output/published/. Project: B592 Dust Collection Delegated D
+ esign Peer Review (G Force / NAVFAC Philadelphia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:BFA internal review of B592 draft package (v01)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261110-send-clarification-questions-q1-q11-to-g@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261110T090000
+DTEND;TZID=America/New_York:20261110T093000
+TRANSP:OPAQUE
+SUMMARY:[B592] Send clarification questions Q1-Q11 to G Force
+DESCRIPTION:Owner: J. Tapscott. Due date\, BFA role (seal vs non-seal)\, ve
+ ndor calcs\, structural responsibility\, CFM basis. Project: B592 Dust Col
+ lection Delegated Design Peer Review (G Force / NAVFAC Philadelphia Navy Y
+ ard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Send clarification questions Q1-Q11 to G Force
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261110-pa-mechanical-pe-scope-and-hours-validat@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261110T140000
+DTEND;TZID=America/New_York:20261110T150000
+TRANSP:OPAQUE
+SUMMARY:[B592] PA mechanical PE scope and hours validation
+DESCRIPTION:Owner: Mech EOR (PA PE). Confirm PA licensure\, hours D01-D16\,
+  rates. Project: B592 Dust Collection Delegated Design Peer Review (G Forc
+ e / NAVFAC Philadelphia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:PA mechanical PE scope and hours validation
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261111-veterans-day-federal-holiday-gov-offices@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+TRANSP:TRANSPARENT
+SUMMARY:[B592] Veterans Day (federal holiday): Gov offices closed
+DESCRIPTION:Owner: -. G Force may still be working\; plan around it. Projec
+ t: B592 Dust Collection Delegated Design Peer Review (G Force / NAVFAC Phi
+ ladelphia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Veterans Day (federal holiday): Gov offices closed
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261112-pricing-approval-gold-review-principal@bfa-proposal-27003
+ b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261112T100000
+DTEND;TZID=America/New_York:20261112T110000
+TRANSP:OPAQUE
+SUMMARY:[B592] Pricing approval / Gold review (Principal)
+DESCRIPTION:Owner: Principal. Approve base fee\, options\, terms. Project: 
+ B592 Dust Collection Delegated Design Peer Review (G Force / NAVFAC Philad
+ elphia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Pricing approval / Gold review (Principal)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261112-final-qc-quote-letter-scope-fee-sheet@bfa-proposal-27003b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261112T160000
+DTEND;TZID=America/New_York:20261112T163000
+TRANSP:OPAQUE
+SUMMARY:[B592] Final QC: quote letter\, scope\, fee sheet
+DESCRIPTION:Owner: J. Tapscott. Clear visible markers\; confirm v-latest. P
+ roject: B592 Dust Collection Delegated Design Peer Review (G Force / NAVFA
+ C Philadelphia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Final QC: quote letter\, scope\, fee sheet
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261113-target-submit-fee-proposal-to-g-force-as@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261113T120000
+DTEND;TZID=America/New_York:20261113T123000
+TRANSP:OPAQUE
+SUMMARY:[B592] TARGET: Submit fee proposal to G Force (ASSUMED)
+DESCRIPTION:Owner: J. Tapscott. ASSUMED date\; reset when G Force answers Q
+ 1. Project: B592 Dust Collection Delegated Design Peer Review (G Force / N
+ AVFAC Philadelphia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:TARGET: Submit fee proposal to G Force (ASSUMED)
+TRIGGER:-PT1D
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20261117-follow-up-with-g-force-on-quote-gc-bid-s@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;TZID=America/New_York:20261117T100000
+DTEND;TZID=America/New_York:20261117T101500
+TRANSP:OPAQUE
+SUMMARY:[B592] Follow up with G Force on quote / GC bid status
+DESCRIPTION:Owner: J. Tapscott. Check questions\, award timing. Project: B5
+ 92 Dust Collection Delegated Design Peer Review (G Force / NAVFAC Philadel
+ phia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Follow up with G Force on quote / GC bid status
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b592-20270211-quote-validity-expires-90-days-from-2026@bfa-proposal-270
+ 03b
+DTSTAMP:20261109T120000Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+TRANSP:TRANSPARENT
+SUMMARY:[B592] Quote validity expires (90 days from 2026-11-13)
+DESCRIPTION:Owner: J. Tapscott. Re-confirm pricing if no award. Project: B5
+ 92 Dust Collection Delegated Design Peer Review (G Force / NAVFAC Philadel
+ phia Navy Yard).
+LOCATION:Teams / BFA office
+CATEGORIES:Proposal,B592
+STATUS:CONFIRMED
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Quote validity expires (90 days from 2026-11-13)
+TRIGGER:-PT15H
+END:VALARM
+END:VEVENT
+END:VCALENDAR

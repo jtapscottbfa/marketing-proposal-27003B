@@ -1,0 +1,561 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-09T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b1475_hvac",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b1475_hvac/20-007K.2025.09.08.100% SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "26df5a4613f3cc56e6bbbd933a60c2fdd1fcce9925d9d97f2844379f78ebf0ef",
+      "page_count": 24,
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b1475_hvac/SOW.pdf",
+      "type": "sow",
+      "sha256": "19e3b5773e6b7d992a7345f143223b9a6860c6c549b7eca3a33500595967a109",
+      "included": true,
+      "flag_for_human_review": false
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 1475 – Replace HVAC Systems – Phase II",
+      "source": "BOD cover page",
+      "quote": "BUILDING 1475 - REPLACE HVAC SYSTEMS – PHASE II",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BUILDING 1475 - REPLACE HVAC SYSTEMS – PHASE II",
+          "value": "Building 1475 – Replace HVAC Systems – Phase II",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A1",
+          "claim": "BUILDING 1475 REPLACE HVAC SYSTEMS",
+          "value": "Building 1475 Replace HVAC Systems",
+          "agrees": false
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+      "source": "BOD cover page",
+      "quote": "Naval Facilities Engineering Command, PWD Portsmouth",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Naval Facilities Engineering Command, PWD Portsmouth",
+          "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A1",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth will administer this T.O.",
+          "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Norfolk Naval Shipyard",
+      "source": "BOD General",
+      "quote": "The project is located at Norfolk Naval Shipyard at Building 1475",
+      "corroboration": [
+        {
+          "source": "BOD General",
+          "claim": "Norfolk Naval Shipyard",
+          "value": "Department of the Navy / Norfolk Naval Shipyard",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A1",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, Virginia",
+          "value": "Department of the Navy / Norfolk Naval Shipyard",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Norfolk Naval Shipyard, Portsmouth, Virginia",
+      "source": "BOD cover page",
+      "quote": "Norfolk Naval Shipyard, Portsmouth, VA"
+    },
+    "project_number_internal": {
+      "value": "20-007K",
+      "source": "BOD cover page",
+      "quote": "BFA Project No. 20-007K",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BFA Project No. 20-007K",
+          "value": "20-007K",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "1719673",
+      "source": "BOD cover page",
+      "quote": "eProjects W.O. No.: 1719673",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "eProjects W.O. No.: 1719673",
+          "value": "1719673",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A1",
+          "claim": "eProjects Work Order number 1719673",
+          "value": "1719673",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-20-D-0005",
+      "source": "BOD cover page",
+      "quote": "A/E Contract No.: N40085-20-D0005",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "A/E Contract No.: N40085-20-D0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        },
+        {
+          "source": "SOW header",
+          "claim": "N40085-20-D-0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 12552,
+      "unit": "gsf",
+      "source": "BOD General",
+      "quote": "the building was originally constructed in 1975 and is approximately 12,552 square feet in area",
+      "corroboration": [
+        {
+          "source": "BOD General",
+          "claim": "approximately 12,552 square feet in area",
+          "value": 12552,
+          "agrees": true
+        },
+        {
+          "source": "SOW §A2 item 1",
+          "claim": "it is approximately 12,552 square feet in area",
+          "value": 12552,
+          "agrees": true
+        },
+        {
+          "source": "BOD Appendix A (HPSB Checklist)",
+          "claim": "Facility Area: 12,552 SF",
+          "value": 12552,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 3816000,
+      "currency": "USD",
+      "source": "SOW §C1",
+      "quote": "Project Cost/Program Amount: $3,816,000.00",
+      "corroboration": [
+        {
+          "source": "SOW §C1",
+          "claim": "$3,816,000.00",
+          "value": 3816000,
+          "agrees": true
+        },
+        {
+          "source": "SOW §C2",
+          "claim": "Estimated Construction Cost (ECC): $3,816,000.00",
+          "value": 3816000,
+          "agrees": true
+        }
+      ]
+    },
+    "year_constructed_existing_building": {
+      "value": 1975,
+      "source": "BOD General",
+      "quote": "The building was originally constructed in 1975",
+      "corroboration": [
+        {
+          "source": "BOD General",
+          "claim": "originally constructed in 1975",
+          "value": 1975,
+          "agrees": true
+        },
+        {
+          "source": "SOW §A2 item 1",
+          "claim": "originally constructed in 1975",
+          "value": 1975,
+          "agrees": true
+        }
+      ]
+    },
+    "building_description": {
+      "value": "RADDOACT HAZ HANDLING facility; steel structure with masonry exterior cladding walls; steel open web joist roof spanning between steel beams; originally constructed 1975; Nuclear Refueling/Radcon Facility for the drydock",
+      "source": "BOD General and Structural sections",
+      "quote": "The project is located at Norfolk Naval Shipyard at Building 1475 which is a RADDOACT HAZ HANDLING facility.",
+      "corroboration": [
+        {
+          "source": "BOD General",
+          "claim": "RADDOACT HAZ HANDLING facility; steel structure with masonry exterior cladding walls; steel open web joist roof",
+          "value": "RADDOACT HAZ HANDLING",
+          "agrees": true
+        },
+        {
+          "source": "BOD Structural",
+          "claim": "Building 1475 is the Nuclear Refueling/Radcon Facility for the drydock on the Norfolk Naval Shipyard",
+          "value": "Nuclear Refueling/Radcon Facility",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A2 item 1",
+          "claim": "Building 1475 is a RADDOACT HAZ HANDLING building",
+          "value": "RADDOACT HAZ HANDLING",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-09-08",
+        "source": "BOD cover page (actual 100% submittal date)",
+        "quote": "100% SUBMITTAL 08 SEPTEMBER 2025",
+        "corroboration": [
+          {
+            "source": "BOD cover page",
+            "claim": "100% SUBMITTAL 08 SEPTEMBER 2025",
+            "value": "2025-09-08",
+            "agrees": true
+          },
+          {
+            "source": "SOW §A1",
+            "claim": "Final Design Completion Date: 01DEC2023",
+            "value": "2023-12-01",
+            "agrees": false
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "SOW §A1 stated Estimated Construction Completion Date 01DEC2024, but this was early-contract planning. BOD construction schedule (Appendix C) shows 2026-2027 bars with all actual dates blank at 100% design submittal stage. Construction had not yet started as of 08SEP2025."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "architecture",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "fire_suppression_wet",
+      "fire_suppression_dry",
+      "fire_alarm",
+      "plumbing_domestic_water",
+      "structural_existing_assessment"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "hvac_hot_water",
+      "electrical_systems",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "fire_protection_systems",
+      "fp_wet_sprinkler",
+      "fp_dry_pre_action",
+      "fp_fire_alarm",
+      "superstructure",
+      "envelope_roofing",
+      "interior_finishes"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "thermal_roofing",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "norfolk_naval_shipyard",
+    "nnsy",
+    "portsmouth_va",
+    "hvac_replacement",
+    "ddc_controls",
+    "raddoact",
+    "nuclear_refueling_facility",
+    "idiq_task_order",
+    "phase_ii",
+    "hazmat_abatement",
+    "siemens_ddc"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Ian Peralta",
+      "role_on_project": "project_manager_electrical_lead",
+      "organization": "Bowman, Foster & Associates"
+    },
+    {
+      "name": "William Wisilosky",
+      "role_on_project": "structural_lead",
+      "organization": "Bowman, Foster & Associates"
+    },
+    {
+      "name": "Erika Osbourne",
+      "role_on_project": "structural_lead",
+      "organization": "Bowman, Foster & Associates"
+    },
+    {
+      "name": "Jack G. Michonski",
+      "role_on_project": "navfac_project_manager",
+      "organization": "NAVFAC MIDLANT NNSY"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 12552,
+        "unit": "gsf",
+        "source": "BOD General; confirmed in SOW §A2 and BOD Appendix A",
+        "quote": null,
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "BOD Architectural (first floor, second floor, and mezzanine mentioned); BOD Electrical references first and second floor admin areas",
+        "quote": null,
+        "sheets": [],
+        "notes": "Building has first floor, second floor, and a mezzanine level. Counted as 2 primary floors + mezzanine. No drawings available for confirmation."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "3 new packaged DX rooftop air handling units (AHU-1, AHU-2 back-up evaluated, AHU-3) with hot water heating coils",
+          "New shut-off type VAV terminal boxes with hot water reheat coils (first and second floor office areas)",
+          "3 new roof-mounted return air fans (RAF-1, RAF-2, RAF-3)",
+          "New heat exchangers for building heating hot water system and domestic hot water",
+          "New air separator, expansion tank, shot feeder, in-line circulation pumps for HHW system",
+          "New DDC control system connecting to base-wide Siemens DDC system",
+          "New motorized intake/exhaust louvers with DDC control",
+          "New bathroom exhaust fan and generator/mechanical room exhaust fans",
+          "New hydronic baseboard heaters replacing existing",
+          "New rectangular medium-pressure supply and return ductwork (insulated) on floors 1 and 2; high bay ductwork reused"
+        ],
+        "electrical": [
+          "New electrical connections and NEMA 4X disconnect switches for 3 new rooftop AHUs",
+          "New circuits for 3 new return air fans",
+          "New LED lighting fixtures (first and second floor administrative areas); high bay and mechanical room LED lighting to remain",
+          "New lighting controls for administrative areas",
+          "Existing 480Y/277V and 208Y/120V electrical services to remain",
+          "Existing backup generator (currently offline) to remain",
+          "Existing circuit breakers reused for new equipment"
+        ],
+        "plumbing": [
+          "Domestic water heat exchanger replacement with circulation pump",
+          "All heating hot water piping replaced (insulated)"
+        ],
+        "fire_protection": [
+          "Existing Mircom FX-2000 addressable fire alarm/mass notification system to remain with modifications",
+          "New duct smoke detectors per NFPA 90A",
+          "Wet pipe sprinkler system (administration area) — sprinklers reinstalled to match new ceiling plan",
+          "Pre-action sprinkler system (two-story industrial area) — sprinklers reinstalled to match new ceiling plan",
+          "New pre-action sprinkler air compressor sizing as required"
+        ]
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "phases.design.completion_date",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "SOW §A1",
+          "value": "2023-12-01",
+          "context": "Final Design Completion Date contractual milestone"
+        },
+        {
+          "source": "BOD cover page",
+          "value": "2025-09-08",
+          "context": "Actual 100% Submittal date on the BOD document itself"
+        }
+      ],
+      "resolution_chosen": "BOD cover page (2025-09-08)",
+      "rationale": "The SOW was an early-contract planning document setting schedule milestones. The BOD dated 08 September 2025 is the actual 100% submittal, representing the real design completion approximately 21 months after the contractual milestone. The actual date is more useful for past-performance purposes."
+    },
+    {
+      "field_path": "phases.construction.completion_date",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "SOW §A1",
+          "value": "2024-12-01",
+          "context": "Estimated Construction Completion Date in early contract planning"
+        },
+        {
+          "source": "BOD Appendix C (construction schedule)",
+          "value": null,
+          "context": "Gantt chart shows construction activities spanning 2026–2027 with all specific start/finish dates left blank at 100% design submittal stage"
+        }
+      ],
+      "resolution_chosen": "missing",
+      "rationale": "The SOW-stated Dec 2024 construction completion was clearly superseded given design wasn't complete until Sep 2025. The BOD Appendix C schedule shows 2026–2027 construction windows but no specific dates were filled in. Construction completion date is not determinable from available sources."
+    },
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD cover page",
+          "value": "Building 1475 – Replace HVAC Systems – Phase II"
+        },
+        {
+          "source": "SOW §A1",
+          "value": "Building 1475 Replace HVAC Systems"
+        }
+      ],
+      "resolution_chosen": "BOD cover page",
+      "rationale": "BOD is the design document for this specific contract action which is Phase II. SOW was written for the contract vehicle covering both phases without Phase II distinction in the title. Phase II designation from BOD is used."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

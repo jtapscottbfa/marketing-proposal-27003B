@@ -1,0 +1,5 @@
+Mechanical engineering was a named discipline on the New River Tap House Renovation permit set (Virginia Beach, Virginia, March 2022). The mechanical scope is referenced in the architectural drawings — sheet A-101 construction note 4 directs the contractor to the mechanical drawings for the second-floor restroom exhaust fan — and a dedicated mechanical sheet (M-501) is indexed in the permit drawing set.
+
+The specific mechanical scope beyond the restroom exhaust fan cannot be characterized from the available source record. Sheet M-501, which would contain the full mechanical system inventory and details, was not present in the permit drawing file available for extraction. What is confirmed: mechanical engineering provided at minimum the exhaust fan design for the second-floor uni-sex restroom as part of the renovation. The extent of HVAC service to the bar and second-floor occupiable areas is not documented in the available architectural cross-references.
+
+<!-- INTERNAL: M-501 not in source PDF — mechanical scope is limited to the exhaust fan cross-reference on A-101; this is a Pass 1 source gap, not an extractor gap -->

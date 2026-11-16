@@ -1,0 +1,7 @@
+For the Enthalpy Analytics Labs – Lab Admin Area Renovations project in Richmond, Virginia, the electrical engineering scope covered power and lighting design for the warehouse-to-lab conversion at 1470 East Parham Road.
+
+The electrical design addressed both 208Y/120V and 480Y/277V distribution systems serving the new laboratory and administrative areas. Power circuits were designed to support five new split-system heat pumps and associated mechanical equipment. The design includes corrected panelboard schedules for existing panels serving the project, a dry-type transformer within the distribution system, and arc flash hazard warning labels on all panelboards per NEC 2020 and NFPA 70E — a mandatory code step for facilities with 480V distribution systems.
+
+Lighting design specified LED pendant low-bay fixtures suited to the warehouse conversion environment, supplemented by IFD emergency and exit lighting with 90-minute battery backup. Lighting controls use ceiling-mounted dual-technology (PIR/ultrasonic) occupancy and dimming sensors.
+
+Receptacle circuits serve both lab and administrative loads: standard 20A 120V duplex and quadruplex receptacles, emergency-power duplex receptacle circuits, 230V NEMA 6-15R receptacles on emergency power for laboratory equipment, and exterior weather-proof GFCI duplex receptacles. The combination of standard and emergency-power receptacle coverage reflects the operational reliability requirements of the laboratory environment.

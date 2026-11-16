@@ -1,0 +1,390 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "structural",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/chemres/structural/CONCEPT.pdf",
+      "type": "drawing_set",
+      "sha256": "4a9f82dc7bdbfd5d91f462bba0af7b9a947ac8d9801c42f1d60119c74520397e",
+      "page_count": 1,
+      "included": true,
+      "notes": "3D isometric concept drawing of new structural steel support (W12X35, W8X31, fabricated rolled beam) added to existing rail rack. Drawn by 'dbrickhouse' at East Coast Steel Fabricators Inc., 1/27/2022. Sheet 1 of 1, Size D. No project name or drawing number in title block."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/chemres/structural/TFC-00326723A-Appr - Signed.pdf",
+      "type": "drawing_set",
+      "sha256": "a288282b161b6df281b90160ec65b6dfa317f0e4c371c3cd9dc17bc15f400f17",
+      "page_count": 1,
+      "included": true,
+      "notes": "Flexicon Corporation General Arrangement drawing TFC-00326723, Rev A, Approved/Signed. Shows System 01 flexible screw conveyor arrangement (Item 100625) on wheeled support frame. Customer listed as 'CHEMRES'. Date 26-04-2022. Note references companion drawing TFC-00326612A-Appr for height change. Image-based PDF; no extractable text via pdftotext."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source documents are two drawings: (1) a structural steel concept drawing from East Coast Steel Fabricators and (2) a Flexicon vendor general arrangement for a screw conveyor. No BOD, SOW, contract, narrative, or BFA-authored documents present. All facts are derived from these two drawings. Cross-referenced with companion project 'chemres_arc_flash' to confirm client identity (CHEMRES, Chesapeake VA). BFA's role cannot be confirmed from drawings alone — the structural drawing is by East Coast Steel Fabricators, not BFA; BFA's role (if any) is not documented in the available sources."
+  },
+  "facts": {
+    "project_name": {
+      "value": "CHEMRES Structural Steel Support for Conveyor System",
+      "source": "CONCEPT.pdf drawing annotations and TFC-00326723A title block",
+      "quote": null,
+      "notes": "No formal project name appears in either document. Name synthesized from: (1) 'CHEMRES' as client per companion project chemres_arc_flash and TFC drawing title block; (2) structural elements labeled in CONCEPT.pdf; (3) Flexicon conveyor system shown in TFC drawing. Folder path 'chemres/structural' also informs the name.",
+      "corroboration": [
+        {
+          "source": "CONCEPT.pdf drawing annotations",
+          "claim": "New W12X35, New W8X31, New Fabricated Rolled Beam on Existing Rail Rack — no project name stated",
+          "value": null,
+          "agrees": false
+        },
+        {
+          "source": "TFC-00326723A title block",
+          "claim": "Customer: CHEMRES; Arrangement 100625 System 01",
+          "value": "CHEMRES customer",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "CHEMRES",
+      "source": "TFC-00326723A title block; cross-reference chemres_arc_flash/record.json",
+      "quote": null,
+      "notes": "Client name 'CHEMRES' appears in the Flexicon vendor drawing title block customer field. Full legal name of CHEMRES not available from source documents. Confirmed as a private industrial chemical plant in Chesapeake, VA per companion project chemres_arc_flash. pdftotext yields no extractable text from TFC drawing — value read visually from rendered image.",
+      "corroboration": [
+        {
+          "source": "TFC-00326723A title block (visual read)",
+          "claim": "CHEMRES (customer field)",
+          "value": "CHEMRES",
+          "agrees": true
+        },
+        {
+          "source": "chemres_arc_flash/record.json (cross-reference)",
+          "claim": "Prepared for: CHEMRES CHESAPEAKE, VIRGINIA",
+          "value": "CHEMRES",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "CHEMRES",
+      "source": "TFC-00326723A title block; cross-reference chemres_arc_flash/record.json",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "TFC-00326723A title block (visual read)",
+          "claim": "CHEMRES (customer field)",
+          "value": "CHEMRES",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "facility_name": "CHEMRES Chemical Plant",
+      "source": "chemres_arc_flash/record.json cross-reference",
+      "quote": null,
+      "notes": "Location not stated in either drawing. Derived from companion project record (chemres_arc_flash) which confirms 'CHEMRES CHESAPEAKE, VIRGINIA' from that project's study report. Same facility assumed given shared client name and folder grouping under 'chemres'.",
+      "corroboration": [
+        {
+          "source": "CONCEPT.pdf and TFC-00326723A",
+          "claim": "No location information in either drawing",
+          "value": null,
+          "agrees": false
+        },
+        {
+          "source": "chemres_arc_flash/record.json (cross-reference, Study Report)",
+          "claim": "CHEMRES CHESAPEAKE, VIRGINIA",
+          "value": "Chesapeake, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing",
+      "notes": "No BFA project number visible in either source document. Companion project is 22-005; this structural scope may share that number or have a separate designation, but no confirmation available."
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Not a building or renovation project. Structural steel addition to an existing rail rack at an industrial facility. No area measurement documented."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "drawing_date": {
+      "value": "2022-01-27",
+      "source": "CONCEPT.pdf title block",
+      "quote": null,
+      "notes": "Date '1/27/2022' read visually from CONCEPT.pdf title block, drawn by 'dbrickhouse'. Flexicon drawing dated 26-04-2022 (April 26, 2022) per TFC-00326723A title block.",
+      "corroboration": [
+        {
+          "source": "CONCEPT.pdf title block (visual read)",
+          "claim": "1/27/2022 (drawn date)",
+          "value": "2022-01-27",
+          "agrees": true
+        },
+        {
+          "source": "TFC-00326723A title block (visual read)",
+          "claim": "26-04-2022 (drawing date)",
+          "value": "2022-04-26",
+          "agrees": false,
+          "notes": "TFC drawing is later (April 2022 vs January 2022) — consistent with sequence: structural concept drawn first, vendor equipment drawing approved afterward"
+        }
+      ]
+    },
+    "structural_elements": {
+      "value": [
+        "New W12X35 wide-flange beam",
+        "New W8X31 wide-flange member",
+        "New fabricated rolled beam",
+        "Existing rail rack (existing-to-remain)"
+      ],
+      "source": "CONCEPT.pdf drawing annotations (visual read)",
+      "quote": null,
+      "notes": "All four elements labeled in the 3D isometric concept drawing. The new steel members frame into or attach to the existing rail rack structure. The fabricated rolled beam appears to bridge the two existing rail rack towers. New steel rendered in orange/red in the drawing; existing rail rack in dark brown/gray.",
+      "corroboration": [
+        {
+          "source": "CONCEPT.pdf annotations",
+          "claim": "NEW FABRICATED ROLLED BEAM, NEW W12X35, NEW W8X31, EXISTING RAIL RACK",
+          "value": [
+            "New W12X35",
+            "New W8X31",
+            "New fabricated rolled beam",
+            "Existing rail rack"
+          ],
+          "agrees": true
+        }
+      ]
+    },
+    "conveyor_system": {
+      "value": "Flexicon System 01 (Arrangement 100625) — flexible screw conveyor on wheeled mobile frame",
+      "source": "TFC-00326723A title block and drawing (visual read)",
+      "quote": null,
+      "notes": "Flexicon drawing TFC-00326723A shows the conveyor system (Doc No TFC-00326612, Item 1 Qty 1, PN 74904-NJ) that the structural steel supports. System is a flexible screw conveyor on a wheeled chassis with an inclined discharge tube and drive motor — typical dry bulk material handling. Note on drawing references companion drawing TFC-00326612A for height change modification. Customer approval signed 1/11/22.",
+      "corroboration": [
+        {
+          "source": "TFC-00326723A drawing (visual read)",
+          "claim": "ARRANGEMENT – 100625 – SYSTEM 01; customer CHEMRES; Flexicon Corp",
+          "value": "Flexicon System 01 flexible screw conveyor",
+          "agrees": true
+        }
+      ]
+    },
+    "structural_drafter": {
+      "value": "East Coast Steel Fabricators, Inc. — dbrickhouse (drafter)",
+      "source": "CONCEPT.pdf title block (visual read)",
+      "quote": null,
+      "notes": "Logo 'East Coast Steel Fabricators, Inc.' visible in lower-right title block. Drafter initials 'dbrickhouse'. This is likely the steel fabricator/contractor who prepared the shop drawing concept — not BFA. BFA's involvement as engineer-of-record for this structural scope cannot be confirmed from available documents.",
+      "corroboration": [
+        {
+          "source": "CONCEPT.pdf title block (visual read)",
+          "claim": "East Coast Steel Fabricators Inc. logo; Drawn: dbrickhouse, 1/27/2022",
+          "value": "East Coast Steel Fabricators, Inc.",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_role_description": {
+      "value": null,
+      "status": "missing",
+      "notes": "BFA's role on this structural scope cannot be confirmed from available documents. The CONCEPT drawing is authored by East Coast Steel Fabricators, Inc. (fabricator shop drawing). The Flexicon drawing is a vendor document. Neither document references BFA. BFA may have served as structural engineer-of-record providing the design that East Coast fabricated — but that is not documented in the available sources. The project is grouped under 'chemres' with 'chemres_arc_flash' (BFA project 22-005), suggesting BFA's involvement, but the specific structural role is undocumented."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "CONCEPT drawing dated 1/27/2022; Flexicon vendor drawing dated 4/26/2022. These are concept/vendor drawings, not construction completion records."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "missing",
+      "notes": "No construction contract or completion data available."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "structural_engineering"
+    ],
+    "sub_disciplines": [
+      "structural_steel"
+    ],
+    "building_systems": [
+      "superstructure",
+      "superstructure_steel_frame"
+    ],
+    "construction_scope": [
+      "metals_scope",
+      "metals_structural_steel"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "chemres",
+    "chesapeake_va",
+    "chemical_plant",
+    "private_industrial",
+    "structural_steel",
+    "conveyor_support",
+    "rail_rack",
+    "flexicon",
+    "w_shape_beams",
+    "shop_drawing",
+    "east_coast_steel_fabricators"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "dbrickhouse",
+      "role_on_project": "drafter",
+      "notes": "Drafter credit on CONCEPT.pdf; affiliated with East Coast Steel Fabricators, Inc. Not confirmed as BFA personnel."
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "CONCEPT-1",
+        "title": "CONCEPT STRUCTURAL STEEL — NEW W12X35, W8X31, FABRICATED ROLLED BEAM ON EXISTING RAIL RACK",
+        "discipline": "structural_engineering",
+        "source_file": "CONCEPT.pdf",
+        "reading_notes": "3D isometric concept drawing showing new structural steel additions to an existing rail rack at CHEMRES facility. New members: (1) W12X35 wide-flange beam running longitudinally along the top of the new structure; (2) W8X31 wide-flange members forming the new portal frame columns/legs on the left-side tower; (3) new fabricated rolled beam (appears to be a curved/bent beam visible in blue/teal) bridging or connecting to the rail rack. Existing rail rack shown in dark gray at right — two-tower X-braced lattice/truss structure. New steel rendered in orange. Left tower is a new portal frame with diagonal bracing (chevron/X pattern shown in purple). Drawing title block shows East Coast Steel Fabricators, Inc. logo; drafter dbrickhouse; date 1/27/2022; Sheet 1 of 1; Size D. No drawing number shown in DWG NO field. No project name, client name, or job number in title block. The new structure appears sized to support the Flexicon conveyor system shown in TFC-00326723A, which would ride on or mount to the rail rack. The 'fabricated rolled beam' (blue/teal arc) appears to be a curved transition element or crane rail element. No notes, details, or dimensions visible in the 3D view — this is a concept-level (not construction document) drawing."
+      },
+      {
+        "sheet_number": "TFC-00326723",
+        "title": "GENERAL ARRANGEMENT — ARRANGEMENT 100625 — SYSTEM 01 (Flexicon Corporation)",
+        "discipline": "structural_engineering",
+        "source_file": "TFC-00326723A-Appr - Signed.pdf",
+        "reading_notes": "Vendor general arrangement drawing from Flexicon Corporation (drawing TFC-00326723, Rev A, Approved and signed). Shows System 01 flexible screw conveyor assembly for CHEMRES. Item 1 (Qty 1, PN 74904-NJ, Doc TFC2021-003895): a complete flexible screw conveyor on a wheeled/mobile support chassis. The unit consists of: (a) a low-profile wheeled base frame (blue) with spreader bars and outriggers — the frame sits on the existing rail rack presumably; (b) an inclined flexible screw conveyor tube rising at approximately 45–60 degrees from horizontal; (c) a motor drive unit at the top of the inclined tube; (d) a secondary drive/discharge head at top (black motor housing). The base frame has yellow diagonal bracing elements visible. Title block: CHEMRES as customer; jGomez-c as drafter; date 26-04-2022; Doc No TFC-00326612; Scale 1:30; 1 of 1; Rev A. Annotation note: 'See height change in TFC-00326612A-Appr – Signed' (companion drawing for height modification). Customer approval stamp signed 1/11/22 — this appears to be approval of an earlier revision; Rev A dated April 2022 is later. All dimensions in dual units (inches/millimeters). Flexicon address: 2400 Emrick Boulevard, Bethlehem PA 18020; phone 1-888-FLEXICON. This is a vendor submittal/equipment drawing, not a BFA engineering document."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — structural addition to industrial process equipment rack, not a building."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": [],
+        "structural": [
+          "New W12X35 wide-flange beam (structural steel addition)",
+          "New W8X31 wide-flange members (structural steel addition)",
+          "New fabricated rolled beam (custom steel fabrication)",
+          "Existing rail rack — two-tower X-braced structure (existing-to-remain)",
+          "Flexicon System 01 flexible screw conveyor (Arrangement 100625) on wheeled base frame — equipment supported by structural steel"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.drawing_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "CONCEPT.pdf title block",
+          "value": "2022-01-27"
+        },
+        {
+          "source": "TFC-00326723A title block",
+          "value": "2022-04-26"
+        }
+      ],
+      "resolution_chosen": "Both dates retained as separate data points",
+      "rationale": "Not a true conflict — two different documents with different dates. CONCEPT drawing predates the vendor GA by ~3 months, consistent with structural concept being prepared before equipment final arrangement was released. The 'structural concept first, then vendor drawing approval' sequence is normal."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "structural_engineering": "narratives/disciplines/structural_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,476 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-08T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "120_dorset_ave_machine_shop",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/120_dorset_ave_machine_shop/2020.09.28.20-066.FINAL.PME.SPECS.pdf",
+      "type": "spec_book",
+      "sha256": "6d79760e4c2fca29c16f3bad3eb01a207a247bb77a85befcaffc4695591200ad",
+      "included": true,
+      "notes": "Plumbing, mechanical, and electrical specifications. Dated 09-28-2020. Project title '120 Dorset Ave.' on each section header. MasterSpec-based CSI-format spec book covering plumbing piping systems, HVAC equipment, ductwork, and electrical systems Div 22, 23, 26."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/120_dorset_ave_machine_shop/2020.09.28.20-066.FINAL.ELECTRICAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "6755b5a4f95b2d311f73724233d757e59484101a0f81c9f79a5638a0bc9fb68a",
+      "included": true,
+      "notes": "6-sheet electrical drawing set. Sheets E1-E6. Dated 9/28/20. Firm: Bowman Foster & Associates, Inc. EOR stamp: Wylie R. Cooke Design, LLC, 318 Colonial Ave., Norfolk VA 757-675-0658. Project: Interior Renovations for 120 Dorset Avenue, Virginia Beach, VA 23462."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/120_dorset_ave_machine_shop/2020.09.28.20-066.FINAL.MECHANICAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "725b7b4bfdd795df05ea2fcd962158689ae3f4df23d2d07f5083115f81c77cb5",
+      "included": true,
+      "notes": "5-sheet mechanical/plumbing drawing set. Sheets PM1-PM5. Dated 9/28/20. Firm: Bowman Foster & Associates, Inc. / Wylie R. Cooke Design, LLC. Covers legend, schedules, demolition plans, new work plans, and details."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD, SOW, or contract documents present. Source package consists solely of final construction documents (spec book + two drawing sets). Project name, location, and scope derived entirely from drawings and spec book. Client identity, contract value, and project financial data not available."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Interior Renovations for 120 Dorset Avenue",
+      "source": "Electrical drawing title block, all sheets",
+      "quote": "INTERIOR RENOVATIONS FOR 120 DORSET AVENUE",
+      "corroboration": [
+        {
+          "source": "Electrical drawing title block (E1-E6)",
+          "claim": "INTERIOR RENOVATIONS FOR 120 DORSET AVENUE",
+          "value": "Interior Renovations for 120 Dorset Avenue",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical drawing title block (PM1-PM5)",
+          "claim": "INTERIOR RENOVATIONS FOR 120 DORSET AVENUE",
+          "value": "Interior Renovations for 120 Dorset Avenue",
+          "agrees": true
+        },
+        {
+          "source": "Spec book section headers",
+          "claim": "120 Dorset Ave.",
+          "value": "120 Dorset Avenue",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "All source documents",
+          "claim": "No client name appears in any source document",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "120 Dorset Avenue, Virginia Beach, VA 23462",
+      "source": "Electrical drawing title block (E1-E6)",
+      "quote": "120 DORSET AVENUE VIRGINIA BEACH, VA 23462",
+      "corroboration": [
+        {
+          "source": "Electrical drawing title block (E1-E6)",
+          "claim": "120 DORSET AVENUE VIRGINIA BEACH, VA 23462",
+          "value": "120 Dorset Avenue, Virginia Beach, VA 23462",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical drawing title block (PM1-PM5)",
+          "claim": "120 DORSET AVENUE VIRGINIA BEACH, VA 23462",
+          "value": "120 Dorset Avenue, Virginia Beach, VA 23462",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "project_number_client": {
+      "value": "20-066",
+      "source": "Drawing filename and sheet numbering convention",
+      "quote": null,
+      "notes": "Project number 20-066 appears in the drawing file names. Not explicitly stated within drawing title blocks as a formal project number field — derived from filename convention. Likely the engineering firm's internal project number."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "No gross square footage stated in spec book or drawings. Floor plans are at 1/8\"=1'-0\" scale and show a single-story industrial building layout but no area tabulation is present."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "design_completion_date": {
+      "value": "2020-09-28",
+      "source": "Drawing title block date, all sheets",
+      "quote": "9/28/20",
+      "corroboration": [
+        {
+          "source": "Electrical drawings (E1-E6), title block DATE field",
+          "claim": "9/28/20",
+          "value": "2020-09-28",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical drawings (PM1-PM5), title block DATE field",
+          "claim": "9/28/20",
+          "value": "2020-09-28",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2020-09-28",
+        "source": "Drawing title block date",
+        "quote": "9/28/20",
+        "notes": "Date of final construction document issue per drawing title blocks. No contract or awarded date available."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_natural_gas",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "electrical_systems",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "plumbing_systems",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_specialty",
+      "fire_protection_systems",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ],
+    "taxonomy_notes": "client_type set to private_commercial by inference — industrial building undergoing renovation, no federal or public owner identified in documents. program_type industrial/manufacturing inferred from building use (machine shop, powder coat booth, welding outlets, compressors referenced in panelboard schedules). award_type unknown — no procurement documents present. project_status complete inferred from final-issue construction documents dated Sept 2020."
+  },
+  "tenant_freeform_tags": [
+    "virginia_beach",
+    "hampton_roads",
+    "machine_shop",
+    "clean_room",
+    "industrial_renovation",
+    "interior_renovation",
+    "mep_only",
+    "compressed_air",
+    "emergency_power",
+    "ups_system"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Wylie R. Cooke",
+      "role_on_project": "engineer_of_record",
+      "notes": "Stamped on all drawings. Listed as Wylie R. Cooke Design, LLC, 318 Colonial Ave., Norfolk VA 757-675-0658. Appears to be the EOR individual for Bowman Foster & Associates."
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E1",
+        "title": "LEGEND AND ABBREVIATIONS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical legend and abbreviations. Defines fixture type symbols: recessed LED lighting fixture (triangle-in-circle), LED high bay fixture (circle), exit lighting, emergency battery-powered lighting (twin head), various receptacle types (duplex 20A, GFCI, double duplex), occupancy sensor switch (So), three-way switch (S3), motor rated switch (S#), disconnect switch (240V, 1 or 3 phase, 40–60A range). Branch circuit wiring in 1/2\" conduit min. Homerun notation shown. Also shows panelboard symbols: existing 208Y/120V and 480Y/277V. Abbreviations include key electrical terms. Firm: Bowman Foster & Associates, Inc. Lic No 048020. EOR: Wylie R. Cooke Design LLC, Norfolk VA."
+      },
+      {
+        "sheet_number": "E2",
+        "title": "FLOOR PLANS — DEMOLITION",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lighting and power floor plan demolition. Two plans side-by-side at 1/8\"=1'-0\". Building is single-story industrial footprint. Demolition scope: remove most existing lighting fixtures (including high bay LED fixtures), water heater circuit, exhaust fans, AHU, heat pump circuits. Retain: existing Cutler-Hammer 600V 400A 3P safety switch (building electrical service), existing MDP, existing 75 KVA Cutler-Hammer transformer, existing Square D 200A/3P disconnect, existing panels A, B, C, office panel '1', existing Eaton 75 KVA transformer, existing air compressor, existing AHUs, some existing high bay LED fixtures. Remove CCTV camera. Remove combination emergency/exit fixture. Note: existing telecom managed by Verizon; security by Johnson Controls."
+      },
+      {
+        "sheet_number": "E3",
+        "title": "FLOOR PLANS — NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lighting and power floor plan new work. Key new work: new LED high bay fixtures at industrial work area; new LED recessed/surface fixtures in office and restroom areas; new occupancy sensors; new AHU-1 (38A, 208V, 1PH); new HP-1 (26.3A, 208V, 1PH); new EF-1 and EF-2. New Panel D (emergency, 100A, 208Y/120V, 3-phase). New 25 kVA UPS, 208Y/120V, 3PH. New 20 kW/25 kVA generator with ATS. SINTER-2 oven in Panel C loads. RFI #9 circuit noted."
+      },
+      {
+        "sheet_number": "E4",
+        "title": "DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lighting fixture schedule. Types: (1) 2x4 LED Troffer 41W MVOLT recessed; (2) 2x4 LED Troffer 50.3W MVOLT recessed; (3) 2x4 LED Troffer 36W MVOLT recessed; (4) Surface LED Wraparound 39W MVOLT; (5) LED Exit Sign 90-min battery; (6) LED Emergency Unit twin-head 33W 90-min battery, wall mount 7'-6\" AFF. All LED, MVOLT."
+      },
+      {
+        "sheet_number": "E5",
+        "title": "PANELBOARD SCHEDULES",
+        "discipline": "electrical_engineering",
+        "reading_notes": "MDP: 400A MLO 480Y/277V 3-phase 14 KAIC. Panel B: 200A MLO 208Y/120V 3-phase 10 KAIC — welder outlets (50A), lift, compactor, cord reel, sub-panel A. Panel A: 150A 208Y/120V 1-phase sub-panel. Panel C: 225A 208Y/120V 3-phase 22 KAIC — Panel D (69A), powder coat booth, AHU-1 (38A), SINTER-2 oven (125A)."
+      },
+      {
+        "sheet_number": "E6",
+        "title": "PANELBOARD SCHEDULES (CONTINUED)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Office Panel 1: 200A 208Y/120V 3-phase recessed. Emergency Panel D (new): 100A 208Y/120V 3-phase 22 KAIC — clean work area receptacles, SINTER-2 oven (30A). Partial one-line: Panel D fed from Panel C (normal) and 20 kW generator via ATS (emergency). 25 kVA UPS on same one-line. Arc flash warning label references UFC 3-560-01 (notable — DoD spec standard, unusual for private industrial)."
+      },
+      {
+        "sheet_number": "PM1",
+        "title": "LEGEND, ABBREVIATIONS AND SCHEDULES",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "AHU-1: 840 CFM, 100% OA, 1 HP, 29.5 MBH cooling, 7.5 kW electric heat, R-410a, 208V/1-phase, 38A MCA. HP-1: 208V/1-phase, 26.3A MCA, 45A MOCP, R-410a. Plumbing fixtures P-1 through P-7 (WC, lavatory, mop sink, shower, kitchen sink, washer/dryer, urinal — all HC). EF-1: 900 CFM 1.5 HP 115V. EF-2: 150 CFM 0.5 HP 115V."
+      },
+      {
+        "sheet_number": "PM2",
+        "title": "PLUMBING & MECHANICAL PLAN — DEMOLITION",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Demolition: remove all plumbing fixtures, piping, water heater; existing waste/water mains remain; existing air compressor remains. HVAC demo: remove heat pump (turn over to customer), remove AHU and ductwork; one existing AHU remains."
+      },
+      {
+        "sheet_number": "PM3",
+        "title": "PLUMBING & MECHANICAL PLANS — NEW WORK",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "New plumbing: compressed air 1\" mains with 3/4\" drops and quick disconnects at 12\" AFF; fixtures P-1 through P-7 in restroom area. New HVAC: AHU-1 with supply/return ductwork for clean work area; HP-1 exterior; EF-1 and EF-2; 24x24 supply diffusers, 12x12 exhaust grilles, perimeter registers (14/10, 16/14, 20/25)."
+      },
+      {
+        "sheet_number": "PM4",
+        "title": "ENLARGED RESTROOM PLAN",
+        "discipline": "plumbing_engineering",
+        "reading_notes": "Restroom rough-in at 1/4\"=1'-0\". 2\" CW main, 3/4\" HW, 1-1/2\" waste. EWH-1 electric water heater with expansion tank, dual element 4500W, 2\" drain pan. WC, 2x lavatory, shower, kitchen sink, urinal, washer/dryer."
+      },
+      {
+        "sheet_number": "PM5",
+        "title": "DETAILS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Details: AHU platform installation (4\" drain pan); inline exhaust fan mounting; louver-wall detail; manual volume damper; exhaust wall cap; washing machine utility box; water heater/expansion tank piping diagram."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "unit": "gsf",
+        "source": "drawings — not stated",
+        "quote": null,
+        "sheets": [],
+        "notes": "Floor plans at 1/8\"=1'-0\" show single-story industrial building but no area tabulation is provided."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawing PM2 and PM3 (floor plans show single level only)",
+        "quote": null,
+        "sheets": [
+          "PM2",
+          "PM3",
+          "E2",
+          "E3"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "AHU-1: air handling unit, 840 CFM, 100% outside air, 7.5 kW electric heat, refrigerant R-410a, 208V/1-phase, 38A MCA",
+          "HP-1: air-cooled heat pump (condensing unit for AHU-1), 208V/1-phase, 26.3A MCA, 45A MOCP, R-410a refrigerant",
+          "EF-1: inline exhaust fan, 900 CFM, 1.5 HP, 115V/1-phase",
+          "EF-2: inline exhaust fan, 150 CFM, 0.5 HP, 115V/1-phase",
+          "Ductwork: new rectangular galvanized supply and return ductwork serving clean work area; 24x24 supply diffusers, 12x12 exhaust grilles, perimeter registers (14/10, 16/14, 20/25 sizes)",
+          "Compressed air system: existing compressor remains; new 1\" CA distribution throughout industrial floor with 3/4\" drops and quick disconnects",
+          "Manual volume dampers throughout",
+          "Existing AHU(s) noted to remain (scope not detailed)"
+        ],
+        "electrical": [
+          "MDP: 400A, MLO, 480Y/277V, 3-phase, 4-wire, 14 KAIC — existing, remains",
+          "Existing Cutler-Hammer 600V 400A/3P safety switch — remains",
+          "Cutler-Hammer 75 KVA transformer 480-208Y/120V dry-type — existing, remains",
+          "Eaton 75 KVA transformer 480-208Y/120V dry-type — existing, remains",
+          "Panel A: 150A, 208Y/120V, 1-phase, 10 KAIC — existing sub-panel",
+          "Panel B: 200A, MLO, 208Y/120V, 3-phase, 10 KAIC — existing, remains",
+          "Panel C: 225A, 208Y/120V, 3-phase, 22 KAIC — existing, remains",
+          "Office Panel '1': 200A, 208Y/120V, 3-phase, 10 KAIC — existing, recessed",
+          "New Emergency Panel D: 100A, 90A MCB, 208Y/120V, 3-phase, 22 KAIC — new",
+          "25 kVA UPS, 208Y/120V, 3-phase — new",
+          "20 kW/25 kVA generator, 208Y/120V, 3-phase — new",
+          "Automatic Transfer Switch (ATS) for generator — new",
+          "New LED lighting: 2x4 LED troffers (36–50W MVOLT), surface LED wraparound 39W, LED exit signs, LED emergency twin-head units 33W",
+          "Occupancy sensor switches (So) — new",
+          "New receptacles: duplex 20A, GFCI, double-duplex, special purpose, 220V 3-phase cord reel type",
+          "Arc flash warning labels per NEC 2020 110.16(A) and UFC 3-560-01 required"
+        ],
+        "plumbing": [
+          "New water closet P-1: floor-mounted, flush tank, HC, 1.1 GPF",
+          "New lavatories P-2: counter-mounted, HC, 0.35 GPM",
+          "New mop sink P-3: floor-mounted",
+          "New shower P-4: floor-mounted",
+          "New kitchen sink P-5: counter-mounted",
+          "New stackable washer/dryer P-6: floor-mounted with washing machine utility box",
+          "New urinal P-7: wall-mounted",
+          "New electric water heater EWH-1: dual element 4500W, expansion tank, T&P relief valve, 2\" deep drain pan",
+          "Domestic water piping: copper per spec Section 221116",
+          "Sanitary waste/vent: PVC or cast iron per spec Section 221316",
+          "Piping insulation per spec Section 220719",
+          "Existing 4\" waste main remains; existing 2\" cold water main remains",
+          "Existing air compressor remains including piping and drops"
+        ],
+        "fire_protection": [
+          "Fire alarm wire and cable referenced in spec (FPLR, FPLP cable types in Section 260519); smoke detectors mentioned in coordination notes",
+          "No dedicated fire suppression (sprinkler) drawings or spec sections present in this document set",
+          "Fire suppression scope and status not determinable from available sources"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

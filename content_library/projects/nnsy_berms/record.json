@@ -1,0 +1,447 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nnsy_berms",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_berms/1618343 RFP spec.pdf",
+      "type": "sow",
+      "sha256": "cc5f11bee7fbaa2b287f92bb5f76e4f3fce907a0773441e101965abd9aa984e0",
+      "included": true,
+      "notes": "NAVFAC Design-Build RFP (Work Order 1618343) — primary scope document; contains SOW (Part 3 Statement of Work), General Requirements (Part 2), Performance Specs (Part 4), and prescriptive specs (Part 5). Date: April 28, 2021."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_berms/ELECTRICAL NARRATIVE BERM REPAIR NNSY 8-23-21.docx",
+      "type": "narrative",
+      "sha256": "9d830b2e7636a43d9426447d4eb99ce34ddde77e461b8e5fbbd1ea3f20a980e7",
+      "included": true,
+      "notes": "Electrical design narrative dated 8-23-21; describes electrical scope including overhead-to-underground circuit conversion for berm lighting poles and communications."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_berms/ELEC BOD_1-6-22_Repair Berms NNSY.doc",
+      "type": "bod",
+      "sha256": "922d762cf1a0652bce2a14b3c4a5c64168af44bd6a23ecc1ea2c8fdbdad9ba2b",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Electrical Basis of Design dated 1-6-22. Could not be extracted — pandoc failed with 'corrupt container / did not find end of central directory signature'. File may be a .doc (Word 97-2003) that cannot be processed as .docx. SHA256 computed from raw file bytes. Content unknown to extractor."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "Drawings referenced in RFP (Part 6 Attachment 1 Conceptual Design) are not present as separate files in the intake directory. The RFP references conceptual site plans and electrical attachments but they were not staged for extraction. Electrical BOD (.doc) could not be read."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Repair Soil Erosion at Reservoir Berms",
+      "source": "RFP spec p.1 (title page)",
+      "quote": "REPAIR SOIL EROSION AT RESERVOIR BERMS",
+      "corroboration": [
+        {
+          "source": "RFP spec p.1 (title page)",
+          "claim": "REPAIR SOIL EROSION AT RESERVOIR BERMS",
+          "value": "Repair Soil Erosion at Reservoir Berms",
+          "agrees": true
+        },
+        {
+          "source": "RFP spec Part 3 §1.0 Project Description",
+          "claim": "The project Repair Soil Erosion at Reservoir Berms will design, permit, repair, and construct using innovative mechanically slope stabilization methodologies",
+          "value": "Repair Soil Erosion at Reservoir Berms",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Narrative NNSY 8-23-21 §Electrical",
+          "claim": "Berm Repair NNSY (title of document)",
+          "value": "Repair Soil Erosion at Reservoir Berms",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC Mid-Atlantic)",
+      "source": "RFP spec p.1 (title page)",
+      "quote": "DESIGNED BY: NAVFAC MID-ATLANTIC",
+      "corroboration": [
+        {
+          "source": "RFP spec p.1 (title page)",
+          "claim": "DESIGNED BY: NAVFAC MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "RFP spec p.1 (title page)",
+          "claim": "REQUEST FOR PROPOSAL APPROVED BY: For Commander, NAVFAC MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC Mid-Atlantic) / Norfolk Naval Shipyard",
+      "source": "RFP spec p.1",
+      "quote": "PWD PORTSMOUTH NORFOLK NAVAL SHIPYARD BUILDING 1500, 5TH FLOOR PORTSMOUTH, VIRGINIA 23709-1012",
+      "corroboration": [
+        {
+          "source": "RFP spec p.1",
+          "claim": "PWD PORTSMOUTH NORFOLK NAVAL SHIPYARD",
+          "value": "Norfolk Naval Shipyard / NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Norfolk Naval Shipyard",
+      "facility_address": "Norfolk Naval Shipyard, Portsmouth, Virginia 23709",
+      "source": "RFP spec p.1 and Part 3 §3.1",
+      "quote": "NORFOLK NAVAL SHIPYARD PORTSMOUTH, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "RFP spec p.1 (title page)",
+          "claim": "NORFOLK NAVAL SHIPYARD PORTSMOUTH, VIRGINIA",
+          "value": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFP spec Part 3 §3.1",
+          "claim": "The proposed project site is located in the southern area of Norfolk Naval Shipyard, north of Elm Avenue and east of Burton's Point Road, situated directly behind Buildings 385 and 1554.",
+          "value": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Narrative §Existing Conditions",
+          "claim": "The site for the Berm Repair site is located at the intersection of Elm Avenue and Burtons Point Road adjacent to the Norfolk Naval Ship yard.",
+          "value": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "1618343",
+      "source": "RFP spec p.1 (header)",
+      "quote": "Work Order No.1618343",
+      "corroboration": [
+        {
+          "source": "RFP spec p.1 header",
+          "claim": "Work Order No.1618343",
+          "value": "1618343",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Contract number field on title page shown as blank ('Contract No.' with no value filled in). Work Order No. 1618343 is the project identifier."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "This is a site/civil project (berm repair), not a building project. No GSF value stated in sources. Land disturbance area anticipated less than 1 acre per Part 3 §2.3."
+    },
+    "site_acreage": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP states 'The total land disturbance is anticipated to be less than 1 acre' (Part 3 §2.3 Stormwater Management). Exact acreage not stated.",
+      "source": "RFP spec Part 3 §2.3",
+      "quote": "The total land disturbance is anticipated to be less than 1 acre"
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in available documents. RFP includes CLIN price schedule forms but they are blank (not filled in)."
+    },
+    "project_description_summary": {
+      "value": "Design-Build project at Norfolk Naval Shipyard to repair and stabilize soil erosion on the earthen berms surrounding three 120-foot diameter, 2-million-gallon above-ground concrete fire protection water storage tanks (constructed 1940s, buried by earthen berm). Scope includes: (1) mechanically stabilized slope repair of failed berm areas using specialty geotechnical contractor; (2) engineered slope surface treatment and erosion mitigation; (3) security fencing replacement; (4) option to relocate existing overhead electrical lines underground. Triggered by record rainfall in 2016 causing rills, gullies, and localized slope failures along Tanks 553 and 555.",
+      "source": "RFP spec Part 3 §1.0",
+      "quote": "The project Repair Soil Erosion at Reservoir Berms will design, permit, repair, and construct using innovative mechanically slope stabilization methodologies of the existing berm around the water reservoir tanks. Due to record heavy rainfall events in 2016 and the steepness of the existing berm, the berm and slopes have experienced, rills, gullies, and localized slope failures."
+    },
+    "facility_description": {
+      "value": "Three 120-foot diameter above-ground concrete fire protection water storage tanks (2 million gallons each), completely buried by earthen berm, constructed in the 1940s, with deep foundation system of timber piles. Tanks 553, 554, and 555.",
+      "source": "RFP spec Part 3 §3.1",
+      "quote": "The existing site improvements consist of three 120-foot diameter above ground concrete fire tanks completely buried by an earthen berm, which were constructed in the 1940s.",
+      "corroboration": [
+        {
+          "source": "RFP spec Part 3 §3.1",
+          "claim": "three 120-foot diameter above ground concrete fire tanks completely buried by an earthen berm, which were constructed in the 1940s",
+          "value": "3 x 120-ft diameter fire protection water storage tanks, earthen berm, 1940s",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Narrative §Existing Conditions",
+          "claim": "The site contains three (3) Two (2) Million Gallon water storage tanks.",
+          "value": "3 x 2-million-gallon tanks",
+          "agrees": true
+        }
+      ]
+    },
+    "rfp_date": {
+      "value": "2021-04-28",
+      "source": "RFP spec p.1",
+      "quote": "Date: April 28, 2021"
+    },
+    "contractual_duration_days": {
+      "value": 365,
+      "source": "RFP spec Part 1 §1.2(b)",
+      "quote": "If Options are exercised, the contract completion date remains 365 calendar days after award of the contract."
+    },
+    "design_criteria_slope": {
+      "value": "Minimum factor of safety 1.5; maximum finished slope 1.5H:1V; 20-year minimum design life; zero post-construction global settlement of tanks",
+      "source": "RFP spec Part 3 §G206001",
+      "quote": "Minimum design life of 20 years; Minimum Factor of Safety against slope failure of 1.5; Maximum finished repaired slope must be 1.5H:1V or flatter",
+      "corroboration": [
+        {
+          "source": "RFP spec Part 3 §G206001",
+          "claim": "Minimum design life of 20 years; Minimum Factor of Safety against slope failure of 1.5",
+          "value": "FOS 1.5 min; 20-yr design life; max 1.5H:1V slope",
+          "agrees": true
+        }
+      ]
+    },
+    "electrical_scope_summary": {
+      "value": "Remove existing overhead lighting circuit from poles #280 to #284; maintain existing poles and luminaires; provide new underground direct-buried circuit from pole #284 to poles P280, P281, P282, P283; replace circuit breaker and disconnect switch at pole #284 with new NEMA 4X stainless steel enclosures. Option 3 extends underground circuit to perimeter poles PPA and LPB. Temporary disconnect/protect overhead telephone line from pole #284 to PPA during construction.",
+      "source": "RFP spec Part 3 §D5020 and Electrical Narrative §Electrical",
+      "quote": "The objective of this project is to remove existing overhead lighting circuit, light poles and light fixtures to remain. Disconnect overhead wiring conductors from pole #280 to pole #284 s.",
+      "corroboration": [
+        {
+          "source": "RFP spec Part 3 §D5020",
+          "claim": "remove existing overhead lighting circuit, light poles and light fixtures to remain. Disconnect overhead wiring conductors from pole #280 to pole #284",
+          "value": "Overhead-to-underground electrical conversion, poles 280-284",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Narrative §Electrical",
+          "claim": "Disconnect and remove existing berms overhead lighting circuit at poles #284, P280, P281, P282 and P283... Provide new underground circuit to existing berms lighting from pole #284, to poles P280, P281, P282 and P283.",
+          "value": "Underground circuit poles 280-284",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design-Build contract; design is included within construction contract. No separate design fee stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": []
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP includes CLIN price schedule (CLIN 0001 base + CLINs 0002-0007 options/unit prices) but no dollar amounts are filled in — this is the solicitation document, not an award document. Actual award value not available in staged files."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 365,
+        "source": "RFP spec Part 1 §1.2(b)",
+        "quote": "If Options are exercised, the contract completion date remains 365 calendar days after award of the contract."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "utilities_infrastructure"
+    ],
+    "disciplines": [
+      "civil_engineering",
+      "geotechnical_engineering",
+      "electrical_engineering",
+      "environmental_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_erosion_sediment",
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "site_systems",
+      "site_grading_drainage",
+      "site_utilities",
+      "electrical_systems",
+      "electrical_lighting_exterior"
+    ],
+    "construction_scope": [
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_walls_fencing",
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "best_value"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "federal_navfac is in client_type.yaml as parent=federal; appropriate for NAVFAC Mid-Atlantic.",
+    "program_type_notes": "Primary is military_defense (DoD installation support infrastructure). utilities_infrastructure (water reservoir / site utilities) is also appropriate as subtype. No single entry perfectly captures 'fire protection water supply berms at naval installation' — military_defense is closest top-level.",
+    "bfa_role_notes": "BFA authored the electrical narrative and electrical BOD. On a NAVFAC Design-Build, BFA appears to be acting as the electrical subconsultant to a Design-Build prime (the electrical documents are BFA-authored design deliverables for the contractor's DOR package). Flagged for human review — could also be prime_consultant if BFA held the prime A-E subcontract. Source documents do not explicitly name the prime contractor.",
+    "award_type_notes": "Design-Build with best-value evaluation language in RFP (technical + price tradeoff). Marked best_value. Could also be qualifications_based if Brooks Act applies to the A-E component, but the prime here is a design-builder, so best_value is more accurate.",
+    "project_status_notes": "RFP date April 2021; electrical narrative Aug 2021; electrical BOD Jan 2022 — suggests design was proceeding. Status set to complete as a reasonable inference for a project with apparent 365-day duration from ~2021-2022. Flag for human review — actual completion not confirmed in sources."
+  },
+  "tenant_freeform_tags": [
+    "norfolk_naval_shipyard",
+    "nnsy",
+    "navfac_mid_atlantic",
+    "berm_repair",
+    "slope_stabilization",
+    "portsmouth_va",
+    "fire_protection_water_storage",
+    "geogrid",
+    "overhead_to_underground",
+    "design_build",
+    "federal_dod"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Civil/site project; no building GSF applicable. Site disturbance area <1 acre per RFP."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — no building."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "Overhead exterior lighting circuit poles #280-#284 (to be removed/replaced underground)",
+          "New direct-buried underground lighting circuit in 3/4\" min. GRS conduit",
+          "New 20A circuit breaker and 30A non-fused disconnect switch at pole #284, NEMA 4X stainless steel",
+          "Overhead telephone line (temporary disconnect/relocate during construction)"
+        ],
+        "plumbing": [
+          "Existing 8-inch diameter water fill/drain pipes feeding tanks from Building 385 (existing, protect in place)",
+          "8-inch and 12-inch storm drain pipes to catch basins on top of berm (existing, protect in place)"
+        ],
+        "fire_protection": []
+      }
+    },
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing PDFs were staged in the intake directory. Conceptual site plans are referenced as Part 6 Attachment 1 in the RFP and electrical attachment is referenced in Part 6 but neither were present as separate files. MEP system inventory populated from text sources only."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "taxonomy.bfa_role",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Electrical Narrative / Electrical BOD authorship",
+          "value": "subconsultant (BFA appears to be electrical subconsultant to DB prime)"
+        },
+        {
+          "source": "RFP Part 2 (DOR requirements)",
+          "value": "BFA could be prime consultant if holding A-E prime subcontract under the DB contractor"
+        }
+      ],
+      "resolution_chosen": "subconsultant",
+      "rationale": "The RFP is a Design-Build solicitation. BFA authored electrical design documents (narrative + BOD) consistent with role as the electrical engineer of record working under a Design-Build prime contractor. No direct evidence in sources of BFA as prime consultant. subconsultant assigned as best-fit pending human review."
+    },
+    {
+      "field_path": "taxonomy.project_status",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP spec (April 2021)",
+          "value": "In solicitation phase as of April 2021"
+        },
+        {
+          "source": "Electrical Narrative (August 2021)",
+          "value": "Design in progress August 2021"
+        },
+        {
+          "source": "Electrical BOD (January 2022)",
+          "value": "Design in progress / advancing January 2022"
+        }
+      ],
+      "resolution_chosen": "complete",
+      "rationale": "RFP date April 2021 + 365-day contract duration implies construction completion by ~early 2023 at latest. Records span 2021-2022. Assigned complete as reasonable inference for a project of this vintage. Flag for human review — no completion certificate or final payment document available."
+    }
+  ],
+  "socioeconomic_participation": []
+}

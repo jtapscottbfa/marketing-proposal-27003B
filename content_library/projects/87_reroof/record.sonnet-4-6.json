@@ -1,0 +1,497 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "87_reroof",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/jlab/87_reroof/Task Order.pdf",
+      "type": "contract",
+      "sha256": "8ad02306738e21b38dcd02d0c396826f4f92c4adaba173badc4e9d353717e7fc",
+      "page_count": 5,
+      "included": true,
+      "notes": "Combined Purchase Order (PO 21C0683003) and A-E Task Order No. 3. Text-extracted via pdftotext."
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/87_reroof/Building 87 Re-Roofing_Drawings-Final Submittal.pdf",
+      "type": "drawing_set",
+      "sha256": "c65aadc2bbc340a846bbf6bfbbe7e2d465a950059a51236fd8a805e1a5554ccd",
+      "page_count": 7,
+      "included": true,
+      "notes": "Final submittal drawing set, 7 sheets. Rendered to PNG at 200 DPI for visual extraction."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "Task Order serves as SOW. No separate BOD, spec book, or narrative document present. Drawing set is final submittal (7 sheets)."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 87 Re-Roof Design",
+      "source": "Task Order p.1",
+      "quote": "Project Title: 87 Re-Roof Design",
+      "corroboration": [
+        {
+          "source": "Task Order p.1",
+          "claim": "87 Re-Roof Design",
+          "value": "Building 87 Re-Roof Design",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 title block",
+          "claim": "BUILDING 87 RE-ROOF DESIGN",
+          "value": "Building 87 Re-Roof Design",
+          "agrees": true
+        },
+        {
+          "source": "Task Order PO line item description",
+          "claim": "BUILDING 89 RE-ROOF DESIGN SERVICES",
+          "value": "Building 89 Re-Roof Design",
+          "agrees": false,
+          "note": "PO line item says Building 89; all other references say Building 87. Typographical error in PO."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Science Associates, LLC / Jefferson Lab (Thomas Jefferson National Accelerator Facility)",
+      "source": "Task Order PO header",
+      "quote": "JSA, LLC / JEFFERSON LAB",
+      "corroboration": [
+        {
+          "source": "Task Order PO header",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "value": "Jefferson Science Associates, LLC / Jefferson Lab",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 title block",
+          "claim": "UNITED STATES DEPARTMENT OF ENERGY JEFFERSON SCIENCE ASSOCIATES, LLC",
+          "value": "Jefferson Science Associates, LLC / Jefferson Lab",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Department of Energy / Jefferson Science Associates, LLC",
+      "source": "drawing G-001 title block",
+      "quote": "UNITED STATES DEPARTMENT OF ENERGY JEFFERSON SCIENCE ASSOCIATES, LLC",
+      "corroboration": [
+        {
+          "source": "drawing G-001 title block",
+          "claim": "UNITED STATES DEPARTMENT OF ENERGY JEFFERSON SCIENCE ASSOCIATES, LLC",
+          "value": "United States Department of Energy / Jefferson Science Associates, LLC",
+          "agrees": true
+        },
+        {
+          "source": "Task Order PO header",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "value": "Jefferson Science Associates, LLC",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "12000 Jefferson Ave., Newport News, VA 23606",
+      "source": "drawing G-001 title block",
+      "quote": "12000 JEFFERSON AVE. NEWPORT NEWS, VA 23606",
+      "corroboration": [
+        {
+          "source": "drawing G-001 title block",
+          "claim": "12000 JEFFERSON AVE. NEWPORT NEWS, VA 23606",
+          "value": "12000 Jefferson Ave., Newport News, VA 23606",
+          "agrees": true
+        },
+        {
+          "source": "Task Order PO 'Ship To' field",
+          "claim": "12000 JEFFERSON AVE., SUITE 12 NEWPORT NEWS, VA 23606",
+          "value": "12000 Jefferson Ave., Newport News, VA 23606",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "PO 21C0683003, Task Order No. 3",
+      "source": "Task Order PO header",
+      "quote": "Purchase Order: 21C0683003",
+      "corroboration": [
+        {
+          "source": "Task Order PO header",
+          "claim": "Purchase Order: 21C0683003",
+          "value": "PO 21C0683003",
+          "agrees": true
+        },
+        {
+          "source": "Task Order footer",
+          "claim": "Task Order No. ___3___",
+          "value": "Task Order No. 3",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "21C0683003",
+      "source": "Task Order PO header",
+      "quote": "Purchase Order: 21C0683003"
+    },
+    "task_order_number": {
+      "value": "3",
+      "source": "Task Order p.1",
+      "quote": "Task Order No. ___3___"
+    },
+    "square_footage": {
+      "value": 6720,
+      "unit": "gsf",
+      "source": "Task Order p.1",
+      "quote": "The 6720 square foot building is a one story, pre-engineered building constructed in 1996.",
+      "corroboration": [
+        {
+          "source": "Task Order p.1",
+          "claim": "6720 square foot building",
+          "value": 6720,
+          "agrees": true
+        },
+        {
+          "source": "drawing AD-101 / A-101 plan dimensions",
+          "claim": "107'-5\" wide × 62'-3\" deep (scaled from roof plan)",
+          "value": 6686,
+          "agrees": false,
+          "note": "Calculated from drawing dimensions: 107.42 ft × 62.25 ft ≈ 6,687 sf. Minor discrepancy vs. 6,720 sf text claim — likely rounding or wall-face vs. exterior dimension."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 130000,
+      "currency": "USD",
+      "source": "Task Order p.1",
+      "quote": "Construction costs including a final design project contingency of 5% shall not exceed $ 130,000.",
+      "corroboration": [
+        {
+          "source": "Task Order p.1",
+          "claim": "$130,000 construction budget (with 5% contingency)",
+          "value": 130000,
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 31064,
+        "currency": "USD",
+        "source": "Task Order PO line 1",
+        "quote": "$31,064.00",
+        "corroboration": [
+          {
+            "source": "Task Order PO line 1",
+            "claim": "Net Unit Cost $1.00 × Order Quantity 31,064 = $31,064.00",
+            "value": 31064,
+            "agrees": true
+          },
+          {
+            "source": "Task Order PO footer",
+            "claim": "PO Total Amt: $31,064.00",
+            "value": 31064,
+            "agrees": true
+          }
+        ]
+      },
+      "awarded_date": {
+        "value": "2022-04-25",
+        "source": "Task Order PO header",
+        "quote": "04/25/22",
+        "corroboration": [
+          {
+            "source": "Task Order PO header",
+            "claim": "04/25/22 (PO date)",
+            "value": "2022-04-25",
+            "agrees": true
+          },
+          {
+            "source": "Task Order PO signature block",
+            "claim": "Date: 2022.04.25 10:37:18",
+            "value": "2022-04-25",
+            "agrees": true
+          }
+        ]
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-08-16",
+        "source": "drawing A-001 and A-101 title block seal date",
+        "quote": null,
+        "notes": "Final Submittal drawings dated 08/16/2022 per architect's seal. Task Order schedule called for Final Documents by 7/19/22; actual final submittal date per drawings is 08/16/22."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Task Order gave milestone dates (100% due 6/30/22, Final due 7/19/22) rather than a total duration in days."
+      },
+      "change_orders": {
+        "value": [],
+        "status": "missing",
+        "notes": "No change order information present in source documents."
+      },
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction was not in BFA's scope. Task Order specifies 'Construction Support Services will be negotiated after 100% design.' Construction budget to owner was $130,000."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": {
+        "value": [],
+        "status": "missing"
+      },
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [
+      "science_research"
+    ],
+    "disciplines": [
+      "architecture",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_roofing",
+      "architectural_envelope",
+      "electrical_grounding_lightning"
+    ],
+    "building_systems": [
+      "envelope_roofing",
+      "envelope_exterior_walls",
+      "electrical_grounding"
+    ],
+    "construction_scope": [
+      "thermal_roofing",
+      "thermal_waterproofing",
+      "thermal_insulation",
+      "existing_demolition",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "jefferson_lab",
+    "doe_facility",
+    "national_laboratory",
+    "reroof",
+    "newport_news",
+    "hampton_roads",
+    "pre_engineered_building",
+    "epdm_roofing",
+    "lightning_protection",
+    "occupied_renovation"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Bruce Bowman",
+      "role_on_project": "principal_in_charge",
+      "source": "Task Order PO — Contact field"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Cover sheet for Building 87 Re-Roof Design at Jefferson Lab (Thomas Jefferson National Accelerator Facility), Newport News, VA. Client listed as United States Department of Energy / Jefferson Science Associates, LLC. Location map shows Building 87 within the JLab campus; vicinity map shows Newport News area with Fort Eustis Military Reservation, Langley Air Force Base, and Hampton in context. Index of drawings lists 7 sheets: G-001, A-001, AD-101, A-101, A-501, ED-101, E-101. Title block identifies JLab contacts: C. Snetter (Subject Matter Expert and Design PM), B. Sperlazza (JLab rep), S. Hoey (Fire Protection Manager), T. Minga (Design Manager), S. Chandra (Engineering Manager), J. Dolbeck (FMIL Division Manager), J. Sprouse. Drawing number 220013-007-G001-087. Dills Architects seal visible upper right."
+      },
+      {
+        "sheet_number": "A-001",
+        "title": "LEGENDS, ABBREVIATIONS AND NOTES",
+        "discipline": "architecture",
+        "reading_notes": "Architectural legend, abbreviations, materials legend, and general notes. Materials legend shows: Cover Board, Batt Insulation, Plywood, Wood Blocking, Rigid Insulation. Project Narrative (verbatim): Building 87 is existing 6,720 sf, 1-story, pre-engineered metal building originally constructed in 1996 and later renovated into office. Existing EPDM roof system: metal roof overlaid with mechanically adhered EPDM over 1-1/2\" polyisocyanurate insulation. Gutters and downspouts replaced with larger units; exhaust vents/curbs removed and deck opening repaired; solatube curbs modified to increase height for proper flashing. Lightning protection system temporarily removed and reinstalled. North-side antenna removed. Exhaust fans removed; circuits demolished back to panelboard. Occupant-in-place requirement confirmed. General Note 4 references mechanical, plumbing, and electrical work. Dated 08/16/2022 per title block."
+      },
+      {
+        "sheet_number": "AD-101",
+        "title": "DEMOLITION ROOF PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Demolition roof plan at 1/8\"=1'-0\" scale. Building footprint dimensions shown: 107'-5\" wide × 62'-3\" deep (calculated area ≈ 6,687 sf; consistent with 6,720 sf in text with rounding/dimension-to-dimension variation). Demolition scope keyed: gutters and downspouts; solatube (acrylic dome — remove and store for reinstallation); vent thru roof (VTR must remain); mechanical roof vent; coated metal roof/metal panel must remain; lightning protection rods and grounding cable (remove and store for reinstallation); existing concrete splash blocks (remove and store, replace broken ones); coping; antenna; metal roof edge flashing. Photos of existing conditions shown: lighting rod, typical solatube, antenna, mechanical vent. Slope indicators throughout roof plan. Building is single-story with simple rectangular plan."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "ROOF PLAN",
+        "discipline": "architecture",
+        "reading_notes": "New work roof plan at 1/8\"=1'-0\" scale. Building footprint matches AD-101 (107'-5\" × 62'-3\"). New work items keyed: pre-finished metal gutters and downspouts; 12\" high prefabricated solatube curb (reinstall solatube, acrylic dome, reconnect sensor); vent thru roof (detail D3/A-501); patch metal roof deck; lightning protection system (refer to electrical drawings); splash blocks replaced; prefinish metal coping; walkway pads typical; ladder tie-off; commercial safety ladder dock; fall restraint anchors (Honeywell Miller Fusion Roof Anchor Post). Roof sections A (Roof Edge Detail), B (Roof Edge/Parapet Detail), D (Roof Edge Detail) referenced to A-501. Slope indicators show drainage patterns. Drawing number 220013-004-A101-087."
+      },
+      {
+        "sheet_number": "A-501",
+        "title": "DETAILS",
+        "discipline": "architecture",
+        "reading_notes": "Four details at 3\"=1'-0\" scale: D1 Roof Edge Detail (referenced from A-101/A-501); B1 Roof Edge/Parapet Detail; A1 Gutter Detail; A3 Solatube Prefabricated Curb Detail; D3 Vent Thru Roof detail. Roof assembly layers numbered in detail D1: (1) existing coated metal panel roof to remain, (2) existing exterior panel to remain, (3) 1-1/2\" rigid insulation cut to fit between flutes of existing metal roof panels, (4) 1/2\" cover board, (5) roof membrane (EPDM), (6) pre-finished metal gutter with alternating hangers and brackets, (7) continuous sealant, (8) stainless steel clamp, (9) roof membrane turn-up over treated wood blocking, (10) pressure treated wood blocking, (11) existing exterior panel, (12) pre-finished metal coping, (13) existing parapet construction, (14) pre-finished metal edge flashing, (15) roof flashing with drip edge, (16) prefabricated pipe boot flashing, (17) existing insulation and roof purlins. Solatube curb detail shows 12\" high prefabricated curb with acrylic dome and sensor reconnection. Gutter detail shows pre-finished metal gutter with alternating hangers and brackets. VTR detail shows vent-thru-roof with 1\" minimum overlap over existing roof deck."
+      },
+      {
+        "sheet_number": "ED-101",
+        "title": "LIGHTNING PROTECTION ROOF PLAN — DEMOLITION",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lightning Protection Roof Plan — Demolition at 1/8\"=1'-0\" scale. Shows existing lightning protection grid system on roof of Building 87. Legend: air terminals (circled dot), lightning conductors (lines), mechanical compression connections (square), ground for antenna/down conductor. Plan shows approximately 24 air terminals (typical of 24 notation) in a grid pattern across the roof with 4 corner-mounted perimeter conductors. Demolition notes: (1) disconnect/remove rooftop lightning protection grid conductor — salvage for reinstallation; (2) disconnect/remove air terminal — salvage for reinstallation; (3) disconnect/remove antenna and all associated wiring; (4) existing down conductor must remain; (5) disconnect/remove circuit to exhaust fan back to panel source. General notes: electrical work for demolition of components must comply with applicable codes; exothermic welds prohibited. Drawing number 220013-006-ED101-087."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "LIGHTNING PROTECTION ROOF PLAN — NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lightning Protection Roof Plan — New Work at 1/8\"=1'-0\" scale. Same building footprint. Construction notes: (1) reinstall lightning protection grid conductor — connect to existing down conductors and through-roof penetrations; damaged conductors to be replaced by No. A24 Class 1 copper (24 strands of 14 AWG copper wire); (2) reinstall air terminal — damaged terminals replaced by 2\"×12\" min solid copper equivalent; (3) reconnect lightning protection grid to existing down conductor. General Note 3: system tested after construction by third-party professional service, UL-certification, master label certificate upon completion; deficiencies corrected at contractor's cost. Drawing number 220013-007-E101-087. Dills Architects seal; Bowman Foster stamp visible in revision block (per cover sheet)."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 6720,
+        "unit": "gsf",
+        "source": "Task Order p.1 (primary); drawing AD-101/A-101 plan dimensions (corroborating, minor discrepancy)",
+        "quote": null,
+        "sheets": [
+          "AD-101",
+          "A-101"
+        ],
+        "notes": "Text source says 6,720 sf. Drawing plan dimensions (107'-5\" × 62'-3\") yield approximately 6,687 sf — minor discrepancy attributed to rounding or measurement reference points."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "Task Order p.1",
+        "quote": null,
+        "sheets": [
+          "AD-101",
+          "A-101"
+        ],
+        "notes": "Task Order states 'one story'; confirmed by single-level roof plan."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Mechanical exhaust vents and curbs (existing, removed and deck opening repaired)",
+          "Mechanical roof vent (existing, demolished per AD-101 note 4)"
+        ],
+        "electrical": [
+          "Lightning protection system — existing grid with approximately 24 air terminals; demolished and reinstalled (ED-101, E-101)",
+          "Exhaust fan circuits disconnected back to panelboard (ED-101 demolition note 5)",
+          "Antenna and associated wiring removed (ED-101 demolition note 3)"
+        ],
+        "plumbing": [
+          "Solatubes (daylighting devices) — 3 solatubes with acrylic domes; removed, stored, and reinstalled with new 12\" high prefabricated curbs",
+          "Pre-finished metal gutters and downspouts replaced (new larger size)"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Task Order PO line item description",
+          "value": "BUILDING 89 RE-ROOF DESIGN SERVICES"
+        },
+        {
+          "source": "Task Order p.1 — Task Order title and all other references",
+          "value": "87 Re-Roof Design"
+        },
+        {
+          "source": "drawing G-001 title block",
+          "value": "BUILDING 87 RE-ROOF DESIGN"
+        }
+      ],
+      "resolution_chosen": "Task Order p.1 and drawing G-001",
+      "rationale": "The number '89' appears only in the PO line item description and is contradicted by the Task Order title, all drawing sheets, drawing number suffixes (-087), and the project narrative text. '89' is a typographical error in the PO description. All substantive references say Building 87."
+    },
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Task Order p.1",
+          "value": 6720
+        },
+        {
+          "source": "drawing AD-101/A-101 plan dimensions (calculated)",
+          "value": 6686
+        }
+      ],
+      "resolution_chosen": "Task Order p.1",
+      "rationale": "Text source provides an explicit area figure. Drawing dimensions (107'-5\" × 62'-3\") yield ~6,687 sf which is within 0.5% — attributable to rounding or whether dimension is to face of framing vs. exterior finish. Minor discrepancy; text value adopted."
+    }
+  ],
+  "narratives": {
+    "full": "narratives/full.md",
+    "short": "narratives/short.md",
+    "bullets": "narratives/bullets.md",
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

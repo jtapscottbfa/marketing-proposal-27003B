@@ -1,0 +1,695 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nh139_study_and_rfp",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh139_study_and_rfp/1726324_1692530_NH139_P1401 ERCIP_HVAC-ELEC Study SAES.docx",
+      "type": "sow",
+      "sha256": "eef1b67420b8d47baee458c0abfe3cae2723e11f239b89adcab6ea82dea632ac",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES) for both DB RFP (eProject 1726324) and HVAC/Elec Study (eProject 1692530); NAVFAC MIDLANT issued"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh139_study_and_rfp/1726324_1692530_NH139_P1401 ERCIP_HVAC-ELEC Study SAES.pdf",
+      "type": "sow",
+      "sha256": "28ca109eb8b7b217023603e02f92944f023d1d089510c11dd00f528c0b9cbcac",
+      "included": true,
+      "notes": "PDF version of SAES (same content as DOCX)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh139_study_and_rfp/2023.12.22 1726324_1692530 100% Study.pdf",
+      "type": "report",
+      "sha256": "44eb6f860107bbcc44518fb61f2dda107ab200f8a7031cde6d0600372485e4de",
+      "included": true,
+      "notes": "100% HVAC/Electrical Study submission, Dec 22 2023, prepared by Bowman Foster & Associates et al.; includes text report, drawings (A-101 through E-639), and ROM cost estimate ($25.8M)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh139_study_and_rfp/2024.11.06 FINAL DB RFP.pdf",
+      "type": "sow",
+      "sha256": "45f9bef64e1ec4cc308a8bbf11db6eb80700ba842707a87a4daed0f9126e7739",
+      "included": true,
+      "notes": "Final Design-Build RFP for Replace Backup Power Generation, UPS, PLCs (P-1401), dated Nov 6 2024; includes Parts 1-6 with engineering system requirements, performance technical specifications, and attachments"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No separate BOD found. SAES serves as SOW. 100% Study PDF contains embedded drawings (A-series, M-series, E-series, site plans). DB RFP includes prescriptive/performance specs and drawing references as attachments. No BFA-authored narrative document found."
+  },
+  "facts": {
+    "project_name": {
+      "value": "FY22 MILCON Project P-1401 Replace Backup Power Generation, UPS, PLC's and HVAC/Electrical Study, Building NH-139",
+      "source": "SAES cover page",
+      "quote": "FY22 MILCON PROJECT P-1401 REPLACE BACKUP POWER GENERATION, UPS, PLC'S AND HVAC/ELEC STUDY BUILDING NH-139 NAVAL SUPPORT ACTIVITY, HAMPTON ROADS Norfolk, Virginia",
+      "corroboration": [
+        {
+          "source": "SAES cover page",
+          "claim": "FY22 MILCON PROJECT P-1401 REPLACE BACKUP POWER GENERATION, UPS, PLC'S AND HVAC/ELEC STUDY",
+          "agrees": true
+        },
+        {
+          "source": "100% Study cover",
+          "claim": "Replace Power Generation, UPS, PLC's and HVAC / Electrical Study Building NH-139",
+          "agrees": true
+        },
+        {
+          "source": "DB RFP cover",
+          "claim": "NH-139 REPLACE BACKUP POWER GENERATION UPS, PLC'S",
+          "agrees": true,
+          "note": "DB RFP scoped to power generation replacement only (no HVAC study component)"
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC MIDLANT)",
+      "source": "SAES Section A1 / 100% Study cover",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT FEAD will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES Section A1",
+          "claim": "Contract No. N40085-20-D-0005 / NAVFAC MIDLANT",
+          "agrees": true
+        },
+        {
+          "source": "100% Study cover",
+          "claim": "Prepared for Naval Facilities Engineering Systems Command Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Support Activity Hampton Roads",
+      "source": "SAES Section B4 / DB RFP drawings",
+      "quote": "Mr. Stephen Schmidt, (757) 836-1996 ... 7918 Blandy Road, PWD HAS Hampton Roads, Building NH-34, Norfolk, VA 23551",
+      "corroboration": [
+        {
+          "source": "100% Study drawings",
+          "claim": "NAVAL SUPPORT ACTIVITY, NORFOLK, VIRGINIA / Department of the Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Building NH-139, Naval Support Activity Hampton Roads",
+      "facility_address": "NSA Hampton Roads, Norfolk, Virginia",
+      "source": "SAES Section A1",
+      "quote": "Project Location Building NH-139, NSA Hampton Roads, Norfolk, Virginia"
+    },
+    "project_number_client": {
+      "value": "N40085-20-D-0005 (base IDIQ); eProject WO 1726324 (DB RFP) / 1692530 (HVAC/Elec Study)",
+      "source": "SAES Section A1",
+      "quote": "Contract No. N40085-20-D-0005 ... eProjects Work Order numbers 1726324/1692530"
+    },
+    "contract_number": {
+      "value": "N40085-20-D-0005",
+      "source": "SAES Section A1",
+      "quote": "Contract No. N40085-20-D-0005"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": "SAES Section A1",
+      "quote": "Task Order No. TBD"
+    },
+    "square_footage": {
+      "value": 78800,
+      "unit": "gsf",
+      "source": "100% Study cost estimate (total project cost page)",
+      "quote": "Primary Facility 78,800 SF",
+      "conflict_note": "The DB RFP building requirements state 'Gross Area: 34000 SF' which likely refers to the scope work area (electrical rooms/UPS rooms), not the total building footprint. The 78,800 SF figure from the cost estimate is used as total building area for cost estimation. See conflict_flags.",
+      "corroboration": [
+        {
+          "source": "100% Study cost estimate",
+          "claim": "Primary Facility 78,800 SF",
+          "value": 78800,
+          "agrees": true
+        },
+        {
+          "source": "DB RFP Part 4.1.1 Building Requirements",
+          "claim": "Gross Area: 34000 SF (for replacement scope)",
+          "value": 34000,
+          "agrees": false,
+          "note": "34,000 SF appears to be project scope area for the power replacement work, not the total building area"
+        }
+      ]
+    },
+    "building_construction_year": {
+      "value": 1964,
+      "source": "100% Study Introduction",
+      "quote": "Constructed in 1964 as the Atlantic Fleet Intelligence Center, Building NH-139 serves the Atlantic Fleet by facilitating various President of the United States (POTUS) directed operations"
+    },
+    "program_budget": {
+      "value": 3930000,
+      "currency": "USD",
+      "source": "SAES Section C1",
+      "quote": "Project Cost/Program Amount: $3,930,000/$1,000,000",
+      "note": "$3,930,000 is MILCON project cost; $1,000,000 is the study program amount"
+    },
+    "estimated_construction_cost_saes": {
+      "value": 3600000,
+      "currency": "USD",
+      "source": "SAES Section C2",
+      "quote": "Estimated Construction Cost (ECC): $3,600,000"
+    },
+    "rom_construction_cost_study": {
+      "value": 25826000,
+      "currency": "USD",
+      "source": "100% Study Appendix D cost estimate cover",
+      "quote": "IX. ESTIMATED CONSTRUCTION COST (ECC) $25,826,000",
+      "note": "ROM cost for full HVAC/electrical system replacement per study recommendations; this is much larger than the SAES ECC because it reflects total building system replacement scope identified in the study"
+    },
+    "firms_involved": {
+      "value": [
+        "Bowman, Foster & Associates, Inc. (A-E prime / mechanical-electrical)",
+        "Dills Architects, P.C. (architecture)",
+        "Osmundson & Associates Cost Consultants, Inc. (cost estimating)",
+        "Blackwater Electric Co Inc. (electrical support)",
+        "Jensen Hughes (fire protection - DB RFP phase)",
+        "Broyles and Associates, P.C. (structural - DB RFP phase)"
+      ],
+      "source": "100% Study cover / DB RFP cover",
+      "quote": "Prepared by Bowman, Foster & Associates, Inc. Dills Architects, P.C. Osmundson & Associates Cost Consultants, Inc. Blackwater Electric Co Inc."
+    }
+  },
+  "phases": {
+    "design": {
+      "scope_description": "Two-component A-E scope: (1) HVAC/Electrical Systems Study (eProject 1692530) - field investigation, documentation of existing systems, ROM cost estimate; (2) DB RFP preparation (eProject 1726324) - Design Development (50%), Pre-Final (100%), and Final DB RFP packages for FY22 MILCON P-1401",
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "SAES states fee to be negotiated; specific A-E fee not disclosed in source documents"
+      },
+      "completion_date": {
+        "value": "2023-12-22",
+        "source": "100% Study cover",
+        "quote": "100% Submission December 22nd, 2023",
+        "note": "This is the 100% Study completion date. DB RFP final was dated 2024-11-06."
+      },
+      "db_rfp_final_date": {
+        "value": "2024-11-06",
+        "source": "DB RFP cover",
+        "quote": "Submitted By: Date:11/06/2024"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "Construction has not yet been awarded per available documents. DB RFP issued Nov 2024."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod",
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "military_operations"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering",
+      "architecture",
+      "structural_engineering",
+      "cost_estimating"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "hvac_controls",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "structural_foundation"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "hvac_air_distribution",
+      "hvac_chilled_water",
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_emergency_power",
+      "fp_wet_sprinkler",
+      "fp_dry_pre_action",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition",
+      "fire_suppression_scope",
+      "electronic_safety_security"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "VICINITY MAP / LOCATION MAP",
+        "discipline": "architecture",
+        "reading_notes": "General location map for NSA Hampton Roads / Building NH-139. Standard NAVFAC cover-type sheet."
+      },
+      {
+        "sheet_number": "G-002",
+        "title": "SITE PLAN (MAIN GATE)",
+        "discipline": "architecture",
+        "reading_notes": "Site plan showing NH-139 compound within Naval Station Norfolk. Standard orientation sheet."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "PARTIAL FIRST FLOOR PLAN - AREA A",
+        "discipline": "architecture",
+        "reading_notes": "First floor partial plan showing rooms 100-199 range. Rooms labeled including 158A/B (generator/electrical rooms), 199A/B (UPS/battery rooms). Revit-generated at 1/8\"=1'-0\" scale. Room numbers match building room numbering referenced throughout study."
+      },
+      {
+        "sheet_number": "A-102",
+        "title": "PARTIAL FIRST FLOOR PLAN - AREA B",
+        "discipline": "architecture",
+        "reading_notes": "First floor Area B showing A-series rooms (A101-A117 range). Includes A116/A116A (UPS #3 room). Revit file: 22033_NH139_R20.rvt."
+      },
+      {
+        "sheet_number": "A-103",
+        "title": "PARTIAL SECOND FLOOR PLAN - AREA A",
+        "discipline": "architecture",
+        "reading_notes": "Second floor rooms 200-289 range. Office suites labeled (NIWDC, JRIC spaces identifiable). NOC room 215, planning rooms visible."
+      },
+      {
+        "sheet_number": "A-104",
+        "title": "PARTIAL SECOND FLOOR PLAN - AREA B",
+        "discipline": "architecture",
+        "reading_notes": "Second floor Area B showing 250-series rooms. Penthouse access stairs visible."
+      },
+      {
+        "sheet_number": "A-105",
+        "title": "PENTHOUSE FLOOR PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Single mechanical equipment room (Room 300) in penthouse. Two penthouse levels implied (north and south) by subsequent mechanical sheets."
+      },
+      {
+        "sheet_number": "A-106",
+        "title": "PARTIAL ROOF PLAN - AREA A",
+        "discipline": "architecture",
+        "reading_notes": "Roof plan Area A showing rooftop mechanical equipment locations and drainage."
+      },
+      {
+        "sheet_number": "A-107",
+        "title": "PARTIAL ROOF PLAN - AREA B",
+        "discipline": "architecture",
+        "reading_notes": "Roof plan Area B."
+      },
+      {
+        "sheet_number": "M-001",
+        "title": "MECHANICAL LEGEND AND ABBREVIATIONS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Standard NAVFAC mechanical legend sheet. Provides symbol key for HVAC drawings M-101 through M-303."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "PARTIAL FIRST FLOOR HVAC PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "First floor HVAC plan showing ductwork layout, VAV box locations, AHU connections. Dense routing through corridor system. Multiple dual-duct VAV boxes visible throughout admin spaces."
+      },
+      {
+        "sheet_number": "M-102",
+        "title": "PARTIAL FIRST FLOOR HVAC PLAN (continued)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Continuation of first floor HVAC. Shows CU-1 through CU-4 (mini-split outdoor units) and DS-1 through DS-4 (cassette indoor units) locations."
+      },
+      {
+        "sheet_number": "M-103",
+        "title": "PARTIAL SECOND FLOOR HVAC PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Second floor HVAC ductwork. Data spaces (rooms 211, 214, 215, 219A/D/E) served by dedicated split system VAV AHU in penthouse mechanical room."
+      },
+      {
+        "sheet_number": "M-104",
+        "title": "PARTIAL SECOND FLOOR HVAC PLAN (continued)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Continuation of second floor HVAC."
+      },
+      {
+        "sheet_number": "M-105",
+        "title": "PARTIAL FIRST FLOOR PIPING PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Chilled water and hot water piping first floor. Type K copper pipe. Ball and globe valves."
+      },
+      {
+        "sheet_number": "M-106",
+        "title": "PARTIAL FIRST FLOOR PIPING PLAN (continued)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Continuation of first floor piping."
+      },
+      {
+        "sheet_number": "M-107",
+        "title": "PARTIAL FIRST FLOOR PIPING PLAN (continued)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Continuation of first floor piping."
+      },
+      {
+        "sheet_number": "M-108",
+        "title": "PARTIAL FIRST FLOOR PIPING PLAN (continued)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Continuation of first floor piping."
+      },
+      {
+        "sheet_number": "M-109",
+        "title": "ROOF PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Roof plan showing rooftop mechanical equipment. Identifies Trane RTAC140 (140 ton air-cooled chiller), Trane CGAM (80 ton air-cooled chiller), centrifugal exhaust fans, and central station AHUs serving NIWDC and JRIC on second floor."
+      },
+      {
+        "sheet_number": "M-301",
+        "title": "ENLARGED NORTH PENTHOUSE FLOOR PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "North penthouse showing AHU serving DIA/Joint Staff and CMSA LANT/NGA areas. Hot-deck/cold-deck AHU configuration. Camus Dynaforce boiler (39 gpm, 39,000 BTUH). Base-mounted centrifugal pumps (>20 years old). Air compressor for pneumatic controls."
+      },
+      {
+        "sheet_number": "M-302",
+        "title": "ENLARGED SOUTH PENTHOUSE FLOOR PLAN - PIPING AND DUCTWORK",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "South penthouse showing recently replaced boilers and pumps (<5 years). South AHU also recently replaced. Separate piping and ductwork plan views."
+      },
+      {
+        "sheet_number": "M-303",
+        "title": "ENLARGED NORTH/EAST PERIMETER PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Perimeter mechanical equipment yard. Item 10 = Trane RTAC140 chiller serving north/south penthouses. Item 13 = Trane CGAM chiller. Air-cooled condensers for CRAC units (R-22 refrigerant, end-of-life)."
+      },
+      {
+        "sheet_number": "M-601",
+        "title": "SCHEDULES - AIR COOLED CHILLER, AHU, GRILLE/REGISTER/DIFFUSER, VAV BOX",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Equipment schedules. Chiller schedule shows Trane models. AHU schedule. VAV box schedule. Grille/register/diffuser schedule with Titus TDCA-AA and 50F references."
+      },
+      {
+        "sheet_number": "M-602",
+        "title": "SCHEDULES - MINI-SPLIT OUTDOOR AND INDOOR EQUIPMENT",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Mitsubishi mini-split schedule: CU-1 and CU-2 are 1.5-ton (PUY-A18NKA7), CU-3 and CU-4 are 3.0-ton (PUY-A36NKA7). R-410A refrigerant. Cassette indoor units DS-1 through DS-4."
+      },
+      {
+        "sheet_number": "MS101",
+        "title": "MECHANICAL SITE PLAN",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Site plan showing mechanical equipment locations around building perimeter."
+      },
+      {
+        "sheet_number": "ES101",
+        "title": "ELECTRICAL SITE PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical site plan showing SW-233 primary switch (38 kV), underground ductbank, transformers (1000 kVA and 750 kVA), and electrical manhole locations."
+      },
+      {
+        "sheet_number": "ES401",
+        "title": "ENLARGED SITE PLAN - EQUIPMENT YARD (NORTH SIDE)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Enlarged view of electrical equipment yard on north side including Quonset hut location (Generator #3, Switchboard 1B, Transformer T2)."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "PARTIAL FIRST FLOOR POWER PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "First floor electrical distribution plan Areas A. Shows panelboard locations, circuit routing. Feeders from 1979 vintage per study."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "PARTIAL FIRST FLOOR POWER PLAN (continued)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "First floor electrical Area B. Room 158A (main electrical room with Switchgear 1A, 3000A/208V, Westinghouse 1979) and Room 158B (Generators 1 and 2, 600kW each)."
+      },
+      {
+        "sheet_number": "E-103",
+        "title": "PARTIAL SECOND FLOOR POWER PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Second floor electrical power plan. Data spaces NOC (rm 211), GOC (rm 215) visible."
+      },
+      {
+        "sheet_number": "E-104",
+        "title": "PARTIAL SECOND FLOOR POWER PLAN (continued)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of second floor electrical."
+      },
+      {
+        "sheet_number": "E-105",
+        "title": "PARTIAL ROOF MECHANICAL POWER PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Roof electrical for HVAC equipment. VFD connections, motor starters."
+      },
+      {
+        "sheet_number": "E-106",
+        "title": "PARTIAL ROOF MECHANICAL POWER PLAN (continued)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of roof power."
+      },
+      {
+        "sheet_number": "E-401",
+        "title": "ENLARGED FIRST FLOOR ELECTRICAL ROOMS (A, B, C, D)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Enlarged plans of Rooms 158A and 158B showing Switchgear 1A (3000A/208V, Westinghouse 1979), Generators 1 and 2 (600kW each, Caterpillar), switchboards. Rooms 199A and 199B (UPS 1 and 2, 500 kVA each, battery rooms)."
+      },
+      {
+        "sheet_number": "E-402",
+        "title": "ENLARGED NORTH AND SOUTH PENTHOUSE FLOOR PLANS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Penthouse electrical rooms. Switchboard 3 (Cutler Hammer Power-R-Line, 1600A/208V, excellent condition). UPS #3 room (A116/A116A, 250 kVA, in good condition)."
+      },
+      {
+        "sheet_number": "E-601 to E-639",
+        "title": "ELECTRICAL ONE-LINE DIAGRAMS AND PANELBOARD SCHEDULES",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Approximately 39 sheets of one-line diagrams (E-601 through E-606) and panelboard schedules (E-607 through E-639). SW-233 one-line showing 35kV incoming service, substation transformers (1000 kVA and 750 kVA), Switchgear 1A, Switchboards Main 1 (3000A), Main 2 (2000A, Westinghouse 1989, in Quonset hut). Approximately 30+ panelboard schedules across dozens of sheets showing existing distribution system."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 78800,
+        "unit": "gsf",
+        "source": "100% Study cost estimate (total project cost page)",
+        "quote": null,
+        "sheets": [
+          "cost estimate"
+        ],
+        "note": "Used as primary facility area in cost estimation. DB RFP states 34,000 SF for the specific replacement scope. See conflict_flags."
+      },
+      "floor_count": {
+        "value": 3,
+        "source": "100% Study floor plans and text",
+        "quote": null,
+        "sheets": [
+          "A-101",
+          "A-102",
+          "A-103",
+          "A-104",
+          "A-105"
+        ],
+        "note": "Two main floors (first and second) plus mechanical penthouses (north and south) and roof level. DB RFP notes 'number of floors' per eOMSI requirements."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Trane RTAC140 air-cooled chiller, 140 tons, rooftop (end-of-life, recommend replacement)",
+          "Trane CGAM air-cooled chiller, 80 tons, rooftop (recently replaced, retain)",
+          "Camus Dynaforce gas-fired condensing boiler, 39 GPM/39,000 BTUH, North penthouse (recently installed, retain)",
+          "South penthouse boilers recently replaced (retain)",
+          "North penthouse AHU (>20 years, hot-deck/cold-deck, recommend replacement)",
+          "South penthouse AHU (recently replaced, retain)",
+          "Multiple dual-duct VAV boxes throughout (pneumatic controls, recommend replacement with single-zone electric reheat VAVs)",
+          "Split system VAV AHUs serving rooms 156/157/161/168 and data spaces 211/214/215/219A/D/E (end-of-life, recommend replacement)",
+          "4x Mitsubishi mini-split systems (CU-1 to CU-4: 1.5-3.0 ton R-410A)",
+          "CRAC units in rooms 122, 127, 113, 113A (R-22 refrigerant, near end-of-life, recommend replacement)",
+          "Gas-fired wall-hung unit heaters (retain)",
+          "Pneumatic control system with air compressor (transition to electronic DDC underway)"
+        ],
+        "electrical": [
+          "35 kV primary switch SW-233, 38 kV rated (end-of-life, requires replacement)",
+          "1000 kVA substation transformer (end-of-life, requires replacement)",
+          "750 kVA substation transformer (end-of-life, requires replacement)",
+          "Switchgear 1A, Westinghouse, 3000A/208V 3-phase, Room 158 (1979, end-of-life, replace)",
+          "Switchboard Main 1 (3000A/208V), Room 158A",
+          "Switchboard Main 2, Westinghouse, 2000A/208V, Quonset hut (1989, end-of-life, replace per Bid Option ii)",
+          "Switchboard 3, Cutler Hammer Power-R-Line, 1600A/208V, penthouse (excellent condition, retain)",
+          "Generator 1, Caterpillar, 600kW/545HP/208V diesel (good condition, retain)",
+          "Generator 2, Caterpillar, 600kW/545HP/208V diesel (good condition, retain)",
+          "Generator 3, Caterpillar, 600kW/890HP/208V diesel, Quonset hut (replace - Bid Option i)",
+          "UPS 1, 500 kVA, Room 199A (being replaced under project)",
+          "UPS 2, 500 kVA, Room 199A (being replaced under project)",
+          "UPS 3, 250 kVA, Room A116 (good condition, retain)",
+          "MCC 1, Cutler Hammer, 600A/208V (1997, end-of-life, replace)",
+          "Multiple panelboards, 30+ (various manufacturers, see one-lines for replace/retain schedule)",
+          "RF filters (retain)",
+          "PLCs (being replaced under separate contract at time of study)"
+        ],
+        "plumbing": [
+          "Type K copper chilled water and hot water hydronic piping (adequate condition, retain)",
+          "Ball valves and globe valves for flow control (good condition)"
+        ],
+        "fire_protection": [
+          "Existing fire alarm/mass notification system (addressable, existing panels remain for DB RFP)",
+          "Existing sprinkler system (modifications required per DB RFP for UPS equipment areas)",
+          "Dry pipe sprinkler protection required in unheated areas per DB RFP"
+        ]
+      },
+      "electrical_service": {
+        "value": "34.5 kV primary service via underground ductbank to pad-mounted SF6 switch SW-233, serving two substation transformers (1000 kVA and 750 kVA), distributed at 208Y/120V 3-phase",
+        "source": "100% Study text / E-601 one-line",
+        "quote": null
+      }
+    }
+  },
+  "building_description": {
+    "value": "Building NH-139 was constructed in 1964 as the Atlantic Fleet Intelligence Center. It is a multi-story facility at Naval Support Activity Hampton Roads housing multiple sensitive Navy commands including NIWDC, JRIC, CMSA LANT/NGA, USFF, and DIA Joint Staff. The building has undergone numerous additions and upgrades over its 60-year history.",
+    "source": "100% Study Introduction",
+    "quote": "Constructed in 1964 as the Atlantic Fleet Intelligence Center, Building NH-139 serves the Atlantic Fleet by facilitating various President of the United States (POTUS) directed operations within a versatile space designed for diverse missions."
+  },
+  "tenant_commands": {
+    "value": [
+      "Navy Naval Information Warfighting Development Center (NIWDC)",
+      "Navy Joint Regional Intelligence Center (JRIC)",
+      "Cruise Missile Support Activity Atlantic (CMSA LANT/NGA)",
+      "United States Fleet Forces Command (USFF)",
+      "Defense Intelligence Agency (DIA) Joint Staff"
+    ],
+    "source": "100% Study Tenant Commands section",
+    "quote": "Within the precincts of NH-139, the establishments include the Navy Naval Information Warfighting Development Center (NIWDC), Navy Joint Regional Intelligence Center (JRIC), Cruise Missile Support Activity Atlantic (CMSA LANT/NGA), United States Fleet Forces Command (USFF), and the Defense Intelligence Agency (DIA) Joint Staff."
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "C. Jeff Morton, P.E.",
+      "role_on_project": "NAVFAC Project Manager / Lead Discipline Branch Manager (Government)"
+    },
+    {
+      "name": "Frances Peppers",
+      "role_on_project": "NAVFAC Design Manager (Government)"
+    },
+    {
+      "name": "Michael Dixon",
+      "role_on_project": "Electrical Engineer (Bowman Foster)"
+    },
+    {
+      "name": "Aaron Freid, P.E.",
+      "role_on_project": "Fire Protection Engineer (Jensen Hughes)"
+    },
+    {
+      "name": "Donald Broyles, P.E.",
+      "role_on_project": "Structural Engineer (Broyles and Associates)"
+    }
+  ],
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "100% Study cost estimate total project cost page",
+          "value": 78800,
+          "unit": "gsf",
+          "context": "Primary Facility area used for cost estimation"
+        },
+        {
+          "source": "DB RFP Part 4 Building Requirements, Section 4.1.1",
+          "value": 34000,
+          "unit": "gsf",
+          "context": "Gross Area stated for 'Replace Backup Power Generation UPS, PLC's building'"
+        }
+      ],
+      "resolution_chosen": "78800 gsf as total building area; 34000 gsf as project scope area",
+      "rationale": "The 78,800 SF figure from the cost estimate represents the total building footprint used for cost estimation (the study examined the entire building NH-139). The 34,000 SF in the DB RFP building requirements appears to be the area directly affected by or relevant to the power replacement scope, not the total building area. The SAES and study text both describe the full 2-story + penthouse building, consistent with 78,800 SF. Both values are recorded. Minor severity because the distinction is explainable."
+    },
+    {
+      "field_path": "facts.program_budget vs rom_construction_cost_study",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "SAES Section C1-C2",
+          "value": 3930000,
+          "context": "MILCON project cost/program amount from DD Form 1391; ECC $3,600,000 for backup power replacement scope"
+        },
+        {
+          "source": "100% Study Appendix D cost estimate",
+          "value": 25826000,
+          "context": "ROM estimate for full HVAC and electrical system replacement as recommended by study"
+        }
+      ],
+      "resolution_chosen": "Both values retained; they represent different scopes",
+      "rationale": "The $3.6-3.9M is the authorized MILCON funding for the discrete backup power replacement project (P-1401: Generator #3, UPS systems, PLCs). The $25.8M ROM is the study's estimate for comprehensive replacement of ALL aging HVAC and electrical systems across the entire building - a much larger future capital program. The study was commissioned to identify the full scope of needed work; the authorized MILCON only funds a portion. Major severity because it affects any proposal use of this project's 'value' - users must distinguish between the funded project value (~$3.9M) and the study-identified need ($25.8M)."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "cost_estimating": "narratives/disciplines/cost_estimating.md"
+    }
+  },
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "nsa_hampton_roads",
+    "norfolk_va",
+    "milcon",
+    "p1401",
+    "fy22_milcon",
+    "federal_intelligence",
+    "critical_facility",
+    "end_of_life_systems",
+    "building_study",
+    "db_rfp",
+    "emergency_power",
+    "ups_replacement",
+    "hvac_electrical_study",
+    "1964_vintage_building",
+    "sensitive_tenant_commands"
+  ]
+}

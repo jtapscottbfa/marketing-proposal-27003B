@@ -1,0 +1,430 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "mvla_climate_control_infrastructure",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/mvla_climate_control_infrastructure/2025.04.22 MVLA EXISTING CLIMATE CONTROL INFRASTRUCTURE FINAL.pdf",
+      "type": "drawing_set",
+      "sha256": "217b8f08a0b67d6da3f31fda41acbc60315f51ab9c763565bffc87424fbaead5",
+      "page_count": 2,
+      "included": true,
+      "notes": "BFA-produced drawing set; 2 sheets: G-001 Title Sheet and M-101 First Floor HVAC Plan. Final issue dated 04/21/2025. BFA project no. 25-013."
+    },
+    {
+      "path": "00_admin/reference_projects/mvla_climate_control_infrastructure/MVLA Existing Climate Control Infrastructure_p.pdf",
+      "type": "report",
+      "sha256": "5d38b13ab53ddf822fbf5193611ef7e4ca3c229e3903c2ad5bccda332fc0fe4d",
+      "page_count": 1,
+      "included": true,
+      "notes": "Draft/Preliminary display case location plan and existing active climate infrastructure survey drawing, dated 13 September 2024. Produced by Sandra Vicchio & Associates LLC (conservation consultant team). Marked DRAFT/PRELIMINARY. Survey date noted as 11/12/24."
+    },
+    {
+      "path": "00_admin/reference_projects/mvla_climate_control_infrastructure/Pages from 241011_GWMV Education Center Renovation IFC Set.pdf",
+      "type": "drawing_set",
+      "sha256": "f6b115865beed2e28fd70ef97586dccf27b6c4c17d0d920a5247c41c0dbf0e26",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single sheet M201 from the George Washington's Mt Vernon Education Center Renovation IFC Set (10/11/24). Produced by Cole&Denny Architects with Ingenium Group as MEP engineer. Project No. 21901.04. Provides context on existing HVAC equipment (VAVs, split systems) within the same building. Not a BFA-produced document; included as reference/context."
+    },
+    {
+      "path": "00_admin/reference_projects/mvla_climate_control_infrastructure/Fw_ New Project.msg",
+      "type": "correspondence",
+      "sha256": "ca90caa774d519905956cd73561daf1645dc1631fc09db44e4580f440f9244a5",
+      "page_count": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Outlook .msg email file; content not extractable by available tools. Likely a forwarded project assignment email."
+    },
+    {
+      "path": "00_admin/reference_projects/mvla_climate_control_infrastructure/New Project.msg",
+      "type": "correspondence",
+      "sha256": "ed473f877b3819af269b595c09e78f09ab470e58900c60a97620dfa940fba595",
+      "page_count": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Outlook .msg email file; content not extractable by available tools. Likely the original project assignment/intake email."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source documents present are: (1) BFA-produced drawing set (2 sheets), (2) a draft display case location/climate survey drawing from conservation consultants, (3) one reference mechanical sheet from a prior renovation IFC set, and (4) two .msg email files not readable by available tools. No BOD, SOW, contract, or specifications present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "MVLA Existing Climate Control Infrastructure",
+      "source": "drawing G-001 title block",
+      "quote": "MVLA EXISTING CLIMATE CONTROL INFRASTRUCTURE",
+      "corroboration": [
+        {
+          "source": "drawing G-001 title block",
+          "claim": "MVLA EXISTING CLIMATE CONTROL INFRASTRUCTURE",
+          "value": "MVLA Existing Climate Control Infrastructure",
+          "agrees": true
+        },
+        {
+          "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+          "claim": "MVLA Existing Climate Control Infrastructure — Display Case Requirements",
+          "value": "MVLA Existing Climate Control Infrastructure",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Mount Vernon Ladies' Association",
+      "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+      "quote": "Mount Vernon Ladies' Association",
+      "corroboration": [
+        {
+          "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+          "claim": "Mount Vernon Ladies' Association",
+          "value": "Mount Vernon Ladies' Association",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 project title",
+          "claim": "MVLA (acronym) in project title",
+          "value": "Mount Vernon Ladies' Association",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Mount Vernon Ladies' Association",
+      "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+      "quote": "Mount Vernon Ladies' Association",
+      "corroboration": [
+        {
+          "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+          "claim": "Mount Vernon Ladies' Association",
+          "value": "Mount Vernon Ladies' Association",
+          "agrees": true
+        }
+      ]
+    },
+    "facility_name": {
+      "value": "Donald W. Reynolds Museum and Education Center",
+      "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+      "quote": "Donald W. Reynolds Museum and Education Center",
+      "corroboration": [
+        {
+          "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+          "claim": "Donald W. Reynolds Museum and Education Center",
+          "value": "Donald W. Reynolds Museum and Education Center",
+          "agrees": true
+        },
+        {
+          "source": "Pages from 241011_GWMV Education Center Renovation IFC Set.pdf title block",
+          "claim": "George Washington's Mt Vernon Education Center Renovation",
+          "value": "George Washington's Mt Vernon Education Center Renovation (alternate name for the same facility)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Alexandria",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "3200 Mount Vernon Memorial Hwy, Alexandria, VA 22309",
+      "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+      "quote": "3200 Mount Vernon Memorial Hwy Alexandria, VA 22309",
+      "corroboration": [
+        {
+          "source": "MVLA Existing Climate Control Infrastructure_p.pdf title block",
+          "claim": "3200 Mount Vernon Memorial Hwy, Alexandria, VA 22309",
+          "value": "3200 Mount Vernon Memorial Hwy, Alexandria, VA 22309",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 title block",
+          "claim": "ALEXANDRIA, VA",
+          "value": "Alexandria, VA",
+          "agrees": true
+        },
+        {
+          "source": "Pages from 241011_GWMV Education Center Renovation IFC Set.pdf title block",
+          "claim": "3200 Mount Vernon Memorial Highway, Alexandria, VA 22309",
+          "value": "3200 Mount Vernon Memorial Hwy, Alexandria, VA 22309",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "25-013",
+      "source": "drawing G-001 title block, PROJECT NO. field",
+      "quote": "25-013",
+      "corroboration": [
+        {
+          "source": "drawing G-001 title block",
+          "claim": "25-013",
+          "value": "25-013",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "CONTRACT NO. field on G-001 title block is blank."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage stated in any source document. Drawing M-101 covers the first floor of the museum but no area calculation or GSF is noted."
+    },
+    "floor_count": {
+      "value": null,
+      "status": "missing",
+      "notes": "Drawing M-101 title is 'First Floor HVAC Plan'; the survey drawing references a 'lower level conservation machine' implying at least 2 levels. Exact floor count for the building not stated in sources."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_description": {
+      "value": "Mechanical engineering services for existing climate control infrastructure survey and design of new copper pipe distribution system serving conservation climate-controlled display cases throughout the first floor of the Donald W. Reynolds Museum and Education Center at George Washington's Mount Vernon. Scope includes: existing conditions survey of active climate control piping serving display cases; new 2\" copper pipe distribution mains; new 3/4\" copper pipe branch lines; manual ball valves at each display case technical compartment; 2x2x2\" copper tees; 12x12 wall-mounted access panels; and flexible silicon tube connections to individual display cases. Existing 3\" copper pipe from lower-level conservation machine serves as the supply source.",
+      "source": "drawing M-101 notes and legend; drawing G-001; MVLA Existing Climate Control Infrastructure_p.pdf",
+      "quote": null
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-04-22",
+        "source": "drawing set file name and drawing title block seal date",
+        "quote": null,
+        "notes": "Final drawing set dated 04/21/2025 per title block seal; file name '2025.04.22 MVLA EXISTING CLIMATE CONTROL INFRASTRUCTURE FINAL.pdf' suggests final issue was 2025-04-22."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_institutional"
+    ],
+    "program_type": [
+      "cultural_museum"
+    ],
+    "program_subtype": [
+      "cultural_historic"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "plumbing_specialty"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "plumbing_specialty"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope"
+    ],
+    "delivery_method": [
+      "standalone_project"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "mount_vernon",
+    "mvla",
+    "museum_conservation",
+    "display_case_climate_control",
+    "northern_virginia",
+    "alexandria_va",
+    "donald_w_reynolds_museum",
+    "george_washingtons_mount_vernon",
+    "historic_museum",
+    "conservation_hvac"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "DB (initials only)",
+      "role_on_project": "drafter",
+      "source": "drawing G-001 title block, Drawn by field"
+    },
+    {
+      "name": "BHA (initials only)",
+      "role_on_project": "checker",
+      "source": "drawing G-001 title block, Checked by field"
+    },
+    {
+      "name": "DM (initials only)",
+      "role_on_project": "project_engineer",
+      "source": "drawing G-001 title block, Project Engineer field"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "TITLE SHEET",
+        "discipline": "mechanical_engineering",
+        "source_file": "2025.04.22 MVLA EXISTING CLIMATE CONTROL INFRASTRUCTURE FINAL.pdf",
+        "reading_notes": "Title sheet for BFA drawing set. Contains vicinity map (regional, showing Fort Belvoir area and Route 1 access), location map (aerial/satellite showing the Mount Vernon estate grounds). Drawing index lists 2 sheets: G-001 (Title Sheet) and M-101 (First Floor HVAC Plan). Title block shows: firm Bowman Foster & Associates Inc, Hampton Roads & Washington Metro Area, (757)466-7400. BFA project no. 25-013, scale 'AS NOTED', contract no. blank. Seal dated 04/21/2025, Virginia PE license no. 048025. Drawn by DB, Checked by BHA, Project Engineer DM."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "FIRST FLOOR HVAC PLAN",
+        "discipline": "mechanical_engineering",
+        "source_file": "2025.04.22 MVLA EXISTING CLIMATE CONTROL INFRASTRUCTURE FINAL.pdf",
+        "reading_notes": "First floor HVAC plan at 3/32\" = 1'-0\" scale showing the museum's first floor gallery layout with named exhibit areas (Be Washington, Revolutionary War, Making the American Army, Coalition Builder, Mount Vernon, etc.). New 2\" copper pipe mains are shown routed from the upper left (where existing 3\" copper pipe from lower level conservation machine terminates) through the gallery corridors to reach display cases throughout the floor. New 3/4\" copper pipe serves branching connections at some areas. Manual ball valves (MBV) are located at the technical compartment under each display case (typ.). 2x2x2\" copper tees at branch takeoffs. 12x12 wall-mounted access panels. Flexible silicon tube connections from copper pipe down inside wall to flex connection for display case (typical). Construction Notes: (1) per 2018 IMC, 2021 IMC, 2018 IPC; (2) all existing and new pipe to be copper above ceiling; (3) manual ball valve at technical compartment under each display case. Legend: new 2\" copper pipe, manual ball valve, 2x2x2\" copper tee, point of connection new to existing, 12x12 wall access panel, existing display case symbol. Right side shows a detail inset: 'DISPLAY CASE DETAIL' depicting flexible tube connection from copper pipe to display case technical compartment. Large exhibit room (auditorium/theater) is visible in the plan."
+      },
+      {
+        "sheet_number": "A0",
+        "title": "DISPLAY CASE LOCATION PLAN (DRAFT)",
+        "discipline": "mechanical_engineering",
+        "source_file": "MVLA Existing Climate Control Infrastructure_p.pdf",
+        "reading_notes": "Preliminary/Draft document by Sandra Vicchio & Associates LLC (conservation consultant), dated 13 September 2024; survey date 11/12/24. Shows first floor plan of the Donald W. Reynolds Museum and Education Center with display case locations marked as orange squares. Blue lines indicate the existing active climate infrastructure routing. Red annotation indicates '3\" copper pipe from lower level conservation machine terminates here' at upper left. Photo inset shows the lower-level conservation machine (appears to be a refrigeration/humidity control unit with white cabinet housing, copper piping, and control panel). Labels identify display case IDs (0GH-C1A, 0GH-C1, 0GH-C2, 0GH-C3, 0GH-C4, 0GH-C8, 1EL-C1, 1EL-C2, 2LV-C2, 2LV-C3, 4RL-C1, 4RL-C2, 4RL-C3, 5MV-C1, 5MV-C2, 6CL-C1, 7PR-C1, 7PR-C2, 8FA-C1). Scale 1/16\" = 1'-0\". This document was produced prior to BFA's engagement and served as the basis for BFA's design."
+      },
+      {
+        "sheet_number": "M201",
+        "title": "MECHANICAL FIRST FLOOR NEW WORK",
+        "discipline": "mechanical_engineering",
+        "source_file": "Pages from 241011_GWMV Education Center Renovation IFC Set.pdf",
+        "reading_notes": "Reference sheet from a separate project: George Washington's Mt Vernon Education Center Renovation, IFC Set dated 10/11/24. Produced by Cole&Denny Architects (333 N. Fairfax St., Alexandria VA 22314) with Ingenium Group (Washington DC) as MEP engineer, Project No. 21901.04. Shows existing HVAC equipment serving the same building: VAV boxes VAV-1 through VAV-13+, SG (supply grille) units, SS-1 split system (indoor and outdoor units), refrigerant piping between indoor evaporator and outdoor condensing unit. Key notes: reconfigure existing sprinkler per NFPA 13; provide means of dust protection; re-route condensate drain. This drawing provides context on the building's primary HVAC system (VAV-based air distribution) which is separate from the conservation climate control system BFA is working on. Not a BFA document."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 2,
+        "unit": "floors_minimum",
+        "source": "drawing M-101 annotation; MVLA Existing Climate Control Infrastructure_p.pdf annotation",
+        "quote": null,
+        "sheets": [
+          "M-101",
+          "A0"
+        ],
+        "notes": "Both BFA's M-101 and the draft survey reference 'lower level conservation machine' implying at least a basement/lower level below the first floor shown. Minimum 2 levels confirmed; total building level count unknown."
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No GSF stated in any source. Building footprint visible in drawings but no area calculation provided."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing 3\" copper pipe from lower-level conservation machine (humidity/temperature control unit for museum conservation) — supply to first floor display cases",
+          "New 2\" copper pipe distribution mains — first floor (BFA design)",
+          "New 3/4\" copper pipe branch lines — first floor (BFA design)",
+          "Manual ball valves at each display case technical compartment",
+          "Flexible silicon tube final connections to display cases",
+          "VAV boxes VAV-1 through ~VAV-13 (existing primary HVAC, from Ingenium Group renovation design — not BFA scope)",
+          "Split system SS-1 (indoor and outdoor units) — existing primary HVAC, not BFA scope"
+        ],
+        "plumbing": [
+          "Copper piping system (conservation chilled/conditioned water distribution) — BFA scope"
+        ],
+        "electrical": [],
+        "fire_protection": [
+          "Existing sprinkler system referenced in M201 renovation notes (reconfigure per NFPA 13) — not BFA scope"
+        ]
+      },
+      "display_cases_served": {
+        "value": 19,
+        "source": "MVLA Existing Climate Control Infrastructure_p.pdf — display case ID count",
+        "quote": null,
+        "sheets": [
+          "A0"
+        ],
+        "notes": "Count of display case IDs visible on draft survey: 0GH-C1A, 0GH-C2, 0GH-C3, 0GH-C4, 0GH-C8, 1EL-C1, 1EL-C2, 2LV-C2, 2LV-C3, 4RL-C1, 4RL-C2, 4RL-C3, 5MV-C1, 5MV-C2, 6CL-C1, 7PR-C1, 7PR-C2, 8FA-C1 = 18 unique IDs (0GH-C1A and 0GH-C8 may be the same case). M-101 shows MBV locations for each case."
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

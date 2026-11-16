@@ -1,0 +1,9 @@
+# Electrical Engineering — Renovate for Human Performance Program, Building 3855E, JEBLCFS
+
+The electrical engineering scope for this project covered power distribution and lighting design for the conversion of Building 3855E at JEBLCFS from warehouse to a military training and human performance facility. Warehouse electrical infrastructure typically provides basic power and minimal lighting — both are inadequate for the demands of a gymnasium or human performance training environment, which requires power distribution to serve new HVAC equipment, higher-intensity lighting to meet gymnasium illumination standards, and branch circuit capacity for training equipment and building infrastructure.
+
+The electrical scope addressed these requirements through new power distribution and a lighting system designed for the training facility's operational profile. Sub-disciplines covered include electrical power distribution and electrical lighting. Lighting design for a human performance training facility must meet UFC criteria for gymnasium-type occupancies on military installations, including illumination levels, uniformity, and fixture types appropriate for athletic activity. Power distribution upgrades were coordinated with the mechanical scope to serve new HVAC equipment as well as the facility's building loads.
+
+The electrical design was developed as part of a design-build task order under the NAVFAC MIDLANT 8(a) MACC, with the design team serving as subconsultant to the design-build contractor. Specific panel schedules, switchgear ratings, lighting fixture selections, and circuit topology are not available in the source record — the electrical basis of design document was present but could not be extracted due to a legacy file format incompatibility. Specific design details should be confirmed from BFA internal project files for proposal use.
+
+<!-- INTERNAL: BOD .doc unreadable — zero electrical specifics available. -->

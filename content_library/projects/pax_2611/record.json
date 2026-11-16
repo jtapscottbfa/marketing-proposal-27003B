@@ -1,0 +1,608 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "21-042L",
+    "status": "present_with_value",
+    "source": "BOD cover page",
+    "quote": "BFA Project #21-042L"
+  },
+  "project_slug": "pax_2611",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/pax_2611/2025.10.06 .BLDG 2611 FINAL SUBMITTAL.BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "2d1c5e66b175f47cbbf840d5000fa754e9458702d032a6124f6a1f4646ef2809",
+      "included": true,
+      "notes": "Final submittal BOD dated October 6, 2025. Authored by BFA (Bowman Foster & Associates). Covers architectural, fire protection, mechanical, and electrical disciplines."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_2611/construction_statement_of_work_for_b-2611_project_final_copy.pdf",
+      "type": "sow",
+      "sha256": "ec4005ee657025e28a56f04c02fd90c805525601d866221f4519c7fc9a44f0ef",
+      "included": true,
+      "notes": "Construction SOW dated 15 January 2025. Issued by NAWCAD ISE. Covers full scope of construction activities including demolition, SCIF wall construction, MEP, generator, and environmental requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_2611/N0042125R0027.pdf",
+      "type": "sow",
+      "sha256": "f3ab1cb7725a25272bf1ad585818f4837b689234b0d3aa17d1c11c67fb549cc9",
+      "included": true,
+      "notes": "Federal solicitation/RFP N0042125R0027, issued 13 Feb 2025 by NAWCAD Procurement Group. Standard Form 1442. 8(a) sole source, magnitude $6M–$6.5M. Incorporates the construction SOW and FAR/DFARS clauses. 72 pages."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_2611/B2611 Preliminary Baseline Schedule 3-4-25.pdf",
+      "type": "schedule",
+      "sha256": "bec56dc6cf19292dbe45e468e6e407c76d7497da300e30c005df1feb8434c3db",
+      "included": true,
+      "notes": "Preliminary baseline schedule dated 3-4-25. 214 calendar days total; construction phase 212 days (5/6/25–2/25/26); project complete milestone 3/20/26."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_2611/Existing Drawings B-2611.pdf",
+      "type": "drawing_set",
+      "sha256": "6a356f2d56e85fd586761ce4ab4be1e1db6cda5605841591a62bd2fb08851677",
+      "included": true,
+      "notes": "Existing building drawings by The Benham Group (original design circa 2002, per project number 06990500). 4 sheets: A-2 (Roof Plan/Details), A-3 (Elevations/Sections), S1 (Foundation/Framing Plans), S2 (Foundation/Structural Details). Project name on title block: 'Radar Operation and Range Tracking, Patuxent Naval Air Station, Project C12-444'."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD, construction SOW, solicitation, schedule, and existing drawings present. No executed contract document, no construction drawings (new design drawings not in package — contractor was responsible for producing them under design-build), no specifications book."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Renovation and Security Upgrades to Building 2611, NAS Patuxent River",
+      "source": "BOD cover page",
+      "quote": "RENOVATION AND SECURITY UPGRADES TO BUILDING 2611",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "RENOVATION AND SECURITY UPGRADES TO BUILDING 2611",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "Project Title: Renovations and Security Upgrades to Building 2611",
+          "agrees": true
+        },
+        {
+          "source": "N0042125R0027 CLIN 0001",
+          "claim": "AD9 B2611 SAPF Upgrade / B2611 SAPF Upgrade NISE Project 5/6th Gen Fighter Mission Control Center",
+          "agrees": true,
+          "notes": "CLIN description adds 'SAPF Upgrade' and 'NISE Project' context not in BOD title"
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Air Warfare Center Aircraft Division (NAWCAD), NAS Patuxent River",
+      "source": "SOW cover page",
+      "quote": "United States Navy Naval Air Warfare Center Aircraft Division Naval Air Station Patuxent River",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "United States Navy Naval Air Warfare Center Aircraft Division Naval Air Station Patuxent River",
+          "agrees": true
+        },
+        {
+          "source": "N0042125R0027 block 7",
+          "claim": "NAWCAD PROCUREMENT GROUP, 21983 BUNDY ROAD, BLDG 441, PATUXENT RIVER MD 20670",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / Department of the Navy",
+      "source": "N0042125R0027 Section 00 70 00",
+      "quote": "The Department of the Navy (DON)",
+      "corroboration": [
+        {
+          "source": "N0042125R0027 Section 00 70 00",
+          "claim": "The Department of the Navy (DON)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "Naval Air Station Patuxent River, Building 2611",
+      "facility_address": "43871 Airport View Dr, Hollywood, Maryland 20636-3109",
+      "source": "N0042125R0027 block 10 and SOW",
+      "quote": "43871 Airport View DR Hollywood, Maryland 20636-3109, United States",
+      "corroboration": [
+        {
+          "source": "N0042125R0027 block 10",
+          "claim": "43871 Airport View DR Hollywood, Maryland 20636-3109",
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "Patuxent River NAS",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-042L",
+      "source": "BOD cover page",
+      "quote": "BFA Project #21-042L"
+    },
+    "project_number_client": {
+      "value": "Section 233 Authority Project / Work Request #1766 (24-0006)",
+      "source": "SOW cover page",
+      "quote": "Section 233 Authority Project / Work request # 1766 (24-0006)",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "Section 233 Authority Project / Work request # 1766 (24-0006)",
+          "agrees": true
+        },
+        {
+          "source": "N0042125R0027 block 5",
+          "claim": "1301227521",
+          "agrees": false,
+          "notes": "Solicitation block 5 shows Purchase Request Number 1301227521, a different identifier (procurement requisition number vs. project work request number)"
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N0042125R0027",
+      "status": "present_with_value",
+      "source": "N0042125R0027 cover page",
+      "quote": "N0042125R0027",
+      "notes": "This is the solicitation/RFP number. No executed contract number found in available documents; the awarded contract number would differ."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 3900,
+      "unit": "gsf",
+      "source": "BOD Architectural section",
+      "quote": "renovating approximately 3900 SF of office area for Building 2611",
+      "corroboration": [
+        {
+          "source": "BOD Architectural section",
+          "claim": "approximately 3900 SF",
+          "value": 3900,
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "approximately 3900 SF of office area for Building 2611",
+          "value": 3900,
+          "agrees": true
+        },
+        {
+          "source": "drawing S1 (Foundation Plan)",
+          "claim": "Building footprint 80'-0\" × 48'-0\" = 3,840 SF computed",
+          "value": 3840,
+          "agrees": false,
+          "notes": "Drawing foundation plan dimensions yield 3,840 SF; BOD rounds to approximately 3,900 SF. Difference of ~60 SF (1.6%)."
+        },
+        {
+          "source": "BOD Fire Protection section, IBC code analysis table",
+          "claim": "Floor Area: Level 1 = ~3,850 SF",
+          "value": 3850,
+          "agrees": false,
+          "notes": "Fire protection code table lists 'Level 1: ~3,850' — intermediate value between drawing-computed 3,840 and BOD general statement of 3,900 SF."
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 1,
+      "source": "BOD Fire Protection section",
+      "quote": "Building 2611 is a single story in height.",
+      "corroboration": [
+        {
+          "source": "BOD Fire Protection section",
+          "claim": "Building 2611 is a single story in height",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.0",
+          "claim": "single level, free standing CMU / brick veneer structure",
+          "agrees": true
+        },
+        {
+          "source": "drawing A-3 (Section)",
+          "claim": "Section shows single-story construction with steel joists and roof deck above",
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in source documents. Construction magnitude range only."
+    },
+    "construction_cost_magnitude": {
+      "value_min": 6000000,
+      "value_max": 6500000,
+      "currency": "USD",
+      "source": "N0042125R0027 Section 00 21 00",
+      "quote": "The range of magnitude of construction for this procurement is between $6,000,000.00 and $6,500,000.00.",
+      "notes": "This is the government-stated magnitude estimate in the solicitation, not an awarded contract value. No awarded contract value found in available documents.",
+      "corroboration": [
+        {
+          "source": "N0042125R0027 Section 00 21 00",
+          "claim": "$6,000,000.00 to $6,500,000.00",
+          "agrees": true
+        }
+      ]
+    },
+    "building_construction_year": {
+      "value": 2000,
+      "source": "SOW §3.8.1",
+      "quote": "The existing building was constructed in the year 2000.",
+      "corroboration": [
+        {
+          "source": "SOW §3.8.1",
+          "claim": "constructed in the year 2000",
+          "agrees": true
+        }
+      ]
+    },
+    "existing_building_description": {
+      "value": "Single-story, free-standing CMU/brick veneer structure, 80'×48' footprint (approximately 3,840–3,900 SF), steel joist framing, modified bitumen roof (R=11). Originally designed as a Radar Operation and Range Tracking facility (Benham Group, project C12-444). Existing use: office space with co-ed bathroom.",
+      "source": "computed from SOW §3.0, drawing S1, and Existing Drawings title block",
+      "quote": null
+    }
+  },
+  "phases": {
+    "design": {
+      "notes": "BFA prepared the Basis of Design as the A-E subconsultant on the design-build contractor's team. Design was contractor-led (design-build). BFA's design contract details (value, dates) not available in source documents.",
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-10-06",
+        "source": "BOD cover page",
+        "quote": "FINAL SUBMITTAL October 6, 2025",
+        "notes": "Final BOD submittal date. Actual IFC drawings were scheduled per baseline schedule for August 2025."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No awarded contract value in source documents. Solicitation magnitude: $6M–$6.5M."
+      },
+      "awarded_date": {
+        "value": "2025-03-04",
+        "source": "Baseline Schedule, Task 2 (Project Award)",
+        "quote": "Project Award: Tue 3/4/25",
+        "corroboration": [
+          {
+            "source": "Baseline Schedule Task 2",
+            "claim": "Tue 3/4/25",
+            "agrees": true
+          },
+          {
+            "source": "N0042125R0027 CLIN 0001 delivery",
+            "claim": "POP 06-FEB-2025 TO 30-SEP-2025",
+            "agrees": false,
+            "notes": "CLIN delivery shows POP start 06-FEB-2025 (solicitation issue date), but schedule shows award date 3/4/25. The 2/6/25 date is the solicitation issue date, not award. Minor discrepancy explained by procurement timeline."
+          }
+        ]
+      },
+      "started_date": {
+        "value": "2025-05-06",
+        "source": "Baseline Schedule, Task 76 (Construction start)",
+        "quote": "Construction: Tue 5/6/25"
+      },
+      "completion_date": {
+        "value": "2026-03-20",
+        "source": "Baseline Schedule, Task 163 (Project Complete)",
+        "quote": "Project Complete: Fri 3/20/26",
+        "corroboration": [
+          {
+            "source": "Baseline Schedule Task 163",
+            "claim": "Fri 3/20/26",
+            "agrees": true
+          },
+          {
+            "source": "N0042125R0027 block 11",
+            "claim": "complete within 210 calendar days after receiving notice to proceed",
+            "agrees": true,
+            "notes": "210 days from estimated NTP ~March 4 = approximately October 2025, but the schedule shows project complete March 2026 (214 days total from award including design phase overlap). The construction phase alone is 212 days."
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": 210,
+        "source": "N0042125R0027 block 11",
+        "quote": "complete it within 210 calendar days after receiving notice to proceed"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_secure",
+      "military_defense"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "electrical_grounding_lightning",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_alarm",
+      "security_scif_classified"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "electrical_grounding",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_fire_alarm",
+      "security_acs",
+      "security_intrusion",
+      "envelope_roofing",
+      "interior_partitions",
+      "interior_finishes"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "finishes_scope",
+      "thermal_roofing",
+      "openings_doors_frames",
+      "concrete_scope",
+      "masonry_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_8a_sole_source"
+    ],
+    "procurement_type": [
+      "federal_8a_sole_source"
+    ],
+    "award_type": [
+      "sole_source_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "sub_to_contractor"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nawcad",
+    "nas_patuxent_river",
+    "scif",
+    "sapf",
+    "icd_705",
+    "tempest",
+    "rf_shielding",
+    "design_build",
+    "8a_sole_source",
+    "maryland",
+    "federal_dod",
+    "military_secure_facility",
+    "generator_installation",
+    "secure_communications"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "A-2",
+        "title": "ROOF PLAN / DETAILS",
+        "discipline": "architecture",
+        "drawing_set": "Existing Drawings B-2611",
+        "original_designer": "The Benham Group",
+        "reading_notes": "Existing building roof plan showing single-story CMU structure with modified bitumen roofing over steel deck and rigid insulation (R=11). Four scuppers with downspouts on longitudinal sides. Roof-mounted mechanical equipment (exhaust fan noted). Details show door head, jamb, threshold, casework/equipment mounting, typical full-height wall, and downspout/scupper details. Title block references 'Radar Operation and Range Tracking, Patuxent Naval Air Station, Project C12-444' — original building use before SCIF conversion. Sheet number A-2 of what appears to be a set of at least 3 (reference to A-3)."
+      },
+      {
+        "sheet_number": "A-3",
+        "title": "ROOF PLAN / DETAILS (Elevations and Sections)",
+        "discipline": "architecture",
+        "drawing_set": "Existing Drawings B-2611",
+        "original_designer": "The Benham Group",
+        "reading_notes": "Four exterior elevations (West, North, East, South) showing single-story CMU/brick veneer building. West elevation shows main entry with aluminum frame windows. Brick face with soldier course at parapet. Metal flashing at expansion joints and top of masonry. Two sections (longitudinal and transverse) show interior layout: open office, MR lab, POP room. Suspended acoustic tile ceiling with metal stud framing to roof deck. 8' CMU walls with 4' brick face. Depressed slab at entry. Building appears roughly rectangular. Wall section detail shows 8\" CMU, R-14 batt insulation in metal stud framing, ½\" gyp bd. Parapet with 24 GA aluminum reglet. Steel deck with modified bitumen roof (R=11). Note: original spaces ('open office', 'MR lab', 'POP room') correspond to functions that the SCIF renovation will reconfigure."
+      },
+      {
+        "sheet_number": "S1",
+        "title": "FOUNDATION PLAN / ROOF FRAMING PLAN",
+        "discipline": "structural_engineering",
+        "drawing_set": "Existing Drawings B-2611",
+        "original_designer": "The Benham Group",
+        "reading_notes": "Foundation plan shows 80'-0\" × 48'-0\" overall building footprint. Concrete slab on grade with 6\" C.I.P. slab over base course. Typical masonry wall reinforcing at 36\" O.C. vertically. Typical door and window cell reinforcing noted. Step footings at depressed slab entry. Roof framing plan shows 28\" K-series open web steel joists at regular spacing (appears to be 5 equal spaces on the long dimension and 3 equal spaces on the short dimension per reference lines). Joist legend: 28 IN., 1K series, Total Load 2K PLF, Snow Load 80 PLF, Net Uplift -21 PLF. Design loads: Roof LL 25 PSF, Dead Load 15 PSF, Wind Zone I. Soils investigation by Bob Taylor Engineering, Lexington Park MD; finished grade 2'-6\" below finish grade; soil profile SE (assumed)."
+      },
+      {
+        "sheet_number": "S2",
+        "title": "FOUNDATION / STRUCTURAL DETAILS",
+        "discipline": "structural_engineering",
+        "drawing_set": "Existing Drawings B-2611",
+        "original_designer": "The Benham Group",
+        "reading_notes": "Foundation and structural details. Typical foundation at depressed slab, slab step, foundation at depressed slab (door opening), typical lintel, typical foundation wall section. Structural steel details: joist bearing, ledger angle, roof opening frame, metal deck to joist. General notes confirm CMU 8\" block, hollow concrete units ASTM C90, mortar type S, grout 2000 psi. All concrete cast-in-place min 3000 psi (28 days). Open web steel joists per SJI specifications. Metal roof deck #20 gauge per Steel Deck Institute, SDI-DI 3.235 N. 3."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 3840,
+        "unit": "gsf",
+        "source": "drawing S1, Foundation Plan dimensions",
+        "quote": null,
+        "sheets": [
+          "S1"
+        ],
+        "notes": "Computed from plan dimensions 80'-0\" × 48'-0\". BOD states 'approximately 3900 SF'; fire protection table states '~3,850'. Minor discrepancy; 3,840 SF is the most precise measurement from drawings."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawings A-3 (sections) and BOD",
+        "quote": null,
+        "sheets": [
+          "A-3"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "2× 7.5-ton rooftop heat pump units with electric backup heat (serving MCR-1 and MCR-2)",
+          "1× 4-ton rooftop heat pump with electric backup heat (serving reception/restrooms)",
+          "1× 4-ton rooftop heat pump with electric backup heat (serving workstation area of server room)",
+          "1× 10-ton ceiling-mounted CRAC unit (serving server rack room)",
+          "1× 1.5-ton wall-mounted mini-split split system (serving processing room)",
+          "1× 3.5 MBh unit heater + wall exhaust fan (serving electrical room)",
+          "Ductwork with man-bars, waveguides, and dielectric breaks per ICD 705 TEMPEST requirements",
+          "TAB (test, adjust, balance) included"
+        ],
+        "electrical": [
+          "360 kW, 120/208V, 3P 4W diesel generator on elevated reinforced concrete slab, 160-hour runtime",
+          "1200A 208V 4-pole Automatic Transfer Switch (ATS)",
+          "20-minute UPS (continuous duty, three-phase, online double conversion, 208V input/output)",
+          "New electrical room addition (detached CMU/stucco structure) with ATS and UPS",
+          "LED recessed lighting, 40 foot-candle target throughout",
+          "Occupancy sensors and dimmers on all circuits",
+          "Red rotary/flashing beacon lights (uncleared personnel warning)",
+          "LED exit and emergency lighting",
+          "Dielectric breaks on all incoming electrical conduit at secure boundary",
+          "Class II lightning protection system, 4 down conductors with 3 ground rods at each building corner",
+          "Surge protection device on main electrical service",
+          "Grounding system ≤5 ohms resistance",
+          "Cable trays above ceiling for low-voltage pathways",
+          "RF-treated and surface-mounted conduits/boxes within secure areas"
+        ],
+        "plumbing": [
+          "New ADA-compliant men's and women's bathrooms (redesigned from existing single co-ed)",
+          "3 water closets with automatic flush valves",
+          "1 urinal with automatic flush valve",
+          "2 wall-hung lavatories with automatic faucets",
+          "1 kitchen sink",
+          "1 mop sink",
+          "1 electric water heater (6000W) with mixing valve and expansion tank",
+          "1 ADA drinking fountain/bottle filler",
+          "New sanitary and domestic water rough-in (concrete slab cut for new underground piping)",
+          "Existing water service/meter/backflow preventer reused"
+        ],
+        "fire_protection": [
+          "New addressable fire alarm and mass notification system (existing demolished)",
+          "1 addressable FACP with voice evacuation and battery backup",
+          "1 DMP digital communicator (existing DMP panel retained and integrated)",
+          "1 Federal Signal UVRI-B radio transmitter with antenna",
+          "3 programmable text message signs",
+          "4 addressable pull stations",
+          "12 addressable smoke detectors",
+          "6 duct detectors",
+          "5 self-amplifying speakers (for secure spaces)",
+          "7 alert strobes",
+          "3 weatherproof speakers",
+          "Dielectric breaks on fire alarm circuits at secure space perimeter",
+          "No wet sprinkler system (existing building below UFC 3-600-01 threshold)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD General and Architectural sections",
+          "value": 3900,
+          "claim": "approximately 3900 SF"
+        },
+        {
+          "source": "BOD Fire Protection code analysis table",
+          "value": 3850,
+          "claim": "Floor Area Level 1: ~3,850 SF"
+        },
+        {
+          "source": "drawing S1, Foundation Plan (computed)",
+          "value": 3840,
+          "claim": "80'-0\" × 48'-0\" = 3,840 SF"
+        }
+      ],
+      "resolution_chosen": "BOD Architectural section (3,900 SF for text representation; 3,840 SF used as drawing-derived value in drawings.facts_derived block)",
+      "rationale": "All three values are consistent to within ~1.6%. BOD rounds to 3,900 SF as an approximate; fire protection code analysis rounds to ~3,850; drawings yield the precise 3,840 SF footprint. For the facts.square_footage field, 3,900 SF is chosen per the BOD's expressed scope statement. Drawings block uses 3,840 SF as the most precise measurement. This is a minor discrepancy explained by rounding."
+    },
+    {
+      "field_path": "facts.construction_cost_magnitude",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "N0042125R0027 Section 00 21 00 (Instructions to Offeror)",
+          "value": "6000000–6500000",
+          "claim": "range of magnitude between $6,000,000.00 and $6,500,000.00"
+        }
+      ],
+      "resolution_chosen": "N0042125R0027",
+      "rationale": "Only one source provides a cost figure; it is an estimate range from the solicitation, not an awarded contract value. No conflict — single source only. Flagged to note that the actual awarded contract value is not in available documents."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

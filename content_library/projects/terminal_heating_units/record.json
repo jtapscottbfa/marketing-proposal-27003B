@@ -1,0 +1,376 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "terminal_heating_units",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/UFGS 23 82 00 Terminal Htg Units SOW.pdf",
+      "type": "sow",
+      "sha256": "aae02acad2fb183b4bcc04c64bd0d62ae3c56d4ec2ee8802d5b6504ef43c7bab",
+      "included": true,
+      "notes": "Statement of A-E Services for UFGS 23 82 00 development. AE Contract N6247019D5013. Primary scope document."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/Bowman Foster Assoc RFP Letter.pdf",
+      "type": "correspondence",
+      "sha256": "bc87bdd3406034abb947c3519867479dcab5572ac9070bf9478f69f9ff96f1f2",
+      "included": true,
+      "notes": "NIBS RFP transmittal letter to Bowman Foster & Associates, signed by Kyle Barry, Director Technical Solutions. Proposal due June 15, 2023. Firm Fixed Price anticipated."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/NAVFAC Contract N6247019D5013 Contract Clauses.pdf",
+      "type": "contract",
+      "sha256": "6adcd93e8ad835d1ccefbb6383fdc447fffb4e87421ce07b534af22223b027bb",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "NAVFAC IDIQ Contract N6247019D5013 contract clauses. PDF text extraction returned binary-garbled output — file appears encrypted or DRM-protected. Content not readable by extractor."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/2025.09.02 TERMINAL HEATING UNITS SPECIFICATION.pdf",
+      "type": "spec_book",
+      "sha256": "5663c039b5c642945ed645720562d527ff8b78f274909bb0eced71283ea12607",
+      "included": true,
+      "notes": "Final delivered UFGS 23 82 00.00 20 specification (Terminal Heating Units), dated 2025-09-02. 28 pages. This is the primary project deliverable — the revised tri-service UFGS spec merging Army, Navy, and Air Force requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/2025.09.02 TERMINAL HEATING UNITS SPECIFICATION.pdf.docx",
+      "type": "spec_book",
+      "sha256": "bfaf2ae32fa37a615549ed82fc3fd16c3c4a397074438476b5864f76d11e383f",
+      "included": true,
+      "notes": "DOCX source version of the final specification. Substantially identical content to the PDF version above. Required submittal format (Word/SpecsIntact) per SOW §9."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/2025.06.19 Terminal Heating Units - Matrix.pdf",
+      "type": "report",
+      "sha256": "eff7e0717c8cb1a2783a506681e2fa11f2ec81fa8ed9f0abdcf8702f9f392965",
+      "included": true,
+      "notes": "Cross-Reference Outline Matrix Table — intermediate deliverable comparing UFGS 23 82 00, UFGS 23 80 20.00 10, UFGS 23 82 00.00 20, and UFGS 23 83 00.00 20. Dated 2025-06-19. 8 pages."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/2025.09.02 TERMINAL HEATING UNITS CCR RESPONSE.pdf",
+      "type": "report",
+      "sha256": "e4af8ee6b3b0dbb1c23df6dafb16d0eed2d63236637c15780a2322df5496240d",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "CCR (Criteria Change Request) Response document, dated 2025-09-02. PDF text extraction returned heavily garbled output (likely encrypted/protected). Only small readable fragments visible including BFA annotations and RESOLUTION statements referencing radiant efficiency updates and reference standard changes (UL1025 → UL2021/UL1278). Full content not extractable."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/terminal_heating_units/Binder1 - Attachment A.pdf",
+      "type": "report",
+      "sha256": "8b4d9dee29b8e2bb11c5ff336d562bce25f9fa5e96be66d2fa4961c08154d6a8",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Attachment A — CMS (Criteria Management System) Outstanding CCR Report. PDF text extraction returned heavily garbled output. Content not extractable by pdftotext. Appears to be the CCR log referenced in SOW §5.5 and §5.1.1.1.3."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawings present or applicable — this project produces a specification document as its deliverable, not a constructed facility. BOD not applicable to spec-writing A-E task. Three of eight source files returned garbled text (encrypted PDFs)."
+  },
+  "facts": {
+    "project_name": {
+      "value": "UFGS 23 82 00: Terminal Heating Units (Specification Development)",
+      "source": "SOW p.1",
+      "quote": "Project Title: UFGS 23 82 00: Terminal Heating Units",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "UFGS 23 82 00: Terminal Heating Units",
+          "value": "UFGS 23 82 00: Terminal Heating Units",
+          "agrees": true
+        },
+        {
+          "source": "Bowman Foster RFP Letter p.1",
+          "claim": "Request for Proposal for UFGS 23 82 00 Terminal Heating Units",
+          "value": "UFGS 23 82 00 Terminal Heating Units",
+          "agrees": true
+        },
+        {
+          "source": "Specification PDF header",
+          "claim": "SECTION 23 82 00.00 20 — TERMINAL HEATING UNITS",
+          "value": "Terminal Heating Units",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "National Institute of Building Sciences (NIBS)",
+      "source": "Bowman Foster RFP Letter p.1",
+      "quote": "National Institute of Building Sciences (NIBS) requests your proposal.",
+      "corroboration": [
+        {
+          "source": "Bowman Foster RFP Letter p.1",
+          "claim": "National Institute of Building Sciences (NIBS) requests your proposal.",
+          "value": "National Institute of Building Sciences (NIBS)",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.2",
+          "claim": "Mr. Emil T. Consolacion, P.E., Code DC43/757-322-4205",
+          "value": "NAVFAC (via NIBS contract vehicle)",
+          "agrees": true,
+          "note": "NAVFAC is the underlying federal client; NIBS is the contracting intermediary holding the NAVFAC A-E IDIQ"
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC) Atlantic",
+      "source": "SOW p.1",
+      "quote": "AE Contract No.: N6247019D5013",
+      "corroboration": [
+        {
+          "source": "SOW p.2",
+          "claim": "Mr. Emil T. Consolacion, P.E., Code DC43/757-322-4205 (Internet E-Mail: emil.t.consolacion.civ@us.navy.mil)",
+          "value": "NAVFAC Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "SOW p.6",
+      "quote": "Kick-off meeting (Phone and/or Microsoft Teams/Norfolk, VA)",
+      "corroboration": [
+        {
+          "source": "SOW p.6",
+          "claim": "Kick-off meeting (Phone and/or Microsoft Teams/Norfolk, VA)",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "N6247019D5013",
+      "source": "SOW p.1",
+      "quote": "AE Contract No.: N6247019D5013",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "AE Contract No.: N6247019D5013",
+          "value": "N6247019D5013",
+          "agrees": true
+        },
+        {
+          "source": "Bowman Foster RFP Letter — title",
+          "claim": "NAVFAC Contract N6247019D5013",
+          "value": "N6247019D5013",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N6247019D5013",
+      "source": "SOW p.1",
+      "quote": "AE Contract No.: N6247019D5013"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "explicit_null",
+      "source": "SOW p.1",
+      "quote": "Task Order: TBD"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "Not applicable. Project is a specification-writing A-E task; no facility is being constructed."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "Schedule of Fees section in SOW left blank: 'To be filled in at conclusion of negotiations on A&E contracts.'"
+    },
+    "project_description": {
+      "value": "A-E professional services task to develop an updated tri-service Unified Facilities Guide Specification (UFGS 23 82 00) for Terminal Heating Units. The work merges NAVFAC Navy UFGS-23 80 20.00 10 (Gas-Fired Heating Equipment), Army UFGS-23 82 00.00 20 (Terminal Heating Units), and Army UFGS-23 83 00.00 20 (Electric Space Heating Equipment) into a unified tri-service specification. Deliverables include the revised UFGS, a cross-reference comparison matrix, CCR (Criteria Change Request) resolutions, and facilitated review meetings.",
+      "source": "SOW §5.1.1",
+      "quote": "This project consists of all work necessary to develop the task. The final product will serve as design/construction document for facility designers/contractors.",
+      "corroboration": [
+        {
+          "source": "SOW §5.1.1.1.1",
+          "claim": "Merge Reference (k) to Reference (j), and also merge terminal equipment paragraphs in Reference (l) to Reference (j). Incorporate current technologies, applicable industry standards and publications, and update energy/performance requirements.",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "source": "SOW §7",
+        "quote": "Schedule of Fees and Options: (To be filled in at conclusion of negotiations on A&E contracts)",
+        "notes": "Fee was TBD at SOW issuance; actual negotiated fee not found in any readable source document."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-09-02",
+        "source": "Specification PDF filename and header",
+        "quote": null,
+        "notes": "Inferred from deliverable date '2025.09.02' on final specification and CCR response documents. Not a contractually-stated completion date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW §8 states specific dates to be established during negotiations."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": null
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "civic_government"
+    ],
+    "program_subtype": [
+      "civic_office"
+    ],
+    "disciplines": [
+      "specifications_writing",
+      "mechanical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls"
+    ],
+    "building_systems": [],
+    "construction_scope": [],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac_atlantic",
+    "nibs",
+    "ufgs_development",
+    "specifications_writing",
+    "tri_service",
+    "terminal_heating_units",
+    "criteria_development",
+    "norfolk_va"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Michael Dixon",
+      "role_on_project": "principal_in_charge",
+      "notes": "Addressee on NIBS RFP letter to Bowman Foster & Associates"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "notes": "No drawings applicable. This project produces a specification document, not a constructed facility. No drawing sets exist or are expected."
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.client_name / facts.owner_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Bowman Foster RFP Letter",
+          "value": "National Institute of Building Sciences (NIBS) — contracting entity sending the RFP"
+        },
+        {
+          "source": "SOW p.1",
+          "value": "NAVFAC Atlantic — underlying federal client, holds the A-E IDIQ N6247019D5013"
+        }
+      ],
+      "resolution_chosen": "client_name = NIBS (direct contracting party); owner_name = NAVFAC Atlantic (underlying federal principal)",
+      "rationale": "NIBS is the NAVFAC-affiliated organization that issued the RFP to Bowman Foster and holds the contract vehicle. NAVFAC Atlantic is the federal agency that funded and technically directed the work. Both are legitimately 'clients' in different senses. The distinction is recorded by using client_name for direct contract holder and owner_name for the federal principal."
+    },
+    {
+      "field_path": "taxonomy.program_type",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "project nature",
+          "value": "No facility program applies — this is a pure A-E specifications-writing task with no constructed facility"
+        },
+        {
+          "source": "vocab constraint",
+          "value": "program_type.yaml has no entry for 'specification development' or 'criteria development'"
+        }
+      ],
+      "resolution_chosen": "civic_government / civic_office as placeholder",
+      "rationale": "The closest existing vocab entry; the underlying purpose is federal facilities policy/criteria development. A vocab gap exists — see retro."
+    },
+    {
+      "field_path": "taxonomy.delivery_method",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "project nature",
+          "value": "Professional services A-E task order — no design-bid-build or other facility-delivery method applies"
+        },
+        {
+          "source": "vocab constraint",
+          "value": "delivery_method.yaml has no entry for standalone A-E professional services / spec development"
+        }
+      ],
+      "resolution_chosen": "design_bid_build as placeholder",
+      "rationale": "No delivery method is truly applicable. Flagged as vocab gap in retro. design_bid_build chosen as most neutral placeholder."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "specifications_writing": "narratives/disciplines/specifications_writing.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

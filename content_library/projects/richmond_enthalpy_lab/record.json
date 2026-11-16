@@ -1,0 +1,458 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "richmond_enthalpy_lab",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/richmond_enthalpy_lab/Enthalpy Analytics Labs - SOW.pdf",
+      "type": "sow",
+      "sha256": "ce97038c09cbe5243a65017208ee3fc8f6edb6db7c633308a67ee8d529a4a019",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/richmond_enthalpy_lab/MECHANICAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "e1bf3287bb4aa1f5e1287ab5be2ea78283b0541e96e72f07800d2381e74e9321",
+      "included": true,
+      "notes": "Single-sheet PDF; sheet M-001 (legend, abbreviations, general notes for mechanical). Sheet M-501 (equipment schedule) and floor plan sheets referenced but not present in this file."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/richmond_enthalpy_lab/ELECTRICAL DRAWINGS 11-12-21.pdf",
+      "type": "drawing_set",
+      "sha256": "e488ee3a95b203e2e32a23be0e97648c0dd43ac8f0bc5bba99f5a0d8b818d05d",
+      "included": true,
+      "notes": "Single-sheet PDF; sheet E-001 (legend, abbreviations, general notes for electrical). References sheet L-601 (lighting fixture schedule) and panelboard schedules — not present in this file."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "Only SOW and two partial drawing sets (legend/notes sheets only; floor plan, schedule, and detail sheets absent from PDFs). No BOD, no spec book, no contract documents present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Enthalpy Analytics Labs – Lab Admin Area Renovations",
+      "source": "SOW title / drawing title block",
+      "quote": "Enthalpy Analytics Labs – 1470 East Parham Rd. Richmond, Va. - Statement of Work",
+      "corroboration": [
+        {
+          "source": "SOW title line",
+          "claim": "Enthalpy Analytics Labs – 1470 East Parham Rd. Richmond, Va. - Statement of Work",
+          "value": "Enthalpy Analytics Labs",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block M-001",
+          "claim": "ENTHALPY ANALYTICS – LAB ADMIN AREA RENOVATIONS",
+          "value": "Enthalpy Analytics – Lab Admin Area Renovations",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block E-001",
+          "claim": "ENTHALPY ANALYTICS – LAB ADMIN AREA RENOVATIONS",
+          "value": "Enthalpy Analytics – Lab Admin Area Renovations",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Enthalpy Analytics Labs",
+      "source": "SOW title line",
+      "quote": "Enthalpy Analytics Labs – 1470 East Parham Rd. Richmond, Va. - Statement of Work",
+      "corroboration": [
+        {
+          "source": "SOW title line",
+          "claim": "Enthalpy Analytics Labs",
+          "value": "Enthalpy Analytics Labs",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Enthalpy Analytics Labs",
+      "source": "SOW title line",
+      "quote": "Enthalpy Analytics Labs – 1470 East Parham Rd. Richmond, Va. - Statement of Work",
+      "corroboration": [
+        {
+          "source": "SOW title line",
+          "claim": "Enthalpy Analytics Labs",
+          "value": "Enthalpy Analytics Labs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Richmond",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "1470 East Parham Rd, Richmond, VA",
+      "source": "SOW title line",
+      "quote": "1470 East Parham Rd. Richmond, Va.",
+      "corroboration": [
+        {
+          "source": "SOW title line",
+          "claim": "1470 East Parham Rd. Richmond, Va.",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block M-001",
+          "claim": "RICHMOND",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block E-001",
+          "claim": "RICHMOND",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "corroboration": [
+        {
+          "source": "SOW",
+          "claim": "No square footage stated",
+          "agrees": null,
+          "notes": "SOW describes 'existing warehouse area' but gives no GSF figure"
+        },
+        {
+          "source": "Drawing M-001 (legend/notes sheet)",
+          "claim": "No code summary or area tabulation visible on legend sheet; floor plan sheets not provided",
+          "agrees": null
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_description": {
+      "value": "Build-out of an existing warehouse area at Enthalpy Analytics Labs to become additional lab and admin spaces. BFA scope: mechanical and electrical design only. Mechanical scope includes 5 split system heat pumps, controls, and a dedicated make-up air split system to offset 1,250 CFM exhausted by lab hoods (provided by others). Electrical scope includes power and lighting design for the new split systems, admin, and lab spaces.",
+      "source": "SOW",
+      "quote": "This project includes the build-out of an existing warehouse area of the Enthalpy Analytics Labs in Richmond, Va. The current warehouse shall become additional lab and admin spaces.",
+      "corroboration": [
+        {
+          "source": "SOW",
+          "claim": "build-out of an existing warehouse area … become additional lab and admin spaces",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block M-001 / E-001",
+          "claim": "LAB ADMIN AREA RENOVATIONS",
+          "agrees": true
+        }
+      ]
+    },
+    "mechanical_scope_detail": {
+      "value": "5 split system heat pumps with controls for conditioning labs and admin spaces; 1 dedicated make-up air split system to supply 1,250 CFM to offset lab hood exhaust and maintain positive building pressurization.",
+      "source": "SOW",
+      "quote": "Provide 5 split system heat pumps and controls to condition the labs and admin spaces. Also, a dedicated make-up air split system shall be designed to make-up 1250 cfm exhausted by lab hoods which shall be provided by others. Intent of the make-up air unit is to maintain positive building pressurization when lab hoods are operating.",
+      "corroboration": [
+        {
+          "source": "SOW",
+          "claim": "5 split system heat pumps; make-up air unit; 1250 cfm",
+          "agrees": true
+        },
+        {
+          "source": "Drawing M-001 legend",
+          "claim": "MAHU symbol (Make-Up Air Handling Unit) and HP mark (heat pump) shown in legend, referencing schedule sheet M-501",
+          "agrees": true
+        }
+      ]
+    },
+    "electrical_scope_detail": {
+      "value": "Electrical design for new split systems; lighting design; power design for admin and lab spaces.",
+      "source": "SOW",
+      "quote": "Provide electrical design to support the newly designed split systems. Provide lighting design. Provide power design for admin and lab spaces.",
+      "corroboration": [
+        {
+          "source": "SOW",
+          "claim": "electrical design for split systems, lighting, power",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-001 legend",
+          "claim": "References L-601 lighting fixture schedule, panelboard schedules (208Y/120V and 480Y/277V), IFD emergency lighting, LED pendants, occupancy sensors",
+          "agrees": true
+        }
+      ]
+    },
+    "drawing_date": {
+      "value": "2021-10-20",
+      "source": "Drawing title blocks M-001 and E-001",
+      "quote": "10/20/2021",
+      "corroboration": [
+        {
+          "source": "Drawing M-001 title block",
+          "claim": "10/20/2021",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-001 title block (filename '11-12-21' differs)",
+          "claim": "10/20/2021",
+          "agrees": false,
+          "notes": "E-001 title block shows 10/20/2021 same as M-001, but the PDF filename is 'ELECTRICAL DRAWINGS 11-12-21.pdf', suggesting a possible later revision issued 11/12/2021. The date on the rendered sheet is 10/20/2021. Minor discrepancy."
+        }
+      ]
+    },
+    "engineer_of_record": {
+      "value": "Bowman Foster & Associates, Inc.",
+      "source": "Drawing title blocks M-001 and E-001",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "Drawing M-001 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC. / 6353 CENTER DR STE 101 / NORFOLK VA 23502",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-001 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC. / 6353 CENTER DR. STE. 101 / NORFOLK VA 23502 / 5252 CHEROKEE AVE. STE. 101 / ALEXANDRIA VA 22312",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [
+      "science_wet_lab"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "mechanical_clean_room",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_doas",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "richmond",
+    "lab_buildout",
+    "warehouse_conversion",
+    "split_systems",
+    "makeup_air",
+    "lab_hoods",
+    "private_client",
+    "commercial"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M-001",
+        "title": "MECHANICAL LEGEND AND ABBREVIATIONS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Legend/abbreviations/general-notes sheet for the mechanical set. Symbols defined: condensate drain, supply and return duct sections, thermostat/sensor marks, manual balancing damper, fire/smoke damper, motorized control damper, grille/diffuser mark, radius elbow, AHU mark, heat pump mark referencing schedule sheet M-501, make-up air unit (MAHU) referencing schedule sheet M-501. 16 general notes covering: sole-source submission requirement; volume dampers; UFC/ANSI drawing reference standard; TAB requirements; code compliance (ASHRAE 55, 90.1, 62.1, ADAAG, OSHA, municipal, state, federal); GC coordination with mechanical; equipment coordination for conflicts; cut openings; no equipment above electrical panels; duct sizing note (diagrammatic on plans, 24\" min clearance for access); all duct transitions radius elbows or splitter vanes; no equipment over electrical service; access doors and panels requirement; servicing clearances; thermostat/sensor placement (48\" AFF minimum). Sheet is 'M-001 of XX' — indicates additional mechanical sheets (floor plan, schedule M-501) exist but were not included in the submitted PDF. Drawing date: 10/20/2021. Firm: Bowman Foster & Associates, Inc., Norfolk VA."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "ELECTRICAL LEGEND AND ABBREVIATIONS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Legend/abbreviations/general-notes sheet for the electrical set. Electrical symbol legend includes: lighting fixtures (IFD emergency/exit, LED pendant low-bay, occupancy/dimming sensors for ceiling mount PIR/ultrasonic dual-tech at 48\" AFF), receptacles (single 20A 120V at 48\" AFF, duplex 20A 120V at 18\" AFF in standard and emergency power variants, quadruplex 20A 120V at 16\" AFF, 230V NEMA 6-15R for emergency power, exterior GFCI duplex weather-proof at 18\" ABR), equipment connection symbol, junction box ceiling-mount, power pole, disconnect switch (600V NEMA 3R enclosure, 3-pole, 60A-switch rating, 40A fuse), dry-type transformer, panelboards (208Y/120V and 480Y/277V shown), branch circuit concealed in ceiling. Two general notes: (1) provide corrected panelboard schedule for existing panel(s) supporting this project; (2) provide typical arc flash hazard warning labels on panelboards per NEC 2020, referencing 'ARC WARNING AB71' detail. Large ARC FLASH WARNING label graphic on sheet referencing NFPA 70E — indicates 480V system present. Sheet 'E-001 of XX' — additional electrical sheets (plans, panelboard schedules, L-601 lighting fixture schedule) exist but were not in this PDF. Drawing date shown on sheet: 10/20/2021; PDF filename: 'ELECTRICAL DRAWINGS 11-12-21.pdf' suggesting a possible 11/12/2021 revision issue. Firm: Bowman Foster & Associates, Inc."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "M-001",
+          "E-001"
+        ],
+        "notes": "Both sheets are legend/notes-only; no floor plan or code summary block present. GSF cannot be derived."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "M-001"
+        ],
+        "notes": "SOW describes warehouse conversion; single floor implied but not confirmed; no floor plan sheets present."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "5 split system heat pumps (schedule on sheet M-501, not present in PDF)",
+          "1 dedicated make-up air split system (MAHU) — 1,250 CFM supply to offset lab hood exhaust; maintains positive pressurization",
+          "Variable volume supply/return ductwork system (diagrammatic per general note 10)",
+          "Volume dampers at all connections per general note 2",
+          "Manual balancing dampers and motorized control dampers shown in legend",
+          "TAB (Test-and-Balance) required per general note 4",
+          "BAS/DDC controls for thermostats/sensors at 48\" AFF per general note 16"
+        ],
+        "electrical": [
+          "208Y/120V panelboard (existing, corrected schedule required per general note 1)",
+          "480Y/277V panelboard (indicated by disconnect switch spec and ARC FLASH label for 480V system)",
+          "LED pendant low-bay lighting fixtures",
+          "IFD emergency/exit lighting with 90-min battery backup",
+          "Occupancy/dimming sensors (ceiling-mount PIR/ultrasonic dual-tech)",
+          "Standard 20A 120V and emergency-power receptacle circuits",
+          "230V NEMA 6-15R receptacle on emergency power (likely for lab equipment)",
+          "Arc flash hazard labeling on all panelboards per NEC 2020/NFPA 70E",
+          "Dry-type transformer(s) implied by legend inclusion"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.drawing_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Drawing title block E-001 (rendered sheet)",
+          "value": "2021-10-20"
+        },
+        {
+          "source": "PDF filename of electrical drawings",
+          "value": "2021-11-12 (implied by '11-12-21' in filename)"
+        }
+      ],
+      "resolution_chosen": "Drawing title block E-001 — 10/20/2021",
+      "rationale": "The rendered sheet shows 10/20/2021 on the title block; PDF filename '11-12-21' may indicate a reissue date but the visible title block date takes precedence for the sheet-of-record. Minor discrepancy; does not affect pursuit-relevant claims."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

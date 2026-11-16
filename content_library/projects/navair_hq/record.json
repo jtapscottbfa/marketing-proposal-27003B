@@ -1,0 +1,740 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "navair_hq",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/notes_for_claude.md",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "notes": "Curator note: 'this project had a ton of different contracts all consolidated in the same project. use extra care when evaluating.'"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Basis of Design 2272.pdf",
+      "type": "bod",
+      "sha256": "c98c146247bcc83958cef6c1a3229a34606035a6d08bc19e2b64b5844a069cd5",
+      "included": true,
+      "notes": "Early/initial BOD for Procurement Group (Suites 543, 535, 536). 35% DID-level BOD supporting GSA Design-Build RFP. BFA Project implied (Basis of Design 2272)."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2024.02.01.95pct.2272 PHASE 3 BOD.pdf",
+      "type": "bod",
+      "sha256": "e5c4329e578d462e1a4519b7ddf14d7ccce5131075ff529fba41888e075a7b34",
+      "included": true,
+      "notes": "Phase 3A 95% BOD. BFA Project #21-042B. Suites 248, 249, 250, 251, 348, 453. January 31, 2024."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2024.05.10.BLDG.2272.SUITES.151.443.445.BASIS.OF.DESIGN.95%.SUBMITTAL.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 3 (Suites 151, 443, 445) 95% BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2025.03.18.BLDG.2272.PHASE.4.CONTRACT.B_95%.BASIS OF DESIGN.SUBMITTAL..pdf",
+      "type": "bod",
+      "sha256": "bde48161de9666eef955f608dc731ffb3097026687aed97514da7178d175a268",
+      "included": true,
+      "notes": "Phase IV Contract B 95% BOD. BFA Project #21-042K. Suites 243, 252, 260, 253-254, 254-255. March 18, 2025."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2025.03.25 Building 2272 Phase 4A BOD - 95%.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 4A 95% BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2025.03.25.Building 2272 Phase 4C BOD - 95%.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 4C 95% BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2025.05.07.BLDG.2272.PHASE.4.CONTRACT.D.95%.DWGS.BOD.pdf.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 4 Contract D 95% BOD. May 7, 2025."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Building 2272 Phase 6 146 BOD -65%.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 6 Suite 146 65% BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/21-042E.2024.05.17.2272 Phase IIID.95%BOD.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 3D 95% BOD. BFA Project #21-042E. Suites 453B & 454. May 17, 2024."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/21-042D.2024.05.17.2272 Phase III.95%BOD.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 3C 95% BOD. BFA Project #21-042D."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/24.06.17 2272 Phse 3 350, 351 BOD.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 3 Suites 350, 351 BOD. June 17, 2024."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2272 Phse 3 151, 443, 445.pdf",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 3 Suites 151, 443, 445 BOD document."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/1. PID-0030 SOW.docx",
+      "type": "sow",
+      "sha256": "ce1469af9348b4f2daee61be81c764d33195b868e399962d0a4c0f964698380c",
+      "included": true,
+      "notes": "Phase 2b SOW (PID-0030). Suites 537-549, 074. NAS Patuxent River MD Building 2272."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/1. PID_0031 SOW.docx",
+      "type": "sow",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 2b SOW (PID-0031). Companion to PID-0030."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Phase 3 SOW.docx",
+      "type": "sow",
+      "sha256": "d7e8866bbc0317e8ceb5a53c7c65dc142c5b7a96c09fd751d998558342cca019",
+      "included": true,
+      "notes": "Phase 3 SOW. Suites 151, 248, 249, 250, 251, 256, 348, 350, 351, 443, 445, 447, 448, 451.2, 453, 453B, 454."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Solicitation - N4008024R2402.pdf",
+      "type": "sow",
+      "sha256": "16844bf7dfa0a1a7497bd4b5b822e7d670c0edfe33e47b48aafb870b8fde4b1d",
+      "included": true,
+      "notes": "Solicitation N4008024R2402 (file name says R2402; file content is Suite 345 Secure Space / ICD-705 SCIF construction). 100% small-business set-aside. NAS Patuxent River."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/B2272 SUITE 345 SECURE SPACE RFP.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Suite 345 Secure Space RFP package (appears to be drawings/specs). Large file 3.1MB."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2272 Secure Spaces RFP.PDF",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Secure Spaces RFP. Large file 7.9MB — likely drawing set."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2272 Secure Spaces.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Secure Spaces document. 1.2MB."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Amendment 0001 - N4008024R2402.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "notes": "Amendment 0001 to Solicitation N4008024R2402."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Amendment 0002 - N4008024R2402.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "notes": "Amendment 0002 to Solicitation N4008024R2402."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/1a. NAVAIR_Phase 2b SD_HQ Groups_Final Report-to Sanchez Group.pdf",
+      "type": "report",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 2b Schematic Design (15%) Final Report to Sanchez Group / GSA. 12.7MB — primary program documentation."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/PG Pilot 35 pct DID.pdf",
+      "type": "submittal",
+      "sha256": null,
+      "included": true,
+      "notes": "Procurement Group Pilot 35% Design Intent Documents. 1.9MB."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Phase 3_Redacted_All.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Phase 3 redacted document. 5.3MB — likely contract or award document. Flag for human review."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2026.04.08.35% SUBMITTAL SUITE 446 BOD.docx",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Suite 446 35% BOD. April 8, 2026."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/2026.04.10 2272 SUITE 446 BOD.docx",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Suite 446 BOD. April 10, 2026."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/Building 2272 Phase 5 353-354A BOD - 95%.docx",
+      "type": "bod",
+      "sha256": null,
+      "included": true,
+      "notes": "Phase 5 Suites 353-354A 95% BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/TSG RFI questions #1 7-11-22 - Response.docx",
+      "type": "correspondence",
+      "sha256": null,
+      "included": true,
+      "notes": "The Sanchez Group (TSG) RFI response, July 11, 2022. Early project phase correspondence."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/B2272_FL1_RM151.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Building 2272 Floor 1, Room 151. 782KB — likely drawing."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/9710-24 Distribution Layout E1 (1).pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Distribution layout electrical drawing."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/navair_hq/EXISTING ELECTRICAL AND COMM ROOM LOCATIONS.pdf",
+      "type": "unknown",
+      "sha256": null,
+      "included": true,
+      "notes": "Existing electrical and comm room locations plan."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "full",
+    "drawing_extraction_status": "attempted",
+    "notes": "Extremely large and complex multi-contract, multi-phase project. 20+ BOD documents across Phases 2b–6. SOWs for Phase 2b (PID-0030/31) and Phase 3. Solicitation for Suite 345 secure space. Drawing files present but not rendered — several large PDFs (Secure Spaces RFP, Suite 345 RFP) likely contain drawing sets. No executed contract documents with dollar values found in source folder."
+  },
+  "facts": {
+    "project_name": {
+      "value": "NAVAIR HQ Engagement — Building 2272 Interior Renovation",
+      "source": "BOD Phase 3A p.1",
+      "quote": "NAVAIR HQ ENGAGEMENT – PHASE III BUILDING 2272",
+      "corroboration": [
+        {
+          "source": "BOD Phase 3A p.1",
+          "claim": "NAVAIR HQ ENGAGEMENT – PHASE III BUILDING 2272",
+          "value": "NAVAIR HQ Engagement — Building 2272 Interior Renovation",
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 4 Contract B p.1",
+          "claim": "NAVAIR HQ ENGAGEMENT – PHASE IV BUILDING 2272",
+          "value": "NAVAIR HQ Engagement — Building 2272 Interior Renovation",
+          "agrees": true
+        },
+        {
+          "source": "Basis of Design 2272.pdf p.1",
+          "claim": "RENOVATION OF ROOMS 543, 536 & 535 BUILDING 2272",
+          "value": "NAVAIR HQ Engagement — Building 2272 Interior Renovation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "U.S. Naval Air Systems Command (NAVAIR) / NAVFAC",
+      "source": "Basis of Design 2272.pdf p.1",
+      "quote": "the U.S. Naval Air Systems Command (NAVAIR) is pursuing strategic workplace consolidations across several of its programmatic user groups located in Building 2272",
+      "corroboration": [
+        {
+          "source": "Basis of Design 2272.pdf p.1",
+          "claim": "U.S. Naval Air Systems Command (NAVAIR)",
+          "value": "NAVAIR",
+          "agrees": true
+        },
+        {
+          "source": "SOW PID-0030 §1.2",
+          "claim": "NAS Patuxent River MD Building 2272",
+          "value": "NAS Patuxent River / NAVFAC",
+          "agrees": true
+        },
+        {
+          "source": "Solicitation N4008024R2402 p.1",
+          "claim": "PUBLIC WORKS DEPARTMENT NAS, PATUXENT RIVER",
+          "value": "NAVFAC / NAS Patuxent River",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "U.S. Navy / Naval Air Systems Command (NAVAIR)",
+      "source": "Basis of Design 2272.pdf p.1",
+      "quote": "the U.S. Naval Air Systems Command (NAVAIR) is pursuing strategic workplace consolidations",
+      "corroboration": [
+        {
+          "source": "Basis of Design 2272.pdf p.1",
+          "claim": "U.S. Naval Air Systems Command (NAVAIR)",
+          "value": "NAVAIR",
+          "agrees": true
+        },
+        {
+          "source": "SOW PID-0030 §3.2",
+          "claim": "NAVFAC utilities department",
+          "value": "NAVFAC manages the base infrastructure",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "NAS Patuxent River, Building 2272, Patuxent River MD 20670",
+      "installation": "Naval Air Station Patuxent River",
+      "source": "SOW PID-0030 §1.2",
+      "quote": "NAS Patuxent River MD Building 2272",
+      "corroboration": [
+        {
+          "source": "SOW PID-0030 §1.2",
+          "claim": "NAS Patuxent River MD Building 2272",
+          "value": "NAS Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 3A p.1",
+          "claim": "Patuxent River, Maryland",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "Solicitation N4008024R2402 p.1",
+          "claim": "22445 PEARY ROAD, BLDG 504 PATUXENT RIVER MD 20670-5504",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-042 (series: 21-042B, 21-042D, 21-042E, 21-042K, 26-017 and others)",
+      "source": "BOD Phase 3A p.1; BOD Phase 4 Contract B p.1; multiple BOD headers",
+      "quote": "BFA Project #21-042B",
+      "corroboration": [
+        {
+          "source": "BOD Phase 3A p.1",
+          "claim": "BFA Project #21-042B",
+          "value": "21-042B",
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 4 Contract B p.1",
+          "claim": "BFA Project #21-042K",
+          "value": "21-042K",
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 3D p.1",
+          "claim": "21-042E",
+          "value": "21-042E",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "notes": "No single NAVFAC project number found. Solicitation N4008024R2402/R2403 are distinct procurement actions for Secure Space suite only. Phased work issued under multiple contract actions."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Multiple contract actions across phases. No executed contract documents with contract numbers in source folder."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Work issued under multiple SOWs (PID-0030, PID-0031, Phase 3 SOW) and solicitations. Task order numbers not stated in source documents."
+    },
+    "square_footage": {
+      "value": 58000,
+      "unit": "gsf_per_floor_approximate",
+      "source": "BOD Fire Protection analysis, multiple BOD documents",
+      "quote": "~58,000 [sq ft per floor, Level 5 (Highest Occupied Story)]",
+      "notes": "~58,000 GSF is cited as approximate floor area for the highest occupied floor (Level 5) in fire/life safety code analyses across multiple BOD documents. Building is 5 stories; building total is not explicitly stated. Individual suite areas: 13,531 SF (Suites 535/536), 3,200 SF (Suite 543), 16,460 SF cited in Phase 3A code analysis context.",
+      "corroboration": [
+        {
+          "source": "Basis of Design 2272.pdf — Fire Protection section, code analysis table",
+          "claim": "Level 5 (Highest Occupied Story) ~58,000 [sq ft]",
+          "value": 58000,
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 3A — Fire Protection section, code analysis table",
+          "claim": "Level 5 (Highest Occupied Story) ~58,000",
+          "value": 58000,
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 3D — Fire Protection section, code analysis table",
+          "claim": "Level 5 (Highest Occupied Story) ~58,000",
+          "value": 58000,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in available source documents."
+    },
+    "building_description": {
+      "value": "5-story office headquarters building (Moffett Building) at NAS Patuxent River. Precast concrete panel and glass exterior on cast-in-place concrete frame structure. Type IB construction. Fully sprinklered. Built 1996. Existing HVAC: VAV air handling units on roof, centrifugal chiller in basement, hydronic heating. Fire alarm: Simplex 4100ES addressable FACP.",
+      "source": "Basis of Design 2272.pdf — Architectural section; BOD Phase 3A — Architectural section",
+      "quote": "The existing building is 5 story structure. The exterior walls consist of pre-cast concrete panels and glass on a cast in place concrete framed structure. The building is fully sprinklered.",
+      "corroboration": [
+        {
+          "source": "Basis of Design 2272.pdf p.3",
+          "claim": "5 story structure, precast concrete panels and glass on a cast in place concrete framed structure, fully sprinklered",
+          "agrees": true
+        },
+        {
+          "source": "BOD Phase 3A p.2",
+          "claim": "5 story structure, precast concrete panels and glass, cast in place concrete framed structure, fully sprinklered",
+          "agrees": true
+        },
+        {
+          "source": "Basis of Design 2272.pdf — Mechanical section",
+          "claim": "systems original to the building from 1996",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design fees not stated in available source documents. Multiple separate design contracts/task orders across phases."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Program started no later than mid-2022 based on TSG RFI dated July 2022. Phase 2b schematic design report predates Phase 3 BODs (2024)."
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Ongoing; Phase 6 BOD at 65% submittal, Suite 446 BODs dated April 2026, 26-017 BOD dated April 30, 2026."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Multiple separate construction contracts across phases. Solicitation N4008024R2402 (Suite 345 Secure Space) does not include award amount. Suite 345 performance period: 365 calendar days; liquidated damages $232/day suggests modest contract value. No total construction contract values found."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Solicitation N4008024R2402 issued 24 Jul 2024; site visit 31 Jul 2024; proposals due 21 Aug 2024. Award date not in documents."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Project appears ongoing as of April/May 2026 based on latest BOD dates."
+      },
+      "contractual_duration_days": {
+        "value": 365,
+        "source": "Solicitation N4008024R2402 p.1",
+        "quote": "complete it within ___3_6_5___ calendar days after receiving award",
+        "notes": "365 days cited for Suite 345 Secure Space contract specifically, not the whole program."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_operations"
+    ],
+    "program_subtype": [
+      "civic_office"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "architecture",
+      "telecommunications_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "plumbing_domestic_water",
+      "security_scif_classified"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_chilled_water",
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling",
+      "telecom_structured_cabling"
+    ],
+    "construction_scope": [
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "wood_architectural_woodwork",
+      "furnishings_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "state_on_call"
+    ],
+    "procurement_type": [
+      "federal_small_business_set_aside"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "navair",
+    "pax_river",
+    "patuxent_river",
+    "building_2272",
+    "moffett_building",
+    "hybrid_workplace",
+    "activity_based_work",
+    "multi_phase",
+    "federal_office_renovation",
+    "scif",
+    "icd_705",
+    "multi_contract"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "floor_count": {
+        "value": 5,
+        "source": "Multiple BOD documents — Architectural section",
+        "quote": "The existing building is 5 story structure",
+        "sheets": []
+      },
+      "gross_square_footage_per_floor": {
+        "value": 58000,
+        "unit": "gsf_approximate",
+        "source": "Multiple BOD documents — Fire Protection code analysis tables",
+        "quote": "~58,000 [SF, Level 5 highest occupied story]",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "VAV air handling units on roof (original 1996)",
+          "Centrifugal chiller in basement (original 1996)",
+          "Hydronic heating hot water system",
+          "VAV terminal units with reheat coils throughout",
+          "Linear diffusers at perimeter, 2x2 diffusers at interior (supply)",
+          "Return air via transfer ducts and plenum",
+          "New VAV boxes added in conference rooms per each renovation phase",
+          "Z-bend sound-attenuating return air transfer ducts added at full-height partitions",
+          "BAS/DDC system integration for new VAV boxes"
+        ],
+        "electrical": [
+          "Existing electrical distribution service in place (no new service entrance)",
+          "LED lighting retrofits (2x2) throughout renovated suites",
+          "Occupancy sensors for new enclosed offices",
+          "Sound masking systems throughout renovated spaces",
+          "Furniture power systems (whips and floor boxes)",
+          "EMT conduit throughout; copper conductors THHN/THWN",
+          "Dedicated receptacles for printers/copiers, monitors, breakroom GFI"
+        ],
+        "plumbing": [
+          "Plumbing scope explicitly excluded from Phase 2b and Phase 3 construction contracts",
+          "Gedunk (break area) installations include refrigerators (no new plumbing per SOWs)"
+        ],
+        "fire_protection": [
+          "Existing wet-pipe sprinkler system throughout (combined sprinkler/standpipe, 4-inch risers)",
+          "Sprinkler pump: 750 gpm, 100 psi; 61 psi static observed",
+          "2.5-inch main floor loop feeds all project areas",
+          "Simplex 4100ES addressable FACP",
+          "Simplex combined fire alarm and mass notification system",
+          "Per-phase: sprinkler head relocations/additions for new partition layouts",
+          "Per-phase: fire alarm appliance (strobe/speaker) relocations and additions",
+          "Suite 345: ICD-705 compliant SCIF construction (separate procurement N4008024R2402)"
+        ]
+      }
+    },
+    "drawing_extraction_status": "not_extracted",
+    "drawing_extraction_notes": "Multiple large PDFs (2272 Secure Spaces RFP 7.9MB, B2272 SUITE 345 SECURE SPACE RFP 3.2MB, Phase 3_Redacted_All 5.3MB, B2272_FL1_RM151 782KB) are likely drawing sets. Not rendered/extracted in this pass due to complexity and volume of text documents. Flagged for future drawing extraction pass."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_internal",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Phase 3A header",
+          "value": "21-042B"
+        },
+        {
+          "source": "BOD Phase 3D header",
+          "value": "21-042E"
+        },
+        {
+          "source": "BOD Phase 4 Contract B header",
+          "value": "21-042K"
+        },
+        {
+          "source": "BOD 26-017",
+          "value": "26-017"
+        }
+      ],
+      "resolution_chosen": "Entire series: 21-042 (multiple suffixes per phase contract)",
+      "rationale": "Each phase/contract received its own BFA project number suffix. This is not a conflict per se but a structural challenge — the folder consolidates 6+ distinct BFA project numbers into one 'project.' BFA internal records should be consulted to identify the umbrella or the correct primary project number."
+    },
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Multiple BOD fire protection code analyses",
+          "value": "~58,000 GSF per floor (Level 5)"
+        },
+        {
+          "source": "Basis of Design 2272.pdf — Procurement Group scope",
+          "value": "13,531 SF (Suites 535/536 combined)"
+        },
+        {
+          "source": "Basis of Design 2272.pdf — SES Suite scope",
+          "value": "3,200 SF (Suite 543)"
+        }
+      ],
+      "resolution_chosen": "~58,000 GSF per floor is the building floor plate; individual suite areas are the renovation scope per phase",
+      "rationale": "The 58,000 SF is the total allowable area per floor referenced in code analysis (not the renovation scope). The renovation scope is distributed across dozens of suites across 5 floors over multiple phases. No single total renovation SF is stated."
+    },
+    {
+      "field_path": "taxonomy.contract_vehicle",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW PID-0030",
+          "value": "Task order / SOW-based work — likely on-call or IDIQ"
+        },
+        {
+          "source": "Solicitation N4008024R2402",
+          "value": "Stand-alone RFP for Suite 345 Secure Space construction"
+        }
+      ],
+      "resolution_chosen": "state_on_call as best approximation for design phases; standalone_project for Suite 345 construction procurement",
+      "rationale": "The design BOD work appears to be on-call / task-order-based under an existing vehicle (SOW numbering convention PID-XXXX). The construction solicitation for Suite 345 is a standalone RFP (small-business set-aside). Mixed contract vehicle structure; single taxonomy entry is a lossy approximation."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md"
+    }
+  }
+}

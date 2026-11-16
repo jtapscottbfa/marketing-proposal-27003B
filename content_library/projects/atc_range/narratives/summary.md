@@ -1,0 +1,8 @@
+# ATC Firing Range — Indoor Firing Range #2 Renovation
+## Advanced Training Center, Harpers Ferry, WV | U.S. Customs and Border Protection
+
+Bowman Foster & Associates (BFA) provided multi-discipline engineering design services for the renovation and alteration of Indoor Firing Range #2 (Room 134) at the U.S. Customs and Border Protection (CBP) Advanced Training Center in Harpers Ferry, West Virginia. The project's intent was to modify and renovate the existing firing range to match the configuration of the adjacent Range No. 3 — an operational benchmark for CBP's active law enforcement training environment.
+
+The renovation addressed the full range interior: deconstruction of the angled baffle ceiling system and its support structure, replacement with a horizontal ballistic steel plate ceiling suspended from the existing roof structure, and installation of new Tectum acoustical ceiling panels on furring. Existing Tectum acoustical wall panels were replaced, and projectile-related damage to the floor slab and concrete wall panels was repaired. Structural steel angles were engineered and installed to support the new cable hangers and sloped baffle panels, with joist reinforcement where required. The electrical scope replaced the lighting fixtures and the target system (by Action Target), including control panels, cabinets, and server boxes, while coordinating HVAC scope with a specialty range ventilation subconsultant.
+
+BFA served as prime consultant, delivering coordinated structural, architectural, and electrical design for a complex, security-sensitive federal training facility.

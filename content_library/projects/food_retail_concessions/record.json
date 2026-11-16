@@ -1,0 +1,579 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "food_retail_concessions",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/nexcom/food_retail_concessions/1657684_A4a3 - Basis of Design.pdf",
+      "type": "bod",
+      "sha256": "208c819f1dd8fdd4d73fed2fa5a12a49b8fe45bc92da5f932b2f7ba43ac9693f",
+      "included": true,
+      "notes": "100% Design Submittal Basis of Design, dated August 18, 2022. Covers all design disciplines."
+    },
+    {
+      "path": "00_admin/reference_projects/nexcom/food_retail_concessions/1657684_NEXCOM Food&Retail Concessions SAES_Final.pdf",
+      "type": "sow",
+      "sha256": "0788d275252826c260efc6c2252bb85b9771ceb558bc49d2d133b3b245c6ce3d",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES), FY20 MILCON Project #N753417, Rev17/FEB 2020. Task Order under Contract N62470-16-D-6005."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "BOD (100% submittal) and SAES present. No drawing set, specifications book, or executed contract in intake folder."
+  },
+  "facts": {
+    "project_name": {
+      "value": "NEXCOM Food & Retail Concessions",
+      "source": "BOD cover page",
+      "quote": "NEXCOM FOOD & RETAIL CONCESSIONS",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "NEXCOM FOOD & RETAIL CONCESSIONS",
+          "value": "NEXCOM Food & Retail Concessions",
+          "agrees": true
+        },
+        {
+          "source": "SAES title block",
+          "claim": "NEXCOM Food and Retail Concessions",
+          "value": "NEXCOM Food and Retail Concessions",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command Mid-Atlantic (NAVFAC MIDLANT) / Navy Exchange Service Command (NEXCOM)",
+      "source": "SAES §A",
+      "quote": "Naval Facilities Engineering Command Mid-Atlantic (NAVFAC MIDLANT) will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES §A",
+          "claim": "NAVFAC MIDLANT administers the task order; NEXCOM is the user/activity",
+          "value": "NAVFAC MIDLANT / NEXCOM",
+          "agrees": true
+        },
+        {
+          "source": "SAES §B6",
+          "claim": "Navy Exchange Service Command, 3280 Virginia Beach Boulevard, Virginia Beach, VA 23452-5724",
+          "value": "Navy Exchange Service Command",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Station Norfolk",
+      "source": "BOD cover page; SAES §A",
+      "quote": "NAVAL STATION NORFOLK, NORFOLK, VA",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "NAVAL STATION NORFOLK, NORFOLK, VA",
+          "value": "Naval Station Norfolk",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Northeast corner of CV Towway Drive and Fourth Avenue, Naval Station Norfolk, Norfolk, VA",
+      "source": "BOD Civil Design section",
+      "quote": "The project is located on the northeast corner of CV Towway Drive and Fourth Avenue.",
+      "corroboration": [
+        {
+          "source": "BOD Civil Design section",
+          "claim": "Northeast corner of CV Towway Drive and Fourth Avenue, NSN, Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A1",
+          "claim": "Project Location: Naval Station Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "1657684",
+      "source": "SAES title block",
+      "quote": "FY 20 WON 1657684",
+      "corroboration": [
+        {
+          "source": "SAES title block",
+          "claim": "FY 20 WON 1657684",
+          "value": "1657684",
+          "agrees": true
+        },
+        {
+          "source": "BOD filename",
+          "claim": "1657684_A4a3 - Basis of Design",
+          "value": "1657684",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N62470-16-D-6005",
+      "source": "SAES title block",
+      "quote": "N62470-16-D-6005",
+      "corroboration": [
+        {
+          "source": "SAES title block",
+          "claim": "N62470-16-D-6005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "TBD",
+      "status": "explicit_null",
+      "source": "SAES §A1",
+      "quote": "Task Order: TBD",
+      "notes": "SAES states 'TBD' at time of the document; final TO number not captured in source documents."
+    },
+    "square_footage": {
+      "value": 5500,
+      "unit": "nsf",
+      "source": "BOD Architectural Design",
+      "quote": "Food Vendor #1  2,000 SF\nFood Vendor #2  3,500 SF\nTotal           5,500 SF\nGross Area      6,080 SF",
+      "corroboration": [
+        {
+          "source": "BOD Project Description",
+          "claim": "5,500 net SF Food & Retail Concessions facility",
+          "value": 5500,
+          "unit": "nsf",
+          "agrees": true
+        },
+        {
+          "source": "BOD Architectural Design",
+          "claim": "Total 5,500 SF net; Gross Area 6,080 SF",
+          "value_nsf": 5500,
+          "value_gsf": 6080,
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2c",
+          "claim": "6,500 net SF Food & Retail Concessions facility",
+          "value": 6500,
+          "unit": "nsf",
+          "agrees": false,
+          "note": "SAES §A2c states 6,500 NSF (2,000 + 3,000 + 1,500 pop-up space). BOD (100% design, later document) states 5,500 NSF (2,000 + 3,500, no pop-up space). Scope was revised between SAES and 100% design — pop-up retail was removed and one vendor space enlarged."
+        }
+      ]
+    },
+    "gross_square_footage": {
+      "value": 6080,
+      "unit": "gsf",
+      "source": "BOD Architectural Design net area calculations block",
+      "quote": "Gross Area      6,080 SF",
+      "corroboration": [
+        {
+          "source": "BOD Architectural Design",
+          "claim": "Gross Area 6,080 SF",
+          "value": 6080,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 5300000,
+      "currency": "USD",
+      "source": "SAES §C1",
+      "quote": "C1. Project Cost/Program Amount: $5,300,000",
+      "corroboration": [
+        {
+          "source": "SAES §C1",
+          "claim": "$5,300,000 total authorized funding (PA)",
+          "value": 5300000,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 3875000,
+      "currency": "USD",
+      "source": "SAES §C2",
+      "quote": "C2. Estimated Construction Cost (ECC): $3,875,000",
+      "corroboration": [
+        {
+          "source": "SAES §C2",
+          "claim": "$3,875,000 ECC",
+          "value": 3875000,
+          "agrees": true
+        }
+      ]
+    },
+    "milcon_project_number": {
+      "value": "N753417",
+      "source": "SAES title block",
+      "quote": "FY 20 MILCON PROJECT #N753417",
+      "corroboration": [
+        {
+          "source": "SAES title block",
+          "claim": "FY 20 MILCON PROJECT #N753417",
+          "agrees": true
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 1,
+      "source": "BOD Structural Design / AT-FP section",
+      "quote": "The proposed building is one story structures is exempt from this standard.",
+      "corroboration": [
+        {
+          "source": "BOD AT-FP Standard 6",
+          "claim": "one story structure",
+          "value": 1,
+          "agrees": true
+        }
+      ]
+    },
+    "building_occupancy_classification": {
+      "value": "Group A-2 (Assembly)",
+      "source": "BOD Fire Protection Design",
+      "quote": "The building is considered Group A-2 (Assembly) use.",
+      "corroboration": [
+        {
+          "source": "BOD Fire Protection Design",
+          "claim": "Group A-2 (Assembly)",
+          "agrees": true
+        }
+      ]
+    },
+    "applicable_codes": {
+      "value": [
+        "IBC 2018",
+        "NFPA 101 (2021)",
+        "NFPA 70 (2020)",
+        "NFPA 72 (2019)",
+        "UFC 1-200-01",
+        "UFC 3-600-01",
+        "UFC 4-010-01",
+        "FC 1-300-09N",
+        "ASHRAE 90.1-2019",
+        "ABA Accessibility Standards for DoD Facilities"
+      ],
+      "source": "BOD multiple discipline sections",
+      "quote": null
+    },
+    "construction_type_description": {
+      "value": "New construction, single-story food & retail concessions shell building; white-box vendor spaces; deep foundation (timber piles); structural steel frame; metal wall panels; PVC roof membrane",
+      "source": "BOD Architectural Design / Structural Design",
+      "quote": "The facility will be constructed with a deep foundation system. A concrete structural slab supported on piles will be provided at the center bay of the building to support the stud wall partitions for the Electrical Room and the demising partition between the two vendor spaces. Metal wall panels on Metal stud exterior walls will be sheathed with glass mat gypsum board..."
+    },
+    "special_environmental_conditions": {
+      "value": "Site within CERCLA Site 20 LUC boundary; PFAS-contaminated groundwater confirmed; vapor intrusion mitigation system (VIMS) required beneath entire building slab; contaminated groundwater dewatering treatment required",
+      "source": "BOD Environmental Design; SAES §F19",
+      "quote": "The NEXCOM project site is located within the Land Use Control (LUC) boundary of CERCLA Site 20... a passive air vapor intrusion mitigation system (VIMS) is required to be provided beneath the entire building slab area."
+    },
+    "atfp_level_of_protection": {
+      "value": "Very Low / Category I",
+      "source": "BOD AT-FP Design Analysis",
+      "quote": "Applicable level of protection (Table B-1): Very Low\n3. Applicable Explosive Weight (Table B-1): Category I"
+    },
+    "drive_thru": {
+      "value": true,
+      "source": "BOD Project Description",
+      "quote": "Supporting facilities include stub-ups for water, sanitary, communications, gas, and power, pavement, curb and gutter, Drive-Thru, sidewalks..."
+    },
+    "fire_sprinkler_required": {
+      "value": false,
+      "status": "explicit_null",
+      "source": "BOD Fire Protection Design",
+      "quote": "As the building is a standalone commissary or exchange less than 8,000 square feet in area, a sprinkler system is not required and will not be provided in accordance with UFC 3-600-01 paragraph 4-8.2."
+    },
+    "sustainability_certification": {
+      "value": "Green Building Initiative (GBI) DoD Guiding Principles Compliance — New Construction & Modernization",
+      "source": "SAES §F4b / BOD Sustainable Design",
+      "quote": "TPC is required for the building under this T.O. This project will utilize the Green Building Initiative's – Department of Defense Guiding Principles Compliance for New Construction & Modernization (GBI DOD GPC NC)."
+    },
+    "fiscal_year": {
+      "value": "FY2020",
+      "source": "SAES title block",
+      "quote": "FY 20 MILCON PROJECT #N753417"
+    },
+    "bod_date": {
+      "value": "2022-08-18",
+      "source": "BOD cover page",
+      "quote": "August 18, 2022"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "A-E design fee not stated in source documents; SAES indicates fee will be negotiated per Basic IQ Contract rates."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-08-18",
+        "source": "BOD cover page (100% Design Submittal date)",
+        "quote": "100% DESIGN SUBMITTAL … August 18, 2022",
+        "notes": "Date of 100% design submittal, used as proxy for design completion date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract not present in source documents; ECC is $3,875,000 per SAES."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "retail"
+    ],
+    "program_subtype": [
+      "retail_restaurant"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "civil_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "geotechnical_engineering",
+      "environmental_engineering",
+      "landscape_architecture",
+      "telecommunications_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "structural_foundation",
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "civil_erosion_sediment",
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_natural_gas",
+      "fire_alarm",
+      "environmental_remediation",
+      "transportation_traffic",
+      "telecom_structured_cabling"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_exterior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_natural_gas",
+      "plumbing_storm",
+      "fp_fire_alarm",
+      "site_utilities",
+      "site_stormwater_bmps",
+      "site_paving",
+      "site_grading_drainage",
+      "site_landscape",
+      "telecom_structured_cabling",
+      "electrical_grounding"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_assessment",
+      "concrete_cast_in_place",
+      "metals_structural_steel",
+      "thermal_roofing",
+      "thermal_waterproofing",
+      "thermal_insulation",
+      "openings_curtain_wall",
+      "openings_doors_frames",
+      "finishes_drywall_plaster",
+      "finishes_painting_wallcovering",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "communications_scope",
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_paving",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "naval_station_norfolk",
+    "nexcom",
+    "navy_exchange",
+    "food_retail",
+    "milcon",
+    "navfac_midlant",
+    "white_box_shell",
+    "drive_thru",
+    "cercla_site_20",
+    "pfas",
+    "vapor_intrusion_mitigation",
+    "atfp",
+    "fy2020"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 6080,
+        "unit": "gsf",
+        "source": "BOD Architectural Design net area calculations block",
+        "quote": "Gross Area      6,080 SF",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD Structural Design / AT-FP section",
+        "quote": "The proposed building is one story structures is exempt from this standard.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "No HVAC included in base contract scope — vendor spaces are white box with no mechanical; mechanical systems to be installed by food vendors during tenant upfit",
+          "Temporary minimal lighting only provided in vendor spaces"
+        ],
+        "electrical": [
+          "500 kVA, 34.5kV-208Y/120V pad-mounted transformer (Feed-Thru type)",
+          "100A, 208Y/120V service for house loads (exterior lighting, temp lighting, misc)",
+          "400A, 208Y/120V metered service for Vendor Space #1",
+          "800A, 208Y/120V metered service for Vendor Space #2",
+          "20A, 208Y/120V metered service for traffic signalization",
+          "35kV primary underground distribution from existing switch SW-296",
+          "Lightning protection system — Class I per UFC 3-575-01",
+          "LED exterior lighting: wall packs and pole-mounted area lights",
+          "Temporary interior LED lighting in vendor spaces"
+        ],
+        "plumbing": [
+          "1-inch domestic cold water stub-in per vendor area",
+          "4-inch sanitary waste stub-in per vendor area",
+          "Gas piping and gas meters for each side of building",
+          "No hot water generation included — vendor fit-out responsibility"
+        ],
+        "fire_protection": [
+          "No sprinkler system (building < 8,000 SF per UFC 3-600-01 §4-8.2)",
+          "Fire alarm/mass notification system deferred to tenant upfit",
+          "Portable fire extinguishers per NFPA 101",
+          "Kitchen hood fire suppression deferred to vendor fit-out"
+        ]
+      }
+    },
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set PDF provided in intake folder. MEP system inventory derived from BOD text descriptions only."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "BOD Project Description (100% Design, Aug 2022)",
+          "value": "5,500 NSF (Vendor #1: 2,000 SF, Vendor #2: 3,500 SF)"
+        },
+        {
+          "source": "SAES §A2c (FY20 Rev17, Feb 2020)",
+          "value": "6,500 NSF (Vendor #1: 2,000 SF, Vendor #2: 3,000 SF, pop-up retail: 1,500 SF)"
+        }
+      ],
+      "resolution_chosen": "BOD Project Description (100% Design, Aug 2022)",
+      "rationale": "The BOD is a later document (August 2022 vs. February 2020 SAES) representing the completed design intent. The SAES is the scoping document written before design commenced. Scope clearly changed during design: the pop-up retail space was removed and Vendor #2 was enlarged from 3,000 SF to 3,500 SF. The 100% BOD reflects the final, built scope."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md",
+      "landscape_architecture": "narratives/disciplines/landscape_architecture.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md"
+    }
+  }
+}

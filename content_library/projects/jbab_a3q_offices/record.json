@@ -1,0 +1,427 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "20-080",
+    "status": "present_with_value",
+    "source": "BOD cover page",
+    "quote": "BFA Project #20-080"
+  },
+  "project_slug": "jbab_a3q_offices",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/jbab_a3q_offices/20-080.2020.11.14 FINAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "78760479ec04c4ad4593bc1a73120d36a65691e28125a0194b93d77108d78b9c",
+      "page_count": 9,
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/jbab_a3q_offices/Attachment A - SOW - JBAB 520 Renovate A3Q Offices.pdf",
+      "type": "sow",
+      "sha256": "57f63a9d69a9f382edc3d2e59f3a23377291ec8161bf71a0cc3c1fa30a7e017c",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/jbab_a3q_offices/RFP - JBAB 520 - Renovate A3Q Offices.pdf",
+      "type": "sow",
+      "sha256": "8c20776d37b772f5c4c34a86a1003ef6794f1dff82c30fccaa2bbb8da8c9ba3a",
+      "included": true,
+      "flag_for_human_review": true,
+      "type_note": "RFP (Request for Proposal) package; classified as sow as the closest match — includes general requirements, project statement of work, and contractual clauses. No standalone 'sow' type exists for RFP wrapper docs; retro flags this gap."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set PDF found in intake directory. BOD and SOW/RFP provide sufficient text-based facts. Reference to NAVFAC Drawing Nos. N/A in RFP confirms drawings were not issued with the RFP package."
+  },
+  "facts": {
+    "project_name": {
+      "value": "B520 Renovate A3Q Offices",
+      "source": "RFP cover page",
+      "quote": "JBAB 520 – Renovate A3Q Offices",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "JBAB 520 – Renovate A3Q Offices",
+          "value": "B520 Renovate A3Q Offices",
+          "agrees": true
+        },
+        {
+          "source": "SOW header",
+          "claim": "B520 Renovate A3Q Offices",
+          "value": "B520 Renovate A3Q Offices",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "BLDG. 520 A3Q OFFICES",
+          "value": "B520 Renovate A3Q Offices",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "NAVFAC Washington",
+      "source": "SOW header",
+      "quote": "For Commander, NAVFAC Washington",
+      "corroboration": [
+        {
+          "source": "SOW header",
+          "claim": "For Commander, NAVFAC Washington",
+          "value": "NAVFAC Washington",
+          "agrees": true
+        },
+        {
+          "source": "RFP general requirements",
+          "claim": "NAVFAC Washington",
+          "value": "NAVFAC Washington",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Joint Base Anacostia-Bolling / Naval Facilities Engineering Command Washington",
+      "source": "SOW/RFP",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND, WASHINGTON PUBLIC WORKS DEPARTMENT, JOINT BASE ANACOSTIA-BOLLING (JBAB)",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND, WASHINGTON PUBLIC WORKS DEPARTMENT, JOINT BASE ANACOSTIA-BOLLING (JBAB)",
+          "value": "NAVFAC Washington / JBAB PWD",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "facility_name": "Joint Base Anacostia-Bolling, Building 520",
+      "facility_address": "370 Brookley Ave SE, Washington, DC 20032",
+      "source": "RFP cover page",
+      "quote": "Joint Base Anacostia-Bolling, Washington, D.C.",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Joint Base Anacostia-Bolling, Washington, D.C.",
+          "value": "Washington, DC",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "JOINT BASE ANACOSTIA-BOLLING WASHINGTON, DC",
+          "value": "Washington, DC",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover",
+          "claim": "Joint Base Anacostia Bolling (JBAB) Washington, DC 20032",
+          "value": "Washington, DC 20032",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-080",
+      "source": "BOD cover page",
+      "quote": "BFA Project #20-080"
+    },
+    "project_number_client": {
+      "value": "1666195",
+      "source": "SOW header",
+      "quote": "Work Order Number: 1666195"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP solicitation number N40080-20-R-6921 is the pre-award identifier. The awarded task order contract number under the SB MACC (N40080-19-D-00XX series) is not in the source documents."
+    },
+    "task_order_number": {
+      "value": "N40080-20-R-6921",
+      "source": "RFP cover page",
+      "quote": "Solicitation No.: N40080-20-R-6921",
+      "notes": "This is the solicitation/RFP number. The awarded task order number is not captured in these documents."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No explicit building GSF stated in any source. SOW §5.0 mentions 5,000 SF drywall scope estimate, which is renovation scope not building area. Building 520 is noted as an 'unlimited area' warehouse/office per IBC 507.5 in the BOD fire protection section. Drawings not available.",
+      "corroboration": [
+        {
+          "source": "SOW §5.0",
+          "claim": "contractor will estimate installing 5,000 Square Feet of drywall",
+          "value": "5000 SF drywall scope (NOT building GSF)",
+          "agrees": false,
+          "note": "This is renovation drywall scope, not building gross area"
+        },
+        {
+          "source": "BOD fire protection",
+          "claim": "it exceeds the allowable 27,000 sf floor area for a multi-story, sprinklered, Type VB office or storage facility",
+          "value": "> 27000 SF total building (lower bound inference only)",
+          "agrees": false,
+          "note": "Confirms building exceeds 27,000 SF but gives no precise figure"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design-Build delivery; design fee not broken out separately in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2020-12-14",
+        "source": "BOD cover page",
+        "quote": "FIANL SUBMITTAL DEC 14, 2020",
+        "notes": "BOD labeled Final Submittal dated December 14, 2020. This represents completion of design BOD submittal."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Estimated price range only: between $1,000,000 and $5,000,000 per FAR 36.204 disclosure. No awarded contract value in source documents.",
+        "estimated_range_low": 1000000,
+        "estimated_range_high": 5000000,
+        "estimated_range_source": "RFP general requirements",
+        "estimated_range_quote": "the estimated price range for this project is between $1,000,000 and $5,000,000"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP requires completion within 240 calendar days after award. Award date not in source documents."
+      },
+      "contractual_duration_days": {
+        "value": 240,
+        "source": "RFP general requirements",
+        "quote": "the Government desires completion of construction within 240 calendar days after award (includes 15 calendar days for submission and approval of bonds and insurance)",
+        "corroboration": [
+          {
+            "source": "RFP general requirements",
+            "claim": "240 calendar days after award",
+            "value": 240,
+            "agrees": true
+          },
+          {
+            "source": "SOW Part 3 §1.0 Project Description",
+            "claim": "the performance period is 240 calendar days",
+            "value": 240,
+            "agrees": true
+          },
+          {
+            "source": "RFP contract clause 52.211-10",
+            "claim": "complete the entire work ready for use not later than 240 days from Notice of Award",
+            "value": 240,
+            "agrees": true
+          }
+        ]
+      },
+      "liquidated_damages_per_day": {
+        "value": 500,
+        "currency": "USD",
+        "source": "RFP contract clause 52.211-12",
+        "quote": "Liquidated Damages will be assessed in the amount of $500.00 for each calendar day of delay"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_secure"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering",
+      "telecommunications_engineering",
+      "security_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "telecom_structured_cabling",
+      "security_access_control",
+      "security_scif_classified"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "security_acs",
+      "security_intrusion",
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "finishes_drywall_plaster",
+      "finishes_flooring",
+      "finishes_acoustical_ceilings",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "openings_door_hardware",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "communications_scope",
+      "furnishings_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_macc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_small_business_set_aside"
+    ],
+    "award_type": [
+      "task_order_competition"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "scif_specific": {
+    "icd_705_compliant": true,
+    "icd_705_source": "BOD architectural section",
+    "icd_705_quote": "The first objective (Phase 1) is to renovate Suite 220 according to ICD and ICS 705 standards.",
+    "scif_suites": [
+      "Suite 220"
+    ],
+    "stc_rating_required": 45,
+    "stc_source": "BOD architectural section",
+    "stc_quote": "All perimeter walls of the newly created SCIF will extend from true floor to true ceiling as per ICD 705 Criteria. The existing Office 220 wall partitions shall be modified to achieve an STC-45 acoustical rating",
+    "security_system": "Advantor",
+    "security_system_source": "SOW §5.0 Room Requirements Phase 1",
+    "security_system_quote": "Upgrade existing ADVANTOR security system to meet new occupational requirements. For proposal purposes, estimate $120,000 ADVANTOR' services."
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Rolando Cabero, R.A.",
+      "role_on_project": "Project/Design Manager (Government)",
+      "organization": "NAVFAC Washington",
+      "note": "Government PM — not BFA staff"
+    }
+  ],
+  "tenant_freeform_tags": [
+    "navfac",
+    "jbab",
+    "washington_dc",
+    "scif",
+    "icd_705",
+    "design_build",
+    "sb_macc",
+    "federal_military",
+    "office_renovation",
+    "building_520",
+    "a3q"
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "extraction_note": "No drawing set found in intake directory. RFP states 'NAVFAC Drawing Nos.: N/A', confirming no government-furnished drawings were issued with the RFP. Design-Build project; contractor originated drawings. BOD serves as design basis document."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD fire protection section",
+          "value": ">27,000 SF (lower bound inference — building exceeds IBC unlimited area threshold)"
+        },
+        {
+          "source": "SOW §5.0",
+          "value": "5,000 SF (drywall renovation scope only — not building GSF)"
+        }
+      ],
+      "resolution_chosen": "status: missing",
+      "rationale": "Neither value is a true building GSF. The 5,000 SF is drywall scope, not area. The 27,000 SF reference is a code threshold the building exceeds, not the actual area. No authoritative GSF found in available sources."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md"
+    }
+  }
+}

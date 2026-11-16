@@ -1,0 +1,289 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "warehouse_reno",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/harpers_ferry/warehouse_reno/24-059.2024.11.22.FINAL SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "50a8ef9e7addf6d581cb3623b55c512fd7e5268186623b9db72c6c82268f208e",
+      "page_count": 5,
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Warehouse Machine/Welding Shop Ventilation",
+      "source": "BOD cover page",
+      "quote": "WAREHOUSE MACHINE/WELDING SHOP VENTILATION",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "WAREHOUSE MACHINE/WELDING SHOP VENTILATION",
+          "value": "Warehouse Machine/Welding Shop Ventilation",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.1 General section",
+          "claim": "complete design of a ventilation system in the existing Machine/Welding room located within the existing Warehouse facility",
+          "value": "Warehouse Machine/Welding Shop Ventilation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Customs and Border Protection",
+      "source": "BOD cover page",
+      "quote": "US CUSTOMS PATROL AND BORDER PROTECTION",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "US CUSTOMS PATROL AND BORDER PROTECTION",
+          "value": "US Customs and Border Protection",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Customs and Border Protection",
+      "source": "BOD cover page",
+      "quote": "US CUSTOMS PATROL AND BORDER PROTECTION",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "US CUSTOMS PATROL AND BORDER PROTECTION",
+          "value": "US Customs and Border Protection",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Harpers Ferry",
+      "state": "WV",
+      "country": "US",
+      "facility_address": null,
+      "source": "BOD cover page",
+      "quote": "Harpers Ferry, WV",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Harpers Ferry, WV",
+          "value": "Harpers Ferry, WV",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.2 HVAC Design Conditions",
+          "claim": "Harpers Ferry",
+          "value": "Harpers Ferry, WV",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-059",
+      "source": "BOD cover page",
+      "quote": "BFA Project #24-059",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BFA Project #24-059",
+          "value": "24-059",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing"
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-11-22",
+        "source": "BOD cover page",
+        "quote": "November 22, 2024",
+        "note": "100% submittal date; represents design completion milestone"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dhs"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "cbp",
+    "harpers_ferry",
+    "welding_shop_ventilation",
+    "industrial_ventilation",
+    "federal_facility",
+    "west_virginia"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "No drawings present; BOD does not state building area"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "New inline exhaust fan, 1500 CFM, within Welding room",
+          "New discharge gooseneck",
+          "New dedicated outside air unit",
+          "New ductwork and diffusers within Welding room",
+          "System configured to maintain negative pressure"
+        ],
+        "electrical": [
+          "Demo of existing exterior wall-mounted exhaust fan and associated wiring/conduit back to existing distribution panel",
+          "New power connections to proposed exhaust fan and air handling unit",
+          "EMT conduit with compression fittings",
+          "Copper conductors, THHN/THWN 600V insulation",
+          "Motors 1/2 HP and larger at 208 or 480V three-phase 60Hz"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

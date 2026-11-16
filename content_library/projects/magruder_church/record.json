@@ -1,0 +1,575 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "magruder_church",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/magruder_church/SCOPE.pdf",
+      "type": "sow",
+      "sha256": "0b4b3ed6204beb2f9cb54d07d378ee9e10cfb4e1a08453e0953baf7d7fcf6017",
+      "included": true,
+      "notes": "Statement of Work for Design & Construction Services, Building 2707, York River Presbyterian Church Preservation, dated 04/28/2020"
+    },
+    {
+      "path": "00_admin/reference_projects/magruder_church/Magruder Church RFP.pdf",
+      "type": "correspondence",
+      "sha256": "7b0e050b09cf390088597727ca50c9659cfc52fd7534e5e19200435b4cef1b07",
+      "included": true,
+      "notes": "RFP cover letter from AFETA dated 8 September 2020 to HBA Architecture & Interior Design; image-based PDF; content extracted via render/read_image. Also contains SOW cover page and historical architectural report attachment."
+    },
+    {
+      "path": "00_admin/reference_projects/magruder_church/21005_Magruder Church_CLIN 0002 (Rehabilitation) BOD-100722.doc",
+      "type": "bod",
+      "sha256": "44003bbf2659e6d512d501ab8573860873fc71654992e465451d5e136e8142d4",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Basis of Design for CLIN 0002 Rehabilitation, dated 10/07/22. File failed pandoc extraction (corrupt .doc container). Contents not extractable — flag for human review."
+    },
+    {
+      "path": "00_admin/reference_projects/magruder_church/20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf",
+      "type": "drawing_set",
+      "sha256": "1d1d0488b84f48f733288d2586490c387fb9d75e66334e5688470d49c6f09cbf",
+      "page_count": 6,
+      "included": true,
+      "notes": "CLIN 0002 Rehabilitation drawing set, revision date 10/07/22. 6 sheets: P-101, M-101, M-701, E-001, ES101, ED101. Firm: HBA Architecture & Interior Design."
+    },
+    {
+      "path": "00_admin/reference_projects/magruder_church/20-091.2022.10.14.FINAL ALL DRAWINGS CLIN 0002.pdf",
+      "type": "drawing_set",
+      "sha256": "663e3d8921b92065389b3dd866972fc5fce4d26ca34883675cd17fe58d06486f",
+      "page_count": 4,
+      "included": true,
+      "notes": "CLIN 0002 Rehabilitation drawing set, revision date 10/14/22. 4 sheets (subset re-issued): P-101, M-701, E-001, ED-101 — appears to be a partial re-issue updating the 10/07/22 set. Sheet 1A of 2 notation visible on P-101."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD present but unreadable (corrupt .doc file). SOW fully extracted. Two drawing set revisions present; both processed. No specifications book or executed contract found."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 2707, York River Presbyterian Church (Magruder Church) Preservation and Rehabilitation",
+      "source": "SOW §1.1",
+      "quote": "The Work is to provide Design & Construction documents for the Preservation and Rehabilitation of the York River Presbyterian Church Restoration or known as \"Magruder Church\". Magruder Church shall be identified as Building 2707",
+      "corroboration": [
+        {
+          "source": "SOW §1.1",
+          "claim": "York River Presbyterian Church / Magruder Church / Building 2707",
+          "value": "Building 2707, York River Presbyterian Church (Magruder Church) Preservation and Rehabilitation",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover letter, subject line",
+          "claim": "RFP 2020-011 Magruder Church (York River Presbyterian Church)",
+          "value": "Magruder Church / York River Presbyterian Church",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "BUILDING 2707 YORK RIVER PRESBYTERIAN CHURCH, CAMP PEARY, WILLIAMSBURG, VA (PRESERVATION)",
+          "value": "Building 2707, York River Presbyterian Church",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Armed Forces Experimental Training Activity (AFETA), Camp Peary",
+      "source": "SOW §3.1",
+      "quote": "The project located at the Armed Forces Experimental Training Activity (AFETA) at Camp Peary, Virginia.",
+      "corroboration": [
+        {
+          "source": "SOW §3.1",
+          "claim": "Armed Forces Experimental Training Activity (AFETA) at Camp Peary, Virginia",
+          "value": "AFETA, Camp Peary",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover letter header",
+          "claim": "Department of Defense, Armed Forces Experimental Training Activity, Camp Peary",
+          "value": "AFETA, Camp Peary",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Armed Forces Experimental Training Activity (AFETA), Camp Peary — Department of Defense",
+      "source": "RFP cover letter header",
+      "quote": "DEPARTMENT OF DEFENSE Armed Forces Experimental Training Activity Camp Peary 1100 Executive Drive Williamsburg, Virginia 23188-4005",
+      "corroboration": [
+        {
+          "source": "RFP cover letter header",
+          "claim": "Department of Defense, AFETA, Camp Peary",
+          "value": "DoD / AFETA",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Williamsburg",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "1100 Executive Drive, Williamsburg, VA 23188",
+      "facility_name": "Camp Peary (AFETA) — Building 2707",
+      "source": "RFP cover letter header and SOW §3.1",
+      "quote": "Camp Peary is a Department of Defense facility near Williamsburg, Virginia where DoD and USG agencies conduct training and attend conferences. The main gate is located immediately off I-64, at exit 238.",
+      "corroboration": [
+        {
+          "source": "SOW §3.1",
+          "claim": "Camp Peary, Virginia — near Williamsburg",
+          "value": "Williamsburg, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover letter header",
+          "claim": "1100 Executive Drive, Williamsburg, Virginia 23188-4005",
+          "value": "Williamsburg, VA 23188",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block",
+          "claim": "CAMP PEARY, WILLIAMSBURG, VA",
+          "value": "Williamsburg, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "RFP 2020-011",
+      "source": "RFP cover letter, subject line",
+      "quote": "Subject: Request for Proposal (RFP) 2020-011 Magruder Church (York River Presbyterian Church)",
+      "corroboration": [
+        {
+          "source": "RFP cover letter, subject line",
+          "claim": "RFP 2020-011",
+          "value": "RFP 2020-011",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage stated in SOW or accessible documents. Building described qualitatively as 'a small, one-story, one-room chapel...three bays wide by three bays deep' with a narrow apse extension and belfry tower. Drawing plans show a modest footprint consistent with a small historic chapel; no area callout visible on extracted sheets. BOD (corrupt) may have contained this data."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "contractual_duration_days": {
+      "value": 190,
+      "source": "SOW §3.2",
+      "quote": "The total time for the project is estimated 190 calendar days after the Notice to Proceed (NTP) is given by the Contracting Officer.",
+      "corroboration": [
+        {
+          "source": "SOW §3.2",
+          "claim": "190 calendar days after NTP",
+          "value": 190,
+          "agrees": true
+        }
+      ]
+    },
+    "ntp_anticipated": {
+      "value": "2020-05 to 2020-06",
+      "source": "SOW §3.2",
+      "quote": "NTP is anticipated for May/June 2020.",
+      "corroboration": [
+        {
+          "source": "SOW §3.2",
+          "claim": "NTP anticipated May/June 2020",
+          "value": "2020-05 to 2020-06",
+          "agrees": true
+        }
+      ]
+    },
+    "design_completion_anticipated": {
+      "value": "2020-11 to 2020-12",
+      "source": "SOW §3.2",
+      "quote": "Overall Design completion shall be completed by November/December 2020.",
+      "corroboration": [
+        {
+          "source": "SOW §3.2",
+          "claim": "November/December 2020",
+          "value": "2020-11 to 2020-12",
+          "agrees": true
+        }
+      ]
+    },
+    "building_description": {
+      "value": "Small one-story, one-room chapel, three bays wide by three bays deep, with narrow apse extension and central belfry tower. Main building completed 1887; belfry tower added 1894. Wood frame structural system clad with drop siding; red brick pier foundation infilled with matching brick. Front-gabled roof covered with tin shingles. Contributing resource to Magruder Village Historic District (DHR ID#099-5240).",
+      "source": "SOW §2.3",
+      "quote": "The church building is a small, one-story, one-room chapel. It is three bays-wide by three bays deep, and has a narrow apse extension from the rear (south), as well as a central belfry tower projecting from the front (north). The main building was completed in 1887, and subsequently was expanded with the front belfry tower in 1894. The main block has a wood frame structural system clad with drop siding and beaded corner boards. It rests on a red brick pier foundation that has been infilled with matching brick",
+      "corroboration": [
+        {
+          "source": "SOW §2.3",
+          "claim": "1-story, 1-room chapel, wood frame, brick pier foundation, 1887/1894",
+          "agrees": true
+        },
+        {
+          "source": "drawing floor plans (P-101, M-101)",
+          "claim": "Single-story footprint visible; main chapel volume plus apse, consistent with text description",
+          "agrees": true
+        }
+      ]
+    },
+    "project_intent": {
+      "value": "Two priorities: (1) preserve the church from further decay; (2) restore the church to an acceptable level for events, functions, and occasional use as its original intended purpose (church).",
+      "source": "SOW §2.4",
+      "quote": "The USG's intent with this effort is divided into two (2) priorities: (1) to preserve the church from further decay; (2) restore the Church to an acceptable level for events, functions and occasionally use as its original intended purpose (i.e. Church).",
+      "corroboration": [
+        {
+          "source": "SOW §2.4",
+          "claim": "Preserve from decay; restore for events/occasional church use",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_type": {
+      "value": "Firm Fixed Price (FFP)",
+      "source": "RFP cover letter",
+      "quote": "The Sponsor anticipates the award of a Firm Fixed Price (FFP) contract.",
+      "corroboration": [
+        {
+          "source": "RFP cover letter",
+          "claim": "Firm Fixed Price (FFP)",
+          "agrees": true
+        }
+      ]
+    },
+    "rfp_submission_deadline": {
+      "value": "2020-10-09T12:00:00-05:00",
+      "source": "RFP cover letter, page 2",
+      "quote": "no later than 1200 hours EST on 09 October 2020",
+      "corroboration": [
+        {
+          "source": "RFP cover letter, page 2",
+          "claim": "1200 hours EST, 09 October 2020",
+          "agrees": true
+        }
+      ]
+    },
+    "ae_firm_solicited": {
+      "value": "HBA Architecture & Interior Design, Inc., One Columbus Center, Suite 1000, Virginia Beach, VA 23462",
+      "source": "RFP cover letter, addressee",
+      "quote": "HBA Architecture & Interior Design, Inc. One Columbus Center Suite 1000 Virginia Beach, VA 23462",
+      "corroboration": [
+        {
+          "source": "RFP cover letter, addressee",
+          "claim": "HBA Architecture & Interior Design, Inc., Virginia Beach VA",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "HBA Architecture Interior Design logo",
+          "agrees": true
+        }
+      ]
+    },
+    "clin_structure": {
+      "value": "Two CLINs: CLIN 001 (Base Bid) = Preservation Design & Construction Development Services (30%, 100%, IFC); CLIN 002 (Bid Option) = Rehabilitation Design & Construction Development Services (30%, 60%, 100%, IFC). Drawings in file are for CLIN 0002 Rehabilitation.",
+      "source": "SOW §4.3",
+      "quote": "CLIN 001 (Base Bid) - Design & Construction Development Services for the Preservation of Building 2707, to include, 30%, 100% and IFC Documents. CLIN 002 (Bid Option) - Design & Construction Development Services for the Rehabilitation of Building 2707, to include, 30%, 60%, 100% and IFC Documents.",
+      "corroboration": [
+        {
+          "source": "SOW §4.3",
+          "claim": "Two CLINs, Preservation base + Rehabilitation option",
+          "agrees": true
+        },
+        {
+          "source": "drawing file names and title blocks",
+          "claim": "FINAL ALL DRAWINGS CLIN 0002 — Rehabilitation drawings",
+          "agrees": true
+        }
+      ]
+    },
+    "historic_district": {
+      "value": "Magruder Village Historic District, DHR ID#099-5240, determined not eligible for National Register",
+      "source": "SOW §2.2",
+      "quote": "The York River Presbyterian Church and Cemetery (AFETA Camp Peary Structure #2707), which is familiarly known as \"Magruder Church,\" is a contributing resource to the Magruder Village Historic District (DHR ID#099-5240), which has been determined to be not eligible for inclusion in the National Register.",
+      "corroboration": [
+        {
+          "source": "SOW §2.2",
+          "claim": "Contributing resource to Magruder Village Historic District (DHR #099-5240); not eligible for National Register",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design anticipated complete Nov/Dec 2020 per SOW §3.2"
+      },
+      "contractual_duration_days": {
+        "value": 190,
+        "source": "SOW §3.2",
+        "quote": "The total time for the project is estimated 190 calendar days after the Notice to Proceed (NTP) is given by the Contracting Officer."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No construction contract documents present in intake; this record captures A/E design services scope only"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "religious"
+    ],
+    "program_subtype": [
+      "religious_worship"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_historic",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "electrical_systems",
+      "plumbing_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "historic_preservation",
+    "camp_peary",
+    "afeta",
+    "dod",
+    "williamsburg",
+    "chapel",
+    "rehabilitation",
+    "clin_structure",
+    "federal_ffp"
+  ],
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "P-101",
+        "title": "PLUMBING FLOOR PLANS — REHABILITATION",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf (page 1); also in 10/14/22 revision",
+        "reading_notes": "Shows two floor plans: demolition plan (remove all plumbing fixtures; waste piping and domestic cold water to remain for reuse) and new construction plan. New work: flush tank water closet connecting to existing piping; wall-hung lavatory connecting to existing piping. CW (cold water) piping runs from crawl space at 3/4-inch and 1/2-inch. Exterior yard hydrant noted as existing. Handhole with frozen shut-off valve to be replaced. Building has no hot water heating equipment — domestic cold water service only (general note). Very small footprint: plumbing serves a single restroom alcove. Layout confirms single-story, small-to-modest footprint building."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "MECHANICAL FLOOR PLANS — REHABILITATION",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf (page 2)",
+        "reading_notes": "Shows demolition and new work plans for HVAC. Existing: electric baseboard heaters (BBH) throughout main chapel and alcoves — ~10 units visible on demolition plan. New: replacement electric baseboard heaters (BB-1 through BB-10 per M-701 schedule) plus one fin tube heater; thermostats replaced with new 7-day programmable type. Heating is entirely electric resistance. No cooling system shown or noted — building is heating-only. Controls: refer to M-701."
+      },
+      {
+        "sheet_number": "M-701",
+        "title": "SCHEDULE AND CONTROLS",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf (page 3); also in 10/14/22 revision",
+        "reading_notes": "Baseboard unit heater schedule: BB-1 through BB-10, all floor-mounted. Capacities range from 396 to 2900 BTUH. Electric service: 120V, 375W to 1000W. HVAC design conditions: indoor winter 65°F, summer 50% RH; outdoor summer 91°F db / 77°F MWB, winter 17°F. Controls points list: zone temperature (AI, alarm, trend, show on graphic), heating stage 1 (BO), heating setpoint (alarm, trend, show on graphic), schedule (software loop), low zone setpoint (AI, alarm). Fin tube heater sequence of operation: occupied mode 70°F setpoint, unoccupied 65°F night setback. One-stage electric heating control. Note: no cooling or ventilation controls shown — building is electric heat only."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND, ABBREVIATIONS AND SCHEDULE",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf (page 4); also in 10/14/22 revision",
+        "reading_notes": "Electrical legend, abbreviations, and panelboard schedule. Existing Panelboard 'A' Schedule: 125A, MLO, 240V/120V, 1-phase, 3-wire, 10 kAIC min, surface mount. Loads: baseboard heater circuits, parking lot lighting (20A 120V), receptacles (interior & exterior), GFCI receptacles/flood lights. GE load center (Type 1, TLMG125 MOD). Fed from 2-pole 100A NEMA 3R disconnect switch on exterior of building. Note: drawings were PE-stamped by Richard K. Huang, EE, Virginia. Arc Flash warning label included (UFC 3-560-01). All existing electrical equipment, lighting, and devices must have new wiring — full rewire scope."
+      },
+      {
+        "sheet_number": "ES101",
+        "title": "ELECTRICAL SITE PLAN — REHABILITATION",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf (page 5)",
+        "reading_notes": "Electrical site plan showing Building 2707 in context of its cemetery/site setting. Shows existing panelboard 'A' location on building exterior; parking lot lighting run (direct buried schedule 40 PVC conduit, min 24 inches deep); area/street lighting on 14' poles per fixture schedule E-501 (not in this drawing set). Site shows burial plots, headstones, mature trees (48-inch oak, 12-inch cedar, 6-inch dogwood), wood picket fence, brick wall, chain rail barrier. Gravel parking area; gas valve and swale at site perimeter. Note: rehabilitation includes new parking lot lighting fed from spare circuit breaker in panel 'A'. Site plan confirms small, rural/wooded setting on active DoD installation."
+      },
+      {
+        "sheet_number": "ED101",
+        "title": "FLOOR PLAN — DEMOLITION (ELECTRICAL)",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-091.2022.10.07.FINAL ALL DRAWINGS CLIN 0002.pdf (page 6)",
+        "reading_notes": "Electrical demolition floor plan. Scope includes full rewire: disconnect/remove existing baseboard heater wiring (reconnect circuit to new baseboard heater with new wiring); disconnect existing outdoor flood lights and remove all wiring; existing panelboard 'A' to remain; existing ground cover 'KRALDY 6X6 COVER' to remain; save and reinstall existing exterior weatherproof GFCI receptacles and disconnect switch; save and reinstall incandescent pendant light fixtures (above entry door) and wall-mounted incandescent light fixtures. Confirms: all existing electrical devices and wiring must be replaced/renewed — this is a full electrical rehabilitation. Single floor plan layout confirms small 1-story building with main chapel space plus side alcove/toilet room plus entry vestibule."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No area callout on any drawing sheet. Building plan footprint from floor plans suggests a very small structure (approximately 1,000-1,500 SF range based on scale and three-bay description, but this is extractor estimation, not a measured value from drawings). Quote-or-null discipline: not asserting estimated value.",
+        "sheets": [
+          "P-101",
+          "M-101",
+          "ED101"
+        ]
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "SOW §2.3 and drawing floor plans",
+        "quote": null,
+        "sheets": [
+          "P-101",
+          "M-101",
+          "ED101"
+        ],
+        "notes": "Single floor plan on all sheets; SOW text confirms 'one-story' building"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Electric baseboard heaters — 10 units (BB-1 through BB-10), 120V, 375W–1000W each, floor-mounted",
+          "7-day programmable thermostat controls (new)",
+          "No cooling system; heating-only facility",
+          "Design conditions: 65°F indoor winter, 17°F outdoor winter design"
+        ],
+        "electrical": [
+          "Existing panelboard 'A' — 125A MLO, 240V/120V, 1-phase, 3-wire, 10 kAIC, surface mount (to remain)",
+          "2-pole 100A NEMA 3R disconnect switch on building exterior",
+          "Full rewire — all existing wiring replaced",
+          "Parking lot lighting (new conduit circuit from panel 'A')",
+          "Area/street lighting on 14' poles (per E-501, not in extracted set)"
+        ],
+        "plumbing": [
+          "Domestic cold water service only (no hot water equipment in building)",
+          "New flush-tank water closet connecting to existing piping",
+          "New wall-hung lavatory connecting to existing piping",
+          "CW 3/4-inch and 1/2-inch in crawl space",
+          "Exterior yard hydrant (existing to remain)",
+          "Frozen shut-off valve replaced in handhole"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.ae_firm_solicited / taxonomy.bfa_role",
+      "severity": "major",
+      "description": "The RFP is addressed to HBA Architecture & Interior Design, Inc. (Virginia Beach) and all drawings are stamped with HBA's logo/name. BFA is not mentioned in any source document by name. It is unclear whether BFA was the prime consultant, a subconsultant, or whether HBA is the firm and this is a reference project collected from another firm's work. The record is created with bfa_role: prime_consultant as a placeholder, but this requires human verification.",
+      "claims": [
+        {
+          "source": "RFP cover letter",
+          "value": "RFP addressed to HBA Architecture & Interior Design, Inc."
+        },
+        {
+          "source": "drawing title block",
+          "value": "HBA Architecture Interior Design logo on all sheets"
+        },
+        {
+          "source": "BFA project folder",
+          "value": "File stored in BFA reference_projects intake; implies BFA involvement"
+        }
+      ],
+      "resolution_chosen": "prime_consultant (placeholder pending human review)",
+      "rationale": "Stored in BFA's reference_projects folder, which implies BFA relevance. However, no document names BFA. Flag for human verification of firm role."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

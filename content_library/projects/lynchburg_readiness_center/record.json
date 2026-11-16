@@ -1,0 +1,360 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "lynchburg_readiness_center",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/dma/lynchburg_readiness_center/Request for Fee Proposal (Lynchburg).pdf",
+      "type": "sow",
+      "sha256": "8b3731802940530cdd3a2d5f44b2d37bd584fd5eb62a3d1d3d7b189e7489973d",
+      "included": true,
+      "notes": "Request for Fee Proposal from DMA, dated August 10, 2022. Primary scope document."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/lynchburg_readiness_center/22-050.2022.12.22.SEIR LYNCHBURG_ELECTRICAL.docx",
+      "type": "report",
+      "sha256": "fbaba4c5870db6290da026daea6ad3585cd3e14f1221f6da3df1ce6569024789",
+      "included": true,
+      "notes": "Site Environmental/Engineering Investigation Report (SEIR) – Electrical. Header date April 19, 2023; site visit date 12/5/2022. Documents existing electrical distribution system and electrical scope for HVAC replacement."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/lynchburg_readiness_center/22-050.2024.01.05.FINAL SUBMITTAL BASIS OF DESIGN_MECHANICAL.doc",
+      "type": "bod",
+      "sha256": "e87c6732ef5650fa19886467336f5cfb73ba1ba7353e1365b1c0f442685c0d0f",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Final Submittal Basis of Design – Mechanical, dated 2024-01-05. File is corrupt/damaged – pandoc failed to extract: 'Did not find end of central directory signature'. Content could not be read. Human review required."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/lynchburg_readiness_center/RRMM Field Report-Lynchburg RC.docx",
+      "type": "report",
+      "sha256": "fad1b42b9c736f67c46826d45e368a5427ef4df1d6c9b251f1d8cd1d9d98c69a",
+      "included": true,
+      "notes": "RRMM Field Report for Lynchburg RC dated December 22, 2022. Site visit date 12/5/2022. Near-duplicate of the SEIR electrical document; both authored by BFA (RRMM). Records existing electrical system observations and scope notes."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/lynchburg_readiness_center/Construction and Professional Services Manual.pdf",
+      "type": "unknown",
+      "sha256": "50718d114f2fb7a7e649719579c1e059c05454e3e201f317d4ae06192774ae3f",
+      "included": false,
+      "flag_for_human_review": false,
+      "notes": "Virginia CPSM 2022 Edition. Reference document for DMA A/E procurement and submittal requirements; not project-specific content. Not used for fact extraction."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "BOD present but unreadable (corrupt .doc file). RFP serves as SOW. No drawings or specs included in source package. SEIR/field reports provide partial MEP inventory."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Lynchburg Readiness Center HVAC Upgrades",
+      "source": "Request for Fee Proposal (Lynchburg).pdf, title",
+      "quote": "Lynchburg RC HVAC Upgrades",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Lynchburg).pdf, title",
+          "claim": "Lynchburg RC HVAC Upgrades",
+          "value": "Lynchburg Readiness Center HVAC Upgrades",
+          "agrees": true
+        },
+        {
+          "source": "RRMM Field Report-Lynchburg RC.docx, REFERENCE line",
+          "claim": "20188-05 DMA Lynchburg HVAC Replacement",
+          "value": "Lynchburg Readiness Center HVAC Replacement",
+          "agrees": true,
+          "note": "Internal BFA project reference uses 'Replacement' vs. 'Upgrades' in RFP. Minor terminology difference."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "Request for Fee Proposal (Lynchburg).pdf, header",
+      "quote": "Department of Military Affairs",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Lynchburg).pdf, header",
+          "claim": "Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        },
+        {
+          "source": "RRMM Field Report-Lynchburg RC.docx, TO line",
+          "claim": "Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "Request for Fee Proposal (Lynchburg).pdf, header",
+      "quote": "Department of Military Affairs"
+    },
+    "client_contact": {
+      "value": "Kenneth M. Daniel, NGVA-FMO-AE",
+      "source": "Request for Fee Proposal (Lynchburg).pdf",
+      "quote": "NGVA-FMO-AE, Ken Daniel\nTEL: 434-298-6458\nEMAIL: kenneth.m.daniel5.nfg@army.mil"
+    },
+    "location": {
+      "city": "Lynchburg",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "facility_name": "Lynchburg Readiness Center",
+      "source": "Request for Fee Proposal (Lynchburg).pdf, title",
+      "quote": "Lynchburg RC HVAC Upgrades"
+    },
+    "project_number_client": {
+      "value": "State PN 123-18578-007 / VAFM PN 22-0010",
+      "source": "Request for Fee Proposal (Lynchburg).pdf",
+      "quote": "State PN 123-18578-007\n   VAFM PN 22-0010"
+    },
+    "project_number_internal": {
+      "value": "22-050",
+      "source": "RRMM Field Report-Lynchburg RC.docx, REFERENCE line",
+      "quote": "20188-05 DMA Lynchburg HVAC Replacement",
+      "notes": "File name prefix '22-050' also appears in source document filenames. The reference '20188-05' may be a different tracking number. BFA internal project number likely 22-050 based on filename convention."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No GSF stated in available readable source documents. Mechanical BOD (which might contain area data) is unreadable."
+    },
+    "program_budget": {
+      "value": 1099000,
+      "currency": "USD",
+      "source": "Request for Fee Proposal (Lynchburg).pdf, Section I",
+      "quote": "The not-to-exceed construction budget is $1,099,000.00.",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Lynchburg).pdf, Section I",
+          "claim": "$1,099,000.00 NTE construction budget",
+          "value": 1099000,
+          "agrees": true
+        }
+      ]
+    },
+    "rfp_date": {
+      "value": "2022-08-10",
+      "source": "Request for Fee Proposal (Lynchburg).pdf",
+      "quote": "August 10, 2022"
+    },
+    "site_visit_date": {
+      "value": "2022-12-05",
+      "source": "RRMM Field Report-Lynchburg RC.docx",
+      "quote": "VISIT DATE: 12/5/2022"
+    },
+    "design_duration_days": {
+      "value": 210,
+      "source": "Request for Fee Proposal (Lynchburg).pdf, Section V",
+      "quote": "Design shall be completed within 210 days after NTP is given."
+    },
+    "scope_summary": {
+      "value": "Complete HVAC system replacement for the Lynchburg Readiness Center, including removal and replacement of all rooftop HVAC units per CPSM life cycle cost analysis, ductwork analysis and replacement/cleaning, piping analysis and replacement/cleaning, installation of infectious disease prevention components (bipolar ionization, high-efficiency filtration, UV lighting, cold fusion), upgrade of Building Automation System (BAS) with humidity/temperature controls, HVAC zoning upgrades, and associated minor electrical and architectural work.",
+      "source": "Request for Fee Proposal (Lynchburg).pdf, Section II",
+      "quote": "Complete HVAC system replacement to include:\n• Removal and replacement of all units in accordance with CPSM life cycle cost analysis\n• Analyzation of existing duct work, removal and replacement or extensive cleaning, as necessary\n• Analyzation of existing piping, removal and replacement or extensive cleaning, as necessary\n• Installation of system components designed to prevent spread of infectious diseases, to include bipolar ionization, high efficiency filtration, UV lighting, visible lighting, cold fusion, and other emergent technologies\n• Upgrade of building Automation System to include humidity and temperature controls\n• Zoning of HVAC to reduce potential migration of airborne particles\n• Minor associated electrical and architectural work, as required"
+    },
+    "existing_electrical_system": {
+      "value": "800A, 208Y/120V, 3-phase, 4-wire main distribution panel (MDP) in Mechanical Room A27. Additional 208Y/120V, 3-phase panelboards throughout facility: Panel LA, PB, PBR (Mech Room A27), Panel PR (Corridor A29), Panel PK (Storage A44/kitchen area), Panel LB (Corridor A3).",
+      "source": "RRMM Field Report-Lynchburg RC.docx, ELECTRICAL OBSERVATIONS",
+      "quote": "The main electrical service entrance distribution panel was located in the mechanical room A27. The main service entrance panel \"MDP\" is an 800A, 800A M.C.B., 208Y/120V, 3 phase, 4 wire service.",
+      "corroboration": [
+        {
+          "source": "RRMM Field Report-Lynchburg RC.docx",
+          "claim": "800A, 208Y/120V, 3-phase, 4-wire MDP in Mech Room A27",
+          "agrees": true
+        },
+        {
+          "source": "22-050.2022.12.22.SEIR LYNCHBURG_ELECTRICAL.docx",
+          "claim": "800A, 208Y/120V, 3-phase, 4-wire MDP in Mech Room A27",
+          "agrees": true
+        }
+      ]
+    },
+    "electrical_scope": {
+      "value": "Remove electrical devices, wiring, and conduit back to existing panels to facilitate HVAC equipment replacement; temporarily support existing lighting fixtures during ductwork removal; install new circuits for new HVAC equipment; reinstall existing lighting fixtures in ceiling systems.",
+      "source": "RRMM Field Report-Lynchburg RC.docx, ELECTRICAL OBSERVATIONS item 4",
+      "quote": "The electrical scope of the project is to support the replacement of the existing roof top mounted HVAC equipment and any of its associated equipment electrically. This will entail the removal of any and all electrical devices, wiring and conduit back to the existing panel and temporarily supporting existing lighting fixtures throughout the interior spaces of the facility to facilitate the removal of any existing ductwork to be removed and replaced. It will also include the installation of new circuits to serve the new HVAC equipment and the reinstallation of the existing lighting fixtures in the ceiling systems in each space that the ceiling was taken down."
+    },
+    "existing_conditions_observations": {
+      "value": "Approximately 15 locations with displaced ceiling tiles as result of fire protection system installation; missing ceiling grille in kitchen; panel directory accuracy questioned by maintenance personnel for some panels.",
+      "source": "RRMM Field Report-Lynchburg RC.docx, OBSERVATIONS",
+      "quote": "Example of approximately 15 locations -- displaced ceiling tiles as a result of fire protection system installation"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Fee proposal was solicited (RFP) but final negotiated design fee not documented in available sources."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-01-05",
+        "source": "22-050.2024.01.05.FINAL SUBMITTAL BASIS OF DESIGN_MECHANICAL.doc, filename",
+        "quote": null,
+        "notes": "Inferred from filename date of Final Submittal BOD (2024-01-05). File is corrupt and unreadable; date inferred from filename only."
+      },
+      "contractual_duration_days": {
+        "value": 210,
+        "source": "Request for Fee Proposal (Lynchburg).pdf, Section V",
+        "quote": "Design shall be completed within 210 days after NTP is given."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "NTE construction budget is $1,099,000 (program budget); actual low bid/contract value not documented."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "state"
+    ],
+    "program_type": [
+      "military_armory"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_lighting_interior"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "state_qbs"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "virginia_national_guard",
+    "department_of_military_affairs",
+    "readiness_center",
+    "hvac_replacement",
+    "lynchburg",
+    "infectious_disease_prevention",
+    "bas_upgrade",
+    "state_facilities"
+  ],
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing set included in source package. Drawing extraction deferred."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_internal",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Source document filenames (22-050.*.docx)",
+          "value": "22-050"
+        },
+        {
+          "source": "RRMM Field Report REFERENCE line",
+          "value": "20188-05"
+        }
+      ],
+      "resolution_chosen": "22-050 (filename prefix)",
+      "rationale": "The BFA project number convention is YY-NNNN (2-digit year + sequence); '22-050' fits this convention and appears in all source document filenames. '20188-05' in the REFERENCE line appears to be a different tracking number (possibly DMA's internal tracking or BFA's legacy numbering) rather than the primary project ID."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

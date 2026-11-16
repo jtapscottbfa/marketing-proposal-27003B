@@ -1,0 +1,9 @@
+# Architecture — Building 234 / Building 184 Freight Elevator Replacement, NNSY
+
+Architectural scope on this project spanned elevator lobby finishes, machine room and hoistway door and hardware replacement, window replacement under historic preservation requirements, and exterior wall repair — work that tied the elevator replacement into the broader architectural fabric of both buildings.
+
+At both Building 234 and Building 184, elevator lobbies received new paint on walls approximately eight feet minimum around all elevator doors, and elevator signage was provided at all landing doors. New machine room doors and hardware were specified at both buildings.
+
+A significant architectural scope element at both buildings was window replacement coordinated with the Virginia State Historic Preservation Office (SHPO) under Section 106 of the National Historic Preservation Act. Norfolk Naval Shipyard is a historic installation, and both machine room windows required replacement to comply with SHPO requirements — specifically, to achieve a finding of No Adverse Effect. The A-E team prepared the required Section 106 documentation: project descriptions, detailed statements explaining replacement over repair, records of whether items were original to the buildings and when installed, dimensional and material details, and photographic documentation of elements being replaced, all in accordance with the Secretary of the Interior's Standards for Rehabilitation.
+
+At Building 234, exterior wall crack and spall repairs to the machine room and adjacent stairwell walls were designed with exterior surfaces finished to match the existing building appearance, integrating the structural repairs into the architectural character of the historic facility. Interior machine room walls and ceilings were primed and painted throughout at both buildings.

@@ -1,0 +1,710 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "charleston_cath_lab",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/36C24723R0016 - RFP.pdf",
+      "type": "sow",
+      "sha256": "98d024eb969583bd44dffd29ca2591282931996d13363c7d09cfe2121ba60187",
+      "included": true,
+      "notes": "Federal RFP/Solicitation 36C24723R0016 including SF252 A-E contract form, Supplement B Scope of Work, FAR/VAAR clauses, and price/cost schedule. Primary source for project scope, location, budget, and procurement type."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/SOW - Drawings-Equipment Basis of Design.pdf",
+      "type": "drawing_set",
+      "sha256": "9e340fac0d1772bb58d606130f71a2af0bcf13d4b349ef589de0acb14585c515",
+      "included": true,
+      "notes": "Drawing set labeled 'ARTIS ICONO FLOOR – REFERENCE DOCUMENT – NOT FOR CONSTRUCTION' with drawing numbers A-101, A-102, S-101, S-102, E-101, E-102, E-501, M-501. Architectural, structural, electrical, and mechanical reference drawings. Text extraction minimal; reference drawings only. Drawing number 19076."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/2023.10.04 23-015 Electrical Field Investigation Report.pdf",
+      "type": "report",
+      "sha256": "624c159bc203ec4f921143620c4dffc5cd0415289dc51a5bcb108fdc08f852af",
+      "included": true,
+      "notes": "Electrical field investigation report dated October 4, 2023, prepared by Hartigan Bowman Foster (HBFA). Documents electrical distribution equipment observed in rooms AA203, AA204, AA221, AA223, AA229, AA230, AA231, AA237, AA237A, AA240, AA241, COR2AA1, COR2AA2, COR2AA3."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/2023.10.04-10.05 23-015 Mechanical Field Investigation Report.pdf",
+      "type": "report",
+      "sha256": "a886cead5d2b664fc811733d4a5b6d305f36005bbab213624e46bdb028cb5b1a",
+      "included": true,
+      "notes": "Mechanical field investigation report dated October 4-5, 2023, prepared by HBFA. Documents AHU-18 ductwork, return air fan, relief air damper, medical gas systems, chilled/hot water piping, and supply fan VFD serving the Cath Lab area."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/2023.10.05 23-015 Electrical Field Investigation Report.pdf",
+      "type": "report",
+      "sha256": "ea8a357c823b19c9fe73b757f322345fe224ae5e41fb14b4aeaa0bad737a475c",
+      "included": true,
+      "notes": "Electrical field investigation report dated October 5, 2023, prepared by HBFA. Documents rooms AA205 (Cath Lab 1), AA219 (Control Room), AA219A (Cardiology Computer Room), AA243 (Cath Lab 1 Equipment Room). No electrical deficiencies observed."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/CATH LAB DESIGN GUIDE.pdf",
+      "type": "report",
+      "sha256": "c96a37402b74a517aab446a7f56b735cd3bb065b847319896dfee978dbb2b38f",
+      "included": true,
+      "notes": "VA Surgical and Endovascular Services Design Guide, Section 4.16, April 2016 (rev 7/17, 11/18). Standard template for Cardiac Catheterization Laboratory (XCCE1) / Interventional Radiology (IR) Laboratory (XACR1). 850 NSF room template. Includes architectural, MEP, equipment list (JSN), and room data sheet. Reference standard for design compliance."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/Moon Tree - 534-CSI-714 - Cath Lab Design.pdf",
+      "type": "narrative",
+      "sha256": "0a7f77fbe137153fad7ac4ebc51d432c15512ee4738272c22bd342197c66bc24",
+      "included": true,
+      "notes": "SF330 A-E Qualifications submission by Moon Tree LLC (prime, SDVOSB) teaming with HBFA (MEP sub, SDVOSB) for Solicitation 36C24723R0016. Dated November 2022. Contains team organization, key personnel resumes, and five example projects. BFA (HBFA) is identified as subconsultant performing MEP engineering."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/charleston_cath_lab/Pages from SOW - Drawings-Equipment Basis of Design.pdf",
+      "type": "drawing_set",
+      "sha256": "07155a929048def9b2140328e7ec045b2daea16639f428628623cdddcc333bd5",
+      "included": true,
+      "notes": "Extracted single page from SOW drawing set; shows drawing E-101, labeled 'ARTIS ICONO FLOOR – REFERENCE DOCUMENT – NOT FOR CONSTRUCTION'. Minimal extractable text content. Appears to be a subset of the main SOW drawing set."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "attempted",
+    "notes": "No formal BOD document present. SOW embedded in RFP. Drawing set is reference-only ('NOT FOR CONSTRUCTION') with minimal text extractable; VA design guide serves as the relevant technical standard. Field investigation reports provide good existing-conditions documentation."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Renovate Cardiac Catheterization Laboratory Room 1",
+      "source": "RFP SF252 Block 5",
+      "quote": "PROJECT TITLE: Renovate Cardiac Catheterization Laboratory Room 1",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 5",
+          "claim": "Renovate Cardiac Catheterization Laboratory Room 1",
+          "value": "Renovate Cardiac Catheterization Laboratory Room 1",
+          "agrees": true
+        },
+        {
+          "source": "RFP Supplement B §1",
+          "claim": "renovate the Cardiac Catheterization Laboratory Room 1 including all support spaces",
+          "value": "Renovate Cardiac Catheterization Laboratory Room 1 including support spaces",
+          "agrees": true
+        },
+        {
+          "source": "Moon Tree SF330 Part IA",
+          "claim": "A/E Design for Cath Lab Site Prep - Charleston, SC - VAMC",
+          "value": "A/E Design for Cath Lab Site Prep - Charleston, SC - VAMC",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Veterans Affairs — Ralph H. Johnson VA Medical Center",
+      "source": "RFP SF252 Block 4 and Block 5",
+      "quote": "Department of Veterans Affairs\nW.J.B. Dorn VA Medical Center\n6439 Garners Ferry Road\nColumbia SC 29209-1639",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 5",
+          "claim": "Ralph H. Johnson Veterans Affairs Medical Center, 109 Bee Street, Charleston SC 29401-5799",
+          "value": "Ralph H. Johnson VA Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Field Investigation Report Oct 4",
+          "claim": "Department of Veteran Affairs, Ralph H. Johnson VA Medical Center",
+          "value": "Department of Veterans Affairs — Ralph H. Johnson VA Medical Center",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "RFP SF252 Block 4",
+      "quote": "Department of Veterans Affairs",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 4",
+          "claim": "Department of Veterans Affairs",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Charleston",
+      "state": "SC",
+      "country": "US",
+      "facility_address": "109 Bee Street, Charleston SC 29401-5799",
+      "facility_name": "Ralph H. Johnson VA Medical Center",
+      "source": "RFP SF252 Block 5",
+      "quote": "Location: Ralph H. Johnson Veterans Affairs Medical Center\n109 Bee Street, Charleston SC 29401-5799",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 5",
+          "claim": "109 Bee Street, Charleston SC 29401-5799",
+          "value": "Charleston, SC",
+          "agrees": true
+        },
+        {
+          "source": "Moon Tree SF330 Part IA",
+          "claim": "A/E Design for Cath Lab Site Prep - Charleston, SC - VAMC",
+          "value": "Charleston, SC",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "534-CSI-714",
+      "source": "RFP SF252 Block 5",
+      "quote": "PROJECT #: 534-CSI-714",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 5",
+          "claim": "PROJECT #: 534-CSI-714",
+          "value": "534-CSI-714",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Field Investigation Report Oct 4 (document number 23-015)",
+          "claim": "23-015 Electrical Field Investigation Report",
+          "value": "23-015",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C24723R0016",
+      "source": "RFP cover page",
+      "quote": "36C24723R0016",
+      "notes": "Solicitation/RFP number; contract number at award not available in source documents.",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "36C24723R0016",
+          "value": "36C24723R0016",
+          "agrees": true
+        },
+        {
+          "source": "Moon Tree SF330 Part IA Block 3",
+          "claim": "SOLICITATION OR PROJECT NUMBER: 36C24723R0016",
+          "value": "36C24723R0016",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 1500,
+      "unit": "nsf",
+      "source": "RFP Supplement B §1.D",
+      "quote": "This project shall renovate approximately 1500 SF of space to the 2nd floor.",
+      "corroboration": [
+        {
+          "source": "RFP Supplement B §1.D",
+          "claim": "approximately 1500 SF of space to the 2nd floor",
+          "value": 1500,
+          "agrees": true
+        },
+        {
+          "source": "VA Cath Lab Design Guide §4.16",
+          "claim": "850 NSF / 79.0 NSM",
+          "value": 850,
+          "agrees": false,
+          "note": "VA standard template is 850 NSF for the procedure room alone; 1,500 SF in SOW includes support spaces"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 1500000,
+      "currency": "USD",
+      "source": "RFP SF252 Block 6 and Supplement B §1.E",
+      "quote": "The estimate construction budget for this project is $1,500,000",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 6",
+          "claim": "$1,500,000",
+          "value": 1500000,
+          "agrees": true
+        },
+        {
+          "source": "RFP Supplement B §1.E",
+          "claim": "The estimated cost of construction is $1,500,000",
+          "value": 1500000,
+          "agrees": true
+        },
+        {
+          "source": "RFP FAR 52.236-22 §(c)",
+          "claim": "The estimated construction contract price for the project described in this contract is $3,000,000.",
+          "value": 3000000,
+          "agrees": false,
+          "note": "FAR 52.236-22 funding limitation clause lists $3,000,000 — this is a standard VA clause value that may be a program-level ceiling, not the actual construction budget; SOW explicitly states $1,500,000 as the budget"
+        }
+      ]
+    },
+    "design_period_days": {
+      "value": 271,
+      "source": "RFP SF252 Block 6",
+      "quote": "Period of Performance shall be 271 calendars days from the Notice of Proceed.",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 6",
+          "claim": "271 calendars days from the Notice of Proceed",
+          "value": 271,
+          "agrees": true
+        },
+        {
+          "source": "RFP Supplement B §1.E",
+          "claim": "The period of performance is 271 days after NTP",
+          "value": 271,
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date": {
+      "value": "2023-05-31",
+      "source": "RFP SF252 Block 6",
+      "quote": "Proposal Due Date: Wednesday, May 31, 2023 by 2:00 PM Eastern Time"
+    },
+    "rfi_due_date": {
+      "value": "2023-05-22",
+      "source": "RFP SF252 Block 6",
+      "quote": "RFI Request Due No Later Monday, May 22, 2023, at 2:00 PM Eastern Time."
+    },
+    "construction_site_visits_allowance": {
+      "value": 5,
+      "source": "RFP Price/Cost Schedule CLIN 0003",
+      "quote": "OPTION: 534-CSI-714 Site Visits for Construction Period Services ... 5.00 EA"
+    },
+    "naics_code": {
+      "value": "541310",
+      "source": "RFP Representations and Certifications §1.1",
+      "quote": "The North American Industry Classification System (NAICS) code for this acquisition is 541310."
+    },
+    "small_business_size_standard": {
+      "value": "$12.5M",
+      "source": "RFP SF252 Block 6",
+      "quote": "Small Business Size Standard: $12.5M",
+      "corroboration": [
+        {
+          "source": "RFP SF252 Block 6",
+          "claim": "$12.5M",
+          "value": "$12.5M",
+          "agrees": true
+        },
+        {
+          "source": "RFP §1.1",
+          "claim": "The small business size standard is $11 Million.",
+          "value": "$11M",
+          "agrees": false,
+          "note": "Minor conflict — SF252 cover states $12.5M; annual reps and certs section states $11M. Likely reflects a size standard update between document creation dates."
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "A/E fee was to be negotiated; RFP states 'AS DETAILED IN NEGOTIATED AND ACCEPTED AE FEE PROPOSAL'. No awarded fee amount in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 271,
+        "source": "RFP Supplement B §1.E",
+        "quote": "The period of performance is 271 days after NTP."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Estimated construction budget $1,500,000. Actual awarded construction contract amount not in source documents (A/E contract precedes construction contract)."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "architecture",
+      "structural_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_medical_gas",
+      "fire_alarm",
+      "fire_suppression_wet",
+      "architectural_design"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_chilled_water",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_emergency_power",
+      "plumbing_medical_gas",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "security_acs"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "communications_scope",
+      "electronic_safety_security",
+      "equipment_medical_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_sdvosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_sdvosb",
+      "description": "Contract set aside for Verified Service-Disabled Veteran-Owned Small Businesses (SDVOSB) per VAAR 852.219-73. Prime contractor (Moon Tree LLC) is an SDVOSB. Subconsultant HBFA (BFA) is also an SDVOSB. Multiple teaming partners are SDVOSBs.",
+      "source": "RFP VAAR 852.219-73",
+      "quote": "Offers are solicited only from VIP-listed SDVOSBs. Offers received from entities that are not VIP-listed SDVOSBs at the time of offer shall not be considered.",
+      "proposed_pct": null,
+      "final_pct": null
+    }
+  ],
+  "teaming": {
+    "prime": {
+      "firm_name": "Moon Tree LLC",
+      "role": "Prime Consultant — Architecture, Structural Engineering, Civil, Project Management, PSRDM",
+      "certification": "SDVOSB",
+      "location": "Oklahoma City, OK"
+    },
+    "subconsultants": [
+      {
+        "firm_name": "Hartigan Bowman Foster & Associates, LLC (HBFA)",
+        "role": "Mechanical Engineering, Electrical Engineering, Plumbing Engineering, QA/QC (40%)",
+        "certification": "SDVOSB",
+        "location": "Carrollton, VA",
+        "note": "BFA (the firm populating this record) is HBFA"
+      },
+      {
+        "firm_name": "Force Protect Security Consultants, PLLC",
+        "role": "Physical Security, PSRDM Compliance Consulting, Access Control (5%)",
+        "certification": "SDVOSB",
+        "location": "Panama City Beach, FL"
+      },
+      {
+        "firm_name": "O'Connor Construction Management, Inc. (OCMI)",
+        "role": "Cost Estimating, Constructability Reviews, Scheduling (5%)",
+        "certification": "SDVOSB",
+        "location": "Charlotte, NC"
+      },
+      {
+        "firm_name": "Go Energistics, LLC",
+        "role": "Medical Equipment Planning (specialty, ~5-10%)",
+        "certification": "SDVOSB",
+        "location": "Southlake, TX"
+      },
+      {
+        "firm_name": "Poole Fire Protection",
+        "role": "Fire Protection Design, Life Safety Review",
+        "certification": "Woman-Owned",
+        "location": "Olathe, KS"
+      },
+      {
+        "firm_name": "Terracon Consultants, Inc.",
+        "role": "Geotechnical, Environmental Investigation, Special Inspections, Materials Testing",
+        "certification": null,
+        "location": "Local office as needed"
+      }
+    ]
+  },
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "David R. Walton, PE, SE, CWI",
+      "firm": "Moon Tree LLC",
+      "role_on_project": "VP Engineering, Project Manager, Structural/Civil/Blast Engineer"
+    },
+    {
+      "name": "Todd Webb",
+      "firm": "Moon Tree LLC",
+      "role_on_project": "Contract Manager, Principal"
+    },
+    {
+      "name": "Patrick Propst, PE",
+      "firm": "HBFA",
+      "role_on_project": "Senior Mechanical Engineer"
+    },
+    {
+      "name": "Richard Williams, PE",
+      "firm": "HBFA",
+      "role_on_project": "Electrical Engineer"
+    },
+    {
+      "name": "Blair Fisher, EIT",
+      "firm": "HBFA",
+      "role_on_project": "Electrical Designer / Project Manager"
+    },
+    {
+      "name": "Richard O'Berry, CPD, GPD",
+      "firm": "HBFA",
+      "role_on_project": "Senior Mechanical Designer & Certified Plumbing Designer"
+    },
+    {
+      "name": "William Wisilosky",
+      "firm": "HBFA",
+      "role_on_project": "Mechanical Design Engineer"
+    }
+  ],
+  "tenant_freeform_tags": [
+    "charleston_sc",
+    "ralph_h_johnson_vamc",
+    "cath_lab",
+    "cardiac_catheterization",
+    "sdvosb_set_aside",
+    "va_healthcare",
+    "hospital_renovation",
+    "medical_equipment_coordination",
+    "phased_construction",
+    "occupied_facility_renovation",
+    "hvac_replacement",
+    "medical_gas",
+    "hazmat_abatement"
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "A-101",
+        "title": "ARTIS ICONO FLOOR — (Reference Drawing)",
+        "discipline": "architecture",
+        "reading_notes": "Sheet extracted as text only; labeled 'REFERENCE DOCUMENT — NOT FOR CONSTRUCTION'. Drawing number 19076. Appears to be a floor plan referencing Siemens ARTIS Icono cardiac catheterization equipment layout. This is manufacturer-provided reference material, not BFA design output."
+      },
+      {
+        "sheet_number": "A-102",
+        "title": "ARTIS ICONO FLOOR — (Reference Drawing)",
+        "discipline": "architecture",
+        "reading_notes": "Same reference set as A-101. Second floor plan sheet."
+      },
+      {
+        "sheet_number": "S-101",
+        "title": "ARTIS ICONO FLOOR — Structural (Reference Drawing)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Structural reference drawing for Siemens ARTIS Icono equipment floor loading. Not for construction."
+      },
+      {
+        "sheet_number": "S-102",
+        "title": "ARTIS ICONO FLOOR — Structural (Reference Drawing)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Second structural reference sheet."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "ARTIS ICONO FLOOR — Electrical (Reference Drawing)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical reference drawing for Siemens ARTIS Icono equipment electrical requirements. Not for construction. Also appears as the sole extracted sheet in 'Pages from SOW - Drawings-Equipment Basis of Design.pdf'."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "ARTIS ICONO FLOOR — Electrical (Reference Drawing)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Second electrical reference sheet."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "ARTIS ICONO FLOOR — Electrical (Reference Drawing)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical detail/schedule reference sheet."
+      },
+      {
+        "sheet_number": "M-501",
+        "title": "ARTIS ICONO FLOOR — Mechanical (Reference Drawing)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Mechanical reference drawing. Only sheet with slightly different text extraction format."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 1500,
+        "unit": "nsf",
+        "source": "RFP Supplement B §1.D",
+        "quote": "This project shall renovate approximately 1500 SF of space to the 2nd floor.",
+        "sheets": [],
+        "note": "From text document, not drawing extraction. Drawing set is reference-only for equipment manufacturer layout."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "RFP Supplement B §1.D",
+        "quote": "This project shall renovate approximately 1500 SF of space to the 2nd floor.",
+        "sheets": [],
+        "note": "Project is on one floor (2nd floor) of a larger multi-story medical center."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "AHU-18 serving Cath Lab area via VAV system (existing, to be replaced/modified per SOW §1.C)",
+          "AHU-16 in adjacent closet AA237A",
+          "AHU-17, AHU-19 in mechanical room AA231",
+          "Return air fan for AHU-18 (potentially reusable per field report)",
+          "Chilled water and hot water piping to AHU-18",
+          "Supply fan VFD for AHU-18",
+          "Relief air damper for AHU-18",
+          "DDC/BAS controls — Johnson Controls DDC system specified; each room to have separate controls",
+          "VAV system distribution to Cath Lab and surrounding rooms"
+        ],
+        "electrical": [
+          "ATS-EE (480/277V Automatic Transfer Switch, Type 1 Enclosure) in AA229",
+          "ATS-LS and ATS-CC (480/277V Automatic Transfer Switches) in AA230",
+          "2HEDP1 (480/277V Panelboard) in AA229",
+          "MCC-NA and MCC-EA (480/277V Motor Control Centers) in AA229",
+          "HDLS and HDCC (480/277V Switchboards) in AA230",
+          "ISOTROL-2 (120V Isolated Power Panelboard) in COR2AA1",
+          "2INP1, 2ICP1, 2ICP2 (277V 1-phase Isolated Power Panelboards) in COR2AA3",
+          "2LE7-LS, HA, 2LE9-CC, 2L12(A) (208/120V Panelboards) in AA241",
+          "Fire Alarm Control Panel 'FACP 2 AA' in AA231",
+          "Decommissioned electrical equipment in AA203 (transformer, disconnect, panelboard — offline)",
+          "VFDs and disconnects for AHU-16, -17, -18, -19 in AA231"
+        ],
+        "plumbing": [
+          "Medical gas drops from boom on Cath Lab table",
+          "Medical gas shutoff box in corridor outside Cath Lab",
+          "Medical gas outlets inside Cath Lab",
+          "Medical air, medical vacuum, oxygen, nitrogen specified per VA design guide",
+          "Medical Gas Zone Valve Boxes in semi-restricted corridor per NFPA 99"
+        ],
+        "fire_protection": [
+          "Duct smoke detectors on supply and return ducts for AHU-16, -17, -18, -19",
+          "Gamewell E-3 Series Fire Alarm System (existing; new work must be Gamewell-authorized contractor)",
+          "Wet sprinkler system — Ordinary Hazard Group 1",
+          "Fire alarm and sprinkler per VA standard"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.program_budget",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP SF252 Block 6 and Supplement B §1.E",
+          "value": 1500000
+        },
+        {
+          "source": "RFP FAR 52.236-22 §(c)",
+          "value": 3000000
+        }
+      ],
+      "resolution_chosen": "RFP Supplement B §1.E — $1,500,000",
+      "rationale": "SOW explicitly and repeatedly states $1,500,000 as the programmed construction budget. FAR 52.236-22 funding limitation clause states $3,000,000; this clause value on VA projects is commonly set at a multiple of the budget to allow for bid contingencies and potential redesign, not as a statement of the actual programmed amount. Both the SOW scope description and Moon Tree SF330 example projects reference $1.5M ECC, confirming the SOW figure."
+    },
+    {
+      "field_path": "facts.small_business_size_standard",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP SF252 Block 6",
+          "value": "$12.5M"
+        },
+        {
+          "source": "RFP §1.1 Annual Representations and Certifications",
+          "value": "$11M"
+        }
+      ],
+      "resolution_chosen": "RFP SF252 Block 6 — $12.5M",
+      "rationale": "The SF252 contract form (Block 6) is the governing contract document. The $11M figure in the Annual Reps and Certs section likely reflects an earlier SBA size standard table version. Minor discrepancy with no material impact on project record."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md"
+    }
+  }
+}

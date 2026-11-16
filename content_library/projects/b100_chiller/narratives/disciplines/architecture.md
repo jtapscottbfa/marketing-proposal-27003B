@@ -1,0 +1,7 @@
+# Architecture — Building 100 Chiller Replacement, NAS Oceana
+
+The architectural scope supported the rooftop equipment replacement through roof system repair, penetration remediation, and compliance with NAVFAC design criteria. Building 100's roof is a modified bituminous membrane over 10-inch cast-in-place concrete with a low-slope pitch to roof drains; the existing chiller curbs were positioned on the first-floor electrical room roof at the building's north end.
+
+Architectural work included replacement of flashing and sealant at all four existing concrete chiller support curbs, repainting of all curbs to match existing color, and repair of the roof membrane in areas disturbed by demolition of the old chillers and their associated piping. Abandoned rooftop piping penetrations were prepped and patched per the manufacturer's recommended standard details; all work was specified to be weathertight with a two-year installer warranty. Wall penetrations through the cast-in-place concrete walls — where chiller piping previously entered the second-floor mechanical room — were re-sealed and re-insulated in connection with the new piping routing.
+
+Design was executed in compliance with Navy and Marine Corps Design Procedures (FC 300-09N with Change 5), UFC 3-101-01 (Architecture), UFC 3-110-03 (Roofing), and the 2018 International Building Code (IBC 2018/UFC 1-200-01). The architectural survey confirmed no evidence of water intrusion into the mechanical or electrical rooms from existing penetrations, providing a clean starting condition for the repair work.

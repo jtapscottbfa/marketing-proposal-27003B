@@ -1,0 +1,13 @@
+description: "Higher Education / Research Institution proposal"
+# HED — typically qualifications + technical + management focused
+
+sections:
+  - executive_summary
+  - technical_approach
+  - qualifications
+  - past_performance
+  - management_plan
+  - staffing_plan
+  - quality_control
+  - price_volume
+  - appendices

@@ -1,0 +1,475 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "greenhouse",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/greenhouse/9616-23 Melwood Greenhouse_TO BFA.pdf",
+      "type": "cost_estimate",
+      "sha256": "ddf007836522cd76a82cec4d699ad90a9bedc7922d7810e140cce01df6a73b5c",
+      "included": true,
+      "notes": "Electrical subcontractor bid package: Brown Electric Inc. proposal 9616-23 (March 24, 2023) plus KGE generator equipment proposal (March 22, 2023). Addressed to Ribeiro Construction re: Melwood Greenhouses, Nanjemoy MD. Contains scope of work, panel schedules (pre-design layout), and equipment pricing."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/greenhouse/2023.08.03 23-017 ELECTRICAL Final Signed & Sealed.pdf",
+      "type": "drawing_set",
+      "sha256": "da34ed4ebdb2593c1765ac531ff0afcefa8efcbd4ec610c5fb55235b93757bea",
+      "included": true,
+      "page_count": 5,
+      "notes": "BFA electrical drawing set: 5 sheets (E-001, E-101, E-102, E-601, E-801). Signed and sealed by BFA engineer, Lic. No. 048025, dated 8/3/2023. BFA project number 23-017."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Melwood Greenhouses",
+      "source": "Drawing title block, all sheets",
+      "quote": "MELWOOD GREENHOUSES",
+      "corroboration": [
+        {
+          "source": "Drawing title block, all sheets",
+          "claim": "MELWOOD GREENHOUSES",
+          "value": "Melwood Greenhouses",
+          "agrees": true
+        },
+        {
+          "source": "Brown Electric proposal 9616-23, subject line",
+          "claim": "Melwood Greenhouses – Nanjemoy, MD",
+          "value": "Melwood Greenhouses",
+          "agrees": true
+        },
+        {
+          "source": "KGE generator proposal, Job Name",
+          "claim": "Growspan Greenhouses",
+          "value": "Growspan Greenhouses",
+          "agrees": false
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Melwood",
+      "source": "Drawing title block, all sheets (project name); Brown Electric proposal subject",
+      "quote": "Melwood Greenhouses – Nanjemoy, MD",
+      "corroboration": [
+        {
+          "source": "Drawing title block, all sheets",
+          "claim": "MELWOOD GREENHOUSES — inferred client name 'Melwood'",
+          "value": "Melwood",
+          "agrees": true
+        },
+        {
+          "source": "Brown Electric proposal 9616-23",
+          "claim": "Melwood Greenhouses – Nanjemoy, MD",
+          "value": "Melwood",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Melwood",
+      "source": "Drawing title block, all sheets",
+      "quote": "MELWOOD GREENHOUSES",
+      "corroboration": [
+        {
+          "source": "Drawing title block, all sheets",
+          "claim": "MELWOOD GREENHOUSES",
+          "value": "Melwood",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Nanjemoy",
+      "state": "MD",
+      "country": "US",
+      "facility_address": null,
+      "source": "Drawing title block, all sheets",
+      "quote": "NANJEMOY",
+      "corroboration": [
+        {
+          "source": "Drawing title block, all sheets",
+          "claim": "NANJEMOY",
+          "value": "Nanjemoy, MD",
+          "agrees": true
+        },
+        {
+          "source": "Brown Electric proposal 9616-23",
+          "claim": "Melwood Greenhouses – Nanjemoy, MD",
+          "value": "Nanjemoy, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "23-017",
+      "source": "Drawing title block (sheet number block) and drawing filename",
+      "quote": "23-017",
+      "corroboration": [
+        {
+          "source": "Drawing title block, all sheets",
+          "claim": "23-017",
+          "value": "23-017",
+          "agrees": true
+        },
+        {
+          "source": "Drawing filename",
+          "claim": "2023.08.03 23-017 ELECTRICAL Final Signed & Sealed.pdf",
+          "value": "23-017",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Greenhouse structures described as 2× 30×100 ft (3,000 sf each) and 1× 30×50 ft (1,500 sf) = 7,500 sf total footprint. However, no GSF/NSF figure is stated in source documents; this is a computed estimate from plan dimensions and has not been committed to the record to avoid an un-quoted fact in the value field.",
+      "corroboration": [
+        {
+          "source": "Brown Electric proposal 9616-23, scope narrative",
+          "claim": "(2) 30x100 and (1) 30x50 greenhouses",
+          "value": "computed 7500 sf total footprint",
+          "agrees": true
+        },
+        {
+          "source": "Panelboard schedules E-601, occupancy labels",
+          "claim": "30X100 (GH1, GH2) and 30X50 (GH3)",
+          "value": "computed 7500 sf total footprint",
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "drawing_seal_date": {
+      "value": "2023-08-03",
+      "source": "Drawing filename and seal stamp on all sheets",
+      "quote": "8/3/2023",
+      "corroboration": [
+        {
+          "source": "Drawing filename",
+          "claim": "2023.08.03",
+          "value": "2023-08-03",
+          "agrees": true
+        },
+        {
+          "source": "Engineer seal stamp on drawings",
+          "claim": "8/3/2023",
+          "value": "2023-08-03",
+          "agrees": true
+        }
+      ]
+    },
+    "bid_date_electrical_subcontractor": {
+      "value": "2023-03-24",
+      "source": "Brown Electric proposal 9616-23, letter date",
+      "quote": "March 24, 2023",
+      "corroboration": [
+        {
+          "source": "Brown Electric proposal 9616-23",
+          "claim": "March 24, 2023",
+          "value": "2023-03-24",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-08-03",
+        "source": "Drawing seal date — final signed & sealed drawing set",
+        "quote": "8/3/2023",
+        "notes": "Design completion inferred from seal date on final signed & sealed drawing set; no explicit design completion date stated in source documents."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": 114500,
+        "currency": "USD",
+        "source": "Brown Electric proposal 9616-23, cost section",
+        "quote": "BEI can perform this work for a total base price of: $114,500.00 (One Hundred Fourteen Thousand Five dollars and No Cents).",
+        "notes": "This is the electrical subcontractor bid only (Brown Electric). General contractor contract value or total construction contract value not found in source documents."
+      },
+      "generator_equipment_price": {
+        "value": 28029,
+        "currency": "USD",
+        "source": "KGE generator proposal, Total Price line",
+        "quote": "Total Price: $28,029.00 *plus any applicable taxes",
+        "notes": "Equipment cost for 60kW Generac propane generator + ATS; not necessarily the installed price included in BEI's base bid."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_institutional"
+    ],
+    "program_type": [
+      "agricultural"
+    ],
+    "program_subtype": [
+      "agricultural_greenhouse"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_emergency_power"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_emergency_power"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "melwood",
+    "nanjemoy_md",
+    "charles_county_md",
+    "greenhouse",
+    "agricultural",
+    "electrical_only",
+    "new_construction",
+    "propane_generator",
+    "smeco_utility"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "AJR",
+      "role_on_project": "drawn_by",
+      "notes": "Initials from drawing title block: Drawn By: AJR"
+    },
+    {
+      "name": "BAS",
+      "role_on_project": "checked_by",
+      "notes": "Initials from drawing title block: Checked By: BAS"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND, ABBREVIATIONS, RISER AND DETAIL",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Cover/legend sheet. Contains full abbreviations list, symbol legend, equipment support detail (2x6 pressure-treated lumber backboard on 36\" concrete-set posts), and power riser diagram. Riser shows: SMECO pad-mount transformer (by SMECO) → SMECO meter/meterbase → ATS-1 240/120V 1φ → Panel MDP (175A MCB, 240/120V, 1φ, 3-wire, 22 kAIC, NEMA 3R surface/rack mount) → sub-panels GH1, GH2, GH3 (each fed via separate feeders) → 41kW propane generator with concrete pad. Two 4\" empty conduits stubbed for SMECO future use. Firm: Bowman Foster & Associates, Inc., 6353 Center Dr, Norfolk VA 23502 / 1420 Great Bridge Blvd, Chesapeake VA 23320. Engineer seal Lic. No. 048025. Project No. 23-017."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "ELECTRICAL SITE PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Site plan at 1\"=20'-0\" scale. Shows three new greenhouses (GH1, GH2, GH3) arranged in row, with existing wood shop and existing greenhouse to north. Equipment rack/incoming service location shown at northwest corner of greenhouse cluster. Generator and concrete pad shown between GH2 and GH3. Proposed SMECO transformer location shown. Primary routing shown (UE — underground electrical) from proposed SMECO transformer to equipment rack. Conduit runs labeled UE throughout site. Site context shows trees/landscaping, two pond-like features to southwest. Dashed line encloses the three new greenhouse footprints."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "ELECTRICAL FLOOR PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Floor plan at 1/8\"=1'-0\" scale showing all three greenhouses side by side. GH1 (left, 30×100), GH2 (center, 30×100), GH3 (right, 30×50). Each greenhouse shows panel location (GH1-x, GH2-x, GH3-x circuit designations), receptacle and device layout. Construction Notes (THIS SHEET ONLY) enumerate equipment: (1) meter and meterbase, (2) 24\" exhaust fan 3.2A 120V, (3) ATS-1 240/120V 1φ, (4) Panel MDP, (5) 41kW propane generator, (6) vent motor 4.0A 120V, (7) Panel GH1, (8) Panel GH2, (9) Panel GH3, (10) 20\" HAR fan 1.0A 120V, (11) 36\" exhaust fan 5.2A 120V, (12) 80K BTU unit heater 4.7A 120V, (13) 160K BTU unit heater 5.1A 120V, (14) sump pump 3.0A 120V, (15) screen motor 4.0A 120V, (16) dehumidifier 12.4A 240V, (17) NTAKE damper 0.5A 120V, (18) 42\" exhaust fan 4.7A 240V, (19) generator battery charger 6A 120V, (20) generator jacket heater 8.3A 120V. Lighting by owner/customer-provided contractor-installed. MDP-18 and MDP-20 breakers visible feeding GH sub-panels."
+      },
+      {
+        "sheet_number": "E-601",
+        "title": "PANELBOARD SCHEDULES",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Four panelboard schedules on one sheet. MDP: 175A MCB, 240/120V, 1 phase, 3 wire, 22 kAIC, NEMA 3R surface/rack mount; feeds Panel GH1 (46.5A), Panel GH2 (46.5A), Panel GH3 (41.5A), plus battery charger (gen) 6.0A and jacket heater (gen) 8.3A; total connected load A:134.5 B:96.3, connected amps A:140.5 B:104.6. GH1 and GH2: each 100A MLO, 240/120V, 1 phase, 3 wire, 22 kAIC, NEMA 3R surface mount; loads include circulation fans, 36\" exhaust fans, 160K BTU heaters, dehumidifiers, lighting, vent motors, sump pumps, 42-fan (GH2 only), receptacles; total A:28.6/B:20.6 each, connected amps A:46.5/B:33.5. GH3: 100A MLO, 240/120V, 1 phase, 3 wire, 22 kAIC, NEMA 3R; loads include circulation fans, 36\" exhaust fan, 80K BTU heater, dehumidifier, lighting, 24\" exhaust fan, vent motor, sump pump, screen motor, intake damper; total A:29.0/B:25.8, connected amps A:41.5/B:29.3. Note on all schedules: coordinate available fault current with SMECO."
+      },
+      {
+        "sheet_number": "E-801",
+        "title": "SPECIFICATIONS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Full electrical specifications sheet. Covers: Part 1 General (submittals, products, receptacles, switches, SD-03 data), Part 2 Products (conduit/fittings, wiring devices, splices/terminations, lockout requirements, manufacturer nameplate requirements), Part 3 Execution (installation, wiring methods, receptacle installation, conduit installation, mounting, grounding, equipment connections, field quality control including 600V wiring test and ground-fault receptacle test). Specs reference NEC, NFPA 70, UL listed equipment, NEMA standards. Notes: minimum 12 AWG for branch circuits, minimum 10 AWG for class 1 remote control; color coding specified (Phase A=Black, Phase B=Red). GRS conduit for indoor/outdoor; PVC SCH40 allowed per plans. Receptacles are GFCI weatherproof 20A 125VAC duplex. All equipment factory-applied finish per NFPA 250."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Greenhouse plan dimensions given as 2× 30x100 ft and 1× 30x50 ft; computed footprint = 7,500 sf. However, this is extractor-computed from plan dimensions, not stated as a GSF/NSF figure in source documents. Not committed as a value to maintain quote-or-null discipline."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "Drawing E-102 electrical floor plan",
+        "quote": null,
+        "sheets": [
+          "E-102"
+        ],
+        "notes": "Single-story greenhouse structures; floor plan shows one level only."
+      },
+      "building_count": {
+        "value": 3,
+        "source": "Drawing E-101 site plan and E-102 floor plan",
+        "quote": null,
+        "sheets": [
+          "E-101",
+          "E-102"
+        ],
+        "notes": "Three separate greenhouse structures: GH1 (30×100), GH2 (30×100), GH3 (30×50)."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "80K BTU unit heaters in GH3 (120V, 4.7A each)",
+          "160K BTU unit heaters in GH1 and GH2 (120V, 5.1A each)",
+          "Dehumidifiers (240V, 12.4A) in each greenhouse",
+          "Circulation fans in each greenhouse",
+          "36\" exhaust fans (5.2A 120V) in GH1 and GH2; 24\" exhaust fan (3.2A 120V) in GH3",
+          "42\" exhaust fans (4.7A 240V) in GH1 and GH2",
+          "Vent motors (4.0A 120V) in each greenhouse",
+          "Intake dampers in each greenhouse"
+        ],
+        "electrical": [
+          "SMECO pad-mount utility transformer (by SMECO)",
+          "SMECO meter/meterbase",
+          "175A MDP panelboard, 240/120V 1φ 3-wire, 22 kAIC, NEMA 3R",
+          "Three 100A MLO sub-panels (GH1, GH2, GH3), 240/120V 1φ 3-wire, 22 kAIC, NEMA 3R",
+          "41kW propane standby generator (Generac 60kW nominal, propane-fueled)",
+          "300A Automatic Transfer Switch (TX Series, 240/120V 1φ)",
+          "GFCI weatherproof duplex receptacles throughout greenhouses",
+          "Work lights at each panel location",
+          "Generator battery charger (6A 120V)",
+          "Generator jacket heater (8.3A 120V)",
+          "2×6 PT lumber equipment backboard on concrete-set 6×6 posts"
+        ],
+        "plumbing": [
+          "Sump pumps (3.0A 120V) in each greenhouse (electrical connection only; plumbing by others)"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Drawing title block, all sheets; Brown Electric proposal",
+          "value": "Melwood Greenhouses"
+        },
+        {
+          "source": "KGE generator proposal, Job Name field",
+          "value": "Growspan Greenhouses"
+        }
+      ],
+      "resolution_chosen": "Melwood Greenhouses",
+      "rationale": "BFA's own signed-and-sealed drawing set and the primary subcontractor proposal consistently use 'Melwood Greenhouses.' 'Growspan Greenhouses' in the KGE generator proposal likely reflects the greenhouse manufacturer/brand name (GrowSpan is a commercial greenhouse manufacturer) rather than the project name. Drawing title block is authoritative for project name."
+    },
+    {
+      "field_path": "phases.construction.contract_value",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Brown Electric proposal 9616-23",
+          "value": 114500,
+          "notes": "Electrical subcontractor bid only; total construction contract not found"
+        },
+        {
+          "source": "KGE generator proposal",
+          "value": 28029,
+          "notes": "Generator equipment cost only; may or may not be included in BEI's base bid"
+        }
+      ],
+      "resolution_chosen": "Brown Electric proposal 9616-23",
+      "rationale": "The $114,500 BEI bid is the only complete contract-value figure available. The $28,029 KGE quote is a separate equipment proposal. It is unclear whether BEI's base bid includes the generator equipment cost or procures it separately. Total construction contract value (GC contract) is not present in available source documents."
+    }
+  ]
+}

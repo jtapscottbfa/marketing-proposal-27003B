@@ -1,0 +1,396 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "indian_head_b194_b194a",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/indian_head_b194_b194a/194_194A DB RFP Final.pdf",
+      "type": "sow",
+      "sha256": "283611e87ed1a392cc15294098ae3987e3d301b5f64c3dce6cf2a967e8a7b250",
+      "included": true,
+      "notes": "NAVFAC Design-Build RFP, WON 1650958. Contains Part 3 Statement of Work, Engineering Systems Requirements, and performance specs. Treated as the primary SOW/RFP document."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/indian_head_b194_b194a/20-081.2022.02.04.FINAL (IFC) SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "22f31c7606c9aaa08d2b08c999a468b7608ed4d179d39581b2058e5cf8d12296",
+      "included": true,
+      "notes": "BFA Basis of Design, IFC submittal dated 2022-02-04, BFA Project #20-081. Authored by Bowman Foster & Associates, Inc. as Designer of Record under the design-build contractor."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing-set PDFs present in intake folder. BOD and RFP/SOW both present. No executed contract document; contract value not determinable from available sources."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 194/194A Renovations, NSF Indian Head, MD",
+      "source": "BOD cover page",
+      "quote": "BUILDING 194/194A RENOVATIONS NSF INDIAN HEAD, MD BASIS OF DESIGN",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BUILDING 194/194A RENOVATIONS NSF INDIAN HEAD, MD",
+          "value": "Building 194/194A Renovations, NSF Indian Head, MD",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover page",
+          "claim": "Bldg 194/194A Renovate Buildings At the NSF INDIAN HEAD, MARYLAND",
+          "value": "Building 194/194A Renovations, NSF Indian Head, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) / NSA South Potomac",
+      "source": "RFP §01 14 00.05 20, section 1.4",
+      "quote": "Naval Surface Warfare Center (NSWC), Indian Head, MD",
+      "corroboration": [
+        {
+          "source": "RFP §01 14 00.05 20, section 1.4",
+          "claim": "Naval Surface Warfare Center (NSWC), Indian Head, MD — NAVFAC contracting authority",
+          "value": "NAVFAC / NSA South Potomac",
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 3 §3.1",
+          "claim": "Buildings 194 and 194A are located at the northeastern end of the NSF Indian Head",
+          "value": "NSF Indian Head",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "NSF INDIAN HEAD, MD",
+          "value": "NSF Indian Head, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / NAVSEA",
+      "source": "RFP Part 3 §1.0",
+      "quote": "serving approximately 12 staff that are part of NAVSEA",
+      "corroboration": [
+        {
+          "source": "RFP Part 3 §1.0",
+          "claim": "serving approximately 12 staff that are part of NAVSEA",
+          "value": "NAVSEA (using agency); NAVFAC (contracting agency)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Indian Head",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "NSF Indian Head, CAD PAD Drive, Indian Head, MD",
+      "source": "RFP Part 3 §3.1",
+      "quote": "Buildings 194 and 194A are located at the northeastern end of the NSF Indian Head, on CAD PAD Drive.",
+      "corroboration": [
+        {
+          "source": "RFP Part 3 §3.1",
+          "claim": "NSF Indian Head, on CAD PAD Drive",
+          "agrees": true
+        },
+        {
+          "source": "BOD Civil section",
+          "claim": "The project site is located on the eastern portion of NSF Indian Head in a cluster of buildings south of Carpenter Road.",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-081",
+      "source": "BOD cover page",
+      "quote": "BFA Project #20-081",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BFA Project #20-081",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "WON 1650958",
+      "source": "RFP cover page",
+      "quote": "WORK ORDER NO. 1650958",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "WORK ORDER NO. 1650958",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "eProject WO No.: 1616747",
+          "agrees": false,
+          "note": "BOD references a different number (1616747) labeled as 'eProject WO No.' — appears to be a different NAVFAC tracking system identifier, not a conflict with WON 1650958"
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 3096,
+      "unit": "gsf",
+      "source": "RFP Part 3 §1.0 (computed: 1,560 + 1,536)",
+      "quote": null,
+      "notes": "Computed from stated individual building areas: Building 194 ≈ 1,560 SF + Building 194A ≈ 1,536 SF = 3,096 SF total.",
+      "corroboration": [
+        {
+          "source": "RFP Part 3 §1.0",
+          "claim": "Building 194 is approximately 1,560 square feet (sf)",
+          "value": 1560,
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 3 §1.0",
+          "claim": "Building 194A ... approximately 1,536 square feet (sf)",
+          "value": 1536,
+          "agrees": true
+        },
+        {
+          "source": "BOD Architectural section",
+          "claim": "194 is approximately 1,560 SF and 194A is approximately 1,536 SF",
+          "value": 3096,
+          "agrees": true
+        },
+        {
+          "source": "BOD Fire Protection section",
+          "claim": "Building 194 is approximately 1,560 sq ft in area ... Building 194A ... is approximately 1,536 sq ft",
+          "value": 3096,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA's design fee not stated in available source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-02-04",
+        "source": "BOD cover page",
+        "quote": "FINAL (IFC) SUBMITTAL February 04, 2022",
+        "notes": "IFC (Issued for Construction) submittal date used as proxy for design completion."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract value (design-build prime contract sum) not stated in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_dining_morale"
+    ],
+    "disciplines": [
+      "civil_engineering",
+      "architecture",
+      "fire_protection_engineering",
+      "plumbing_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "telecommunications_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "architectural_design",
+      "fire_alarm",
+      "fire_suppression_clean_agent",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "hvac_design",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "telecom_structured_cabling"
+    ],
+    "building_systems": [
+      "envelope_exterior_walls",
+      "envelope_roofing",
+      "envelope_windows_doors",
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling",
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_fire_alarm",
+      "fp_clean_agent",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "telecom_structured_cabling"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "thermal_roofing",
+      "openings_doors_frames",
+      "openings_windows",
+      "finishes_drywall_plaster",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "finishes_acoustical_ceilings",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "communications_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "best_value"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "sub_to_contractor"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "indian_head",
+    "nsa_south_potomac",
+    "navsea",
+    "design_build",
+    "historic_preservation",
+    "shpo",
+    "hazmat_abatement",
+    "asbestos",
+    "lead_paint",
+    "small_building_renovation",
+    "change_house",
+    "locker_room"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing-set PDFs present in intake folder. Drawing extraction deferred."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_client",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP cover page",
+          "value": "WON 1650958 (NAVFAC Work Order Number)"
+        },
+        {
+          "source": "BOD cover page",
+          "value": "eProject WO No. 1616747"
+        }
+      ],
+      "resolution_chosen": "RFP cover page — WON 1650958 used as primary client project number",
+      "rationale": "Both numbers appear to be legitimate NAVFAC tracking identifiers but from different systems. WON 1650958 is the Work Order Number that appears throughout the RFP and is the primary contracting reference. eProject WO No. 1616747 is the BOD's reference to the NAVFAC eProject management system, which may track work differently. Not a true factual conflict — different identifier types. Noted separately in project_number_internal as BFA project #20-081."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md"
+    }
+  }
+}

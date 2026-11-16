@@ -1,0 +1,767 @@
+vocabulary_id: building_systems
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+anchor_standard_version: null
+hierarchy: two_level
+multi_select: true
+governance_notes: |
+  TWT-original system/element taxonomy. Used to tag what physical systems and
+  building elements are within a project's scope. Functionally informed by
+  UniFormat Level 2 element categorization, but uses TWT-original category
+  names without reproducing CSI's protected expression.
+
+  Multi-select. Most projects involve many building systems simultaneously.
+  Distinct from construction_scope.yaml which captures specification-divisional
+  scope; this vocabulary captures functional systems regardless of how they
+  show up in a spec book.
+future_migration:
+  target_anchor: csi_uniformat
+  target_version: UniFormat 2010 or current
+  trigger: v1.0 product gate, CSI Dynamic Standards data licensing acquired
+  migration_artifact: crosswalks/building_systems_twt_to_uniformat.yaml (planned)
+
+entries:
+  # ============ SUBSTRUCTURE / FOUNDATIONS ============
+  - canonical_id: foundations
+    display_name: Foundations
+    definition: Footings, foundation walls, slab-on-grade, deep foundations.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: foundations_shallow
+    display_name: Foundations — Shallow
+    definition: Spread footings, mat foundations, slab-on-grade.
+    parent_id: foundations
+    aliases:
+      - spread_footings
+      - slab_on_grade
+    standard_reference: null
+
+  - canonical_id: foundations_deep
+    display_name: Foundations — Deep
+    definition: Driven piles, drilled shafts, micropiles, caissons.
+    parent_id: foundations
+    aliases:
+      - piles
+      - drilled_shafts
+      - caissons
+    standard_reference: null
+
+  - canonical_id: substructure_basement
+    display_name: Substructure — Basement
+    definition: Basement walls, basement excavation, below-grade waterproofing.
+    parent_id: null
+    aliases:
+      - basement
+      - below_grade_construction
+    standard_reference: null
+
+  # ============ SUPERSTRUCTURE / FRAME ============
+  - canonical_id: superstructure
+    display_name: Superstructure
+    definition: Above-grade structural frame including columns, beams, floors, roof structure.
+    parent_id: null
+    aliases:
+      - structural_frame
+    standard_reference: null
+
+  - canonical_id: superstructure_steel_frame
+    display_name: Superstructure — Steel Frame
+    definition: Structural steel framing.
+    parent_id: superstructure
+    aliases:
+      - steel_frame
+    standard_reference: null
+
+  - canonical_id: superstructure_concrete_frame
+    display_name: Superstructure — Concrete Frame
+    definition: Cast-in-place or precast concrete framing.
+    parent_id: superstructure
+    aliases:
+      - concrete_frame
+      - cast_in_place
+      - precast_concrete
+    standard_reference: null
+
+  - canonical_id: superstructure_masonry
+    display_name: Superstructure — Masonry
+    definition: Load-bearing masonry construction.
+    parent_id: superstructure
+    aliases:
+      - load_bearing_masonry
+    standard_reference: null
+
+  - canonical_id: superstructure_wood_frame
+    display_name: Superstructure — Wood Frame
+    definition: Wood framing, including light frame, heavy timber, mass timber.
+    parent_id: superstructure
+    aliases:
+      - wood_frame
+      - light_frame
+    standard_reference: null
+
+  # ============ ENVELOPE ============
+  - canonical_id: envelope
+    display_name: Building Envelope
+    definition: Exterior enclosure including walls, openings, and roofing.
+    parent_id: null
+    aliases:
+      - building_enclosure
+    standard_reference: null
+
+  - canonical_id: envelope_exterior_walls
+    display_name: Envelope — Exterior Walls
+    definition: Exterior wall systems (cladding, insulation, air/vapor barriers).
+    parent_id: envelope
+    aliases:
+      - exterior_walls
+      - wall_assembly
+      - cladding
+    standard_reference: null
+
+  - canonical_id: envelope_curtain_wall
+    display_name: Envelope — Curtain Wall/Glazing
+    definition: Curtain wall, storefront, large-scale glazed envelope.
+    parent_id: envelope
+    aliases:
+      - curtain_wall
+      - storefront
+      - glazed_envelope
+    standard_reference: null
+
+  - canonical_id: envelope_roofing
+    display_name: Envelope — Roofing
+    definition: Roof assembly including membrane, insulation, structure interface.
+    parent_id: envelope
+    aliases:
+      - roofing
+      - roof_assembly
+      - tpo
+      - epdm
+      - built_up_roof
+    standard_reference: null
+
+  - canonical_id: envelope_windows_doors
+    display_name: Envelope — Windows and Exterior Doors
+    definition: Punched windows, skylights, exterior doors.
+    parent_id: envelope
+    aliases:
+      - windows
+      - exterior_doors
+      - skylights
+    standard_reference: null
+
+  - canonical_id: envelope_waterproofing
+    display_name: Envelope — Waterproofing
+    definition: Waterproofing, dampproofing, air/vapor barrier systems.
+    parent_id: envelope
+    aliases:
+      - waterproofing
+      - dampproofing
+    standard_reference: null
+
+  # ============ INTERIOR CONSTRUCTION ============
+  - canonical_id: interior_construction
+    display_name: Interior Construction
+    definition: Interior walls, doors, partitions, and stairs.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: interior_partitions
+    display_name: Interior — Partitions
+    definition: Interior partitions and demountable walls.
+    parent_id: interior_construction
+    aliases:
+      - partitions
+      - drywall_partitions
+    standard_reference: null
+
+  - canonical_id: interior_doors
+    display_name: Interior — Doors and Frames
+    definition: Interior doors, frames, hardware.
+    parent_id: interior_construction
+    aliases:
+      - interior_doors
+      - door_hardware
+    standard_reference: null
+
+  - canonical_id: interior_stairs
+    display_name: Interior — Stairs
+    definition: Interior stairs (egress and feature stairs).
+    parent_id: interior_construction
+    aliases:
+      - stairs
+      - egress_stairs
+    standard_reference: null
+
+  # ============ INTERIOR FINISHES ============
+  - canonical_id: interior_finishes
+    display_name: Interior Finishes
+    definition: Floor, wall, and ceiling finishes.
+    parent_id: null
+    aliases:
+      - finishes
+    standard_reference: null
+
+  - canonical_id: finishes_flooring
+    display_name: Finishes — Flooring
+    definition: Floor finishes (carpet, resilient, hard surface, terrazzo).
+    parent_id: interior_finishes
+    aliases:
+      - flooring
+      - floor_finishes
+    standard_reference: null
+
+  - canonical_id: finishes_wall
+    display_name: Finishes — Wall Finishes
+    definition: Wall finishes (paint, wallcovering, paneling, tile).
+    parent_id: interior_finishes
+    aliases:
+      - wall_finishes
+      - wallcovering
+    standard_reference: null
+
+  - canonical_id: finishes_ceiling
+    display_name: Finishes — Ceiling Finishes
+    definition: Ceiling finishes (ACT, gyp board, specialty ceilings).
+    parent_id: interior_finishes
+    aliases:
+      - ceiling
+      - act
+      - acoustical_ceiling
+    standard_reference: null
+
+  # ============ HVAC SYSTEMS ============
+  - canonical_id: hvac_systems
+    display_name: HVAC Systems
+    definition: Heating, ventilation, air conditioning, and exhaust systems.
+    parent_id: null
+    aliases:
+      - hvac
+    standard_reference: null
+
+  - canonical_id: hvac_air_distribution
+    display_name: HVAC — Air Distribution
+    definition: Air handlers, ductwork, terminal units, diffusers, exhaust fans.
+    parent_id: hvac_systems
+    aliases:
+      - air_handlers
+      - ahu
+      - ductwork
+      - vav
+      - vrf
+      - fan_coil
+      - fcu
+    standard_reference: null
+
+  - canonical_id: hvac_chilled_water
+    display_name: HVAC — Chilled Water
+    definition: Chillers, cooling towers, chilled water pumps and piping.
+    parent_id: hvac_systems
+    aliases:
+      - chillers
+      - chilled_water
+      - cooling_tower
+    standard_reference: null
+
+  - canonical_id: hvac_hot_water
+    display_name: HVAC — Hot Water/Steam
+    definition: Boilers, hot water and steam generation, heating distribution.
+    parent_id: hvac_systems
+    aliases:
+      - boilers
+      - hot_water
+      - steam
+    standard_reference: null
+
+  - canonical_id: hvac_packaged
+    display_name: HVAC — Packaged Equipment
+    definition: Packaged rooftop units, split systems, packaged terminal AC.
+    parent_id: hvac_systems
+    aliases:
+      - rtu
+      - packaged_units
+      - split_system
+      - ptac
+    standard_reference: null
+
+  - canonical_id: hvac_geothermal
+    display_name: HVAC — Geothermal
+    definition: Ground-source heat pump systems and well fields.
+    parent_id: hvac_systems
+    aliases:
+      - geothermal
+      - ground_source_heat_pump
+      - gshp
+    standard_reference: null
+
+  - canonical_id: hvac_doas
+    display_name: HVAC — Dedicated Outdoor Air System
+    definition: DOAS for ventilation air decoupled from cooling.
+    parent_id: hvac_systems
+    aliases:
+      - doas
+      - dedicated_outdoor_air
+    standard_reference: null
+
+  - canonical_id: hvac_controls_bas
+    display_name: HVAC — Controls/BAS
+    definition: Building automation, DDC controls, BMS integration.
+    parent_id: hvac_systems
+    aliases:
+      - bas
+      - bms
+      - ddc
+      - controls
+    standard_reference: null
+
+  # ============ ELECTRICAL SYSTEMS ============
+  - canonical_id: electrical_systems
+    display_name: Electrical Systems
+    definition: Electrical service, distribution, and end-use systems.
+    parent_id: null
+    aliases:
+      - electrical
+    standard_reference: null
+
+  - canonical_id: electrical_service
+    display_name: Electrical — Service Entrance
+    definition: Utility service entrance, main switchboard, service transformers.
+    parent_id: electrical_systems
+    aliases:
+      - service_entrance
+      - main_switchgear
+    standard_reference: null
+
+  - canonical_id: electrical_distribution
+    display_name: Electrical — Distribution
+    definition: Panelboards, switchgear, transformers, distribution feeders.
+    parent_id: electrical_systems
+    aliases:
+      - panelboards
+      - switchgear
+      - distribution
+    standard_reference: null
+
+  - canonical_id: electrical_lighting_interior
+    display_name: Electrical — Interior Lighting
+    definition: Interior lighting fixtures and circuits.
+    parent_id: electrical_systems
+    aliases:
+      - interior_lighting
+      - lighting_fixtures
+    standard_reference: null
+
+  - canonical_id: electrical_lighting_exterior
+    display_name: Electrical — Exterior/Site Lighting
+    definition: Exterior building, parking lot, and site lighting.
+    parent_id: electrical_systems
+    aliases:
+      - exterior_lighting
+      - site_lighting
+      - parking_lot_lighting
+    standard_reference: null
+
+  - canonical_id: electrical_lighting_controls
+    display_name: Electrical — Lighting Controls
+    definition: Lighting controls, occupancy sensors, daylight harvesting, dimming.
+    parent_id: electrical_systems
+    aliases:
+      - lighting_controls
+      - daylight_harvesting
+    standard_reference: null
+
+  - canonical_id: electrical_emergency_power
+    display_name: Electrical — Emergency/Standby Power
+    definition: Emergency generators, automatic transfer switches, UPS systems.
+    parent_id: electrical_systems
+    aliases:
+      - generator
+      - ats
+      - ups
+      - emergency_power
+    standard_reference: null
+
+  - canonical_id: electrical_renewable
+    display_name: Electrical — Renewable Generation
+    definition: Solar PV, wind, energy storage systems.
+    parent_id: electrical_systems
+    aliases:
+      - solar_pv
+      - photovoltaic
+      - battery_storage
+    standard_reference: null
+
+  - canonical_id: electrical_grounding
+    display_name: Electrical — Grounding/LPS
+    definition: Grounding systems, lightning protection, surge protection.
+    parent_id: electrical_systems
+    aliases:
+      - grounding
+      - lightning_protection
+      - spd
+    standard_reference: null
+
+  # ============ PLUMBING SYSTEMS ============
+  - canonical_id: plumbing_systems
+    display_name: Plumbing Systems
+    definition: Domestic water, sanitary, storm, gas, and specialty piping.
+    parent_id: null
+    aliases:
+      - plumbing
+    standard_reference: null
+
+  - canonical_id: plumbing_domestic_water
+    display_name: Plumbing — Domestic Water
+    definition: Domestic cold and hot water distribution and water heaters.
+    parent_id: plumbing_systems
+    aliases:
+      - domestic_water
+      - water_heaters
+    standard_reference: null
+
+  - canonical_id: plumbing_sanitary_dwv
+    display_name: Plumbing — Sanitary/DWV
+    definition: Sanitary waste, vent, drain piping.
+    parent_id: plumbing_systems
+    aliases:
+      - sanitary
+      - dwv
+    standard_reference: null
+
+  - canonical_id: plumbing_storm
+    display_name: Plumbing — Storm Drainage
+    definition: Roof drains, interior storm piping.
+    parent_id: plumbing_systems
+    aliases:
+      - storm_drainage
+      - roof_drains
+    standard_reference: null
+
+  - canonical_id: plumbing_natural_gas
+    display_name: Plumbing — Natural Gas
+    definition: Natural gas, propane piping and equipment connections.
+    parent_id: plumbing_systems
+    aliases:
+      - natural_gas
+      - gas_piping
+    standard_reference: null
+
+  - canonical_id: plumbing_medical_gas
+    display_name: Plumbing — Medical Gas
+    definition: Medical gas systems (oxygen, vacuum, compressed medical air, nitrogen).
+    parent_id: plumbing_systems
+    aliases:
+      - med_gas
+      - medical_gas
+    standard_reference: null
+
+  - canonical_id: plumbing_specialty
+    display_name: Plumbing — Specialty/Lab
+    definition: Lab waste, deionized water, RO, compressed air, vacuum.
+    parent_id: plumbing_systems
+    aliases:
+      - lab_plumbing
+      - di_water
+      - ro_water
+    standard_reference: null
+
+  # ============ FIRE PROTECTION SYSTEMS ============
+  - canonical_id: fire_protection_systems
+    display_name: Fire Protection Systems
+    definition: Fire suppression, fire alarm, and life safety systems.
+    parent_id: null
+    aliases:
+      - fire_protection
+      - life_safety
+    standard_reference: null
+
+  - canonical_id: fp_wet_sprinkler
+    display_name: Fire Protection — Wet Sprinkler
+    definition: Wet pipe sprinkler system.
+    parent_id: fire_protection_systems
+    aliases:
+      - wet_sprinkler
+    standard_reference: null
+
+  - canonical_id: fp_dry_pre_action
+    display_name: Fire Protection — Dry/Pre-Action Sprinkler
+    definition: Dry pipe, pre-action, deluge sprinkler systems.
+    parent_id: fire_protection_systems
+    aliases:
+      - dry_sprinkler
+      - pre_action
+      - deluge
+    standard_reference: null
+
+  - canonical_id: fp_clean_agent
+    display_name: Fire Protection — Clean Agent/Special Hazard
+    definition: Clean agent, FM-200, CO2, kitchen hood fire suppression.
+    parent_id: fire_protection_systems
+    aliases:
+      - clean_agent
+      - fm200
+      - kitchen_hood
+    standard_reference: null
+
+  - canonical_id: fp_fire_alarm
+    display_name: Fire Protection — Fire Alarm
+    definition: Fire alarm and detection system.
+    parent_id: fire_protection_systems
+    aliases:
+      - fire_alarm
+      - fire_detection
+    standard_reference: null
+
+  - canonical_id: fp_smoke_control
+    display_name: Fire Protection — Smoke Control
+    definition: Smoke control, atrium smoke management, stair pressurization.
+    parent_id: fire_protection_systems
+    aliases:
+      - smoke_control
+      - smoke_management
+    standard_reference: null
+
+  # ============ TELECOM / LOW-VOLTAGE SYSTEMS ============
+  - canonical_id: telecom_systems
+    display_name: Telecom / Low-Voltage Systems
+    definition: Telecom, AV, security, and other low-voltage systems infrastructure.
+    parent_id: null
+    aliases:
+      - telecom
+      - low_voltage
+    standard_reference: null
+
+  - canonical_id: telecom_structured_cabling
+    display_name: Telecom — Structured Cabling
+    definition: Voice/data cabling infrastructure.
+    parent_id: telecom_systems
+    aliases:
+      - structured_cabling
+      - voice_data
+    standard_reference: null
+
+  - canonical_id: telecom_av
+    display_name: Telecom — Audiovisual
+    definition: AV systems including conference rooms, displays, sound reinforcement.
+    parent_id: telecom_systems
+    aliases:
+      - av
+      - audiovisual
+    standard_reference: null
+
+  - canonical_id: telecom_wireless
+    display_name: Telecom — Wireless
+    definition: Wi-Fi infrastructure, DAS, in-building wireless.
+    parent_id: telecom_systems
+    aliases:
+      - wifi
+      - das
+    standard_reference: null
+
+  - canonical_id: telecom_paging_intercom
+    display_name: Telecom — Paging/Intercom
+    definition: Public address, paging, and intercom systems.
+    parent_id: telecom_systems
+    aliases:
+      - paging
+      - intercom
+      - public_address
+    standard_reference: null
+
+  # ============ SECURITY SYSTEMS ============
+  - canonical_id: security_systems
+    display_name: Security Systems
+    definition: Electronic security systems and physical security infrastructure.
+    parent_id: null
+    aliases:
+      - security
+      - ess
+    standard_reference: null
+
+  - canonical_id: security_acs
+    display_name: Security — Access Control
+    definition: Access control, credential management, door integration.
+    parent_id: security_systems
+    aliases:
+      - acs
+      - access_control
+    standard_reference: null
+
+  - canonical_id: security_video
+    display_name: Security — Video Surveillance
+    definition: CCTV, IP video, video management systems.
+    parent_id: security_systems
+    aliases:
+      - cctv
+      - video_surveillance
+    standard_reference: null
+
+  - canonical_id: security_intrusion
+    display_name: Security — Intrusion Detection
+    definition: Intrusion alarm, perimeter detection.
+    parent_id: security_systems
+    aliases:
+      - intrusion
+      - alarm
+    standard_reference: null
+
+  # ============ CONVEYING SYSTEMS ============
+  - canonical_id: conveying_systems
+    display_name: Conveying Systems
+    definition: Vertical and horizontal conveyance.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: conveying_elevators
+    display_name: Conveying — Elevators
+    definition: Passenger and freight elevators.
+    parent_id: conveying_systems
+    aliases:
+      - elevators
+      - passenger_elevator
+      - freight_elevator
+    standard_reference: null
+
+  - canonical_id: conveying_escalators
+    display_name: Conveying — Escalators/Moving Walks
+    definition: Escalators and moving walkways.
+    parent_id: conveying_systems
+    aliases:
+      - escalators
+      - moving_walks
+    standard_reference: null
+
+  - canonical_id: conveying_lifts
+    display_name: Conveying — Specialty Lifts
+    definition: Wheelchair lifts, dumbwaiters, material lifts.
+    parent_id: conveying_systems
+    aliases:
+      - dumbwaiter
+      - wheelchair_lift
+    standard_reference: null
+
+  # ============ EQUIPMENT / SPECIALTIES ============
+  - canonical_id: equipment_specialties
+    display_name: Equipment and Specialties
+    definition: Specialty equipment and program-specific fixed equipment.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: equipment_food_service
+    display_name: Equipment — Food Service
+    definition: Commercial kitchen equipment, walk-in coolers/freezers, serving lines.
+    parent_id: equipment_specialties
+    aliases:
+      - kitchen_equipment
+      - food_service_equipment
+    standard_reference: null
+
+  - canonical_id: equipment_lab
+    display_name: Equipment — Laboratory
+    definition: Lab fume hoods, biosafety cabinets, lab benches, lab fixed equipment.
+    parent_id: equipment_specialties
+    aliases:
+      - fume_hoods
+      - biosafety_cabinets
+      - lab_equipment
+    standard_reference: null
+
+  - canonical_id: equipment_medical
+    display_name: Equipment — Medical
+    definition: Medical fixed equipment (imaging, surgical lights, headwalls, booms).
+    parent_id: equipment_specialties
+    aliases:
+      - medical_equipment
+      - imaging_equipment
+      - headwall
+    standard_reference: null
+
+  - canonical_id: equipment_athletic
+    display_name: Equipment — Athletic
+    definition: Athletic and gym fixed equipment, scoreboards, bleachers.
+    parent_id: equipment_specialties
+    aliases:
+      - athletic_equipment
+      - bleachers
+      - scoreboard
+    standard_reference: null
+
+  - canonical_id: equipment_loading_dock
+    display_name: Equipment — Loading Dock
+    definition: Dock levelers, dock seals, dock equipment.
+    parent_id: equipment_specialties
+    aliases:
+      - dock_equipment
+      - loading_dock
+    standard_reference: null
+
+  # ============ SITE SYSTEMS ============
+  - canonical_id: site_systems
+    display_name: Site Systems
+    definition: Site-related systems including utilities, paving, landscape.
+    parent_id: null
+    aliases:
+      - site
+    standard_reference: null
+
+  - canonical_id: site_paving
+    display_name: Site — Paving
+    definition: Asphalt paving, concrete paving, parking lots, drives.
+    parent_id: site_systems
+    aliases:
+      - paving
+      - asphalt
+      - concrete_paving
+    standard_reference: null
+
+  - canonical_id: site_grading_drainage
+    display_name: Site — Grading/Drainage
+    definition: Site grading, surface drainage, swales.
+    parent_id: site_systems
+    aliases:
+      - grading
+      - site_drainage
+    standard_reference: null
+
+  - canonical_id: site_utilities
+    display_name: Site — Utilities
+    definition: Site water, sewer, storm, gas, electrical service to building.
+    parent_id: site_systems
+    aliases:
+      - site_utilities
+      - underground_utilities
+    standard_reference: null
+
+  - canonical_id: site_stormwater_bmps
+    display_name: Site — Stormwater BMPs
+    definition: Bioretention, infiltration practices, detention/retention, water quality BMPs.
+    parent_id: site_systems
+    aliases:
+      - bmp
+      - bioretention
+      - detention_pond
+    standard_reference: null
+
+  - canonical_id: site_landscape
+    display_name: Site — Landscape
+    definition: Landscape planting, irrigation, hardscape elements.
+    parent_id: site_systems
+    aliases:
+      - landscape
+      - irrigation
+    standard_reference: null
+
+  - canonical_id: site_walls_fencing
+    display_name: Site — Walls/Fencing
+    definition: Retaining walls, site walls, fencing, gates.
+    parent_id: site_systems
+    aliases:
+      - retaining_walls
+      - fencing
+    standard_reference: null

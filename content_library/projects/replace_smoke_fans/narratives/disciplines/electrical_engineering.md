@@ -1,0 +1,7 @@
+<!-- electrical_engineering.md — per-discipline short narrative, ~120-250 words -->
+
+## Electrical Engineering — Building 285 Demolish Three Smoke Fans, NAS Oceana
+
+Electrical engineering scope on this project addressed the complete demolition of all electrical systems serving smoke exhaust fans F-14, F-15, and F-16 in Building 285 at Naval Air Station Oceana. Each fan was served by dedicated electrical circuits, and the design required those circuits to be removed in their entirety — conductors, conduit, raceway, junction boxes, and disconnect switches — back to the source panel. Associated transformer equipment tied to the fan circuits was likewise included in the demolition scope.
+
+The demolition-back-to-source approach was specifically chosen to leave the building electrical system in a clean final condition, with no abandoned, de-energized, or capped-in-place conductors remaining in the walls, ceiling, or mechanical spaces. All removed electrical materials were specified for off-site disposal in accordance with NAVFAC requirements. Electrical scope was tightly coordinated with the mechanical demolition sequence, as the fans and their circuits were being removed simultaneously and the electrical termination points at the source panel required verification against the building's existing electrical infrastructure. No new electrical systems were added as part of this project. The electrical work was designed to meet NAVFAC UFC and UFGS standards as required by the design-build contract.

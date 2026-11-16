@@ -1,0 +1,132 @@
+name: Proposal CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '0[0-6]_**/*.md'
+      - 'compliance_matrix.md'
+      - 'scripts/publish/**'
+      - 'templates/**'
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  # ── Job 1: Markdown Lint ──────────────────────────────────────────────────
+  markdown-lint:
+    name: Markdown Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Lint Markdown files
+        run: |
+          markdownlint \
+            --config .markdownlint.yml \
+            '0[1-5]_**/*.md' \
+            'compliance_matrix.md' \
+            '00_admin/*.md' \
+            || true   # warn only — do not fail build on style issues
+
+  # ── Job 2: PLACEHOLDER Audit ──────────────────────────────────────────────
+  placeholder-audit:
+    name: PLACEHOLDER Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count unfilled PLACEHOLDERs in narrative volumes
+        id: placeholder_count
+        run: |
+          COUNT=$(grep -r 'PLACEHOLDER' 01_executive_summary/ 02_technical_volume/ \
+                  03_management_volume/ 04_past_performance/ 05_price_volume/ \
+                  --include='*.md' | wc -l || echo 0)
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "## PLACEHOLDER Audit" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Unfilled PLACEHOLDERs in narrative volumes: **$COUNT**" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$COUNT" -gt 0 ]; then
+            echo "" >> "$GITHUB_STEP_SUMMARY"
+            echo "### Locations" >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+            grep -rn 'PLACEHOLDER' 01_executive_summary/ 02_technical_volume/ \
+              03_management_volume/ 04_past_performance/ 05_price_volume/ \
+              --include='*.md' >> "$GITHUB_STEP_SUMMARY" || true
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+  # ── Job 3: Docx Build Check ───────────────────────────────────────────────
+  build-check:
+    name: Docx Build Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y pandoc
+
+      - name: Install yq
+        run: |
+          sudo wget -qO /usr/local/bin/yq \
+            https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+      - name: Create stub proposal_config.yml for CI
+        run: |
+          cp 00_admin/proposal_config.yml.example 00_admin/proposal_config.yml
+          # Replace all PLACEHOLDER values with CI stubs so envsubst doesn't fail
+          sed -i 's/"PLACEHOLDER[^"]*"/"CI_STUB"/g' 00_admin/proposal_config.yml
+
+      - name: Run build
+        run: bash scripts/publish/build_docx.sh
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: proposal-docx-preview
+          path: _output/*.docx
+          retention-days: 7
+
+  # ── Job 4: ShellCheck ─────────────────────────────────────────────────────
+  shellcheck:
+    name: ShellCheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run shellcheck on scripts/
+        run: |
+          # ubuntu-latest images ship with shellcheck pre-installed.
+          # Lint every tracked .sh file under scripts/.
+          shellcheck --version
+          mapfile -t files < <(find scripts -type f -name '*.sh' | sort)
+          if [ ${#files[@]} -eq 0 ]; then
+            echo "No .sh files found under scripts/ — nothing to lint."
+            exit 0
+          fi
+          echo "Linting ${#files[@]} shell script(s):"
+          printf '  - %s\n' "${files[@]}"
+          echo ""
+          # -x lets shellcheck follow `source` statements. SCRIPTDIR is a
+          # shellcheck-magic value meaning "the directory of each script being
+          # linted." Combined with scripts/lib (the canonical location of
+          # sourced helpers like guard_cwd.sh), this resolves source paths
+          # that contain unresolvable runtime variables ($REPO_ROOT, etc.)
+          # and silences the SC1091 (info) class as a result.
+          # --severity=warning means info-level findings (SC1091/SC2317/etc.)
+          # are reported but don't fail the build. Enforce errors + warnings.
+          shellcheck -x --severity=warning --source-path=SCRIPTDIR --source-path=scripts/lib "${files[@]}"

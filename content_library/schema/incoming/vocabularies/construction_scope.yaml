@@ -1,0 +1,589 @@
+vocabulary_id: construction_scope
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+anchor_standard_version: null
+hierarchy: two_level
+multi_select: true
+governance_notes: |
+  TWT-original scope-of-work taxonomy. Used to tag what construction work scope
+  is included in a project from a contractor/specification perspective.
+  Functionally informed by MasterFormat 2020 divisional structure but uses
+  TWT-original category names without reproducing CSI's protected expression
+  or section numbers.
+
+  Multi-select. Distinct from building_systems.yaml — that vocabulary captures
+  what's in the building, this vocabulary captures what's in the contractor's
+  scope. The two overlap heavily but serve different gate queries.
+future_migration:
+  target_anchor: csi_masterformat
+  target_version: MasterFormat 2020 or current
+  trigger: v1.0 product gate, CSI Dynamic Standards data licensing acquired
+  migration_artifact: crosswalks/construction_scope_twt_to_masterformat.yaml (planned)
+
+entries:
+  # ============ GENERAL / PROCUREMENT ============
+  - canonical_id: general_requirements
+    display_name: General Requirements
+    definition: General project requirements, allowances, alternates, project meetings, submittals.
+    parent_id: null
+    aliases:
+      - general_requirements
+    standard_reference: null
+
+  # ============ EXISTING CONDITIONS ============
+  - canonical_id: existing_conditions
+    display_name: Existing Conditions
+    definition: Site assessment, demolition, hazardous material remediation, existing-building work.
+    parent_id: null
+    aliases:
+      - demolition_scope
+    standard_reference: null
+
+  - canonical_id: existing_demolition
+    display_name: Existing — Demolition
+    definition: Selective and total demolition.
+    parent_id: existing_conditions
+    aliases:
+      - demolition
+      - selective_demo
+    standard_reference: null
+
+  - canonical_id: existing_hazmat_abatement
+    display_name: Existing — Hazardous Material Abatement
+    definition: Asbestos, lead, mold, PCB abatement and remediation.
+    parent_id: existing_conditions
+    aliases:
+      - hazmat_abatement
+      - asbestos_abatement
+      - lead_abatement
+    standard_reference: null
+
+  - canonical_id: existing_assessment
+    display_name: Existing — Site/Building Assessment
+    definition: Subsurface investigation, existing-building assessment, hazmat survey.
+    parent_id: existing_conditions
+    aliases:
+      - geotechnical_investigation
+      - building_assessment
+    standard_reference: null
+
+  # ============ CONCRETE ============
+  - canonical_id: concrete_scope
+    display_name: Concrete
+    definition: Cast-in-place, precast, post-tensioned concrete work.
+    parent_id: null
+    aliases:
+      - concrete
+    standard_reference: null
+
+  - canonical_id: concrete_cast_in_place
+    display_name: Concrete — Cast-in-Place
+    definition: Cast-in-place structural and architectural concrete.
+    parent_id: concrete_scope
+    aliases:
+      - cip
+      - cast_in_place_concrete
+    standard_reference: null
+
+  - canonical_id: concrete_precast
+    display_name: Concrete — Precast
+    definition: Precast structural and architectural concrete.
+    parent_id: concrete_scope
+    aliases:
+      - precast
+    standard_reference: null
+
+  # ============ MASONRY ============
+  - canonical_id: masonry_scope
+    display_name: Masonry
+    definition: CMU, brick, stone masonry construction.
+    parent_id: null
+    aliases:
+      - masonry
+    standard_reference: null
+
+  - canonical_id: masonry_cmu
+    display_name: Masonry — CMU/Concrete Block
+    definition: Concrete masonry unit construction.
+    parent_id: masonry_scope
+    aliases:
+      - cmu
+      - concrete_block
+    standard_reference: null
+
+  - canonical_id: masonry_brick_stone
+    display_name: Masonry — Brick/Stone
+    definition: Brick veneer and stone masonry.
+    parent_id: masonry_scope
+    aliases:
+      - brick
+      - stone_masonry
+    standard_reference: null
+
+  # ============ METALS ============
+  - canonical_id: metals_scope
+    display_name: Metals
+    definition: Structural steel, metal joists, metal decking, miscellaneous metals.
+    parent_id: null
+    aliases:
+      - metals
+    standard_reference: null
+
+  - canonical_id: metals_structural_steel
+    display_name: Metals — Structural Steel
+    definition: Structural steel framing, joists, decking.
+    parent_id: metals_scope
+    aliases:
+      - structural_steel
+      - steel_joists
+      - metal_deck
+    standard_reference: null
+
+  - canonical_id: metals_misc_metals
+    display_name: Metals — Miscellaneous Metals
+    definition: Stairs, railings, ornamental metals, metal fabrications.
+    parent_id: metals_scope
+    aliases:
+      - misc_metals
+      - metal_railings
+      - metal_stairs
+    standard_reference: null
+
+  # ============ WOOD AND PLASTICS ============
+  - canonical_id: wood_plastics
+    display_name: Wood and Plastics
+    definition: Rough carpentry, finish carpentry, architectural woodwork.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: wood_rough_carpentry
+    display_name: Wood — Rough Carpentry
+    definition: Wood framing and rough carpentry.
+    parent_id: wood_plastics
+    aliases:
+      - rough_carpentry
+      - framing
+    standard_reference: null
+
+  - canonical_id: wood_architectural_woodwork
+    display_name: Wood — Architectural Woodwork
+    definition: Custom millwork, casework, paneling, finish carpentry.
+    parent_id: wood_plastics
+    aliases:
+      - millwork
+      - casework
+      - architectural_woodwork
+    standard_reference: null
+
+  # ============ THERMAL AND MOISTURE ============
+  - canonical_id: thermal_moisture
+    display_name: Thermal and Moisture Protection
+    definition: Insulation, waterproofing, roofing, weather barriers.
+    parent_id: null
+    aliases:
+      - waterproofing_scope
+    standard_reference: null
+
+  - canonical_id: thermal_insulation
+    display_name: Thermal — Insulation
+    definition: Building insulation (batt, board, spray, blown).
+    parent_id: thermal_moisture
+    aliases:
+      - insulation
+      - spray_foam
+    standard_reference: null
+
+  - canonical_id: thermal_waterproofing
+    display_name: Thermal — Waterproofing/Damproofing
+    definition: Waterproofing, dampproofing, air/vapor barriers.
+    parent_id: thermal_moisture
+    aliases:
+      - waterproofing
+    standard_reference: null
+
+  - canonical_id: thermal_roofing
+    display_name: Thermal — Roofing
+    definition: Roof membrane, single-ply, built-up, metal roof systems.
+    parent_id: thermal_moisture
+    aliases:
+      - roofing_scope
+    standard_reference: null
+
+  # ============ OPENINGS ============
+  - canonical_id: openings_scope
+    display_name: Openings
+    definition: Doors, windows, glazing, hardware.
+    parent_id: null
+    aliases:
+      - openings
+    standard_reference: null
+
+  - canonical_id: openings_doors_frames
+    display_name: Openings — Doors and Frames
+    definition: Hollow metal, wood, specialty doors and frames.
+    parent_id: openings_scope
+    aliases:
+      - doors_frames
+      - hollow_metal_doors
+    standard_reference: null
+
+  - canonical_id: openings_windows
+    display_name: Openings — Windows
+    definition: Windows, skylights, exterior glazing.
+    parent_id: openings_scope
+    aliases:
+      - windows_scope
+    standard_reference: null
+
+  - canonical_id: openings_curtain_wall
+    display_name: Openings — Curtain Wall/Storefront
+    definition: Curtain wall, storefront, large-scale glazing systems.
+    parent_id: openings_scope
+    aliases:
+      - curtain_wall_scope
+      - storefront_scope
+    standard_reference: null
+
+  - canonical_id: openings_door_hardware
+    display_name: Openings — Door Hardware
+    definition: Door hardware, locksets, electrified hardware.
+    parent_id: openings_scope
+    aliases:
+      - door_hardware
+    standard_reference: null
+
+  - canonical_id: openings_glazing
+    display_name: Openings — Glazing
+    definition: Glazing materials, glass, glazing accessories.
+    parent_id: openings_scope
+    aliases:
+      - glazing
+      - glass
+    standard_reference: null
+
+  # ============ FINISHES ============
+  - canonical_id: finishes_scope
+    display_name: Finishes
+    definition: Drywall, tile, flooring, paint, ceilings, wallcovering.
+    parent_id: null
+    aliases:
+      - finishes_scope_division
+    standard_reference: null
+
+  - canonical_id: finishes_drywall_plaster
+    display_name: Finishes — Drywall and Plaster
+    definition: Gypsum board, plaster, framing for drywall.
+    parent_id: finishes_scope
+    aliases:
+      - drywall
+      - gypsum_board
+      - plaster
+    standard_reference: null
+
+  - canonical_id: finishes_tile
+    display_name: Finishes — Tile
+    definition: Ceramic, porcelain, stone tile flooring and walls.
+    parent_id: finishes_scope
+    aliases:
+      - tile
+      - ceramic_tile
+    standard_reference: null
+
+  - canonical_id: finishes_acoustical_ceilings
+    display_name: Finishes — Acoustical Ceilings
+    definition: Suspended acoustical ceilings (ACT) and ceiling systems.
+    parent_id: finishes_scope
+    aliases:
+      - act
+      - acoustical_ceilings
+    standard_reference: null
+
+  - canonical_id: finishes_flooring
+    display_name: Finishes — Flooring
+    definition: Carpet, resilient flooring, hard surface flooring, terrazzo.
+    parent_id: finishes_scope
+    aliases:
+      - flooring_scope
+      - carpet
+      - vct
+      - lvt
+      - terrazzo
+    standard_reference: null
+
+  - canonical_id: finishes_painting_wallcovering
+    display_name: Finishes — Painting and Wallcovering
+    definition: Painting, staining, wallcovering, special coatings.
+    parent_id: finishes_scope
+    aliases:
+      - painting
+      - wallcovering
+      - special_coatings
+    standard_reference: null
+
+  # ============ SPECIALTIES ============
+  - canonical_id: specialties_scope
+    display_name: Specialties
+    definition: Toilet partitions, signage, lockers, fire extinguishers, building specialties.
+    parent_id: null
+    aliases:
+      - specialties
+    standard_reference: null
+
+  - canonical_id: specialties_toilet_partitions
+    display_name: Specialties — Toilet Partitions/Accessories
+    definition: Toilet partitions, accessories, vanities.
+    parent_id: specialties_scope
+    aliases:
+      - toilet_partitions
+      - bathroom_accessories
+    standard_reference: null
+
+  - canonical_id: specialties_signage
+    display_name: Specialties — Signage
+    definition: Building signage, wayfinding, ADA signage.
+    parent_id: specialties_scope
+    aliases:
+      - signage
+      - wayfinding
+    standard_reference: null
+
+  - canonical_id: specialties_lockers
+    display_name: Specialties — Lockers/Storage
+    definition: Lockers, storage shelving, library shelving.
+    parent_id: specialties_scope
+    aliases:
+      - lockers
+      - shelving
+    standard_reference: null
+
+  - canonical_id: specialties_protective
+    display_name: Specialties — Protective Specialties
+    definition: Fire extinguishers, fire blankets, safety specialties, corner guards.
+    parent_id: specialties_scope
+    aliases:
+      - fire_extinguishers
+      - corner_guards
+    standard_reference: null
+
+  # ============ EQUIPMENT ============
+  - canonical_id: equipment_scope
+    display_name: Equipment
+    definition: Fixed equipment installed by general contractor (food service, lab, medical, athletic).
+    parent_id: null
+    aliases:
+      - equipment_division
+    standard_reference: null
+
+  - canonical_id: equipment_food_service_scope
+    display_name: Equipment — Food Service
+    definition: Commercial kitchen equipment installation.
+    parent_id: equipment_scope
+    aliases:
+      - food_service_equipment_scope
+    standard_reference: null
+
+  - canonical_id: equipment_lab_scope
+    display_name: Equipment — Laboratory
+    definition: Laboratory casework, fume hoods, lab equipment.
+    parent_id: equipment_scope
+    aliases:
+      - lab_casework
+      - fume_hoods_scope
+    standard_reference: null
+
+  - canonical_id: equipment_medical_scope
+    display_name: Equipment — Medical
+    definition: Medical equipment installation (fixed equipment integrated with construction).
+    parent_id: equipment_scope
+    aliases:
+      - medical_equipment_scope
+    standard_reference: null
+
+  - canonical_id: equipment_athletic_scope
+    display_name: Equipment — Athletic
+    definition: Athletic equipment, bleachers, gym divider curtains, scoreboards.
+    parent_id: equipment_scope
+    aliases:
+      - athletic_equipment_scope
+    standard_reference: null
+
+  - canonical_id: equipment_loading_dock_scope
+    display_name: Equipment — Loading Dock
+    definition: Dock levelers, dock seals, dock equipment.
+    parent_id: equipment_scope
+    aliases:
+      - loading_dock_scope
+    standard_reference: null
+
+  # ============ FURNISHINGS ============
+  - canonical_id: furnishings_scope
+    display_name: Furnishings
+    definition: Furniture, window treatments, interior plants, FF&E.
+    parent_id: null
+    aliases:
+      - furnishings
+      - ffe
+    standard_reference: null
+
+  # ============ SPECIAL CONSTRUCTION ============
+  - canonical_id: special_construction
+    display_name: Special Construction
+    definition: Pre-engineered buildings, swimming pools, integrated specialty construction.
+    parent_id: null
+    aliases:
+      - special_construction
+    standard_reference: null
+
+  - canonical_id: special_construction_pre_engineered
+    display_name: Special — Pre-Engineered Buildings
+    definition: Pre-engineered metal buildings, modular structures.
+    parent_id: special_construction
+    aliases:
+      - pemb
+      - pre_engineered
+      - modular_construction
+    standard_reference: null
+
+  - canonical_id: special_construction_pools
+    display_name: Special — Pools/Aquatic
+    definition: Swimming pools, aquatic facility specialty construction.
+    parent_id: special_construction
+    aliases:
+      - swimming_pools
+      - aquatic_specialty
+    standard_reference: null
+
+  # ============ CONVEYING ============
+  - canonical_id: conveying_scope
+    display_name: Conveying Equipment
+    definition: Elevators, escalators, dumbwaiters, lifts, material handling.
+    parent_id: null
+    aliases:
+      - conveying
+      - elevators_scope
+    standard_reference: null
+
+  # ============ FIRE SUPPRESSION ============
+  - canonical_id: fire_suppression_scope
+    display_name: Fire Suppression
+    definition: Fire sprinkler, standpipe, clean agent, kitchen hood suppression scope.
+    parent_id: null
+    aliases:
+      - fire_suppression
+      - sprinkler_scope
+    standard_reference: null
+
+  # ============ PLUMBING ============
+  - canonical_id: plumbing_scope
+    display_name: Plumbing
+    definition: Plumbing systems scope (domestic water, sanitary, storm, gas, specialty).
+    parent_id: null
+    aliases:
+      - plumbing_division
+    standard_reference: null
+
+  # ============ MECHANICAL / HVAC ============
+  - canonical_id: mechanical_hvac
+    display_name: Mechanical/HVAC
+    definition: HVAC equipment, ductwork, piping, controls scope.
+    parent_id: null
+    aliases:
+      - mechanical_scope
+      - hvac_scope
+    standard_reference: null
+
+  # ============ ELECTRICAL ============
+  - canonical_id: electrical_power
+    display_name: Electrical Power
+    definition: Electrical service, distribution, branch circuits, devices.
+    parent_id: null
+    aliases:
+      - electrical_scope
+      - power_scope
+    standard_reference: null
+
+  - canonical_id: electrical_lighting_scope
+    display_name: Electrical — Lighting
+    definition: Lighting fixtures, controls, exit signs, emergency lighting.
+    parent_id: null
+    aliases:
+      - lighting_scope
+    standard_reference: null
+
+  # ============ COMMUNICATIONS ============
+  - canonical_id: communications_scope
+    display_name: Communications
+    definition: Voice/data cabling, AV, paging, wireless infrastructure.
+    parent_id: null
+    aliases:
+      - communications
+      - low_voltage_scope
+    standard_reference: null
+
+  # ============ ELECTRONIC SAFETY AND SECURITY ============
+  - canonical_id: electronic_safety_security
+    display_name: Electronic Safety and Security
+    definition: Fire alarm, access control, video surveillance, intrusion detection.
+    parent_id: null
+    aliases:
+      - safety_security
+      - electronic_security
+    standard_reference: null
+
+  # ============ EARTHWORK ============
+  - canonical_id: earthwork_scope
+    display_name: Earthwork
+    definition: Site clearing, excavation, grading, soil stabilization.
+    parent_id: null
+    aliases:
+      - earthwork
+      - grading_scope
+    standard_reference: null
+
+  # ============ EXTERIOR IMPROVEMENTS ============
+  - canonical_id: exterior_improvements
+    display_name: Exterior Improvements
+    definition: Paving, landscaping, site furnishings, walls, fences.
+    parent_id: null
+    aliases:
+      - site_work
+      - exterior_improvements
+    standard_reference: null
+
+  - canonical_id: exterior_paving
+    display_name: Exterior — Paving
+    definition: Asphalt and concrete paving, parking, drives.
+    parent_id: exterior_improvements
+    aliases:
+      - paving_scope
+    standard_reference: null
+
+  - canonical_id: exterior_landscaping
+    display_name: Exterior — Landscaping/Irrigation
+    definition: Plantings, lawns, irrigation, landscape installation.
+    parent_id: exterior_improvements
+    aliases:
+      - landscaping_scope
+      - irrigation_scope
+    standard_reference: null
+
+  - canonical_id: exterior_walls_fencing
+    display_name: Exterior — Walls/Fencing
+    definition: Retaining walls, site walls, fences, gates.
+    parent_id: exterior_improvements
+    aliases:
+      - retaining_walls_scope
+      - fencing_scope
+    standard_reference: null
+
+  # ============ UTILITIES ============
+  - canonical_id: utilities_scope
+    display_name: Utilities
+    definition: Site water, sewer, storm, gas, electrical service distribution to building.
+    parent_id: null
+    aliases:
+      - site_utilities_scope
+      - underground_utilities_scope
+    standard_reference: null

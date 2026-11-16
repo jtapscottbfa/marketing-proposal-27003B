@@ -1,0 +1,522 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nmcp_replace_boiler",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nmcp_replace_boiler/20-007B 100% BASIS OF DESIGN_ALL TRADES.pdf",
+      "type": "bod",
+      "sha256": "0bf9248d5e42d59c0371f66d088eb324ab52a8036d1a181216ac8850469781e4",
+      "included": true,
+      "notes": "100% Final Submittal BOD dated April 30, 2021. Covers mechanical and electrical scope. BFA Project No. 20-007B."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nmcp_replace_boiler/ML_SAES_IDIQ_DBB-NMC BLDG020 BOILER RPLC.PDF",
+      "type": "sow",
+      "sha256": "a8878e2c43fd25669cd53440e24d0b62aa60c5feb57ec12fa17999aed70d3fb0",
+      "included": true,
+      "notes": "NAVFAC Mid-Atlantic Statement of A-E Services (SAES) for Design-Bid-Build Task Order, dated 9 DEC 2019. Contract N40085-19-D-9049."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nmcp_replace_boiler/Watertube Boiler.pdf",
+      "type": "unknown",
+      "sha256": "e84aa0e8c76a05eb35bb316e5a87aab5978cf3e9ca6686d3b86790241f379290",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Single-sentence fragment: '110 psi delivery pressure, water temperature is 347 degrees F.' Likely a boiler data sheet or cut sheet — minimal extractable content. Type classified as unknown; flag for human review."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD and SAES/SOW present. No drawing set, no spec book, no narrative document. Watertube Boiler.pdf is a fragmentary data sheet providing minimal content."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Replace Boiler 108, Building 20 — Portsmouth Naval Medical Center",
+      "source": "BOD cover page",
+      "quote": "REPLACE BOILER 108, BUILDING 20 / Naval Hospital Portsmouth, Virginia",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "REPLACE BOILER 108, BUILDING 20 / Naval Hospital Portsmouth, Virginia",
+          "value": "Replace Boiler 108, Building 20 — Portsmouth Naval Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A General Contract Information",
+          "claim": "FY-21 Project ST 18-0020 - REPLACE BOILER 108, BUILDING 020 / Naval Medical Center, Portsmouth, VA",
+          "value": "Replace Boiler 108, Building 20 — Portsmouth Naval Medical Center",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command Mid-Atlantic (NAVFAC Mid-Atlantic)",
+      "source": "SAES cover / §A",
+      "quote": "NAVFAC MIDATLANTIC / STATEMENT OF A-E SERVICES (SAES) / For DESIGN-BID-BUILD Task Orders",
+      "corroboration": [
+        {
+          "source": "SAES cover",
+          "claim": "NAVFAC MIDATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) Mid-Atlantic will administer this T.O.",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Portsmouth Naval Medical Center (PNMC) / U.S. Navy",
+      "source": "BOD p.1 / SAES §A",
+      "quote": "Portsmouth Naval Medical Center, Portsmouth, VA",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "Naval Hospital Portsmouth, Virginia",
+          "value": "Portsmouth Naval Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A",
+          "claim": "Naval Medical Center, Portsmouth, VA",
+          "value": "Portsmouth Naval Medical Center",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Portsmouth Naval Medical Center (PNMC) — Building 20, Central Steam Plant",
+      "facility_address": {
+        "value": null,
+        "status": "missing"
+      },
+      "source": "BOD cover / SAES §A",
+      "quote": "Portsmouth Naval Medical Center, Portsmouth, VA",
+      "corroboration": [
+        {
+          "source": "BOD cover",
+          "claim": "Naval Hospital Portsmouth, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A",
+          "claim": "Naval Medical Center, Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-007B",
+      "source": "BOD cover page",
+      "quote": "BFA Project No.: 20-007B"
+    },
+    "project_number_client": {
+      "value": "ST 18-0020",
+      "source": "SAES §A",
+      "quote": "FY-21 Project ST 18-0020 - REPLACE BOILER 108, BUILDING 020",
+      "corroboration": [
+        {
+          "source": "SAES §A",
+          "claim": "FY-21 Project ST 18-0020",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-19-D-9049",
+      "source": "SAES §A",
+      "quote": "Contract No. N40085-19-D-9049",
+      "corroboration": [
+        {
+          "source": "SAES §A",
+          "claim": "Contract No. N40085-19-D-9049",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "9E41P0",
+      "source": "SAES §A",
+      "quote": "Job Order No.: 9E41P0",
+      "corroboration": [
+        {
+          "source": "SAES §A",
+          "claim": "Job Order No.: 9E41P0",
+          "agrees": true
+        }
+      ]
+    },
+    "ework_order_number": {
+      "value": "1616699",
+      "source": "BOD cover page",
+      "quote": "eProject W.O.: 1616699",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "eProject W.O.: 1616699",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A",
+          "claim": "eProjects Work Order No.: 1616699",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "Building 20 area not stated in any source document. Project scope is equipment replacement within existing building."
+    },
+    "program_budget": {
+      "value": 2800000,
+      "currency": "USD",
+      "source": "SAES §C2",
+      "quote": "Project Cost/Program Amount: $2,800,000.00",
+      "corroboration": [
+        {
+          "source": "SAES §C2",
+          "claim": "$2,800,000.00",
+          "value": 2800000,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 2000000,
+      "currency": "USD",
+      "source": "SAES §C3",
+      "quote": "Estimated Construction Cost (ECC): $2,000,000.00",
+      "corroboration": [
+        {
+          "source": "SAES §C3",
+          "claim": "$2,000,000.00",
+          "value": 2000000,
+          "agrees": true
+        }
+      ]
+    },
+    "fund_type": {
+      "value": "General Fund",
+      "source": "SAES §C4",
+      "quote": "Fund Type: General Fund"
+    },
+    "classification_of_work": {
+      "value": "Maintenance/Repair",
+      "source": "SAES §C5",
+      "quote": "Classification Of Work. Maintenance/Repair."
+    },
+    "construction_duration_days": {
+      "value": 240,
+      "source": "SAES §C6.3",
+      "quote": "Construction Duration: 240 Calendar Days.",
+      "corroboration": [
+        {
+          "source": "SAES §C6.3",
+          "claim": "240 Calendar Days",
+          "value": 240,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Remove existing Boiler #108 (Nebraska 'D' type water tube boiler, Cleaver Brooks/Nebraska Model# 2D 2056) from Portsmouth Naval Medical Center Central Steam Plant (Building 20) and install a new 30,000 lb/hr package water tube boiler. Provide associated mechanical and electrical work to connect new boiler to existing systems. New boiler to operate with existing boilers 109 and 110 for n+1 redundancy.",
+      "source": "BOD Mechanical Design p.2",
+      "quote": "This project will remove the aging Boiler #108 from the Portsmouth Naval Medical Center Central Steam plant and replace it with a new lower maintenance and higher efficiency boiler. This existing Nebraska \"D\" type water tube boiler [Cleaver Brooks/Nebraska Model# 2D 2056/ 20,000 lb} would be removed in its entirety and the systems and structures that remain will be prepped, repaired or replaced to receive a new 30,000 lb/hr package water tube boiler. This new water tube boiler shall be sized to export 30,000 lb/hr (steam) and system designed to operate in conjunction with the existing, larger boilers 109 and 110 to obtain a true n+1 redundancy.",
+      "corroboration": [
+        {
+          "source": "BOD Mechanical Design p.2",
+          "claim": "Remove existing Nebraska 'D' type water tube boiler, replace with new 30,000 lb/hr package water tube boiler, n+1 redundancy with boilers 109 and 110",
+          "agrees": true
+        },
+        {
+          "source": "SAES §C1",
+          "claim": "remove the aging Boiler #108 from the Portsmouth Naval Medical Center Central Steam plant and replace it with a new lower maintenance and higher efficiency boiler... new package fire tube boiler... n+1 redundancy",
+          "agrees": false,
+          "note": "SAES §C1 specifies 'package fire tube boiler'; BOD specifies 'package water tube boiler'. Also SAES §C1 lists existing boiler capacity as 30,000 lb, while BOD states 20,000 lb for existing boiler."
+        }
+      ]
+    },
+    "existing_boiler_capacity": {
+      "value": "20,000 lb",
+      "source": "BOD Mechanical Design p.2",
+      "quote": "Cleaver Brooks/Nebraska Model# 2D 2056/ 20,000 lb",
+      "corroboration": [
+        {
+          "source": "BOD Mechanical Design p.2",
+          "claim": "20,000 lb",
+          "agrees": true
+        },
+        {
+          "source": "SAES §C1",
+          "claim": "Cleaver Brooks/Nebraska Model# 2D 2056/ 30,000 lb",
+          "agrees": false,
+          "note": "SAES states 30,000 lb for existing boiler; BOD states 20,000 lb. BOD is the later, design-team-authored document and is treated as authoritative."
+        }
+      ]
+    },
+    "new_boiler_capacity": {
+      "value": "30,000 lb/hr steam",
+      "source": "BOD Mechanical Design p.2",
+      "quote": "a new 30,000 lb/hr package water tube boiler. This new water tube boiler shall be sized to export 30,000 lb/hr (steam)"
+    },
+    "new_boiler_type": {
+      "value": "package water tube boiler",
+      "source": "BOD Mechanical Design p.2",
+      "quote": "receive a new 30,000 lb/hr package water tube boiler",
+      "corroboration": [
+        {
+          "source": "BOD Mechanical Design p.2",
+          "claim": "package water tube boiler",
+          "agrees": true
+        },
+        {
+          "source": "SAES §C1",
+          "claim": "new package fire tube boiler",
+          "agrees": false,
+          "note": "SAES says 'fire tube'; BOD says 'water tube'. BOD is authoritative as the design document."
+        }
+      ]
+    },
+    "electrical_service": {
+      "value": "208Y/120V, 3 phase, 4 wire",
+      "source": "BOD Electrical p.3",
+      "quote": "The existing electrical distribution service at the building is 208Y/120V, 3 phase, 4 wire."
+    },
+    "boiler_steam_pressure": {
+      "value": "110 psi delivery pressure, water temperature 347°F",
+      "source": "Watertube Boiler.pdf",
+      "quote": "110 psi delivery pressure, water temperature is 347 degrees F."
+    },
+    "bod_submittal_date": {
+      "value": "2021-04-30",
+      "source": "BOD cover page",
+      "quote": "FINAL SUBMITTAL / April 30, 2021"
+    },
+    "saes_date": {
+      "value": "2019-12-09",
+      "source": "SAES cover",
+      "quote": "Date: 9 DEC 2019"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES fee schedule has blank fee cells — fees were to be negotiated at TO award. No executed fee amounts found in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-04-30",
+        "source": "BOD cover page",
+        "quote": "FINAL SUBMITTAL / April 30, 2021",
+        "notes": "100% Final BOD submittal date used as proxy for design completion date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES schedule showed 30+90+90+30 days (design milestones) but overall design period from TO award not stated."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": 2000000,
+        "currency": "USD",
+        "source": "SAES §C3",
+        "quote": "Estimated Construction Cost (ECC): $2,000,000.00",
+        "notes": "ECC from SAES; actual construction contract value not available in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 240,
+        "source": "SAES §C6.3",
+        "quote": "Construction Duration: 240 Calendar Days."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "healthcare_military_medical"
+    ],
+    "program_subtype": [
+      "healthcare_military_medical"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_central_plant",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "hvac_hot_water",
+      "electrical_distribution",
+      "electrical_service"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac_midatlantic",
+    "portsmouth_naval_medical_center",
+    "boiler_replacement",
+    "central_steam_plant",
+    "military_healthcare",
+    "hampton_roads",
+    "maintenance_repair",
+    "steam_systems"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawing set present. Building 20 square footage not stated in text documents."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing Nebraska 'D' type water tube boiler (Cleaver Brooks/Nebraska Model 2D 2056, 20,000 lb/hr) — to be removed",
+          "New 30,000 lb/hr package water tube boiler — to be installed",
+          "Existing boilers 109 and 110 — to remain, n+1 configuration with new boiler",
+          "110 psi steam delivery pressure at 347°F operating temperature"
+        ],
+        "electrical": [
+          "Existing 208Y/120V, 3 phase, 4 wire electrical service — to be modified for new equipment",
+          "IMC and RMC conduit (minimum 3/4 inch interior)",
+          "THHN/THWN copper conductors",
+          "Individual motor starters with separate disconnect switches for motors 1/2 HP and larger"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.new_boiler_type",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Mechanical Design p.2",
+          "value": "package water tube boiler"
+        },
+        {
+          "source": "SAES §C1",
+          "value": "package fire tube boiler"
+        }
+      ],
+      "resolution_chosen": "BOD Mechanical Design p.2",
+      "rationale": "BOD is the later document (April 2021 vs. December 2019 SAES) and is the design-team-authored technical document. The SAES was the pre-design scope document; the BOD reflects the actual design decision. Water tube boiler is the authoritative specification."
+    },
+    {
+      "field_path": "facts.existing_boiler_capacity",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Mechanical Design p.2",
+          "value": "20,000 lb"
+        },
+        {
+          "source": "SAES §C1",
+          "value": "30,000 lb"
+        }
+      ],
+      "resolution_chosen": "BOD Mechanical Design p.2",
+      "rationale": "BOD is the authoritative design document. The 30,000 lb figure in the SAES may be a data entry error or confusion with the new boiler's target capacity. BOD clearly distinguishes existing (20,000 lb) from new (30,000 lb/hr)."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,323 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "24-017C",
+    "status": "present_with_value",
+    "source": "Addendum No. 3 cover page",
+    "quote": "BFA Project #24-017C"
+  },
+  "project_slug": "wtp_hvac",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/gloucester/wtp_hvac/24.06.28 Addendum No. 3.pdf",
+      "type": "sow",
+      "sha256": "9ee268bc2a886427e9141a5aec27cde3988a70a46dd6358f5e3386b06fadb085",
+      "included": true,
+      "notes": "Addendum No. 3 to IFB, dated 2024-06-28. Replaces Section D Scope of Work and Attachment B Price Page from original bid documents. Contains complete HVAC specification for both RO Plant and WTP Lab scopes."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/gloucester/wtp_hvac/Fw_ SWTP HVAC Specification.msg",
+      "type": "unknown",
+      "sha256": "47b767c33b8ae15466290edfa791fb2ca076591142eea79c122cbbb89985ac3b",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Outlook .msg email file. Binary format; text extraction not possible with available tools. Contents unknown — likely contains the HVAC specification as an email attachment or forwarded message. Review manually to determine if additional project facts are present."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Source set is limited to one readable PDF (Addendum No. 3 IFB scope of work + spec). No BOD, no executed contract, no drawings. .msg file not readable. All facts are single-source."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Gloucester SWTP HVAC",
+      "source": "Addendum No. 3 cover page",
+      "quote": "HVAC SPECIFICATION Gloucester SWTP",
+      "corroboration": [
+        {
+          "source": "Addendum No. 3 cover page",
+          "claim": "HVAC SPECIFICATION Gloucester SWTP",
+          "value": "Gloucester SWTP HVAC",
+          "agrees": true
+        },
+        {
+          "source": "Addendum No. 3 §Purpose",
+          "claim": "Gloucester County Surface Water Treatment Plant (WTP) and the Reverse Osmosis (RO) Building",
+          "value": "Gloucester SWTP HVAC",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Gloucester County",
+      "source": "Addendum No. 3 §Background",
+      "quote": "The Gloucester County Surface Water Treatment Plant (WTP) and the Reverse Osmosis (RO) Building, located at 8929 Reservoir Ridge Road, are in need of replacing an existing HVAC unit at the RO building and adding new Mini Split units in the Lab at the WTP.",
+      "corroboration": [
+        {
+          "source": "Addendum No. 3 §Background",
+          "claim": "Gloucester County Surface Water Treatment Plant",
+          "value": "Gloucester County",
+          "agrees": true
+        },
+        {
+          "source": "Addendum No. 3 §WTP Lab scope item 10",
+          "claim": "Coordinate exact location and duct routing with the County Engineer before construction.",
+          "value": "Gloucester County",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Gloucester County",
+      "source": "Addendum No. 3 §Background",
+      "quote": "The Gloucester County Surface Water Treatment Plant (WTP) and the Reverse Osmosis (RO) Building, located at 8929 Reservoir Ridge Road, are in need of replacing an existing HVAC unit at the RO building and adding new Mini Split units in the Lab at the WTP.",
+      "corroboration": [
+        {
+          "source": "Addendum No. 3 §Background",
+          "claim": "Gloucester County Surface Water Treatment Plant",
+          "value": "Gloucester County",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": {
+        "value": null,
+        "status": "missing",
+        "notes": "Gloucester County, VA — county address; no incorporated-city name given. Address is on Reservoir Ridge Road in unincorporated county."
+      },
+      "state": "VA",
+      "country": "US",
+      "facility_address": {
+        "value": "8929 Reservoir Ridge Road, Gloucester County, VA",
+        "source": "Addendum No. 3 §Background",
+        "quote": "The Gloucester County Surface Water Treatment Plant (WTP) and the Reverse Osmosis (RO) Building, located at 8929 Reservoir Ridge Road, are in need of replacing an existing HVAC unit at the RO building and adding new Mini Split units in the Lab at the WTP."
+      }
+    },
+    "project_number_internal": {
+      "value": "24-017C",
+      "source": "Addendum No. 3 cover page",
+      "quote": "BFA Project #24-017C"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No building square footage stated in source. Project involves HVAC replacement in two discrete spaces (RO Plant Server Room and WTP Lab); room areas not specified."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "Bid price page (Attachment B) is blank — no filled-in bid values. Document is solicitation, not awarded contract. Two line items present (RO Plant HVAC; WTP Lab HVAC) but no dollar amounts."
+    },
+    "scope_narrative": {
+      "value": "Two-scope HVAC replacement project at the Gloucester County Surface Water Treatment Plant complex. Scope 1 (RO Plant): Remove and replace one 10-ton split HVAC system (heat pump + air handler) in the Reverse Osmosis Plant Server Room. Scope 2 (WTP Lab): Abandon existing lab HVAC system and install new 4-ton multi-port mini-split heat pump with two 2-ton ceiling cassette indoor air handlers and outside makeup air in the Water Treatment Plant Lab.",
+      "source": "Addendum No. 3 §Purpose and §Scope of Work",
+      "quote": "The purpose of this Invitation for Bids (IFB) is to solicit firms to 1) remove and dispose of one of the existing HVAC units at the Reverse Osmosis (RO) Plant, 2) disconnect existing HVAC service in the Surface Water Treatment Plant (WTP) Lab and furnish/provide new HVAC systems for the RO Plant and the WTP Lab."
+    },
+    "completion_date_desired": {
+      "value": "2024-06-30",
+      "source": "Addendum No. 3 Attachment B Price Page",
+      "quote": "The County desires to have all work completed by 6/30/2024",
+      "corroboration": [
+        {
+          "source": "Addendum No. 3 Attachment B Price Page",
+          "claim": "6/30/2024",
+          "value": "2024-06-30",
+          "agrees": true
+        }
+      ]
+    },
+    "addendum_date": {
+      "value": "2024-06-28",
+      "source": "Addendum No. 3 cover page",
+      "quote": "100% SUBMITTAL June 28, 2024"
+    },
+    "scope_update_date": {
+      "value": "2024-05-15",
+      "source": "Addendum No. 3 §Scope of Work header",
+      "quote": "SCOPE OF WORK UPDATED 5/15/2024"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA authored the HVAC specification (Addendum No. 3) indicating design phase services. No design fee stated in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-06-28",
+        "source": "Addendum No. 3 cover page",
+        "quote": "100% SUBMITTAL June 28, 2024",
+        "notes": "Addendum No. 3 labeled '100% SUBMITTAL' suggesting design/specification was complete as of this date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Blank bid price page — no awarded construction contract value in source. This is a solicitation (IFB); the contract was not yet awarded as of Addendum No. 3."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-06-30",
+        "source": "Addendum No. 3 Attachment B Price Page",
+        "quote": "The County desires to have all work completed by 6/30/2024",
+        "notes": "Desired completion date per owner; not a contractual date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local"
+    ],
+    "program_type": [
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [
+      "utilities_water_treatment"
+    ],
+    "disciplines": [
+      "mechanical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "existing_demolition",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local_competitive"
+    ],
+    "award_type": [
+      "low_bid"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "gloucester_county",
+    "water_treatment_plant",
+    "hvac_replacement",
+    "mini_split",
+    "ro_plant",
+    "virginia_local_government"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings provided. Space areas not stated in text spec."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Reference to '3rd floor slab' in WTP Lab scope implies multi-story building but floor count not confirmed."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "RO Plant Server Room: 10-ton split system (heat pump Trane TWA120044 + air handler Trane TWE12044) replacing existing unit",
+          "WTP Lab: 4-ton multi-port mini-split heat pump (Trane/Mitsubishi MXZ-SM48) with two 2-ton ceiling cassette indoor units (Trane/Mitsubishi PLA-A24EA8) and branch box (PAC-MKA32BC)",
+          "WTP Lab: 6-inch outside air intake ducts with 16x8 flanged storm blade wall louvers, volume dampers, balanced to 150 CFM per ASHRAE 62.1"
+        ],
+        "electrical": [
+          "RO Plant: 3-phase 460V service for replacement heat pump and air handler",
+          "WTP Lab: High-voltage wiring rerouted from abandoned system to new mini-split outdoor unit; new breakers as required"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    },
+    "notes": "No drawing sheets were present in the source documents. The Addendum No. 3 PDF contains photos embedded in the text showing the Server Room equipment, Lab ceiling cassette locations, and exterior line routing — but these are site photos, not engineering drawings. Drawing extraction is not applicable."
+  },
+  "conflict_flags": [],
+  "corroboration_summary": {
+    "multi_source_fields": 2,
+    "single_source_fields": 12,
+    "uncorroborated_fields": 0,
+    "notes": "All facts derive from a single readable source document (Addendum No. 3). The .msg file was not readable. Two fields (project_name, client_name) had corroboration across multiple passages within the same document. No inter-source conflicts possible with single-document coverage. Corroboration confidence is low by structural necessity — this is a thinly-documented project."
+  },
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,388 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nit_pier_power_feeder",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nit_pier_power_feeder/21-037.2021.08.11.FINAL SUBMITTAL.pdf",
+      "type": "drawing_set",
+      "sha256": "d850d0fbe7a0dbb40ffc808bcc963af5348287d4823b4cfa28b26359b728a590",
+      "page_count": 1,
+      "included": true,
+      "notes": "BFA drawing E-501, Sheet 1 of 1. Final Submittal dated 2021-08-11. NIT Pier 3 South – Power Feeder Serving Pier. Project no. 21-037. Drawn by RTD, Checked by MLD, PE RTD."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nit_pier_power_feeder/Pier 3 SOUTH   ELECTRICAL  04 mp comments.pdf",
+      "type": "drawing_set",
+      "sha256": "83c7ffe9c269b46fd762dd9951c8870e1771e9fefb6ccc4d2171ce4bc2fb102f",
+      "page_count": 1,
+      "included": true,
+      "notes": "Talton Marine Terminals client drawing NIT-PIER3SOUTH.005, dated July 7, 2021. NIT Pier 3 South Electrical site plan with BFA review markup comments (red annotations). Used as reference/background drawing by BFA."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nit_pier_power_feeder/FW_ Pier 3 Drawing.msg",
+      "type": "correspondence",
+      "sha256": "89108367afae4524ebf71e6fe06268e76c870c208dfb8334a0d3e24cf78d3568",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Email correspondence (Outlook .msg format). Contents not machine-readable with available tools. Title suggests forwarded Pier 3 drawing transmission."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nit_pier_power_feeder/Untitled.msg",
+      "type": "correspondence",
+      "sha256": "27c317449322ef923334da2f3d8cccca7da3121bc7cfcb53e3e55f101fecc700",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Email correspondence (Outlook .msg format). Contents not machine-readable with available tools."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "NIT Pier 3 South – Power Feeder Serving Pier",
+      "source": "drawing E-501 title block",
+      "quote": "NIT PIER 3 SOUTH - POWER FEEDER SERVING PIER",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "NIT PIER 3 SOUTH - POWER FEEDER SERVING PIER",
+          "value": "NIT Pier 3 South – Power Feeder Serving Pier",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-501 plan area label",
+          "claim": "NIT PIER 3 SOUTH",
+          "value": "NIT Pier 3 South",
+          "agrees": true
+        },
+        {
+          "source": "client drawing NIT-PIER3SOUTH.005 title block",
+          "claim": "NIT PIER 3 SOUTH ELECTRICAL",
+          "value": "NIT Pier 3 South",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Talton Marine Terminals, LLC",
+      "source": "client drawing NIT-PIER3SOUTH.005 title block and copyright notice",
+      "quote": "© 2021 TALTON MARINE TERMINALS, LLC",
+      "corroboration": [
+        {
+          "source": "client drawing NIT-PIER3SOUTH.005 title block",
+          "claim": "TALTON MARINE TERMINALS",
+          "value": "Talton Marine Terminals, LLC",
+          "agrees": true
+        },
+        {
+          "source": "client drawing NIT-PIER3SOUTH.005 copyright",
+          "claim": "© 2021 TALTON MARINE TERMINALS, LLC",
+          "value": "Talton Marine Terminals, LLC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Talton Marine Terminals, LLC",
+      "source": "client drawing NIT-PIER3SOUTH.005 title block",
+      "quote": "TALTON MARINE TERMINALS",
+      "corroboration": [
+        {
+          "source": "client drawing NIT-PIER3SOUTH.005 title block",
+          "claim": "TALTON MARINE TERMINALS",
+          "value": "Talton Marine Terminals, LLC",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Norfolk International Terminals (NIT), Pier 3 South",
+      "facility_address": {
+        "value": null,
+        "status": "missing"
+      },
+      "source": "drawing E-501 title block and project title",
+      "quote": "NORFOLK, VA",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "NORFOLK, VA",
+          "value": "Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "BFA office address in title block",
+          "claim": "6353 CENTER DR. STE. 101, NORFOLK, VA 23502",
+          "value": "Norfolk, VA (BFA office)",
+          "agrees": true,
+          "note": "Confirms project in Norfolk area"
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-037",
+      "source": "drawing E-501 title block",
+      "quote": "21-037",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "21-037",
+          "value": "21-037",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-501 filename",
+          "claim": "21-037.2021.08.11.FINAL SUBMITTAL.pdf",
+          "value": "21-037",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "Not applicable — this is an infrastructure/utility electrical project on a marine pier, not a building. Linear extent approximately 635 feet of conduit run on pier documented in drawing E-501."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-08-11",
+        "source": "drawing E-501 title block date stamp",
+        "quote": "8-11-2021",
+        "note": "Final Submittal date visible in drawing file metadata/title block. Represents design completion milestone.",
+        "corroboration": [
+          {
+            "source": "drawing E-501 title block",
+            "claim": "8-11-2021 (Final Submittal)",
+            "value": "2021-08-11",
+            "agrees": true
+          },
+          {
+            "source": "PDF filename",
+            "claim": "21-037.2021.08.11.FINAL SUBMITTAL.pdf",
+            "value": "2021-08-11",
+            "agrees": true
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "transportation_port_marine"
+    ],
+    "program_subtype": [
+      "transportation_port_marine"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_substation_utility"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "norfolk",
+    "marine_terminal",
+    "nit",
+    "pier",
+    "power_feeder",
+    "medium_voltage",
+    "34kv",
+    "dominion_energy",
+    "talton_marine_terminals",
+    "industrial_electrical"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "RTD",
+      "role_on_project": "project_engineer_and_drafter",
+      "note": "Initials only from drawing E-501 title block: Drawn by RTD, Project Engineer RTD"
+    },
+    {
+      "name": "MLD",
+      "role_on_project": "checker",
+      "note": "Initials only from drawing E-501 title block: Checked by MLD"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-501",
+        "title": "NIT PIER 3 SOUTH – POWER FEEDER SERVING PIER",
+        "discipline": "electrical_engineering",
+        "source_file": "21-037.2021.08.11.FINAL SUBMITTAL.pdf",
+        "date": "2021-08-11",
+        "revision": "Final Submittal",
+        "reading_notes": "Single-sheet BFA design drawing. Shows elevation/profile view of 35kV medium-voltage power feeder from two Dominion Energy utility poles (45° Class 3 dead-end wooden poles) along NIT Pier 3 South to a pad-mounted transformer at the pier end. Service enters as 19.9kV/34.5kV, 3-phase, 4-wire from Dominion. #1/0 ACSR aluminum conductor from pole to S&C gang-operated switch (Cat# SCE137364R3E, 600A, 35kV, Alduti-Rupter switch), then 200A cutouts fused at 60A with 27kV arrestors, feeding a 2500/2800 OA / 3500 FFA kVA transformer (34500V primary → 480Y/277V, 3Ø, 60Hz secondary). Feeder routing: 6-inch steel conduit concrete-encased from pole to pier edge (Section B), then 6-inch rigid pipe conduit surface-mounted on pier deck face using stainless steel straps and treated timber blocking 4' OC (Section A). Total pier conduit run approximately 635 feet. At transformer end, L-shaped junction box at 90° bend for cable connection. Utility coordination note: 'Contractor to verify with Dominion if Power Pole Terminal #2 can be used for drop.' Title block confirms firm: Bowman Foster & Associates, Inc., 6353 Center Dr. Ste. 101, Norfolk VA 23502."
+      },
+      {
+        "sheet_number": "NIT-PIER3SOUTH.005",
+        "title": "NIT PIER 3 SOUTH ELECTRICAL",
+        "discipline": "electrical_engineering",
+        "source_file": "Pier 3 SOUTH   ELECTRICAL  04 mp comments.pdf",
+        "date": "2021-07-07",
+        "revision": "With BFA review markup comments (red annotations)",
+        "drawing_owner": "Talton Marine Terminals, LLC",
+        "reading_notes": "Client-produced site plan / electrical layout drawing showing overall NIT Pier 3 South. Plan view with station markings from 0+00 to 10+50. Shows pier alignment, existing warehouse, Lineage Warehouse (cold storage), parking areas, guardhouse, access gate. Key electrical features: Electric Substation at approximately station 8+50 rated 4,800 Amps, 480-500 VAC; Existing 34kV service via two poles at east end of pier (station 0+00 area). BFA red markup annotations include: (1) 'Verify with Dominion Energy that we can use this pole for the drop' — at utility pole connection point; (2) 'Add concrete encasement for all underground conduit' — at underground conduit routing area; (3) '36-inch cover above concrete encasement' — specifying burial depth. Cross-sections detail conduit installation: Section A shows surface-mounted 6-inch thick wall rigid pipe conduit on reinforced concrete pier deck with stainless steel banding; Section B shows concrete-encased conduit from pole run with 18-24 inch cover and danger tape. Dredging note: 'This entire area was dredged on June 1, 2021 to 36.0 feet.' Scale bar shown. Also shows new 250-ton heavy weather mooring bollard (west end) and new 100-ton double bit bollard, and existing double bit bollard."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "not_applicable",
+        "note": "Marine pier electrical infrastructure project — building square footage not applicable."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "not_applicable"
+      },
+      "linear_extent_pier_conduit_ft": {
+        "value": 635,
+        "unit": "linear feet (approximate)",
+        "source": "drawing E-501, dimensioned run annotation",
+        "quote": "+/- 635'",
+        "sheets": [
+          "E-501"
+        ]
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "Dominion Energy 19.9kV/34.5kV, 3-phase, 4-wire utility service",
+          "#1/0 ACSR aluminum conductor, 35kV, pole-to-pole tap",
+          "S&C gang-operated switch Cat# SCE137364R3E, 600A, 35kV Alduti-Rupter",
+          "200A cutouts fused at 60A with 27kV surge arrestors",
+          "2500/2800 OA / 3500 FFA kVA pad transformer, 34500V–480Y/277V, 3Ø, 60Hz",
+          "6-inch steel conduit concrete-encased (before pier section)",
+          "6-inch rigid pipe conduit surface-mounted on pier (~635 LF)",
+          "Existing electric substation 4,800 Amps, 480–500 VAC (client-side, per site plan)"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": []
+}

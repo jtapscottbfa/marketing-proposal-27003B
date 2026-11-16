@@ -1,0 +1,597 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b8221",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b8221/Building Addition 8221 Webster Field BOD.docx",
+      "type": "bod",
+      "sha256": "ec6713d220179cee6a0f2e000e9cb4c82a0f047f284bf566c36fcd6fe83066b2",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b8221/Building 8221 Scope.docx",
+      "type": "sow",
+      "sha256": "477a553cd724b14ce8cd71336a24a12c90c315b45c3146c06ae019d24c35e3f2",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b8221/N0042123C0029 Redacted.pdf",
+      "type": "contract",
+      "sha256": "56e0b7b5768a8ce5e63e7e9ce7c71b18d0cc029eb63a0c72821d7e82dcbfeaf8",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b8221/2023.07.XX 22-068 ELECTRICAL SCOPE.pdf",
+      "type": "unknown",
+      "flag_for_human_review": true,
+      "sha256": "1c57e8edb916c4892c0be9172b3ccc7a88ebf0d2868474afc713ddde3d1327f6",
+      "included": true,
+      "notes": "Multi-document image-based PDF. Contains: (1) electrical subcontractor scope letter from Brown Electric Inc. (BEI), Quote 9592-22; (2) images of solicitation pages N0042123R0059 pp.50-53 (SOW + general requirements); (3) email correspondence re: pre-bid electrical layout dated June 28, 2023 and Nov 9, 2022. Classified as unknown due to mixed content."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b8221/8221.pdf",
+      "type": "drawing_set",
+      "sha256": "35a4df86a501fac58a369bbac85fcdbf05c1f8274c7accc6ac7fc00adeb33afb",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Image-based PDF; pdftoppm render failed (MiKTeX/pdftoppm environment issue on extraction host). Drawing content not extracted. drawing_extraction_status set to attempted_failed."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "attempted_failed",
+    "notes": "Drawing set (8221.pdf) present but could not be rendered — pdftoppm environment failure on extraction host. Electrical scope PDF rendered successfully (7 pages, image-based). No separate spec book found; some specification language embedded in contract (N0042123C0029) Section 01 00 00."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 8221 Addition — Webster Field",
+      "source": "BOD cover page",
+      "quote": "Building 8221 Addition WEBSTER FIELD, MARYLAND",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Building 8221 Addition WEBSTER FIELD, MARYLAND",
+          "value": "Building 8221 Addition — Webster Field",
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "Project: B 8221Addition",
+          "value": "B 8221 Addition",
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 Section 01 00 00",
+          "claim": "B8221 2400 Sq. Ft. Expansion",
+          "value": "B8221 2400 Sq. Ft. Expansion",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Air Warfare Center Aircraft Division (NAWCAD)",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "NAWCAD PROCUREMENT GROUP 21983 BUNDY ROAD, BLDG 441 PATUXENT RIVER MD 20670",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "NAWCAD PROCUREMENT GROUP, Patuxent River MD",
+          "value": "NAWCAD",
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 CLIN schedule",
+          "claim": "Ship To: NAWCAD WEBSTER FIELD, 17617 Nesea Way, St. Inigoes MD 20684",
+          "value": "NAWCAD Webster Field",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Air Warfare Center Aircraft Division (NAWCAD) / U.S. Navy",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "NAWCAD PROCUREMENT GROUP 21983 BUNDY ROAD, BLDG 441 PATUXENT RIVER MD 20670",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "NAWCAD PROCUREMENT GROUP",
+          "value": "NAWCAD",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "St. Inigoes",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "NAWCAD Webster Field",
+      "facility_address": "17617 Nesea Way, St. Inigoes MD 20684",
+      "county": "St. Mary's County",
+      "source": "Contract N0042123C0029 CLIN schedule",
+      "quote": "NAWCAD WEBSTER FIELD SCOTT PORTER 17617 NESEA WAY ST. INIGOES MD 20684",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 CLIN schedule",
+          "claim": "St. Inigoes MD 20684",
+          "value": "St. Inigoes, MD",
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 Wage Determination",
+          "claim": "County: St Mary's County in Maryland",
+          "value": "St. Mary's County, MD",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "WEBSTER FIELD, MARYLAND",
+          "value": "Webster Field, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "N0042123C0029",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "4. CONTRACT NO. N0042123C0029",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "N0042123C0029",
+          "value": "N0042123C0029",
+          "agrees": true
+        }
+      ]
+    },
+    "solicitation_number": {
+      "value": "N0042123R0059",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "SOLICITATION NO. N0042123R0059",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "N0042123R0059",
+          "value": "N0042123R0059",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N0042123C0029",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "4. CONTRACT NO. N0042123C0029"
+    },
+    "square_footage": {
+      "value": 2400,
+      "unit": "gsf",
+      "source": "Building 8221 Scope.docx",
+      "quote": "Provide 40'x60' pre-engineered addition on the east endwall of the existing building.",
+      "notes": "Addition only. Multiple sources give slightly varying figures: BOD says '+/- 2466 SQFT', SOW/scope doc implies 40x60=2400 SF, contract Section 01 00 00 says '2400 sq. Ft. Addition'. Existing building per Brown Electric email = 4800 SF. See conflict_flags.",
+      "corroboration": [
+        {
+          "source": "BOD — General Scope",
+          "claim": "The new square footage is +/- 2466 SQFT",
+          "value": 2466,
+          "agrees": false
+        },
+        {
+          "source": "Building 8221 Scope.docx",
+          "claim": "40'x60' pre-engineered addition",
+          "value": 2400,
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 Section 01 00 00",
+          "claim": "B8221 2400 Sq. Ft. Expansion",
+          "value": 2400,
+          "agrees": true
+        },
+        {
+          "source": "BOD — Fire Protection §1.0",
+          "claim": "adding approximately 2500 square feet to the east portion of the building",
+          "value": 2500,
+          "agrees": false
+        },
+        {
+          "source": "Electrical scope PDF p.6 (Brown Electric email)",
+          "claim": "The addition is 2400 Sq ft. (1/2 of the initial building size)",
+          "value": 2400,
+          "agrees": true
+        }
+      ]
+    },
+    "existing_building_square_footage": {
+      "value": 4800,
+      "unit": "gsf",
+      "source": "Electrical scope PDF p.6 (Brown Electric email, Nov 9, 2022)",
+      "quote": "Existing Building 4800sq ft",
+      "corroboration": [
+        {
+          "source": "Electrical scope PDF p.6",
+          "claim": "Existing Building 4800sq ft",
+          "value": 4800,
+          "agrees": true
+        },
+        {
+          "source": "Building 8221 Scope.docx",
+          "claim": "addition is 2400 sq ft (40x60), described as 1/2 of initial building size",
+          "value": 4800,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "Contract dollar value redacted from N0042123C0029. No budget figure found in BOD or scope documents."
+    },
+    "construction_start_date": {
+      "value": null,
+      "status": "missing",
+      "notes": "NTP date not stated; contract requires commencement within 10 calendar days of NTP."
+    },
+    "construction_completion_date": {
+      "value": "2024-09-30",
+      "source": "Contract N0042123C0029 CLIN schedule",
+      "quote": "0001 30-SEP-2024",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 CLIN schedule",
+          "claim": "DELIVERY DATE: 30-SEP-2024",
+          "value": "2024-09-30",
+          "agrees": true
+        }
+      ]
+    },
+    "contractual_duration_days": {
+      "value": 476,
+      "source": "Contract N0042123C0029 p.1 and Section 00 70 00",
+      "quote": "complete it within 476 Days",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "complete it within 476 calendar days after receiving notice to proceed",
+          "value": 476,
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 Section 00 70 00",
+          "claim": "complete the entire work ready for use not later than 476 Days",
+          "value": 476,
+          "agrees": true
+        }
+      ]
+    },
+    "general_contractor": {
+      "value": "The Sanchez Group of Companies, LLC",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "8(a) Contractor: The Sanchez Group of Companies, LLC 20990 Point Lookout Road Callaway, MD 20620 Cage Code: 8GQW1",
+      "corroboration": [
+        {
+          "source": "Contract N0042123C0029 p.1",
+          "claim": "The Sanchez Group of Companies, LLC",
+          "value": "The Sanchez Group of Companies, LLC",
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 Offer section",
+          "claim": "SANCHEZ GROUP OF COMPANIES, LLC, THE",
+          "value": "The Sanchez Group of Companies, LLC",
+          "agrees": true
+        }
+      ]
+    },
+    "building_classification": {
+      "value": "Open Storage Secret (industrial lab)",
+      "source": "Building 8221 Scope.docx",
+      "quote": "Addition to be built to open storage open secret classification.",
+      "corroboration": [
+        {
+          "source": "Building 8221 Scope.docx",
+          "claim": "Addition to be built to open storage open secret classification",
+          "value": "Open Storage Secret",
+          "agrees": true
+        },
+        {
+          "source": "Contract N0042123C0029 Section 01 00 00",
+          "claim": "The existing space is an industrial lab space that is configured to be open storage secret.",
+          "value": "Open Storage Secret, industrial lab",
+          "agrees": true
+        },
+        {
+          "source": "BOD — Electrical",
+          "claim": "New service shall support the existing office spaces as well as the expansion to meet the requirements of an Accredited Secured Facility (ICD-705 Tech Specs and CNSSAM TEMPEST/1-13)",
+          "value": "ICD-705 / TEMPEST-compliant accredited secured facility",
+          "agrees": true
+        }
+      ]
+    },
+    "codes_and_standards": {
+      "value": [
+        "UFC 1-200-01",
+        "IBC 2021",
+        "IEBC 2021",
+        "ASCE 7-16",
+        "ACI 318-19",
+        "NFPA 13",
+        "NFPA 72",
+        "NFPA 101",
+        "UFC 3-600-01",
+        "UFC 4-021-01",
+        "UFC 3-410-02N",
+        "NEC (latest)",
+        "ICD-705",
+        "CNSSAM TEMPEST/1-13"
+      ],
+      "source": "BOD — Design Criteria sections",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "BOD — Civil/Structural Design Criteria",
+          "claim": "UFC 1-200-01, IBC 2021, IEBC 2021, ASCE 7-16, ACI 318-19",
+          "agrees": true
+        },
+        {
+          "source": "BOD — Fire Protection Design Criteria",
+          "claim": "UFC 3-600-01, UFC 4-021-01, UFC 1-200-01, IBC 2021, NFPA 101 2021, NFPA 72 2019, NFPA 13",
+          "agrees": true
+        },
+        {
+          "source": "BOD — Electrical Design Criteria",
+          "claim": "NEC, UFC-3-501-01, UFC-3-520-01, UFC-3-530-01, ICD-705-TS, CNSSAM TEMPEST/1-13",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA's design fee not stated in available source documents. Contract N0042123C0029 is the GC construction contract; design was likely a separate arrangement."
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Contract value redacted in N0042123C0029 Redacted.pdf. CLIN 0001 unit price field is blank/redacted."
+      },
+      "awarded_date": {
+        "value": "2023-06-12",
+        "source": "Contract N0042123C0029 Offer section",
+        "quote": "20C. OFFER DATE 6/12/23",
+        "corroboration": [
+          {
+            "source": "Contract N0042123C0029 Offer section",
+            "claim": "Offer Date / Award Date: 6/12/23",
+            "value": "2023-06-12",
+            "agrees": true
+          }
+        ]
+      },
+      "completion_date": {
+        "value": "2024-09-30",
+        "source": "Contract N0042123C0029 CLIN schedule",
+        "quote": "0001 30-SEP-2024"
+      },
+      "contractual_duration_days": {
+        "value": 476,
+        "source": "Contract N0042123C0029 p.1",
+        "quote": "complete it within 476 Days"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_specialty",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "structural_foundation"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "plumbing_specialty",
+      "superstructure",
+      "envelope_roofing",
+      "foundations_shallow"
+    ],
+    "construction_scope": [
+      "special_construction_pre_engineered",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "plumbing_scope",
+      "existing_demolition",
+      "concrete_cast_in_place",
+      "finishes_drywall_plaster",
+      "finishes_painting_wallcovering",
+      "finishes_flooring",
+      "electronic_safety_security",
+      "communications_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_8a_sole_source"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "sub_to_contractor"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_8a",
+      "description": "Contract awarded as 8(a) direct award to The Sanchez Group of Companies, LLC (8(a) Exit Date 3/16/2030, NAICS 236220). BFA served as design subconsultant to the 8(a) GC.",
+      "source": "Contract N0042123C0029 p.1",
+      "quote": "8(a) Contractor: The Sanchez Group of Companies, LLC... 8(a) Exit Date: 3/16/2030",
+      "proposed_pct": null,
+      "final_pct": null
+    }
+  ],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nawcad",
+    "webster_field",
+    "st_marys_county",
+    "maryland",
+    "pre_engineered_metal_building",
+    "icd_705",
+    "tempest",
+    "classified_facility",
+    "8a_award",
+    "sanchez_group",
+    "industrial_lab",
+    "building_addition"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage_addition": {
+        "value": 2400,
+        "unit": "gsf",
+        "source": "Building 8221 Scope.docx (40'x60' footprint confirmed by multiple sources)",
+        "quote": null,
+        "notes": "Drawing set 8221.pdf could not be rendered due to pdftoppm environment failure. Footprint confirmed from scope and contract text documents."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD — Fire Protection §3.2 and §3.3",
+        "quote": "Height (stories): 1",
+        "notes": "Single-story pre-engineered metal building."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Packaged outdoor air conditioning unit (new, for addition)",
+          "Packaged outside air handling unit with hot gas by-pass"
+        ],
+        "electrical": [
+          "Existing service: 208Y/120V, 3-phase, 4-wire from 150 KVA transformer",
+          "Existing service: 600A fused at 500A",
+          "New 800A main circuit breaker panel 208/120V",
+          "New 800A 3R CT cabinet",
+          "Electrical service relocation to north wall of addition",
+          "EMT/rigid metallic conduit; THHN/THWN conductors",
+          "1x4 LED lighting fixtures with occupancy sensors",
+          "4 exterior lighting fixtures",
+          "Cable tray extended from existing building",
+          "14 tele/data outlets with 1\" empty conduit"
+        ],
+        "plumbing": [
+          "Compressed air piping extension with drops and quick disconnects",
+          "Hose reels at workstations"
+        ],
+        "fire_protection": [
+          "New 6\" wet sprinkler riser with backflow preventer, flow switch, tamper switches",
+          "Whole-building sprinkler coverage (existing building + addition)",
+          "New fire alarm appliances added to existing Notifier NFS2-640 addressable FACU",
+          "New NAC panel if needed",
+          "Mass notification system integration"
+        ]
+      }
+    },
+    "extraction_notes": "Drawing set 8221.pdf (7.1 MB, image-based) could not be rendered — pdftoppm failed on extraction host (MiKTeX log error). Electrical scope PDF rendered (7 pages): pages 1 is BEI bid scope; pages 2-5 are solicitation pages (images of N0042123R0059 pp.50-53); pages 6-7 are Brown Electric/Sanchez Group email correspondence with pre-bid layout. No architectural or civil drawing sheets were accessible. MEP system inventory above is derived from BOD and scope text documents, not from drawing images."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD — General Scope",
+          "value": 2466,
+          "text": "+/- 2466 SQFT"
+        },
+        {
+          "source": "Building 8221 Scope.docx / Contract SOW / Brown Electric email",
+          "value": 2400,
+          "text": "40'x60' pre-engineered addition / 2400 sq. Ft. Addition"
+        },
+        {
+          "source": "BOD — Fire Protection §1.0",
+          "value": 2500,
+          "text": "approximately 2500 square feet"
+        }
+      ],
+      "resolution_chosen": "2400 SF (Building 8221 Scope.docx, Contract SOW, Brown Electric email — three sources agree)",
+      "rationale": "The 40'x60' footprint from the scope document yields exactly 2,400 SF and is confirmed by the executed contract SOW and the electrical subconsultant correspondence. The BOD's '+/- 2466' likely represents a rounded design estimate; the fire protection BOD's '~2500' is a further conservative rounding. All three values are within 5% of each other (minor severity). The 2,400 SF figure is used as it is most precisely corroborated."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md"
+    }
+  }
+}

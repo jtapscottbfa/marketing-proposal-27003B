@@ -1,0 +1,190 @@
+---
+title: "Drawing Set Baseline — Estimating Basis"
+subtitle: "PLACEHOLDER: Project name · Location · Project number"
+author: "Bowman, Foster & Associates, Inc."
+date: "PLACEHOLDER: D Month YYYY"
+---
+
+<!-- INTERNAL. Estimating basis and level-of-effort model. Not for transmittal
+     to the client, the prime, the architect, or any contractor. Client-facing
+     narrative states the sheet total and MEP split only — see the final
+     section. Build per 00_admin/drawing_set_and_spec_baseline.SCHEMA.md. -->
+
+**Internal document.** Estimating basis and level-of-effort model for pursuit
+`PLACEHOLDER: number`. Not for client or design-team transmittal.
+
+# Purpose and Method
+
+This baseline applies the drawing-set methodology recorded in
+`00_admin/reference_proposals/BFA_Drawing_Set_Methodology_INTERNAL.docx`,
+following the construction procedure in
+`00_admin/drawing_set_and_spec_baseline.SCHEMA.md`.
+
+The method answers one question: how much drafting work is in this project, and
+what forces each unit of it into existence. Two tables do two jobs:
+
+| Table | Job |
+|---|---|
+| Sheet List | Enumerate the sheets — the deterministic part |
+| Sheet Count by Discipline | Bound the estimate low / expected / high — the probabilistic part |
+
+Every row of the sheet list carries a justification. Strip that column and the
+table becomes a wish list; keep it and it is an estimating model defensible line
+by line.
+
+<!-- Ranges below are engineering judgement, proposed for the seal-holding
+     engineer to overwrite. They are not derived from a schema. -->
+
+# Adaptations From the Reference Method
+
+<!-- The reference is a NAVFAC design-build package under UFC and UFGS. State
+     each deviation from it deliberately, so the deviation reads as a decision
+     rather than an oversight. Delete any that do not apply; add any that do. -->
+
+## Seal Constraint and the Count Floor
+
+PLACEHOLDER: State whether the seal constraint is contractual (cite the
+paragraph) or professional. Then the roster:
+
+| Series | Seal | Merge permitted? |
+|---|---|---|
+| M | PLACEHOLDER: Name, PE — license # | PLACEHOLDER |
+| P | PLACEHOLDER | PLACEHOLDER |
+| E | PLACEHOLDER | PLACEHOLDER |
+
+Consequence: the floor is set by **PLACEHOLDER: N seals, not N disciplines**.
+
+PLACEHOLDER: One sentence — are disciplines kept separate because a rule forbids
+merging, or because legibility at this size argues against it? Say which. Fee
+negotiation will push on this line.
+
+## Set Ownership Boundary
+
+PLACEHOLDER: Who issues G and A? If BFA issues neither, state the consequence:
+**MEP subtotal equals the total**, so any per-sheet fee discussion is a
+discussion about the entire deliverable — there is no non-MEP ballast in the set
+to absorb a reduction.
+
+## Demolition Series
+
+PLACEHOLDER: Present or absent. If absent, the `-11x` block is free — state what
+it is reassigned to, and confirm it covers the same areas as `-10x`.
+
+## Specifications
+
+PLACEHOLDER: Which applies —
+
+- Full specification volume required; on-drawing specifications not accepted.
+  Specification effort must be priced separately.
+- No specification volume required; requirements carried in drawing notes,
+  schedules, and details. **The specification tier contributes zero hours.**
+
+State the level-of-effort consequence in one sentence, because it is the largest
+driver of non-comparability between sets of equal sheet count.
+
+# Sheet List
+
+Numbering follows the reference convention: `-001` legends and notes,
+`-101/-102` primary plans (trailing digit = floor or area), `-111/-112` parallel
+second-pass plans over the same areas, `-201` diagrams and schedules, `-501`
+details, `-601` calculation summaries.
+
+<!-- Type column: vehicle_mandated (cannot be removed) / scope_mandated (falls
+     away only if that scope falls away) / design_implied (moves if the design
+     decision moves). Tagging lets a scope cut be costed by filtering. -->
+
+## Mechanical — Sealed by PLACEHOLDER
+
+| Sheet | Title | Seal | Type | Justification |
+|---|---|---|---|---|
+| M-001 | Mechanical legend, general notes, equipment schedules | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER: cite the code section or scope element |
+| M-101 | First floor mechanical plan | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| M-501 | Mechanical details | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| M-601 | Load calculation and ventilation compliance summary | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+
+## Plumbing — Sealed by PLACEHOLDER
+
+| Sheet | Title | Seal | Type | Justification |
+|---|---|---|---|---|
+| P-001 | Plumbing legend, general notes, fixture schedule | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| P-101 | First floor plumbing plan | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| P-201 | Sanitary and domestic water riser diagrams | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| P-501 | Plumbing details | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+
+## Electrical — Sealed by PLACEHOLDER
+
+| Sheet | Title | Seal | Type | Justification |
+|---|---|---|---|---|
+| E-001 | Electrical legend, notes, panel schedules, load calculation | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| E-101 | First floor power plan | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| E-201 | One-line diagram | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| E-501 | Electrical details | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+
+<!-- Mark any sheet that exists only under one resolution of a range driver as
+     **Conditional**, in bold, with its RD- id. -->
+
+# Sheet Count by Discipline
+
+| Series | Discipline | Low | Expected | High | MEP |
+|---|---|---|---|---|---|
+| M | Mechanical | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| P | Plumbing | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| E | Electrical | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| **Total** | | **PLACEHOLDER** | **PLACEHOLDER** | **PLACEHOLDER** | **PLACEHOLDER of PLACEHOLDER MEP** |
+
+PLACEHOLDER: State the spread ratio (high ÷ low) and name its dominant cause.
+Reference points: NAVFAC reference set 1.75×; 26040A 2.2×. Outside 1.7×–2.3×,
+explain the excursion. Above 2.5×, escalate the driver rather than pricing
+around it.
+
+# Range Drivers
+
+Each driver names an uncertainty, the sheets it moves, and the open item that
+resolves it. Open-item numbers refer to the numbered list in
+`PLACEHOLDER: path to client-facing narrative` §PLACEHOLDER.
+
+| ID | Driver | Affects | Resolved by | Swing |
+|---|---|---|---|---|
+| RD-1 | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| RD-2 | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+| RD-3 | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER | PLACEHOLDER |
+
+<!-- Reconcile before finalising: sum of positive swings ≈ high − expected;
+     sum of negative swings ≈ expected − low. If they do not reconcile, a driver
+     is missing or the range was set by feel. -->
+
+<!-- If BFA draws over an architect's backgrounds, plan scale is almost always
+     the dominant driver — it multiplies across every plan sheet in every series
+     at once. Make it RD-1 unless something genuinely outranks it. -->
+
+PLACEHOLDER: One paragraph on the dominant driver — what it is, what it costs,
+and when it must be settled. Name the meeting.
+
+# Client-Facing Handling
+
+Per the reference methodology, the sheet list and count tables are held
+internal. The client narrative states the sheet total, the MEP split, and the
+documentation approach — nothing lower.
+
+The reasoning is commercial: these tables are the estimating basis. Publishing
+them before the design exists invites line-item negotiation against sheets that
+have not been drawn.
+
+What the client narrative may state:
+
+- Approximately PLACEHOLDER sheets, firming on receipt of the DD set
+- PLACEHOLDER: MEP split and who holds the general and architectural series
+- Signed and sealed by PLACEHOLDER Virginia PEs
+- PLACEHOLDER: specification approach
+
+What it must not state: per-sheet enumeration, the low/high range, or the range
+drivers.
+
+<!-- No script currently enforces this split. Write the client summary as its
+     own block; do not produce it by deleting columns from the tables above. -->
+
+# Close-Out
+
+<!-- Required when the set issues, not optional. Log actual issued sheet counts
+     to 00_admin/drawing_set_calibration_ledger.md. Every issued set that is not
+     logged is calibration permanently lost. -->

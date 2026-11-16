@@ -1,0 +1,355 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "loading_dock",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/usace/loading_dock/22-060A.2023.10.17.FINAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "fb809d07a38bafbd60c410cb34165954496de62a756e68fd10bb5cdd0b9dd8ae",
+      "page_count": null,
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/usace/loading_dock/Ft. Meade, SCOPE OF WORK.docx",
+      "type": "sow",
+      "sha256": "ef5eb3a023e15eefa654601844ce21fcea8fb88301b79c4d14bb6f70444e359c",
+      "page_count": null,
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/usace/loading_dock/FGGM 420 1 2020.pdf",
+      "type": "report",
+      "sha256": "78ee7724921b8ae6363678c5427e9fdb55c6c36dc0fbe1ca87c92c8b35c0197d",
+      "page_count": null,
+      "included": true,
+      "notes": "FGGM Regulation 420-1, Installation Fire Regulation (17 Nov 2020). Referenced design criteria document, not a BFA-authored project deliverable."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/usace/loading_dock/FGGM IPS 2020.pdf",
+      "type": "report",
+      "sha256": "fa7658aef54b1b37b3c2a98e9870f7e6256f8f46a219d7b6fca86f2effd5bdd1",
+      "page_count": null,
+      "included": true,
+      "notes": "FGGM Installation Planning Study / Transportation Plan map (2020). Provided as background reference for installation context; contains no project-specific design content."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "Two source documents are installation-level reference materials (fire regulation, installation plan), not project deliverables. No construction drawings provided. No executed contract provided."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Install Dock Lift with Dock Leveler — Building 2484, Kimbrough Ambulatory Care Center, Fort Meade, MD",
+      "source": "BOD cover page",
+      "quote": "INSTALL A DOCK LIFT WITH A DOCK LEVELER IN THE LOGISTIC BUILDING 2484 KIMBROUGH AMBULATORY CARE CENTER FORT MEADE, MD",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "INSTALL A DOCK LIFT WITH A DOCK LEVELER IN THE LOGISTIC BUILDING 2484 KIMBROUGH AMBULATORY CARE CENTER FORT MEADE, MD",
+          "value": "Install Dock Lift with Dock Leveler — Building 2484, Kimbrough Ambulatory Care Center, Fort Meade, MD",
+          "agrees": true
+        },
+        {
+          "source": "SOW §2.1",
+          "claim": "Install a dock lift with a dock leveler in the Logistics Building 2484, Kimbrough Ambulatory Care Center, Ft. Meade, MD.",
+          "value": "Install Dock Lift with Dock Leveler — Building 2484, Kimbrough Ambulatory Care Center, Fort Meade, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army Corps of Engineers, Huntsville Engineering and Support Center (USACE HNC)",
+      "source": "SOW §1.0 and §6.3",
+      "quote": "CONTRACT W912DY-22-C-00[__] ... USACE, HNC",
+      "corroboration": [
+        {
+          "source": "SOW §1.0 header",
+          "claim": "CONTRACT W912DY-22-C-00[__]",
+          "value": "USACE Huntsville Center (contract W912DY prefix identifies USACE HNC)",
+          "agrees": true
+        },
+        {
+          "source": "SOW §6.3",
+          "claim": "direct employees of the prime contractor who holds the contract with USACE, HNC",
+          "value": "USACE HNC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Defense Health Agency (DHA) / US Army, Kimbrough Ambulatory Care Center",
+      "source": "SOW §6.1",
+      "quote": "The contractor shall strategize collaboratively with DHA, each Facility Management staff, and others as appropriate",
+      "corroboration": [
+        {
+          "source": "SOW §6.1",
+          "claim": "DHA, each Facility Management staff",
+          "value": "Defense Health Agency (using agency)",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.1",
+          "claim": "Building 2484 is the site of the KACC Logistics Division",
+          "value": "Kimbrough Ambulatory Care Center (KACC) as facility owner/operator",
+          "agrees": true
+        }
+      ],
+      "notes": "Contracting agency is USACE HNC; using agency/owner is DHA/KACC. Federal triangulation: contractor (prime DB firm) contracts with USACE HNC; facility operated by DHA."
+    },
+    "location": {
+      "city": "Fort Meade",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "Building 2484, Kimbrough Ambulatory Care Center, Fort George G. Meade, MD",
+      "source": "BOD cover page",
+      "quote": "KIMBROUGH AMBULATORY CARE CENTER FORT MEADE, MD",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "KIMBROUGH AMBULATORY CARE CENTER FORT MEADE, MD",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.1",
+          "claim": "Building 2484 is the site of the KACC Logistics Division ... Ft. Meade, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-060A",
+      "source": "BOD cover page",
+      "quote": "BFA Project #22-060A"
+    },
+    "project_number_client": {
+      "value": "P2 #507741",
+      "source": "SOW header",
+      "quote": "P2 #507741",
+      "notes": "P2 refers to the USACE Project Planning System number."
+    },
+    "contract_number": {
+      "value": "W912DY-22-C-00[redacted]",
+      "source": "SOW §1.0 header",
+      "quote": "CONTRACT W912DY-22-C-00[__]",
+      "status": "present_with_value",
+      "notes": "Full contract number is partially redacted/blank in source document. W912DY is the USACE Huntsville Center DODAAC. This is the base IDIQ contract number; actual task order number was left blank in the SOW template."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW header has blank for TASK ORDER [____]. Task order number not provided in available source documents."
+    },
+    "square_footage": {
+      "value": 18200,
+      "unit": "gsf",
+      "source": "SOW §3.1",
+      "quote": "Overall size is about 18,200 square feet.",
+      "notes": "This is the square footage of existing Building 2484 in its entirety. BFA scope is limited to the loading dock bay area modification — no separate scope-area square footage given.",
+      "corroboration": [
+        {
+          "source": "SOW §3.1",
+          "claim": "Overall size is about 18,200 square feet.",
+          "value": 18200,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in available documents."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design-build delivery; design and construction are combined under one contract. No separate design fee stated in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-10-17",
+        "source": "BOD cover page",
+        "quote": "October 17, 2023",
+        "notes": "Date of Final BOD. Used as proxy for final design completion date; actual contractual design completion date not stated."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design-build; combined contract value not stated in available documents. Liquidated damages rate of $560/calendar day mentioned in SOW but total contract value not provided."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "structural_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "structural_foundation",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_distribution",
+      "electrical_service"
+    ],
+    "construction_scope": [
+      "concrete_scope",
+      "electrical_power",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_matoc"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_design_builder"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "USACE HNC is the contracting agency (federal_dod). DHA/KACC is the using agency (also federal_dod). Both are DoD.",
+    "program_type": "KACC is a military ambulatory care center. healthcare_va_medical is technically VA-specific per vocab; the correct type for a DoD/Army ambulatory care center is healthcare_ambulatory or healthcare_military_medical. See vocab gap in retro.",
+    "program_subtype": "healthcare_ambulatory used as closest match. Facility is a military medical treatment facility (MTF) — Kimbrough Ambulatory Care Center.",
+    "delivery_method": "SOW and BOD both confirm design-build. BOD cover states 'Design-Build'.",
+    "contract_vehicle": "Task order under a multi-project base IDIQ (W912DY-22-C-00__). The SOW title 'FY22 Eastern Region Miscellaneous Projects' indicates a multi-project MACC/IDIQ vehicle. federal_task_order + federal_matoc flagged; may be federal_macc.",
+    "project_status": "BOD dated October 2023; final design submitted. Assumed complete given Final BOD and no indication of ongoing work. Status flagged as uncertain — no completion certificate or as-built drawings available.",
+    "award_type": "Award basis not stated in available documents. Design-build procurement basis not specified as QBS or best-value in SOW.",
+    "bfa_role": "BFA holds the prime design-build contract (BOD states 'BFA Project #22-060A' and BOD is for design-build delivery)."
+  },
+  "tenant_freeform_tags": [
+    "fort_meade",
+    "kacc",
+    "kimbrough",
+    "loading_dock",
+    "dock_lift",
+    "design_build",
+    "usace_hnc",
+    "military_medical",
+    "fy22",
+    "eastern_region_misc"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing set provided in source documents. BOD references design-build delivery and indicates drawings would be produced as part of the design submittal package, but no drawing PDFs are present in the intake folder."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "taxonomy.program_type",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "vocabulary healthcare_va_medical",
+          "value": "VA medical center, CBOC, or VA-operated healthcare facility — does not match Army/DHA facility"
+        },
+        {
+          "source": "vocabulary healthcare_military_medical",
+          "value": "DoD MTF (Walter Reed, Naval medical centers, hospital ships, base clinics) — closer match for KACC"
+        },
+        {
+          "source": "vocabulary healthcare_ambulatory",
+          "value": "Outpatient clinic, surgery center, urgent care, ambulatory care center — functional description matches KACC"
+        }
+      ],
+      "resolution_chosen": "healthcare_ambulatory (program_subtype) with a note about healthcare_military_medical",
+      "rationale": "KACC is a DoD Army ambulatory care center. healthcare_va_medical applies specifically to VA; healthcare_military_medical is the better parent but does not appear in program_type at the subtype level. Used healthcare_ambulatory as subtype; flagged for vocab review."
+    },
+    {
+      "field_path": "facts.contract_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW §1.0 header",
+          "value": "W912DY-22-C-00[__] — serial digits redacted/blank in source"
+        }
+      ],
+      "resolution_chosen": "Partial value recorded with note",
+      "rationale": "SOW appears to be a template with blank fields for contract number and task order number. Only the DODAAC prefix W912DY is legible, identifying USACE Huntsville."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

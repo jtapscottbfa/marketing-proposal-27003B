@@ -1,0 +1,7 @@
+# Mechanical Engineering — C2F NH95 Renovations
+
+The mechanical engineering scope for the C2F NH95 Renovations addresses HVAC systems renovation across the first and second floors of Building NH-95 at Naval Station Norfolk. The existing dual-duct variable-air-volume (VAV) system is reconfigured to serve the renovated areas (Areas 6, 8, 10, and 11), preserving and extending the existing distribution architecture while replacing outdated equipment. In the former Data Center, all computer room air-conditioning (CRAC) units are demolished; the vacated space is converted to standard occupancy and served by a new VAV system integrated with the building's existing infrastructure.
+
+New direct digital controls (DDC) are provided for all dual-duct VAV boxes throughout the project area, coordinated with the building's Automated Operations Center (AOC) to maintain centralized monitoring and control. Specialty items include a 36-inch range exhaust hood (rated at 390 CFM or less) for the Admiral's cook staff galley, an exhaust fan for the IT closet in Area 11, and a 3 kW electric wall heater at the building entry for Area 11 to address vestibule heating loads.
+
+Design conditions were established at: outdoor cooling 91°F DB / 76°F WB (1% design frequency); outdoor heating 20°F DB; interior set points of 78°F DB / below 50% relative humidity for cooling and 68°F for heating. These conditions reflect Norfolk, Virginia climatology and NAVFAC thermal comfort standards for a command headquarters occupancy.

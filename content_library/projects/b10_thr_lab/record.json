@@ -1,0 +1,470 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": "20-090",
+    "status": "present_with_value",
+    "source": "drawing G-001 cover sheet, Final DESIGN.pdf p.1",
+    "quote": "BFA PROJECT NO. 20-090"
+  },
+  "project_slug": "b10_thr_lab",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nih/b10_thr_lab/NIH SOW_C109043.pdf",
+      "type": "sow",
+      "sha256": "206b21511481b84aecd8dc96410a30f9c8f56cd5e1c01115f820bae45d977e65",
+      "included": true,
+      "notes": "Includes SOW (6 pages, dated 07/29/2020), Program of Requirements (3 pages, dated 06/02/2020), Design Intent Drawings (6 sheets), Codes & Standards, Single Point Entry Policy, Safety Requirements, Davis-Bacon wage determination"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nih/b10_thr_lab/C109043 - G001 - Cover Sheet - 04.07.21.pdf",
+      "type": "drawing_set",
+      "sha256": "55b802b5b704665b0e3b548b72a854eb8261c04271b982242baf5cccdd54f292",
+      "included": true,
+      "notes": "Image-based PDF; single-page cover sheet for Final Submittal drawing set dated 04/07/21. Shows drawing index (15 sheets), BFA project number 20-090, WR# C109043, governing codes list, fire marshal approval signature."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nih/b10_thr_lab/9N104 building 10 Final DESIGN.pdf",
+      "type": "bod",
+      "sha256": "d8f292c782dcde0e98528a30ecd4fdfc5bb106e368ef64069c527df56c5b810f",
+      "included": true,
+      "notes": "43 MB multi-section Final Submittal package (April 7, 2021, BFA #20-090). Contains cover page, TOC, SOW (redacted as Attachment 4), Program of Requirements, Architectural/Plumbing/Mechanical/Electrical BOD sections, cut sheets, specs, drawings, calculations, CRA, PN documents. Prepared by Bowman Foster and Associates P.C."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "full",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 10 – Room 9N104 – Cellular and Molecular Therapeutics Laboratory Renovation",
+      "source": "SOW_C109043.pdf header, Final DESIGN.pdf p.1",
+      "quote": "BUILDING 10 – ROOM 9N104 – Cellular and Molecular Therapeutics Laboratory Renovation",
+      "corroboration": [
+        {
+          "source": "SOW_C109043.pdf header",
+          "claim": "BUILDING 10 – ROOM 9N104 – Cellular and Molecular Therapeutics Laboratory Renovation",
+          "agrees": true
+        },
+        {
+          "source": "Final DESIGN.pdf p.1 (BOD cover)",
+          "claim": "Building 10 – room 9N104 – cellular and Molecular Therapeutics Laboratory Renovation",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 cover sheet",
+          "claim": "BUILDING 10 ROOM 9N104 CELLULAR AND MOLECULAR THERAPEUTICS LABORATORY RENOVATION",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "National Institutes of Health (NIH), National Heart, Lung, and Blood Institute (NHLBI)",
+      "source": "SOW_C109043.pdf §1.A; Program of Requirements Section A",
+      "quote": "The Cellular and Molecular Therapeutics (CMTB) Laboratory is working on multiple strategies both in the laboratory and in the clinic to cure sickle cell disease",
+      "corroboration": [
+        {
+          "source": "SOW_C109043.pdf",
+          "claim": "National Institutes of Health — Office of Research Facilities, Division of Design and Construction Management",
+          "agrees": true
+        },
+        {
+          "source": "Program of Requirements p.1",
+          "claim": "National Heart, Lung, and Blood Institute — Tisdale Laboratory Renovation",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "National Institutes of Health (NIH), Department of Health and Human Services",
+      "source": "SOW_C109043.pdf letterhead",
+      "quote": "DEPARTMENT OF HEALTH AND HUMAN SERVICES, BETHESDA, MARYLAND 20892"
+    },
+    "location": {
+      "city": "Bethesda",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "Building 10, Room 9N104, 9000 Rockville Pike, Bethesda, MD 20892",
+      "source": "SOW_C109043.pdf §1.D; SOW letterhead",
+      "quote": "Room 9N104 is located on the 9th level, B-Wing, in Building 10. ... Meetings which occur onsite will be held on the NIH Bethesda Campus at 9000 Rockville Pike, Bethesda, Maryland."
+    },
+    "project_number_internal": {
+      "value": "20-090",
+      "source": "drawing G-001 cover sheet, Final DESIGN.pdf p.1",
+      "quote": "BFA PROJECT NO. 20-090"
+    },
+    "project_number_client": {
+      "value": "C109043",
+      "source": "SOW_C109043.pdf header, drawing G-001",
+      "quote": "C109043",
+      "corroboration": [
+        {
+          "source": "SOW_C109043.pdf",
+          "claim": "C109043",
+          "agrees": true
+        },
+        {
+          "source": "G-001 cover sheet",
+          "claim": "W.R. #C109043",
+          "agrees": true
+        },
+        {
+          "source": "Final DESIGN.pdf p.1",
+          "claim": "WR# C109043",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "square_footage": {
+      "value": 211,
+      "unit": "gsf",
+      "source": "Program of Requirements, Section E",
+      "quote": "Current Room #  Existing Typology  Area (square feet)\n9N104         Laboratory         211\nTOTAL  211",
+      "corroboration": [
+        {
+          "source": "Program of Requirements Section E",
+          "claim": "211 SF (single room)",
+          "value": 211,
+          "agrees": true
+        },
+        {
+          "source": "SOW_C109043.pdf §1.B",
+          "claim": "single-module room",
+          "value": null,
+          "agrees": true,
+          "note": "Described as 'single-module room'; no SF stated, consistent with 211 SF from POR"
+        },
+        {
+          "source": "CRA/PN form (Final DESIGN.pdf §16/17)",
+          "claim": "approximately 236 sf",
+          "value": 236,
+          "agrees": false,
+          "note": "CRA form states 236 SF; POR table states 211 SF. Minor discrepancy (~12%); POR is the more precise room-specific measurement."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "contractual_duration_days": {
+      "value": 276,
+      "source": "SOW_C109043.pdf §1.C; Final DESIGN.pdf p.4 (SOW section)",
+      "quote": "The estimated Period of Performance is 276 calendar days.",
+      "corroboration": [
+        {
+          "source": "SOW_C109043.pdf §1.C",
+          "claim": "276 calendar days",
+          "value": 276,
+          "agrees": true
+        },
+        {
+          "source": "Final DESIGN.pdf p.4 (embedded SOW)",
+          "claim": "276 calendar days",
+          "value": 276,
+          "agrees": true
+        }
+      ]
+    },
+    "sow_date": {
+      "value": "2020-07-29",
+      "source": "SOW_C109043.pdf footer",
+      "quote": "C109043  07/29/2020  Page 1 of 6"
+    },
+    "final_design_submittal_date": {
+      "value": "2021-04-07",
+      "source": "Final DESIGN.pdf p.1 (BOD cover page)",
+      "quote": "Final Submittal\nApril 7,2021"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-04-07",
+        "source": "Final DESIGN.pdf p.1",
+        "quote": "Final Submittal\nApril 7,2021"
+      },
+      "contractual_duration_days": {
+        "value": 276,
+        "source": "SOW_C109043.pdf §1.C",
+        "quote": "The estimated Period of Performance is 276 calendar days.",
+        "note": "276 days covers the entire design-build period; not design-only"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": "2021-04-01",
+        "source": "CRA/PN form (Final DESIGN.pdf §16)",
+        "quote": "Construction Start Date: 4/1/2021",
+        "note": "Scheduled start per CRA/PN form; actual start date not separately confirmed"
+      },
+      "completion_date": {
+        "value": "2021-07-31",
+        "source": "CRA/PN form (Final DESIGN.pdf §16)",
+        "quote": "Construction Completion Date: 7/31/2021",
+        "note": "Scheduled completion per CRA/PN form; actual completion date not separately confirmed"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "note": "Design-build project; the 276 days encompasses both design and construction phases combined"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [
+      "science_wet_lab"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "telecom_structured_cabling"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "finishes_scope",
+      "openings_doors_frames",
+      "openings_windows",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "communications_scope",
+      "equipment_lab_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_design_builder"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "nih",
+    "bethesda",
+    "federal_campus",
+    "laboratory_renovation",
+    "nhlbi",
+    "clinical_center",
+    "building_10",
+    "sickle_cell_research",
+    "design_build"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "source_file": "C109043 - G001 - Cover Sheet - 04.07.21.pdf",
+        "reading_notes": "Final submittal cover sheet dated 04/07/21. Shows BFA PROJECT NO. 20-090 and WR# C109043. Drawing index lists 15 sheets across General (G-001), Life Safety (LS101), Architectural (A-100, A-101, A-201, A-601), Plumbing (P-001, P0101, P-101), Mechanical (M-001, MD101, M-101, M-301, M-501, M-701), Electrical (E-001, ED101, E-101, E-102, E-501, E-601). Governing codes block visible: IBC 2018, IMC 2018, IPC 2018, IEC 2020, NFPA 1, 70, 45, 13, 72, 101, NFPA 99; also FGI Guidelines, NIH DRM 2016, HHS Building Principles MOU, EO 13423, EISA 2007, EO 13514. Fire Protection approved by Division of the Fire Marshal, National Institutes of Health (signature dated 4/19/21). Prepared by Bowman Foster & Associates, Inc., 4303 Devere Dr. Ste 101, Burtonsville, MD 20866."
+      },
+      {
+        "sheet_number": "G-001 (Design Intent)",
+        "title": "COVER SHEET – DESIGN INTENT DRAWINGS",
+        "discipline": "architecture",
+        "source_file": "NIH SOW_C109043.pdf (embedded design intent drawings)",
+        "reading_notes": "Pre-design intent drawing package (6 sheets: G0.00 Cover, G0.01 Area Plan, SK0.01 Demo Layout, SK0.02 Proposed Layout, SK0.03 Equipment Layout, SK0.04 Elevations). Room 9N104 shown as 211 SF single-module room in B-Wing 9th floor. Project manager: C. Sheehy. Submission date: 06.24.2020. Drawing index confirms same WR# C109043."
+      },
+      {
+        "sheet_number": "SK0.01",
+        "title": "DEMOLITION LAYOUT",
+        "discipline": "architecture",
+        "source_file": "NIH SOW_C109043.pdf (design intent drawings)",
+        "reading_notes": "Demolition keynotes: (1) window already removed by NIH DEP; (2) modify existing wall to accommodate new door location; (3) remove existing door. Scale 1/4\"=1'-0\". Room shell is approximately 14'x15' (estimated from scale)."
+      },
+      {
+        "sheet_number": "SK0.02",
+        "title": "PROPOSED LAYOUT",
+        "discipline": "architecture",
+        "source_file": "NIH SOW_C109043.pdf (design intent drawings)",
+        "reading_notes": "Proposed layout showing: lab benches along three walls (south, east, west), new 42\" half-light door at north wall, new window (north wall), 19\" ledge under window with black phenolic top, grommet hole for UC outlet, bench-mount compressed air/vacuum turrets (2 locations), 24\" flammable storage cabinet, splash guards (3 locations), adjustable height bench areas. Scale 1/4\"=1'-0\"."
+      },
+      {
+        "sheet_number": "SK0.03",
+        "title": "EQUIPMENT LAYOUT",
+        "discipline": "architecture",
+        "source_file": "NIH SOW_C109043.pdf (design intent drawings)",
+        "reading_notes": "Government-furnished equipment layout: (1) Thermo undercounter freezer (x2), (2) Panasonic undercounter fridge (x2), (3) Thermal cycler, (4) Reciprocating shaker, (5) Micro centrifuge (x2). Equipment is owner-furnished/installed."
+      },
+      {
+        "sheet_number": "SK0.04",
+        "title": "ELEVATIONS (EAST & WEST)",
+        "discipline": "architecture",
+        "source_file": "NIH SOW_C109043.pdf (design intent drawings)",
+        "reading_notes": "East elevation (4'-0\" / 2'-6\" / 3'-0\" / 2'-0\" / 2'-6\" / 2'-0\" / 4'-0\" widths): shows Thermo UC Freezer, Micro Centrifuge, Thermal Cycler, Panasonic UC Fridge, Flam cabinet arrangement. West elevation: Shaker, Micro Centrifuge, Panasonic UC Fridge, Thermo UC Freezer arrangement. Bench heights indicated."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 211,
+        "unit": "gsf",
+        "source": "Program of Requirements Section E (embedded in SOW_C109043.pdf)",
+        "quote": null,
+        "sheets": [
+          "G0.01 area plan"
+        ]
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "SOW_C109043.pdf §1.D; Program of Requirements Section E",
+        "quote": null,
+        "note": "Single-room renovation on 9th floor of Building 10; floor count = 1 for this project scope",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing induction unit (IU) replacement with new IU connected to building BAS",
+          "Lab compressed air and vacuum dispense system (bench-mounted turrets, 2 locations)",
+          "HVAC scope: upgrade/replace induction unit and connection to BAS"
+        ],
+        "electrical": [
+          "120V raceway along lab bench",
+          "Quad 120V outlets in knee spaces",
+          "120V quad outlet below window sill countertop",
+          "Ceiling-mounted optical sensor LED lights",
+          "Task lighting (undermount, below shelves)",
+          "Data/telecom conduit and outlets (min. 1 per workstation + 1 below window sill)"
+        ],
+        "plumbing": [
+          "18x15\" epoxy sink with eyewash, foot pedal, and drying rack",
+          "New faucets with foot-pedal controls",
+          "Lab drainage (connected to existing building system)"
+        ],
+        "fire_protection": [
+          "Existing building fire sprinkler system — tie-in/alteration as needed (scope not detailed beyond code compliance requirement; NFPA 13 referenced)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Program of Requirements Section E",
+          "value": 211
+        },
+        {
+          "source": "CRA/PN form (Final DESIGN.pdf §16/17)",
+          "value": 236
+        }
+      ],
+      "resolution_chosen": "Program of Requirements Section E",
+      "rationale": "POR table provides room-specific measured area (211 SF) vs. CRA form approximation (~236 SF). POR is the authoritative design basis; CRA form uses 'approximately' language and may include corridor adjacency or gross-up factor. Minor discrepancy (~12%); does not affect scope materially."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

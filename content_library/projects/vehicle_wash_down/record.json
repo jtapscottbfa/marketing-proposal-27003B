@@ -1,0 +1,485 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "23-018",
+    "status": "present_with_value",
+    "source": "Cost Estimate cover sheet",
+    "quote": "BFA Project #23-018"
+  },
+  "project_slug": "vehicle_wash_down",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/vehicle_wash_down/Vehicle Washdown Basis of Design.docx",
+      "type": "bod",
+      "sha256": "570376cbb4db39b0b2bca3d9d3d64a9c2b875e1d8d0f77a3eee2f86816d0b4b3",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/vehicle_wash_down/Vehicle Washdown Pre-35% Purpose.docx",
+      "type": "narrative",
+      "sha256": "d0c3180ba03d61ccbf257e0d2dcb86bd6ba79a71f2931e4c0affc41934b3cc40",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/vehicle_wash_down/Exhibit C - SOW - Vehicle Washdown Area Survey and Design.pdf",
+      "type": "sow",
+      "sha256": "cb5d649e9b7c534116e5e7e1b2fd049882bfa2517a069119bc7b6822b9d4c28d",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/vehicle_wash_down/Cost Estimate_Harvey Point_Vehicle Wash_Pre-Final Design_(19 Feb 2024).pdf",
+      "type": "cost_estimate",
+      "sha256": "bfaf6e3f77851fdfab72e2703664d269f019158b366e619319a425545c44aff3",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/vehicle_wash_down/!Exhibt A - X33677_Request for Proposal (RFP)_VehicleWashdown.doc",
+      "type": "sow",
+      "sha256": "6e54b2da90220534489718961756e3f8f0a344ce7815e5bda2147f4278b15a9a",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Legacy .doc binary format; pandoc failed to extract text. Type assumed sow/rfp based on filename. SHA-256 computed but content not readable by extractor."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set present in intake folder. Cost estimate at 95% (pre-final) design level present. RFP .doc binary unreadable."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Vehicle Washdown Area Survey and Design",
+      "source": "SOW §1",
+      "quote": "Vehicle Washdown Area Survey and Design",
+      "corroboration": [
+        {
+          "source": "SOW §1",
+          "claim": "Vehicle Washdown Area Survey and Design",
+          "value": "Vehicle Washdown Area Survey and Design",
+          "agrees": true
+        },
+        {
+          "source": "BOD title",
+          "claim": "Vehicle Washdown Area Survey and Design",
+          "value": "Vehicle Washdown Area Survey and Design",
+          "agrees": true
+        },
+        {
+          "source": "Cost Estimate cover sheet",
+          "claim": "Vehicle Washdown Area Survey and Design / Harvey Pt Vehicle Wash",
+          "value": "Vehicle Washdown Area Survey and Design",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Boeing Aerospace Operations (BAO) / Harvey Point Defense Testing Activity (HPDTA)",
+      "source": "SOW §1",
+      "quote": "The Boeing Aerospace Operations (BAO) Customer (USG) requested this service",
+      "corroboration": [
+        {
+          "source": "SOW §1",
+          "claim": "Boeing Aerospace Operations (BAO) as contracting vehicle, USG (DoD) as end user",
+          "value": "Boeing Aerospace Operations / HPDTA",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.1",
+          "claim": "Work at Harvey Point Defense Testing Activity (HPDTA/Base)",
+          "value": "Harvey Point Defense Testing Activity",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Harvey Point Defense Testing Activity (HPDTA) / US Government (DoD)",
+      "source": "SOW §2",
+      "quote": "All survey and On-Site briefings will take place on a Department of Defense facility, Harvey Point Defense Testing Activity (HPDTA/Base).",
+      "corroboration": [
+        {
+          "source": "SOW §2",
+          "claim": "DoD facility, HPDTA",
+          "value": "US Government DoD / HPDTA",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Hertford",
+      "state": "NC",
+      "country": "US",
+      "facility_address": "2835 Harvey Point Road, Hertford, North Carolina, 27944",
+      "source": "SOW §3.1",
+      "quote": "The work shall be performed at 2835 Harvey Point Road, Hertford, North Carolina, 27944",
+      "corroboration": [
+        {
+          "source": "SOW §3.1",
+          "claim": "2835 Harvey Point Road, Hertford, North Carolina, 27944",
+          "value": "Hertford, NC",
+          "agrees": true
+        },
+        {
+          "source": "BOD title",
+          "claim": "HPDTA, Hertford, NC",
+          "value": "Hertford, NC",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "23-018",
+      "source": "Cost Estimate cover sheet",
+      "quote": "BFA Project #23-018"
+    },
+    "project_number_client": {
+      "value": "X33677",
+      "source": "RFP filename",
+      "quote": null,
+      "notes": "RFP filename includes X33677; SOW reference number is 08-2023. Content of RFP unreadable."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 3862,
+      "unit": "gsf",
+      "source": "Cost Estimate cover sheet",
+      "quote": "Includes construction of a new 2-bay vehicle wash building (approx. 3,860 SF)",
+      "corroboration": [
+        {
+          "source": "Cost Estimate cover sheet",
+          "claim": "approx. 3,860 SF",
+          "value": 3860,
+          "agrees": true
+        },
+        {
+          "source": "Cost Estimate Program Cost pages",
+          "claim": "3,862 SF",
+          "value": 3862,
+          "agrees": true
+        },
+        {
+          "source": "BOD Structural",
+          "claim": "approximately 77'-4\" X 83'-8\" in footprint",
+          "value": 6473,
+          "agrees": false,
+          "notes": "77.33 ft × 83.67 ft ≈ 6,471 SF — this appears to be the overall structure footprint including all three bays; cost estimate 3,862 SF may reflect only the two-bay Option 2 configuration (reduced from three bays to two). Conflict flagged."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No owner program budget stated. Construction cost estimate at 95% design is $4,474,202."
+    },
+    "construction_cost_estimate": {
+      "value": 4474202,
+      "currency": "USD",
+      "source": "Cost Estimate cover sheet",
+      "quote": "Estimated Construction Cost @ Schematic Design: $4,474,000",
+      "corroboration": [
+        {
+          "source": "Cost Estimate cover sheet",
+          "claim": "$4,474,000",
+          "value": 4474000,
+          "agrees": true
+        },
+        {
+          "source": "Cost Estimate Program Cost summary",
+          "claim": "Total: $4,474,202",
+          "value": 4474202,
+          "agrees": true,
+          "notes": "Minor rounding difference between title page ($4,474,000) and summary line ($4,474,202)"
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design fee not stated in available documents. SOW defines scope and deliverables but no fee amount."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Pre-Final (95%) cost estimate dated 19 Feb 2024; Release for Construction not confirmed complete."
+      },
+      "contractual_duration_days": {
+        "value": 580,
+        "source": "SOW §3.3",
+        "quote": "The Period of Performance (POP), including submittals, procurement, delivery, mobilization, design closeout and Title II services shall be five hundred-eighty (580) calendar days after award of contract and notice to proceed."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction not yet bid/awarded per available documentation. 95% design estimate is $4,474,202."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Cost estimate assumes construction start October 2024."
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 365,
+        "source": "Cost Estimate cover sheet",
+        "quote": "Estimated Construction Time 365 Days"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "civil_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "environmental_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "structural_foundation",
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "civil_erosion_sediment",
+      "hvac_design",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "environmental_nepa"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "site_utilities",
+      "site_grading_drainage",
+      "site_paving"
+    ],
+    "construction_scope": [
+      "concrete_cast_in_place",
+      "masonry_cmu",
+      "masonry_brick_stone",
+      "metals_structural_steel",
+      "thermal_roofing",
+      "openings_doors_frames",
+      "finishes_drywall_plaster",
+      "finishes_painting_wallcovering",
+      "finishes_flooring",
+      "plumbing_scope",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "existing_demolition",
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_paving",
+      "utilities_scope",
+      "equipment_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "commercial_subconsultant"
+    ],
+    "procurement_type": [
+      "commercial_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": null,
+      "source": null,
+      "quote": null,
+      "status": "missing",
+      "notes": "No SWaM or socioeconomic participation data found in source documents. Davis-Bacon wages apply (SOW §6.2: 'Davis Bacon decision NC20220057 01/06/2023 applies to this contract')."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "harvey_point",
+    "hpdta",
+    "vehicle_wash",
+    "north_carolina",
+    "boeing_aerospace_operations",
+    "dod_classified_facility",
+    "pre_final_design"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 3862,
+        "unit": "gsf",
+        "source": "Cost Estimate Program Cost summary",
+        "quote": null,
+        "sheets": [],
+        "notes": "No drawing set in intake folder. Value extracted from cost estimate takeoff quantity."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD Structural",
+        "quote": "The Vehicle Carwash is a one-story masonry building",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Electric unit heaters (terminal/package units per cost estimate, D3050)",
+          "Climate control system for equipment protection per SOW §5.1.6.8",
+          "Building ventilation for spray chemical fumes per SOW §5.1.1.11"
+        ],
+        "plumbing": [
+          "Domestic cold water distribution with 3\" backflow preventer",
+          "Non-freeze wall hydrant, hose bibs",
+          "Sanitary/DWV piping with floor drains",
+          "Oil-water separator per bay for wash effluent",
+          "1,500-gallon reclaim tanks (qty 3)",
+          "1,000-gallon grease interceptor",
+          "Waste water system with new lift station connection to base WWTP",
+          "Sediment filtration system",
+          "Water metering (fresh intake and wastewater discharge)",
+          "Compressor air piping"
+        ],
+        "electrical": [
+          "Medium voltage feed: aerial to UG primary transition on new utility pole",
+          "750 kVA pad-mounted transformer with underground secondary lateral",
+          "Panel MDP: 800A, 277/480V, 3-phase",
+          "Panel L: 600A, 120/208V, 3-phase (via 150 kVA dry-type step-down transformer)",
+          "480V mechanical and car wash equipment connections",
+          "Lithonia D-series bay lighting (wet location fixtures)",
+          "Exterior wall pack lighting (100-ft perimeter coverage)",
+          "48-strand single-mode fiber optic telecom connection to building 7-25",
+          "Warning/annunciator signal light system (exterior north side)"
+        ],
+        "fire_protection": [
+          "No fire suppression system identified in BOD or cost estimate",
+          "Fire alarm system: not mentioned in BOD or SOW; status missing"
+        ]
+      }
+    },
+    "notes": "No drawing set was present in the intake folder. BOD and cost estimate provide structural, architectural, MEP, and sitework data. Drawing extraction status reflects this source-document-only extraction.",
+    "extraction_status": "complete"
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "BOD Structural — footprint dimensions",
+          "value": "~6,471 gsf (computed from 77'-4\" × 83'-8\")"
+        },
+        {
+          "source": "Cost Estimate cover sheet",
+          "value": "approx. 3,860 SF (narrative) / 3,862 SF (takeoff)"
+        }
+      ],
+      "resolution_chosen": "Cost Estimate (3,862 SF)",
+      "rationale": "The BOD footprint dimensions (77'-4\" × 83'-8\" ≈ 6,471 SF) represent the three-bay Option 1 building. The Pre-35% Purpose document confirms a two-bay alternative (Option 2) exists and the cost estimate at 95% design explicitly calls out a '2-bay vehicle wash building (approx. 3,860 SF)'. The 95% cost estimate reflects the design as actually advanced and is the more authoritative source for the built scope."
+    },
+    {
+      "field_path": "facts.project_number_client",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP filename",
+          "value": "X33677"
+        },
+        {
+          "source": "SOW header",
+          "value": "Statement of Work Reference Number: 08-2023"
+        }
+      ],
+      "resolution_chosen": "Both recorded; X33677 likely Boeing procurement number, 08-2023 the Boeing SOW document reference number",
+      "rationale": "RFP content unreadable (.doc binary); SOW reference number differs from RFP number. Both captured in notes."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md"
+    }
+  }
+}

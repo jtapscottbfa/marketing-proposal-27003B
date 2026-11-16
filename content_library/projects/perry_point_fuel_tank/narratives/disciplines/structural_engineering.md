@@ -1,0 +1,9 @@
+Structural engineering on this project was shaped primarily by physical security requirements that transformed what would otherwise be a straightforward tank farm installation into a blast-mitigated infrastructure project.
+
+The VA Physical Security and Resiliency Design Manual (PSRDM) required a blast analysis for the new fuel tank farm due to its proximity to occupied facility buildings at the Perry Point VA Medical Center. The standoff analysis evaluated the relationship between the proposed tank locations, potential threat scenarios, and the occupied structures (identified in the prior-phase design narrative as buildings 315 and 321). The analysis informed the design of blast mitigation measures to achieve required standoff equivalence within the constrained site.
+
+The structural design response was a CMU blast mitigation screen wall system: 12-inch masonry walls positioned on the north and west sides of the new tank farm. This configuration interposes a mass masonry barrier between the tank farm and the proximate occupied structures in the directions of concern. The wall design was coordinated with the civil site layout, which had to accommodate the screen walls within the secondary containment perimeter and fuel delivery vehicle access paths.
+
+Structural engineering also contributed to the reinforced concrete secondary containment pad design — a cast-in-place concrete structure sized to retain 110 percent of the largest single tank volume plus a seven-day, 25-year storm surcharge. The pad design integrated tank anchoring provisions, the containment wall interface, and drainage to the oil/water separator.
+
+The blast sub-discipline context (structural_blast in the project taxonomy) reflects the PSRDM-driven analytical work that differentiated this project from conventional utility infrastructure design.

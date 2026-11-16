@@ -1,0 +1,492 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "cebaf_cooling",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/cebaf_cooling/21C0683005.pdf",
+      "type": "contract",
+      "sha256": "da20b9c038d41619177cfbffcb38f9d040c09f90e16d6a2d4dca19cada186a5c",
+      "included": true,
+      "notes": "JSA Purchase Order 21C0683005 with attached A-E Task Order. Primary contract document."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/cebaf_cooling/Jeff Lab Narrative Design -BFA- Additional Co_Richard Williams.pdf",
+      "type": "narrative",
+      "sha256": "5c82576b5819dbc4da001c67983d3276557dc61018be4d5e44ae96486508b6a8",
+      "included": true,
+      "notes": "BFA proposal/scope narrative letter dated October 10, 2022. Describes scope, schedule, and fee breakdown."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/cebaf_cooling/Additional Cooling for Rooms 109 & 110 of F wing CEBAF Center_Final Merged.pdf",
+      "type": "drawing_set",
+      "sha256": "7b70adf6de75bf61b61ec7e838fd0078b91676dcda7d10e4977b98e5615e71c9",
+      "included": true,
+      "notes": "Final merged project package (Final Submittal, April 10, 2023). Contains 8 drawing sheets (G-001 through E-101), full project specifications (Div 01, 23, 26), construction cost estimate, equipment selection (Daikin), and project schedule. 8 pages total."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/cebaf_cooling/21C0683005_Richard Williams.pdf",
+      "type": "unknown",
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "4-byte file — corrupted/empty placeholder. Could not extract content. Excluded from extraction."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No standalone BOD document; scope/design narrative embedded in BFA proposal letter and drawing M-001 project narrative. SOW embedded in PO task order attachment. Full specification set in merged PDF. No standalone BOD per SPEC.md definition."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Additional Cooling for Rooms 109 & 110 of F Wing CEBAF Center",
+      "source": "PO 21C0683005 task order header",
+      "quote": "Project Title: Additional Cooling for Rooms 109 & 110 of F wing CEBAF Center.",
+      "corroboration": [
+        {
+          "source": "PO 21C0683005 task order header",
+          "claim": "Additional Cooling for Rooms 109 & 110 of F wing CEBAF Center",
+          "agrees": true
+        },
+        {
+          "source": "BFA narrative letter, October 10, 2022",
+          "claim": "Request for Additional Cooling for Rooms 109 & 110 of F wing CEBAF Center",
+          "agrees": true
+        },
+        {
+          "source": "Final Merged PDF cover/drawing title block",
+          "claim": "ADDITIONAL COOLING FOR ROOMS 109 & 110 OF F WING CEBAF CENTER",
+          "agrees": true
+        },
+        {
+          "source": "Specs Section 011000 §1.3.A",
+          "claim": "B12 F Wing Rooms 109 and 110 Additional Cooling",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Science Associates (JSA) / Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "source": "PO 21C0683005 header",
+      "quote": "JSA, LLC / JEFFERSON LAB",
+      "corroboration": [
+        {
+          "source": "PO 21C0683005 header",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "agrees": true
+        },
+        {
+          "source": "Specs Section 011000 §1.3.B",
+          "claim": "Owner: Jefferson Lab managed and operated by Jefferson Science Associates (JSA) on behalf the Department of Energy, Office of Science.",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title blocks",
+          "claim": "United States Department of Energy / Thomas Jefferson National Accelerator Facility",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "U.S. Department of Energy / Jefferson Science Associates (JSA)",
+      "source": "Specs Section 011000 §1.3.B",
+      "quote": "Jefferson Lab managed and operated by Jefferson Science Associates (JSA) on behalf the Department of Energy, Office of Science.",
+      "corroboration": [
+        {
+          "source": "Specs Section 011000 §1.3.B",
+          "claim": "Jefferson Lab managed and operated by Jefferson Science Associates (JSA) on behalf the Department of Energy, Office of Science.",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683005 — AOP line",
+          "claim": "100.00% AOP:5746-003 1.CO.003.0004.11 000001.12.03.001",
+          "agrees": true,
+          "notes": "AOP code confirms DOE project funding structure"
+        }
+      ]
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "CEBAF Center, Building 12, F-Wing, Thomas Jefferson National Accelerator Facility",
+      "facility_address": "12000 Jefferson Avenue, Newport News, VA 23606",
+      "source": "Specs Section 011000 §1.3.A",
+      "quote": "Project Location: 12000 Jefferson Avenue, Newport News, Virginia.",
+      "corroboration": [
+        {
+          "source": "Specs Section 011000 §1.3.A",
+          "claim": "12000 Jefferson Avenue, Newport News, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683005 ship-to address",
+          "claim": "12000 JEFFERSON AVE., SUITE 12 / NEWPORT NEWS, VA 23606",
+          "agrees": true
+        },
+        {
+          "source": "Drawing M-001 project narrative",
+          "claim": "CEBAF CENTER, JEFFERSON LAB, NEWPORT NEWS, VIRGINIA",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "JSA 21-C0683, Task Order #5",
+      "source": "BFA narrative letter, October 10, 2022",
+      "quote": "Contract: JSA 21-C0683 - Task Order # 5",
+      "corroboration": [
+        {
+          "source": "BFA narrative letter, October 10, 2022",
+          "claim": "JSA 21-C0683 - Task Order # 5",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683005",
+          "claim": "Purchase Order: 21C0683005",
+          "agrees": true,
+          "notes": "PO number 21C0683005 corresponds to the task order execution instrument; master contract is JSA 21-C0683"
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "5",
+      "source": "BFA narrative letter, October 10, 2022",
+      "quote": "Contract: JSA 21-C0683 - Task Order # 5"
+    },
+    "project_number_client": {
+      "value": "21C0683005",
+      "source": "PO 21C0683005 header",
+      "quote": "Purchase Order: 21C0683005"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Scope is two individual rooms (109 and 110) in an existing building; room areas not stated in any source document. Drawing MD101 shows plan at 1/4\"=1'-0\" scale but exact room dimensions not labeled numerically."
+    },
+    "program_budget": {
+      "value": 50000,
+      "currency": "USD",
+      "source": "PO 21C0683005 task order",
+      "quote": "Project Budget: $50K",
+      "corroboration": [
+        {
+          "source": "PO 21C0683005 task order",
+          "claim": "$50K project budget",
+          "agrees": true
+        }
+      ]
+    },
+    "ae_fee": {
+      "value": 7915,
+      "currency": "USD",
+      "source": "BFA narrative letter, October 10, 2022 / PO 21C0683005",
+      "quote": "Lump sum consulting engineering services fee, inclusive of travel and reimbursable expenses, is as follows: $7,915.",
+      "corroboration": [
+        {
+          "source": "BFA narrative letter, October 10, 2022",
+          "claim": "$7,915 total A-E fee",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683005 line item",
+          "claim": "$7,915.00 (Net Unit Cost: 1.00, Extended Cost: $7,915.00)",
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 40361,
+      "currency": "USD",
+      "source": "Final Merged PDF — BFA Construction Cost Estimate Summary, April 10, 2023",
+      "quote": null,
+      "notes": "Project Total per cost estimate summary page. Includes Div 01 ($1,500) + HVAC Div 23 ($19,551) + Electrical Div 26 ($6,746) base subtotal ($27,797), plus bond (2%), contingency (5%), prime overhead (18%), prime profit (15%)."
+    },
+    "final_submittal_date": {
+      "value": "2023-04-10",
+      "source": "Final Merged PDF cover sheet",
+      "quote": "FINAL SUBMITTAL / APRIL 10, 2023",
+      "corroboration": [
+        {
+          "source": "Final Merged PDF cover sheet",
+          "claim": "FINAL SUBMITTAL APRIL 10, 2023",
+          "agrees": true
+        },
+        {
+          "source": "BFA Cost Estimate Summary",
+          "claim": "Date: 4/10/2023",
+          "agrees": true
+        }
+      ]
+    },
+    "po_date": {
+      "value": "2022-10-13",
+      "source": "PO 21C0683005 header",
+      "quote": "Order Date: 10/13/22"
+    },
+    "ae_ntp_or_award_date": {
+      "value": "2022-10-14",
+      "source": "PO 21C0683005 — digital signature timestamp",
+      "quote": "Carolyn Stepney Date: 2022.10.14 12:30:45 -04'00'"
+    },
+    "rfi_response_date": {
+      "value": "2022-09-26",
+      "source": "BFA narrative letter, October 10, 2022",
+      "quote": "Below is a summary of our scope of services as conveyed in your task order RFQ sent September 26, 2022"
+    },
+    "construction_schedule_window": {
+      "value": "May 22–29, 2023 (projected, ~8 calendar days)",
+      "source": "Final Merged PDF — Project Schedule, April 10, 2023",
+      "quote": null,
+      "notes": "Project schedule in final submittal shows: mobilization 5/22/23, HVAC & Plumbing 4 days (5/22–5/25), Electrical 3 days (5/22–5/24), DDC 2 days (5/25–5/26), Closeout 1 day (5/29/23). Total duration ~8 calendar days."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 7915,
+        "currency": "USD",
+        "source": "PO 21C0683005 / BFA narrative letter",
+        "quote": "Lump sum consulting engineering services fee, inclusive of travel and reimbursable expenses, is as follows: $7,915."
+      },
+      "awarded_date": {
+        "value": "2022-10-14",
+        "source": "PO 21C0683005 digital signature",
+        "quote": "Carolyn Stepney Date: 2022.10.14 12:30:45 -04'00'"
+      },
+      "completion_date": {
+        "value": "2023-04-10",
+        "source": "Final Merged PDF cover",
+        "quote": "FINAL SUBMITTAL / APRIL 10, 2023"
+      },
+      "fee_breakdown": {
+        "sixty_percent_design": {
+          "value": 4373,
+          "currency": "USD",
+          "source": "BFA narrative letter, October 10, 2022",
+          "quote": "60% Design $4,373"
+        },
+        "hundred_percent_final_post_design": {
+          "value": 3542,
+          "currency": "USD",
+          "source": "BFA narrative letter, October 10, 2022",
+          "quote": "100% & Final Design & Post Design Construction Services $3,542"
+        }
+      },
+      "schedule": {
+        "project_schedule_from_ntp": "30 days",
+        "sixty_percent_design_from_ntp": "30 days (14-day JLab review)",
+        "hundred_percent_design_from_60pct_comments": "14 days (14-day JLab review)",
+        "source": "BFA narrative letter scope/schedule table",
+        "quote": null
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": 7915,
+        "currency": "USD",
+        "source": "computed",
+        "quote": null,
+        "notes": "No change orders identified in source documents."
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract let separately by JSA/Jefferson Lab; BFA is designer only. Construction not yet awarded per project documents."
+      },
+      "change_orders": [],
+      "estimated_cost": {
+        "value": 40361,
+        "currency": "USD",
+        "source": "BFA Construction Cost Estimate, Final Submittal April 10, 2023",
+        "quote": null
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [
+      "science_dry_lab"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "jefferson_lab",
+    "jlab",
+    "cebaf",
+    "doe_office_of_science",
+    "newport_news",
+    "split_system_dx",
+    "bacnet_ddc",
+    "small_project",
+    "task_order",
+    "federal_laboratory",
+    "electronics_cooling"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Richard Williams, PE",
+      "role_on_project": "designer_of_record_and_estimator",
+      "notes": "BFA lead engineer; signed drawings (certificate 18267). Identified as designer/estimator on cost estimate and narrative letter."
+    },
+    {
+      "name": "P. Propst, PE",
+      "role_on_project": "reviewer",
+      "notes": "Listed as reviewer on cost estimate."
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Project cover sheet showing drawing index with 8 sheets. Lists all project personnel including JLab team: C. Jones (SME/User), D. Sulouff (Design PM), S. Hoey (ES&H), T. Minga (Fire Protection Manager), S. Chandra (Design Manager), J. Dolbeck (Engineering Manager), R. Sprouse (FM&L Division Manager). Drawing number base 220013-."
+      },
+      {
+        "sheet_number": "M-001",
+        "title": "LEGEND, NOTES AND ABBREVIATIONS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Mechanical legend defines symbols (thermostat, demolition mark, new work mark, condensate drain piping, refrigerant liquid and suction piping, ACCU-1 designation, AHU designation, ETR=existing to remain, pipe slope down). Abbreviations: ACC=Air Cooled Condensing Unit, AHU=Air Handling Unit. Project narrative embedded on sheet: 'THE PROJECT CONSISTS OF PROVIDING ADDITIONAL COOLING FOR ROOMS 109 & 110 OF F-WING, CEBAF CENTER, JEFFERSON LAB. EQUIPMENT WAS SIZED AS PER THE OWNERS SCOPE-OF-WORK WITH AN ADDITIONAL 10% CAPACITY. AIR HANDLING UNITS WILL BE WALL MOUNTED AND AIR COOLED CONDENSING UNITS WILL BE MOUNTED ON A CONCRETE PAD. THE UNITS SHALL BE CONTROLLED BY THE DDC SYSTEM.' General notes include 11 construction requirements. PE seal visible — Certificate No. 18267 (Virginia), dated 04/10/2023."
+      },
+      {
+        "sheet_number": "MD101",
+        "title": "MECHANICAL PLAN – DEMOLITION",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Floor plan at 1/4\"=1'-0\" scale showing Rooms F109 and F110 (F-Wing, CEBAF Center Building 12). Shows existing ductwork, diffusers, registers, and portable cooling unit (in Room F110) all tagged ETR (existing to remain) or for demolition. Demolition note: 'REMOVE EXISTING PORTABLE COOLING UNIT AND DUCTWORK. TURN OVER TO TR. PROVIDE AND INSTALL NEW MATCHING CEILING TILE AT CEILING PENETRATION.' Existing 12/10 supply and 17/10 return duct sizes visible. Room labels F109 and F110 confirmed. Existing cabinet units visible in F109."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "MECHANICAL PLAN – NEW WORK",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Floor plan showing new installation: two wall-mounted indoor split-system units (AHU-1 in F109, AHU-2 in F110), two outdoor air-cooled condensing units (ACCU-1, ACCU-2) on concrete pads outside building, condensate drain piping (3/4\" PVC), refrigerant piping (suction and liquid line sets). Thermostats shown in each room per design requirements (new thermostats set 2°F above existing thermostat set points). DDC connection indicated."
+      },
+      {
+        "sheet_number": "M-501",
+        "title": "DETAILS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Mechanical details sheet. Based on text extraction, likely includes refrigerant piping details, condensate drain details, equipment mounting details, and penetration details for outdoor line sets."
+      },
+      {
+        "sheet_number": "M-601",
+        "title": "SCHEDULES AND CONTROLS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Equipment schedule and controls sheet. Based on text extraction, includes Daikin split system selection (FTXM18VVJU indoor / RXM18VVJU outdoor, 18 MBH each), BACnet DDC interface requirements, thermostat set point information, and Johnson Controls integration notes."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND, ABBREVIATIONS, SCHEDULES AND DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical legend/abbreviations sheet. Contains: (1) Conduit-sleeve thru exterior wall detail (shows LFMC to RMC conduit transition, plastic waterproof cement, exterior wall penetration); (2) One-line diagram showing existing 225A, 208Y/120V panelboard 'RP1G' with new 2-pole 30A circuit breakers for two new condensing units (ACC-3 and ACC-4) plus existing AHU-16 circuit. New disconnect switches (30A, 2-pole, non-fused, NEMA 4X) shown exterior; (3) Panelboard RP1G schedule — before and after — showing new breakers added at positions 28 (12A) and 30 (15A) for new split system units. New circuits: 2-#12 and 1-#12 GND in 3/4\" C. Designer RDW (Richard Williams). PE seal visible."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "FLOOR PLAN – NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical floor plan showing new work in Rooms F109 and F110. Shows new electrical circuits to indoor wall-mounted air handlers (AHU-15 in F109, AHU-16 in F110), routing of conduit through exterior wall to outdoor condensing units (ACC-3 and ACC-4 on concrete pads outside F-Wing). General notes and work notes on sheet per text extraction."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 1,
+        "source": "drawings MD101, M-101 — plan view only, single floor shown",
+        "quote": null,
+        "sheets": [
+          "MD101",
+          "M-101"
+        ],
+        "notes": "Only one floor level shown/affected. Scope is limited to two rooms on one floor of an existing multi-story building."
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Room dimensions not explicitly labeled on drawings; scale bar present (1/4\"=1'-0\") but precise dimensions of F109/F110 not stated in any source. Scope is renovation of two existing rooms."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Two Daikin 18 MBH wall-mounted indoor split-system air handlers (FTXM18VVJU) — one per room",
+          "Two Daikin 18 MBH outdoor air-cooled condensing units (RXM18VVJU) on concrete pads",
+          "Refrigerant R-32 (Daikin standard for this model per equipment selection data)",
+          "3/4\" PVC condensate drain piping",
+          "BACnet DDC integration to existing Johnson Controls system",
+          "New thermostats (set 2°F above existing thermostat at 75°F; existing thermostat at 73°F)",
+          "Removal of one existing portable cooling unit in Room F110"
+        ],
+        "electrical": [
+          "Two new 2-pole 30A NEMA 4X non-fused disconnect switches (outdoor, one per condensing unit)",
+          "New circuits from existing 225A panelboard RP1G: two new 2-pole 15A/12A circuit breakers",
+          "3/4\" EMT and LFMC conduit, #12 THWN copper wire",
+          "Wall penetration sleeves for exterior wall conduit run"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

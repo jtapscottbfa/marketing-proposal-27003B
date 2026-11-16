@@ -1,0 +1,121 @@
+vocabulary_id: award_type
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: Brooks Act (40 USC §1101–1104) + common procurement usage
+anchor_standard_version: null
+hierarchy: flat
+multi_select: false
+governance_notes: |
+  Award type captures the BASIS on which the award decision was made — what
+  the source selection authority was evaluating. Distinct from procurement_type
+  (the solicitation method) and contract_vehicle (the contractual instrument).
+
+  Single-select per project — a project is awarded on one basis.
+
+  Brooks Act (40 USC §1101–1104) is the federal statute requiring qualifications-
+  based selection for A-E services and is public. State equivalents ("Mini-Brooks
+  Acts") exist in most states.
+future_migration: null
+
+entries:
+  - canonical_id: qualifications_based
+    display_name: Qualifications-Based Selection (QBS)
+    definition: Award based on qualifications and experience, with fee negotiated separately. Required by Brooks Act for federal A-E services.
+    parent_id: null
+    aliases:
+      - qbs
+      - brooks_act
+      - qualifications_based_selection
+    standard_reference: 40 USC §1101–1104 (Brooks Act)
+
+  - canonical_id: best_value
+    display_name: Best Value
+    definition: Award based on tradeoff between technical merit and price, with technical factors typically weighted more heavily.
+    parent_id: null
+    aliases:
+      - best_value
+      - tradeoff
+      - far_part_15
+    standard_reference: FAR Part 15.101
+
+  - canonical_id: lowest_price_technically_acceptable
+    display_name: Lowest Price Technically Acceptable (LPTA)
+    definition: Award to the lowest-priced offeror meeting minimum technical requirements.
+    parent_id: null
+    aliases:
+      - lpta
+      - lowest_price_technically_acceptable
+    standard_reference: FAR Part 15.101-2
+
+  - canonical_id: low_bid
+    display_name: Low Bid / Sealed Bid
+    definition: Award to the lowest responsive responsible bidder under sealed bid procedures.
+    parent_id: null
+    aliases:
+      - low_bid
+      - sealed_bid
+      - ifb
+      - far_part_14
+    standard_reference: FAR Part 14
+
+  - canonical_id: sole_source_award
+    display_name: Sole Source Award
+    definition: Award made without competition, typically under a stated exception to competition requirements.
+    parent_id: null
+    aliases:
+      - sole_source
+      - non_competitive_award
+    standard_reference: FAR Part 6.302
+
+  - canonical_id: two_step
+    display_name: Two-Step Sealed Bidding
+    definition: Two-phase procurement; technical proposals evaluated first, qualified offerors then submit price bids.
+    parent_id: null
+    aliases:
+      - two_step
+      - two_step_bidding
+    standard_reference: FAR Part 14.5
+
+  - canonical_id: design_competition_award
+    display_name: Design Competition Award
+    definition: Award made via design competition (juried or stipend-based), typically for high-profile civic or institutional work.
+    parent_id: null
+    aliases:
+      - design_competition
+      - juried_award
+    standard_reference: null
+
+  - canonical_id: negotiated_award
+    display_name: Negotiated Award
+    definition: Direct-negotiated commercial or private award (no competition).
+    parent_id: null
+    aliases:
+      - negotiated
+      - direct_negotiation
+    standard_reference: null
+
+  - canonical_id: on_call_rotation
+    display_name: On-Call Rotation
+    definition: Task assignment via rotation among on-call awarded firms (no per-task competition).
+    parent_id: null
+    aliases:
+      - rotation
+      - on_call_assignment
+    standard_reference: null
+
+  - canonical_id: task_order_competition
+    display_name: Task Order Competition
+    definition: Award via fair-opportunity competition among IDIQ holders for a specific task order.
+    parent_id: null
+    aliases:
+      - to_competition
+      - fair_opportunity
+    standard_reference: FAR Part 16.505
+
+  - canonical_id: unknown_award_type
+    display_name: Unknown
+    definition: Source documents do not specify award basis. Flag for human review.
+    parent_id: null
+    aliases:
+      - unknown
+    standard_reference: null

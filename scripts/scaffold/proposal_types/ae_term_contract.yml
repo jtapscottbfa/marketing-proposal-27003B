@@ -1,0 +1,59 @@
+description: "AE term contract proposal"
+
+sections:
+  - cover_letter
+  - executive_summary
+  - tab_technical_approach
+  - tab_firms_experience
+  - tab_key_personnel
+  - price_volume
+  - appendices
+
+  # Optional Tabs: add when RFP requires them
+  # - past_performance
+  # - management_plan
+  # - QA_QC
+  # - geographic
+  # - small_minority_business_participation
+
+# DGS-30-004 AE-form set populated by scripts/populate_ae_forms.py.
+# Each entry maps to a populator dispatched by `code`; `cardinality`
+# tells the dispatcher how many output workbooks to produce:
+#   - once            : one form for the prime firm
+#   - per_personnel   : one form per row in content_library/personnel.csv
+#   - per_project     : one form per row in content_library/projects.csv
+#                       (typically filtered to a "selected for this pursuit" set)
+#   - per_firm        : one form per subconsultant row in content_library/firms.csv
+#
+# Set `enabled: false` to skip a form for this proposal type. AE-2 is
+# disabled by default — many term-contract pursuits select subs on a
+# project-by-project basis and do not submit AE-2 with the proposal.
+ae_forms:
+  - code: AE-1
+    description: "Firm Data — primary firm identity, ownership, personnel counts"
+    cardinality: once
+    enabled: true
+  - code: AE-1A
+    description: "Firm Data continued — insurance, SWaM, agency contracts, project list"
+    cardinality: once
+    enabled: true
+  - code: AE-2
+    description: "Consultant / Other Office Data — one per subconsultant"
+    cardinality: per_firm
+    enabled: false
+  - code: AE-3
+    description: "Project Staffing Organization — key personnel table, methodology, QA/QC"
+    cardinality: once
+    enabled: true
+  - code: AE-4
+    description: "Personnel Qualifications — one per key person"
+    cardinality: per_personnel
+    enabled: true
+  - code: AE-5
+    description: "Representative Project Data — one per representative project"
+    cardinality: per_project
+    enabled: true
+  - code: AE-6
+    description: "Supplemental Information — technical narrative tabs from proposal digest"
+    cardinality: once
+    enabled: true

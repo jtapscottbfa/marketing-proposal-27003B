@@ -1,0 +1,436 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "stihl",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/20-003.2021.05.13.FINAL SUBMITTAL.pdf",
+      "type": "report",
+      "sha256": "12e608909f637f8d8d4d00e58108c0dea3338270205aeddb77936e20eedf26b9",
+      "included": true,
+      "description": "Short circuit & coordination study for Switchboards MS3 & MS4 — Final Submittal, May 13 2021, BFA Project 20-003"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switch_gear_design/Stihl_Switchgear_Replacement_Design_Docs_Fee_Letter.pdf",
+      "type": "correspondence",
+      "sha256": "9b09e6987f905d6d04b8250781247ea7d2de9dbf1d69cb87ca190dad2841c42b",
+      "included": true,
+      "description": "Fee letter for switchgear replacement design docs, Oct 12 2021, BFA Project 21-036A — $5,695"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switchboard_3_4/Replace Switchboards #3 $ #4 Scope.docx",
+      "type": "sow",
+      "sha256": "7c702754431935ec7e6612e7acf8a144768a944d3bfeb70665fb2e49aeda587b",
+      "included": true,
+      "description": "Scope of services for Replace Switchboards #3 and #4 in Mechanical Room C"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switch_gear_design/21-036A.2021.12.01.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "97b4967a9c8fc69dc76af11f5abd3cad30f5d700c5ec44070b16c8d8e3c044a0",
+      "included": true,
+      "description": "STIHL Replace Switchgear Design — Final Drawings, Dec 2021, BFA Project 21-036A"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switch_gear_design/21-036A.2021.12.01.FINAL SPECIFICATIONS.pdf",
+      "type": "spec_book",
+      "sha256": "b3265b0c50d43e053827ae9ad82520de8502713f47a7b6fb1dea537cc8bab349",
+      "included": true,
+      "description": "STIHL Replace Switchgear Design — Final Specifications, Dec 2021, BFA Project 21-036A (Div 26: switchboards, busway, grounding, conductors, identification)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switchgear_plant_5/2024.02.09 23-005 Electrical Specifications.pdf",
+      "type": "spec_book",
+      "sha256": "9de13f57af29f0e9a267291da78305cd7552a1b281fe453db91a96dee71a083e",
+      "included": true,
+      "description": "Design Additional Switchgear in Plant 5 / Warehouse 5 — Electrical Specifications, Feb 9 2024, BFA Project 23-005 (Div 26 full package)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switchgear_plant_5/2024.02.09 23-005 Electrical Service Calculation.pdf",
+      "type": "report",
+      "sha256": "78ab8ec410590f67be88c07dbe718d79c13f2dd18c6df3446cbc8242353c6627",
+      "included": true,
+      "description": "Electrical service/load calculation for STIHL Warehouse 5 SWBD, Feb 9 2024, BFA Project 23-005. Total demand 3,191.4 kVA / 3,835.8A."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switchgear_plant_5/2024.02.09 23-005 Mechanical Specifications.pdf",
+      "type": "spec_book",
+      "sha256": "e080847f8acf57bdec6a2f10575e414a76a031d57aeb3b706a282962203beaf0",
+      "included": true,
+      "description": "Design Additional Switchgear in Plant 5 — Mechanical Specifications, Feb 9 2024, BFA Project 23-005"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/data_center_mcb_3_4/20-042.2020.07.17.STIHL DATA CENTER FINAL STUDY.pdf",
+      "type": "report",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "description": "STIHL Data Center Final Study, Jul 2020, BFA Project 20-042 (not extracted — file present in intake)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/imm_accessories/21-014.2021.07.21.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "description": "IMM Accessories Final Drawings, Jul 2021, BFA Project 21-014 (not extracted — file present in intake)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/guide_bar_plant_emergency_power/2025.01.31.GUIDE.BAR.PLANT.EMERGENCY.POWER.FINAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "description": "Guide Bar Plant Emergency Power Final Drawings, Jan 2025 (not extracted — file present in intake)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/guide_bar_plant_emergency_power/Electrical_Drawings_07.26.22.pdf",
+      "type": "drawing_set",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "description": "Guide Bar Plant Electrical Drawings, Jul 2022 (not extracted — file present in intake)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/switch_gear_design/ATTACHMENT 1 - STIHL REPLACE SWITCHGEAR DESIGN STUDY.pdf",
+      "type": "report",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "description": "STIHL Replace Switchgear Design Study — Attachment 1 (appears to be same study as 20-003; file present in intake, not re-extracted)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/stihl/tap_box/21-036.2021.08.20.PROGRESS DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": null,
+      "included": true,
+      "flag_for_human_review": false,
+      "description": "Progress Drawings for tap box / busway design, Aug 2021, BFA Project 21-036 (not extracted — file present in intake)"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No executed contract or BOD present. Source set covers multiple sub-projects under the STIHL client: switchboard replacement (20-003/21-036A), data center study (20-042), IMM accessories (21-014), Guide Bar emergency power (2022/2025), Plant 5 switchgear (23-005), and tap box (21-036). Drawing PDFs were not rendered due to their nature as electrical one-line/plan drawings; key data extracted from text-bearing study PDFs and spec books."
+  },
+  "facts": {
+    "project_name": {
+      "value": "STIHL Incorporated — Electrical Design Program (Multiple Projects)",
+      "source": "Multiple source documents",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "20-003 study, cover",
+          "claim": "Replacement of Switchboard 3 & 4, STIHL Incorporated, Virginia Beach VA",
+          "agrees": true
+        },
+        {
+          "source": "21-036A specs, Document 000101",
+          "claim": "Replace Switchgear Design, STIHL",
+          "agrees": true
+        },
+        {
+          "source": "23-005 specs, title page",
+          "claim": "Design Additional Switchgear in Plant 5, Warehouse 5, Virginia Beach VA",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "STIHL Incorporated",
+      "source": "20-003 study, cover page",
+      "quote": "STIHL INCORPORATED VIRGINIA BEACH, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "Fee letter, Oct 12 2021",
+          "claim": "STIHL, Inc., 536 Viking Drive, Virginia Beach, VA 23452 — Attn: Todd Blaher",
+          "agrees": true
+        },
+        {
+          "source": "21-036A specs, cover",
+          "claim": "STIHL, INC. VIRGINIA BEACH, VIRGINIA",
+          "agrees": true
+        },
+        {
+          "source": "23-005 specs/calcs",
+          "claim": "STIHL Warehouse 5 SWBD / Virginia Beach VA",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "STIHL Incorporated",
+      "source": "20-003 study, cover page",
+      "quote": "STIHL INCORPORATED VIRGINIA BEACH, VIRGINIA"
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "536 Viking Drive, Virginia Beach, VA 23452",
+      "source": "Fee letter, Oct 12 2021",
+      "quote": "STIHL, Inc. 536 Viking Drive Virginia Beach, VA 23452"
+    },
+    "project_number_internal": {
+      "value": "20-003; 21-036; 21-036A; 20-042; 21-014; 23-005",
+      "source": "Multiple source documents — project numbers on cover pages and title blocks",
+      "quote": null,
+      "notes": "Multiple BFA project numbers reflect distinct sub-projects for this client. Primary sub-projects: 20-003 (switchboard short circuit/coordination study, 2021), 21-036A (switchgear replacement design, 2021), 23-005 (Plant 5 switchgear, 2024). Other numbers: 20-042 (data center study, 2020), 21-014 (IMM accessories, 2021), 21-036 (tap box, 2021)."
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Industrial plant; square footage not stated in available documents. Project scope is electrical systems (switchgear/switchboards), not building construction."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "fee_design_21_036A": {
+      "value": 5695,
+      "currency": "USD",
+      "source": "Fee letter, Oct 12 2021",
+      "quote": "GRAND TOTAL - FEE PROPOSAL ... $5,695",
+      "description": "Design fee for switchgear replacement design documents (drawings and specifications), BFA Project 21-036A"
+    },
+    "electrical_system_description": {
+      "value": "STIHL Virginia Beach industrial plant with multiple electrical sub-projects: (1) MS3 & MS4 switchboard replacement — two 4000A, 480Y/277V switchboards, each fed by a 2,500 kVA pad-mounted transformer (Dominion utility), 53,829A available fault current, short circuit/coordination study performed using SKM Power Tools; (2) Plant 5 / Warehouse 5 new 5000A, 480Y/277V switchboard (SWBD-W5), total demand 3,191.4 kVA / 3,835.8A; serving panels for EV charging, battery chargers, unit heaters, infrared heaters, and mechanical equipment; (3) Data center MCB 3&4 study; (4) IMM accessories power; (5) Guide Bar Plant emergency power (2022 and 2025 drawings); (6) Tap box/busway design.",
+      "source": "Multiple source documents",
+      "quote": null
+    },
+    "key_electrical_data_ms3_ms4": {
+      "utility_voltage": "34,500V (primary) / 480Y/277V (secondary)",
+      "transformer_capacity": "2 × 2,500 kVA pad-mounted",
+      "switchboard_rating": "2 × 4,000A, 480V, 3Ph, 4W, 100kA SCCR (new)",
+      "available_fault_current": "53,829A symmetrical",
+      "existing_switchboard_kaic": "34,500",
+      "service_loading_ms3": "1,497 kVA (60% of transformer capacity with 125% future factor)",
+      "service_loading_ms4": "2,537 kVA (100% of transformer capacity with 125% future factor)",
+      "source": "20-003 study and Scope of Services DOCX",
+      "quote_ms3_loading": "The Study calculated Service #3 loading with 125% for future load grows is 1,497 kVA. The service is capable of 2500 kVA based on the service transformer. This indicated that Service #3 is 60% loaded only.",
+      "quote_ms4_loading": "The Study calculated Service #4 loading with 125% for future load grows is 2,537 kVA. The service is capable of 2500 kVA based on the service transformer. This indicated that Service #4 is 100% loaded."
+    },
+    "key_electrical_data_plant5": {
+      "switchboard_rating": "5,000A MCB, 480/277V, 3Ph, 4W",
+      "total_demand_load": "3,191.4 kVA / 3,835.8A",
+      "sub_panels": [
+        "MDP",
+        "BC3",
+        "BC4",
+        "EV1",
+        "EV2",
+        "MECH1",
+        "MECH2",
+        "MECH3",
+        "DP9"
+      ],
+      "notable_loads": [
+        "Battery chargers (EV charging infrastructure)",
+        "Infrared heaters",
+        "Unit heaters",
+        "Mechanical equipment"
+      ],
+      "source": "23-005 Load Analysis calculation sheet",
+      "quote": "LOAD SUMMARY: SWITCHBOARD \"SWBD-W5\" RATING: 5000A MCB VOLTAGE: 480/277V, 3ø, 4W"
+    },
+    "failed_devices_noted_in_study": {
+      "value": [
+        "CB PNL LH (PNL PCC, MS4) — 70A/3P, 18kA rating, FAILED",
+        "CB PNL LI (PNL PCC, MS4) — 70A/3P, 18kA rating, FAILED",
+        "CB XFMR LL (PNL PHV3, MS4) — 50A/3P, 18kA rating, FAILED",
+        "CB XFMR LM (PNL PHV4, MS4) — 50A/3P, 18kA rating, FAILED",
+        "CB XFMR LV2 (PNL HV2, MS4) — 15-100A/70A, 18kA rating, FAILED",
+        "PNL PBK1/PNL PBK2 (MS4) — 250A panels, 22kA rating, FAILED (exceeded by new switchboard AIC)"
+      ],
+      "source": "20-003 study, Recommended System Modifications (MS4)",
+      "quote": "BFA recommends changing this breaker as soon as possible for a breaker with a higher kA rating. This is based on the current electric distribution system with new Switchboard."
+    }
+  },
+  "phases": {
+    "design": {
+      "notes": "Multiple BFA design engagements spanning 2020–2025 for the same client at the same facility. Individual project fees not all available. Primary documented fee: $5,695 for 21-036A switchgear replacement design docs.",
+      "contract_value": {
+        "value": 5695,
+        "currency": "USD",
+        "source": "Fee letter, Oct 12 2021 (21-036A only)",
+        "quote": "GRAND TOTAL - FEE PROPOSAL ... $5,695"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-01-31",
+        "source": "Guide Bar Plant Emergency Power Final Drawings, dated 2025-01-31",
+        "quote": null,
+        "notes": "Most recent dated deliverable in the set; earliest is the data center study (Jul 2020). Range: ~2020–2025."
+      },
+      "change_orders": []
+    },
+    "construction": {
+      "notes": "Construction contracting is by STIHL's own GC. BFA provides engineering design and construction administration services only. Construction contract values not in scope of BFA's documents.",
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial_manufacturing"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "electrical_motor_control",
+      "electrical_substation_utility"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_emergency_power"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "stihl",
+    "virginia_beach",
+    "industrial_plant",
+    "switchboard_replacement",
+    "short_circuit_study",
+    "coordination_study",
+    "power_engineering",
+    "ev_charging_infrastructure",
+    "emergency_power",
+    "commercial_private_client",
+    "dominion_energy",
+    "multi_engagement_client"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Blair Davis, EIT",
+      "role_on_project": "electrical_engineer",
+      "notes": "Signed fee letter for 21-036A (Oct 12 2021)"
+    },
+    {
+      "name": "Blair Fisher",
+      "role_on_project": "project_manager",
+      "notes": "Listed as Project Manager on 21-036A fee letter"
+    },
+    {
+      "name": "Mike Dixon",
+      "role_on_project": "principal_in_charge",
+      "notes": "Listed as Supervisor on 21-036A fee letter"
+    }
+  ],
+  "drawings": {
+    "notes": "Drawing PDFs present in intake but not rendered at medium depth. Files include: 21-036A Final Drawings (6 sheets: E-001 legend, ED101 demo plan, E-101 new work plan, E-201 switchboard elevations, E-501 diagram and details, E-601 schedules); Guide Bar Plant Emergency Power Final Dwgs 2025; Guide Bar Electrical Drawings 2022; Guide Bar AS Built Electrical; One-line for Guide Bar expansion; IMM Accessories Final Drawings; tap box progress drawings. Drawing extraction deferred — significant electrical one-line diagrams and panel schedules embedded in the 20-003 study PDF were extracted as text (SKM model data).",
+    "sheets": [],
+    "facts_derived": {}
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "20-003 study",
+          "value": "Replacement of Switchboard 3 & 4 — single project"
+        },
+        {
+          "source": "Multiple directories in intake",
+          "value": "7 distinct sub-projects for STIHL over 2020–2025"
+        }
+      ],
+      "resolution_chosen": "Treat as multi-project client relationship under single slug",
+      "rationale": "The intake folder organizes all STIHL work under one directory. The projects share the same client and facility. Record captures the program as a whole with sub-project details in facts block."
+    },
+    {
+      "field_path": "phases.design.completion_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "21-036A Final Specs, Dec 01 2021",
+          "value": "2021-12-01 (latest switchboard replacement deliverable)"
+        },
+        {
+          "source": "Guide Bar Plant Emergency Power Final Drawings",
+          "value": "2025-01-31 (most recent deliverable in intake set)"
+        }
+      ],
+      "resolution_chosen": "2025-01-31 as latest known completion; ongoing engagement 2020–2025",
+      "rationale": "Engagement appears to be ongoing multi-year on-call relationship. Using most recent dated document."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

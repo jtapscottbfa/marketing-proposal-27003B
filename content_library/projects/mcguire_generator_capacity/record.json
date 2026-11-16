@@ -1,0 +1,170 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "manual-quick-pass-2026-05-21",
+  "extracted_at": "2026-05-21T00:00:00Z",
+  "project_slug": "mcguire_generator_capacity",
+  "source_documents": [
+    {
+      "path": "content_library/artifacts/13-025N  UPGRADE GENERATOR/SUBMITTALS/2017.09.11.65% SUBMITTAL/13-025N Upgrade Generator VA Richmond Basis of Design - 65%.pdf",
+      "type": "bod_65",
+      "included": true,
+      "description": "65% Submittal Basis of Design, September 26, 2017 — BFA Project 13-025N, VA Project 652-17-100"
+    },
+    {
+      "path": "content_library/artifacts/13-025N  UPGRADE GENERATOR/SUBMITTALS/2018.02.23.FINAL SUBMITTAL/Cost Estimate/13-025N.2017.11.14.FINAL COST ESTIMATE.pdf",
+      "type": "cost_estimate",
+      "included": true,
+      "description": "Final Cost Estimate, February 23, 2018 — VA Project 652-17-100, BFA Contract VA246-12-D-0105"
+    },
+    {
+      "path": "content_library/artifacts/13-025N  UPGRADE GENERATOR/PROJECT MANAGEMENT/Scope/652-17-101 Upgrade Generator Capacity RFP_SOW.docx",
+      "type": "sow_modification",
+      "included": true,
+      "description": "RFP Scope of Work modification (Project 652-17-101) — additional design services for emergency power upgrade across Buildings 500 and 501 with 20% future growth on the 13.2kV system"
+    },
+    {
+      "path": "content_library/artifacts/13-025N  UPGRADE GENERATOR/PROJECT MANAGEMENT/C40 5.31.19 CONTRACTOR - Notification of Contract Changes_BFA.pdf",
+      "type": "construction_change_notice",
+      "included": true,
+      "description": "Greenland Enterprises Notification of Contract Changes, May 31, 2019 — Construction Contract 36C4618C0099, CO Mark S. Harville. Documents scope changes during construction (generator pad sizing, MV duct bank expansion, additional drain inlets)"
+    },
+    {
+      "path": "content_library/artifacts/13-025N  UPGRADE GENERATOR/Upgrade Generator Capacity Project Letter_BFA.pdf",
+      "type": "project_letter",
+      "included": true,
+      "description": "BFA project letter dated August 11, 2021 (Blair Fisher EIT) — construction-phase advisory on ASCO paralleling-switchgear corrosion/water damage event; supports refurbishment recommendation"
+    }
+  ],
+  "facts": {
+    "project_name": {
+      "value": "Upgrade Generator Capacity — Hunter Holmes McGuire VA Medical Center, Richmond",
+      "source": "BOD title page and Cost Estimate cover"
+    },
+    "client_name": {
+      "value": "U.S. Department of Veterans Affairs — Hunter Holmes McGuire VA Medical Center",
+      "source": "BOD subtitle and project letter recipient"
+    },
+    "owner_name": {
+      "value": "U.S. Department of Veterans Affairs",
+      "source": "BOD subtitle"
+    },
+    "location": {
+      "city": "Richmond",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "1201 Broad Rock Blvd, Richmond, VA 23249",
+      "source": "Project letter (Aug 2021)"
+    },
+    "project_number_client": {
+      "value": "652-17-100",
+      "source": "BOD title page and Cost Estimate Construction Change Order Cost Summary",
+      "notes": "SOW modification document is filed as Project 652-17-101 (the modification action number)"
+    },
+    "project_number_internal": {
+      "value": "13-025N",
+      "source": "BOD title page, Cost Estimate cover"
+    },
+    "contract_number_design": {
+      "value": "VA246-12-D-0105",
+      "source": "Construction Change Order Cost Summary form (CONTRACT NO. field)"
+    },
+    "contract_number_construction": {
+      "value": "36C4618C0099",
+      "source": "Greenland Enterprises Notification of Contract Changes — CONTRACT line"
+    },
+    "construction_prime": {
+      "value": "Greenland Enterprises, Inc.",
+      "address": "2713 Magruder Blvd., Suite A, Hampton, VA 23666",
+      "office": "757.864.0640",
+      "source": "Notification of Contract Changes letterhead"
+    },
+    "construction_pm": {
+      "value": "Joseph D. Turner — Project Manager, Greenland Enterprises",
+      "source": "Notification of Contract Changes signature"
+    },
+    "owner_contracting_officer": {
+      "value": "Mark S. Harville — Contracting Officer, H.H. McGuire VAMC",
+      "source": "Notification of Contract Changes attention line"
+    },
+    "owner_facility_contact": {
+      "value": "Mr. Richard Stiles — H.H. McGuire VAMC",
+      "source": "BFA project letter dated August 11, 2021 (addressee)"
+    },
+    "scope_summary": {
+      "value": "Emergency power backup for the entirety of Buildings 500 and 501 at HHM VAMC Richmond — upstream of the main switchgear at the 13.2kV system, with 20% future load growth. Caterpillar generators with new paralleling switchgear (ASCO 7000-series transfer switch line). New medium-voltage (MV) transfer switch, MV duct bank with concrete encasement, load bank, new generator pads, civil site work (grading, sanitary sewer relocation, E&S control, landscaping), and structural pad/foundation design. Design shall comply with N+1 redundancy for emergency power systems and coordination with Dominion Power for Level 3 soft-closed transitions interconnection.",
+      "source": "BOD + RFP-SOW Modification + Notification of Contract Changes"
+    },
+    "design_period": {
+      "value": "March 2017 (CD Submittal) through February 2018 (Final Submittal)",
+      "source": "SUBMITTALS folder dates (2017.03.24 CD through 2018.02.23 FINAL)"
+    },
+    "construction_period": {
+      "value": "Construction in progress 2019–2022+ (Change Orders documented May 2019; construction-phase switchgear damage advisory dated August 2021; Record Drawings dated March 2022)",
+      "source": "Notification of Contract Changes (5/31/2019), Project Letter (8/11/2021), INCOMING DRAWINGS/2022.03.17.CONTRACTOR ASBUILTS"
+    },
+    "voltage_class": {
+      "value": "13.2kV system upstream of Building 500 main switchgear",
+      "source": "Cost Estimate Construction Change Order Cost Summary and RFP-SOW Modification"
+    },
+    "generator_manufacturer": {
+      "value": "Caterpillar (per submittal cutsheets)",
+      "source": "PROJECT MANAGEMENT folder includes 'Generator Cutsheets from Caterpillar' and 'asco-7000-series-power-transfer-switch-brochure.pdf'"
+    },
+    "redundancy": {
+      "value": "N+1 redundancy required for emergency power systems and components impacted by design",
+      "source": "RFP-SOW Modification scope bullet"
+    },
+    "design_codes_and_standards": {
+      "value": "VA Criteria; Mission Critical Physical Design Manual for VA Facilities; Virginia E&S Control Handbook 1992 (civil); Dominion Power interconnection requirements for Level 3 soft-closed transitions",
+      "source": "BOD civil section and RFP-SOW Modification"
+    },
+    "construction_value": {
+      "value": null,
+      "status": "missing",
+      "notes": "Original construction contract value (36C4618C0099) not stated in available BFA-side documents. Construction Change Order Cost Summary dated 11/10/2017 shows a $6,025,079.14 change-order summary line but the original baseline contract value is not in this file."
+    },
+    "owner_program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "Program budget not stated in BFA-side BOD, Cost Estimate, or SOW Modification documents in the project folder."
+    }
+  },
+  "taxonomy": {
+    "client_type": ["federal", "federal_va"],
+    "program_type": ["healthcare", "mission_critical"],
+    "disciplines": ["electrical_engineering", "civil_engineering", "structural_engineering"],
+    "sub_disciplines": ["electrical_emergency_power", "electrical_distribution_13kv", "electrical_paralleling_switchgear", "n_plus_1_redundancy"],
+    "delivery_method": ["design_bid_build"],
+    "contract_vehicle": ["va_ae_idiq"],
+    "bfa_role": ["prime_ae"]
+  },
+  "tenant_freeform_tags": [
+    "mcguire_vamc",
+    "hh_mcguire",
+    "richmond_va",
+    "emergency_power",
+    "generator_upgrade",
+    "13_2kv",
+    "caterpillar_gensets",
+    "asco_paralleling_switchgear",
+    "n_plus_1_redundancy",
+    "dominion_power_interconnection",
+    "greenland_enterprises_gc"
+  ],
+  "key_personnel_pending": [
+    {
+      "name": "Blair Fisher, EIT",
+      "role_on_project": "electrical_engineer",
+      "notes": "BFA electrical engineer signing construction-phase project letter (Aug 2021)"
+    },
+    {
+      "name": "Mike Dixon",
+      "role_on_project": "vice_president",
+      "notes": "BFA VP listed as estimator on Construction Change Order Cost Summary (Nov 2017)"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md"
+  }
+}

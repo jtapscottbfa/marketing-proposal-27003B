@@ -1,0 +1,7 @@
+Electrical engineering participated on the Emporia Readiness Center HVAC Upgrades in a supporting role to the primary mechanical scope. The project involved complete HVAC system replacement at a Virginia National Guard readiness center in Emporia, Virginia, with a not-to-exceed construction budget of $1,407,000.
+
+The electrical scope comprised minor associated electrical work as required by the HVAC system replacement. This work addressed power distribution and controls wiring modifications necessitated by removal and replacement of all HVAC units and integration of the pathogen mitigation technology array — including bipolar ionization systems, UV lighting, visible lighting, and high-efficiency filtration equipment. Lighting work and power connections were scoped to support the new mechanical equipment and building automation system rather than as a standalone electrical renovation.
+
+The project's source documents characterize the electrical contribution as "minor associated electrical and architectural work, as required," without providing further breakdown of panel schedules, load calculations, or circuit-level scope in the available record. Specific electrical design deliverables, equipment schedules, or power distribution details are not captured in the source documentation for this project.
+
+Electrical engineering was included as a named discipline on the design team under design-bid-build delivery, with full construction administration services through the bidding and construction phases.

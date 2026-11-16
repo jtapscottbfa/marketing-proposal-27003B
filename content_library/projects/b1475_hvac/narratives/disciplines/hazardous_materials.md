@@ -1,0 +1,9 @@
+# Hazardous Materials — Building 1475 HVAC Replacement, Phase II
+
+BFA's hazardous materials team performed a comprehensive building survey and produced the abatement design documents for Building 1475 at Norfolk Naval Shipyard, Portsmouth, Virginia, in support of the HVAC replacement project.
+
+The scope of hazardous materials services included: (1) identifying, collecting, and analyzing bulk samples of suspect asbestos-containing materials (ACM); (2) collecting and analyzing paint chip samples for lead, cadmium, and chromium concentrations; (3) inspecting a representative sample of existing fluorescent light fixtures for PCB-containing ballasts and mercury-vapor lamps; and (4) inspecting transformers for PCB-containing oil.
+
+Laboratory analysis identified ACM in gypsum board joint compound, 12" yellow floor tiles and black mastic, 12" tan floor tiles and black mastic, and spray-applied fireproofing on structural steel in the emergency generator room. All friable and non-friable ACM in areas of disturbance must be removed by a Virginia-licensed asbestos abatement contractor prior to renovation. Paint chip analysis identified lead, cadmium, and chromium in painted surfaces throughout the building; no Lead Based Paint (LBP) meeting OSHA regulatory thresholds was identified, but all painted surfaces require appropriate worker protection measures. Waste stream TCLP analysis confirmed that anticipated demolition waste would be classified as non-hazardous. Fluorescent fixtures with non-electronic ballasts not labeled "NON-PCB" require handling and disposal per 40 CFR 761; mercury-containing lamps require disposal as universal waste under Virginia regulations.
+
+Design documents address hazardous material removal and disposal through a dedicated H-series drawing set, prepared in accordance with UFC 3-800-10N and applicable OSHA, EPA, and Virginia regulations.

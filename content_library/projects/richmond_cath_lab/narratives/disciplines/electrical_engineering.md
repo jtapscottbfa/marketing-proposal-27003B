@@ -1,0 +1,7 @@
+Electrical engineering provided power distribution design for all replacement HVAC equipment in the Cardiac Catheterization Lab renovation at Hunter Holmes McGuire VA Medical Center.
+
+The electrical scope covered new disconnects, fuses, and circuit breakers for each piece of replacement HVAC equipment introduced under the base bid and bid deduct alternate. Wiring used copper THHN/THWN conductors in EMT conduit throughout. A key constraint on the electrical design was the facility's occupied status as an active hospital: new equipment connections were routed from nearby panelboards in a configuration that allows the cath lab power systems to be taken offline for HVAC work without affecting adjacent hospital areas, minimizing procedure disruption during construction and future maintenance.
+
+Specific electrical load data, panel designations, and one-line details are not captured in the available source record; the design narrative describes the electrical approach at a schematic level. Full equipment schedules and panel loading calculations would have been developed at the construction document phase.
+
+<!-- INTERNAL: Electrical sub-discipline tagged as electrical_power_distribution. No data in source record on emergency power configuration, UPS provisions, or generator connection for HVAC equipment. If these are relevant to past-performance claims, source from executed construction documents or BFA project files. -->

@@ -1,0 +1,544 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "wright_patterson",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/usace/wright_patterson/Basis of Design - WRIGHT PATTERSON.docx",
+      "type": "bod",
+      "sha256": "7609cad1bbc473738b80b77a32ac1cca4f9ec6f7ff3ec0d2913565994dc0eb60",
+      "included": true,
+      "notes": "Basis of Design — Room Renovation Bldg. 20840, 711th HPW, Rooms W133L/K/G, Wright-Patterson AFB OH"
+    },
+    {
+      "path": "00_admin/reference_projects/usace/wright_patterson/Wright Pat AFB, SCOPE OF WORK.docx",
+      "type": "sow",
+      "sha256": "fd81907d25febdba9918f5ae51fc28e25ac5c3ef72107b8e8981a5f26bc2529c",
+      "included": true,
+      "notes": "Scope of Work — Medical Facilities Renewal, FY22 Eastern Region Miscellaneous Projects, dated 16 August 2022. Covers CLIN 0004 (Wright-Patterson AFB room renovation) plus other CLINs."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/wright_patterson/RFP Eastern.pdf",
+      "type": "sow",
+      "sha256": "8a6f546a0f15b11514898ac6686804048abd4ff7ff259ff8706fbd00909693c5",
+      "included": true,
+      "flag_for_human_review": false,
+      "notes": "SF 1442 Solicitation/Offer/Award form — W912DY22R0073 (Negotiated RFP), image-based PDF, 39 pages (only pages 1-6 captured/rendered showing SF1442 header pages and CLINs 0001-0006 schedule of prices). Solicitation type: Negotiated RFP. Issued 13-Sep-2022."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/wright_patterson/RFP Amendment 1 Eastern.pdf",
+      "type": "correspondence",
+      "sha256": "c13ad9acbb3788c9fbe44e61482282facb345c0e42ae9eea77fbc79664b10587",
+      "included": true,
+      "notes": "Amendment U0001 — extended proposal due date from 21-Sep-2022 to 22-Sep-2022."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/wright_patterson/RFP Amendment 2 Eastern.pdf",
+      "type": "correspondence",
+      "sha256": "0d646bd8ccbe5ebb5fdb8cc2d8beff3549628a2e5b0f4b2e96f8bf87fdf45a6b",
+      "included": true,
+      "notes": "Amendment U0002 — extended proposal due date from 22-Sep-2022 3:00 PM to 22-Sep-2022 11:59 PM."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No construction drawing set provided. BOD and SOW/RFP are present. WPAFB Design Package referenced extensively as a programming document but not included in this source set. Contract and task order numbers are blank/redacted in the SOW cover page."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Room Renovation, Bldg. 20840 711th Human Performance Wing, Area B, Rooms W133L, K, & G, Wright-Patterson AFB, OH",
+      "source": "SOW §2.1",
+      "quote": "Room Renovation, Bldg. 20840 711th Human Performance Wing, area B, rooms W133L, K, & G, Wright-Patterson AFB, OH.",
+      "corroboration": [
+        {
+          "source": "BOD title block",
+          "claim": "ROOM RENOVATION, BLDG. 20840 711TH HUMAN PERFORMANCE WING, AREA B, ROOMS W133L, K, & G, WRIGHT-PATTERSON AFB, OH",
+          "agrees": true
+        },
+        {
+          "source": "RFP Eastern.pdf CLIN 0004",
+          "claim": "Room Renovation Wright-Patterson AFB, OH — Bldg. 20840 711th Human Performance Wing, Area B, Rooms W133L, K, & G",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army Engineering & Support Center, Huntsville (USACE HNC)",
+      "source": "RFP Eastern.pdf p.1, block 7",
+      "quote": "US ARMY ENGINEERING & SUPPORT CENTER HUNTSVILLE ENGINEERING & SUPPORT CENTER P.O. BOX 1600 HUNTSVILLE AL 35807-4301",
+      "corroboration": [
+        {
+          "source": "SOW §6.3",
+          "claim": "USACE, HNC (Huntsville Center) designated as the Government authority; contract W912DY-22-C-00[blank]",
+          "agrees": true
+        },
+        {
+          "source": "RFP Amendment 1",
+          "claim": "Issued by US Army Engineering & Support Center Huntsville Engineering & Support Center, W912DY",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Air Force, 711th Human Performance Wing (using agency); USACE HNC (contracting agency)",
+      "source": "SOW §2.1 and §4.1.4.4.8",
+      "quote": "Major General Harry G. Armstrong Complex Building 20840 is a 457,182 square foot four story facility constructed in 2011 and serves as the home of the United States Air Force School of Aerospace Medicine and the Airman Systems Directorate located on Wright-Patterson Air Force Base in Dayton, Ohio.",
+      "corroboration": [
+        {
+          "source": "SOW §4.1.4.4.8",
+          "claim": "The normal duty hours of the 711th Human Performance Wing are 0700 – 1600, Monday – Friday",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Dayton",
+      "state": "OH",
+      "country": "US",
+      "facility_name": "Wright-Patterson Air Force Base, Bldg. 20840, Major General Harry G. Armstrong Complex",
+      "facility_address": null,
+      "source": "SOW §3.0",
+      "quote": "located on Wright-Patterson Air Force Base in Dayton, Ohio",
+      "corroboration": [
+        {
+          "source": "BOD title block",
+          "claim": "WRIGHT-PATTERSON AFB, OH",
+          "agrees": true
+        },
+        {
+          "source": "RFP Eastern.pdf CLIN 0004",
+          "claim": "Room Renovation Wright-Patterson AFB, OH",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "W912DY22R0073 (solicitation); P2 #507741",
+      "source": "RFP Eastern.pdf p.1 block 1; SOW cover page",
+      "quote": "W912DY22R0073",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "P2 #507741",
+          "agrees": true,
+          "note": "P2 number is USACE's project management system number, complementary to solicitation number"
+        },
+        {
+          "source": "RFP Amendment 1",
+          "claim": "9A. AMENDMENT OF SOLICITATION NO. W912DY22R0073",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "W912DY-22-C-00[redacted]",
+      "source": "SOW cover page",
+      "quote": "CONTRACT W912DY-22-C-00[__]",
+      "notes": "Contract number is blank/redacted in the SOW; base contract code W912DY-22-C is established but the specific contract serial number is not populated."
+    },
+    "task_order_number": {
+      "value": null,
+      "source": "SOW cover page",
+      "quote": "TASK ORDER [____]",
+      "status": "missing",
+      "notes": "Task order number blank/redacted in source document. This is CLIN 0004 of the multi-CLIN task order."
+    },
+    "square_footage": {
+      "value": 457182,
+      "unit": "gsf",
+      "source": "SOW §3.0",
+      "quote": "Major General Harry G. Armstrong Complex Building 20840 is a 457,182 square foot four story facility",
+      "notes": "This is the total building square footage. The specific room renovation (W133L, K, G) area is not stated in source documents.",
+      "corroboration": [
+        {
+          "source": "SOW §3.0",
+          "claim": "457,182 square foot four story facility",
+          "value": 457182,
+          "agrees": true
+        }
+      ]
+    },
+    "renovation_area_sf": {
+      "value": null,
+      "status": "missing",
+      "notes": "Specific square footage of the three rooms being renovated (W133L, W133K, W133G) is not stated in any source document. WPAFB Design Package (referenced but not provided) may contain this information."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No specific budget for the Wright-Patterson CLIN 0004 is stated. The RFP states the overall solicitation magnitude is 'between $1,000,000.00 and $2,000,000.00' for all 6 CLINs combined."
+    },
+    "program_budget_total_rfp": {
+      "value": {
+        "low": 1000000,
+        "high": 2000000
+      },
+      "currency": "USD",
+      "source": "RFP Eastern.pdf p.1",
+      "quote": "In accordance with FAR 36.204, the disclosure of magnitude is between $1,000,000.00 and $2,000,000.00.",
+      "notes": "This covers all 6 CLINs (design package + dock lift at Ft. Meade + restroom renovations at Ft. Eustis + room renovation at WPAFB + insulation replacements at JB MDL + dental clinic exhaust at Shaw AFB). Not just the WPAFB task.",
+      "corroboration": [
+        {
+          "source": "RFP Eastern.pdf p.1",
+          "claim": "between $1,000,000.00 and $2,000,000.00",
+          "agrees": true
+        }
+      ]
+    },
+    "solicitation_date": {
+      "value": "2022-09-13",
+      "source": "RFP Eastern.pdf p.1",
+      "quote": "13-Sep-2022",
+      "corroboration": [
+        {
+          "source": "RFP Amendment 1",
+          "claim": "9B. DATED (SEE ITEM 11) 13-Sep-2022",
+          "agrees": true
+        },
+        {
+          "source": "RFP Amendment 2",
+          "claim": "9B. DATED (SEE ITEM 11) 13-Sep-2022",
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date": {
+      "value": "2022-09-22",
+      "source": "RFP Amendment 2",
+      "quote": "The required response date/time has changed from 22-Sep-2022 03:00 PM to 22-Sep-2022 11:59 PM.",
+      "notes": "Final due date after two amendments. Original was 21-Sep-2022; Amendment 1 extended to 22-Sep-2022 3:00 PM; Amendment 2 extended to 22-Sep-2022 11:59 PM.",
+      "corroboration": [
+        {
+          "source": "RFP Amendment 1",
+          "claim": "extend the proposal due date from Wednesday 21 September 2022 to Thursday 22 September 2022",
+          "agrees": true,
+          "note": "Intermediate date; superseded by Amendment 2"
+        }
+      ]
+    },
+    "liquidated_damages_rate": {
+      "value": 560,
+      "currency": "USD",
+      "unit": "per calendar day",
+      "source": "SOW §6.6",
+      "quote": "Liquidated damages will be charged at a rate of $560.00 per calendar day of contractor delay until the work is accepted.",
+      "corroboration": [
+        {
+          "source": "SOW §6.6",
+          "claim": "$560.00 per calendar day",
+          "agrees": true
+        }
+      ]
+    },
+    "building_age": {
+      "value": 2011,
+      "source": "SOW §3.0",
+      "quote": "The building was built in 2011.",
+      "corroboration": [
+        {
+          "source": "SOW §3.0 (earlier sentence)",
+          "claim": "a 457,182 square foot four story facility constructed in 2011",
+          "agrees": true
+        }
+      ]
+    },
+    "building_plant_replacement_value": {
+      "value": 221000000,
+      "currency": "USD",
+      "source": "SOW §3.0",
+      "quote": "The Plant Replacement Value of the building is estimated at $221M.",
+      "corroboration": [
+        {
+          "source": "SOW §3.0",
+          "claim": "$221M",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design is included within the design-build task order (CLIN 0001 is the design package for all CLINs combined). No separate design fee is stated for the WPAFB CLIN 0004 task."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Unit prices not filled in the RFP schedule of prices. Overall solicitation magnitude $1M-$2M covers 6 CLINs; no per-CLIN breakdown available."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP p.1 states contractor shall begin performance within 14 calendar days after receiving notice to proceed; total duration not specified in extracted pages."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod",
+      "federal_afcec"
+    ],
+    "program_type": [
+      "military_defense",
+      "healthcare_military_medical"
+    ],
+    "program_subtype": [
+      "military_training"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "interior_partitions",
+      "interior_finishes"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "finishes_drywall_plaster",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "specialties_signage",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "electronic_safety_security",
+      "equipment_lab_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_matoc"
+    ],
+    "procurement_type": [
+      "federal_8a_sole_source"
+    ],
+    "award_type": [
+      "sole_source_award"
+    ],
+    "project_status": [
+      "pursuing"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": null,
+      "source": null,
+      "quote": null,
+      "status": "missing",
+      "notes": "SWaM or other socioeconomic participation not addressed in source documents. The solicitation is an 8(a) sole-source set-aside (federal set-aside, not Virginia SWaM)."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "wright_patterson_afb",
+    "usace_hnc",
+    "711th_hpw",
+    "medical_facilities_renewal",
+    "fy22_eastern_region",
+    "8a_sole_source",
+    "laboratory_renovation",
+    "design_build_task_order",
+    "air_force",
+    "ohio"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 457182,
+        "unit": "gsf",
+        "source": "SOW §3.0",
+        "quote": "457,182 square foot four story facility",
+        "sheets": [],
+        "notes": "Total building area of Bldg. 20840. Renovation covers only rooms W133L, K, G — specific renovation area not stated."
+      },
+      "floor_count": {
+        "value": 4,
+        "source": "SOW §3.0",
+        "quote": "Building has 4 stories.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing HVAC system to remain except for new air grilles and diffusers in W133L&K",
+          "Air valve in W133L upgraded to 385 CFM",
+          "3-inch stainless steel duct installed for lab snorkel (W133G); snorkel model MOVE-X ME Type 1500-75 (aka FUMEX MET 1500-75), government-furnished",
+          "8-inch Phoenix Controls air control valve in snorkel ductwork"
+        ],
+        "electrical": [
+          "New 208V emergency power outlet connected to panel L1E-A",
+          "Desktop electric raceway along south and east walls (7 total receptacles)",
+          "GFCI duplex receptacles on multiple walls",
+          "Lighting fixture relocated in W133K/W133L vestibule",
+          "All lighting rewired to vestibule switch"
+        ],
+        "plumbing": [
+          "Existing domestic cold/hot water piping reused in W133L&K and W133G",
+          "New stainless steel lab sink with gooseneck faucet and eye wash wand (W133L&K)",
+          "Chemical resistant epoxy/resin sink with hand-held eye wash (W133G)",
+          "Tempered water connection for eye wash wand",
+          "Nitrogen and compressed air lines abandoned in place and capped"
+        ],
+        "fire_protection": [
+          "Fire alarm and mass notification system relocated off demolished wall (W133G)",
+          "NICET Level 4 fire alarm drawing approval required for relocation"
+        ]
+      }
+    },
+    "notes": "No drawing set provided in source documents. WPAFB Design Package (referenced as Attachment B / programming document) contains layout drawings but was not included in this source set. All MEP system inventory derived from BOD and SOW text descriptions, not graphic drawings."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "taxonomy.project_status",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "inferred from document set",
+          "value": "pursuing — only RFP + SOW + amendments present; no award documents"
+        },
+        {
+          "source": "inferred from BFA file organization",
+          "value": "could be complete if BFA won and executed — file location under reference_projects suggests past performance"
+        }
+      ],
+      "resolution_chosen": "pursuing",
+      "rationale": "Source documents are a solicitation package (RFP + SOW + amendments). No award document, NTP, design submittals, or as-built documents are present. Cannot confirm award or execution. Status flagged for human review. The BFA folder path 'reference_projects' could indicate past performance, but no confirmation in documents."
+    },
+    {
+      "field_path": "taxonomy.bfa_role",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP Eastern.pdf p.1",
+          "value": "8(a) sole-source set-aside — prime contractor must be an 8(a)-certified firm"
+        },
+        {
+          "source": "BFA file presence",
+          "value": "BFA holds this document set, implying involvement as prime or sub"
+        }
+      ],
+      "resolution_chosen": "subconsultant",
+      "rationale": "The solicitation is an 8(a) sole-source set-aside (SBA Acceptance No. GD1662672615W). BFA is not known to be 8(a)-certified, suggesting they would participate as a subconsultant under an 8(a)-certified prime. However, this is inferred — no teaming agreement or contract documents confirm BFA's specific role. Flag for human review."
+    },
+    {
+      "field_path": "facts.program_budget",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "RFP Eastern.pdf p.1",
+          "value": "Between $1,000,000 and $2,000,000 — for all 6 CLINs combined (FAR 36.204 disclosure)"
+        },
+        {
+          "source": "No source",
+          "value": "No per-CLIN budget stated for CLIN 0004 (Wright-Patterson room renovation) specifically"
+        }
+      ],
+      "resolution_chosen": "no individual CLIN value recorded",
+      "rationale": "The FAR 36.204 magnitude disclosure covers the entire multi-location solicitation. CLIN 0004 (WPAFB) is one of 6 line items (dock lift at Ft. Meade MD, restroom reno at Ft. Eustis VA, room reno at WPAFB OH, insulation at JB MDL NJ, dental exhaust at Shaw AFB SC, plus design package). Individual CLIN prices are blank in the schedule of prices pages reviewed. Cannot allocate a project-specific value without additional documentation."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# Fire Protection Engineering — B520 Renovate A3Q Offices
+
+Fire protection engineering on the B520 A3Q Offices renovation at Joint Base Anacostia-Bolling addressed both the wet-pipe automatic sprinkler system and the fire alarm system serving the renovated office suites in Building 520. The fire protection scope required analysis within the context of Building 520's classification as an unlimited-area structure under IBC Section 507.5.
+
+Building 520 exceeds the standard allowable floor area for multi-story, sprinklered, Type VB office or storage occupancy — a threshold the IBC places at 27,000 square feet. The IBC unlimited-area provision under Section 507.5 permits larger floor areas when the building is fully sprinklered and meets specific setback requirements. The fire protection design confirmed that the existing sprinkler system coverage extended to the renovated suites and addressed the modifications necessary to serve the new interior layout, maintaining the conditions required to sustain the building's unlimited-area classification.
+
+The fire alarm scope included work associated with the renovation area. Both the sprinkler and fire alarm systems were documented in the Basis of Design as part of BFA's Design-Build submission to NAVFAC Washington. Detailed system specifics — including hydraulic calculations, device schedules, and panel configurations — are not captured in the project source record and reside in the construction documents.

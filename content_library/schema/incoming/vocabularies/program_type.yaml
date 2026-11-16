@@ -1,0 +1,1116 @@
+vocabulary_id: program_type
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+anchor_standard_version: null
+hierarchy: three_level
+multi_select: true
+governance_notes: |
+  Captures what kind of facility the project IS, independent of who is paying.
+  A federal hospital and a private hospital share program_type=medical_hospital.
+  Three levels: top-level program, mid-level subtype, optional specialization.
+  Most projects use top + subtype; specialization is for projects with
+  distinguishing features that matter for past-performance matching.
+
+  Multi-select supported because mixed-use and complex programs commonly span
+  multiple program types. A K-12 with a community recreation center is both
+  education_k12 and recreational_community.
+future_migration: null
+
+entries:
+  # ============ EDUCATION ============
+  - canonical_id: education
+    display_name: Education
+    definition: Educational facility of any level.
+    parent_id: null
+    aliases:
+      - educational
+    standard_reference: null
+
+  - canonical_id: education_early_childhood
+    display_name: Education — Early Childhood
+    definition: Pre-K, daycare, Head Start, child development center.
+    parent_id: education
+    aliases:
+      - daycare
+      - preschool
+      - cdc
+      - child_development_center
+    standard_reference: null
+
+  - canonical_id: education_k12
+    display_name: Education — K-12
+    definition: Kindergarten through 12th grade public or private school.
+    parent_id: education
+    aliases:
+      - k12
+      - primary_secondary
+    standard_reference: null
+
+  - canonical_id: education_k12_elementary
+    display_name: Education — K-12 Elementary
+    definition: Elementary school (grades K-5 or K-6).
+    parent_id: education_k12
+    aliases:
+      - elementary_school
+    standard_reference: null
+
+  - canonical_id: education_k12_middle
+    display_name: Education — K-12 Middle/Junior
+    definition: Middle or junior high school (grades 6-8 or 7-9).
+    parent_id: education_k12
+    aliases:
+      - middle_school
+      - junior_high
+    standard_reference: null
+
+  - canonical_id: education_k12_high
+    display_name: Education — K-12 High School
+    definition: High school (grades 9-12 or 10-12).
+    parent_id: education_k12
+    aliases:
+      - high_school
+      - secondary_school
+    standard_reference: null
+
+  - canonical_id: education_k12_combined
+    display_name: Education — K-12 Combined
+    definition: Combined-grade school spanning multiple educational levels (K-8, 6-12, K-12).
+    parent_id: education_k12
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: education_k12_dod_dependent
+    display_name: Education — DoD Dependent School
+    definition: DoDEA school operated for military dependents (typically on or near a military installation).
+    parent_id: education_k12
+    aliases:
+      - dodea
+      - dod_school
+      - dependent_school
+    standard_reference: null
+
+  - canonical_id: education_higher_ed
+    display_name: Education — Higher Education
+    definition: Post-secondary educational facility (community college through doctoral institution).
+    parent_id: education
+    aliases:
+      - higher_education
+      - postsecondary
+      - university
+      - college
+    standard_reference: null
+
+  - canonical_id: education_higher_ed_community_college
+    display_name: Education — Community College
+    definition: Two-year public community or technical college facility.
+    parent_id: education_higher_ed
+    aliases:
+      - community_college
+      - junior_college
+    standard_reference: null
+
+  - canonical_id: education_higher_ed_four_year
+    display_name: Education — Four-Year College/University
+    definition: Four-year undergraduate institution facility.
+    parent_id: education_higher_ed
+    aliases:
+      - four_year_college
+      - undergraduate_institution
+    standard_reference: null
+
+  - canonical_id: education_higher_ed_research_university
+    display_name: Education — Research University
+    definition: Doctoral-granting research university facility (R1/R2).
+    parent_id: education_higher_ed
+    aliases:
+      - research_university
+      - r1_university
+    standard_reference: null
+
+  - canonical_id: education_career_technical
+    display_name: Education — Career/Technical
+    definition: Vocational, technical, or trade school facility.
+    parent_id: education
+    aliases:
+      - vocational
+      - trade_school
+      - technical_school
+      - cte
+    standard_reference: null
+
+  - canonical_id: education_library
+    display_name: Education — Library
+    definition: Public, academic, or specialty library facility.
+    parent_id: education
+    aliases:
+      - library
+      - public_library
+      - academic_library
+    standard_reference: null
+
+  # ============ HEALTHCARE ============
+  - canonical_id: healthcare
+    display_name: Healthcare
+    definition: Healthcare facility of any type.
+    parent_id: null
+    aliases:
+      - medical
+    standard_reference: null
+
+  - canonical_id: healthcare_hospital_acute
+    display_name: Healthcare — Acute Care Hospital
+    definition: General acute care hospital with inpatient beds.
+    parent_id: healthcare
+    aliases:
+      - hospital
+      - acute_care_hospital
+      - general_hospital
+    standard_reference: null
+
+  - canonical_id: healthcare_hospital_specialty
+    display_name: Healthcare — Specialty Hospital
+    definition: Specialty hospital (children's, cardiac, orthopedic, psychiatric, rehab, oncology).
+    parent_id: healthcare
+    aliases:
+      - specialty_hospital
+      - childrens_hospital
+      - psychiatric_hospital
+    standard_reference: null
+
+  - canonical_id: healthcare_hospital_critical_access
+    display_name: Healthcare — Critical Access Hospital
+    definition: Rural critical access hospital (CMS-designated CAH).
+    parent_id: healthcare
+    aliases:
+      - cah
+      - critical_access
+      - rural_hospital
+    standard_reference: null
+
+  - canonical_id: healthcare_va_medical
+    display_name: Healthcare — VA Medical Center
+    definition: VA medical center, CBOC, or VA-operated healthcare facility.
+    parent_id: healthcare
+    aliases:
+      - vamc
+      - va_hospital
+      - cboc
+    standard_reference: null
+
+  - canonical_id: healthcare_military_medical
+    display_name: Healthcare — Military Medical Treatment Facility
+    definition: DoD MTF (Walter Reed, Naval medical centers, hospital ships, base clinics).
+    parent_id: healthcare
+    aliases:
+      - mtf
+      - military_hospital
+      - naval_medical
+    standard_reference: null
+
+  - canonical_id: healthcare_ambulatory
+    display_name: Healthcare — Ambulatory/Outpatient
+    definition: Outpatient clinic, surgery center, urgent care, ambulatory care center.
+    parent_id: healthcare
+    aliases:
+      - clinic
+      - outpatient
+      - ambulatory_care
+      - urgent_care
+      - surgery_center
+    standard_reference: null
+
+  - canonical_id: healthcare_medical_office
+    display_name: Healthcare — Medical Office Building
+    definition: Medical office building (MOB) with physician practices.
+    parent_id: healthcare
+    aliases:
+      - mob
+      - medical_office
+      - physician_office
+    standard_reference: null
+
+  - canonical_id: healthcare_behavioral
+    display_name: Healthcare — Behavioral Health
+    definition: Inpatient or outpatient behavioral health, psychiatric, or substance abuse facility.
+    parent_id: healthcare
+    aliases:
+      - behavioral_health
+      - mental_health
+      - psychiatric_facility
+    standard_reference: null
+
+  - canonical_id: healthcare_long_term
+    display_name: Healthcare — Long-Term Care
+    definition: Skilled nursing, assisted living, memory care, hospice, or LTC facility.
+    parent_id: healthcare
+    aliases:
+      - skilled_nursing
+      - snf
+      - assisted_living
+      - hospice
+      - long_term_care
+    standard_reference: null
+
+  - canonical_id: healthcare_research
+    display_name: Healthcare — Research/Teaching Hospital
+    definition: Academic medical center or research hospital with significant research mission.
+    parent_id: healthcare
+    aliases:
+      - academic_medical_center
+      - amc
+      - teaching_hospital
+    standard_reference: null
+
+  - canonical_id: healthcare_diagnostic_imaging
+    display_name: Healthcare — Diagnostic/Imaging
+    definition: Standalone diagnostic imaging or laboratory facility.
+    parent_id: healthcare
+    aliases:
+      - imaging_center
+      - diagnostic_center
+      - medical_lab
+    standard_reference: null
+
+  # ============ CIVIC / GOVERNMENT ============
+  - canonical_id: civic_government
+    display_name: Civic/Government
+    definition: Civic or government office and operations facility.
+    parent_id: null
+    aliases:
+      - civic
+      - government
+    standard_reference: null
+
+  - canonical_id: civic_office
+    display_name: Civic — Government Office
+    definition: General government office building (federal, state, or local administration).
+    parent_id: civic_government
+    aliases:
+      - government_office
+      - federal_office_building
+      - city_hall
+      - state_office
+    standard_reference: null
+
+  - canonical_id: civic_courthouse
+    display_name: Civic — Courthouse
+    definition: Federal, state, or local courthouse facility.
+    parent_id: civic_government
+    aliases:
+      - courthouse
+      - judicial
+    standard_reference: null
+
+  - canonical_id: civic_post_office
+    display_name: Civic — Post Office
+    definition: USPS facility (post office, mail processing, distribution center).
+    parent_id: civic_government
+    aliases:
+      - usps
+      - post_office
+    standard_reference: null
+
+  - canonical_id: civic_embassy
+    display_name: Civic — Embassy/Consulate
+    definition: US diplomatic facility abroad or foreign embassy/consulate in US.
+    parent_id: civic_government
+    aliases:
+      - embassy
+      - consulate
+      - diplomatic_facility
+    standard_reference: null
+
+  - canonical_id: civic_community_center
+    display_name: Civic — Community Center
+    definition: Public community center, senior center, or multi-purpose civic facility.
+    parent_id: civic_government
+    aliases:
+      - community_center
+      - senior_center
+    standard_reference: null
+
+  # ============ JUSTICE / CORRECTIONS ============
+  - canonical_id: justice_corrections
+    display_name: Justice/Corrections
+    definition: Detention, correctional, or judicial-related facility (excluding courthouses).
+    parent_id: null
+    aliases:
+      - corrections
+    standard_reference: null
+
+  - canonical_id: justice_jail
+    display_name: Justice — Jail/Detention
+    definition: County or municipal jail or short-term detention facility.
+    parent_id: justice_corrections
+    aliases:
+      - jail
+      - detention_center
+    standard_reference: null
+
+  - canonical_id: justice_prison
+    display_name: Justice — Prison
+    definition: State or federal prison or long-term correctional facility.
+    parent_id: justice_corrections
+    aliases:
+      - prison
+      - correctional_facility
+      - penitentiary
+    standard_reference: null
+
+  - canonical_id: justice_juvenile
+    display_name: Justice — Juvenile Facility
+    definition: Juvenile detention or rehabilitation facility.
+    parent_id: justice_corrections
+    aliases:
+      - juvenile_detention
+      - juvenile_facility
+    standard_reference: null
+
+  # ============ PUBLIC SAFETY ============
+  - canonical_id: public_safety
+    display_name: Public Safety
+    definition: Public safety facility (police, fire, EMS, emergency operations).
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: public_safety_police
+    display_name: Public Safety — Police
+    definition: Police station, headquarters, or training facility.
+    parent_id: public_safety
+    aliases:
+      - police_station
+      - police_headquarters
+    standard_reference: null
+
+  - canonical_id: public_safety_fire
+    display_name: Public Safety — Fire Station
+    definition: Fire station, fire headquarters, or fire training facility.
+    parent_id: public_safety
+    aliases:
+      - fire_station
+      - firehouse
+    standard_reference: null
+
+  - canonical_id: public_safety_ems
+    display_name: Public Safety — EMS
+    definition: Emergency medical services facility or rescue squad station.
+    parent_id: public_safety
+    aliases:
+      - ems_station
+      - rescue_squad
+    standard_reference: null
+
+  - canonical_id: public_safety_eoc
+    display_name: Public Safety — Emergency Operations Center
+    definition: Emergency operations center, 911 dispatch, or emergency management facility.
+    parent_id: public_safety
+    aliases:
+      - eoc
+      - 911_center
+      - dispatch_center
+    standard_reference: null
+
+  # ============ TRANSPORTATION ============
+  - canonical_id: transportation
+    display_name: Transportation
+    definition: Transportation facility (excluding actual roadways/runways which are infrastructure).
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: transportation_aviation
+    display_name: Transportation — Aviation
+    definition: Airport terminal, hangar, control tower, or aviation support facility.
+    parent_id: transportation
+    aliases:
+      - airport
+      - aviation
+      - hangar
+      - terminal
+    standard_reference: null
+
+  - canonical_id: transportation_transit
+    display_name: Transportation — Transit
+    definition: Transit station, bus terminal, light rail, or transit operations facility.
+    parent_id: transportation
+    aliases:
+      - transit_station
+      - bus_terminal
+      - rail_station
+    standard_reference: null
+
+  - canonical_id: transportation_port_marine
+    display_name: Transportation — Port/Marine
+    definition: Port facility, marine terminal, dock, pier, or shipyard structure.
+    parent_id: transportation
+    aliases:
+      - port
+      - marine_terminal
+      - shipyard
+    standard_reference: null
+
+  - canonical_id: transportation_parking
+    display_name: Transportation — Parking
+    definition: Parking garage, parking structure, or surface parking facility.
+    parent_id: transportation
+    aliases:
+      - parking_garage
+      - parking_structure
+    standard_reference: null
+
+  # ============ UTILITIES / INFRASTRUCTURE ============
+  - canonical_id: utilities_infrastructure
+    display_name: Utilities/Infrastructure
+    definition: Utility production, treatment, or distribution facility.
+    parent_id: null
+    aliases:
+      - infrastructure
+      - utility
+    standard_reference: null
+
+  - canonical_id: utilities_water_treatment
+    display_name: Utilities — Water Treatment
+    definition: Drinking water treatment plant or facility.
+    parent_id: utilities_infrastructure
+    aliases:
+      - wtp
+      - water_treatment_plant
+      - drinking_water
+    standard_reference: null
+
+  - canonical_id: utilities_wastewater
+    display_name: Utilities — Wastewater Treatment
+    definition: Wastewater treatment plant, sewage treatment, or reclamation facility.
+    parent_id: utilities_infrastructure
+    aliases:
+      - wwtp
+      - wastewater_treatment_plant
+      - sewage_treatment
+    standard_reference: null
+
+  - canonical_id: utilities_pump_station
+    display_name: Utilities — Pump Station
+    definition: Water, wastewater, or stormwater pump station.
+    parent_id: utilities_infrastructure
+    aliases:
+      - pump_station
+      - lift_station
+    standard_reference: null
+
+  - canonical_id: utilities_power_generation
+    display_name: Utilities — Power Generation
+    definition: Power generation facility (gas, coal, nuclear, hydro, solar, wind).
+    parent_id: utilities_infrastructure
+    aliases:
+      - power_plant
+      - generation_facility
+    standard_reference: null
+
+  - canonical_id: utilities_substation
+    display_name: Utilities — Electrical Substation
+    definition: Electrical substation or distribution facility.
+    parent_id: utilities_infrastructure
+    aliases:
+      - substation
+      - electrical_substation
+    standard_reference: null
+
+  - canonical_id: utilities_central_plant
+    display_name: Utilities — Central Plant
+    definition: Central energy plant providing chilled water, steam, or heating to a campus.
+    parent_id: utilities_infrastructure
+    aliases:
+      - central_plant
+      - central_energy_plant
+      - district_energy
+    standard_reference: null
+
+  - canonical_id: utilities_solid_waste
+    display_name: Utilities — Solid Waste
+    definition: Solid waste, recycling, or landfill facility.
+    parent_id: utilities_infrastructure
+    aliases:
+      - landfill
+      - waste_facility
+      - recycling_center
+    standard_reference: null
+
+  # ============ MILITARY / DEFENSE ============
+  - canonical_id: military_defense
+    display_name: Military/Defense
+    definition: Military operational, training, or support facility (non-medical, non-housing).
+    parent_id: null
+    aliases:
+      - military
+      - defense
+    standard_reference: null
+
+  - canonical_id: military_operations
+    display_name: Military — Operations Facility
+    definition: Operations center, command facility, mission planning, or tactical operations facility.
+    parent_id: military_defense
+    aliases:
+      - operations_center
+      - command_facility
+      - toc
+      - coc
+    standard_reference: null
+
+  - canonical_id: military_training
+    display_name: Military — Training Facility
+    definition: Military training facility, range, simulator, or schoolhouse.
+    parent_id: military_defense
+    aliases:
+      - training_facility
+      - military_range
+      - simulator
+    standard_reference: null
+
+  - canonical_id: military_maintenance
+    display_name: Military — Maintenance/Hangar
+    definition: Aircraft hangar, vehicle maintenance, weapons maintenance facility.
+    parent_id: military_defense
+    aliases:
+      - aircraft_maintenance
+      - vehicle_maintenance
+      - hangar_military
+    standard_reference: null
+
+  - canonical_id: military_armory
+    display_name: Military — Armory/Reserve Center
+    definition: National Guard armory, reserve center, or readiness center.
+    parent_id: military_defense
+    aliases:
+      - armory
+      - reserve_center
+      - readiness_center
+    standard_reference: null
+
+  - canonical_id: military_housing
+    display_name: Military — Housing
+    definition: Military family housing, barracks, BEQ/BOQ, or unaccompanied personnel housing.
+    parent_id: military_defense
+    aliases:
+      - barracks
+      - beq
+      - boq
+      - military_family_housing
+    standard_reference: null
+
+  - canonical_id: military_dining_morale
+    display_name: Military — Dining/Morale
+    definition: DFAC, mess hall, exchange, commissary, or morale/recreation facility on a military installation.
+    parent_id: military_defense
+    aliases:
+      - dfac
+      - dining_facility
+      - exchange
+      - commissary
+      - mwr
+    standard_reference: null
+
+  - canonical_id: military_secure
+    display_name: Military — SCIF / Secure Facility
+    definition: Sensitive Compartmented Information Facility or other classified-construction secure facility.
+    parent_id: military_defense
+    aliases:
+      - scif
+      - secure_facility
+      - classified_facility
+    standard_reference: null
+
+  # ============ INDUSTRIAL ============
+  - canonical_id: industrial
+    display_name: Industrial
+    definition: Industrial production, processing, or storage facility.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: industrial_manufacturing
+    display_name: Industrial — Manufacturing
+    definition: Manufacturing or production facility.
+    parent_id: industrial
+    aliases:
+      - manufacturing
+      - factory
+      - production_facility
+    standard_reference: null
+
+  - canonical_id: industrial_warehouse
+    display_name: Industrial — Warehouse/Distribution
+    definition: Warehouse, distribution center, or fulfillment facility.
+    parent_id: industrial
+    aliases:
+      - warehouse
+      - distribution_center
+      - fulfillment
+    standard_reference: null
+
+  - canonical_id: industrial_food_processing
+    display_name: Industrial — Food Processing
+    definition: Food and beverage processing or production facility.
+    parent_id: industrial
+    aliases:
+      - food_processing
+      - brewery
+      - meat_processing
+    standard_reference: null
+
+  - canonical_id: industrial_pharmaceutical
+    display_name: Industrial — Pharmaceutical/Biotech
+    definition: Pharmaceutical manufacturing, biotech production, or GMP facility.
+    parent_id: industrial
+    aliases:
+      - pharmaceutical
+      - biotech
+      - gmp_facility
+    standard_reference: null
+
+  - canonical_id: industrial_clean_room
+    display_name: Industrial — Clean Room/Semiconductor
+    definition: Semiconductor fabrication, microelectronics, or critical clean room facility.
+    parent_id: industrial
+    aliases:
+      - cleanroom
+      - fab
+      - semiconductor
+    standard_reference: null
+
+  # ============ COMMERCIAL ============
+  - canonical_id: commercial
+    display_name: Commercial
+    definition: Commercial facility (office, retail, hospitality not separately classified).
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: commercial_office
+    display_name: Commercial — Office
+    definition: Private commercial office building or tenant fit-out.
+    parent_id: commercial
+    aliases:
+      - office_building
+      - corporate_office
+      - tenant_fit_out
+    standard_reference: null
+
+  - canonical_id: commercial_corporate_hq
+    display_name: Commercial — Corporate Headquarters
+    definition: Corporate headquarters or signature office facility.
+    parent_id: commercial
+    aliases:
+      - corporate_hq
+      - headquarters
+    standard_reference: null
+
+  - canonical_id: commercial_mixed_use
+    display_name: Commercial — Mixed-Use
+    definition: Mixed-use development combining residential, retail, office, and/or hospitality.
+    parent_id: commercial
+    aliases:
+      - mixed_use
+      - mixed_use_development
+    standard_reference: null
+
+  # ============ RETAIL ============
+  - canonical_id: retail
+    display_name: Retail
+    definition: Retail facility of any type.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: retail_shopping_center
+    display_name: Retail — Shopping Center
+    definition: Shopping center, lifestyle center, or strip mall.
+    parent_id: retail
+    aliases:
+      - shopping_center
+      - lifestyle_center
+    standard_reference: null
+
+  - canonical_id: retail_big_box
+    display_name: Retail — Big Box/Standalone
+    definition: Big box retail or standalone retail building.
+    parent_id: retail
+    aliases:
+      - big_box
+      - standalone_retail
+    standard_reference: null
+
+  - canonical_id: retail_grocery
+    display_name: Retail — Grocery
+    definition: Grocery store or supermarket.
+    parent_id: retail
+    aliases:
+      - grocery
+      - supermarket
+    standard_reference: null
+
+  - canonical_id: retail_restaurant
+    display_name: Retail — Restaurant/Food Service
+    definition: Restaurant, quick service restaurant, or food service facility.
+    parent_id: retail
+    aliases:
+      - restaurant
+      - qsr
+      - food_service
+    standard_reference: null
+
+  - canonical_id: retail_automotive
+    display_name: Retail — Automotive
+    definition: Auto dealership, service center, or automotive retail facility.
+    parent_id: retail
+    aliases:
+      - auto_dealership
+      - automotive_retail
+    standard_reference: null
+
+  # ============ HOSPITALITY ============
+  - canonical_id: hospitality
+    display_name: Hospitality
+    definition: Hospitality facility (hotel, resort, conference, gaming).
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: hospitality_hotel
+    display_name: Hospitality — Hotel
+    definition: Hotel, motel, or limited-service lodging.
+    parent_id: hospitality
+    aliases:
+      - hotel
+      - motel
+    standard_reference: null
+
+  - canonical_id: hospitality_resort
+    display_name: Hospitality — Resort
+    definition: Resort, full-service destination hospitality.
+    parent_id: hospitality
+    aliases:
+      - resort
+    standard_reference: null
+
+  - canonical_id: hospitality_conference
+    display_name: Hospitality — Conference/Convention
+    definition: Conference center, convention center, or large meeting facility.
+    parent_id: hospitality
+    aliases:
+      - conference_center
+      - convention_center
+    standard_reference: null
+
+  - canonical_id: hospitality_gaming
+    display_name: Hospitality — Gaming/Casino
+    definition: Casino or gaming facility.
+    parent_id: hospitality
+    aliases:
+      - casino
+      - gaming
+    standard_reference: null
+
+  # ============ RESIDENTIAL ============
+  - canonical_id: residential
+    display_name: Residential
+    definition: Residential facility of any type.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: residential_single_family
+    display_name: Residential — Single-Family
+    definition: Single-family detached residence.
+    parent_id: residential
+    aliases:
+      - single_family
+      - sfr
+      - custom_home
+    standard_reference: null
+
+  - canonical_id: residential_multifamily
+    display_name: Residential — Multifamily
+    definition: Apartment, condominium, or other multifamily housing.
+    parent_id: residential
+    aliases:
+      - multifamily
+      - apartments
+      - condominium
+    standard_reference: null
+
+  - canonical_id: residential_affordable
+    display_name: Residential — Affordable Housing
+    definition: Income-restricted, LIHTC, public housing, or affordable housing project.
+    parent_id: residential
+    aliases:
+      - affordable_housing
+      - lihtc
+      - public_housing
+    standard_reference: null
+
+  - canonical_id: residential_student
+    display_name: Residential — Student Housing
+    definition: Dormitory or off-campus student housing.
+    parent_id: residential
+    aliases:
+      - dormitory
+      - student_housing
+      - residence_hall
+    standard_reference: null
+
+  - canonical_id: residential_senior
+    display_name: Residential — Senior Living
+    definition: Independent senior living, age-restricted housing (excluding skilled nursing).
+    parent_id: residential
+    aliases:
+      - senior_living
+      - independent_living
+      - 55_plus
+    standard_reference: null
+
+  # ============ RECREATIONAL ============
+  - canonical_id: recreational
+    display_name: Recreational
+    definition: Recreation, sports, or entertainment facility.
+    parent_id: null
+    aliases:
+      - recreation
+    standard_reference: null
+
+  - canonical_id: recreational_community
+    display_name: Recreational — Community Recreation
+    definition: Community recreation center, YMCA, or public recreation facility.
+    parent_id: recreational
+    aliases:
+      - rec_center
+      - community_recreation
+      - ymca
+    standard_reference: null
+
+  - canonical_id: recreational_athletic
+    display_name: Recreational — Athletic Facility
+    definition: Athletic facility, gymnasium, fitness center, or training facility.
+    parent_id: recreational
+    aliases:
+      - gymnasium
+      - athletic_facility
+      - fitness_center
+    standard_reference: null
+
+  - canonical_id: recreational_aquatic
+    display_name: Recreational — Aquatic
+    definition: Pool, natatorium, or aquatic center.
+    parent_id: recreational
+    aliases:
+      - pool
+      - natatorium
+      - aquatic_center
+    standard_reference: null
+
+  - canonical_id: recreational_stadium_arena
+    display_name: Recreational — Stadium/Arena
+    definition: Stadium, arena, ballpark, or large spectator venue.
+    parent_id: recreational
+    aliases:
+      - stadium
+      - arena
+      - ballpark
+    standard_reference: null
+
+  - canonical_id: recreational_park_outdoor
+    display_name: Recreational — Park/Outdoor
+    definition: Park building, pavilion, trail facility, or outdoor recreation support.
+    parent_id: recreational
+    aliases:
+      - park
+      - pavilion
+      - trail_facility
+    standard_reference: null
+
+  # ============ RELIGIOUS ============
+  - canonical_id: religious
+    display_name: Religious
+    definition: Religious facility (church, synagogue, mosque, temple, religious campus).
+    parent_id: null
+    aliases:
+      - worship
+      - house_of_worship
+    standard_reference: null
+
+  - canonical_id: religious_worship
+    display_name: Religious — Worship Space
+    definition: Sanctuary, chapel, or primary worship facility.
+    parent_id: religious
+    aliases:
+      - church
+      - synagogue
+      - mosque
+      - temple
+    standard_reference: null
+
+  - canonical_id: religious_education
+    display_name: Religious — Religious Education/School
+    definition: Religious school, seminary, or religious education facility.
+    parent_id: religious
+    aliases:
+      - religious_school
+      - seminary
+    standard_reference: null
+
+  # ============ CULTURAL ============
+  - canonical_id: cultural
+    display_name: Cultural
+    definition: Cultural facility (museum, performing arts, gallery, historic).
+    parent_id: null
+    aliases:
+      - arts
+    standard_reference: null
+
+  - canonical_id: cultural_museum
+    display_name: Cultural — Museum
+    definition: Museum, exhibit hall, or interpretive center.
+    parent_id: cultural
+    aliases:
+      - museum
+      - exhibit_hall
+    standard_reference: null
+
+  - canonical_id: cultural_performing_arts
+    display_name: Cultural — Performing Arts
+    definition: Theater, concert hall, or performing arts venue.
+    parent_id: cultural
+    aliases:
+      - theater
+      - performing_arts_center
+      - concert_hall
+    standard_reference: null
+
+  - canonical_id: cultural_historic
+    display_name: Cultural — Historic Preservation
+    definition: Historic preservation, restoration, or adaptive reuse project.
+    parent_id: cultural
+    aliases:
+      - historic_preservation
+      - restoration
+      - adaptive_reuse
+    standard_reference: null
+
+  # ============ SCIENCE / RESEARCH ============
+  - canonical_id: science_research
+    display_name: Science/Research
+    definition: Laboratory, research, or science facility.
+    parent_id: null
+    aliases:
+      - laboratory
+      - research
+    standard_reference: null
+
+  - canonical_id: science_wet_lab
+    display_name: Science — Wet Laboratory
+    definition: Wet laboratory facility (chemistry, biology, biomedical).
+    parent_id: science_research
+    aliases:
+      - wet_lab
+      - biology_lab
+      - chemistry_lab
+    standard_reference: null
+
+  - canonical_id: science_dry_lab
+    display_name: Science — Dry Laboratory
+    definition: Dry laboratory facility (computational, electronics, engineering).
+    parent_id: science_research
+    aliases:
+      - dry_lab
+    standard_reference: null
+
+  - canonical_id: science_biocontainment
+    display_name: Science — Biocontainment
+    definition: BSL-3, BSL-4, or other biocontainment laboratory.
+    parent_id: science_research
+    aliases:
+      - bsl3
+      - bsl4
+      - biocontainment
+    standard_reference: null
+
+  - canonical_id: science_animal_research
+    display_name: Science — Animal Research
+    definition: Vivarium or animal research facility.
+    parent_id: science_research
+    aliases:
+      - vivarium
+      - animal_facility
+    standard_reference: null
+
+  - canonical_id: science_observatory
+    display_name: Science — Observatory/Specialty
+    definition: Observatory, telescope facility, or other specialty scientific facility.
+    parent_id: science_research
+    aliases:
+      - observatory
+    standard_reference: null
+
+  # ============ DATA / TELECOM ============
+  - canonical_id: data_telecom
+    display_name: Data/Telecom
+    definition: Data center, telecommunications, or mission-critical IT facility.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: data_center
+    display_name: Data — Data Center
+    definition: Enterprise, colocation, or hyperscale data center.
+    parent_id: data_telecom
+    aliases:
+      - data_center
+      - colocation
+      - hyperscale
+    standard_reference: null
+
+  - canonical_id: data_telecom_central_office
+    display_name: Data — Telecom Central Office/Hub
+    definition: Telecom central office, network operations center, or carrier hotel.
+    parent_id: data_telecom
+    aliases:
+      - central_office
+      - noc
+      - carrier_hotel
+    standard_reference: null
+
+  - canonical_id: data_mission_critical
+    display_name: Data — Mission-Critical IT
+    definition: Mission-critical IT facility (financial trading floor, control room, 24/7 operations).
+    parent_id: data_telecom
+    aliases:
+      - mission_critical
+      - control_room
+    standard_reference: null
+
+  # ============ AGRICULTURAL ============
+  - canonical_id: agricultural
+    display_name: Agricultural
+    definition: Agricultural production, processing, or support facility.
+    parent_id: null
+    aliases: []
+    standard_reference: null
+
+  - canonical_id: agricultural_greenhouse
+    display_name: Agricultural — Greenhouse/Controlled Environment
+    definition: Greenhouse, controlled environment agriculture, or horticultural facility.
+    parent_id: agricultural
+    aliases:
+      - greenhouse
+      - cea
+    standard_reference: null
+
+  - canonical_id: agricultural_livestock
+    display_name: Agricultural — Livestock
+    definition: Livestock or dairy facility.
+    parent_id: agricultural
+    aliases:
+      - dairy
+      - livestock
+    standard_reference: null

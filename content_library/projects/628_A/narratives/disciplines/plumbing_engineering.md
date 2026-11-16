@@ -1,0 +1,7 @@
+# Plumbing Engineering — Building 6-28A Title II Services
+
+BFA's plumbing engineering role on the Building 6-28A Dynamometer Building project encompassed review and update of the 2017 plumbing design and Title II construction-phase services as engineer of record.
+
+The plumbing scope included domestic water service to the new building and sanitary waste drainage. A notable plumbing design challenge involved the sanitary waste discharge point: the SOW identified that the existing lift station serving the 6-area (to which the original 2017 design routed Building 6-28A's sanitary waste) was already serving three existing buildings and was inadequate in capacity for the additional load. Additionally, the new asphalt concrete roadway to Building 6-28A would conflict with the existing lift station location. BFA's updated design addressed this by incorporating a replacement lift station of adequate capacity, relocated a minimum of ten feet from Building 6-28, with revised routing to accommodate the new road configuration.
+
+The building's compressed air system — an Ingersoll Rand 15HP rotary screw compressor — was coordinated under the mechanical scope; compressed air distribution within the facility was incorporated into BFA's overall systems coordination as engineer of record. The source documents do not describe natural gas service to this building. BFA provided periodic plumbing inspection during construction and participated in building commissioning oversight for plumbing systems.

@@ -1,0 +1,454 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "eye_wash",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/jlab/eye_wash/Site Eyewash and Safety Shower Stations_BOD_Final.pdf",
+      "type": "bod",
+      "sha256": "d6a21d7cbbac70af01535b256ab58b06afba3a25ae4f29a692c6374fe9cc60ea",
+      "included": true,
+      "notes": "Final BOD submittal dated March 25, 2024"
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/eye_wash/Task Order Ltr TO 07 package.pdf",
+      "type": "sow",
+      "sha256": "4d14bee384cbd64ca9ed01104861d4b0e4d685dc6457da78574945ddc6413a93",
+      "included": true,
+      "notes": "Task Order solicitation letter dated March 7, 2023 plus A-E Project Task Order scope document (TO 07 under contract JSA 21-C0683)"
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/eye_wash/21C0683007.pdf",
+      "type": "contract",
+      "sha256": "bc72108b5846282e187d56cfb7bff8f5f83d97dfed46fd4b120753000ca79bfe",
+      "included": true,
+      "notes": "Purchase Order 21C0683007 dated 04/19/2023 — executed contract for Task 7; includes attached task order scope"
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set PDF present in intake folder. BOD, task order scope, and executed PO present. No spec book."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Site Eyewash and Safety Shower Stations",
+      "source": "PO 21C0683007, Task Order scope",
+      "quote": "Project Title: Site Eyewash and Safety Shower Stations",
+      "corroboration": [
+        {
+          "source": "PO 21C0683007, line item 1",
+          "claim": "TASK 7 - DESIGN OF SITE EYEWASH AND SAFETY SHOWERS PER TASK ORDER SPECIFICATION",
+          "value": "Site Eyewash and Safety Shower Stations",
+          "agrees": true
+        },
+        {
+          "source": "BOD Final p.1",
+          "claim": "EYE WASH AND SAFETY SHOWER DESIGN / Site Eyewash and Safety Shower Stations",
+          "value": "Site Eyewash and Safety Shower Stations",
+          "agrees": true
+        },
+        {
+          "source": "Task Order Ltr, subject line",
+          "claim": "JSA 21-C0683 Request for Proposal Eye Wash Station Design",
+          "value": "Eye Wash Station Design",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Science Associates, LLC / Jefferson Lab",
+      "source": "PO 21C0683007 header",
+      "quote": "JSA, LLC / JEFFERSON LAB",
+      "corroboration": [
+        {
+          "source": "PO 21C0683007 header",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "value": "Jefferson Science Associates, LLC / Jefferson Lab",
+          "agrees": true
+        },
+        {
+          "source": "Task Order Ltr TO 07",
+          "claim": "Jefferson Lab is considering issuing you the above referenced Task Order",
+          "value": "Jefferson Lab",
+          "agrees": true
+        },
+        {
+          "source": "BOD Final p.1",
+          "claim": "Jefferson Lab, Newport News, VA",
+          "value": "Jefferson Lab",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Jefferson Science Associates, LLC (operating Jefferson Lab for U.S. Department of Energy)",
+      "source": "PO 21C0683007 header",
+      "quote": "JSA, LLC / JEFFERSON LAB",
+      "corroboration": [
+        {
+          "source": "PO 21C0683007 header",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "value": "JSA, LLC / Jefferson Lab",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "12000 Jefferson Ave, Newport News, VA 23606",
+      "source": "BOD Final p.1",
+      "quote": "12000 Jefferson Ave  Newport News, VA 23606",
+      "corroboration": [
+        {
+          "source": "BOD Final p.1",
+          "claim": "12000 Jefferson Ave  Newport News, VA 23606",
+          "value": "12000 Jefferson Ave, Newport News, VA 23606",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683007, Ship To",
+          "claim": "12000 JEFFERSON AVE., SUITE 12  NEWPORT NEWS, VA 23606",
+          "value": "12000 Jefferson Ave, Newport News, VA 23606",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "21C0683007",
+      "source": "PO 21C0683007 header",
+      "quote": "Purchase Order: 21C0683007",
+      "corroboration": [
+        {
+          "source": "PO 21C0683007 header",
+          "claim": "Purchase Order: 21C0683007",
+          "value": "21C0683007",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "JSA 21-C0683",
+      "source": "Task Order Ltr TO 07, subject line",
+      "quote": "JSA 21-C0683 Request for Proposal Eye Wash Station Design",
+      "corroboration": [
+        {
+          "source": "Task Order Ltr TO 07",
+          "claim": "JSA 21-C0683",
+          "value": "JSA 21-C0683",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683007, terms",
+          "claim": "TERMS AND CONDITIONS OF 21-C0683 IS APPLICABLE",
+          "value": "JSA 21-C0683",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "Task Order 7 (TO 07)",
+      "source": "Task Order Ltr TO 07, filename and PO line item",
+      "quote": "TASK 7 - DESIGN OF SITE EYEWASH AND SAFETY SHOWERS PER TASK ORDER SPECIFICATION",
+      "corroboration": [
+        {
+          "source": "PO 21C0683007, line item 1",
+          "claim": "TASK 7",
+          "value": "Task Order 7",
+          "agrees": true
+        },
+        {
+          "source": "Task Order Ltr TO 07, document title",
+          "claim": "TO 07 package",
+          "value": "Task Order 7",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Project is a multi-building site-wide safety infrastructure upgrade; not characterised by gross square footage in source documents."
+    },
+    "program_budget": {
+      "value": 260000,
+      "currency": "USD",
+      "source": "Task Order scope, TO 07 package p.1",
+      "quote": "Project Budget: $260,000",
+      "corroboration": [
+        {
+          "source": "Task Order Ltr TO 07 package, task order scope section",
+          "claim": "Project Budget: $260,000",
+          "value": 260000,
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683007, task order scope attachment",
+          "claim": "Project Budget: $260,000",
+          "value": 260000,
+          "agrees": true
+        }
+      ]
+    },
+    "site_locations_count": {
+      "value": "approximately 20+",
+      "source": "Task Order scope location table, TO 07 package",
+      "quote": null,
+      "notes": "Location table in task order scope lists approximately 20 distinct building/room locations across Jefferson Lab site (Bldg 36, 38, 55, 57, 58, 67, 90, 96, 201, Hall C, Hall D, LERF, and others). Exact count is ~20 but the table is not explicitly totaled.",
+      "flag_for_human_review": true
+    },
+    "codes_standards": {
+      "value": [
+        "ANSI Z358-2014",
+        "International Plumbing Code",
+        "NFPA 70 (National Electrical Code)",
+        "Jefferson Lab Design Standard",
+        "ANSI/ASHRAE/IESNA Standard 90.1-2019",
+        "DOE O 436.1",
+        "10 CFR Part 433",
+        "10 CFR Part 434"
+      ],
+      "source": "BOD Final; Task Order scope",
+      "quote": "ANSI Z358.-2014, the International Plumbing Code, and the National Electrical Code (NFPA 70), and the Jefferson Lab's Design Standard"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 37211,
+        "currency": "USD",
+        "source": "PO 21C0683007, line item 1",
+        "quote": "$37,211.00",
+        "corroboration": [
+          {
+            "source": "PO 21C0683007, line item 1 extended cost",
+            "claim": "$37,211.00",
+            "value": 37211,
+            "agrees": true
+          },
+          {
+            "source": "PO 21C0683007, PO Total Amt",
+            "claim": "PO Total Amt: $37,211.00",
+            "value": 37211,
+            "agrees": true
+          }
+        ]
+      },
+      "awarded_date": {
+        "value": "2023-04-19",
+        "source": "PO 21C0683007 header",
+        "quote": "Order Date  04/19/2023",
+        "corroboration": [
+          {
+            "source": "PO 21C0683007 header",
+            "claim": "Order Date 04/19/2023",
+            "value": "2023-04-19",
+            "agrees": true
+          },
+          {
+            "source": "PO 21C0683007, Authorized Signature date",
+            "claim": "Carolyn Stepney Date: 2023.04.21",
+            "value": "2023-04-21",
+            "agrees": false,
+            "note": "Signature date 2023-04-21 is 2 days after PO order date — minor discrepancy, PO order date used as awarded_date"
+          }
+        ]
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "NTP date not stated in source documents; PO order date 2023-04-19 is a proxy but not confirmed NTP."
+      },
+      "completion_date": {
+        "value": "2024-03-25",
+        "source": "BOD Final p.1",
+        "quote": "FINAL SUBMITTAL  March 25, 2024",
+        "corroboration": [
+          {
+            "source": "BOD Final p.1",
+            "claim": "FINAL SUBMITTAL  March 25, 2024",
+            "value": "2024-03-25",
+            "agrees": true
+          },
+          {
+            "source": "PO 21C0683007, desired date",
+            "claim": "Desired Date: 09/15/23",
+            "value": "2023-09-15",
+            "agrees": false,
+            "note": "PO desired delivery date was 09/15/2023 but final BOD is dated 2024-03-25 — approximately 6 months later than desired. Possible schedule overrun or scope changes; used BOD final submittal date as actual completion."
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": 137,
+        "source": "Task Order scope, TO 07 package p.4",
+        "quote": "137 Days  From Date of NTP",
+        "corroboration": [
+          {
+            "source": "Task Order scope submittal schedule",
+            "claim": "137 Days  From Date of NTP",
+            "value": 137,
+            "agrees": true
+          }
+        ]
+      },
+      "change_orders": {
+        "value": [],
+        "status": "missing",
+        "notes": "No change order documents in source set. Cannot determine whether COs were issued."
+      },
+      "actual_value": {
+        "value": 37211,
+        "currency": "USD",
+        "source": "computed",
+        "quote": null,
+        "notes": "No change orders found; actual = contract value."
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction was not in BFA scope. Program budget $260,000 is the owner's total project budget (includes construction), not a BFA construction contract."
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [
+      "science_wet_lab"
+    ],
+    "disciplines": [
+      "plumbing_engineering",
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "hvac_design",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "hvac_systems"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "mechanical_hvac",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_idiq"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "jefferson_lab",
+    "jlab",
+    "doe_facility",
+    "safety_infrastructure",
+    "eyewash",
+    "safety_shower",
+    "newport_news",
+    "multi_building",
+    "on_call_idiq",
+    "ansi_z358",
+    "tepid_water"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Bruce Bowman",
+      "role_on_project": "principal_in_charge",
+      "note": "Listed as contact on PO: 'Contact: BRUCE BOWMAN Phone: (757) 466-7400'"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing set PDF present in intake folder. drawing_extraction_status set to deferred."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "phases.design.completion_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "PO 21C0683007, desired date",
+          "value": "2023-09-15"
+        },
+        {
+          "source": "BOD Final p.1",
+          "value": "2024-03-25"
+        }
+      ],
+      "resolution_chosen": "BOD Final p.1 (2024-03-25)",
+      "rationale": "The PO desired date (09/15/2023) is a target/contractual deadline, not the actual completion date. The BOD marked 'FINAL SUBMITTAL March 25, 2024' is the best evidence of when design was actually completed. The ~6 month delta suggests a schedule overrun or scope extension; no change order documents are present to confirm."
+    },
+    {
+      "field_path": "phases.design.awarded_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "PO 21C0683007 order date",
+          "value": "2023-04-19"
+        },
+        {
+          "source": "PO 21C0683007, authorized signature date",
+          "value": "2023-04-21"
+        }
+      ],
+      "resolution_chosen": "PO 21C0683007 order date (2023-04-19)",
+      "rationale": "Minor 2-day discrepancy between PO print date and signature date. PO order date used as awarded date as it represents the formal procurement system date."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

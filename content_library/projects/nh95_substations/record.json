@@ -1,0 +1,601 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nh95_substations",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_substations/1581202_SAES.pdf",
+      "type": "sow",
+      "sha256": "5c27a4b459b72ec9794ed8febae83838e8e458dd3de134db58b5fbf14044ad92",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES) Work Order 1581202 — Replace NH-95 Substations A,B,K,L. FY2022 Special Project ST 16-1108. Contract N40085-20-D-0005. NAVFAC MIDLANT."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_substations/1687416_SAES.pdf",
+      "type": "sow",
+      "sha256": "f69cb1a55bc086e15d2d73c64836d6bb4b93e47faf626266d707c2236de7d730",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES) Work Order 1687416 — Replace Switchgear & Transformers in 8 Substations C/D E/F G/H I/J. FY2022 Special Project ST18-2444. Contract N40085-20-D-0005 / Task Order N4008521F4769. NAVFAC MIDLANT."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_substations/20-007A.2022.03.30.FINAL SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "ee3884d76df70ecd8e19917b17195ddd15946b0dcb93995b7cd339ef63ea3c19",
+      "included": true,
+      "notes": "Basis of Design, Final Submittal (March 30, 2022). Covers Replace NH-95 Substations A,B,K,L. BFA Project 20-007A. eProject WO No. 1581202. Includes full multi-discipline BOD, Hazmat Report (GER), Geotechnical Report (GER), and safety checklist."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_substations/20-007A1.2022.04.15.FINAL SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "ca9112377ddf9c95393419b7e08d39f16fbcf87854e9e947198045ec8c66e459",
+      "included": true,
+      "notes": "Basis of Design, Final Submittal revised version (April 15, 2022). Same project scope as 20-007A BOD; April 15 revision. Contents appear identical or minimally revised from March 30 version."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_substations/NH-95 Switchgear Replacement Statement of Work.pdf",
+      "type": "cost_estimate",
+      "sha256": "5677b9cd91eb55ee7ab93b9f90fd1b8908b3155eb97cbf537d041d2a6c7ba261",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Schneider Electric equipment quote Q-1534683 (dated Feb 14, 2020) for Switchboards L&K, A, and B. Includes Description of Work header noting estimated construction value $1,800,000. This is a vendor equipment quote / basis-of-cost document, not a prime-contract SOW. Classified as cost_estimate. Estimated construction value per this quote: $1,800,000 (equipment only, pre-design)."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "Two SAESs (A,B,K,L and C-J substations), two BOD revisions for A,B,K,L, and one vendor equipment quote present. No drawing set or spec book in intake directory."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Replace NH-95 Substations A, B, K & L (and C/D E/F G/H I/J)",
+      "source": "SAES 1581202 p.1; SAES 1687416 p.1",
+      "quote": "Replace NH-95 Substations A,B,K, & L",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 p.1",
+          "claim": "Replace NH-95 Substations A,B,K, & L",
+          "value": "Replace NH-95 Substations A, B, K & L",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 p.1",
+          "claim": "REPLACE SWITCH GEAR & TRANSFORMERS IN 8 SUBSTATION C/D E/F G/H I/J WITH REDUNDANCY ON SWITCH GEAR",
+          "value": "Replace NH-95 Substations C/D E/F G/H I/J (Phase 2)",
+          "agrees": true,
+          "note": "Two separate task orders covering the full NH-95 substation replacement program"
+        },
+        {
+          "source": "BOD 20-007A p.5",
+          "claim": "REPLACE NH-95 SUBSTATIONS A,B,K & L",
+          "value": "Replace NH-95 Substations A, B, K & L",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC) Mid-Atlantic",
+      "source": "SAES 1581202 p.1",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 p.1",
+          "claim": "NAVFAC MIDLANT",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 p.1",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) MIDLANT FEAD will administer this T.O.",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "BOD 20-007A cover",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND (NAVFAC) MIDLANT FEAD",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Support Activity Hampton Roads / Department of the Navy",
+      "source": "SAES 1581202 p.1",
+      "quote": "Naval Support Activity Hampton Roads",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 p.1",
+          "claim": "Naval Support Activity Hampton Roads",
+          "value": "Naval Support Activity Hampton Roads",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 p.1",
+          "claim": "Naval Support Activity Hampton Roads",
+          "value": "Naval Support Activity Hampton Roads",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Support Activity Hampton Roads, Building NH-95",
+      "facility_address": null,
+      "source": "SAES 1581202 A1; BOD 20-007A Civil section",
+      "quote": "The project site is located on the north central part of eastern portion of Naval Support Activity, Norfolk, VA. on the west side of building NH-95.",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 p.1",
+          "claim": "Naval Support Activity Hampton Roads",
+          "value": "Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 A1",
+          "claim": "Naval Support Activity Hampton Roads",
+          "value": "Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "BOD 20-007A Civil section",
+          "claim": "Naval Support Activity, Norfolk, VA",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-007A",
+      "source": "BOD 20-007A cover page",
+      "quote": "BFA Project #20-007A",
+      "corroboration": [
+        {
+          "source": "BOD 20-007A cover",
+          "claim": "BFA Project #20-007A",
+          "value": "20-007A",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "FY2022 Special Project ST 16-1108 (A,B,K,L); FY2022 Special Project ST18-2444 (C-J)",
+      "source": "SAES 1581202 cover; SAES 1687416 cover",
+      "quote": "FY2022 SPECIAL PROJECT #ST 16-1108",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 cover",
+          "claim": "FY2022 SPECIAL PROJECT #ST 16-1108",
+          "value": "ST 16-1108",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 cover",
+          "claim": "FY 2022 SPECIAL PROJECT #ST18-2444",
+          "value": "ST18-2444",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-20-D-0005",
+      "source": "SAES 1581202 A1",
+      "quote": "Contract No. N40085-20-D-0005",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 A1",
+          "claim": "Contract No. N40085-20-D-0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 A1",
+          "claim": "Contract No. N40085-20-D-0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "WO 1581202 (A,B,K,L); Task Order N4008521F4769 / WO 1687416 (C-J)",
+      "source": "SAES 1581202 A1; SAES 1687416 A1",
+      "quote": "eProjects Work Order number 1581202",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 A1",
+          "claim": "eProjects Work Order number 1581202",
+          "value": "WO 1581202",
+          "agrees": true
+        },
+        {
+          "source": "SAES 1687416 A1",
+          "claim": "Task Order No. N4008521F4769; eProjects Work Order number 1687416",
+          "value": "N4008521F4769 / WO 1687416",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Project is MEP/electrical infrastructure replacement within existing Building NH-95; square footage not a primary scope metric. BOD notes vault A&B expansion of approximately 42'-0\" x 19'-0\" with 14'-6\" ceiling. Total building NH-95 square footage not stated in available documents."
+    },
+    "program_budget": {
+      "value": 8392000,
+      "currency": "USD",
+      "source": "SAES 1581202 C1",
+      "quote": "Project Cost/Program Amount: $8,392,000",
+      "note": "This is for substations A,B,K,L only. No program amount stated in SAES 1687416 for C-J.",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 C1",
+          "claim": "$8,392,000",
+          "value": 8392000,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Full A-E design services for replacement of 12 substations (A, B, C, D, E, F, G, H, I, J, K, L) within Building NH-95 at Naval Support Activity Hampton Roads, Norfolk, VA. Existing substations were beyond their useful life with leaking oil-filled transformers and obsolete breakers. Scope included: demolish existing switchgear and oil-filled transformers; provide new exterior pad-mounted transformers for each substation; provide service-entrance-rated double-ended switchboards with automatic transfer switches; modify existing primary and secondary ductbanks and manholes; architectural vault expansions (A&B: ~42'x19'; C/D/F: ~37'x11'); structural pile foundation for addition; fire protection modifications; mechanical ventilation; hazardous materials survey/abatement (lead paint, PCBs, asbestos); geotechnical investigation; civil site improvements; erosion and sediment control; arc flash/coordination studies; circuit trace drawings for all substations. Delivery method: Design-Bid-Build.",
+      "source": "SAES 1581202 A2; SAES 1687416 A2; BOD 20-007A",
+      "quote": "This project includes the complete design for the replacement of existing substations A, B, K and L. Substations A, B, K and L are beyond their useful life. The existing transformers are leaking oil and the existing breakers are no longer able to be purchased and replaced."
+    },
+    "construction_completion_date_abkl": {
+      "value": "2022-09-30",
+      "source": "SAES 1581202 A1",
+      "quote": "Estimated Construction Completion Date 30SEPT2022",
+      "corroboration": [
+        {
+          "source": "SAES 1581202 A1",
+          "claim": "30SEPT2022",
+          "value": "2022-09-30",
+          "agrees": true
+        }
+      ]
+    },
+    "construction_completion_date_cj": {
+      "value": "2024-05-27",
+      "source": "SAES 1687416 A1",
+      "quote": "Estimated Construction Completion Date 27MAY2024",
+      "corroboration": [
+        {
+          "source": "SAES 1687416 A1",
+          "claim": "27MAY2024",
+          "value": "2024-05-27",
+          "agrees": true
+        }
+      ]
+    },
+    "bod_submittal_date": {
+      "value": "2022-03-30",
+      "source": "BOD 20-007A cover",
+      "quote": "March 30, 2022",
+      "corroboration": [
+        {
+          "source": "BOD 20-007A cover",
+          "claim": "March 30, 2022",
+          "value": "2022-03-30",
+          "agrees": true
+        },
+        {
+          "source": "BOD 20-007A1 cover",
+          "claim": "April 15, 2022 (revised)",
+          "value": "2022-04-15 revised",
+          "agrees": true
+        }
+      ]
+    },
+    "hazardous_materials_present": {
+      "value": true,
+      "source": "BOD 20-007A Environmental section; SAES 1581202 D4f",
+      "quote": "Lead paint; Oil Filled Transformers; Asbestos Containing Ductbank and Manholes",
+      "notes": "HazMat survey found: no ACM in sampled areas, but lead/cadmium/chromium in paint samples confirmed above laboratory MDL. PCBs not present in transformer oil (< 1 PPM). Fluorescent light tubes assumed mercury-containing."
+    },
+    "building_construction_date": {
+      "value": "circa 1950s",
+      "source": "BOD 20-007A Environmental section / Hazmat Report",
+      "quote": "Building NH-95 was constructed in the 1950s. There have been various additions to the building over the years.",
+      "corroboration": [
+        {
+          "source": "BOD 20-007A Hazmat Report",
+          "claim": "Building NH-95 was constructed in the 1950s",
+          "value": "circa 1950s",
+          "agrees": true
+        }
+      ]
+    },
+    "geotechnical_findings": {
+      "value": "Site Class D; no liquefaction potential; soils are medium dense to very loose silty/clayey sands to 30 ft, clays/silts to ~65 ft, sands below. Groundwater 7–10 ft below grade. Helical piles recommended for building addition (30-kip capacity at 25 ft depth). Mildly corrosive soils.",
+      "source": "BOD 20-007A Geotechnical section; Geotechnical Report (GER 110-7881)",
+      "quote": "Seismic Site Class D is expected to be appropriate for the project site based on this exploration and our past experience."
+    },
+    "substation_equipment_summary": {
+      "value": "Substations A & B: 3000A, 208Y/120V services with 1000 kVA oil-filled transformers (existing), replaced with new exterior pad-mounted 1000 kVA transformers and 3000A double-ended switchboards. Substations K & L: 4000A, 480Y/277V services with 2500 kVA oil-filled transformers (existing), replaced with new exterior pad-mounted 2500 kVA transformers and 4000A double-ended switchboards with auto-throwover. Substations C-J: 8 substations with new exterior transformers and double-ended switchboards with redundancy. All switchboards are Square D/Schneider QED-2 or QED-6 construction with MasterPact MTZ circuit breakers.",
+      "source": "BOD 20-007A Electrical section; Vendor quote Q-1534683",
+      "quote": "The existing substations A & B are 3000A, 208Y/120V, 3 phase, 4 wire services. [...] The existing substations K & L are 4000A, 480Y/277V, 3 phase, 4 wire services."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "A-E fee not stated in SAES documents; fee to be negotiated per IDIQ pre-negotiated rates. No design contract value found in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-03-30",
+        "source": "BOD 20-007A cover (Final Submittal date for A,B,K,L)",
+        "quote": "FINAL SUBMITTAL ... March 30, 2022",
+        "notes": "BOD Final Submittal date used as design completion proxy for A,B,K,L scope."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction is a separate GC contract. ECC for A,B,K,L per SAES: $6,475,000. ECC for C-J per SAES: $32,331,000. These are estimated construction costs, not awarded values."
+      },
+      "estimated_construction_cost_abkl": {
+        "value": 6475000,
+        "currency": "USD",
+        "source": "SAES 1581202 C2",
+        "quote": "Estimated Construction Cost (ECC): $6,475,000"
+      },
+      "estimated_construction_cost_cj": {
+        "value": 32331000,
+        "currency": "USD",
+        "source": "SAES 1687416 C2",
+        "quote": "Estimated Construction Cost (ECC): $32,331,000"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Estimated dates: 30SEPT2022 (A,B,K,L) and 27MAY2024 (C-J). Actual completion unknown."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "utilities_infrastructure"
+    ],
+    "disciplines": [
+      "electrical_engineering",
+      "mechanical_engineering",
+      "civil_engineering",
+      "structural_engineering",
+      "fire_protection_engineering",
+      "geotechnical_engineering",
+      "environmental_engineering",
+      "architecture"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "hvac_design",
+      "civil_site_design",
+      "civil_utilities",
+      "civil_erosion_sediment",
+      "structural_foundation",
+      "structural_existing_assessment",
+      "fire_suppression_wet",
+      "environmental_remediation",
+      "environmental_nepa"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution",
+      "hvac_air_distribution",
+      "fp_wet_sprinkler",
+      "fp_dry_pre_action",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "existing_assessment",
+      "mechanical_hvac",
+      "fire_suppression_scope",
+      "earthwork_scope",
+      "exterior_improvements",
+      "utilities_scope",
+      "concrete_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "naval_station_norfolk",
+    "nsa_hampton_roads",
+    "substation_replacement",
+    "electrical_infrastructure",
+    "switchgear",
+    "transformer_replacement",
+    "mep_engineering",
+    "building_nh95",
+    "hazmat_abatement",
+    "pad_mounted_transformer",
+    "double_ended_switchboard",
+    "auto_transfer_switch",
+    "ductbank_modification",
+    "helical_piles"
+  ],
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Ian Peralta",
+      "role_on_project": "DOR Project Manager / Mechanical Lead",
+      "source": "BOD 20-007A Key Project Contacts"
+    },
+    {
+      "name": "Matt Hinson (NAVFAC)",
+      "role_on_project": "NAVFAC Design Manager / DOR Electrical Lead",
+      "source": "SAES 1581202 B3; BOD 20-007A"
+    },
+    {
+      "name": "Lorenso Wesley",
+      "role_on_project": "DOR BIM Manager",
+      "source": "BOD 20-007A Key Project Contacts"
+    },
+    {
+      "name": "Mike Dixon",
+      "role_on_project": "Mechanical",
+      "source": "BOD 20-007A Key Project Contacts"
+    },
+    {
+      "name": "William Wisilosky",
+      "role_on_project": "Fire Protection Lead",
+      "source": "BOD 20-007A Key Project Contacts"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "vault_expansion_area_ab": {
+        "value": "approximately 42 ft x 19 ft with 14'-6\" ceiling",
+        "unit": "sf_approximate",
+        "source": "BOD 20-007A Architectural section",
+        "quote": "The expansion area is approximately 42'-0\" X 19'-0\" with a 14'-6\" ceiling height.",
+        "sheets": []
+      },
+      "vault_expansion_area_cdf": {
+        "value": "approximately 37 ft x 11 ft",
+        "unit": "sf_approximate",
+        "source": "SAES 1687416 A2 Architectural",
+        "quote": "The expansion area is approximately 37'-0\" x 11'-0\" with new exterior walls and floor finish to match existing construction.",
+        "sheets": []
+      },
+      "transformer_pad_size_abkl": {
+        "value": "180\" L x 123\" W (A&B and K&L)",
+        "unit": "inches",
+        "source": "SAES 1581202 A2 Structural",
+        "quote": "Transformer pad size for Subs A&B: 180\" L x 123\" W H. Transformer pad size for Subs K&L: 180\" L x 123\" W",
+        "sheets": []
+      }
+    },
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set present in intake directory. Both BODs are 46-48 MB and contain geotechnical reports, lab data, and engineering calculations as appendices — not drawing sheets. Drawing extraction deferred."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES 1581202",
+          "value": "Replace NH-95 Substations A,B,K, & L — single task order, 4 substations"
+        },
+        {
+          "source": "SAES 1687416",
+          "value": "Replace Switchgear & Transformers in 8 Substations C/D E/F G/H I/J — second task order, 8 substations"
+        }
+      ],
+      "resolution_chosen": "Both task orders treated as one project record (nh95_substations) covering all 12 substations in Building NH-95",
+      "rationale": "Both task orders are under the same IDIQ contract (N40085-20-D-0005), same building (NH-95), same client (NAVFAC MIDLANT), same prime consultant (BFA). They represent sequential phases of the same facility-wide substation replacement program. Combining into one record is appropriate for proposal use."
+    },
+    {
+      "field_path": "phases.construction.estimated_construction_cost",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES 1581202 C2",
+          "value": "$6,475,000 ECC (substations A,B,K,L)"
+        },
+        {
+          "source": "SAES 1687416 C2",
+          "value": "$32,331,000 ECC (substations C-J)"
+        },
+        {
+          "source": "Schneider Electric vendor quote Q-1534683",
+          "value": "$1,800,000 estimated construction value (equipment-only quote for L,K,A,B switchboards, dated Feb 2020)"
+        }
+      ],
+      "resolution_chosen": "Both SAES ECC values retained separately; vendor quote noted as equipment-only pre-design estimate",
+      "rationale": "The $1,800,000 vendor quote is equipment-only and predates design (Feb 2020); SAES ECC values ($6.475M and $32.331M) reflect full construction scope. All three figures are different in scope and date. No conflict — different objects being measured."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md"
+    }
+  }
+}

@@ -1,0 +1,502 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "20-053",
+    "source": "Basis of Design BOILLER 301.pdf cover page",
+    "quote": "BFA Project #20-053"
+  },
+  "project_slug": "pax_river_boiler_301",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_boiler_301/Basis of Design BOILLER 301.pdf",
+      "type": "bod",
+      "sha256": "c48955c054b92bc1b09c828cbf2b1e5f07ee832077a32ff2fe9182fde12ef23e",
+      "included": true,
+      "notes": "Final submittal dated December 18, 2020. BFA Project #20-053, EPROJECT #1623087. Covers mechanical and electrical BOD. NOTE: Electrical scope/work description sections contain lorem ipsum placeholder text — not real project content."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_boiler_301/Attachment A_ RFP B301 Steam Boiler and Steam Traps.pdf",
+      "type": "sow",
+      "sha256": "11b51dd4fcfd3f2f934f2a4c7ca297f9f9705e3b8b188ce2988fba4ab9777037",
+      "included": true,
+      "notes": "NAVFAC Washington RFP Attachment A, Solicitation N40080-20-R-9100. 8(a) Mechanical MACC task order solicitation, dated June 23, 2020. Includes general requirements, contract clauses, Davis-Bacon wage determination."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "RFP references Attachment G (B301 First Floor drawings) and Attachment H (B301 Second Floor drawings), but those attachments were not staged in the intake folder. No spec book present; specs referenced as Attachment E in RFP but not staged."
+  },
+  "facts": {
+    "project_name": {
+      "value": "B301 Replace Steam Boiler and Steam Traps",
+      "source": "Attachment A RFP p.1",
+      "quote": "Project: B301Replace Steam Boiler and Steam Traps",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.1",
+          "claim": "B301Replace Steam Boiler and Steam Traps",
+          "value": "B301 Replace Steam Boiler and Steam Traps",
+          "agrees": true
+        },
+        {
+          "source": "Basis of Design BOILLER 301.pdf cover page",
+          "claim": "B301 REPLACE STEAM BOILER AND STEAM TRAPS",
+          "value": "B301 Replace Steam Boiler and Steam Traps",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command, Washington (NAVFAC Washington)",
+      "source": "Attachment A RFP p.1",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND, WASHINGTON",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.1",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND, WASHINGTON",
+          "value": "Naval Facilities Engineering Command, Washington",
+          "agrees": true
+        },
+        {
+          "source": "Basis of Design BOILLER 301.pdf cover page",
+          "claim": "NAVAL AIR STATION PATUXENT RIVER, MD",
+          "value": "Naval Air Station Patuxent River",
+          "agrees": true,
+          "note": "BOD names the installation as client context; RFP clarifies NAVFAC Washington as the contracting office"
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / Naval Air Station Patuxent River",
+      "source": "Attachment A RFP p.1",
+      "quote": "Naval Air Station (NAS) Patuxent River MD. 20670",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.1",
+          "claim": "Naval Air Station (NAS) Patuxent River MD. 20670",
+          "value": "Naval Air Station Patuxent River",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "Naval Air Station Patuxent River, Building 301",
+      "facility_address": "22445 Peary Rd, Naval Air Station Patuxent River, MD 20670",
+      "source": "Attachment A RFP p.1",
+      "quote": "Address: 22445 Peary Rd Public Works Building 504 Naval Air Station (NAS) Patuxent River MD. 20670",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.1",
+          "claim": "NAS Pax River Md.",
+          "value": "NAS Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "Basis of Design BOILLER 301.pdf cover page",
+          "claim": "NAVAL AIR STATION PATUXENT RIVER, MD",
+          "value": "Naval Air Station Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-053",
+      "source": "Basis of Design BOILLER 301.pdf cover page",
+      "quote": "BFA Project #20-053"
+    },
+    "project_number_client": {
+      "value": "N40080-20-R-9100",
+      "source": "Attachment A RFP p.1",
+      "quote": "Solicitation No: N40080-20-R-9100",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.1",
+          "claim": "Proposed Task Order No: N40080-20-R-9100",
+          "value": "N40080-20-R-9100",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40080-20-R-9100",
+      "source": "Attachment A RFP p.1",
+      "quote": "Solicitation No: N40080-20-R-9100",
+      "notes": "This is the solicitation/task order number; the executed contract number is not in available documents."
+    },
+    "task_order_number": {
+      "value": "N40080-20-R-9100",
+      "source": "Attachment A RFP p.1",
+      "quote": "Proposed Task Order No: N40080-20-R-9100"
+    },
+    "macc_contract_numbers": {
+      "value": [
+        "N40080-19-D-0001",
+        "N40080-19-D-0002",
+        "N40080-19-D-0003",
+        "N40080-19-D-0004",
+        "N40080-19-D-0005"
+      ],
+      "source": "Attachment A RFP p.1",
+      "quote": "THIS TASK ORDER IS SET ASIDE FOR THE FOLLOWING 8(a) MECHANICAL MACC CONTRACTORS.",
+      "notes": "Base MACC contract numbers for the five eligible 8(a) firms. BFA-authored BOD was the design basis for this construction task order."
+    },
+    "eproject_number": {
+      "value": "1623087",
+      "source": "Basis of Design BOILLER 301.pdf cover page",
+      "quote": "EPROJECT #1623087",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.2",
+          "claim": "NAVFAC Specification Work Order No.: 1623087",
+          "value": "1623087",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Building 301 footprint/area not stated in BOD or RFP. Drawings were referenced (Attachments G & H) but not staged."
+    },
+    "program_budget": {
+      "value": 480138,
+      "currency": "USD",
+      "source": "Attachment A RFP p.2",
+      "quote": "The estimated design build budget for this project is $480,138.00.",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP p.2",
+          "claim": "$480,138.00",
+          "value": 480138,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Replace existing broken steam boiler and all associated equipment and controls in Building 301. Install new high-efficiency gas-fired cast iron steam boiler (5.6 MMBH). Replace approximately 100 steam traps (65 thermostatic angle traps on radiators, 45 inverted bucket traps on ceiling-hung heaters). Provide boiler feed pumps with variable frequency drives, deaerator, expansion tank, chemical treatment unit, auto/manual blowdown. Provide DDC/BACnet control panel compatible with existing Niagara building automation system. Asbestos abatement required on approximately 66 existing steam trap locations. Modify electrical service as needed for new equipment. Building to remain occupied during construction.",
+      "source": "Basis of Design BOILLER 301.pdf p.1",
+      "quote": "Remove existing broken steam boiler, all associated equipment controls. Install new steam high efficiency boiler for building 301, A Permit to Construct (PTC) will be required from the Maryland Department of the Environment. Replace all steam traps, repair any steam, or water leaks."
+    },
+    "construction_duration_days": {
+      "value": 180,
+      "source": "Attachment A RFP p.2",
+      "quote": "the Government desires completion of construction within 180 calendar days after award (includes 15 calendar days for submission and approval of bonds and insurance).",
+      "corroboration": [
+        {
+          "source": "Attachment A RFP contract clause FAR 52.211-10",
+          "claim": "complete the entire work ready for use not later than 180 Calendar days from Notice of Award",
+          "value": 180,
+          "agrees": true
+        }
+      ]
+    },
+    "solicitation_date": {
+      "value": "2020-06-23",
+      "source": "Attachment A RFP p.1",
+      "quote": "Date of Solicitation: 23 June 2020"
+    },
+    "proposal_due_date": {
+      "value": "2020-07-27",
+      "source": "Attachment A RFP p.3",
+      "quote": "Proposal Due Date: 27 July 2020 no later than 2:00 pm. (EDST)."
+    },
+    "bod_date": {
+      "value": "2020-12-18",
+      "source": "Basis of Design BOILLER 301.pdf cover page",
+      "quote": "December 18, 2020"
+    },
+    "naics_code": {
+      "value": "238220",
+      "source": "Attachment A RFP p.2",
+      "quote": "NAICS Code: 238220 – Plumbing, Heating, and Air-Conditioning Contractors"
+    },
+    "liquidated_damages_daily": {
+      "value": 534,
+      "currency": "USD",
+      "source": "Attachment A RFP p.2",
+      "quote": "Liquidated Damages will be assessed in the amount of $534 for each calendar day of delay."
+    },
+    "permit_required": {
+      "value": "Maryland Department of the Environment Permit to Construct (PTC)",
+      "source": "Basis of Design BOILLER 301.pdf p.1",
+      "quote": "A Permit to Construct (PTC) will be required from the Maryland Department of the Environment."
+    },
+    "asbestos_abatement": {
+      "value": true,
+      "description": "Approximately 66 steam trap locations covered in asbestos insulation; abatement required per OSHA 29 CFR 1926.1101",
+      "source": "Basis of Design BOILLER 301.pdf p.2",
+      "quote": "Existing steam traps are covered in asbestos insulation. Abatement will be required on approximately 66 steam traps."
+    },
+    "key_equipment": {
+      "value": {
+        "boiler": "High efficiency gas-fired cast iron steam boiler, 5.6 MMBH output",
+        "feed_pumps": "2 boiler feed pumps with variable frequency drives (VFDs)",
+        "steam_traps_thermostatic": "Approximately 65 brass thermostatic angle steam traps (radiators, 1st and 2nd floor)",
+        "steam_traps_bucket": "Approximately 45 inverted bucket steam traps on ceiling-hung heaters (Room 101R)",
+        "controls": "DDC panel with BACnet open protocol, compatible with existing Niagara software",
+        "deaerator": "New deaerator",
+        "expansion_tank": "New expansion tank",
+        "chemical_treatment": "New hot water chemical treatment unit"
+      },
+      "source": "Basis of Design BOILLER 301.pdf p.2",
+      "quote": "Install new high efficiency gas fire cast iron steam boiler 5.6 MMBH, (2) feed hot water pumps with variable frequency drive, hot water chemical treatment unit, deaerator, expansion tank, boiler auto/manual blowdown And boilers control, DDC panel that has open protocol control system."
+    },
+    "electrical_service": {
+      "value": "200A main lugs only, 208Y/120V, 3-phase, 4-wire load center fed by 200A/3P disconnect with (3) 200A fuses",
+      "source": "Basis of Design BOILLER 301.pdf p.8",
+      "quote": "The existing electrical QO Load center in the space is a 200A, main lugs only, 208Y/120V, 3 phase, 4 wire service fed by a 200A/3P disconnect switch fused with (3) 200A fuses mounted next to the load center."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA authored the BOD (BFA Project #20-053) as design/engineering support for the task order RFP. BFA's design fee is not stated in available documents."
+      },
+      "completion_date": {
+        "value": "2020-12-18",
+        "source": "Basis of Design BOILLER 301.pdf cover page",
+        "quote": "December 18, 2020"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": 480138,
+        "currency": "USD",
+        "source": "Attachment A RFP p.2",
+        "quote": "The estimated design build budget for this project is $480,138.00.",
+        "notes": "This is the IGCE/budget estimate. Actual awarded construction contract value not in available documents."
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "Attachment A RFP p.2",
+        "quote": "completion of construction within 180 calendar days after award"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "plumbing_domestic_water"
+    ],
+    "building_systems": [
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "plumbing_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "existing_demolition",
+      "existing_hazmat_abatement"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_macc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_8a_set_aside"
+    ],
+    "award_type": [
+      "lowest_price_technically_acceptable"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "specialty_consultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "delivery_method": "Construction task order is technically design-bid-build (BFA provided design BOD, NAVFAC issued construction RFP to MACC holders). BOD was authored by BFA as design support; construction was separately contracted via 8(a) MACC task order. 'design_bid_build' is the closest match.",
+    "bfa_role": "BFA authored the Basis of Design document (BFA Project #20-053) which served as the technical basis for the NAVFAC construction RFP. BFA's role appears to be engineering design/BOD author supporting NAVFAC's RFP development — effectively a specialty consultant on the design side. BFA did not hold the construction contract.",
+    "award_type": "RFP Basis for Award states 'lowest price' among 8(a) MACC holders per FAR 16.505. Closest vocab entry is 'lowest_price_technically_acceptable' though the document says 'lowest price' (price-only evaluation, not LPTA with technical threshold). Minor vocabulary gap noted.",
+    "program_subtype": "Building 301 at NAS Pax River is a support/utility building housing a boiler plant — mapped to military_maintenance as closest fit.",
+    "project_status": "BOD is Final Submittal dated December 2020; RFP was issued June 2020. Project is presumed complete given dates, but no closeout documentation available to confirm. Mapped 'complete' as best estimate."
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_8a_set_aside",
+      "description": "Construction task order set aside exclusively for 5 pre-qualified 8(a) Mechanical MACC contractors. Award to be made on lowest price basis among 8(a) MACC holders.",
+      "source": "Attachment A RFP p.1",
+      "quote": "THIS TASK ORDER IS SET ASIDE FOR THE FOLLOWING 8(a) MECHANICAL MACC CONTRACTORS.",
+      "proposed_pct": null,
+      "final_pct": null
+    }
+  ],
+  "tenant_freeform_tags": [
+    "navfac",
+    "navfac_washington",
+    "nas_patuxent_river",
+    "pax_river",
+    "maryland",
+    "steam_boiler",
+    "boiler_replacement",
+    "steam_traps",
+    "hvac_mechanical",
+    "8a_set_aside",
+    "macc",
+    "asbestos_abatement",
+    "bacnet",
+    "vfd"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings Attachments G and H referenced in RFP but not staged in intake folder."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "Basis of Design BOILLER 301.pdf p.3",
+        "quote": "Provide and install approximately Qty. 65 new Brass Thermostatic angle steam traps attached to radiators first, and second floors both side of the hunger area.",
+        "notes": "Inferred from BOD reference to 'first, and second floors'; drawings not available to confirm."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "1 high-efficiency gas-fired cast iron steam boiler, 5.6 MMBH (new, replacing failed unit)",
+          "2 boiler feed pumps with VFDs",
+          "Deaerator, expansion tank, chemical treatment unit, auto/manual blowdown",
+          "DDC panel with BACnet open protocol (Niagara-compatible)",
+          "~65 thermostatic angle steam traps (radiators, floors 1-2)",
+          "~45 inverted bucket steam traps (ceiling-hung heaters, Room 101R)"
+        ],
+        "electrical": [
+          "200A, 208Y/120V, 3-phase, 4-wire service (existing, to be modified)",
+          "Motors ≥1/2 HP connected at 208V or 480V, 3-phase, 60Hz",
+          "VFDs for boiler feed pumps (power connections)"
+        ],
+        "plumbing": [
+          "Natural gas supply to boilers (2 psi entering existing regulator; existing piping reused if sized appropriately)",
+          "Steam and condensate system modifications",
+          "Domestic water hot supply and recirculation piping insulation"
+        ],
+        "fire_protection": []
+      }
+    },
+    "reading_notes": "No drawing sheets were available in the intake folder. RFP Attachment A references Attachment G (B301 First Floor drawings) and Attachment H (B301 Second Floor drawings), but those were not staged. BOD references a 2-story building with mechanical room, Rm. 101R, and radiators on floors 1 and 2."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.bod_date vs facts.solicitation_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Basis of Design BOILLER 301.pdf cover page",
+          "value": "December 18, 2020 (BOD Final Submittal)"
+        },
+        {
+          "source": "Attachment A RFP p.1",
+          "value": "June 23, 2020 (RFP solicitation date)"
+        }
+      ],
+      "resolution_chosen": "Both dates accepted as factually correct for their respective phases.",
+      "rationale": "The BOD Final Submittal date (December 2020) post-dates the RFP solicitation date (June 2020). This means the BOD was likely revised/finalized after the initial RFP was issued — the BOD may have been an RFP support document that went through multiple revisions. The timeline is plausible: RFP solicited June 2020, award ~August-September 2020, BOD finalized December 2020 as design documentation for the construction phase. No substantive data conflict."
+    },
+    {
+      "field_path": "facts.scope_description — steam trap quantity",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Attachment A RFP p.2",
+          "value": "approximately 100 Steam Traps"
+        },
+        {
+          "source": "Basis of Design BOILLER 301.pdf p.3",
+          "value": "~65 thermostatic angle traps + ~45 inverted bucket traps = ~110 traps"
+        }
+      ],
+      "resolution_chosen": "BOD detailed breakdown (~110 total) is more specific; RFP '~100' is rounded estimate.",
+      "rationale": "The RFP description 'approximately 100 Steam Traps' is a rounded figure consistent with the BOD's more detailed breakdown of 65 + 45 = 110 traps. Minor discrepancy attributable to rounding in the RFP description vs. itemized BOD counts. No major conflict."
+    },
+    {
+      "field_path": "facts.scope_description — boiler quantity",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Attachment A RFP p.2",
+          "value": "Replace three (1) Steam boiler — apparent typo: '(1)' suggests one boiler"
+        },
+        {
+          "source": "Basis of Design BOILLER 301.pdf p.1",
+          "value": "Install new high efficiency boiler for building 301 (singular)"
+        },
+        {
+          "source": "Basis of Design BOILLER 301.pdf p.2-3",
+          "value": "BOD also references 'both boilers' and 'operate both boilers and corresponding pumps'"
+        }
+      ],
+      "resolution_chosen": "One new boiler replacing one failed unit; BOD references 'both boilers' likely meaning new + existing standby or phased approach.",
+      "rationale": "The RFP text 'Replace three (1) Steam boiler' appears to be a formatting/typo artifact ('three' is likely extraneous). BOD consistently describes one new boiler. References to 'both boilers' in the BOD controls section may refer to the new boiler plus a retained or standby unit, or refer to lead/lag protocol for a future second boiler. Treated as one-boiler replacement for primary scope."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

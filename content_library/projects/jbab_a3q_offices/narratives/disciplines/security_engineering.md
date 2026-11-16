@@ -1,0 +1,7 @@
+# Security Engineering — B520 Renovate A3Q Offices
+
+Security engineering was a defining discipline on the B520 A3Q Offices renovation at Joint Base Anacostia-Bolling, driven by the Phase 1 objective of renovating Suite 220 to full ICD/ICS 705 SCIF compliance. The security engineering scope encompassed access control system (ACS) design, intrusion detection, and SCIF-grade electronic security, with the Advantor system as the specified security platform.
+
+The Government's Statement of Work specified upgrading the existing Advantor security system to meet new occupancy requirements, with a budget allowance of $120,000 for Advantor services. The security engineering design developed the system configuration necessary to satisfy ICD 705 requirements for the Suite 220 SCIF, including access control at SCIF entry points and intrusion detection coverage of the SCIF perimeter. These requirements dictated close coordination with the architectural scope — particularly the wall construction and door/frame specifications — to ensure that the physical and electronic security elements formed a compliant integrated system.
+
+Beyond the SCIF, the broader renovation scope included access control and electronic safety and security for the renovated office areas. The security engineering scope was documented in the Basis of Design as part of BFA's Design-Build submission, establishing the design approach across both SCIF and non-SCIF security requirements for NAVFAC Washington review.

@@ -1,0 +1,7 @@
+Plumbing engineering was included on the Building 2272 design team across the renovation program phases. However, the construction contracts for Phase 2b (PID-0030 and PID-0031) and Phase 3 explicitly excluded plumbing scope from the contractor's work. Break area (gedunk) installations within the renovated suites included refrigerators but did not require new plumbing connections.
+
+As a result, plumbing engineering activities across the primary renovation phases were limited primarily to review, coordination, and construction document production for domestic water systems, with minimal new construction scope executed under these contracts. Plumbing design coordinated with the building's existing domestic water distribution infrastructure.
+
+<!-- INTERNAL: The source record has thin content for the plumbing discipline — BOD documents likely contain plumbing sections with more detail than was captured in Pass 1. This narrative reflects what is documented in the JSON record; a Pass 1 re-read of the BOD plumbing sections would fill out the design scope more completely. -->
+
+Specific plumbing design deliverables beyond Phase 2b/3 — including any later phases where plumbing scope may have been included in construction contracts — are not described in detail in the source record. The discipline was on the design team for the full program; source documents should be reviewed per phase to confirm where plumbing construction scope was active.

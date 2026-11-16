@@ -1,0 +1,574 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "retaining_wall_berm",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/retaining_wall_berm/Hall A Retaining Wall Replacement_Final_BoD.pdf",
+      "type": "bod",
+      "sha256": "cc357ab003ef9263c216fdaf85674fc782ec998fee645f17c815fd706a10431e",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/retaining_wall_berm/Task Order  12 RFP package.pdf",
+      "type": "sow",
+      "sha256": "af70131fac2811868500c4288471f3170a3b89972853054542ee4f47f31f2dc4",
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Hall A Berm Retaining Wall Replacement",
+      "source": "BOD cover page",
+      "quote": "HALL A BERM RETAINING WALL REPLACEMENT",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "HALL A BERM RETAINING WALL REPLACEMENT",
+          "value": "Hall A Berm Retaining Wall Replacement",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package, subject line",
+          "claim": "JSA 21-C0683 Task Order 12 Detailed Design Retaining Wall A Berm",
+          "value": "Retaining Wall A Berm",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package, project title",
+          "claim": "Retaining Wall at East Side of Hall A Berm",
+          "value": "Retaining Wall at East Side of Hall A Berm",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Lab (Thomas Jefferson National Accelerator Facility)",
+      "source": "BOD cover page",
+      "quote": "Jefferson Lab, Newport News, VA",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Jefferson Lab, Newport News, VA",
+          "value": "Jefferson Lab",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package",
+          "claim": "Jefferson Lab is considering issueing you the above referenced Task Order.",
+          "value": "Jefferson Lab",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Jefferson Science Associates (JSA) / Jefferson Lab",
+      "source": "Task Order 12 RFP package, contract reference",
+      "quote": "JSA 21-C0683",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Contract: JSA 21-C0683",
+          "value": "JSA (Jefferson Science Associates)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "12000 Jefferson Ave, Newport News, VA 23606",
+      "source": "BOD header",
+      "quote": "12000 Jefferson Ave  Newport News, VA 23606  (757) 269-7100",
+      "corroboration": [
+        {
+          "source": "BOD header",
+          "claim": "12000 Jefferson Ave  Newport News, VA 23606",
+          "value": "Newport News, VA",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Jefferson Lab, Newport News, VA",
+          "value": "Newport News, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "JSA 21-C0683 / Task Order #12",
+      "source": "BOD cover page",
+      "quote": "Contract: JSA 21-C0683  Task Order: #12",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Contract: JSA 21-C0683  Task Order: #12",
+          "value": "JSA 21-C0683 / Task Order 12",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package, subject line",
+          "claim": "JSA 21-C0683 Task Order 12 Detailed Design Retaining Wall A Berm",
+          "value": "JSA 21-C0683 / Task Order 12",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "JSA 21-C0683",
+      "source": "BOD cover page",
+      "quote": "Contract: JSA 21-C0683",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Contract: JSA 21-C0683",
+          "value": "JSA 21-C0683",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package",
+          "claim": "JSA 21-C0683",
+          "value": "JSA 21-C0683",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "12",
+      "source": "BOD cover page",
+      "quote": "Task Order: #12",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Task Order: #12",
+          "value": "12",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package, subject line",
+          "claim": "Task Order 12 Detailed Design Retaining Wall A Berm",
+          "value": "12",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing"
+    },
+    "disturbance_area": {
+      "value": 0.64,
+      "unit": "acres",
+      "source": "BOD General section",
+      "quote": "The total area of disturbance is approximately 0.64 acres.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "The total area of disturbance is approximately 0.64 acres.",
+          "value": 0.64,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 150000,
+      "currency": "USD",
+      "note": "Lower bound of project budget range stated in Task Order RFP ($150,000–$250,000). Distinct from final construction cost estimate of $314,200 in BOD.",
+      "source": "Task Order 12 RFP package",
+      "quote": "Project Budget: $150,000 to $250,000",
+      "corroboration": [
+        {
+          "source": "Task Order 12 RFP package",
+          "claim": "Project Budget: $150,000 to $250,000",
+          "value": "150000-250000",
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "The anticipated construction cost for the ESR retaining wall is approximately Three hundred fourteen thousand two hundred dollars.",
+          "value": 314200,
+          "agrees": false
+        }
+      ]
+    },
+    "construction_cost_estimate": {
+      "value": 314200,
+      "currency": "USD",
+      "source": "BOD General section",
+      "quote": "The anticipated construction cost for the ESR retaining wall is approximately Three hundred fourteen thousand two hundred dollars.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "approximately Three hundred fourteen thousand two hundred dollars",
+          "value": 314200,
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package",
+          "claim": "Project Budget: $150,000 to $250,000",
+          "value": "150000-250000",
+          "agrees": false
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Replacement of an existing deteriorated wooden retaining wall at the east side of the Hall A berm at Jefferson Lab with a new concrete cantilevered retaining wall. The wall protects an existing exhaust vent and critical utility systems. A temporary gravel access road off CEBAF Blvd is required for equipment access. After construction, the access road will be filled and restored to original grade and hydraulic capacity. Total disturbance area approximately 0.64 acres.",
+      "source": "BOD General section",
+      "quote": "This report presents a comprehensive analysis of a multidisciplinary design involving the replacement of an existing wooden retaining wall protecting an existing exhaust vent. The project will entail the construction of a proposed concrete retaining wall. A temporary gravel access road will be constructed to facilitate equipment to access the existing wooden retaining wall.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "replacement of an existing wooden retaining wall protecting an existing exhaust vent ... construction of a proposed concrete retaining wall",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package, project description",
+          "claim": "There is a wooden retaining wall structure at the lower end of berm for Hall A on the east side of the Hall. The wall is over 25 years old and has deteriorated in some areas. Design the replacement as discussed during concept development with BFA in August 2023.",
+          "agrees": true
+        }
+      ]
+    },
+    "design_completion_date": {
+      "value": "2024-02-23",
+      "source": "BOD cover page",
+      "quote": "Final Design – 02/23/2024",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Final Design – 02/23/2024",
+          "value": "2024-02-23",
+          "agrees": true
+        },
+        {
+          "source": "Task Order 12 RFP package, schedule notes",
+          "claim": "We need to have a final design complete by 1 Dec at the latest. This will get us to a Jan 24 award.",
+          "value": "2023-12-01 (target)",
+          "agrees": false
+        }
+      ]
+    },
+    "task_order_solicitation_date": {
+      "value": "2023-08-29",
+      "source": "Task Order 12 RFP package, letter date",
+      "quote": "August 29, 2023",
+      "corroboration": [
+        {
+          "source": "Task Order 12 RFP package, letter date",
+          "claim": "August 29, 2023",
+          "value": "2023-08-29",
+          "agrees": true
+        }
+      ]
+    },
+    "key_personnel_named": {
+      "value": [
+        {
+          "name": "Bruce Bowman",
+          "role": "Electrical Engineer / PM",
+          "organization": "Bowman, Foster & Associates"
+        },
+        {
+          "name": "Richard Williams, PE",
+          "role": "Structural Engineer",
+          "organization": "McPherson Design"
+        },
+        {
+          "name": "Marcos Freeman, PE",
+          "role": "Geotechnical Engineer",
+          "organization": "GET Solutions"
+        },
+        {
+          "name": "Jay Wheeler, PG",
+          "role": "Civil Engineer",
+          "organization": "VHB"
+        },
+        {
+          "name": "Matt Mader, PE",
+          "role": "Civil Engineer",
+          "organization": "VHB"
+        }
+      ],
+      "source": "BOD General section, report prepared by table",
+      "quote": "Bruce Bowman  Electrical Engineer/PM  Bowman, Foster & Associates  Richard Williams, PE  Structural Engineer  McPherson Design  Marcos Freeman, PE  Geotechnical Engineer  GET Solutions  Jay Wheeler, PG  Civil Engineer  VHB  Matt Mader, PE",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "Team roster as listed",
+          "agrees": true
+        }
+      ]
+    },
+    "geotechnical_reference": {
+      "value": "Terracon Project K4235060, dated December 7, 2023",
+      "source": "BOD Geotechnical section",
+      "quote": "the Geotechnical Engineering Report (Terracon Project no. K4235060, dated December 7, 2023)",
+      "corroboration": [
+        {
+          "source": "BOD Geotechnical section",
+          "claim": "Terracon Project no. K4235060, dated December 7, 2023",
+          "agrees": true
+        }
+      ]
+    },
+    "structural_design_parameters": {
+      "value": "Concrete cantilevered retaining wall; 12-inch wide reinforced concrete wall; continuous reinforced spread footing 12 inches thick and 6 feet wide; drain board with corrugated pipe on back face",
+      "source": "BOD Concrete and Structural Design section",
+      "quote": "The foundation for the retaining wall will be a continuous reinforced spread footing with a thickness of 12 inches and width of 6 feet. The retaining wall will be a 12-inch-wide reinforced concrete wall system. A drain board with corrugated pipe will be placed on the back face (soil side) of the retaining wall to minimize water pressure on the wall.",
+      "corroboration": [
+        {
+          "source": "BOD Concrete and Structural Design section",
+          "claim": "12-inch-wide reinforced concrete wall ... continuous reinforced spread footing ... thickness of 12 inches and width of 6 feet",
+          "agrees": true
+        }
+      ]
+    },
+    "applicable_codes": {
+      "value": [
+        "VDOT Road and Bridge Standards, 2016, rev. 2022",
+        "Virginia Erosion and Sediment Control Handbook, 1992",
+        "Virginia Stormwater Management Program (VSMP) Regulation, 2023"
+      ],
+      "source": "BOD General section",
+      "quote": "The Code of Record for the project is as follows: VDOT Road and Bridge Standards, 2016, rev. 2022; Virginia Erosion and Sediment Control Handbook, 1992; Virginia Stormwater Management Program (VSMP) Regulation, 2023",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "Code of Record listing",
+          "agrees": true
+        }
+      ]
+    },
+    "jlab_points_of_contact": {
+      "value": [
+        {
+          "name": "Carolyn Stepney",
+          "role": "Sr. Procurement Officer",
+          "email": "stepney@jlab.org"
+        },
+        {
+          "name": "Suresh Chandra",
+          "role": "Design Project Manager",
+          "phone": "757-269-7248"
+        }
+      ],
+      "source": "Task Order 12 RFP package",
+      "quote": "Design Project Manager: Suresh Chandra  Telephone: 757-269-7248",
+      "corroboration": [
+        {
+          "source": "Task Order 12 RFP package",
+          "claim": "Carolyn Stepney Sr. Procurement Officer; Suresh Chandra Design PM",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "Fee proposal template present but no dollar totals filled in (all $0.00 in template cells)"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-02-23",
+        "source": "BOD cover page",
+        "quote": "Final Design – 02/23/2024"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "note": "Target was January 2024 per Task Order schedule notes"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "structural_engineering",
+      "civil_engineering",
+      "geotechnical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "structural_concrete",
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_erosion_sediment"
+    ],
+    "building_systems": [],
+    "construction_scope": [
+      "concrete_cast_in_place",
+      "earthwork_scope",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_idiq"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "jlab",
+    "jefferson_lab",
+    "newport_news",
+    "retaining_wall",
+    "civil_structural",
+    "doe_facility",
+    "particle_accelerator_site",
+    "task_order",
+    "jsa_idiq"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Bruce Bowman",
+      "role_on_project": "project_manager"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "Not a building project; no GSF applicable. Wall replacement and site work only."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "note": "Not applicable — retaining wall replacement, not a building."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.program_budget / facts.construction_cost_estimate",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "Task Order 12 RFP package",
+          "value": "$150,000–$250,000 (project budget at solicitation)"
+        },
+        {
+          "source": "BOD General section (Final Design, Feb 2024)",
+          "value": "$314,200 (anticipated construction cost)"
+        }
+      ],
+      "resolution_chosen": "BOD General section",
+      "rationale": "The RFP figure ($150K–$250K) was the pre-design budget estimate provided at solicitation (August 2023). The BOD figure ($314,200) is the engineer's opinion of probable construction cost at final design completion (February 2024). The BOD value is later, more detailed, and represents the final design position. Both values are preserved in separate fields. The cost growth from budget to final estimate (~26–110% over the upper/lower bounds) is significant and worth flagging for proposal use."
+    },
+    {
+      "field_path": "facts.design_completion_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Task Order 12 RFP package, schedule notes",
+          "value": "December 1, 2023 (target date stated in task order)"
+        },
+        {
+          "source": "BOD cover page",
+          "value": "February 23, 2024 (actual final design date)"
+        }
+      ],
+      "resolution_chosen": "BOD cover page",
+      "rationale": "The December 2023 date was a schedule target at solicitation. The February 2024 date is the actual final design date per the sealed BOD. The design completed approximately 2-3 months later than the initial target — minor conflict, expected design schedule slippage."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

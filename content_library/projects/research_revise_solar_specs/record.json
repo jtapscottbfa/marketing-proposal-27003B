@@ -1,0 +1,431 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "research_revise_solar_specs",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nibs/research_revise_solar_specs/SOW - UFGS 26 31 00 - 18 March 2020.docx",
+      "type": "sow",
+      "sha256": "46476f82e95260403f1a6c1a4d62ded7cebf84850afed82235dc4b56dfe6c319",
+      "included": true,
+      "notes": "Statement of A/E Services dated March 18, 2020. Primary scope document for the task order."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nibs/research_revise_solar_specs/UFGS Research and Revision of Solar Specs Project Schedule.pdf",
+      "type": "schedule",
+      "sha256": "a62f3977d527ec57461e211d3e6469bdb80a6f0d3c311a28de58cf4842c4ad8b",
+      "included": true,
+      "notes": "Project schedule PDF showing NTP of September 22, 2020 through Publication Submittal October 6, 2021."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nibs/research_revise_solar_specs/UFGS Research and Revision of Solar Specs Project Schedule.doc",
+      "type": "schedule",
+      "sha256": "9cea7e267d835376aaee94eaa2c4785dfcd0fbdca05c45d3ae4721f58de81601",
+      "included": true,
+      "notes": "Project schedule in .doc format — apparent source/editable version of the PDF schedule. Not separately extracted (content matches PDF)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nibs/research_revise_solar_specs/Updated 26 31 00.pdf",
+      "type": "submittal",
+      "sha256": "b06d1d1a1997cfe31834ad42e653d5d80f3166596123d6465ef963337857ae4d",
+      "included": true,
+      "notes": "The revised/updated UFGS 26 31 00 specification (50 pages). This is the primary deliverable produced by this task order, showing tracked-changes edits to the existing May 2015 spec. Prepared by USACE/NAVFAC/AFCEC/NASA under NAVFAC as preparing activity."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No BOD (not a construction project). The SOW defines scope; the deliverable is the revised UFGS specification. No construction drawings exist for this project type. Contract value fields blank in SOW (fee schedule left for negotiation). No BFA-authored narrative found."
+  },
+  "facts": {
+    "project_name": {
+      "value": "UFGS Research and Revision of Solar Specs — UFGS 26 31 00 Solar Photovoltaic (PV) Components",
+      "source": "SOW p.1",
+      "quote": "Project Title: Revise the following Unified Facilities Guide Specification (UFGS) to conform to current Unified Facilities Criteria (UFC) and recent industry product improvements: UFGS 26 31 00 Solar Photovoltaic (PV) Components",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "UFGS 26 31 00 Solar Photovoltaic (PV) Components revision",
+          "agrees": true
+        },
+        {
+          "source": "Schedule PDF title",
+          "claim": "UFGS Research and Revision of Solar Specs",
+          "agrees": true
+        },
+        {
+          "source": "Updated 26 31 00.pdf, header",
+          "claim": "SECTION 26 31 00 FACILITY-SCALE SOLAR PHOTOVOLTAIC (PV) SYSTEMS COMPONENTS",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC Atlantic)",
+      "source": "SOW p.1",
+      "quote": "NAVFAC Project Manager (PM) / Contracting Officer's Representative (COR): Mr. Rob Boller, Code CI44 / 757-322-4327",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "NAVFAC Atlantic PM/COR Rob Boller, Code CI44, NAVFAC LANT Capital Improvements Business Line",
+          "agrees": true
+        },
+        {
+          "source": "SOW submittal address",
+          "claim": "NAVFAC Atlantic PM / COR Mr. Rob Boller, NAVFAC LANT Capital Improvements Business Line (CI44), 6506 Hampton Blvd., Norfolk VA 23508",
+          "agrees": true
+        },
+        {
+          "source": "Updated 26 31 00.pdf, header",
+          "claim": "Preparing Activity: NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC Atlantic)",
+      "source": "SOW p.1",
+      "quote": "NAVFAC Project Manager (PM) / Contracting Officer's Representative (COR): Mr. Rob Boller, Code CI44",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "NAVFAC Atlantic as contracting/owning entity",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "6506 Hampton Blvd., Norfolk VA 23508",
+      "source": "SOW submittal address block",
+      "quote": "NAVFAC LANT Capital Improvements Business Line (CI44) 6506 Hampton Blvd. Norfolk VA 23508",
+      "notes": "This is the NAVFAC Atlantic administrative address. Work performed at consultant's office; meetings held at both NAVFAC Atlantic and consultant's office per schedule of meetings. No physical facility being constructed."
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW shows 'eProjects WON: XXXXXXX' as placeholder — no actual WON number captured in source documents."
+    },
+    "contract_number": {
+      "value": "N62470-14-D-3006",
+      "source": "SOW p.1",
+      "quote": "A&E Contract No.: N62470-14-D-3006 00XX eProjects WON: XXXXXXX",
+      "notes": "IDIQ contract number. Task order number shown as '00XX' placeholder — specific TO number not assigned in this SOW version.",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "A&E Contract No.: N62470-14-D-3006",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW shows '00XX' as placeholder for task order number. Actual task order number not available in source documents."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Not applicable — this is a professional services/specification development project with no physical facility."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW fee schedule section shows all values blank: 'Total Task Order $___'. Fee amounts left for negotiation; no values captured in source documents."
+    },
+    "scope_description": {
+      "value": "Research and revision of UFGS 26 31 00 Solar Photovoltaic (PV) Components to conform to current Unified Facilities Criteria (UFC) and recent industry product improvements. Final product serves as a tri-service planning/design/construction/maintenance specification for facility planners, designers, contractors, and maintenance technicians. Deliverable: revised UFGS in SpecsIntact format, PDF, and Word, following iterative submittal-and-review process (Kick-off, 35%, 65%, Pre-Final, Final, Final Corrected submittals).",
+      "source": "SOW §1 Project Scope",
+      "quote": "This project consists of all work necessary to develop the task. The final product will serve as planning/design/construction/maintenance document for facility planners, designers, contractors, and maintenance technicians.",
+      "corroboration": [
+        {
+          "source": "SOW §1 Project Scope",
+          "claim": "Revise UFGS 26 31 00 Solar Photovoltaic (PV) Components",
+          "agrees": true
+        },
+        {
+          "source": "Updated 26 31 00.pdf",
+          "claim": "Revised 50-page specification document with tracked changes incorporating updated standards (NFPA 70 2020, IEEE 1547 2018, etc.)",
+          "agrees": true
+        }
+      ]
+    },
+    "deliverable_type": {
+      "value": "Unified Facilities Guide Specification (UFGS) — tri-service technical specification document",
+      "source": "SOW §2 Detailed Scope",
+      "quote": "Provide the revised UFGS: UFGS 26 31 00 Solar Photovoltaic (PV) Components",
+      "corroboration": [
+        {
+          "source": "SOW §2",
+          "claim": "UFGS in SpecsIntact format, PDF, and Word",
+          "agrees": true
+        },
+        {
+          "source": "Updated 26 31 00.pdf",
+          "claim": "50-page revised UFGS 26 31 00 document with USACE/NAVFAC/AFCEC/NASA heading",
+          "agrees": true
+        }
+      ]
+    },
+    "project_completion_date": {
+      "value": "2021-10-06",
+      "source": "Schedule PDF",
+      "quote": "Publication Submittal 6th October 2021",
+      "corroboration": [
+        {
+          "source": "Schedule PDF",
+          "claim": "Publication Submittal: October 6, 2021",
+          "agrees": true
+        },
+        {
+          "source": "SOW §8 Submittal Due Dates",
+          "claim": "Project Completion Date: 12 months after award",
+          "agrees": true,
+          "notes": "SOW states 12 months after award; schedule PDF indicates NTP September 22, 2020 to Publication Submittal October 6, 2021 = ~380 days, consistent with ~12 months."
+        }
+      ]
+    },
+    "ntp_date": {
+      "value": "2020-09-22",
+      "source": "Schedule PDF",
+      "quote": "Notice To Proceed 22nd September 2020",
+      "corroboration": [
+        {
+          "source": "Schedule PDF",
+          "claim": "Notice To Proceed: 22nd September 2020",
+          "agrees": true
+        }
+      ]
+    },
+    "contractual_duration_days": {
+      "value": 405,
+      "source": "SOW §8 Schedule table",
+      "quote": "405 Scheduled Days",
+      "corroboration": [
+        {
+          "source": "SOW §8 Schedule table",
+          "claim": "405 Scheduled Days (sum of all milestone calendar day durations)",
+          "agrees": true
+        },
+        {
+          "source": "SOW §9",
+          "claim": "Project Completion Date: 12 months after award",
+          "agrees": true,
+          "notes": "12 months ≈ 365 days; 405 days is the scheduled total per milestone calendar — minor discrepancy, likely due to overlap in milestone counting."
+        },
+        {
+          "source": "Schedule PDF (NTP to Publication)",
+          "claim": "NTP Sep 22 2020 to Publication Oct 6 2021 = approximately 380 calendar days",
+          "agrees": false,
+          "notes": "Minor discrepancy: SOW says 405 days scheduled vs 380 days on schedule PDF. SOW 405 is a total of milestone calendar day allocations; PDF schedule shows actual dates from NTP to Publication Submittal = ~380 days. Minor disagreement, likely rounding/overlap."
+        }
+      ]
+    },
+    "tri_service_scope": {
+      "value": "USACE (Army), NAVFAC (Navy), AFCEC (Air Force), NASA",
+      "source": "Updated 26 31 00.pdf, header",
+      "quote": "USACE / NAVFAC / AFCEC / NASA UFGS 26 31 00 (May 2015)",
+      "corroboration": [
+        {
+          "source": "SOW p.1, Other Points of Contact",
+          "claim": "Mr. Rex Belleville, AFCESA; Mr. Chris Thompson, USACE — tri-service working group members",
+          "agrees": true
+        },
+        {
+          "source": "Updated 26 31 00.pdf, header",
+          "claim": "USACE / NAVFAC / AFCEC / NASA preparing organizations",
+          "agrees": true
+        }
+      ]
+    },
+    "key_contacts": {
+      "navfac_pm_cor": {
+        "name": "Mr. Rob Boller",
+        "code": "CI44",
+        "phone": "757-322-4327",
+        "email": "robert.boller@navy.mil",
+        "source": "SOW p.1",
+        "quote": "Mr. Rob Boller, Code CI44 / 757-322-4327 (Internet E-Mail: robert.boller@navy.mil)"
+      },
+      "navfac_contract_specialist": {
+        "name": "Mrs. Liz Roberts",
+        "code": "ACQ34",
+        "phone": "757-322-8273",
+        "email": "elizabeth.l.roberts@navy.mil",
+        "source": "SOW p.1",
+        "quote": "Mrs. Liz Roberts, Code ACQ34 / 757-322-8273"
+      },
+      "afcesa_poc": {
+        "name": "Mr. Rex Belleville",
+        "organization": "AFCESA",
+        "phone": "850-283-6813",
+        "email": "rexford.belleville@us.af.mil",
+        "source": "SOW p.1",
+        "quote": "Mr. Rex Belleville, AFCESA, 850-283-6813"
+      },
+      "usace_poc": {
+        "name": "Mr. Chris Thompson",
+        "organization": "USACE",
+        "phone": "202-761-4492",
+        "email": "christopher.c.thompson@usace.army.mil",
+        "source": "SOW p.1",
+        "quote": "Mr. Chris Thompson, USACE, 202-761-4492"
+      }
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW fee schedule section blank: 'Total Task Order $___'. Fee amounts left for negotiation; not captured in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Contract award date not stated in source documents. NTP was September 22, 2020."
+      },
+      "started_date": {
+        "value": "2020-09-22",
+        "source": "Schedule PDF",
+        "quote": "Notice To Proceed 22nd September 2020"
+      },
+      "completion_date": {
+        "value": "2021-10-06",
+        "source": "Schedule PDF",
+        "quote": "Publication Submittal 6th October 2021"
+      },
+      "contractual_duration_days": {
+        "value": 405,
+        "source": "SOW §8 Schedule table",
+        "quote": "405 Scheduled Days"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "This project is entirely a professional services/specification-writing engagement. There is no construction phase. The 'design' phase label is used here to capture the A-E consulting work per schema structure, though the work product is a technical specification document, not construction documents for a facility."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering",
+      "specifications_writing",
+      "energy_sustainability"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_renewable"
+    ],
+    "building_systems": [
+      "electrical_renewable"
+    ],
+    "construction_scope": [],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "solar_pv",
+    "ufgs",
+    "specifications_development",
+    "tri_service",
+    "navfac_atlantic",
+    "federal_standards",
+    "photovoltaic",
+    "renewable_energy",
+    "specification_writing",
+    "nibs"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — no physical facility"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — no physical facility"
+      },
+      "mep_system_inventory": {
+        "notes": "Not applicable — this is a specification-writing project, not a facility design. The deliverable (UFGS 26 31 00) covers facility-scale solar PV systems for installation by others at DoD facilities."
+      }
+    },
+    "notes": "No construction drawings present or applicable. Project produced a specification document (UFGS 26 31 00), not construction documents. Drawing extraction deferred as not applicable."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.contractual_duration_days",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW §8 Schedule table",
+          "value": "405 scheduled days (sum of milestone day allocations)"
+        },
+        {
+          "source": "Schedule PDF (NTP to Publication Submittal)",
+          "value": "~380 calendar days (Sep 22, 2020 to Oct 6, 2021)"
+        }
+      ],
+      "resolution_chosen": "SOW §8 Schedule table (405 days)",
+      "rationale": "SOW is the contractual document and explicitly states '405 Scheduled Days.' The schedule PDF shows actual milestone dates from NTP to Publication Submittal which spans ~380 days — likely because milestone durations in the SOW include review periods that partially overlap in the actual schedule. Minor discrepancy, both sources are internally consistent."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "specifications_writing": "narratives/disciplines/specifications_writing.md",
+      "energy_sustainability": "narratives/disciplines/energy_sustainability.md"
+    }
+  }
+}

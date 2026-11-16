@@ -1,0 +1,7 @@
+The electrical scope encompassed power service modifications, lighting upgrades, emergency communications, and security provisions for three elevator replacements in Building 510 at Norfolk Naval Shipyard.
+
+Power for Elevator #64 was drawn from existing Substation 510-B (1,000/1,120 kVA, 11.5 kV–480Y/277V transformer, 1,600A switchboard), bus bucket 510-B-3. The new Hollister-Whitney #74 machine operates at 460V/3-phase/60Hz with a 75-HP motor drawing 106A full load. Power for Elevators #63 and #67 was drawn from Substation 510-A (1,500 kVA, similar configuration), bus bucket #3. Elevator #63's 75-HP motor also draws 106A; Elevator #67's Hollister-Whitney #54 machine is driven by a 25-HP motor. All service is 460V/3-phase/60Hz.
+
+Machine room and hoistway lighting was upgraded to LED throughout (4,000 K color temperature, minimum 80 CRI), with a minimum maintained illuminance of 19 foot-candles in machine rooms and 10 foot-candles in elevator hoistways. Category 6 copper telephone cabling was provided for emergency elevator phone service. Two-way emergency communications systems were installed with master intercom stations in each machine room and a lobby station at the first floor.
+
+For Elevator #63, the electrical scope included a fire-rated roll-up door with a keypad access controller at the first-floor interior landing to address Controlled Industrial Area security requirements, with a fire-rated sight glass for fire department access.

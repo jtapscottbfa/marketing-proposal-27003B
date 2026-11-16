@@ -1,0 +1,470 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "dc_grease_interceptor",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/dc_grease_interceptor/2022.10.13.FINAL SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "7fd763f25021ac934b8fb018c4778df7a139473cae1af9f711f4448da24395be",
+      "included": true,
+      "notes": "Final Submittal Basis of Design dated 2022-10-13; covers plumbing design and electrical design sections for grease interceptor installation."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/dc_grease_interceptor/RFP Letter - 688-22-003 - NSF Kitchen Grease Interceptor AE Study.pdf",
+      "type": "sow",
+      "sha256": "1b194e485837a8479b6df8538872e797eedd3a983d424b5aa0410579348fb14a",
+      "included": true,
+      "notes": "RFP cover letter and contract clauses for solicitation 36C24522R022, dated December 9, 2021. Contains project title, construction magnitude, NAICS, performance period, and VOSB CVE/VetBiz requirement."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/dc_grease_interceptor/SOW - NSF Kitchen.pdf",
+      "type": "sow",
+      "sha256": "d4567ef2db4986fece470601a7c0add06dd66df3cb3aa5cf2e82dd09b2430625",
+      "included": true,
+      "notes": "Statement of Work for NSF Kitchen Grease Interceptor, Project 688-22-003, dated December 10, 2021. Describes A/E scope: construction documents, construction administration, post-construction services."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set present in intake folder. No executed contract or fee proposal document present; design fee/contract value not determinable from available sources. BOD is the final submitted design deliverable."
+  },
+  "facts": {
+    "project_name": {
+      "value": "NSF Kitchen Grease Interceptor A&E Study",
+      "source": "RFP p.1",
+      "quote": "PROJECT TITLE AND NO.: 688-22-003 – NSF Kitchen Grease Interceptor A&E Study",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "688-22-003 – NSF Kitchen Grease Interceptor A&E Study",
+          "value": "NSF Kitchen Grease Interceptor A&E Study",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1",
+          "claim": "NSF KITCHEN GREASE INTERCEPTOR PROJECT # 688-22-003",
+          "value": "NSF Kitchen Grease Interceptor",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.1",
+          "claim": "KITCHEN GREASE INTERCEPTOR — Veteran Affairs Medical Center",
+          "value": "Kitchen Grease Interceptor",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Veterans Affairs — Washington VA Medical Center",
+      "source": "RFP p.1",
+      "quote": "Washington VA Medical Center, Washington, DC 20422",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "Washington VA Medical Center, Washington, DC 20422",
+          "value": "Department of Veterans Affairs — Washington VA Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1",
+          "claim": "Washington DC VAMC, 50 Irving ST NW, Washington DC 20422",
+          "value": "Department of Veterans Affairs — Washington VA Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.1",
+          "claim": "Veteran Affairs Medical Center, Washington, DC",
+          "value": "Department of Veterans Affairs — Washington VA Medical Center",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "RFP p.1",
+      "quote": "Washington VA Medical Center",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "Washington VA Medical Center",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1",
+          "claim": "Washington DC VAMC",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "facility_address": "50 Irving Street NW, Washington DC 20422",
+      "facility_name": "VA Medical Center Washington DC (Washington VAMC)",
+      "source": "SOW p.1",
+      "quote": "Washington DC VAMC 50 Irving ST NW Washington DC 20422",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "50 Irving ST NW Washington DC 20422",
+          "value": "50 Irving Street NW, Washington DC 20422",
+          "agrees": true
+        },
+        {
+          "source": "RFP p.1",
+          "claim": "Washington VA Medical Center, Washington, DC 20422",
+          "value": "Washington DC",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.1",
+          "claim": "VA Medical Center in Washington D.C.",
+          "value": "Washington DC",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "688-22-003",
+      "source": "RFP p.1",
+      "quote": "PROJECT TITLE AND NO.: 688-22-003 – NSF Kitchen Grease Interceptor A&E Study",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "688-22-003",
+          "value": "688-22-003",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1",
+          "claim": "PROJECT # 688-22-003",
+          "value": "688-22-003",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C24522R022",
+      "source": "RFP p.1",
+      "quote": "Request for Proposal, 36C24522R022, A/E, Project – 688-22-003",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "36C24522R022",
+          "value": "36C24522R022",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP is the solicitation letter; no executed task order number present in available documents."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No building area or kitchen square footage stated in any source document. Scope is limited to a single kitchen area on First Floor B Wing; no GSF figure provided."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated. Construction cost magnitude is $100,000–$250,000 per RFP; this is an estimated range, not a stated budget."
+    },
+    "construction_cost_magnitude": {
+      "value": "Between $100,000 and $250,000",
+      "source": "RFP p.1",
+      "quote": "ESTIMATED CONSTRUCTION PRICE DESIGN MAGNITUDE: Between $100,000 and $250,000",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "Between $100,000 and $250,000",
+          "value": "Between $100,000 and $250,000",
+          "agrees": true
+        }
+      ]
+    },
+    "naics_code": {
+      "value": "541310",
+      "source": "RFP p.1",
+      "quote": "NAICS: 541310 – Architectural Services",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "541310 – Architectural Services",
+          "value": "541310",
+          "agrees": true
+        },
+        {
+          "source": "RFP p.2",
+          "claim": "The North American Industry Classification System (NAICS) code for this acquisition is 541310",
+          "value": "541310",
+          "agrees": true
+        }
+      ]
+    },
+    "scope_summary": {
+      "value": "Installation of three (3) grease interceptors in the NFS Kitchen at Washington VAMC. One grease interceptor connected to the kitchen pulper; two connected to commercial sinks with garbage grinders. Scope includes plumbing design (30 GPM grease interceptors, type 'L' copper piping) and electrical design (three 20A/1P circuits and GFI receptacles). A/E services include construction documents, construction administration, and post-construction record drawings.",
+      "source": "BOD p.1–4",
+      "quote": "This project involves the installation of grease interceptors into the NFS Kitchen located on the First Floor, B Wing at the VA Medical Center in Washington D.C.",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "installation of grease interceptors into the NFS Kitchen located on the First Floor, B Wing at the VA Medical Center in Washington D.C.",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.2",
+          "claim": "installation of three grease interceptors into the NFS Kitchen. One shall be attached to the kitchen pulper and two to the commercial sinks with installed garbage grinders.",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1",
+          "claim": "installation of a new grease interceptor in the NSF Kitchen located in the 1ST Floor, B Wing at VA Medical Center located at 50 Irving Street, N.W., Washington D.C.",
+          "agrees": true
+        }
+      ]
+    },
+    "ae_services_scope": {
+      "value": "Construction Documents, Construction Administration, and Post-Construction Services (record drawings). Performance period 30 calendar days from NTP.",
+      "source": "SOW p.1",
+      "quote": "This statement of work covers the preparation of the engineering portion of Construction Documents, Construction Administration and Post Construction Services necessary for the installation of a new grease interceptor in the NSF Kitchen",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "preparation of the engineering portion of Construction Documents, Construction Administration and Post Construction Services",
+          "agrees": true
+        },
+        {
+          "source": "RFP p.1",
+          "claim": "PERFORMANCE PERIOD: 30 calendar days from issuance of NTP",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1",
+          "claim": "The anticipated duration of this project will be approximately 30 calendar days.",
+          "agrees": true
+        }
+      ]
+    },
+    "design_criteria": {
+      "value": [
+        "UFC, ICC, IPC, and ASPE Publications and Recommendations",
+        "VA Plumbing Design Manual May 2021",
+        "OSHA Regulations",
+        "NFPA",
+        "District of Columbia Building Code",
+        "DC Water GI Regulation",
+        "ANSI C2 (National Electrical Safety Code)",
+        "NFPA 70 (National Electrical Code)",
+        "Department of Veterans Affairs Electrical Design Manual"
+      ],
+      "source": "BOD p.2–3",
+      "quote": "UFC, ICC, IPC, and ASPE Publications and Recommendations; VA Plumbing Design Manual, May 2021; OSHA Regulations; National Fire Protection Association (NFPA); District of Columbia Building Code; DC Water GI Regulation",
+      "corroboration": [
+        {
+          "source": "BOD p.2",
+          "claim": "UFC, ICC, IPC, and ASPE Publications; VA Plumbing Design Manual, May 2021; DC Water GI Regulation",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.3",
+          "claim": "ANSI C2; NFPA 70; Department of Veterans Affairs Electrical Design Manual",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP solicits a fee proposal; no executed contract or awarded fee document present in available source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-10-13",
+        "source": "BOD filename and header",
+        "quote": null,
+        "notes": "BOD dated 2022-10-13 marked 'FINAL SUBMITTAL'; this is the date of design deliverable completion. Source is BOD document date, not a textual quote of completion date."
+      },
+      "contractual_duration_days": {
+        "value": 30,
+        "source": "RFP p.1",
+        "quote": "PERFORMANCE PERIOD: 30 calendar days from issuance of NTP",
+        "corroboration": [
+          {
+            "source": "RFP p.1",
+            "claim": "30 calendar days from issuance of NTP",
+            "value": 30,
+            "agrees": true
+          },
+          {
+            "source": "SOW p.1",
+            "claim": "The anticipated duration of this project will be approximately 30 calendar days.",
+            "value": 30,
+            "agrees": true
+          }
+        ]
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No construction contract document present. Estimated construction price range: $100,000–$250,000 per RFP."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW Section 3.1(b) states 'The estimated construction period is about 1 month' but this is an estimate, not a contractual duration."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "plumbing_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "plumbing_systems",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_vosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "veterans_affairs",
+    "washington_dc_vamc",
+    "grease_interceptor",
+    "kitchen_plumbing",
+    "vosb_setaside",
+    "ae_idiq_task_order",
+    "small_scope_study"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings present in intake folder; no GSF stated in text documents."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD p.1 and SOW p.1",
+        "quote": null,
+        "notes": "Work is confined to First Floor B Wing. Not a floor count of the building; indicates single-floor scope."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "Three 20A/1P circuit breakers in existing Panel 'K' (room 1C-116)",
+          "Three 20A GFI receptacles in cast box at grease interceptor locations",
+          "Existing electrical services: 480Y/277V and 208Y/120V, 3-phase, 4-wire in room 1C-116",
+          "EMT conduit, copper conductors, THHN/THWN insulation"
+        ],
+        "plumbing": [
+          "Three grease interceptors (30 GPM capacity each)",
+          "One grease interceptor connected to kitchen pulper",
+          "Two grease interceptors connected to commercial sinks with garbage grinders",
+          "Type 'L' copper piping connecting grease interceptors to kitchen equipment and floor sinks"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

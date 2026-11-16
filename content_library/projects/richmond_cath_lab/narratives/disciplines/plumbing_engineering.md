@@ -1,0 +1,5 @@
+Plumbing engineering was part of the design team for the Cardiac Catheterization Lab HVAC replacement at Hunter Holmes McGuire VA Medical Center. The project taxonomy identifies plumbing engineering as a participating discipline, with domestic water listed as the relevant sub-discipline.
+
+Specific plumbing scope details — system configurations, fixtures, equipment connections, or renovation extents — are not captured in the available source record. The design narrative and SOW for this project are focused on the HVAC replacement scope; plumbing is referenced as a participating discipline but its specific work items are not described in the documents from which this record was extracted.
+
+<!-- INTERNAL: Pass 1 gap — no plumbing-specific facts in record.json. The mep_system_inventory.plumbing array is empty. If plumbing scope is material to this past performance entry (e.g., medical gas, condensate drain connections, scrub sink work), obtain detail from executed construction documents or BFA project files and re-run Pass 1 with those sources. -->

@@ -1,0 +1,268 @@
+vocabulary_id: discipline
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: SF330 Section E (Architect-Engineer Qualifications)
+anchor_standard_version: SF330 (current)
+hierarchy: flat
+multi_select: true
+governance_notes: |
+  Top-level engineering and design disciplines. Anchored on SF330 Section E
+  discipline list, which is the federal standard reference for personnel
+  qualifications on A-E projects. Sub-disciplines are captured separately in
+  sub_discipline.yaml for finer granularity.
+
+  SF330 is a public form usable without licensing. Display names follow SF330
+  conventions where applicable.
+future_migration: null
+
+entries:
+  - canonical_id: architecture
+    display_name: Architecture
+    definition: Building design, planning, and aesthetic/functional integration of building systems.
+    parent_id: null
+    aliases:
+      - architect
+      - architectural
+    standard_reference: SF330 Section E
+
+  - canonical_id: landscape_architecture
+    display_name: Landscape Architecture
+    definition: Site design, landscape planning, hardscape and softscape design.
+    parent_id: null
+    aliases:
+      - landscape_architect
+    standard_reference: SF330 Section E
+
+  - canonical_id: interior_design
+    display_name: Interior Design
+    definition: Interior space planning, finishes, furniture, and interior architectural detailing.
+    parent_id: null
+    aliases:
+      - interiors
+      - interior_designer
+    standard_reference: SF330 Section E
+
+  - canonical_id: mechanical_engineering
+    display_name: Mechanical Engineering
+    definition: HVAC, plumbing (where combined), and mechanical systems design.
+    parent_id: null
+    aliases:
+      - mechanical
+      - me
+      - mep_mechanical
+    standard_reference: SF330 Section E
+
+  - canonical_id: electrical_engineering
+    display_name: Electrical Engineering
+    definition: Electrical power, lighting, and low-voltage systems design.
+    parent_id: null
+    aliases:
+      - electrical
+      - ee
+      - mep_electrical
+    standard_reference: SF330 Section E
+
+  - canonical_id: plumbing_engineering
+    display_name: Plumbing Engineering
+    definition: Plumbing systems design (often grouped with mechanical, but distinct discipline).
+    parent_id: null
+    aliases:
+      - plumbing
+      - pe_plumbing
+    standard_reference: SF330 Section E
+
+  - canonical_id: fire_protection_engineering
+    display_name: Fire Protection Engineering
+    definition: Fire suppression, fire alarm, and life safety systems design.
+    parent_id: null
+    aliases:
+      - fire_protection
+      - fpe
+    standard_reference: SF330 Section E
+
+  - canonical_id: structural_engineering
+    display_name: Structural Engineering
+    definition: Structural analysis and design of building and infrastructure structures.
+    parent_id: null
+    aliases:
+      - structural
+      - se
+    standard_reference: SF330 Section E
+
+  - canonical_id: civil_engineering
+    display_name: Civil Engineering
+    definition: Site civil, grading, drainage, utilities, and general civil works design.
+    parent_id: null
+    aliases:
+      - civil
+      - ce_civil
+    standard_reference: SF330 Section E
+
+  - canonical_id: geotechnical_engineering
+    display_name: Geotechnical Engineering
+    definition: Soils analysis, foundation engineering, and subsurface investigation.
+    parent_id: null
+    aliases:
+      - geotechnical
+      - geotech
+      - soils_engineering
+    standard_reference: SF330 Section E
+
+  - canonical_id: environmental_engineering
+    display_name: Environmental Engineering
+    definition: Environmental compliance, NEPA, hazmat, remediation, and environmental design.
+    parent_id: null
+    aliases:
+      - environmental
+      - env_engineering
+    standard_reference: SF330 Section E
+
+  - canonical_id: transportation_engineering
+    display_name: Transportation Engineering
+    definition: Roadway, traffic, transit, and transportation infrastructure design.
+    parent_id: null
+    aliases:
+      - transportation
+      - traffic_engineering
+      - roadway_design
+    standard_reference: SF330 Section E
+
+  - canonical_id: water_resources_engineering
+    display_name: Water Resources Engineering
+    definition: Hydrology, hydraulics, stormwater, and water resources design.
+    parent_id: null
+    aliases:
+      - water_resources
+      - hydrology
+      - hydraulics
+      - stormwater_engineering
+    standard_reference: SF330 Section E
+
+  - canonical_id: surveying_mapping
+    display_name: Surveying / Mapping
+    definition: Land surveying, geodetic, photogrammetric, and mapping services.
+    parent_id: null
+    aliases:
+      - surveying
+      - land_surveying
+      - mapping
+    standard_reference: SF330 Section E
+
+  - canonical_id: lighting_design
+    display_name: Lighting Design
+    definition: Architectural lighting design, illumination engineering (distinct from electrical).
+    parent_id: null
+    aliases:
+      - illumination
+      - lighting_designer
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: acoustical_engineering
+    display_name: Acoustical Engineering
+    definition: Acoustics, sound isolation, room acoustics, and noise control design.
+    parent_id: null
+    aliases:
+      - acoustical
+      - acoustics
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: telecommunications_engineering
+    display_name: Telecommunications / Low-Voltage Engineering
+    definition: Structured cabling, telecom, AV, and low-voltage systems design.
+    parent_id: null
+    aliases:
+      - telecom
+      - low_voltage
+      - structured_cabling
+      - av_design
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: security_engineering
+    display_name: Security Engineering
+    definition: Physical security, electronic security, ESS, ACS, and CCTV systems design.
+    parent_id: null
+    aliases:
+      - security
+      - ess
+      - electronic_security
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: commissioning
+    display_name: Commissioning
+    definition: Building commissioning (Cx), retrocommissioning, and systems performance verification.
+    parent_id: null
+    aliases:
+      - cx
+      - commissioning_authority
+      - cxa
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: energy_sustainability
+    display_name: Energy / Sustainability
+    definition: Energy modeling, sustainability consulting, LEED, WELL, and net-zero design.
+    parent_id: null
+    aliases:
+      - sustainability
+      - leed_consulting
+      - energy_modeling
+      - net_zero
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: cost_estimating
+    display_name: Cost Estimating
+    definition: Construction cost estimating and quantity surveying services.
+    parent_id: null
+    aliases:
+      - estimator
+      - cost_engineer
+      - quantity_surveyor
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: specifications_writing
+    display_name: Specifications
+    definition: Construction specification writing and project manual development.
+    parent_id: null
+    aliases:
+      - spec_writing
+      - specifier
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: construction_administration
+    display_name: Construction Administration
+    definition: Construction-phase services, submittal review, RFI response, and field observation.
+    parent_id: null
+    aliases:
+      - ca
+      - cm_consulting
+      - field_engineering
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: program_project_management
+    display_name: Program / Project Management
+    definition: Owner's representative, program management, or project management consulting.
+    parent_id: null
+    aliases:
+      - pm
+      - program_management
+      - owners_rep
+    standard_reference: SF330 Section E (specialty)
+
+  - canonical_id: planning_urban_design
+    display_name: Planning / Urban Design
+    definition: Master planning, urban design, comprehensive planning services.
+    parent_id: null
+    aliases:
+      - planning
+      - urban_design
+      - master_planning
+    standard_reference: SF330 Section E
+
+  - canonical_id: hazardous_materials
+    display_name: Hazardous Materials / Industrial Hygiene
+    definition: Hazmat assessment, asbestos/lead, indoor air quality, industrial hygiene.
+    parent_id: null
+    aliases:
+      - hazmat
+      - industrial_hygiene
+      - asbestos_lead
+    standard_reference: SF330 Section E (specialty)

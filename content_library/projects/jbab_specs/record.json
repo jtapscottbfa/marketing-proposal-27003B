@@ -1,0 +1,414 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "jbab_specs",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/jbab_specs/21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf",
+      "type": "spec_book",
+      "sha256": "79141a613784785cd7fb1a2739a6a532591101c4b2f760761cf567f409944a0b",
+      "included": true,
+      "notes": "BFA project 21-015 MEP Mini-JOC Specs for JBAB, progress submittal June 9 2021. Division 01 general requirements only (01 11 00 through 02 82 00 asbestos remediation). BFA project number explicitly stated on cover page."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/Mini JOC Section J.pdf",
+      "type": "spec_book",
+      "sha256": "cdc338b222e82cc6ee2691e08c152c3c371043db8eaf14ac7884e33a8a5e2d7f",
+      "included": true,
+      "notes": "Section J (earlier vintage, JOC2012 contract watermark) — Division 01 and 02 spec sections, overlapping with 2021 specs but earlier standard. Reference material for JBAB/JOC contract work restrictions and safety requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/Attachment 5- MACC Electrical Standard Requirements 2019.pdf",
+      "type": "spec_book",
+      "sha256": "0cbd95731aff388964015149a711eb275f7ccc0b78440cc33c00a2c1e4bf9298",
+      "included": true,
+      "notes": "MACC Attachment 5 — Electrical Standard Requirements for JBA and JBAB (December 2019). Covers medium voltage distribution (7,600/13,200V delta), duct banks, LED lighting, airfield lighting, generators, transformers, preferred manufacturers. Applies to both JBA and JBAB."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/Attachment 7- MACC JBAB Environmental Standards.pdf",
+      "type": "spec_book",
+      "sha256": "be66ac1ac4dce0035805c0ca3a2c1336cf303e2a839fed0bad8f50ca9146e954",
+      "included": true,
+      "notes": "MACC Attachment 7 — JBAB Environmental Protection Standards for contracts (June 2020). DC-specific (DCMR compliance), stormwater, asbestos/LBP/PCB, tank management, natural resources, historical resources, recycling requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/Attachment 8 - MACC Mechanical Sys Standard Requirements.pdf",
+      "type": "spec_book",
+      "sha256": "0b68e4ef0b64e0cb8cb6b30f7f86d72338a8c11dac393c28246177e931db9943",
+      "included": true,
+      "notes": "MACC Attachment 8 — Mechanical Systems Standard Requirements for JBA and JBAB (June 2020). Covers HVAC design criteria (outdoor design conditions 94F DB/75F WB summer, 18F winter), ductwork, plumbing, preferred manufacturers. Chillers: Trane only. Thermostat controls: Siemens only. VRF restrictions. EMCS integration required."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/Attachment 9 - MACC Fire Protection Standards.pdf",
+      "type": "spec_book",
+      "sha256": "403091f15ebfd22fe9db65624c5e4a64cdbec319983c78e2cc18a2456c6706a4",
+      "included": true,
+      "notes": "MACC Attachment 9 — Base Fire Protection Standards for JBA and JBAB (30 January 2020 v1.1). Monaco MAAP X addressable fire alarm/mass notification system required, transmitting to Monaco D-21 at fire station #1 bldg 1287. 138.9250 MHz frequency for JBA. Specific mass notification messages prescribed. Signed by Fire Chief Ralph Barone."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/01_35_26.05_20.pdf",
+      "type": "spec_book",
+      "sha256": "9667cbf3c5fc5cfc12202ebfddf56d74e56d95fdc5ca655db330e905ed097ea6",
+      "included": true,
+      "notes": "UFGS Section 01 35 26.05 20 Government Safety Requirements for Design-Build (12/15 version, JOC2021 contract watermark). Standalone copy of the safety section also included in the progress specifications. Duplicate of content in the main spec book."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/01_35_26.05_20.doc",
+      "type": "spec_book",
+      "sha256": "8e8968bac5241a0125b441e64f0a7365fb77882d8159b051ae36ca3edc761f2b",
+      "included": true,
+      "notes": "Word source file for UFGS Section 01 35 26.05 20. Editable version of the PDF counterpart. Content understood to be equivalent to the PDF."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/part_4_minimum_materials_engineering_and_construction_requirements.doc",
+      "type": "spec_book",
+      "sha256": "df2934c2203bfed0ce20baadd0e88088fddd6a4a4e2a40f8342c3358112fa2f3",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Word document: 'Part 4 Minimum Materials Engineering and Construction Requirements.' Not extracted due to .doc format without pandoc support for this file type. Content unknown beyond filename — likely additional MACC base standards or UFC minimum material requirements. Flagged for human review."
+    },
+    {
+      "path": "00_admin/reference_projects/jbab_specs/RE_ MEP Mini-JOC Specs - JBAB.msg",
+      "type": "correspondence",
+      "sha256": "373d9827228a76188f0337bd83e5df53caea3e2f9a36de3c40b8ec06fff6eb14",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Outlook .msg email file: 'RE: MEP Mini-JOC Specs - JBAB.' Not extractable by available tools. Likely contains correspondence context about the BFA 21-015 spec set (transmittal, client comments, scope clarifications). Flagged for human review."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "deferred",
+    "notes": "This folder is a reference standards library, not a standard BFA project record. It contains: (1) BFA-authored MEP spec set for JBAB (project 21-015, June 2021 progress submittal, Div 01 + asbestos), (2) a prior-vintage JBAB JOC contract spec set (Section J, JOC2012), (3) MACC standard requirement attachments (electrical, mechanical, fire protection, environmental) applicable to all JBAB MACC task orders. No BOD, no SOW, no drawings. This is foundational reference material for JBAB MACC/Mini-JOC work."
+  },
+  "facts": {
+    "project_name": {
+      "value": "MEP Mini-JOC Specs — JBAB",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, cover page",
+      "quote": "MEP MINI-JOC SPECS - JBAB",
+      "corroboration": [
+        {
+          "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf cover page",
+          "claim": "MEP MINI-JOC SPECS - JBAB",
+          "agrees": true
+        },
+        {
+          "source": "RE_ MEP Mini-JOC Specs - JBAB.msg (filename)",
+          "claim": "MEP Mini-JOC Specs - JBAB",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Joint Base Anacostia-Bolling (JBAB) / NAVFAC Washington",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, Section 01 14 00 §1.3.9; Attachment 7 title",
+      "quote": "Joint Base Anacostia-Bolling (JBAB), Washington, DC",
+      "notes": "NAVFAC Washington is the contract authority for JBAB construction contracts per multiple Section J references. JBAB is operated as an Air Force/Navy joint base in Washington DC.",
+      "corroboration": [
+        {
+          "source": "Progress Specs Sec 01 14 00 §1.3.9",
+          "claim": "Joint Base Anacostia-Bolling (JBAB), Washington, DC",
+          "agrees": true
+        },
+        {
+          "source": "Attachment 7 JBAB Environmental Standards title",
+          "claim": "Joint Base Anacostia-Bolling (JBAB)",
+          "agrees": true
+        },
+        {
+          "source": "Attachment 5 MACC Electrical introduction",
+          "claim": "Joint Base Andrews (JBA) and Joint Base Anacostia-Bolling (JBAB)",
+          "agrees": true,
+          "notes": "MACC standards cover both JBA and JBAB; client for this specific project is JBAB."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / NAVFAC Washington",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, Section 01 14 00 §1.2.1.2 (NCACS references)",
+      "quote": null,
+      "notes": "Inferred from Navy contractor access control references (NCACS, DBIDS), NAVFAC form references (NAVFAC Form 7300/30), and security section content. JBAB is a joint base but NAVFAC Washington is the executing authority for Navy construction contracts."
+    },
+    "bfa_project_number_internal": {
+      "value": "21-015",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, cover page",
+      "quote": "BFA Project No.: 21-015",
+      "corroboration": [
+        {
+          "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf cover page",
+          "claim": "BFA Project No.: 21-015",
+          "agrees": true
+        }
+      ]
+    },
+    "document_date": {
+      "value": "2021-06-09",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, cover page",
+      "quote": "PROGRESS SUBMITTAL June 9, 2021",
+      "notes": "This is a progress submittal date, not a final issue date. The spec set was in-progress at time of filing."
+    },
+    "location": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "facility_name": "Joint Base Anacostia-Bolling",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, Section 01 11 00 §1.2.2; Attachment 7 header",
+      "quote": "The work shall be located at various DOD sites in Maryland, Virginia, and the District of Columbia approximately as indicated by the individual Task Orders.",
+      "notes": "Task order work area spans MD, VA, and DC. The primary base identified by name throughout is JBAB, Washington DC. Mini JOC Section J confirms the same coverage area."
+    },
+    "contract_vehicle_type": {
+      "value": "Mini-JOC (Job Order Contract) under MACC (Multiple Award Construction Contract)",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, cover page and Section 01 11 00 §1.2.1",
+      "quote": "JOC contract JOC2021",
+      "notes": "The spec watermark reads 'JOC contract JOC2021'. The folder is titled 'MEP Mini-JOC Specs - JBAB' and the MACC attachments confirm this is within a MACC umbrella. The specifications are written as NAVFAC UFGS-derived documents for a JOC delivery method."
+    },
+    "scope_summary": {
+      "value": "Multi-trade maintenance, repair, alteration, and minor new construction MEP work at JBAB and DOD sites in MD/VA/DC under JOC task order delivery. Scope covers mechanical, electrical, plumbing, fire alarm, fire protection, and hazardous material abatement as defined by individual task orders.",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, Section 01 11 00 §1.2.1",
+      "quote": "The work includes providing the labor, equipment, and materials to perform multi-traded maintenance, repair, alteration, and minor new construction projects as shown on the Contract Documents provided with each Task Order. The work may consist of earthwork, sitework, concrete, precast concrete, masonry, steel, pre-engineered structures, masonry, metals, steel studs, drywall, acoustical ceilings, interior finishes and painting, plumbing, mechanical, electrical, fire alarm, fire protection system, doors, windows, hazardous materials abatement and other items defined in the Contract Documents."
+    },
+    "bfa_role_on_project": {
+      "value": "Prime Consultant — MEP engineer of record preparing JOC specifications for the client",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, cover page",
+      "quote": "BOWMAN FOSTER & ASSOCIATES, INC CONSULTING ENGINEERS 6353 Center Drive, Suite 101 Norfolk, VA 23502",
+      "notes": "BFA prepared and issued the project specifications as engineer of record. The spec set is BFA-authored for the client (NAVFAC/JBAB). BFA is not a contractor on this work; they are the A/E firm producing the specs."
+    },
+    "normal_working_hours": {
+      "value": "7:00 AM to 4:30 PM, Monday through Friday",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, Section 01 11 00 §1.5",
+      "quote": "Normal duty hours for work are from 7:00 a.m. to 4:30 p.m., Monday through Friday, or as indicated in the individual task order."
+    },
+    "jbab_security_requirements": {
+      "value": "US citizens only; Base Entry Pass required from South Gate Visitors Control (open Mon-Fri 6AM-3PM); minimum 5 working days advance notice; criminal history check; DBIDS or NCACS enrollment required.",
+      "source": "21-015.2021.06.09.PROGRESS SPECIFICATIONS.pdf, Section 01 14 00 §1.3.9",
+      "quote": "A minimum of 5 working days prior to start of work, the Contractor must furnish to the Joint Base Anacostia-Bolling (JBAB), Washington, DC, Security Department, via the Contracting Officer, the following information for Contractor and subcontractor personnel required to enter the Station"
+    },
+    "electrical_distribution_voltage": {
+      "value": "Medium voltage distribution: 7,600/13,200 Volts Delta; Low voltage secondary: WYE",
+      "source": "Attachment 5- MACC Electrical Standard Requirements 2019.pdf, Section I §1",
+      "quote": "Main Base Overhead and Underground is medium voltage: 7,600/13,200 Volts Delta... Systems under 600 Volts, nominal, low voltage, are WYE secondary",
+      "corroboration": [
+        {
+          "source": "Attachment 5 Section I §1a",
+          "claim": "7,600/13,200 Volts Delta medium voltage main base distribution",
+          "agrees": true
+        }
+      ]
+    },
+    "hvac_outdoor_design_conditions": {
+      "value": "Summer: 94°F DB / 75°F WB (0.4% occurrence); Outside Air HR: 102 gr/Lb; Mean Coincident 82°F DB. Winter: 18°F.",
+      "source": "Attachment 8 - MACC Mechanical Sys Standard Requirements.pdf, Section B",
+      "quote": "Summer Design: 94.0 F DB /75.0 F WB. 0.4% Occurrence. Outside Air Humidity Ratio (HR): 102 gr/Lb. Mean Coincident 82 F DB. Outside Winter Design: 18 F."
+    },
+    "chiller_approved_manufacturer": {
+      "value": "Trane only (JBA/JBAB); no other manufacturer without prior approval.",
+      "source": "Attachment 8 - MACC Mechanical Sys Standard Requirements.pdf",
+      "quote": "Air cooled and water cooled chillers at JBA and JBAB approved manufacturer Trane; No other manufacturer will be accepted without prior JBA or JBAB approval."
+    },
+    "thermostat_controls_manufacturer": {
+      "value": "Siemens only (JBA/JBAB); no other manufacturer without prior approval.",
+      "source": "Attachment 8 - MACC Mechanical Sys Standard Requirements.pdf",
+      "quote": "Thermostat control system JBA and JBAB approved manufacturer Siemens; No other manufacturer will be accepted without prior JBA or JBAB approval."
+    },
+    "vrf_systems_policy": {
+      "value": "VRF not permitted unless specifically requested by JBA or when no other suitable option is available and approved by JBA PM.",
+      "source": "Attachment 8 - MACC Mechanical Sys Standard Requirements.pdf",
+      "quote": "VRF Systems: VRF are not permitted unless it is specifically requested by JBA or when no other suitable option is available and approved by JBA PM."
+    },
+    "emcs_integration_required": {
+      "value": true,
+      "source": "Attachment 8 - MACC Mechanical Sys Standard Requirements.pdf",
+      "quote": "In all new design/ construction projects HVAC control system shall be tied into JBA management system EMCS."
+    },
+    "fire_alarm_system_type": {
+      "value": "Monaco MAAP X addressable fire alarm/mass notification system; reporting to Monaco D-21 receiver at fire station #1, building 1287.",
+      "source": "Attachment 9 - MACC Fire Protection Standards.pdf, §2.F items 11-12",
+      "quote": "The fire alarm reporting system is a Monaco D-21 radio transceiver system using an addressable panel. The facility transceiver shall be Monaco MAAP X with point-to point reporting to the Monaco D-21. The building fire alarm system shall be a Monaco MAAP X addressable system and shall be a combination fire alarm/mass notification system."
+    },
+    "fire_alarm_frequency": {
+      "value": "138.9250 MHz (JB Andrews)",
+      "source": "Attachment 9 - MACC Fire Protection Standards.pdf, §2.F item 5",
+      "quote": "Frequency for the fire alarm system at JB Andrews is 138.9250 MHZ."
+    },
+    "jbab_environmental_jurisdiction": {
+      "value": "District of Columbia — DC Municipal Regulations (DCMR) apply; DOEE is permitting authority for air quality, stormwater, ESC.",
+      "source": "Attachment 7- MACC JBAB Environmental Standards.pdf, §1.2 and §2.2-2.3",
+      "quote": "All contractors and subcontractors shall comply with all applicable local (District of Columbia Municipal Regulations (DCMR)) and federal regulations",
+      "notes": "JBAB is in DC; DC's DOEE (Department of Energy & Environment) has regulatory authority over air permits, stormwater, and ESC. This is unusual vs. most BFA military projects which are in Maryland or Virginia under different state agencies."
+    },
+    "stormwater_land_disturbance_threshold": {
+      "value": "50 sq ft triggers ESC plan requirement; 5,000 sq ft triggers SWMP; 1 acre triggers NPDES Construction General Permit and SWPPP",
+      "source": "Attachment 7- MACC JBAB Environmental Standards.pdf, §2.3.3-2.3.4",
+      "quote": "For any project involving the disturbance of land equal to or in excess of 50 ft2, the contractor shall submit an erosion and sediment control (ESC) plan to the DOEE and obtain approval prior to beginning construction."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod",
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "plumbing_systems",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fire_protection_systems",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "existing_hazmat_abatement"
+    ],
+    "delivery_method": [
+      "job_order_contracting"
+    ],
+    "contract_vehicle": [
+      "federal_macc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "jbab",
+    "joint_base_anacostia_bolling",
+    "navfac_washington",
+    "macc",
+    "mini_joc",
+    "joc",
+    "washington_dc",
+    "mep_specs",
+    "reference_standards",
+    "federal_military",
+    "dod_facilities",
+    "21_015"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Bowman Foster & Associates (BFA)",
+      "role_on_project": "prime_consultant",
+      "notes": "Firm name on cover page; individual personnel not identified in documents."
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing files present in intake folder. This is a specifications/standards reference library only."
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Progress submittal date is June 9, 2021 — design was ongoing at that time."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  },
+  "special_record_type": {
+    "value": "reference_standards_library",
+    "notes": "This intake folder does not represent a single discrete BFA project with a BOD/SOW/drawings. It is a collection of reference specification documents authored/compiled by BFA (project 21-015) for JBAB MACC/Mini-JOC work. The 'project' is BFA's preparation of the MEP JOC specification set, plus base technical standards that govern all JBAB MACC work. Narrative generation (Pass 2) should treat this as a reference-library record documenting BFA's JBAB standards expertise, not a single construction project completion."
+  }
+}

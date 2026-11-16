@@ -1,0 +1,462 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "richmond_cath_lab",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/richmond_cath_lab/DESIGN NARRATIVE.pdf",
+      "type": "bod",
+      "sha256": "a668f8912e29307bf1f84858ee064c0ff470dde5574361c6f3a62d82aa058bfb",
+      "included": true,
+      "notes": "Schematic design narrative dated August 26, 2022. Covers architectural/structural/mechanical/electrical basis of design for cath lab HVAC replacement."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/richmond_cath_lab/S02_36C24622R0033_PEC.pdf",
+      "type": "sow",
+      "sha256": "15c08279a95a28f6a4a92d29835f5ffb65f673f833c023d492b8c2baaf1c9394",
+      "included": true,
+      "notes": "SF-252 AE contract RFP package including SOW (dated 9/1/2021), price/cost schedule (VA Form 6298), wage determination, representations & certifications. Contract number 36C24622R0033."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "Design narrative (BOD/schematic submission) and solicitation/SOW package present. No separate drawing set PDF included in source folder. No project manual/specs provided separately."
+  },
+  "facts": {
+    "project_name": {
+      "value": "AE Replace Cath Lab HVAC — Hunter Holmes McGuire VA Medical Center",
+      "source": "Design Narrative p.1",
+      "quote": "AE Replace Cath Lab HVAC\n         652-22-123",
+      "corroboration": [
+        {
+          "source": "Design Narrative p.1",
+          "claim": "AE Replace Cath Lab HVAC, 652-22-123",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A.3 p.6",
+          "claim": "AE STATEMENT OF WORK: Replace Cath Lab HVAC, Project # 652-22-123",
+          "agrees": true
+        },
+        {
+          "source": "SF-252 p.1 (Section 5)",
+          "claim": "Project# 652-22-123 AE Replace Cath Lab HVAC, Richmond VA Medical Center",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "SF-252 Section 4",
+      "quote": "Department of Veterans Affairs\n   Network Contracting Office 6\n   1201 Broad Rock Blvd\n   Richmond VA 23249",
+      "corroboration": [
+        {
+          "source": "SF-252 Section 4",
+          "claim": "Department of Veterans Affairs, Network Contracting Office 6",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A.3 p.6",
+          "claim": "Richmond VA Medical Center, AE STATEMENT OF WORK",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs — Hunter Holmes McGuire VA Medical Center",
+      "source": "Design Narrative p.1",
+      "quote": "Hunter Holmes McGuire VA Medical Center\n                  Richmond, VA",
+      "corroboration": [
+        {
+          "source": "Design Narrative p.1",
+          "claim": "Hunter Holmes McGuire VA Medical Center, Richmond, VA",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A.3 Section 5",
+          "claim": "Richmond VA Medical Center, 1201 Broad Rock Blvd, Richmond, Virginia 23249",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Richmond",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "1201 Broad Rock Blvd, Richmond, VA 23249",
+      "facility_name": "Hunter Holmes McGuire VA Medical Center, Building 500",
+      "source": "SF-252 Section 5",
+      "quote": "Richmond VA Medical Center\n1201 Broad Rock Blvd\nRichmond, Virginia 23249",
+      "corroboration": [
+        {
+          "source": "SF-252 Section 5",
+          "claim": "1201 Broad Rock Blvd, Richmond, Virginia 23249",
+          "agrees": true
+        },
+        {
+          "source": "Design Narrative p.2",
+          "claim": "Richmond VA Medical Center, Richmond, VA",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.2 p.12",
+          "claim": "This HVAC renovation includes 2,734 sf of space located in Building 500",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "652-22-123",
+      "source": "Design Narrative p.1",
+      "quote": "652-22-123",
+      "corroboration": [
+        {
+          "source": "Design Narrative p.1",
+          "claim": "652-22-123",
+          "agrees": true
+        },
+        {
+          "source": "SOW §A.3 p.6",
+          "claim": "Project # 652-22-123",
+          "agrees": true
+        },
+        {
+          "source": "SF-252 Section 5",
+          "claim": "Project# 652-22-123",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C24622R0033",
+      "source": "SF-252 p.1",
+      "quote": "36C24622R0033",
+      "corroboration": [
+        {
+          "source": "SF-252 p.1",
+          "claim": "36C24622R0033",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Standalone project contract, not a task order."
+    },
+    "square_footage": {
+      "value": 2734,
+      "unit": "sf",
+      "source": "Design Narrative p.2",
+      "quote": "This HVAC renovation includes 2,734 sf of space located in Building 500",
+      "corroboration": [
+        {
+          "source": "Design Narrative p.2",
+          "claim": "2,734 sf of space located in Building 500",
+          "value": 2734,
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.2 p.12",
+          "claim": "This HVAC renovation includes 2,734 sf of space located in Building 500 as indicated in Attachment E.",
+          "value": 2734,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 750000,
+      "currency": "USD",
+      "source": "Design Narrative p.3",
+      "quote": "The projected IGE provided by the VA is approximately $750,000.",
+      "corroboration": [
+        {
+          "source": "Design Narrative p.3",
+          "claim": "approximately $750,000",
+          "value": 750000,
+          "agrees": true
+        },
+        {
+          "source": "SOW §5.3 p.11",
+          "claim": "The Estimated Cost of Construction (ECC) is $750,000.",
+          "value": 750000,
+          "agrees": true
+        },
+        {
+          "source": "SF-252 clause 52.236-22 p.34",
+          "claim": "The estimated construction contract price for the project described in this contract is $750,000.",
+          "value": 750000,
+          "agrees": true
+        }
+      ]
+    },
+    "sow_date": {
+      "value": "2021-09-01",
+      "source": "SOW §A.3 p.6",
+      "quote": "Date: 9/1/2021"
+    },
+    "design_narrative_date": {
+      "value": "2022-08-26",
+      "source": "Design Narrative p.1",
+      "quote": "August 26, 2022"
+    },
+    "facility_description": {
+      "value": "Two single-story steel-framed cardiac catheterization lab additions on the north side of the main hospital complex, Building 500, Hunter Holmes McGuire VA Medical Center. Includes east and west cath labs.",
+      "source": "Design Narrative p.2",
+      "quote": "The Cardiac Cath labs included in the project are comprised of two independent building additions located near the north side of the main hospital complex. These additions are single story, steel framed structures currently housing HVAC equipment above the ceiling level / below the roof plane, and also placed on the roof above.",
+      "corroboration": [
+        {
+          "source": "Design Narrative p.2",
+          "claim": "Two independent building additions, north side of main hospital complex, single story, steel framed",
+          "agrees": true
+        }
+      ]
+    },
+    "hvac_scope_description": {
+      "value": "Complete replacement of existing HVAC (ceiling-mounted AHUs and ductless split systems) in Cardiac Catheterization Lab. Base bid: VRF/VRV system (Daikin) for admin/storage/control room; two roof-mounted AHUs (N+1 redundancy) for OR suites; 100% OA exhaust fan configuration; controls integrated with Metasys DDC system. Bid deduct: retain existing ceiling-mounted unit for offices/control room; three new roof-mounted AHUs for OR suites.",
+      "source": "Design Narrative pp.6-8",
+      "quote": "The base bid includes the entire removal of the HVAC systems for the Cath Lab. The existing HVAC systems include: Ceiling-mounted air handling units and ductless split system units serving the entire suite."
+    },
+    "period_of_performance": {
+      "design_calendar_days": 212,
+      "construction_period_services_days": 485,
+      "total_contract_days": 945,
+      "source": "SOW §8.0 p.14",
+      "quote": "Design completion: 212 calendar days; includes VA design reviews\n     Procurement timeframe: Six (6) months from the time Engineering submits package to contracting.\n     Construction period services: 485 calendar days from construction award date\n     Total contract period: 945 calendar days"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Price/cost schedule (VA Form 6298) present in RFP but all fee fields blank — not yet filled in at solicitation stage. 6% statutory limit on AE fee applies per VAAR 836.606-73 (6% of $750,000 ECC = max ~$45,000)."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW specifies 212 calendar days for design from NTP, but NTP date not in source documents."
+      },
+      "contractual_duration_days": {
+        "value": 212,
+        "source": "SOW §8.0 p.14",
+        "quote": "Design completion: 212 calendar days; includes VA design reviews"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": 750000,
+        "currency": "USD",
+        "source": "SOW §5.3 p.11",
+        "quote": "The Estimated Cost of Construction (ECC) is $750,000.",
+        "notes": "This is the ECC/IGE, not an awarded construction contract value. Actual construction contract was let separately by the VA to a construction contractor."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction_period_services": {
+      "contractual_duration_days": {
+        "value": 485,
+        "source": "SOW §8.0 p.14",
+        "quote": "Construction period services: 485 calendar days from construction award date"
+      },
+      "site_visits_minimum": {
+        "value": 12,
+        "source": "SOW §1.0 p.5",
+        "quote": "A total of twelve (12) site visits during construction shall be included."
+      },
+      "commissioning": {
+        "value": "AE provides commissioning for HVAC systems in lieu of VA-hired 3rd party agent",
+        "source": "SOW §6.0 p.13",
+        "quote": "Provide a Commissioning Agent for HVAC systems in lieu of a VA hired 3rd party agent."
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "architecture",
+      "commissioning"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "plumbing_domestic_water",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "commissioning_new_construction"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_distribution",
+      "fire_protection_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_sdvosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_sdvosb",
+      "description": "100% SDVOSB set-aside procurement under VAAR 852.219-10; award only to VIP-verified SDVOSB firms",
+      "source": "SF-252 RFP solicitation section",
+      "quote": "This is a 100% Service-Disabled Veteran-Owned Small Business (SDVOSB) set-aside procurement.",
+      "flag_for_human_review": true,
+      "notes": "certification_scheme.yaml does not yet include federal_sdvosb entry; only va_swam exists per D-020. This is flagged as a vocab gap."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "richmond_vamc",
+    "hunter_holmes_mcguire",
+    "cath_lab",
+    "hvac_replacement",
+    "healthcare_hvac",
+    "veterans_affairs",
+    "sdvosb",
+    "daikin_vrf",
+    "or_suite_hvac",
+    "federal_healthcare"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 2734,
+        "unit": "sf",
+        "source": "Design Narrative p.2 and SOW §3.2",
+        "quote": null,
+        "notes": "Renovation scope area only; not total building GSF."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "Design Narrative p.2",
+        "quote": "These additions are single story, steel framed structures",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing: ceiling-mounted AHUs and ductless split systems (to be removed)",
+          "Base bid: Daikin VRF/VRV system for admin/storage/control room",
+          "Base bid: Two roof-mounted AHUs (N+1 redundancy) for OR suites — 100% OA with exhaust fan",
+          "Bid deduct: Three roof-mounted AHUs for OR suites; retain existing ceiling-mounted unit for offices/control room",
+          "Controls: Daikin I-Touch pad tied to Johnson Controls Metasys DDC"
+        ],
+        "electrical": [
+          "New disconnects, fuses, and circuit breakers for replacement HVAC equipment",
+          "Copper THHN/THWN conductors; EMT conduit",
+          "Equipment fed from nearby panelboards to allow Cath Lab outages"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Fully sprinklered system to remain/be integrated; AE to retain registered FPE for design and code review",
+          "Infection control fire barrier requirements during construction phasing",
+          "Heat detection tied to building fire alarm during construction if sprinklers compromised"
+        ]
+      }
+    },
+    "reading_notes": "No drawing set PDF was present in the source directory. Mechanical and electrical system inventories were derived from the Design Narrative (schematic submission dated 2022-08-26) and the SOW. The Design Narrative contains photographs of the West and East Cath Lab spaces embedded in the PDF but no engineering drawings. Drawing extraction status is 'complete' in the sense that no extractable drawing PDF exists; facts were derived from text-only sources.",
+    "drawing_extraction_status": "complete"
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "commissioning": "narratives/disciplines/commissioning.md"
+    }
+  }
+}

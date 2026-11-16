@@ -1,0 +1,518 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "inspection_station_2",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/2025.02.25 RFP Inspection Station 2 Replacement Design.pdf",
+      "type": "sow",
+      "sha256": "ea92acc4b218cdec3bce1cc06c81e67511418f8ee6570122156833766baaf1e3",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/2025.03.21 RFP Inspection Station 2 Replacement Design Addendum 1.pdf",
+      "type": "correspondence",
+      "sha256": "2a067c038bf985f5c467f794371885797c09ac6972cf6db17156a9ff59dd4899",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/2025.07.30 RFP Inspection Station 2 Replacement Design Addendum 5.pdf",
+      "type": "correspondence",
+      "sha256": "dd41836c6b6b78680ff2d4329077ac6d1c88fa8d6bde545cb410b14d80196f03",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/2025.08.25 RFP Inspection Station 2 Replacement Design Addendum 6.pdf",
+      "type": "correspondence",
+      "sha256": "d2bea1443ec9294815c05c3fba677697cbe00464c32dde1ee6586517930cdb25",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/000115- List of Drawing Sheets.pdf",
+      "type": "spec_book",
+      "sha256": "2ba357064bcc972214ed43f1d3ae40618326cee504f1e83e5f215e8e3269813f",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/26.03.10.Specifications.pdf",
+      "type": "spec_book",
+      "sha256": "5f8011a556833c9d80d3cebd2c768ff13f0880331b4eb938b6545149e21e466d",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/2026.03.27.ERC.INSPECTION.STATION.2.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "b3d02aa53916e02dd0b71512ecd7e71a0935c1fffc2cec10b7fef428b4f89462",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/ERC Inspection Station #2_100_032726.pdf",
+      "type": "drawing_set",
+      "sha256": "5d153606c24db7320588fe2bc012105db6c46d434a3f0903ca905ae3214d5ff5",
+      "included": true,
+      "notes": "Structural drawings (sheets S-001, S-002, S-101, A-101, A-201) by Broyles and Associates, PC"
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/dgs-30-054_04-21_co-7.pdf",
+      "type": "contract",
+      "sha256": "e47722ef5573017f37c624283ca0bcd08bc924ddf015325bfd2709f160c209ff",
+      "included": true,
+      "notes": "Commonwealth of Virginia General Conditions of the Construction Contract (CO-7) — standard form document, not a project-specific executed contract"
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/inspection_station_2/011000-Summary - Inspection Station.docx",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "ERC Inspection Station #2 Replacement",
+      "source": "RFP cover page",
+      "quote": "ERC Inspection Station #2 Replacement Design",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "ERC Inspection Station #2 Replacement Design",
+          "value": "ERC Inspection Station #2 Replacement Design",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "ERC INSPECTION STATION #2 REPLACEMENT",
+          "value": "ERC Inspection Station #2 Replacement",
+          "agrees": true
+        },
+        {
+          "source": "Section 011000 §3.A",
+          "claim": "Inspection Station 2",
+          "value": "Inspection Station 2",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Elizabeth River Crossings OpCo, LLC",
+      "source": "RFP cover page",
+      "quote": "Elizabeth River Crossings OpCo, LLC (ERC), seeks services of an Architectural / Engineering firm",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Elizabeth River Crossings OpCo, LLC (ERC)",
+          "value": "Elizabeth River Crossings OpCo, LLC",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 title block (client logo)",
+          "claim": "elizabeth river crossings (logo)",
+          "value": "Elizabeth River Crossings",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Elizabeth River Crossings OpCo, LLC",
+      "source": "RFP cover page",
+      "quote": "Elizabeth River Crossings OpCo, LLC (ERC), seeks services of an Architectural / Engineering firm"
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Near Portsmouth Plaza / Portsmouth entrance of the Downtown Tunnel, Portsmouth, VA 23707",
+      "source": "RFP cover page; Section 011000 §3.A",
+      "quote": "Inspection Station #2 located across from Portsmouth Plaza",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Portsmouth Plaza, Portsmouth, VA 23707",
+          "value": "Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "Section 011000 §3.A",
+          "claim": "Project Location: Portsmouth, VA",
+          "value": "Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001, vicinity map",
+          "claim": "Site shown at Portsmouth entrance of Downtown Tunnel",
+          "value": "Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "501-B5501-001",
+      "source": "Drawing G-001 title block; Drawing list Section 000115",
+      "quote": "PROJECT CODE: 501-B5501-001",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "PROJECT CODE: 501-B5501-001",
+          "value": "501-B5501-001",
+          "agrees": true
+        },
+        {
+          "source": "Section 000115 header",
+          "claim": "PROJECT CODE: 501-B5501-001",
+          "value": "501-B5501-001",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Building footprint: pre-manufactured Porta-King Model RR-PC167SW. Slab dimensions per structural drawings are 24'-0\" x 15'-0\" (360 SF slab), with 19'-0\" x 16'-0\" building dimension noted on A-101. No explicit GSF stated in text documents. Computed from drawing dimensions: approximately 304 SF (19'x16'), but GSF extraction from drawing dimensions at medium depth — flagged as approximate."
+    },
+    "gross_square_footage_drawing_derived": {
+      "value": 304,
+      "unit": "gsf",
+      "source": "drawing A-101, floor plan dimensions",
+      "quote": null,
+      "notes": "Estimated from floor plan 19'-0\" x 16'-0\" shown on sheet A-101. Pre-manufactured Porta-King Model RR-PC167SW. Concrete slab is 24'-0\" x 15'-0\" per S-101 (includes turndown edge). Building footprint (without overhangs) interpreted as approximately 19'x16'=304 SF."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "engineer_of_record": {
+      "value": "Bowman, Foster & Associates, Inc.",
+      "source": "Section 011000 §3.B",
+      "quote": "Engineer: Bowman, Foster & Associates, Inc. 5544 Greenwich Rd, Suite 303, Virginia Beach, VA 23462",
+      "corroboration": [
+        {
+          "source": "Section 011000 §3.B",
+          "claim": "Bowman, Foster & Associates, Inc., 5544 Greenwich Rd, Suite 303, Virginia Beach, VA 23462",
+          "value": "Bowman, Foster & Associates, Inc.",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001, design team block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC. CONSULTING ENGINEERS, 5544 GRELIWICH RD. SUIT 303, VIRGINIA BEAC, VA 23462, (757)266 7400",
+          "value": "Bowman, Foster & Associates, Inc.",
+          "agrees": true
+        }
+      ]
+    },
+    "structural_engineer": {
+      "value": "Broyles and Associates, PC",
+      "source": "Drawing G-001, design team block; structural sheets S-001/S-002/S-101",
+      "quote": null,
+      "notes": "Title block on structural sheets reads 'Broyles and Associates, PC structural engineers, 508 Baylor Court, Suite C, Chesapeake, Virginia 23320'"
+    },
+    "surveyor": {
+      "value": "Hoggard/Eure Associates, P.C.",
+      "source": "Drawing G-001, design team block",
+      "quote": null,
+      "notes": "Drawing G-001 design team block lists HOGGARD/EURE ASSOCIATES, P.C. Engineers Surveyors Planners, Portsmouth, Virginia 23704"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP stated 'Fixed Lump Sum' pricing but no design fee amount found in source documents"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP Addendum 6 (Aug 25, 2025) moved expected award to October 16, 2025. No executed contract found."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings dated Final Submittal 03/XX/2026 (March 2026). Design appears complete based on 100% QC submittal files dated 2026-03-31."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "civil_engineering",
+      "structural_engineering",
+      "electrical_engineering",
+      "mechanical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "structural_foundation",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "hvac_design",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "hvac_packaged",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "site_paving",
+      "site_grading_drainage",
+      "site_utilities"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "concrete_cast_in_place",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "earthwork_scope",
+      "exterior_improvements",
+      "special_construction_pre_engineered"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "ercopco",
+    "elizabeth_river_crossings",
+    "portsmouth",
+    "downtown_tunnel",
+    "inspection_station",
+    "pre_engineered_building",
+    "porta_king",
+    "vdot_tolling",
+    "transportation_infrastructure"
+  ],
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": "Virginia SWaM participation data not found in source documents. DGS CO-7 general conditions reference DSBSD certification requirements and Small Business Procurement Plan obligations (§51), but no project-specific SWaM percentages are documented in available sources.",
+      "source": "CO-7 §51",
+      "quote": null
+    }
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "BFA title sheet. Design team: Bowman Foster & Associates, Inc. (EOR/Prime), Hoggard/Eure Associates P.C. (surveyor), Broyles and Associates, PC (structural). Client: Elizabeth River Crossings. Project location shown on vicinity/location maps: Portsmouth area at intersection near Downtown Tunnel portal. Drawing index lists 25 sheets total (G-001 through E-507). Drawing dated 03/22/2026, Final Submittal. Contract No. 501-B5501-001."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "ELECTRICAL LEGEND AND ABBREVIATIONS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Standard electrical legend. New devices include: fluorescent lighting fixtures (E-101 schedule), emergency fixtures, duplex 20A/125VAC convenience receptacles, single-pole switches (20A, 120/277V), equipment connections, electrical panel/board (208Y/120V), LAN system outlet, junction boxes, combination power/communications manhole, CCTV cameras. Existing items to be removed or remain also noted. System appears to be 120/208V 3-phase service."
+      },
+      {
+        "sheet_number": "ES101",
+        "title": "ELECTRICAL SITE PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Shows overall site electrical layout. Key elements: existing electrical manhole (Cabinet 264-13) providing 100A, 3Ø, 4W feeder to new inspection station panelboard. (2) 2-inch conduits run to new building — one for power/control wiring, one spare. Existing inspection station to be demolished; utilities relocated to new building. Existing camera, signage, conduit to be relocated/rerouted. Notes: existing VDOT inspection station must remain in operation through construction until utilities transferred. Scale 1\"=20'-0\"."
+      },
+      {
+        "sheet_number": "ED101",
+        "title": "ELECTRICAL FLOOR PLAN — DEMOLITION",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Demolition plan for existing inspection station building. Items to be removed: existing lighting fixtures, existing 100A load center (120/208V, 1Ø, 3W), cameras, control station, mechanical equipment connections, conduit and wire, power feeder, junction box/conduit. Existing control/power cabinet to remain. Scale 1/2\"=1'-0\"."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "LIGHTING, POWER AND SPECIAL SYSTEMS FLOOR PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "New electrical floor plan for replacement inspection station (Porta-King RR-PC167SW). Electrical panel 'A' inside building. Key notes: 100A, 3Ø, 4W feeder from existing Cabinet Box 264-13; control box per sheets E-502 through E-508; (2) 2\" conduits — one with control wiring, one spare; 4x4 NLar 3R junction box for alarm bells/device. CCTV cameras relocated from existing ERC field station to new building, with waterproof WP junction boxes. Also shows 480V submersible pump circuit (1-HP, 120/240V, 1Ø) run below grade from existing electrical manhole — plumbing lift station."
+      },
+      {
+        "sheet_number": "S-001",
+        "title": "STRUCTURAL GENERAL NOTES (page 1)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Structural design notes by Broyles and Associates, PC. Design per 2021 Virginia Construction Code and IBC 2021. Design loads: First Floor 60 PSF LL, Roof 20 PSF LL. Ground snow 35 PSF, flat roof snow 24.5 PSF. Wind: Vult=120 MPH (Vasd=93 MPH), Exposure C, Risk Category II, Internal Pressure ±0.18. Seismic: SDC A, light-framed walls with shear panels. Rain intensity 3.64 in/hr. Foundations designed for 1,500 PSF allowable soil bearing. All concrete 4,500 PSI (exterior slab/turned edge). Structural fill compacted to 95% per ASTM D698."
+      },
+      {
+        "sheet_number": "S-002",
+        "title": "STRUCTURAL GENERAL NOTES (page 2)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Components and cladding wind loads chart (zones 1–5, roof and wall). Special inspection requirements (per IBC §1704/1705): earthwork, concrete reinforcing/placement, post-installed adhesive anchors. Abbreviation legend."
+      },
+      {
+        "sheet_number": "S-101",
+        "title": "FOUNDATION PLAN AND SECTIONS",
+        "discipline": "structural_engineering",
+        "reading_notes": "Foundation plan at 1/2\"=1'-0\". Concrete slab-on-grade: 24'-0\" O-O x 15'-0\" O-O (360 SF slab). 6\" thick slab reinforced with #4@12\" EW over 15 mil vapor barrier and 4\" porous fill. Turned-down slab edge 1'-0\" wide x 2'-6\" deep with (2)-#5 continuous. Pre-engineered building: Porta-King Model RR-PC167SW. C4x5.4 steel channel base frame by manufacturer. Anchor tabs 3\"x3\" provided by manufacturer. 1/2\"ø galvanized adhesive anchors with 4\" embedment (Hilti HY200 or equal). 1'-6\" roof overhang noted. Roof overhang sidewalk slopes 1/8\" per foot for drainage."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "FLOOR PLAN AND ELEVATIONS",
+        "discipline": "architecture",
+        "reading_notes": "Floor plan 1/2\"=1'-0\". Building footprint 19'-0\" length x 16'-0\" width (approximately 304 SF). Features: water heater, chase heater, wall-mounted heater (no bathroom — confirmed by RFP special condition). Sliding door. Steel-framed exterior walls with metal panels. Clear door openings 32\" (ADA). Wall HVAC unit. Roof plan shows continuous gutter around perimeter, standing seam metal roofing over 3/4\" treated plywood sheathing, (4) downspouts. CCTV cameras relocated to each corner. Speakers at each corner (coordinate with ERC). Elevations A through D shown. Safety glass (7'-6\" and 8'-3.5\" heights noted). VDOT signage to be relocated to exterior wall. Note: existing VDOT inspection station must remain in operation through construction until new utilities transferred."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 304,
+        "unit": "gsf",
+        "source": "drawing A-101, floor plan",
+        "quote": null,
+        "sheets": [
+          "A-101"
+        ],
+        "notes": "Computed from floor plan dimensions 19'-0\" x 16'-0\". Approximate — no explicit GSF stated."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawings A-101, S-101",
+        "quote": null,
+        "sheets": [
+          "A-101",
+          "S-101"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Wall-mounted HVAC unit (pre-engineered building package)",
+          "Chase heater",
+          "Wall-mounted heater"
+        ],
+        "electrical": [
+          "100A, 3Ø, 4W panel ('Panel A') fed from existing Cabinet 264-13",
+          "480V circuit for submersible pump (1-HP, 120/240V, 1Ø)",
+          "CCTV cameras (relocated from existing ERC station)",
+          "Emergency lighting fixtures",
+          "LAN system outlets"
+        ],
+        "plumbing": [
+          "Water heater (building has water supply — new vs. existing which had none)",
+          "Submersible pump / lift station (1-HP)"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing S-101, slab plan",
+          "value": "360 SF (24'x15' slab O-O)"
+        },
+        {
+          "source": "drawing A-101, floor plan",
+          "value": "304 SF (19'x16' building footprint)"
+        }
+      ],
+      "resolution_chosen": "drawing A-101 floor plan (304 SF)",
+      "rationale": "The S-101 slab dimension (24'x15'=360 SF) includes the turned-down edge perimeter which extends beyond the building footprint. The A-101 floor plan shows the actual building interior/footprint as 19'x16'. No single authoritative GSF figure stated in any text source. Both figures are approximate reads from drawing dimensions at medium depth."
+    }
+  ]
+}

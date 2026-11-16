@@ -1,0 +1,457 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "reno_human_performance",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/reno_human_performance/21R8721_RFP.pdf",
+      "type": "sow",
+      "sha256": "79b8f720c4a8a8e95d8b28180d68022839266b2a34340378d4ce924f2df128c2",
+      "page_count": 6,
+      "included": true,
+      "notes": "NAVFAC RFP N40085-21-R-8721 — covers general requirements, contract vehicle, evaluation factors, schedule, and estimated price range. Attachment A (scope of work) listed but not included in this PDF."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/reno_human_performance/HUMAN PERFORMANCE PROGRAM RENOVATION 3855e mechanical and electrical BOD revisions.doc",
+      "type": "bod",
+      "sha256": "99563e44f0de418e906e2a514b1fa38563e19db0379b1fe71affde7cff3597fc",
+      "page_count": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Word 97 .doc binary format — pandoc failed to unpack (corrupt or old format). File size 166 KB. BOD title indicates mechanical and electrical BOD revisions for Bldg 3855E Human Performance Program Renovation. Content could not be extracted."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "RFP (acting as SOW/scope document) successfully extracted. BOD .doc file present but unreadable due to Word 97 binary format incompatibility with pandoc. No drawings or specs in intake folder."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Renovate for Human Performance Program at Building 3855E",
+      "source": "RFP N40085-21-R-8721, title block and General Requirements",
+      "quote": "RENOVATE FOR HUMAN PERFORMANCE PROGRAM at Building 3855E",
+      "corroboration": [
+        {
+          "source": "RFP N40085-21-R-8721, cover page",
+          "claim": "RENOVATE FOR HUMAN PERFORMANCE PROGRAM AT BLDG 3855E",
+          "value": "Renovate for Human Performance Program at Building 3855E",
+          "agrees": true
+        },
+        {
+          "source": "RFP N40085-21-R-8721, General Requirements title field",
+          "claim": "RENOVATE FOR HUMAN PERFORMANCE PROGRAM at Building 3855E",
+          "value": "Renovate for Human Performance Program at Building 3855E",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command, Mid-Atlantic (NAVFAC MIDLANT)",
+      "source": "RFP N40085-21-R-8721, cover page and header",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND, MID-ATLANTIC",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND, MID-ATLANTIC",
+          "value": "Naval Facilities Engineering Command, Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "RFP header (all pages)",
+          "claim": "RFP: N40085-21-R-8721",
+          "value": "NAVFAC MIDLANT issuing authority confirmed by RFP number prefix N40085",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / JEBLCFS",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "Location of the work: JEBLCFS, VA Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "JEBLCFS as the installation where work is located",
+          "value": "Joint Expeditionary Base Little Creek – Fort Story",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Joint Expeditionary Base Little Creek – Fort Story (JEBLCFS), Building 3855E",
+      "facility_address": "1450 Gator Boulevard, Suite 150, Building 3165, Virginia Beach, Virginia 23459-8616",
+      "source": "RFP N40085-21-R-8721, cover page and General Requirements",
+      "quote": "Location of the work: JEBLCFS, VA Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "BLDG 3855E, JEBLCFS VA BEACH, VIRGINIA",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFP General Requirements",
+          "claim": "JEBLCFS, VA Beach, Virginia",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "N40085-21-R-8721",
+      "source": "RFP cover page and all pages",
+      "quote": "RFP: N40085-21-R-8721",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "RFP: N40085-21-R-8721",
+          "value": "N40085-21-R-8721",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP references parent MACC contract numbers (N4008518D1140 through N4008218D1145) for the five MACC holders. The task order contract number was not yet assigned at RFP stage."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Task order not yet awarded as of RFP date (08 July 2021). Task order number would be assigned at award."
+    },
+    "parent_contract_numbers": {
+      "value": [
+        "N4008518D1140",
+        "N4008518D1141",
+        "N4008518D1143",
+        "N4008518D1144",
+        "N4008218D1145"
+      ],
+      "source": "RFP N40085-21-R-8721, cover page — MACC holder contract numbers",
+      "quote": "N4008518D1140\nAMES/Lunacon JV",
+      "notes": "These are the five MACC holder contract numbers (8(a) Design-Build/DBB MACC for Little Creek, Oceana, Yorktown). BFA's role and MACC holder status not determinable from RFP alone."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Square footage of Building 3855E renovation area not stated in RFP. Attachment A (scope) and BOD .doc likely contain area data but both are inaccessible (Att. A not in PDF; BOD unreadable)."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "Budget not stated; estimated price range only."
+    },
+    "estimated_price_range_low": {
+      "value": 500000,
+      "currency": "USD",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "the estimated price range is between $500,000 and $1,000,000",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "$500,000 to $1,000,000 estimated price range",
+          "value": 500000,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_price_range_high": {
+      "value": 1000000,
+      "currency": "USD",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "the estimated price range is between $500,000 and $1,000,000",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "$500,000 to $1,000,000 estimated price range",
+          "value": 1000000,
+          "agrees": true
+        }
+      ]
+    },
+    "rfp_issue_date": {
+      "value": "2021-07-08",
+      "source": "RFP N40085-21-R-8721, header and cover page",
+      "quote": "08 JULY 2021",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "08 JULY 2021",
+          "value": "2021-07-08",
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date": {
+      "value": "2021-07-29",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "Proposal Due Date: THURSDAY, JULY 29, 2021 no later than 1400 Eastern Time.",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "THURSDAY, JULY 29, 2021 no later than 1400 Eastern Time",
+          "value": "2021-07-29",
+          "agrees": true
+        }
+      ]
+    },
+    "liquidated_damages_per_day": {
+      "value": 390,
+      "currency": "USD",
+      "source": "RFP N40085-21-R-8721, FAR 52.211-12",
+      "quote": "the Contractor shall pay liquidated damages to the Government in the amount of $390.00 for each calendar day until the work is completed or accepted.",
+      "corroboration": [
+        {
+          "source": "RFP FAR 52.211-12 clause",
+          "claim": "$390.00 per calendar day liquidated damages",
+          "value": 390,
+          "agrees": true
+        }
+      ]
+    },
+    "naics_code": {
+      "value": "236220",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "NAICS Code: 236220 – Commercial and Institutional Building Construction.",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "NAICS Code: 236220",
+          "value": "236220",
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Reconfigure and renovate existing warehouse space in Building 3855E at JEBLCFS to serve as spillover training/gym space currently located in Building 3855A.",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "The project reconfigures and renovates existing warehouse space in building 3855E to be used as spillover training / gym space currently located in building 3855A.",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements — Description of the work",
+          "claim": "reconfigures and renovates existing warehouse space in building 3855E to be used as spillover training / gym space currently located in building 3855A",
+          "value": "warehouse renovation to gym/training space",
+          "agrees": true
+        }
+      ]
+    },
+    "contractual_duration_days": {
+      "value": 200,
+      "source": "RFP N40085-21-R-8721, General Requirements — Time for completion",
+      "quote": "all work and options shall be completed within 200 calendar days after award.",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "200 calendar days after award",
+          "value": 200,
+          "agrees": true
+        }
+      ]
+    },
+    "site_visit_date": {
+      "value": "2021-07-20",
+      "source": "RFP N40085-21-R-8721, General Requirements",
+      "quote": "The Site Visit is scheduled for TUESDAY, JULY 20, 2021 at 0900 Eastern Time. Meet at BLDG 3855E.",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "TUESDAY, JULY 20, 2021 at 0900",
+          "value": "2021-07-20",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design-Build delivery — design cost is embedded in construction contractor's bid, not separately itemized. No design contract with BFA identified from sources."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP provides estimated price range $500K–$1M. Actual awarded task order value not available from sources."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 200,
+        "source": "RFP N40085-21-R-8721, General Requirements",
+        "quote": "all work and options shall be completed within 200 calendar days after award."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_dining_morale",
+      "military_training"
+    ],
+    "program_subtype": [
+      "military_training"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "finishes_scope",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_macc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_8a_set_aside"
+    ],
+    "award_type": [
+      "low_bid"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "federal_navfac is the correct sub-entry under federal. NAVFAC Mid-Atlantic is the contracting/issuing authority.",
+    "program_type": "Building 3855E is warehouse-to-gym/training space conversion on a military installation. Closest vocab entries: military_training (training facility) and military_dining_morale (MWR). military_training is primary; military_dining_morale included as the gym/MWR function.",
+    "delivery_method": "RFP title explicitly states '8(a) DESIGN-BUILD/DESIGN-BID-BUILD' — design-build is the primary delivery method specified in the contract vehicle title. The task order could be awarded as either; design-build is listed first and is more common for this MACC type.",
+    "contract_vehicle": "Parent vehicle is an 8(a) MACC (IDIQ). This RFP is for a proposed task order under that MACC. Both federal_macc and federal_task_order apply.",
+    "procurement_type": "8(a) set-aside is explicit in the MACC title: '8(a) DESIGN-BUILD/DESIGN-BID-BUILD'.",
+    "award_type": "Award basis is explicitly lowest price: 'In accordance with FAR Part 15, low price process is selected as appropriate for this procurement and award shall be made to the lowest-priced responsible offeror.'",
+    "bfa_role": "BFA's role is not stated in the RFP (which is a government solicitation document). BFA would be a subconsultant or design subconsultant to one of the MACC holder contractors. BOD .doc is titled as a BFA-authored document (mechanical and electrical BOD revisions), suggesting BFA provided MEP design services. Marked subconsultant as most likely role; flag for human review.",
+    "project_status": "Project was being procured in July 2021. Given 200-day construction duration and time elapsed since then, project is likely complete. Marked complete; flag for human review.",
+    "disciplines": "BOD file title explicitly references 'mechanical and electrical' — suggesting BFA's scope was mechanical and electrical engineering. Full scope of BOD unknown due to unreadable file."
+  },
+  "tenant_freeform_tags": [
+    "jeblcfs",
+    "navfac_midlant",
+    "virginia_beach",
+    "building_3855e",
+    "8a_macc",
+    "warehouse_conversion",
+    "gym_training_space",
+    "human_performance_program",
+    "mep_design"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_8a",
+      "notes": "MACC vehicle is explicitly 8(a) set-aside. The MACC holders are 8(a) firms or 8(a) JVs. BFA's set-aside status as subconsultant not determinable from RFP.",
+      "source": "RFP N40085-21-R-8721, cover page",
+      "quote": "8(a) DESIGN-BUILD/DESIGN-BID-BUILD INDEFINITE DELIVERY INDEFINITE QUANTITY (IDIQ) FIRM FIXED PRICE MULTIPLE AWARD CONSTRUCTION CONTRACT (MACC)"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings in intake folder. Scope document (Attachment A) and BOD not accessible."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": [],
+        "notes": "BOD titled 'mechanical and electrical BOD revisions' present but unreadable. No drawings available."
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,490 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "mezzanine_buildout",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/harpers_ferry/mezzanine_buildout/EXPAND SECOND FLOOR MEZZINE BOD.pdf",
+      "type": "bod",
+      "sha256": "543584821fc0b3b9f3d07898dbf66f9babeca6e53c36b63c7973158864053391",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/harpers_ferry/mezzanine_buildout/Mezzanine Expansion SOW.docx",
+      "type": "sow",
+      "sha256": "da96f549a9742df593d48038510599124b2ee5a5cb2597833cdf45be55963e77",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/harpers_ferry/mezzanine_buildout/Electrical Proposal.pdf",
+      "type": "cost_estimate",
+      "sha256": "2b76ccba071fb62e5a9b3424542f3c24edde7d091c8680dfb385ef8c1b5bf449",
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred"
+  },
+  "facts": {
+    "project_name": {
+      "value": "CBP Advanced Training Center Mezzanine Expansion",
+      "source": "BOD p.1",
+      "quote": "US CUSTOMS PATROL AND BORDER PROTECTION MEZZANINE EXPANSIONS",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "US CUSTOMS PATROL AND BORDER PROTECTION MEZZANINE EXPANSIONS",
+          "value": "CBP Advanced Training Center Mezzanine Expansion",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part 1",
+          "claim": "Mezzanine Expansion — U.S. Customs and Border Protection",
+          "value": "CBP Advanced Training Center Mezzanine Expansion",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Proposal p.1",
+          "claim": "TACTICAL TRAINING RENOVATION",
+          "value": "Tactical Training Renovation (alternate name)",
+          "agrees": false
+        }
+      ]
+    },
+    "client_name": {
+      "value": "U.S. Customs and Border Protection (CBP) Advanced Training Center",
+      "source": "SOW Part 1.A",
+      "quote": "US Customs and Border Protection (CBP) Advanced Training Center (ATC)",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "US CUSTOMS PATROL AND BORDER PROTECTION",
+          "value": "U.S. Customs and Border Protection",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part 1.A",
+          "claim": "US Customs and Border Protection (CBP) Advanced Training Center (ATC)",
+          "value": "U.S. Customs and Border Protection (CBP) Advanced Training Center",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "U.S. Customs and Border Protection (CBP)",
+      "source": "SOW Part 1",
+      "quote": "U.S. Customs and Border Protection",
+      "corroboration": [
+        {
+          "source": "SOW Part 1",
+          "claim": "U.S. Customs and Border Protection",
+          "value": "U.S. Customs and Border Protection",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Harpers Ferry",
+      "state": "WV",
+      "country": "US",
+      "facility_address": "440 Koonce Road, Harpers Ferry, WV 25425",
+      "source": "SOW Part 4.B",
+      "quote": "CBP Advanced Training Center 440 Koonce Road Harpers Ferry, WV 25425",
+      "corroboration": [
+        {
+          "source": "SOW Part 4.B",
+          "claim": "440 Koonce Road, Harpers Ferry, WV 25425",
+          "value": "440 Koonce Road",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Proposal p.1",
+          "claim": "75 KOONCE ROAD, HARPERS FERRY, WEST VIRGINIA",
+          "value": "75 Koonce Road",
+          "agrees": false
+        },
+        {
+          "source": "BOD p.1",
+          "claim": "Harpers Ferry, WV",
+          "value": "Harpers Ferry, WV",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "corroboration": [
+        {
+          "source": "BOD",
+          "claim": "No square footage stated in any source document",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "period_of_performance_days": {
+      "value": 180,
+      "source": "SOW Part 4.C",
+      "quote": "Period of Performance. PoP is 180 days after NTP.",
+      "corroboration": [
+        {
+          "source": "SOW Part 4.C",
+          "claim": "PoP is 180 days after NTP",
+          "value": 180,
+          "agrees": true
+        }
+      ]
+    },
+    "facility_name": {
+      "value": "CBP Advanced Training Center (ATC), Tactical Training Building, Building 6",
+      "source": "SOW Part 1.A and BOD Architectural p.2",
+      "quote": "the training facility in building 6 of the CBP ATC",
+      "corroboration": [
+        {
+          "source": "BOD Architectural p.2",
+          "claim": "building 6 of the CBP ATC",
+          "value": "Building 6 / Tactical Training Building",
+          "agrees": true
+        },
+        {
+          "source": "BOD Mechanical p.6",
+          "claim": "Building 131",
+          "value": "Building 131",
+          "agrees": false
+        }
+      ]
+    },
+    "existing_building_type": {
+      "value": "Pre-engineered Metal Building on reinforced concrete slab on grade",
+      "source": "BOD Architectural p.2",
+      "quote": "The existing building is a Pre‐engineered Metal Building system on a reinforced concrete slab on grade.",
+      "corroboration": [
+        {
+          "source": "BOD Architectural p.2",
+          "claim": "Pre‐engineered Metal Building system on a reinforced concrete slab on grade",
+          "value": "Pre-engineered Metal Building",
+          "agrees": true
+        }
+      ]
+    },
+    "scope_summary": {
+      "value": "Expand first-floor gym into existing restroom/locker room area; expand second-floor mezzanine with new structural steel and LW concrete floor system to add office space; relocate laundry; new MEP throughout affected areas.",
+      "source": "BOD p.1",
+      "quote": "The scope is to expand the first‐floor gym area into the existing restroom area. The restroom are shall be removed in its entirety and a new laundry room with plumbing shall be provided on the first floor. The second floor shall be expanded to add more office space and storage area.",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "expand first-floor gym area into existing restroom area; expand second floor for more office space and storage",
+          "value": "gym expansion + mezzanine expansion",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part 1.F",
+          "claim": "renovation and expansion of the gym located inside of the Tactical Training Building",
+          "value": "gym expansion + mezzanine expansion",
+          "agrees": true
+        }
+      ]
+    },
+    "security_requirements": {
+      "value": "All contractor employees require Background Investigation (BI); U.S. citizens or legal U.S. residents only; CAC/PIV or equivalent required.",
+      "source": "SOW Part 4.A",
+      "quote": "A favorably adjudicated Background Investigation (BI) is required for all contractor employees and subcontractors working on this project.",
+      "corroboration": [
+        {
+          "source": "SOW Part 4.A",
+          "claim": "Background Investigation required for all contractor employees and subcontractors",
+          "value": "BI required",
+          "agrees": true
+        }
+      ]
+    },
+    "contractor_license_requirement": {
+      "value": "West Virginia contractor license required",
+      "source": "SOW Part 4.D.2",
+      "quote": "The Contractor shall be licensed to work in the State of West Virginia.",
+      "corroboration": [
+        {
+          "source": "SOW Part 4.D.2",
+          "claim": "The Contractor shall be licensed to work in the State of West Virginia",
+          "value": "WV contractor license",
+          "agrees": true
+        }
+      ]
+    },
+    "warranty_period": {
+      "value": "12 months",
+      "source": "SOW Part 4.D.7",
+      "quote": "The Contractor shall provide a 12-month warranty for all work performed under this contract.",
+      "corroboration": [
+        {
+          "source": "SOW Part 4.D.7",
+          "claim": "12-month warranty for all work performed",
+          "value": "12 months",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "Design-Build delivery; BFA authored the BOD dated ~2020 (drawings referenced as 09/04/2020 in Electrical Proposal). Design and construction are a single contract under Design-Build, so phase split is approximate."
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "SOW Part 4.C",
+        "quote": "Period of Performance. PoP is 180 days after NTP."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "subcontract_electrical": {
+        "value": 78068,
+        "currency": "USD",
+        "source": "Electrical Proposal p.1",
+        "quote": "Total Base bid $ 78,068.00",
+        "note": "I.B. Abel Inc. electrical subcontract base bid. Separate $5,000 allowance for unforeseen items also included."
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal",
+      "federal_dhs"
+    ],
+    "program_type": [
+      "military_training"
+    ],
+    "program_subtype": [
+      "military_training"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "structural_steel",
+      "structural_foundation",
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "superstructure_steel_frame",
+      "foundations_shallow",
+      "interior_partitions",
+      "interior_finishes",
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "concrete_cast_in_place",
+      "metals_structural_steel",
+      "interior_partitions",
+      "finishes_drywall_plaster",
+      "finishes_flooring",
+      "finishes_acoustical_ceilings",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "openings_windows",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "cbp",
+    "harpers_ferry",
+    "federal_training",
+    "mezzanine",
+    "design_build_support",
+    "pre_engineered_metal_building",
+    "gym_expansion",
+    "west_virginia"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "note": "No drawing set PDF provided in intake folder. Drawings referenced in Electrical Proposal (dated 09/04/2020) and BOD structural section but not included in intake. Drawing extraction not performed."
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.facility_address",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW Part 4.B",
+          "value": "440 Koonce Road, Harpers Ferry, WV 25425"
+        },
+        {
+          "source": "Electrical Proposal p.1",
+          "value": "75 Koonce Road, Harpers Ferry, West Virginia"
+        }
+      ],
+      "resolution_chosen": "SOW Part 4.B",
+      "rationale": "The SOW is the government-authored scope document that should carry the authoritative facility address. The Electrical Proposal is a subcontractor bid document that may have used an alternate or abbreviated address. 440 Koonce Road is treated as authoritative."
+    },
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD p.1 / SOW",
+          "value": "CBP Advanced Training Center Mezzanine Expansion"
+        },
+        {
+          "source": "Electrical Proposal p.1",
+          "value": "Tactical Training Renovation"
+        }
+      ],
+      "resolution_chosen": "BOD p.1 / SOW",
+      "rationale": "BOD and SOW both use 'Mezzanine Expansion' framing. 'Tactical Training Renovation' is the electrical subcontractor's job name, which may be a broader or simplified designation. BOD/SOW are design-team and owner documents; treated as authoritative for project name."
+    },
+    {
+      "field_path": "facts.facility_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Architectural p.2",
+          "value": "Building 6 of the CBP ATC"
+        },
+        {
+          "source": "BOD Mechanical p.6",
+          "value": "Building 131"
+        }
+      ],
+      "resolution_chosen": "BOD Architectural p.2",
+      "rationale": "The Architectural section calls it 'building 6' which aligns with the SOW's 'Tactical Training Building' reference; the Mechanical section uses 'Building 131' which may be an alternate building number designation (e.g., federal real property number vs. local number). Both may be correct but refer to the same building under different numbering schemes. Flagged for human review."
+    }
+  ],
+  "socioeconomic_participation": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

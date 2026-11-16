@@ -1,0 +1,8 @@
+# Building 1475 – Replace HVAC Systems – Phase II
+## Project Summary
+
+Bowman, Foster & Associates (BFA) provided prime A-E design services for the comprehensive replacement of HVAC systems in Building 1475 at Norfolk Naval Shipyard (NNSY), Portsmouth, Virginia. The building — a 12,552 SF Radcon/Nuclear Refueling Facility originally constructed in 1975 — had aging HVAC infrastructure requiring full replacement under this Phase II effort, awarded under a NAVFAC IDIQ A-E contract (N40085-20-D-0005) for NAVFAC PWD Portsmouth.
+
+BFA led a multi-discipline design team encompassing mechanical, electrical, plumbing, fire protection, structural, architectural, and hazardous materials disciplines. The mechanical scope replaced three rooftop packaged DX air handling units, three return air fans, VAV terminal boxes with hot water reheat coils, and associated heating hot water and domestic water heat exchangers — transitioning the building from a pneumatic control system to a fully integrated DDC system connected to the NNSY base-wide Siemens DDC network. The structural team analyzed and reinforced the existing roof structure to support new rooftop equipment loads. Architectural work included complete lower-roof replacement and ceiling and floor finish renewals. A thorough hazardous materials assessment identified and designed abatement for asbestos, lead paint, and PCB-containing ballasts throughout the building. Fire protection modifications coordinated with the new ceiling plans, preserving the existing Mircom FX-2000 addressable fire alarm system.
+
+The 100% design submittal was completed September 8, 2025. Construction is anticipated in the 2026–2027 timeframe with a program amount of $3,816,000.
