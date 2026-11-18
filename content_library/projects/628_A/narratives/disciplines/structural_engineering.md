@@ -1,0 +1,7 @@
+# Structural Engineering — Building 6-28A Title II Services
+
+Structural engineering on the Building 6-28A Dynamometer Building project involved review and update of the 2017 structural design package and Title II construction-phase inspection and commissioning support, with BFA serving as engineer of record.
+
+The 2017 design depicted Building 6-28A as a steel pre-fabricated structure of approximately 10,000 SF, designed as a sister type building to the adjacent Building 6-28. The primary structural design update identified in the SOW was the addition of a new structural concrete equipment pad for the DOAS-1 dedicated outdoor air unit and VEX-1 exhaust unit — systems added or relocated after the original design was completed. The original structural drawing (Dwg. S110) did not include this pad, and BFA's update incorporated both the pad depiction and the supporting structural specifications.
+
+The SOW also required BFA's structural review to confirm the 2017 structural design against current code requirements (IBC 2009 and applicable DoD UFC standards) and to coordinate the structural implications of other design changes — including the removal of the dynamometer pit (changed from a below-grade pit to a surface-mount configuration), relocation of the vestibule, and addition of the communications outbuilding. BFA provided periodic structural inspection during construction and, per the SOW's commissioning requirements, structural systems were among the primary disciplines for building commissioning oversight and the final commissioning compliance report.

@@ -1,0 +1,273 @@
+vocabulary_id: procurement_type
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: FAR-derived (federal); state/local/commercial common usage
+anchor_standard_version: FAR (current edition, public)
+hierarchy: two_level
+multi_select: true
+governance_notes: |
+  Procurement type captures HOW the project was solicited and what eligibility
+  rules applied — distinct from award_type (qualifications-based vs best-value
+  vs low-bid) and from contract_vehicle (the contractual instrument used).
+
+  Federal entries derived from FAR Part 19 (small business programs) and FAR
+  Part 6 (competition requirements). FAR is public.
+
+  Multi-select because a single procurement can carry multiple attributes
+  (e.g., 8(a) sole source AND simplified acquisition).
+future_migration: null
+
+entries:
+  # ============ FEDERAL ============
+  - canonical_id: federal
+    display_name: Federal
+    definition: Project procured under federal acquisition rules.
+    parent_id: null
+    aliases:
+      - federal_procurement
+    standard_reference: FAR
+
+  - canonical_id: federal_full_and_open
+    display_name: Federal — Full and Open Competition
+    definition: Federal procurement open to all responsible offerors per FAR Part 6.
+    parent_id: federal
+    aliases:
+      - full_and_open
+      - unrestricted
+      - far_part_6
+    standard_reference: FAR Part 6
+
+  - canonical_id: federal_small_business_set_aside
+    display_name: Federal — Small Business Set-Aside
+    definition: Federal procurement reserved for small businesses per FAR Part 19.5.
+    parent_id: federal
+    aliases:
+      - sb_set_aside
+      - small_business
+      - far_part_19_5
+    standard_reference: FAR Part 19.5
+
+  - canonical_id: federal_8a_set_aside
+    display_name: Federal — 8(a) Set-Aside
+    definition: Set-aside for SBA-certified 8(a) small disadvantaged businesses.
+    parent_id: federal
+    aliases:
+      - 8a
+      - 8a_set_aside
+      - eight_a
+    standard_reference: FAR Part 19.8
+
+  - canonical_id: federal_8a_sole_source
+    display_name: Federal — 8(a) Sole Source
+    definition: Sole-source award to an 8(a) firm under SBA threshold rules.
+    parent_id: federal
+    aliases:
+      - 8a_sole_source
+    standard_reference: FAR Part 19.8
+
+  - canonical_id: federal_hubzone
+    display_name: Federal — HUBZone Set-Aside
+    definition: Set-aside for SBA-certified Historically Underutilized Business Zone firms.
+    parent_id: federal
+    aliases:
+      - hubzone
+      - hub_zone
+    standard_reference: FAR Part 19.13
+
+  - canonical_id: federal_wosb
+    display_name: Federal — WOSB Set-Aside
+    definition: Set-aside for SBA-certified Women-Owned Small Businesses.
+    parent_id: federal
+    aliases:
+      - wosb
+      - women_owned
+    standard_reference: FAR Part 19.15
+
+  - canonical_id: federal_edwosb
+    display_name: Federal — EDWOSB Set-Aside
+    definition: Set-aside for Economically Disadvantaged Women-Owned Small Businesses.
+    parent_id: federal
+    aliases:
+      - edwosb
+    standard_reference: FAR Part 19.15
+
+  - canonical_id: federal_sdvosb
+    display_name: Federal — SDVOSB Set-Aside
+    definition: Set-aside for Service-Disabled Veteran-Owned Small Businesses.
+    parent_id: federal
+    aliases:
+      - sdvosb
+      - veteran_owned
+      - service_disabled_veteran
+    standard_reference: FAR Part 19.14
+
+  - canonical_id: federal_vosb
+    display_name: Federal — VOSB Set-Aside (VA)
+    definition: Veteran-Owned Small Business set-aside (primarily VA per VAAR).
+    parent_id: federal
+    aliases:
+      - vosb
+    standard_reference: VAAR
+
+  - canonical_id: federal_sole_source
+    display_name: Federal — Sole Source (Other Than Competitive)
+    definition: Federal sole-source award per FAR Part 6.302 exceptions.
+    parent_id: federal
+    aliases:
+      - sole_source
+      - other_than_full_and_open
+    standard_reference: FAR Part 6.302
+
+  - canonical_id: federal_simplified_acquisition
+    display_name: Federal — Simplified Acquisition
+    definition: Procurement under simplified acquisition threshold per FAR Part 13.
+    parent_id: federal
+    aliases:
+      - simplified_acquisition
+      - sap
+      - far_part_13
+    standard_reference: FAR Part 13
+
+  - canonical_id: federal_micro_purchase
+    display_name: Federal — Micro-Purchase
+    definition: Procurement under micro-purchase threshold per FAR Part 13.2.
+    parent_id: federal
+    aliases:
+      - micro_purchase
+    standard_reference: FAR Part 13.2
+
+  # ============ STATE ============
+  - canonical_id: state
+    display_name: State
+    definition: Project procured under state procurement rules.
+    parent_id: null
+    aliases:
+      - state_procurement
+    standard_reference: null
+
+  - canonical_id: state_competitive
+    display_name: State — Competitive
+    definition: Open competitive state procurement (RFP, IFB, or RFQ).
+    parent_id: state
+    aliases:
+      - state_rfp
+      - state_competitive_bid
+    standard_reference: null
+
+  - canonical_id: state_set_aside
+    display_name: State — Set-Aside / Preference
+    definition: State procurement with set-aside or preference (small business, minority/women-owned, veteran-owned, in-state).
+    parent_id: state
+    aliases:
+      - state_set_aside
+      - state_swam
+      - swam
+      - state_mwbe
+    standard_reference: null
+
+  - canonical_id: state_sole_source
+    display_name: State — Sole Source
+    definition: State sole-source award (non-competitive) per state procurement rules.
+    parent_id: state
+    aliases:
+      - state_sole_source
+    standard_reference: null
+
+  - canonical_id: state_qbs
+    display_name: State — Qualifications-Based Selection
+    definition: State QBS for A-E services (state-equivalent of federal Brooks Act).
+    parent_id: state
+    aliases:
+      - state_qbs
+      - mini_brooks
+    standard_reference: null
+
+  # ============ LOCAL / MUNICIPAL ============
+  - canonical_id: local
+    display_name: Local — Municipal/County
+    definition: Project procured under municipal or county procurement rules.
+    parent_id: null
+    aliases:
+      - local_procurement
+      - municipal_procurement
+    standard_reference: null
+
+  - canonical_id: local_competitive
+    display_name: Local — Competitive
+    definition: Open competitive local procurement.
+    parent_id: local
+    aliases:
+      - local_rfp
+      - local_competitive_bid
+    standard_reference: null
+
+  - canonical_id: local_qbs
+    display_name: Local — Qualifications-Based Selection
+    definition: Local QBS for A-E services.
+    parent_id: local
+    aliases:
+      - local_qbs
+    standard_reference: null
+
+  - canonical_id: local_school_district_competitive
+    display_name: Local — School District Competitive
+    definition: School district procurement under district-specific procurement rules.
+    parent_id: local
+    aliases:
+      - school_district_rfp
+    standard_reference: null
+
+  - canonical_id: local_state_local_competitive
+    display_name: State/Local — Competitive (Combined)
+    definition: General state or local competitive procurement when distinction is not specified in source.
+    parent_id: null
+    aliases:
+      - state_local_competitive
+    standard_reference: null
+
+  # ============ SPECIAL AUTHORITY / OTHER ============
+  - canonical_id: special_authority
+    display_name: Special Authority Procurement
+    definition: Procurement under a special-purpose authority (port, airport, transit, water authority).
+    parent_id: null
+    aliases:
+      - special_authority
+      - authority_procurement
+    standard_reference: null
+
+  - canonical_id: design_competition
+    display_name: Design Competition
+    definition: Design competition procurement (anonymous or invited).
+    parent_id: null
+    aliases:
+      - design_competition
+      - juried_competition
+    standard_reference: null
+
+  # ============ COMMERCIAL ============
+  - canonical_id: commercial
+    display_name: Commercial — Private Procurement
+    definition: Private commercial procurement (no public procurement rules apply).
+    parent_id: null
+    aliases:
+      - private_procurement
+      - commercial_procurement
+    standard_reference: null
+
+  - canonical_id: commercial_negotiated
+    display_name: Commercial — Direct Negotiation
+    definition: Direct-negotiated private contract (no formal solicitation).
+    parent_id: commercial
+    aliases:
+      - direct_negotiation
+      - private_negotiated
+    standard_reference: null
+
+  - canonical_id: commercial_competitive
+    display_name: Commercial — Competitive
+    definition: Private competitive selection (RFP/RFQ from a private client).
+    parent_id: commercial
+    aliases:
+      - private_rfp
+      - commercial_rfp
+    standard_reference: null

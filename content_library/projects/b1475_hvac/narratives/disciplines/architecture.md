@@ -1,0 +1,9 @@
+# Architecture — Building 1475 HVAC Replacement, Phase II
+
+The architectural scope at Building 1475, Norfolk Naval Shipyard, was driven entirely by the requirements of the mechanical HVAC replacement and the associated structural and systems work above and within the building.
+
+The primary architectural deliverable was the complete replacement of the lower roof system, from the metal deck up. The existing built-up roof system was removed down to the metal deck and replaced with a new Modified Bitumen roof system — granule cap sheet over rigid insulation on the existing metal deck — to meet ASHRAE 90.1 and UFC 3-410-01 thermal performance requirements. Roof fall-protection guardrails were repaired and repainted; new guardrails matching the existing design were added where required by the mechanical layout.
+
+All suspended acoustical tile and gypsum board ceilings throughout the building were demolished to provide access for the HVAC replacement above. Acoustical tile ceilings were replaced in-kind with 2×4 ACT; gypsum board ceilings were replaced with new gypsum board on cold-formed metal framing, primed and painted. Floor finishes disturbed by mechanical, structural, or plumbing work were repaired and replaced to match existing adjacent finishes.
+
+The project took place within the Controlled Industrial Area of NNSY, requiring security access coordination for all A-E and construction personnel. Antiterrorism/Force Protection requirements per UFC 4-020-02 were incorporated into the roof construction. Section 106 SHPO review was required for the building, which is situated within the historic Norfolk Naval Shipyard; documentation submitted included project description, justification for replacement over repair, and photographic records of materials removed. Design criteria followed IBC, UFC 1-300-09N, UFC 3-101-01, UFC 4-010-01, NFPA 101, and ABA 2015.

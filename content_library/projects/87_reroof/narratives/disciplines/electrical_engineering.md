@@ -1,0 +1,9 @@
+# Electrical Engineering — Building 87 Re-Roof Design
+
+Electrical engineering services for the Building 87 Re-Roof Design project at Jefferson Lab (Newport News, VA) were performed by BFA, with Richard H. Williams, PE (VA License 048025) serving as engineer of record. BFA sealed the cover sheet (G-001) and both electrical discipline drawings (ED-101 and E-101) on the final submittal dated August 16, 2022.
+
+The electrical scope was focused on the rooftop lightning protection system, which required complete demolition and reinstallation in coordination with the full roof replacement. The existing system — a perimeter conductor on north and south roof grid lines, 24 typical air terminals, 4 corner air terminals (28 total), and vertical down conductors at the four building corners — was fully documented on the demolition plan (ED-101) and designed for reinstallation on the new roof surface on the new-work plan (E-101). Below-roof down conductors and the balance of the existing protection system were to remain undisturbed.
+
+The construction documents specified replacement materials for damaged components: No. A24 Class 1 copper conductor (24 strands of 14 AWG) and ½-inch by 12-inch minimum solid copper air terminals, both consistent with NFPA 780 and UL 96A requirements. A Jefferson Lab facility-specific requirement — the prohibition of exothermic welds — was incorporated into the construction notes, reflecting the constraints of working within a DOE particle accelerator environment. Post-construction third-party UL-certified inspection with issuance of a master label certificate was required as a contract closeout deliverable.
+
+The electrical scope also included demolition of rooftop exhaust fan circuits, with removal of wiring back to the panelboard source, and demolition of a non-working antenna and its associated wiring.

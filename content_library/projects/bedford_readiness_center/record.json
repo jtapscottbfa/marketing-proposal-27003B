@@ -1,0 +1,353 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "bedford_readiness_center",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/dma/bedford_readiness_center/Request for Fee Proposal (Bedford).pdf",
+      "type": "sow",
+      "sha256": "f4b1e1bb5ea99334934c34b21907a9e7859393186b04417839db86ae7c941271",
+      "included": true,
+      "notes": "Request for Fee Proposal — primary project scope and budget document"
+    },
+    {
+      "path": "00_admin/reference_projects/dma/bedford_readiness_center/22-051.2022.12.22.SEIR BEDFORD_ELECTRICAL.docx",
+      "type": "report",
+      "sha256": "bd57b2cb41ceb7fc75e084a219c4fa0df3986637bddd010a89fb82ebffa22227",
+      "included": true,
+      "notes": "Site Electrical Investigation Report (SEIR), dated 12/22/2022 (visit date 12/6/2022)"
+    },
+    {
+      "path": "00_admin/reference_projects/dma/bedford_readiness_center/RRMM Field Report-Bedford RC.docx",
+      "type": "report",
+      "sha256": "b33985e094a7fcdd30c68aa43fb894d9fef956a0d550cd8bb841174988729638",
+      "included": true,
+      "notes": "RRMM field report dated 12/7/2022; content is minimal (placeholder 'Notes' entries)"
+    },
+    {
+      "path": "00_admin/reference_projects/dma/bedford_readiness_center/22-051.2023.10.25.100% BASIS OF DESIGN_ELECTRICAL.doc",
+      "type": "bod",
+      "sha256": "3438c855ae0b3d9d8eeb05054e7dfd1d4406bd3e38c0eaaacc7c380328241e8e",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "100% Basis of Design (Electrical), dated 10/25/2023. File is corrupt .doc format and could not be extracted by pandoc; content unavailable for extraction."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/bedford_readiness_center/Construction and Professional Services Manual.pdf",
+      "type": "unknown",
+      "sha256": "50718d114f2fb7a7e649719579c1e059c05454e3e201f317d4ae06192774ae3f",
+      "included": true,
+      "flag_for_human_review": false,
+      "notes": "Virginia DMA/DGS Construction and Professional Services Manual (CPSM) 2022 Edition — referenced governance document, not project-specific. Contains procurement and design standards applicable to this project."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD present but unreadable (corrupt .doc). RFP serves as SOW. No drawing set found. 100% BOD filename implies design reached 100% completion."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Bedford Readiness Center HVAC Upgrades",
+      "source": "Request for Fee Proposal (Bedford).pdf, title",
+      "quote": "Bedford RC HVAC Upgrades 123-18578-010",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Bedford).pdf, title",
+          "claim": "Bedford RC HVAC Upgrades 123-18578-010",
+          "value": "Bedford Readiness Center HVAC Upgrades",
+          "agrees": true
+        },
+        {
+          "source": "22-051.2022.12.22.SEIR BEDFORD_ELECTRICAL.docx, header",
+          "claim": "DMA Bedford HVAC Replacement",
+          "value": "Bedford Readiness Center HVAC Replacement",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "Request for Fee Proposal (Bedford).pdf, addressee block",
+      "quote": "Department of Military Affairs",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Bedford).pdf, addressee block",
+          "claim": "Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        },
+        {
+          "source": "22-051.2022.12.22.SEIR BEDFORD_ELECTRICAL.docx, header",
+          "claim": "TO: Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "Request for Fee Proposal (Bedford).pdf, addressee block",
+      "quote": "Department of Military Affairs"
+    },
+    "location": {
+      "city": "Bedford",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Bedford Readiness Center",
+      "facility_address": null,
+      "source": "Request for Fee Proposal (Bedford).pdf, title",
+      "quote": "Bedford RC HVAC Upgrades"
+    },
+    "project_number_internal": {
+      "value": "22-051",
+      "source": "22-051.2023.10.25.100% BASIS OF DESIGN_ELECTRICAL.doc, filename",
+      "quote": null,
+      "notes": "BFA project number extracted from filename convention '22-051.' A separate internal reference number '20188-04' appears in the SEIR header; this may be a different numbering system (sub-project or task order number). See conflict_flags."
+    },
+    "project_number_client": {
+      "value": "VAFM PN 22-0013",
+      "source": "Request for Fee Proposal (Bedford).pdf, header",
+      "quote": "VAFM PN 22-0013",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Bedford).pdf, header",
+          "claim": "VAFM PN 22-0013",
+          "value": "VAFM PN 22-0013",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage stated in any available readable source document."
+    },
+    "program_budget": {
+      "value": 1127000,
+      "currency": "USD",
+      "source": "Request for Fee Proposal (Bedford).pdf, Section I General",
+      "quote": "The not-to-exceed construction budget is $1,127,000.00.",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (Bedford).pdf, Section I General",
+          "claim": "not-to-exceed construction budget is $1,127,000.00",
+          "value": 1127000,
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP requests fee proposal but no negotiated A/E fee is recorded in available sources."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-10-25",
+        "source": "22-051.2023.10.25.100% BASIS OF DESIGN_ELECTRICAL.doc, filename date",
+        "quote": null,
+        "notes": "100% BOD filename date used as proxy for design completion date. Actual contract completion date not stated in available sources."
+      },
+      "contractual_duration_days": {
+        "value": 210,
+        "source": "Request for Fee Proposal (Bedford).pdf, Section V Time Line",
+        "quote": "Design shall be completed within 210 days after NTP is given."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction was separately bid; construction contract value not in available sources. NTE construction budget was $1,127,000."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "state",
+      "state_general"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_armory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "state",
+      "state_competitive"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "dma",
+    "virginia_national_guard",
+    "readiness_center",
+    "hvac_replacement",
+    "bedford_county",
+    "state_military"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": "CPSM SWaM/SDV procurement requirements referenced in RFP for subcontracting. Specific BFA SWaM participation figures not recorded in available sources.",
+      "source": "Request for Fee Proposal (Bedford).pdf, Section III.A/E Services para 1 (references CPSM which contains SWaM requirements)",
+      "quote": null
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings present in source documents. No square footage stated in any readable document."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Complete HVAC system replacement — all existing units and 50+ year old ductwork and piping to be removed and replaced",
+          "Bipolar ionization, high efficiency filtration, UV lighting, cold fusion and other infectious disease prevention components specified",
+          "Building Automation System upgrade including humidity and temperature controls",
+          "HVAC zoning for airborne particle migration reduction",
+          "Existing rooftop units (at least 2, served by separate 240 Delta/120V, 3-phase service)",
+          "Pad-mounted mechanical equipment (served by same 3-phase service)"
+        ],
+        "electrical": [
+          "Main service: 400A, 240/120V, 1-phase, 3-wire (MDP in boiler room)",
+          "Separate outdoor service: 240 Delta/120V, 3-phase, 4-wire (for pad-mounted mechanical equipment and 2 RTUs)",
+          "Multiple 1-phase panelboards throughout facility: MDP, Panel B, A, C, Gym Panel, Panel K, Hallway Panel",
+          "Electrical scope: new circuits for new HVAC equipment; removal and reinstallation of existing lighting in affected areas"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    },
+    "reading_notes": "No drawing set provided in intake folder. Electrical system inventory derived from Site Electrical Investigation Report (SEIR), which constitutes a site investigation report rather than a drawing set. SEIR documents existing electrical conditions as of December 6, 2022 site visit."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_internal",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "22-051.2023.10.25.100% BASIS OF DESIGN_ELECTRICAL.doc, filename",
+          "value": "22-051"
+        },
+        {
+          "source": "22-051.2022.12.22.SEIR BEDFORD_ELECTRICAL.docx, header",
+          "value": "20188-04"
+        }
+      ],
+      "resolution_chosen": "22-051 (BOD filename convention)",
+      "rationale": "BFA project numbering convention YY-NNN (e.g., 22-051) is consistent with BFA's standard format. The number '20188-04' in the SEIR header appears to be a different referencing system — possibly a task order or client-side tracking number. Using 22-051 as the BFA internal project number and documenting 20188-04 as an alternative reference."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

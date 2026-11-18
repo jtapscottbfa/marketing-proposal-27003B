@@ -1,0 +1,9 @@
+# Fire Protection Engineering — Building 234 / Building 184 Freight Elevator Replacement, NNSY
+
+Fire protection engineering scope addressed suppression, detection, alarm interface, and life safety requirements for the elevator machine rooms and hoistways at both buildings, in compliance with UFC 3-600-01 (Fire Protection Engineering for Facilities) and NFPA 72.
+
+At both Building 234 and Building 184, wet pipe sprinkler systems were designed for the elevator machine rooms, connected to the existing second-floor sprinkler systems. Flow switches and shunt-trip breakers were provided to automatically shut down the elevator upon activation of the machine room sprinklers, as required by UFC 3-490-06 and ASME A17.1. Performance criteria and obstruction layouts were provided for the construction contractor to locate discharge devices.
+
+Fire alarm integration included smoke detectors at elevator landings, wall-mounted above elevator doors at each floor per NFPA 72, providing elevator recall and shutdown logic. At Building 234, interface with the existing Simplex 4010 fire alarm panel located on the first floor was required, and the fire protection design coordinated the sequence of operation and control matrix accordingly.
+
+All penetrations into the elevator shafts and machine rooms were designed to be firestopped at both buildings. The SAES explicitly permitted openings between the machine room and the shaft; all other penetrations required firestop treatment. A qualified fire protection engineer (QFPE) meeting Navy/NAVFAC requirements — a registered P.E. who has passed the NCEES fire protection engineering written examination — was responsible for the fire protection design analysis, calculations, specifications, and drawings, with a letter of certification submitted with the final design.

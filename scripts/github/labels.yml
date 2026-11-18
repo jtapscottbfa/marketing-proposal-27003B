@@ -1,0 +1,62 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# scripts/github/labels.yml
+#
+# Canonical label set for the ae-proposal-engine repo (engine itself, NOT
+# scaffolded proposal repos — those use the pursuit-flavored labels documented
+# in .github/REPOSITORY_SETUP.md §4).
+#
+# First six labels mirror the Conventional Commit prefixes from README.md so
+# issue/PR labels and commit history stay aligned. Remaining labels target
+# engine-specific concerns (subsystem hotspots, retrospective loop, pre-1.0
+# breakage signal, future dev hire onboarding).
+#
+# Sync to GitHub with: bash scripts/github/sync_labels.sh
+# ══════════════════════════════════════════════════════════════════════════════
+
+- name: bug
+  color: d73a4a
+  description: Defect in engine behavior
+
+- name: feat
+  color: 0e8a16
+  description: New capability
+
+- name: docs
+  color: 0075ca
+  description: Documentation only
+
+- name: chore
+  color: cfd3d7
+  description: Tooling, deps, housekeeping
+
+- name: ci
+  color: fbca04
+  description: CI / GitHub Actions
+
+- name: refactor
+  color: c5def5
+  description: Code restructure, no behavior change
+
+- name: scaffold
+  color: 5319e7
+  description: Touches new_proposal.sh / template flow
+
+- name: publish-pipeline
+  color: 1d76db
+  description: Pandoc / docx build / lint gates
+
+- name: retrospective
+  color: fef2c0
+  description: Item surfaced from a pursuit postmortem
+
+- name: breaking
+  color: b60205
+  description: Breaking change (pre-1.0 minor bump)
+
+- name: blocked
+  color: "000000"
+  description: Needs decision before proceeding
+
+- name: good-first-issue
+  color: 7057ff
+  description: Earmarked for future dev hire

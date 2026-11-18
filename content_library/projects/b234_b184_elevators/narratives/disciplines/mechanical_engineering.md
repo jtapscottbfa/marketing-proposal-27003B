@@ -1,0 +1,7 @@
+# Mechanical Engineering — Building 234 / Building 184 Freight Elevator Replacement, NNSY
+
+Mechanical engineering scope on this project centered on the design of new HVAC systems for elevator machine rooms at both Building 234 and Building 184, Norfolk Naval Shipyard. The existing mechanical systems at both locations consisted of single electric wall-mounted unit heaters that had reached the end of their service lives. New HVAC for each machine room was designed to meet UFC 3-410-01 and ASHRAE 90.1 energy performance requirements, replacing the obsolete units with systems providing appropriate ventilation and thermal comfort for the elevator machinery environments.
+
+A key requirement at both buildings was the integration of new machine room HVAC into the NNSY base-wide direct digital control (DDC) building automation network. The A-E designed DDC controls for each new system in compliance with UFC requirements and coordinated the tie-in to the base-wide system, ensuring the machine rooms would be managed alongside other installation facilities through the centralized BAS. Testing and balancing (T&B) was specified for both installations as part of the mechanical scope.
+
+The mechanical designs were developed in accordance with UFC 3-490-06 (Elevators) for machine room environment requirements, UFC 3-410-01 for HVAC performance, ASHRAE 90.1 for energy efficiency, and UFC 1-200-02 (High Performance and Sustainable Building Requirements). Energy Star and low-power-consumption equipment was specified throughout.

@@ -1,0 +1,355 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "little_creek_apartments",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/little_creek_apartments/20-049.2020.06.25.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "959b18db6b5f0dffe4daf13570720915827d2cf0b6ae7b2200ed37b5eef8a093",
+      "page_count": 4,
+      "included": true,
+      "notes": "Drawing set for 1301 & 1307 W Little Creek Apartments, Norfolk VA. Title block indicates '1 of 6' sheets; only 4 of 6 sheets present in this file. BFA project no. 20-049, dated 2020-06-25. Sheets E-001, ED101, ED102, E-101."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/little_creek_apartments/2021.07.23.21-031.FINAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "2ee58aafab894a4d92d50bb66adba19a704105779d040c7f01a608bbdce370aa",
+      "page_count": 2,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "STRAY FILE — this drawing set is for project 'Honest Pastures', Virginia Beach VA, BFA project no. 21-031, dated 2021-07-23. It is NOT related to Little Creek Apartments. Sheets M-101 (floor plan new work) and M-102 (roof plan new work) show an exhaust hood / make-up air ventilation scope. File should be moved to its correct project folder."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Source folder contains only 2 PDF files. One is the Little Creek Apartments drawing set (4 of 6 sheets present). The second is a stray drawing set for a different project (Honest Pastures, 21-031). No BOD, SOW, contract, specifications, or narrative documents present. Drawing set itself is incomplete — sheets 5 and 6 of 6 are missing."
+  },
+  "facts": {
+    "project_name": {
+      "value": "1301 & 1307 W Little Creek Apartments",
+      "source": "drawing title block, all sheets of 20-049",
+      "quote": "1301 & 1307 W LITTLE CREEK APARTMENTS",
+      "corroboration": [
+        {
+          "source": "drawing title block, all sheets of 20-049",
+          "claim": "1301 & 1307 W LITTLE CREEK APARTMENTS",
+          "value": "1301 & 1307 W Little Creek Apartments",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Coluzos Properties",
+      "source": "drawing title block, all sheets of 20-049",
+      "quote": "COLUZOS PROPERTIES",
+      "corroboration": [
+        {
+          "source": "drawing title block, all sheets of 20-049",
+          "claim": "COLUZOS PROPERTIES",
+          "value": "Coluzos Properties",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Coluzos Properties",
+      "source": "drawing title block, all sheets of 20-049",
+      "quote": "COLUZOS PROPERTIES",
+      "corroboration": [
+        {
+          "source": "drawing title block, all sheets of 20-049",
+          "claim": "COLUZOS PROPERTIES",
+          "value": "Coluzos Properties",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "1301 & 1307 W Little Creek Rd, Norfolk, VA",
+      "source": "drawing title block and floor plan labels, sheets of 20-049",
+      "quote": "1301 & 1307 W LITTLE CREEK APARTMENTS",
+      "corroboration": [
+        {
+          "source": "drawing title block and floor plan address labels",
+          "claim": "Norfolk, VA (inferred from state seal stamp on Virginia-licensed engineer drawings and 'NORFOLK, VA' printed in sheet border)",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-049",
+      "source": "drawing title block, all sheets of 20-049",
+      "quote": "20-049",
+      "corroboration": [
+        {
+          "source": "drawing title block, all sheets",
+          "claim": "Project No. 20-049",
+          "value": "20-049",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Floor plans present at 1/8\"=1'-0\" scale for overall plans and 1/2\"=1'-0\" for typical unit plans. No area tabulation, code summary block, or GSF stated on any sheet. Sheets 5 and 6 of 6 are missing and may have contained this information."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2020-06-25",
+        "source": "drawing title block, all sheets of 20-049",
+        "quote": "6-25-20",
+        "notes": "Date shown on title block is the drawing issue/final date, not necessarily design completion. Used as proxy for design completion date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "residential_multifamily"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "norfolk",
+    "hampton_roads",
+    "multifamily_residential",
+    "electrical_renovation",
+    "apartment_renovation",
+    "coluzos_properties",
+    "private_client"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND, ABBREVIATIONS, AND PANELBOARD SCHEDULE",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-049.2020.06.25.FINAL DRAWINGS.pdf",
+        "reading_notes": "Cover/legend sheet. Contains electrical legend (light fixture symbols, receptacle types, panelboard symbol, homerun callouts, conduit notation), abbreviations list (AMP, CONDUIT, DISCONNECT, EXISTING, GROUND, LIGHTING, MCB, MLO, PANELBOARD, PHASE, SWITCH, TYPICAL, VOLT/VOLTAGE, TRANSFORMER), and general notes referencing NFPA, NEC, and VUSBC. Main content is 'Typical Panelboard MDP Schedule': 125A MCB, 125A main circuit breaker, 120/240V, 1-phase, 3-wire, 10 kAIC minimum, recessed mount. Manufacturer: Homeline HOM2448M125-PC-HOM INGR. Load schedule lists living room receptacles and lighting, bedroom receptacles and lighting, spare circuits, dishwasher (10A), washing machine (10A), dryer (4VAC, 30A), range (50A), microwave (8A), bathroom receptacles and lighting. Total connected: A=113A, B=103.5A. Sheet title block shows 'NORFOLK, VA' in vertical border text, BFA stamp dated 6-25-20, project 20-049, sheet 1 of 6."
+      },
+      {
+        "sheet_number": "ED101",
+        "title": "OVERALL FLOOR PLANS — DEMOLITION",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-049.2020.06.25.FINAL DRAWINGS.pdf",
+        "reading_notes": "Two overall demolition floor plans at 1/8\"=1'-0\" scale: 1307 W Little Creek (top) and 1301 W Little Creek (bottom). Both show long single-story-footprint row buildings with multiple dwelling units side by side — visible from unit door/window layout. Demolition notes: (1) exterior lights existing to remain; (2) disconnect meter center and remove all associated devices, conduit, and wiring complete back to source; (3) disconnect and remove panel and all associated wiring and devices back to source. Existing electrical infrastructure in each unit is being fully removed. Exterior lighting remains. Scale and layout suggest each building is a 2-story structure (the 'overall' plan is a single-floor outline plan)."
+      },
+      {
+        "sheet_number": "ED102",
+        "title": "TYPICAL FLOOR PLANS — DEMOLITION",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-049.2020.06.25.FINAL DRAWINGS.pdf",
+        "reading_notes": "Two typical unit floor plans at 1/2\"=1'-0\" scale: typical first story and typical second story. Unit plans show bathroom, bedroom, living area, and kitchen spaces. Electrical devices shown as existing-to-be-removed (dashed or light-weight symbols per legend). Demolition note: disconnect and remove panel and feeder wiring and conduit back to source. Two-story building confirmed. First and second floor unit layouts appear identical or very similar from the typical plan comparison."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "OVERALL FLOOR PLANS — NEW WORK AND PANEL RISER DIAGRAM",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-049.2020.06.25.FINAL DRAWINGS.pdf",
+        "reading_notes": "Two overall new-work floor plans at 1/8\"=1'-0\" for 1307 (top) and 1301 (bottom). New devices shown in heavy lineweight. Construction notes: (1) exterior lights existing to remain; (2) provide new meter center, connect existing Dominion Power to new meter center, connect new conduits and wirings to new typical panels 'MDP', see meter center riser diagram on sheet E-501; (3) see typical panel riser diagram on this sheet. Typical Panel Riser Diagram (no scale) shows 4 panels total — two per building (one per floor): 125A 120/240V Panel 'MDP' on 1st and 2nd floor for each of 1301 and 1307. Panels connected via wire chase with two #1/0 and #6 GND (typ). Connect wire chase to new meter center; each panel 'MDP' will connect to a 125A 2P QO breaker — see sheet E-501 for additional information. Note: Sheet E-501 referenced but not present in the 4-sheet PDF (file is 1 of 6 but only 4 sheets provided)."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "FLOOR PLAN — NEW WORK (HONEST PASTURES)",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2021.07.23.21-031.FINAL.DWGS.pdf",
+        "reading_notes": "STRAY SHEET — project 'Honest Pastures', Virginia Beach VA, project 21-031, dated 07/23/2021. NOT part of Little Creek Apartments. Floor plan at 1/4\"=1'-0\" showing single-room commercial space with an exhaust hood symbol. Construction notes (this sheet only): exhaust hood 10'-0\" wide x 5'-0\" deep. Simple room footprint only."
+      },
+      {
+        "sheet_number": "M-102",
+        "title": "ROOF PLAN — NEW WORK (HONEST PASTURES)",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2021.07.23.21-031.FINAL.DWGS.pdf",
+        "reading_notes": "STRAY SHEET — project 'Honest Pastures', Virginia Beach VA, project 21-031, dated 07/23/2021. NOT part of Little Creek Apartments. Roof plan at 1/4\"=1'-0\" showing exhaust fan and make-up air unit on roof. Construction notes: (1) Dayton exhaust fan model 4YY16, serial number 05A10320, 800 CFM; (2) make-up air handling unit Captivaire model A1G10, 2000 CFM variable speed."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 2,
+        "source": "drawings ED102 (typical first story and second story floor plans) and E-101 (panel riser diagram showing 1st and 2nd floor panels)",
+        "quote": null,
+        "sheets": [
+          "ED102",
+          "E-101"
+        ]
+      },
+      "building_count": {
+        "value": 2,
+        "source": "drawings ED101 and E-101 (overall floor plans for 1301 and 1307 W Little Creek shown as separate buildings)",
+        "quote": null,
+        "sheets": [
+          "ED101",
+          "E-101"
+        ]
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No area tabulation present on any of the 4 available sheets. Sheets 5 and 6 of 6 are absent and may have contained a code summary or area schedule."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "Meter center (new) fed from existing Dominion Power service",
+          "Four 125A 120/240V 1-phase panels 'MDP' (two per building, one per floor per building)",
+          "Panel MDP: 125A MCB, Homeline HOM2448M125-PC-HOM INGR, recessed mount",
+          "Wire chase distribution, #1/0 and #6 GND feeders",
+          "Existing exterior lighting retained",
+          "New convenience receptacles, GFCI receptacles, switches, flush-mount lighting throughout units"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "source_documents[1]",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "file folder (little_creek_apartments directory)",
+          "value": "Expected: Little Creek Apartments drawings"
+        },
+        {
+          "source": "drawing title block, 2021.07.23.21-031.FINAL.DWGS.pdf",
+          "value": "Actual project: Honest Pastures, Virginia Beach VA, project 21-031"
+        }
+      ],
+      "resolution_chosen": "File excluded from Little Creek Apartments record facts; flagged as stray.",
+      "rationale": "The second PDF in the folder is unambiguously for a different project ('Honest Pastures', BFA project 21-031) based on the drawing title block. It has been documented in source_documents[] for traceability but its drawing facts are excluded from little_creek_apartments record facts."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

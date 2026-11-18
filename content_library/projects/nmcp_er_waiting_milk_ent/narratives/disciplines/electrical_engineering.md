@@ -1,0 +1,7 @@
+The electrical engineering scope encompassed two primary areas: power service for the replacement AHU and LED lighting renewal in the ER waiting room.
+
+For the AHU replacement, the existing electrical service was shut down, demolished, and replaced. New AHU power was connected through the motor control center, and temporary power via the motor control center was specified to minimize downtime to the Emergency Department during the transition. Variable frequency drives were provided on AHU fan motors; NEMA premium efficient motors were required. Wiring was specified as EMT conduit throughout, with copper THHN/THWN conductors at minimum #12 AWG for power circuits and #14 AWG for control wiring. Voltage drop limits were established at 2% for feeders, 3% for branch circuits, and 5% overall.
+
+For the ER waiting room interior renewal, the existing lighting system was demolished and replaced with LED fixtures: 2×4 recessed troffers, LED downlights, LED exit signs, and 2×4 LED fixtures with integral battery backup. Lighting levels were designed to 30 foot-candles in the waiting room and 50 foot-candles in office and staff areas, per IES recommendations and UFC 3-530-01 requirements.
+
+Electrical scope for the Milk Technology Room (Option 1, not exercised) was specified to include new LED 2×4 recessed fixtures, new receptacles and data outlets, and salvage of the existing motion sensor and card reader — this option was not exercised and is not part of the executed scope.

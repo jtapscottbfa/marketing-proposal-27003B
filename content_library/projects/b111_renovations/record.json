@@ -1,0 +1,474 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-22T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b111_renovations",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b111_renovations/2025.02.24 BUILDING 111 BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "ac67f1865372bdb647451a54efa0741d516d4352106536ecac571f7a86ea3927",
+      "included": true,
+      "notes": "BFA Prefinal Submittal, February 24, 2025. BFA Project #24-040C. Mechanical basis of design only — no electrical, plumbing, or fire protection sections present."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b111_renovations/PWS - Building 111 Renovations with options.pdf",
+      "type": "sow",
+      "sha256": "ce4048f2b05bd9b0cf21fe9875dc965d164265cebb364cd2eb7d220779ec4f7d",
+      "included": true,
+      "notes": "Performance Work Statement from NAVFAC/Public Works Department South Potomac, dated February 29, 2024. eProjects# 1803740. Covers base bid and four options. Issued prior to BFA's prefinal BOD — is the government's scope document used to commission the design."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing PDFs found in intake directory. BOD covers mechanical scope only; electrical, plumbing, and fire protection BOD sections are absent. PWS covers full multi-option scope."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 111 Renovations",
+      "source": "BOD cover page",
+      "quote": "BUILDING 111 RENOVATIONS",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BUILDING 111 RENOVATIONS",
+          "value": "Building 111 Renovations",
+          "agrees": true
+        },
+        {
+          "source": "PWS title block",
+          "claim": "Building 111 Renovations",
+          "value": "Building 111 Renovations",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Support Facility Indian Head / NAVFAC Public Works Department South Potomac",
+      "source": "PWS header",
+      "quote": "Public Works Department South Potomac\nSite: Naval Support Facility, Indian Head, MD\nFacilities Engineering Branch",
+      "corroboration": [
+        {
+          "source": "PWS header",
+          "claim": "Public Works Department South Potomac / Naval Support Facility, Indian Head, MD",
+          "value": "Naval Support Facility Indian Head / NAVFAC Public Works Department South Potomac",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "NSF INDIAN HEAD, MD",
+          "value": "NSF Indian Head",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / NAVFAC",
+      "source": "PWS §3.c.i",
+      "quote": "SECNAV 5512/1 (Department of the Navy Local Population ID Card/Base Access Pass Registration) Forms to Naval Support Activity South Potomac Security Department",
+      "corroboration": [
+        {
+          "source": "PWS §3.c.i",
+          "claim": "Naval Support Activity South Potomac / Department of the Navy",
+          "value": "Department of the Navy / NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Indian Head",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "Naval Support Facility Indian Head — Building 111",
+      "facility_address": null,
+      "source": "BOD cover page",
+      "quote": "NSF Indian Head, Maryland",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "NSF Indian Head, Maryland",
+          "agrees": true
+        },
+        {
+          "source": "PWS title block",
+          "claim": "Building 111, NSF Indian Head, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-040C",
+      "source": "BOD cover page",
+      "quote": "BFA Project #24-040C",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BFA Project #24-040C",
+          "value": "24-040C",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "1803740",
+      "source": "PWS title block",
+      "quote": "eProjects#: 1803740",
+      "corroboration": [
+        {
+          "source": "PWS title block",
+          "claim": "eProjects#: 1803740",
+          "value": "1803740",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage stated in BOD or PWS. Building is described as multi-story (basement, main floor, 2nd floor) with shop, admin, office, conference, kitchen, locker room, and training room spaces."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "building_age_constructed": {
+      "value": 1899,
+      "source": "BOD General section",
+      "quote": "Building 111 was originally completed in 1899 as the powerhouse for the station.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "originally completed in 1899",
+          "value": 1899,
+          "agrees": true
+        },
+        {
+          "source": "PWS §1.a",
+          "claim": "Building 111 was originally completed in 1899 as the powerhouse for the station.",
+          "value": 1899,
+          "agrees": true
+        }
+      ]
+    },
+    "building_occupancy_description": {
+      "value": "Primary shop and administrative space for NAVFAC Public Works Facilities in-house workforce",
+      "source": "BOD General section",
+      "quote": "Building 111 is the primary shop and admin space for NAVFAC Public Works Facilities in-house work force.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "primary shop and admin space for NAVFAC Public Works Facilities in-house work force",
+          "agrees": true
+        },
+        {
+          "source": "PWS §1.b",
+          "claim": "Building 111 is the primary shop and admin space for NAVFAC Public Works Facilities in-house work force.",
+          "agrees": true
+        }
+      ]
+    },
+    "hvac_system_description": {
+      "value": "6 new split-system heat pumps with condensing units replacing all existing HVAC; exhaust systems for restrooms",
+      "source": "BOD Mechanical Design — Scope of Work",
+      "quote": "(6) New heat pump air handlers with (6) heat pump condensing units\nExhaust system for restrooms (Women's, Men's, Private restroom, and basement bathroom)",
+      "corroboration": [
+        {
+          "source": "BOD Mechanical Design — Scope of Work",
+          "claim": "6 heat pump air handlers + 6 condensing units + exhaust systems",
+          "agrees": true
+        },
+        {
+          "source": "PWS Option #2",
+          "claim": "new heat pump and air handler over kitchen; heat pump and air handler in utility room; ductless mini-split systems; exhaust systems for restrooms",
+          "agrees": true,
+          "notes": "PWS describes split arrangement (kitchen zone, front office zone, ductless mini-splits for remaining areas). BOD consolidates to 6 total units. Consistent — minor description difference."
+        }
+      ]
+    },
+    "scope_summary": {
+      "value": "Comprehensive renovation of historic 1899 building including: Base Bid — building repair and HAZMAT (asbestos/lead) remediation; Option 1 — electrical service upgrade and LED lighting; Option 2 — full HVAC replacement (6 heat pump systems); Option 3 — plumbing fixtures and new Women's restroom; Option 4 — room finishes (flooring, ceilings, doors, paint).",
+      "source": "PWS §2.h",
+      "quote": "This work is presented as a base with multiple options to be exercised in order of precedence.",
+      "corroboration": [
+        {
+          "source": "PWS §2.h.i–v",
+          "claim": "Base bid + Options 1-4 covering HAZMAT, electrical, HVAC, plumbing, finishes",
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "renovation includes comprehensive upgrades to the HVAC systems",
+          "agrees": true,
+          "notes": "BOD covers only HVAC scope (Option 2); full multi-option scope only described in PWS"
+        }
+      ]
+    },
+    "period_of_performance_days": {
+      "value": 212,
+      "source": "PWS §2.a",
+      "quote": "The period of performance for this project shall be 212 days.",
+      "corroboration": [
+        {
+          "source": "PWS §2.a",
+          "claim": "212 days period of performance",
+          "value": 212,
+          "agrees": true
+        }
+      ]
+    },
+    "design_criteria": {
+      "value": [
+        "NAVFAC Planning & Design Policy",
+        "UFC 3-410-02N, Heating, Ventilating, Air Conditioning and Dehumidifying Systems",
+        "UFC (IBC and UFGS) per WBDG",
+        "ASHRAE 62.1-2007",
+        "ASHRAE 55-2008",
+        "IMC-2010",
+        "SMACNA HVAC Commissioning Manual",
+        "40 CFR 112"
+      ],
+      "source": "BOD Mechanical Design — Design Criteria",
+      "quote": "NAVFAC Planning & Design Policy\nUFC, ICC, IPC, ASPE, and ASHRAE Publications and Recommendations\n40 CFR 112\nSMACNA HVAC Commissioning Manual\nUFC 3-410-02N, Heating, Ventilating, Air Conditioning and Dehumidifying Systems\nIMC-2010 International Mechanical Code\nASHRAE, Standard 55-2008, Thermal Environmental Conditions for Human Occupancy\nASHRAE 62.1-2007, Ventilation for Acceptable Indoor Air Quality"
+    },
+    "hazmat_conditions": {
+      "value": "Asbestos-containing materials (ACM) and lead-based paint (LBP) suspected throughout. Asbestos tile in 6 offices and 2 hallways; asbestos-containing transite on walls under wood paneling identified.",
+      "source": "PWS §2.g and §2.h.i",
+      "quote": "Asbestos Containing Materials and Lead Paint are suspected.",
+      "corroboration": [
+        {
+          "source": "PWS §2.g",
+          "claim": "Asbestos Containing Materials and Lead Paint are suspected",
+          "agrees": true
+        },
+        {
+          "source": "PWS §2.h.i.6-7",
+          "claim": "Provide asbestos tile abatement in 6 offices and 2 hallways. Provide asbestos containing transite on wall under wood paneling.",
+          "agrees": true
+        }
+      ]
+    },
+    "government_pm": {
+      "value": "Steven Robey",
+      "source": "PWS title block",
+      "quote": "PM: Steven Robey, x4684 steven.f.robey.civ@us.navy.mil"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "submittal_level_current": {
+        "value": "Prefinal",
+        "source": "BOD cover page",
+        "quote": "PREFINAL SUBMITTAL"
+      },
+      "submittal_date": {
+        "value": "2025-02-24",
+        "source": "BOD cover page",
+        "quote": "February 24, 2025"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 212,
+        "source": "PWS §2.a",
+        "quote": "The period of performance for this project shall be 212 days."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "civic_office"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "finishes_scope",
+      "openings_doors_frames",
+      "openings_windows"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nsf_indian_head",
+    "historic_building",
+    "hazmat_remediation",
+    "heat_pump",
+    "small_project",
+    "multi_option_bid",
+    "military_installation"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings in intake directory; no square footage stated in text documents."
+      },
+      "floor_count": {
+        "value": 3,
+        "source": "PWS §2 and attachments — floor plan descriptions",
+        "quote": null,
+        "notes": "Basement, main floor (1st floor), and 2nd floor referenced throughout PWS. Value derived from text descriptions, not drawings.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "6 split-system heat pump air handlers with 6 condensing units (all zones)",
+          "Ductless mini-split systems (conference room, HVAC office, bathrooms, work leader office, 2nd floor training room, utility room, office, basement office and locker room)",
+          "Exhaust fans — Men's restroom, Private restroom, future Women's restroom, basement bathroom"
+        ],
+        "electrical": [
+          "New 480V feed and panel for shop area",
+          "New transformer and 120/208V panel in shop area",
+          "New 120/208V panel in locker room",
+          "New sub-panel on second floor",
+          "New LED lighting throughout",
+          "New code-compliant switches and receptacles"
+        ],
+        "plumbing": [
+          "New fixtures in Private restroom (1st floor)",
+          "New fixtures in basement locker room (lavatory countertop, sinks, faucets, toilets, urinals)",
+          "New shower in locker room",
+          "New Women's restroom (1st floor, 2 toilet stalls, 2 lavatories)",
+          "New waste piping in basement",
+          "New water distribution piping in basement"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

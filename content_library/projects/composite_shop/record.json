@@ -1,0 +1,554 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "composite_shop",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/composite_shop/23-030A COMPOSITE SHOP PME BOD.pdf",
+      "type": "bod",
+      "sha256": "2251b52769826ccf4b2902e53228887265ec6db1a76862621f950ce03295961a",
+      "page_count": 6,
+      "included": true,
+      "notes": "BFA-authored Basis of Design covering plumbing, mechanical, and electrical disciplines for P-1127U Composite Shop"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/composite_shop/N4008523R2541 RFP.pdf",
+      "type": "sow",
+      "sha256": "5ced8fdde4cc7cc915e58eac890d7d7f07606ad4e663fdaa9c6f8aa506143696",
+      "page_count": null,
+      "included": true,
+      "notes": "NAVFAC solicitation / RFP for design-build task order N40085-23-R-2541; includes description of work, evaluation factors, wage determination"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/composite_shop/23R2541 Amendment 0001.pdf",
+      "type": "correspondence",
+      "sha256": "ee6bd52c725ac984ffab63ead2a1b5efabc9f041fbbc3ec070df926d5377347e",
+      "page_count": 2,
+      "included": true,
+      "notes": "Amendment 0001 — provides site visit date/time (July 26, 2023 at 9:00 AM EDT) and location information"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/composite_shop/23R2541 Amendment 0002.pdf",
+      "type": "correspondence",
+      "sha256": "bcea0a6e6af4c08fa5c45b8d8a6697703f37a1889da092e9637a5e0b5893f921",
+      "page_count": 1,
+      "included": true,
+      "notes": "Amendment 0002 — provides site visit log; confirms proposal due date of August 24, 2023 unchanged"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/composite_shop/23R2541 P1127 Site Visit Log.pdf",
+      "type": "report",
+      "sha256": "c332aec65bd00b1c03d208f465d2c84ff9f618f44ab46a81536dcb61f6e8f7c9",
+      "page_count": 1,
+      "included": true,
+      "notes": "Image-based handwritten site visit attendance log from July 26, 2023. Lists attendees from multiple firms (Baron-Rand JV, AIM Services, Stampede-GCA, Power Electric, CP6, Becker American, MIG Gov, Wood UKM, Belle GC, Dills AICN, FRCDE, NAVFAC, JJR, PWD Norfolk, FCD Norfolk, NAVFAL). BFA/Bowman Foster not on attendee list but authored the BOD."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "BOD (PME only) and RFP/solicitation documents present. No architectural/structural drawings or project specifications in intake folder. RFP references drawing attachments (Work Order 1702359) that were not included in the intake."
+  },
+  "facts": {
+    "project_name": {
+      "value": "P-1127U Composite Shop",
+      "source": "RFP cover page",
+      "quote": "P-1127U COMPOSITE SHOP",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "P-1127U COMPOSITE SHOP",
+          "value": "P-1127U Composite Shop",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "COMPOSITE SHOP P-1127U",
+          "value": "P-1127U Composite Shop",
+          "agrees": true
+        },
+        {
+          "source": "Amendment 0001",
+          "claim": "P-1127U COMPOSITE SHOP",
+          "value": "P-1127U Composite Shop",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command, Mid-Atlantic (NAVFAC Mid-Atlantic)",
+      "source": "RFP cover page",
+      "quote": "NAVAL FACILITIES ENGINEERING SYSTEMS COMMAND, MID-ATLANTIC",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "NAVAL FACILITIES ENGINEERING SYSTEMS COMMAND, MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "Amendment 0001 block 6",
+          "claim": "NAVFACSYSCOM MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / Department of the Navy",
+      "source": "RFP cover page",
+      "quote": "NAVAL FACILITIES ENGINEERING SYSTEMS COMMAND, MID-ATLANTIC",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Naval Station Norfolk, Norfolk, Virginia",
+          "value": "United States Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Station Norfolk",
+      "facility_address": "9324 Virginia Ave, Bldg Z-140, Naval Station Norfolk, Norfolk, VA 23511",
+      "source": "RFP cover page",
+      "quote": "Naval Station Norfolk, Norfolk, Virginia",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Naval Station Norfolk, Norfolk, Virginia",
+          "value": "Naval Station Norfolk, Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Naval Station Norfolk",
+          "value": "Naval Station Norfolk, Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "N40085-23-R-2541",
+      "source": "RFP cover page",
+      "quote": "PROPOSED TASK ORDER: N40085-23-R-2541",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Solicitation N4008523R2541",
+          "value": "N4008523R2541",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Solicitation/RFP stage only; no awarded task order number found in available documents"
+    },
+    "task_order_number": {
+      "value": "N40085-23-R-2541",
+      "source": "RFP cover page",
+      "quote": "PROPOSED TASK ORDER: N40085-23-R-2541",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "PROPOSED TASK ORDER: N40085-23-R-2541",
+          "value": "N40085-23-R-2541",
+          "agrees": true
+        }
+      ]
+    },
+    "work_order_number": {
+      "value": "1702359",
+      "source": "RFP header",
+      "quote": "Work Order 1702359",
+      "corroboration": [
+        {
+          "source": "RFP header",
+          "claim": "Work Order 1702359",
+          "value": "1702359",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "BOD and RFP do not state building square footage. The RFP states the facility shall be sized to accommodate the largest removable CMV-22B components (rotor blades and cargo ramps) but gives no explicit SF figure. Drawings not available in intake."
+    },
+    "program_budget": {
+      "value": 3870000,
+      "currency": "USD",
+      "source": "RFP General Requirements",
+      "quote": "Estimated Budget Amount for Design and Constuction: Approximately $3,870,000",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "Approximately $3,870,000",
+          "value": 3870000,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "New construction of an intermediate maintenance level composite repair shop for the CMV-22B aircraft at Naval Station Norfolk. Facility includes shops, administrative space, paint mixing room, paint booth space, hazardous material storage, and other support areas. Structure consists of reinforced concrete masonry unit (CMU) wall system with exterior split-faced CMU veneer, concrete pile foundation, and standing-seam metal roof system.",
+      "source": "RFP General Requirements, Description of the Work",
+      "quote": "P1127U Constructs an intermediate maintenance level composite repair shop for the CMV-22B aircraft. Facility will consist of a reinforced concrete masonry unit (CMU) wall system with an exterior split-faced CMU veneer, concrete plie foundation, interior walls of CMU and a standing-seam metal roof system. The facility includes shops, administrative space, paint mixing room, paint booth space, hazardous material storage, and other support areas.",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "intermediate maintenance level composite repair shop for the CMV-22B aircraft",
+          "value": "composite repair shop, CMV-22B aircraft",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Composite Shop — Naval Station Norfolk",
+          "value": "composite repair shop, Naval Station Norfolk",
+          "agrees": true
+        }
+      ]
+    },
+    "solicitation_date": {
+      "value": "2023-07-11",
+      "source": "RFP cover page",
+      "quote": "DATE OF SOLICITATION: 11 July 2023",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "DATE OF SOLICITATION: 11 July 2023",
+          "value": "2023-07-11",
+          "agrees": true
+        },
+        {
+          "source": "Amendment 0001 block 9B",
+          "claim": "07/11/2023",
+          "value": "2023-07-11",
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date": {
+      "value": "2023-08-24",
+      "source": "RFP General Requirements",
+      "quote": "Proposal Due Date: Thursday, 24 August 2023 at 02:00PM EST",
+      "corroboration": [
+        {
+          "source": "RFP General Requirements",
+          "claim": "24 August 2023 at 02:00PM EST",
+          "value": "2023-08-24",
+          "agrees": true
+        },
+        {
+          "source": "Amendment 0002",
+          "claim": "Proposal due date remains 24 AUGUST 2023",
+          "value": "2023-08-24",
+          "agrees": true
+        }
+      ]
+    },
+    "liquidated_damages_per_day": {
+      "value": 666.3,
+      "currency": "USD",
+      "source": "RFP General Requirements",
+      "quote": "the Contractor shall pay liquidated damages to the Government in the amount of $666.30 for each calendar day of delay until the work is completed or accepted"
+    }
+  },
+  "phases": {
+    "design_build_combined": {
+      "contract_value": {
+        "value": 3870000,
+        "currency": "USD",
+        "source": "RFP General Requirements",
+        "quote": "Estimated Budget Amount for Design and Constuction: Approximately $3,870,000",
+        "notes": "Estimated budget; actual awarded value not available in source documents (solicitation stage only)"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Documents reflect solicitation stage; no award date found"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 515,
+        "source": "RFP General Requirements",
+        "quote": "the duration of this task order shall be 515 calendar days from date of award (includes 15 calendar days for submission and approval of bonds and insurance)"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_maintenance"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_central_plant",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_natural_gas"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_chilled_water",
+      "hvac_hot_water",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_natural_gas"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "concrete_cast_in_place",
+      "masonry_cmu",
+      "thermal_roofing",
+      "earthwork_scope",
+      "site_systems"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_macc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_8a_set_aside"
+    ],
+    "award_type": [
+      "best_value"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": "8(a) MACC contract vehicle — prime contractors are all SBA-certified 8(a) firms. BFA role as subconsultant; 8(a) prime requirement per solicitation.",
+      "source": "RFP cover page",
+      "quote": "DESIGN-BUILD (DB)/DESIGN-BID-BUILD (DBB), INDEFINITE DELIVERY/INDEFINITE QUANTITY (IDIQ) 8(A) MULTIPLE AWARD CONSTRUCTION CONTRACT (MACC)"
+    }
+  ],
+  "mep_system_inventory": {
+    "hvac": {
+      "systems": [
+        "4-pipe fan coil system (ducted and ductless fan coil units with chilled water and hot water coils)",
+        "Air-cooled chiller with scroll compressors, variable primary constant-speed pumping",
+        "Dedicated Outdoor Air System (DOAS) — 100% outside air factory-packaged unit",
+        "Ductless mini-split systems (air-cooled ductless split systems per ARI 210/240)",
+        "Gas-fired boilers for hot water heating (ASME CSD-1, ASME BPVC Sec. IV)",
+        "In-line exhaust fans",
+        "DDC/electronic controls with programmable thermostats"
+      ],
+      "source": "BOD Mechanical Section",
+      "design_conditions": {
+        "cooling_outside": "94.1°F DB / 75°F MCWB (0.4%)",
+        "heating_outside": "23.8°F DB (99.6%)",
+        "cooling_inside": "75°F DB <60% RH",
+        "heating_inside": "68°F"
+      },
+      "codes": [
+        "UFC 3-410-02 Direct Digital Control for HVAC And Other Building Control Systems",
+        "UFC 3-410-01 Heating, Ventilating, And Air Conditioning Systems",
+        "ACGIH Industrial Ventilation 31st Version",
+        "ICC IMC (2020)",
+        "ICC IBC (2020)"
+      ]
+    },
+    "plumbing": {
+      "systems": [
+        "Potable cold and hot water piping (copper, ASTM B88 Type K/L/M)",
+        "Gas-fired storage water heaters (CSA/AM Z21.10.1 / Z21.10.3)",
+        "Sanitary waste and vent piping (cast iron, hub-and-spigot or hubless)",
+        "Compressed air systems — duplex factory-packaged electric motor-driven compressor, ASME PBVC Sec. VIII, 200 PSI receiver",
+        "Reduced pressure zone backflow preventers",
+        "Emergency eyewash/shower (ISEA Z358.1)",
+        "Floor drains (cast iron body with integral seepage pan)"
+      ],
+      "source": "BOD Plumbing Section",
+      "codes": [
+        "UFC 3-420-01 Plumbing Systems",
+        "ICC IPC (2021)",
+        "ANSI/ISEA Z358.1 (2014; R2020)"
+      ]
+    },
+    "electrical": {
+      "systems": [
+        "New utility primary conductors from nearest switch and new utility transformer",
+        "480/277V main distribution panel",
+        "Two 480/277V sub-fed panels",
+        "480-208/120V transformer",
+        "208/120V sub-fed panel",
+        "Specialty equipment connections 480V to 120V",
+        "All interior wiring: copper THHN/THWN; EMT and rigid steel conduit",
+        "LED lighting throughout (enclosed/gasketed/explosion-proof in hazardous areas)",
+        "Occupancy/vacancy sensors for common areas, bathrooms, offices",
+        "Emergency battery-unit lighting, exit fixtures with battery backup",
+        "Exterior wall-mounted fixtures with integral battery backup and photocells",
+        "Communications/telecom pathways (structured cabling, electronic security, fire alarm)"
+      ],
+      "source": "BOD Electrical Section",
+      "codes": [
+        "NFPA 70 NEC 2020 Edition",
+        "UFC 3-501-01 Electrical Engineering (October 2015, Change 1 November 2019)",
+        "UFC 3-520-01 Interior Electrical Systems (October 2015, Change 1 March 2019)",
+        "UFC 3-530-01 Interior and Exterior Lighting Systems and Controls (April 2015, Change 1 March 2019)",
+        "UFC 3-580-01 Telecommunications Building Cabling Systems Planning and Design (June 2016)"
+      ]
+    },
+    "fire_protection": {
+      "systems": [],
+      "source": "BOD",
+      "notes": "Fire protection design not included in BFA BOD scope. BOD covers P (plumbing), M (mechanical), E (electrical) only. Fire protection by others or not in scope."
+    }
+  },
+  "site_visit": {
+    "date": "2023-07-26",
+    "location": "Building SP-300, FRCMA Det Norfolk, 432 A Street, Norfolk, VA 23511",
+    "source": "Amendment 0001",
+    "quote": "Date: Wednesday, 26 July 2023 at 9:00 a.m. EDT",
+    "attendees_count_approx": 17,
+    "notes": "Site visit log (Amendment 0002 attachment) shows approximately 17 attendees from various MACC holder firms. BFA/Bowman Foster not listed as attendee — consistent with sub role."
+  },
+  "macc_holder_firms": {
+    "value": [
+      "Argus CJW JV 3 LLC (N4008523D0030)",
+      "Baron-Rand JV LLC (N4008523D0031)",
+      "ERS-CYE JV II, LLC (N4008523D0032)",
+      "Fiber Business Solutions Group Inc G Force (N4008523D0033)",
+      "Full Circle ICC JV (N4008523D0034)",
+      "Justin J Reeves LLC (N4008523D0035)",
+      "MIG GOV, LLC (N4008523D0036)",
+      "Oakmont Contracting LLC (N4008523D0037)",
+      "Stampede Ventures, Inc (N4008523D0038)"
+    ],
+    "source": "RFP cover page",
+    "quote": "8(A) MACC CONTRACT HOLDERS: N4008523D0030 ... N4008523D0038",
+    "notes": "These are the 8(a) MACC holders eligible to compete for this task order. BFA served as a design subconsultant, not a prime."
+  },
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings available in intake; RFP references concept drawings (Attachments 5-6 of Work Order 1702359) but these were not included."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not stated in BOD or RFP text. Likely single-story industrial/maintenance facility based on program description."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "4-pipe fan coil system (ducted and ductless FCUs)",
+          "Air-cooled scroll chiller, variable primary pumping",
+          "Dedicated Outdoor Air System (DOAS), 100% OA",
+          "Ductless mini-split systems",
+          "Gas-fired boilers",
+          "In-line exhaust fans",
+          "DDC controls"
+        ],
+        "electrical": [
+          "Utility transformer (new) + 480/277V main distribution panel",
+          "Two 480/277V sub-fed panels + 480-208/120V transformer + 208/120V sub-fed panel",
+          "LED lighting, explosion-proof in hazardous areas",
+          "Emergency battery lighting + exit fixtures",
+          "Exterior wall-mounted lighting with photocells",
+          "Telecom/security/fire alarm pathways"
+        ],
+        "plumbing": [
+          "Domestic cold and hot water (copper)",
+          "Gas-fired water heaters",
+          "Sanitary DWV (cast iron)",
+          "Duplex compressed air system, 200 PSI receiver",
+          "Emergency eyewash/shower (ISEA Z358.1)",
+          "Backflow preventers (RPZ type)",
+          "Floor drains (cast iron)"
+        ],
+        "fire_protection": []
+      }
+    },
+    "notes": "No architectural or structural drawing sheets available in intake folder. The RFP Work Order 1702359 references concept drawings as attachments (ATTACHMENT 05 and 06 — Composite Shop Concept DWG1 and DWG2, ATTACHMENT 07 — Site Location Map, ATTACHMENT 08 — Existing Conditions, ATTACHMENT 09 — Concept Site Plan, ATTACHMENT 10 — Concept Grading and Drainage Plan) but these PDFs were not included in the provided intake directory."
+  },
+  "conflict_flags": [],
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "navfac_mid_atlantic",
+    "naval_station_norfolk",
+    "nsn",
+    "cmv22b",
+    "aviation_maintenance",
+    "8a_macc",
+    "design_build",
+    "composite_repair",
+    "military_industrial",
+    "ufc_codes",
+    "mep_subconsultant"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

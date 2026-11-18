@@ -1,0 +1,491 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T15:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "honest_pastures",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/honest_pastures/2021.07.23.21-031.FINAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "2ee58aafab894a4d92d50bb66adba19a704105779d040c7f01a608bbdce370aa",
+      "page_count": 2,
+      "included": true,
+      "notes": "Combined final drawing set: M-101 Floor Plan and M-102 Roof Plan. Low-resolution rendering; content confirmed against separate single-sheet PDFs."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/honest_pastures/M-101 FLOOR PLAN - NEW WORK M-101 FLOOR PLAN - NEW WORK (1).pdf",
+      "type": "drawing_set",
+      "sha256": "f83a13228711ab54d83c896dcba20cc3a1d413c1aa5d9f425c04ef4778222e0a",
+      "page_count": 1,
+      "included": true,
+      "notes": "Standalone export of sheet M-101, Floor Plan - New Work. High-resolution; used as primary read source for sheet M-101 construction notes."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/honest_pastures/M-102 ROOF PLAN - NEW WORK M-102 ROOF PLAN - NEW WORK (1).pdf",
+      "type": "drawing_set",
+      "sha256": "5be1a268631a771e001e1a9a46616f93d4a79c088c3be66c143aec01ba5d511b",
+      "page_count": 1,
+      "included": true,
+      "notes": "Standalone export of sheet M-102, Roof Plan - New Work. High-resolution; used as primary read source for sheet M-102 construction notes and general notes."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/honest_pastures/0002_Fwd Amendment 01 for C106551 Exhaust Fan Renovations.msg",
+      "type": "correspondence",
+      "sha256": "4ba75d3e2b804de26d9c9e67973a87be4b2cf60b043f5bb0e80c92b9762cff5d",
+      "page_count": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": ".msg (Outlook email) file — not readable by available text-extraction tools. Filename indicates: forwarded email, Amendment 01 for contract C106551, project description 'Exhaust Fan Renovations'. Contract number and amendment number extracted from filename only; email body contents unknown."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source documents present are 2 mechanical drawing sheets (M-101, M-102) plus an unreadable .msg correspondence file. No BOD, SOW, contract, specifications, or narrative. Nearly all fact fields sourced from drawings alone."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Honest Pastures",
+      "source": "drawing title block, all sheets",
+      "quote": "HONEST PASTURES",
+      "corroboration": [
+        {
+          "source": "drawing M-101 title block",
+          "claim": "HONEST PASTURES",
+          "value": "Honest Pastures",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-102 title block",
+          "claim": "HONEST PASTURES",
+          "value": "Honest Pastures",
+          "agrees": true
+        },
+        {
+          "source": ".msg filename",
+          "claim": "Exhaust Fan Renovations (project description in contract C106551)",
+          "value": "Exhaust Fan Renovations",
+          "agrees": false,
+          "note": "The .msg filename identifies the project as 'Exhaust Fan Renovations' under contract C106551; the drawing title block calls it 'Honest Pastures'. These are likely the client/facility name vs. the contract description. Honest Pastures is treated as the project/facility name; 'Exhaust Fan Renovations' is the contract scope descriptor."
+        }
+      ]
+    },
+    "client_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": [],
+      "notes": "No BOD, SOW, or contract available. .msg file unreadable. Client identity cannot be established from drawings alone."
+    },
+    "owner_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "drawing M-101 title block",
+      "quote": "VIRGINIA BEACH",
+      "corroboration": [
+        {
+          "source": "drawing M-101 title block",
+          "claim": "VIRGINIA BEACH",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-102 title block",
+          "claim": "VIRGINIA BEACH",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "project_number_client": {
+      "value": "C106551",
+      "source": ".msg filename: '0002_Fwd Amendment 01 for C106551 Exhaust Fan Renovations.msg'",
+      "quote": null,
+      "notes": "Value extracted from filename of unreadable .msg file. Treat as indicative; email body not confirmed. Format suggests a client or agency contract number.",
+      "corroboration": [
+        {
+          "source": ".msg filename",
+          "claim": "C106551",
+          "value": "C106551",
+          "agrees": true,
+          "note": "Only source; filename extraction only."
+        },
+        {
+          "source": "drawing M-101 title block",
+          "claim": "CONTRACT NO.: — (blank)",
+          "value": null,
+          "agrees": false,
+          "note": "Drawing title block has CONTRACT NO. as dash (blank). Possible the contract number field was intentionally left blank on the drawings, or C106551 was assigned after drawing production."
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "C106551",
+      "source": ".msg filename",
+      "quote": null,
+      "notes": "See project_number_client. Contract No. on drawings is blank; C106551 from .msg filename only."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "designer_of_record": {
+      "value": "Bowman Foster & Associates, Inc.",
+      "source": "drawing title block, all sheets",
+      "quote": "BOWMAN FOSTER & ASSOCIATES, INC",
+      "corroboration": [
+        {
+          "source": "drawing M-101 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC — 6353 CENTER DR. STE. 101 NORFOLK, VA 23502; 5252 CHEROKEE AVE. STE 101 ALEXANDRIA, VA 22312",
+          "value": "Bowman Foster & Associates, Inc.",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-102 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC",
+          "value": "Bowman Foster & Associates, Inc.",
+          "agrees": true
+        }
+      ],
+      "notes": "Bowman Foster & Associates, Inc. is identified on the drawings as the designer/engineer of record — this is BFA. Office addresses: Norfolk VA 23502 and Alexandria VA 22312."
+    },
+    "drawing_date": {
+      "value": "2021-07-22",
+      "source": "drawing M-101 title block",
+      "quote": "07/22/2021",
+      "corroboration": [
+        {
+          "source": "drawing M-101 title block",
+          "claim": "07/22/2021",
+          "value": "2021-07-22",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-102 title block",
+          "claim": "07/22/2021",
+          "value": "2021-07-22",
+          "agrees": true
+        },
+        {
+          "source": "combined PDF filename",
+          "claim": "2021.07.23.21-031.FINAL.DWGS.pdf — date component 2021.07.23",
+          "value": "2021-07-23",
+          "agrees": false,
+          "note": "Filename date is 2021-07-23; title block date on both sheets is 07/22/2021. One-day discrepancy — likely the file was assembled/exported on 07/23 after being drawn on 07/22. Minor."
+        }
+      ]
+    },
+    "drawing_project_number": {
+      "value": "21-031",
+      "source": "combined PDF filename: 2021.07.23.21-031.FINAL.DWGS.pdf",
+      "quote": null,
+      "notes": "Project number '21-031' parsed from filename. Title block shows 'PROJECT NO.' field as blank or not clearly legible. Consistent with BFA YY-NNN project number format."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "No area schedule or code summary block on mechanical drawings. Building footprint visible in floor plan at 1/4\"=1'-0\" scale but no area annotation present. Rough visual estimate not attempted per medium-depth discipline."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "amendment_number": {
+      "value": "Amendment 01",
+      "source": ".msg filename: '0002_Fwd Amendment 01 for C106551 Exhaust Fan Renovations.msg'",
+      "quote": null,
+      "notes": "Filename only; email body unreadable. Indicates at least one amendment was issued against the contract."
+    },
+    "scope_description": {
+      "value": "Kitchen exhaust fan renovation: replacement/installation of Type 1 exhaust hood, make-up air handling unit, and new gas food service equipment (countertop hotplate/stove, griddle, double-deck convection oven) at Honest Pastures, Virginia Beach, VA.",
+      "source": "drawing M-101 construction notes; drawing M-102 construction notes",
+      "quote": null,
+      "notes": "Scope synthesized from drawing construction notes across M-101 and M-102. No text document available to corroborate."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-07-22",
+        "source": "drawing date, M-101 and M-102 title block",
+        "quote": "07/22/2021",
+        "notes": "Drawing date used as proxy for design completion; final drawings dated 07/22/2021."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": {
+        "value": [],
+        "status": "missing",
+        "notes": "Amendment 01 exists (per .msg filename) but amendment contents unknown; cannot determine if design fee was affected."
+      },
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [],
+    "client_type_status": "missing",
+    "program_type": [
+      "retail_restaurant"
+    ],
+    "program_type_notes": "Honest Pastures appears to be a restaurant or food service establishment based on the kitchen equipment scope (Type 1 exhaust hood, commercial gas range, griddle, convection oven). 'retail_restaurant' chosen as closest fit.",
+    "program_subtype": [
+      "retail_restaurant"
+    ],
+    "disciplines": [
+      "mechanical_engineering"
+    ],
+    "disciplines_notes": "Only mechanical drawings present (M-series sheets). No electrical, plumbing, architectural, or other discipline sheets in the set. Electrical connections described in construction notes (3-phase 208V power for hood) but no E-series drawings present.",
+    "sub_disciplines": [
+      "hvac_air_distribution",
+      "hvac_design"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "equipment_food_service"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "equipment_food_service_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "delivery_method_notes": "Assumed design-bid-build based on conventional A-E services pattern for small commercial renovation. No contract document available to confirm.",
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "contract_vehicle_notes": "Assumed standalone project. No IDIQ or on-call vehicle references found. Contract number C106551 format does not match known federal IDIQ patterns.",
+    "procurement_type": [],
+    "procurement_type_status": "missing",
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "project_status_notes": "Final drawings dated 07/22/2021 labeled 'FINAL.DWGS'; project presumed complete. Drawing set labeled as final.",
+    "bfa_role": [
+      "prime_consultant"
+    ],
+    "bfa_role_notes": "Bowman Foster & Associates, Inc. appears as the design firm on all drawing title blocks with no indication of a larger prime firm. Treated as prime consultant."
+  },
+  "socioeconomic_participation": [],
+  "socioeconomic_participation_status": "missing",
+  "tenant_freeform_tags": [
+    "virginia_beach",
+    "food_service",
+    "kitchen_exhaust",
+    "restaurant_renovation",
+    "mechanical_only",
+    "small_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "RLW",
+      "role_on_project": "drawn_by_and_project_engineer",
+      "notes": "Initials from drawing title block: Drawn by RLW, Project Engineer RLW"
+    },
+    {
+      "name": "RW",
+      "role_on_project": "checked_by",
+      "notes": "Initials from drawing title block: Checked by RW"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M-101",
+        "title": "FLOOR PLAN - NEW WORK",
+        "discipline": "mechanical_engineering",
+        "source_file": "M-101 FLOOR PLAN - NEW WORK M-101 FLOOR PLAN - NEW WORK (1).pdf (also in combined set page 1)",
+        "date": "07/22/2021",
+        "scale": "1/4\" = 1'-0\"",
+        "sheet_of": "Sheet 1 of 2",
+        "reading_notes": "Single-story floor plan showing a small commercial building footprint (appears roughly 50' x 70' from graphic scale). New work items tagged 1-4 in plan: (1) Exhaust Hood — CaptiveAire Model 5/30, 10'-1/2\" Wide x 5'-0\" Deep x 29-1/2\" Tall, Type 1 Hood, 208V 3-Phase, 1100 CFM exhaust; (2) Hotplate/Countertop Gas Stove — ATOSA USA Model ATSP-2448-1, 48\"W x 30\"D x 10.5\"H, 4 burners, 64,000 BTU total; (3) Gas Griddle — ATOSA USA Model ACHP-2, 24\"W x 28\"D, 60,000 BTU total; (4) Gas Double-Deck Convection Oven — Blodgett Model DF-100 DBL, 3-Phase 60Hz 6.0A. Building appears L-shaped or with an annex. Metal joists/decking structure per M-102. No electrical discipline drawings in set; electrical connection requirements for hood noted in construction notes (208V, 3-phase). No plumbing drawings. Construction note references for standalone gas equipment suggest gas rough-in not in this scope. No drawing for gas rough-in visible."
+      },
+      {
+        "sheet_number": "M-102",
+        "title": "ROOF PLAN - NEW WORK",
+        "discipline": "mechanical_engineering",
+        "source_file": "M-102 ROOF PLAN - NEW WORK M-102 ROOF PLAN - NEW WORK (1).pdf (also in combined set page 2)",
+        "date": "07/22/2021",
+        "scale": "1/4\" = 1'-0\"",
+        "sheet_of": "Sheet 2 of 2",
+        "reading_notes": "Roof plan showing same building footprint as M-101. Two rooftop mechanical items: (1) Dayton Exhaust Fan — Model 4YF16, approx 1800 CFM (combined set note says 800 CFM; standalone high-res sheet reads 1800 CFM — minor discrepancy in CFM values between sheets, flagged); (2) Make-Up Air Handling Unit — CaptiveAire Model A1G10, 2000 CFM variable speed, connects to exhaust hood via 2x 10\"x22\" square-to-round transitions. General Notes: roof structure is metal decking and metal joists; air intake 10'-0\" away from exhaust fan discharge. Pre-charge noted. Exhaust fan appears to be replacement of existing rooftop fan (project title 'Exhaust Fan Renovations' per .msg filename). No curb details, no equipment schedule beyond construction notes. Layout is minimal — fan and MAU shown in plan only."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 1,
+        "source": "drawings M-101 and M-102 — single floor plan + roof plan with no intermediate floors indicated",
+        "quote": null,
+        "sheets": [
+          "M-101",
+          "M-102"
+        ]
+      },
+      "roof_structure": {
+        "value": "Metal decking and metal joists",
+        "source": "drawing M-102 General Notes",
+        "quote": "THE ROOF STRUCTURE IS METAL DECKING AND METAL JOISTS.",
+        "sheets": [
+          "M-102"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Type 1 Kitchen Exhaust Hood — CaptiveAire Model 5/30, 10'-1/2\" Wide x 5'-0\" Deep x 29-1/2\" Tall, 1100 CFM, 208V 3-Phase (M-101 note 1)",
+          "Rooftop Exhaust Fan — Dayton Model 4YF16, ~1800 CFM (M-102 note 1; combined set shows 800 CFM — minor discrepancy flagged)",
+          "Make-Up Air Handling Unit — CaptiveAire Model A1G10, 2000 CFM variable speed, duct connects via 2x 10\"x22\" square-to-round to exhaust hood (M-102 note 2)"
+        ],
+        "electrical": [
+          "208V 3-Phase power for exhaust hood (M-101 note 1)",
+          "Convection oven 3-Phase 60Hz 6.0 Amps (M-101 note 4)"
+        ],
+        "plumbing": [],
+        "fire_protection": [],
+        "food_service_equipment": [
+          "Gas Countertop Hotplate/Stove — ATOSA USA Model ATSP-2448-1, 48\"Wx30\"Dx10.5\"H, 64,000 BTU total (M-101 note 2)",
+          "Gas Griddle — ATOSA USA Model ACHP-2, 24\"Wx28\"D, 60,000 BTU total (M-101 note 3)",
+          "Gas Double-Deck Convection Oven — Blodgett Model DF-100 DBL, 3-Phase, 6.0A (M-101 note 4)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "drawings.facts_derived.mep_system_inventory.hvac[exhaust_fan_cfm]",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "combined drawing set 2021.07.23.21-031.FINAL.DWGS.pdf page 2 (M-102 low-res)",
+          "value": "800 CFM",
+          "note": "Low-resolution combined set M-102 construction note 1 reads '800 CFM' for the Dayton exhaust fan"
+        },
+        {
+          "source": "standalone M-102 high-res PDF",
+          "value": "1800 CFM",
+          "note": "High-resolution standalone M-102 sheet construction note 1 reads '1800 CFM' for the same Dayton exhaust fan"
+        }
+      ],
+      "resolution_chosen": "standalone M-102 high-res PDF: 1800 CFM",
+      "rationale": "The standalone high-resolution sheet provides clearer, more legible text. Low-res combined set likely rendered the '1' in '1800' below legibility threshold. The make-up air unit is 2000 CFM, which is consistent with an 1800 CFM exhaust fan (slight positive pressure makeup); 800 CFM exhaust with 2000 CFM makeup would be severely unbalanced for a Type 1 hood. 1800 CFM is the more credible value."
+    },
+    {
+      "field_path": "facts.project_name vs facts.contract_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing title block (all sheets)",
+          "value": "HONEST PASTURES (facility/project name)"
+        },
+        {
+          "source": ".msg filename",
+          "value": "C106551 Exhaust Fan Renovations (contract description)"
+        }
+      ],
+      "resolution_chosen": "Both values captured in separate fields",
+      "rationale": "Not a true conflict — these are different things: the facility name (Honest Pastures) vs. the contract scope descriptor (Exhaust Fan Renovations). Captured as project_name = Honest Pastures, contract_number = C106551, scope_description includes 'Exhaust Fan Renovations'."
+    },
+    {
+      "field_path": "facts.drawing_date vs source filename date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing title block (M-101 and M-102)",
+          "value": "07/22/2021"
+        },
+        {
+          "source": "combined PDF filename date component",
+          "value": "2021.07.23"
+        }
+      ],
+      "resolution_chosen": "07/22/2021 (title block)",
+      "rationale": "One-day discrepancy. Title block date (07/22/2021) is the authoritative drawing date; filename date (07/23) likely reflects the file assembly/export date."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

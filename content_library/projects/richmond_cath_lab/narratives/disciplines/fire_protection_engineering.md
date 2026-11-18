@@ -1,0 +1,7 @@
+Fire protection engineering on this project focused on maintaining life safety compliance throughout the HVAC replacement construction in an active healthcare facility. The Cardiac Catheterization Lab suites are fully sprinklered; the fire protection scope required that the existing suppression system remain functional or be properly integrated through all construction phases.
+
+The SOW specified that the AE was to retain a registered fire protection engineer for design work and code compliance review — a standard requirement for modifications in VA healthcare occupancies. Key provisions addressed in the design included infection control fire barrier requirements during construction phasing, which govern how temporary partitions and fire separations must be maintained when the facility is occupied and active procedures may be occurring in adjacent spaces. For any construction period during which sprinkler coverage might be temporarily compromised, heat detection devices tied to the building fire alarm system were planned as an interim measure in affected areas.
+
+Fire alarm scope is tagged as a sub-discipline alongside fire suppression (wet systems), indicating fire alarm coordination was within the design team's remit, consistent with the heat detection tie-in described above.
+
+<!-- INTERNAL: Fire protection facts derived from SOW and design narrative text. No drawing set was available to confirm sprinkler layout, device locations, or fire alarm panel tie-in details. -->

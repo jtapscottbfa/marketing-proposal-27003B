@@ -1,0 +1,9 @@
+# Electrical Engineering — Building 340 Replace Closed Circuit Evaporative Cooler
+
+BFA's electrical engineering scope at Building 340, Naval Air Station Oceana, addressed both demolition of existing circuits serving the failed closed-circuit evaporative cooler and provision of new electrical infrastructure for the replacement unit.
+
+The demolition scope required disconnecting and removing all existing conduit and wiring serving the CC-1 unit back to source panels, removal of the associated breaker, and removal of existing mechanical room lighting fixtures to support ceiling access for the mechanical scope of work.
+
+For new work, BFA designed a 40A circuit from the existing 480Y/277V, 3-phase, 4-wire panelboard in Room 165 (panels "LA" or "HC") to the new NEMA 4X stainless steel VFD control panel located at the cooler. The design included a new 60A 3-phase NEMA 4X fused disconnect switch at the equipment yard and a new 60/3 circuit breaker in the Room 165 panelboard. A GFCI duplex receptacle was provided at the cooler yard for maintenance use. Conductors were specified as copper THHN/THWN with voltage drop not exceeding 2% for feeders or 3% for branch circuits. All exterior electrical equipment was designed in NEMA 4X stainless steel enclosures with galvanized rigid steel conduit per the NAVFAC RFP requirements.
+
+The lighting scope included re-lamping and cleaning of six existing fluorescent light fixtures in the mechanical room — the fixtures were removed to enable overhead access, then inspected, cleaned, re-lamped, and reinstalled. All work was executed in compliance with UFC 3-501-01, UFC 3-520-01, and NFPA 70 (NEC 2017), with full coordination required for electrical outages to occur after normal work hours given Building 340's occupied status throughout construction.

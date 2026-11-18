@@ -1,0 +1,148 @@
+vocabulary_id: project_status
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+anchor_standard_version: null
+hierarchy: flat
+multi_select: false
+governance_notes: |
+  Project lifecycle status. Single-select per project — a project is in one
+  lifecycle state at a time. Status changes over time and may need to be
+  updated periodically as projects progress.
+
+  States are designed to support past-performance gate queries:
+  - "Show me all complete projects" → complete
+  - "Show me everything won" → awarded, in_design, design_complete, in_construction, substantially_complete, complete, won_not_yet_mobilized
+  - "Show me active work" → in_design, in_construction, substantially_complete
+
+  Lost/cancelled projects are retained in the library for lessons-learned and
+  to capture pursuit history.
+future_migration: null
+
+entries:
+  - canonical_id: pursuing
+    display_name: Pursuing
+    definition: Active pursuit; proposal not yet submitted or selection not yet made.
+    parent_id: null
+    aliases:
+      - in_pursuit
+      - chasing
+    standard_reference: null
+
+  - canonical_id: proposal_submitted
+    display_name: Proposal Submitted
+    definition: Proposal has been submitted; awaiting selection or short-list decision.
+    parent_id: null
+    aliases:
+      - submitted
+      - awaiting_selection
+    standard_reference: null
+
+  - canonical_id: shortlisted
+    display_name: Shortlisted
+    definition: Selected for shortlist or interview phase; final award decision pending.
+    parent_id: null
+    aliases:
+      - short_listed
+      - finalist
+    standard_reference: null
+
+  - canonical_id: awarded
+    display_name: Awarded (Pre-Notice to Proceed)
+    definition: Project awarded but design or construction work has not yet started.
+    parent_id: null
+    aliases:
+      - awarded
+      - selected
+    standard_reference: null
+
+  - canonical_id: won_not_yet_mobilized
+    display_name: Won — Not Yet Mobilized
+    definition: Project won but no work yet performed; awaiting NTP, funding, or owner readiness.
+    parent_id: null
+    aliases:
+      - awaiting_ntp
+      - won_not_started
+    standard_reference: null
+
+  - canonical_id: in_design
+    display_name: In Design
+    definition: Active design phase; design work in progress.
+    parent_id: null
+    aliases:
+      - design_in_progress
+      - active_design
+    standard_reference: null
+
+  - canonical_id: design_complete
+    display_name: Design Complete
+    definition: Design work is complete; construction has not yet started or has not yet been let.
+    parent_id: null
+    aliases:
+      - design_done
+      - bid_phase
+    standard_reference: null
+
+  - canonical_id: in_construction
+    display_name: In Construction
+    definition: Active construction phase; construction work in progress.
+    parent_id: null
+    aliases:
+      - under_construction
+      - construction_in_progress
+    standard_reference: null
+
+  - canonical_id: substantially_complete
+    display_name: Substantially Complete
+    definition: Construction substantially complete; punch list and closeout activities ongoing.
+    parent_id: null
+    aliases:
+      - substantial_completion
+      - punch_list_phase
+    standard_reference: null
+
+  - canonical_id: complete
+    display_name: Complete
+    definition: Project fully complete and closed out; final payments made.
+    parent_id: null
+    aliases:
+      - finished
+      - closed_out
+      - final_completion
+    standard_reference: null
+
+  - canonical_id: on_hold
+    display_name: On Hold
+    definition: Project paused by owner direction; expected to resume.
+    parent_id: null
+    aliases:
+      - paused
+      - suspended
+    standard_reference: null
+
+  - canonical_id: cancelled_before_award
+    display_name: Cancelled Before Award
+    definition: Procurement cancelled before any award decision was made.
+    parent_id: null
+    aliases:
+      - solicitation_cancelled
+      - cancelled_pre_award
+    standard_reference: null
+
+  - canonical_id: terminated
+    display_name: Terminated
+    definition: Project terminated post-award (for convenience or for cause).
+    parent_id: null
+    aliases:
+      - terminated_for_convenience
+      - terminated_for_cause
+    standard_reference: null
+
+  - canonical_id: lost
+    display_name: Lost
+    definition: Pursuit lost; another firm awarded the project.
+    parent_id: null
+    aliases:
+      - not_selected
+      - unsuccessful
+    standard_reference: null

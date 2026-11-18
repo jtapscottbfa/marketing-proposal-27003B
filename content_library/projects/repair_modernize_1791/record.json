@@ -1,0 +1,692 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "repair_modernize_1791",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/repair_modernize_1791/23-028 JAB Repair Modernize MXG B1791 Basis of Design.docx",
+      "type": "bod",
+      "sha256": "98021feb1c089c07e1483daa15834b8a0cb95eb589f059da3e7ef398a456174b",
+      "included": true,
+      "notes": "BFA-authored Basis of Design covering all disciplines: Civil, Architectural, Structural, Fire Alarm, Environmental, Plumbing, Mechanical, Electrical. BFA internal project reference 23-028 in filename."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/repair_modernize_1791/AJXF 16-1507 Repair Modernize MXG B1791 SOW Part I.pdf",
+      "type": "sow",
+      "sha256": "92835f864ae40e65da7a487a2a64c4072bc0bcc0f9fcde00e3feee917e0bea22",
+      "included": true,
+      "notes": "Statement of Work Part I — General Requirements for Design/Build services at Joint Base Andrews. Dated January 2023."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/repair_modernize_1791/AJXF 16-1507 Repair Modernize MXG B1791 SOW Part II.pdf",
+      "type": "sow",
+      "sha256": "6597926b6e3ed8c39bfc7a25180d4346cf439d3cf9cca5fd7b48da1632e90b4f",
+      "included": true,
+      "notes": "Statement of Work Part II — Project-Specific Requirements for Design/Build services at Joint Base Andrews. Dated January 2023."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set or specification book present in intake folder. BOD and two-part SOW (Part I general, Part II project-specific) are present. BFA BOD is the primary design authorship document."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Repair Modernize MXG B1791, Joint Base Andrews",
+      "source": "SOW Part I cover page",
+      "quote": "Repair Modernize MXG B1791",
+      "corroboration": [
+        {
+          "source": "SOW Part I cover page",
+          "claim": "Repair Modernize MXG B1791",
+          "value": "Repair Modernize MXG B1791",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II cover page",
+          "claim": "REPAIR MODERNIZE MXG B1791",
+          "value": "Repair Modernize MXG B1791",
+          "agrees": true
+        },
+        {
+          "source": "BOD title page",
+          "claim": "REPAIR MODERNIZE MXG B1791 / JOINT BASE ANDREWS",
+          "value": "Repair Modernize MXG B1791, Joint Base Andrews",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Air Force, Joint Base Andrews (316th Civil Engineering Squadron)",
+      "source": "SOW Part I §X",
+      "quote": "316 CES/CENMP\n3710 Fetchet Ave\nJoint Base Andrews, MD 20762-4803",
+      "corroboration": [
+        {
+          "source": "SOW Part I cover page",
+          "claim": "JOINT BASE ANDREWS / Base Civil Engineering / 316 CES/CENMP",
+          "value": "Joint Base Andrews, 316 CES",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part I §X",
+          "claim": "Ms. Niveen Gomez / 316 CES/CENMP",
+          "value": "316 CES/CENMP",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Air Force, Joint Base Andrews",
+      "source": "SOW Part I §I",
+      "quote": "Project Number and Title: AJXF 16-1507, Repair Modernize MXG B1791 Joint Base Andrews, MD 20762.",
+      "corroboration": [
+        {
+          "source": "SOW Part I §I",
+          "claim": "Joint Base Andrews, MD 20762",
+          "value": "US Air Force / Joint Base Andrews",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Andrews AFB / Camp Springs",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "Joint Base Andrews, MD 20762-4803",
+      "source": "SOW Part I cover page",
+      "quote": "Joint Base Andrews MD 20762-4803",
+      "corroboration": [
+        {
+          "source": "SOW Part I cover page",
+          "claim": "Joint Base Andrews MD 20762-4803",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II cover page",
+          "claim": "Joint Base Andrews MD 20762-4803",
+          "agrees": true
+        },
+        {
+          "source": "BOD HVAC design criteria",
+          "claim": "Andrews Air Force Base, Maryland",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "23-028",
+      "source": "BOD filename",
+      "quote": null,
+      "notes": "BFA internal project number inferred from BOD filename '23-028 JAB Repair Modernize MXG B1791 Basis of Design.docx'. Not stated in document body. Subject to retroactive confirmation.",
+      "corroboration": [
+        {
+          "source": "BOD filename",
+          "claim": "23-028",
+          "value": "23-028",
+          "agrees": true,
+          "notes": "Filename-derived only; no body-text corroboration"
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "AJXF 16-1507",
+      "source": "SOW Part I cover page",
+      "quote": "Project AJXF 16–1507",
+      "corroboration": [
+        {
+          "source": "SOW Part I cover page",
+          "claim": "Project AJXF 16-1507",
+          "value": "AJXF 16-1507",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II cover page",
+          "claim": "Project AJXF 16-1507",
+          "value": "AJXF 16-1507",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part I §I",
+          "claim": "AJXF 16-1507, Repair Modernize MXG B1791 Joint Base Andrews",
+          "value": "AJXF 16-1507",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW Part I cover page references 'FA2860-##-X-####' placeholder — solicitation stage document; final contract number not captured in available sources."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 23773,
+      "unit": "gsf",
+      "source": "BOD Fire Alarm Design §Project Description",
+      "quote": "Building 1791 is a one-story 23,773 ft² building containing industrial operations such as welding and fabrication, offices, conference and support spaces as well as a paint booth.",
+      "notes": "Two values found: 23,712 SF (Architectural BOD) vs 23,773 ft² (Fire Alarm BOD / Table 3.2 Actual Area). Minor conflict. Fire Alarm section is more specific and repeated consistently in the occupant load table (First Floor Total = 23,773 sf). Chosen value: 23,773 SF.",
+      "corroboration": [
+        {
+          "source": "BOD Architectural §Scope of Work",
+          "claim": "approximately 23,712 SF of existing space within building 1791",
+          "value": 23712,
+          "agrees": false,
+          "notes": "Slightly lower value; may reflect net vs gross distinction or rounding"
+        },
+        {
+          "source": "BOD Fire Alarm Design §Project Description",
+          "claim": "23,773 ft² building",
+          "value": 23773,
+          "agrees": true
+        },
+        {
+          "source": "BOD Fire Alarm Design Table 3.2 Actual Area",
+          "claim": "23,773 ft²",
+          "value": 23773,
+          "agrees": true
+        },
+        {
+          "source": "BOD Fire Alarm Design Table 3.9 First Floor Total",
+          "claim": "23,773 sf (summed room areas)",
+          "value": 23773,
+          "agrees": true
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 1,
+      "source": "BOD Fire Alarm Design Table 3.2",
+      "quote": "1 story",
+      "corroboration": [
+        {
+          "source": "BOD Fire Alarm Design Table 3.2",
+          "claim": "Actual Height: 36 ft / 1 story",
+          "value": 1,
+          "agrees": true
+        },
+        {
+          "source": "BOD General Scope of Work",
+          "claim": "Building 1791 is a single-story building",
+          "value": 1,
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II §I.C",
+          "claim": "Building 1791 is a single-story building",
+          "value": 1,
+          "agrees": true
+        }
+      ]
+    },
+    "building_year_original": {
+      "value": 1966,
+      "source": "BOD General Scope of Work",
+      "quote": "Building 1791 is a single-story building constructed as an original building in 1966",
+      "corroboration": [
+        {
+          "source": "BOD General Scope of Work",
+          "claim": "constructed as an original building in 1966",
+          "value": 1966,
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II §I.C",
+          "claim": "constructed as an original building in 1966",
+          "value": 1966,
+          "agrees": true
+        },
+        {
+          "source": "BOD Electrical Design Background",
+          "claim": "Building 1791 is a single-story building constructed as an original building in 1966",
+          "value": 1966,
+          "agrees": true
+        }
+      ]
+    },
+    "building_year_addition": {
+      "value": 1993,
+      "source": "BOD General Scope of Work",
+      "quote": "with an addition added in 1993",
+      "corroboration": [
+        {
+          "source": "BOD General Scope of Work",
+          "claim": "with an addition added in 1993",
+          "value": 1993,
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II §I.C",
+          "claim": "with an addition added in 1993",
+          "value": 1993,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW Part II §IV.B references 'budget limitations stated in SOW Part II, Section III, Budget Limitation' but the extracted text does not include a dollar figure. No program budget found in available sources."
+    },
+    "contract_duration_days": {
+      "value": 465,
+      "source": "SOW Part II §IV",
+      "quote": "Work under this SOW shall be completed within 465 calendar days after receiving written Notice to Proceed (NTP) as follows: 100% design complete 100 days, Construction 365 days.",
+      "corroboration": [
+        {
+          "source": "SOW Part II §IV",
+          "claim": "465 calendar days (100 design + 365 construction)",
+          "value": 465,
+          "agrees": true
+        }
+      ]
+    },
+    "previous_contract_history": {
+      "value": "A previous contract for the renovation of building 1791 was awarded, started, and terminated before completion. The new contract picks up remaining work, addressing incomplete demolition, partially constructed walls, and scope gaps left by the prior contractor.",
+      "source": "SOW Part II §I.C",
+      "quote": "A previous contract for renovation of the building was awarded and started, however, the project was terminated before completion.",
+      "corroboration": [
+        {
+          "source": "BOD General Scope of Work",
+          "claim": "A previous contract for the renovation of the building was awarded and started, however, The project was terminated before completion.",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II §II.A.2.a",
+          "claim": "Provide design for the remaining demolition indicated in the reference drawings, that was not completed by the previous demo contractor",
+          "agrees": true
+        }
+      ]
+    },
+    "leed_required": {
+      "value": false,
+      "source": "SOW Part II §II.J",
+      "quote": "LEED Certification: LEED Certification is not required for this project.",
+      "corroboration": [
+        {
+          "source": "SOW Part II §II.J",
+          "claim": "LEED Certification is not required for this project",
+          "value": false,
+          "agrees": true
+        },
+        {
+          "source": "SOW Part I §II.B",
+          "claim": "Project shall be designed to be LEED certifiable.",
+          "value": "LEED certifiable (not certified)",
+          "agrees": false,
+          "notes": "SOW Part I §II.B requires LEED certifiable design; SOW Part II §II.J explicitly states LEED Certification not required. Per SOW Part II §I.A: 'If Part II contradicts Part I, Part II shall govern.' Minor conflict resolved by governing clause."
+        }
+      ]
+    },
+    "warranty_period": {
+      "value": "1 year on labor and material in addition to manufacturer warranties",
+      "source": "SOW Part II §V",
+      "quote": "The contractor will provide a one (1) year warranty on labor and material in addition to manufacturer warranties."
+    },
+    "occupancy_classification": {
+      "value": "Mixed — Group B (Business) and Group F-1 (Industrial: Moderate Hazard Factory) per IBC; Business and Industrial per NFPA 101",
+      "source": "BOD Fire Alarm Design §Classification of Occupancy",
+      "quote": "The building consists of nonseparated mixed use Group B and Group F-1 occupancies per IBC §304.1, and 306.1.",
+      "corroboration": [
+        {
+          "source": "BOD Fire Alarm Design §Classification of Occupancy",
+          "claim": "Group B and Group F-1 occupancies",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part II §II.F.4",
+          "claim": "Business / Group B, moderate hazard industrial / Group F-1 and low hazard factory industrial / Group F-2 per NFPA 101 and IBC",
+          "agrees": true,
+          "notes": "SOW Part II adds F-2 to the occupancy classification list"
+        }
+      ]
+    },
+    "construction_type": {
+      "value": "Type IIB",
+      "source": "BOD Fire Alarm Design §Construction Requirements",
+      "quote": "The building will be of Type IIB construction."
+    },
+    "building_height_actual": {
+      "value": "36 ft",
+      "source": "BOD Fire Alarm Design Table 3.2",
+      "quote": null,
+      "notes": "Table 3.2 states 'Actual Height: 36 ft / 1 story' — tabular value, no inline prose quote available."
+    },
+    "water_supply_test": {
+      "value": "Static: 63 psi; Residual: 60 psi; Flow: 1840 gpm (Jensen Hughes, October 2, 2024)",
+      "source": "BOD Fire Alarm Design §Water Supply",
+      "quote": "On October 2, 2024, hydrant flow testing conducted by Jensen Hughes yielded the following results: Static Pressure: 63 psi / Residual Pressure: 60 psi / Flow: 1840 gpm",
+      "notes": "Flow test conducted October 2, 2024 — date implies BOD was produced after this test, consistent with 2024 timeframe even though SOW dates from January 2023. BOD is BFA-authored design basis for the DB-Contractor's scope."
+    }
+  },
+  "phases": {
+    "design_build": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No dollar figure found in any available source document. SOW Part II §II.A.1.d references 'budget limitations stated in SOW Part II, Section III, Budget Limitation' but that section text does not appear in extracted content."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 465,
+        "source": "SOW Part II §IV",
+        "quote": "Work under this SOW shall be completed within 465 calendar days after receiving written Notice to Proceed (NTP) as follows: 100% design complete 100 days, Construction 365 days."
+      },
+      "design_duration_days": {
+        "value": 100,
+        "source": "SOW Part II §IV",
+        "quote": "100% design complete 100 days"
+      },
+      "construction_duration_days": {
+        "value": 365,
+        "source": "SOW Part II §IV",
+        "quote": "Construction 365 days"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "civil_engineering",
+      "environmental_engineering",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_air_distribution",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_natural_gas",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "civil_site_design",
+      "civil_utilities",
+      "environmental_remediation"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_chilled_water",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_natural_gas",
+      "plumbing_specialty",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "site_utilities"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "masonry_cmu",
+      "metals_misc_metals",
+      "thermal_roofing",
+      "thermal_waterproofing",
+      "thermal_insulation",
+      "openings_doors_frames",
+      "openings_windows",
+      "finishes_drywall_plaster",
+      "finishes_tile",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "specialties_toilet_partitions",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "communications_scope",
+      "electronic_safety_security",
+      "exterior_improvements",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "best_value"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ],
+    "taxonomy_notes": {
+      "program_subtype": "Used military_maintenance as closest match for a MXG (Maintenance Group) building containing welding, water jet, paint booth, fabrication, and NDI/x-ray industrial functions. No dedicated 'military_industrial_shop' entry exists in program_type.yaml — flagged as vocab gap.",
+      "award_type": "Design-Build is commonly awarded via best_value; source documents don't explicitly state award basis. Flagged as inferred.",
+      "project_status": "Set to 'complete' based on BOD presence and completed design scope evident. Actual construction completion not confirmed in available documents."
+    }
+  },
+  "mep_system_inventory": {
+    "hvac": {
+      "description": "Complete removal and replacement of all HVAC systems in Building 1791",
+      "source": "BOD Mechanical Design §Scope of Work",
+      "quote": "This project includes the entire removal of the HVAC systems in Building 1791.",
+      "systems": [
+        "AHU-1: 100% outside air unit with chilled water cooler and gas heating serving welding room; includes dust collector with recirculation and explosion-proof VFD",
+        "AHU-2: Constant volume with energy recovery wheel, chilled water coil, gas heat",
+        "AHU-3: Constant volume with energy recovery wheel, chilled water coil, gas heat",
+        "AHU-4: Constant volume with energy recovery wheel, chilled water coil, gas heat",
+        "AHU-5: Constant volume with energy recovery wheel, chilled water coil, gas heat",
+        "AHU-6: Split system cooling only for Communications and Electrical rooms",
+        "Paint booth: Specialized AHU with VFD on supply and exhaust fans",
+        "Two chillers: one for main building AHUs (with buffer tank, 30% glycol, expansion tank), one for paint booth AHU (with buffer tank)",
+        "Electric unit heaters in Riser room, Mechanical room, Communications room, Electrical room",
+        "Central dust/fume collector for welding shop with 6-inch point-of-use extractors and VFD",
+        "Dirty/Sanding Room ventilation system for airborne aluminum, steel, titanium, polyurethane paint, epoxy primer, etc."
+      ]
+    },
+    "electrical": {
+      "description": "Complete replacement of electrical service including pad-mounted transformers, primary switch, and all associated wiring",
+      "source": "BOD Electrical Design §Specific Requirements",
+      "quote": "modify incoming electrical service by demolition and replacement of the existing pad-mounted transformers, primary switch, and all associated wiring and materials.",
+      "systems": [
+        "1.5 MVA transformer rated at 13,200-480Y/277V",
+        "1,600A 480/277V service rated Switchboard",
+        "225 KVA step-down transformer, 480V:120/240V",
+        "150 KVA step-down transformer, 480V:120/208V",
+        "480/277V, 208/120V, and 240/120V panelboards",
+        "LED lighting throughout per ASHRAE 90.1 and UFC 3-530-01 with occupancy sensors",
+        "SPDs (surge protection devices) throughout",
+        "Dedicated circuits for motorized roll-up doors",
+        "Arc flash hazard analysis study per NFPA 70E"
+      ]
+    },
+    "plumbing": {
+      "description": "Complete new domestic water, sanitary, gas, and compressed air systems",
+      "source": "BOD Plumbing Design §Scope of Work",
+      "quote": "Provide hot and cold domestic water supply to fixtures; sanitary waste, vent and drainage systems. Provide compressed air system and trench drains for service shop.",
+      "systems": [
+        "Domestic cold and hot water (copper tubing Type L above grade, Type K below grade)",
+        "Sanitary waste/vent/drain (schedule 40 PVC below floor; cast iron no-hub above floor)",
+        "2 natural gas-fired instantaneous (tankless) water heaters mounted outdoors",
+        "Compressed air system: duplex rotary-screw compressors with 18 service bays + 3 tire-changing machines + tool room",
+        "2 low-pressure breathing air compressors (5 cfm min each, 2x 3M face masks)",
+        "Emergency eyewash/shower station",
+        "Natural gas piping (black carbon steel, schedule 40)"
+      ]
+    },
+    "fire_protection": {
+      "description": "New complete wet-pipe sprinkler system and combined fire alarm/mass notification system throughout building including paint booth",
+      "source": "BOD Fire Alarm Design §Automatic Suppression Systems",
+      "quote": "A new wet-pipe sprinkler system will be provided in accordance with UFC 3-600-01 and NFPA 13.",
+      "systems": [
+        "New wet-pipe sprinkler system throughout (light, ordinary, and extra hazard zones)",
+        "Paint booth sprinkler with isolation valve (extra hazard design per NFPA 33)",
+        "New Post Indicator Valve at 40 feet from building",
+        "Fire department connection",
+        "New fire hydrant on G Street",
+        "Combined voice evacuation and mass notification system (UFC 4-021-01, NFPA 72)",
+        "Addressable intelligent fire alarm system with RF transceiver to Monaco D21 Central Monitoring Center",
+        "Duct smoke detectors per NFPA 90A",
+        "Carbon monoxide detection in rooms with fuel-fired equipment"
+      ]
+    }
+  },
+  "environmental_hazmat": {
+    "scope": "Hazardous materials investigation and abatement as part of renovation",
+    "source": "BOD Environmental Design §Scope of Work",
+    "quote": "The scope of work included: (1) identifying, collecting and analyzing bulk samples of suspect asbestos-containing materials (ACM), (2) identifying, collecting and analyzing samples of existing paint to determine lead, cadmium and chromium concentrations, (3) inspecting a percentage of existing fluorescent light fixtures for the presence of Polychlorinated Biphenyl (PCB) light ballasts and light tubes containing mercury vapor and (4) performing a visual inspection for other mercury and PCB containing components.",
+    "materials_identified": [
+      "Residual ACM window frame sealant, black mastic, window glazing putty, pitch pockets, steam pit gaskets",
+      "Lead-containing paint (LCP) on interior CMU walls and structural steel",
+      "Mercury-containing fluorescent lamps (T8 fixtures in former x-ray room)",
+      "PCB-containing fluorescent ballasts (assumed unless labeled 'No PCBs')",
+      "Two PCB-rated electrical transformers (<1 ppm PCB)",
+      "Lead-lined walls and doors in former x-ray room"
+    ],
+    "specification_sections": [
+      "02 82 00 — Asbestos Remediation",
+      "02 83 00 — Lead Remediation",
+      "02 84 16 — Handling of Lighting Ballasts and Lamps Containing PCBs and Mercury"
+    ]
+  },
+  "civil_scope": {
+    "source": "BOD Civil Design §Description of Work",
+    "scope_items": [
+      "New stoop at southwest rear of building",
+      "New fire hydrant on G Street (tying into existing 8-inch watermain)",
+      "New fireline connection from Arnold Avenue with new Post Indicator Valve (PIV)",
+      "New 2-inch water service to building",
+      "New 6-inch sanitary sewer main connection on west side",
+      "Abandon existing sewer from southwest side",
+      "Replace curb and gutter at utility installation areas",
+      "Repair existing concrete drive at northwest side"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Architectural Design §Scope of Work",
+          "value": 23712,
+          "quote": "approximately 23,712 SF of existing space within building 1791"
+        },
+        {
+          "source": "BOD Fire Alarm Design §Project Description",
+          "value": 23773,
+          "quote": "Building 1791 is a one-story 23,773 ft² building"
+        }
+      ],
+      "resolution_chosen": "BOD Fire Alarm Design (23,773 SF)",
+      "rationale": "The 23,773 SF figure is repeated three times in the Fire Alarm BOD section (project description, Table 3.2 Actual Area, and Table 3.9 occupant load total), while the 23,712 SF figure appears once in the Architectural section with the qualifier 'approximately.' The Fire Alarm section provides more precise engineering data. Difference of 61 SF (~0.3%) is minor and likely attributable to gross vs. net measurement or rounding in the Architectural section."
+    },
+    {
+      "field_path": "facts.leed_required",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW Part I §II.B",
+          "value": "LEED certifiable required",
+          "quote": "Project shall be designed to be LEED certifiable."
+        },
+        {
+          "source": "SOW Part II §II.J",
+          "value": "LEED Certification not required",
+          "quote": "LEED Certification: LEED Certification is not required for this project."
+        }
+      ],
+      "resolution_chosen": "SOW Part II §II.J (LEED not required)",
+      "rationale": "SOW Part II §I.A explicitly states 'If Part II contradicts Part I, Part II shall govern.' LEED certification not required is the governing requirement. Part I language may be boilerplate carried from a standard template."
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing set present in intake folder. Drawing extraction deferred. BOD and SOW reference drawings but drawing PDFs were not staged for this project."
+  },
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    }
+  },
+  "tenant_freeform_tags": [
+    "joint_base_andrews",
+    "navfac",
+    "air_force",
+    "maintenance_group",
+    "design_build",
+    "industrial_shop",
+    "mxg",
+    "paint_booth",
+    "hazmat_abatement",
+    "previous_contractor_terminated",
+    "maryland"
+  ]
+}

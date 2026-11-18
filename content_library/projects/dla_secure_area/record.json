@@ -1,0 +1,370 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "dla_secure_area",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/dla_secure_area/1644856-RFP_DB_DLA_Secure_Space-Final-07-16-2020.pdf",
+      "type": "sow",
+      "sha256": "084d03a17d107c23dd4b19e6b78e76d6cbeb2486be53f8039ea5bbce64055087",
+      "included": true,
+      "notes": "NAVFAC Design-Build RFP, 270 pages, Work Order No. 1644856, dated July 16, 2020. Contains Statement of Work (Part 3), Performance Technical Specifications (Part 4), Prescriptive Specs (Part 5), and references to 31 performance drawings (not provided separately in intake folder). Classified UNCLASSIFIED//FOR OFFICIAL USE ONLY."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/dla_secure_area/20-084.2021.04.12.FINAL SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "15e84c4c26cd04270e58e169429cf71e88590447962b64fc421d12d774a795e0",
+      "included": true,
+      "notes": "Bowman Foster & Associates (BFA) Final Submittal Basis of Design, dated April 12, 2021, BFA Project No. 20-084. Covers Architectural, Fire Protection, Mechanical, Electrical, and Telecommunications design disciplines."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "31 performance drawings referenced in RFP Part 6 (NAVFAC Drawing Nos. 12809801–12809831) were not included in the intake folder. The RFP notes AutoCAD files would be provided to the contractor after award. Drawing extraction deferred — no drawing files present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Defense Logistics Agency (DLA) Secure Area Renovation",
+      "source": "RFP cover page",
+      "quote": "DEFENSE LOGISTICS AGENCY (DLA) SECURE AREA RENOVATION",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "DEFENSE LOGISTICS AGENCY (DLA) SECURE AREA RENOVATION",
+          "value": "Defense Logistics Agency (DLA) Secure Area Renovation",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "DEFENSE LOGISTICS AGENCY (DLA) SECURE AREA RENOVATION",
+          "value": "Defense Logistics Agency (DLA) Secure Area Renovation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC) Mid-Atlantic / Defense Logistics Agency Troop Support",
+      "source": "RFP cover page and Part 3 §1.0",
+      "quote": "NAVFAC MID-ATLANTIC, PWD PENNSYLVANIA",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "NAVFAC MID-ATLANTIC, PWD PENNSYLVANIA",
+          "value": "NAVFAC Mid-Atlantic, PWD Pennsylvania (contracting authority); DLA Troop Support (end user/client)",
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 2, §01 14 00.05 20 §1.4(d)",
+          "claim": "interfere with DLA Troop Support operations",
+          "value": "DLA Troop Support as end user/client",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Defense Logistics Agency (DLA) Troop Support",
+      "source": "RFP Part 3 §1.4(d) and §2.1",
+      "quote": "cause impacts to DLA Troop Support operations",
+      "corroboration": [
+        {
+          "source": "RFP Part 3 §2.1",
+          "claim": "All work shall be performed and completed without disruption to the adjacent Command Control Center (CCC) operations and activities",
+          "value": "DLA Troop Support / Building 45 occupant as owner",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Philadelphia",
+      "state": "PA",
+      "country": "US",
+      "facility_address": "4921 South Broad Street, Philadelphia, Pennsylvania 19112",
+      "installation": "Naval Support Activity Philadelphia",
+      "building": "Building 45",
+      "source": "RFP cover page",
+      "quote": "NAVAL SUPPORT ACTIVITY PHILADELPHIA, PENNSYLVANIA",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "NAVAL SUPPORT ACTIVITY PHILADELPHIA, PENNSYLVANIA",
+          "value": "Naval Support Activity Philadelphia, PA",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "NSA PNY, PHILADELPHIA, PA",
+          "value": "Naval Support Activity Philadelphia, PA",
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 3 §3.1",
+          "claim": "Building 45 in a newly constructed building (opened in November 2019) located in a restricted fenced compound at the Naval Support Activity Philadelphia",
+          "value": "Building 45, NSA Philadelphia",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-084",
+      "source": "BOD cover page",
+      "quote": "BFA Project No.: 20-084"
+    },
+    "project_number_client": {
+      "value": "1644856",
+      "source": "RFP cover page",
+      "quote": "WORK ORDER #: 1644856"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP dated July 2020 shows 'CONTRACT #: TBD' — contract not yet awarded at RFP issuance. BOD (April 2021) references 'eProject WO No.: 1644856' but no executed contract number is stated."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 650,
+      "unit": "gsf",
+      "source": "RFP Part 3 §1.0",
+      "quote": "convert an approximately 650-Square Feet of existing interior space in Building 45",
+      "corroboration": [
+        {
+          "source": "RFP Part 3 §1.0",
+          "claim": "approximately 650-Square Feet of existing interior space",
+          "value": 650,
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 3 §2.0",
+          "claim": "approximately 650-Square Feet of existing interior space into a fully accredited secure Continuous Operation (24/7) facility",
+          "value": 650,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No total program budget stated in either source document. RFP uses Design-Build lump sum CLIN structure with pricing TBD."
+    },
+    "project_description": {
+      "value": "Design-Build renovation of approximately 650 SF of existing unfinished interior space in Building 45 at Naval Support Activity Philadelphia into a Sensitive Compartmented Information Facility (SCIF) Secure Suite meeting ICD/ICS 705 and UFC 4-010-05 requirements. The Secure Suite contains a Video Teleconference (VTC) Room, IT/Server Room, and Common Open Office area designed for 24/7 Continuous Operation. Scope includes architectural renovation; stand-alone HVAC system; electrical service with power line RF filters and Red/Black separation; telecommunications with CAT6 and fiber; fire protection/alarm modifications; electronic security system (ACS, IDS, CCTV); TEMPEST countermeasures including RF foil shielding; and all associated cybersecurity requirements. Building 45 was a newly constructed building opened November 2019.",
+      "source": "RFP Part 3 §1.0, §2.0, §2.1; BOD General Scope",
+      "quote": "This project includes the complete design services as well as, all required labor, materials, equipment, testing and adjustments to convert an approximately 650-Square Feet of existing interior space in Building 45 located in the Naval Support Activity, Philadelphia, Pennsylvania into a secure area that meets the Intelligence Community Standard (ICS) Number 705-1 for physical security required for storing, processing, and discussion of sensitive information."
+    },
+    "facility_type": {
+      "value": "SCIF / Sensitive Compartmented Information Facility — Continuous Operation (24/7) type per ICS 705-1",
+      "source": "RFP Part 3 §2.0",
+      "quote": "fully accredited secure Continuous Operation (24/7) facility, as defined in ICS Number 705-1"
+    },
+    "security_standard": {
+      "value": "ICD/ICS 705-1; UFC 4-010-05",
+      "source": "RFP Part 3 §2.2 and §2.1",
+      "quote": "UFC 4-010-05 – Sensitive Compartmented Information Facilities Planning, Design, and Construction (and IC Tech Spec for ICD/ICS 705)"
+    },
+    "acoustic_requirement": {
+      "value": "STC 50 minimum throughout the Suite",
+      "source": "RFP Part 3 §2.1(b)",
+      "quote": "Sound Group 4 – STC 50 or better throughout the Suite."
+    },
+    "building_description": {
+      "value": "Building 45 is a newly constructed building (opened November 2019) located in a restricted fenced compound at Naval Support Activity Philadelphia. The work area was an unfinished space with concrete floor and exposed metal ceiling deck and metal beams. Temporary partition walls and doors had been installed to isolate the construction space from adjacent restricted access offices (Command Control Center).",
+      "source": "RFP Part 3 §3.1",
+      "quote": "Building 45 in a newly constructed building (opened in November 2019) located in a restricted fenced compound at the Naval Support Activity Philadelphia. Access to the compound and the building are controlled. The work area located in Building 45 is an unfinished space with concrete floor and exposed metal ceiling deck and metal beams."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design-Build RFP with separate CLINs for design (CLIN 0001AB) and construction (CLIN 0001AA), but no dollar values are filled in the RFP pricing schedule — pricing TBD at award. BFA's internal project number 20-084 confirms BFA performed design services. Executed contract value not available in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP dated July 16, 2020. BOD Final Submittal dated April 12, 2021 (post-design). Award date not stated."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-04-12",
+        "source": "BOD cover page",
+        "quote": "FINAL SUBMITTAL April 12, 2021",
+        "notes": "The BOD Final Submittal date of April 12, 2021 is a proxy for design completion. Actual design phase completion date may differ slightly."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "CLIN 0001AA covers construction. No dollar amount available in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac",
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_secure",
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_secure"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "telecommunications_engineering",
+      "security_engineering",
+      "architecture"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "telecom_structured_cabling",
+      "security_access_control",
+      "security_video_surveillance",
+      "security_intrusion",
+      "security_scif_classified"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "security_acs",
+      "security_video",
+      "security_intrusion",
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "communications_scope",
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "existing_demolition",
+      "interior_partitions"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "bfa_role_detail": {
+    "value": "BFA (Bowman Foster & Associates) served as the Designer of Record (DOR) — a subconsultant to or partner with the prime Design-Build contractor. The BOD was issued by BFA under BFA Project No. 20-084. The RFP defines the DOR as 'Licensed architect/engineer working as subcontractor to or partner with prime Contractor who provides design for this contract.'",
+    "source": "BOD cover page; RFP Part 2 §00 00 00 §1.1 (Designer of Record definition)",
+    "quote": "Designer of Record (DOR): Licensed architect/engineer working as subcontractor to or partner with prime Contractor who provides design for this contract."
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "scif",
+    "ics_705",
+    "ufc_4_010_05",
+    "design_build",
+    "nsa_philadelphia",
+    "dla_troop_support",
+    "tempest",
+    "secure_compartmented_information",
+    "hampton_roads_firm_federal"
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "31 performance drawings (NAVFAC Drawing Nos. 12809801–12809831, dated 06/01/2020) are referenced in RFP Part 6 but were not included in the intake folder. Drawing extraction was deferred. No image files to process."
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md"
+    }
+  }
+}

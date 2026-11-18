@@ -1,0 +1,48 @@
+# Retrospective Notes
+- mock RFP still in 00_admin/rfp_intake/original_rfp
+- WSSC retrospective still in retrospectives
+- media-253ce6da16a134d4 still exists in template
+- on new_proposal.sh when you are following prompts for sections, it throws an error if you use a comma and doesnt allow you to go back. Suggestion: Comma handling and go back option in guided prompts
+- subfolder is created for full proposal with all sections. The goal is to have the new_proposal.sh to edit the existing scaffold, no need for a duplicate folder as this is a standalone github project (maybe the intent is to just run this off of the template repository?)
+- Add a helper instruction for the new github url in new_proposal.sh
+- bid_no_bid is not populated at scaffolding
+- Update readme for RFP shred instructions
+- During rfp_shred.sh, rfp title is requested again. This should pull from the proposal_config.yml
+- Shred does not appear to look at all documents in rfp_intake.
+- Shred creates a temp txt file when extracting. Then it does not have access requesting to copy the temp file into the project folder. Shred should be transparent.
+- Claude rfp shred prompt for permission issues
+- RFP shred missed a couple of disciplines on subconsultant_digest
+- Proposal schedule core data not populated during proposal setup or RFP shred
+- compliance_matrix.md not populated during shred
+- color_team_reviews.md not populated during shred
+- Add kick-off compiling for meeting (double numbering happening here)
+- Digest RFP attachments for win themes and supplementary information. There should be a flag when documents cant be read due to errors or file size.
+- Digest reference proposals to create a content library to use when crafting narratives, resumes, and project sheets.
+- Build content library to reduce volume of AI calls and processing
+- Add Virginia DGS AE-1 through AE-6 scaffolding in proposal setup.
+- Add SF330 Part 1 Sections A-F and Part 2 scaffolding in proposal setup.
+- Alot of hand holding and wrong digestion (specifically project selection) during reference proposal intake
+- Outline should be built after RFP shred
+- Documents like win_themes, schedule, compliance_matrix need to be updated before commits
+- Color team reviews scripting is needed
+- Document structure is disorganized. There is alot of unsorted clutter in 00_admin. Objects should be logically organized and scripts should know exactly where to find them to reduce run times and api calls
+- Missing Blue team and Black hat color teams. Need to bring in Go/No Go module at the firm level profile before proposals are built
+- Content library needs to be set up. For this next version, we need to digest the data that was generated in the VT proposal and then build out a CSV to do basic mapping and then .md for the actual content. A future version will use a database and document management system.
+- Need to ingest Past Performance (CPARS/PPQ)
+- Team reviews need to go through multiple times to ensure that each item is remediated.
+- Need to confirm appropriate templates are uploaded in their correct directories. Some proposals such as SF330s and DGS workbooks have specific templates where other other proposals leave it more to the author while just following basic proposal requirement structure.
+- At color team reviews, it is very interactive. I like that, but would like to reduce token usage.
+- Process definitely needs to be faster with less user input except where deficiencies are identified.
+- Need to clean up internal eval references when publishing
+- Need to check for addenda at each review gate.
+- Should have a lower cost chat bot for less heavy lift items like raw document digestion.
+- While making the changes for color team review, not all of the reference documents for the color team got updated leaving a really messy second pass review. Need guided and programmatic reconciliation process.
+- Population of the DGS workbook is kind of messy. Some hallucination, roles table not correctly populated. When compiling, cell dimensions go crazy.
+- Add sanity check scripting for submission gaps. This should check all eval factors, completeness
+- When populating excel cells from md narratives, tables are inserted but still retain .md language. Need to change to bullet lists.
+- Minor resizing and formatting work at final manual review
+- LOTS of em dashes in final narratives. While technically correct, a hyphen is better used to avoid AI smell
+- Scripting for final attachments at assembly needed.
+- Bookmark scaffolding needed for importing to pdf application
+- Org chart generation (visio, etc.)
+- Final assembly with bookmarks and TOC

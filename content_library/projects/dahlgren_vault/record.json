@@ -1,0 +1,644 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "dahlgren_vault",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/dahlgren_vault/20-015.2021.04.23.100% FINAL SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "46cfc5ace93036cbc1248ea6e308c78eda531c176431e96959b8510207334def",
+      "page_count": 49,
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/dahlgren_vault/ATTACHMENT+B+-+Building+1470+2nd+Floor+Vault+Expansion+-+Final+RFP+SOW.pdf",
+      "type": "sow",
+      "sha256": "c32f132a45e788127bafc73660053b5c463b7b2e54f4ce7473ae1ae41ff55871",
+      "page_count": null,
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "full",
+    "drawing_extraction_status": "complete"
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "D-101",
+        "title": "DEMOLITION PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Demolition plan showing existing first floor of Building 1470 HPL/SAPF space. Shows removal of concrete walkway, removal of masonry wall portion for new 3'-0\" x 7'-0\" door, removal of precast sill. Scale 1/8\"=1'-0\". The demolition is focused on the janitor/kitchenette room 2217 area for the stair connection and new entry vestibule."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "FLOOR PLAN - NEW WORK",
+        "discipline": "architecture",
+        "reading_notes": "New 2nd floor addition floor plan showing approximately 76' x 55' addition. Rooms: 101 Corridor (321 SF), 102 HPL (2005 SF), 103 Workroom 1 (553 SF), 104 Workroom 2 (554 SF), 105 Workroom 3 (339 SF), 106 Workroom 4 (200 SF), plus Electrical Room and Vestibule. Total addition approximately 4,200 SF. Also shows bollard details. The HPL room 102 (2005 SF) is the large lab space. Workrooms are numbered 103-106 plus 9 rooms (workrooms 5-9) not visible at this sheet - likely shown elsewhere. Steel columns and bracing visible."
+      },
+      {
+        "sheet_number": "A-102",
+        "title": "REFLECTED CEILING PLAN",
+        "discipline": "architecture",
+        "reading_notes": "2x2 ACT ceilings at 9'-0\" in workrooms, 8'-10\" soffit in some areas. 1-hr rated ceiling assembly noted. LED 1x4 and 2x4 light fixtures, some with integral battery packs. 2x2 supply and return air diffusers shown. Exposed ceiling in HPL room 102."
+      },
+      {
+        "sheet_number": "A-103",
+        "title": "ROOF PLAN",
+        "discipline": "architecture",
+        "reading_notes": "New 2nd floor roof plan. EPDM single-ply roofing with tapered insulation. RTU location shown. Metal scuppers and downspouts. Roof access via 2 ladders from existing lower roofs. Roof slope 1/2\":12\". Parapet walls. Existing lightning protection to be relocated and extended. Canopy 10'-0\" x 24'-0\" shown at north entry."
+      },
+      {
+        "sheet_number": "A-201",
+        "title": "ELEVATIONS",
+        "discipline": "architecture",
+        "reading_notes": "North, East, and West elevations of new 2nd floor addition. New parapet height approximately 36'-8\" from grade, new roof at 33'-4\". Existing parapet at 20'-0\", existing roof at 16'-8\". Split face CMU matching existing color adjacent. Brick veneer on some elevations. No windows in facility (ICD/ICS 705 SCIF requirement). Roll-up door on north elevation at HPL. Bollards at north entrance."
+      },
+      {
+        "sheet_number": "A-301",
+        "title": "WALL SECTIONS",
+        "discipline": "architecture",
+        "reading_notes": "Multiple wall sections (Wall Sections 1-4) showing CMU cavity wall construction with 4\" economy brick veneer, fluid-applied vapor barrier, 1\" rigid insulation, 3-5/8\" metal studs, R-13 insulation, 5/8\" Type X GWB (3 layers at SCIF perimeter walls), deflection track, and EPDM roofing details. Wall Section 2 shows HPL room with no typical exterior glazing. Structural steel columns and beams noted referencing structural drawings."
+      },
+      {
+        "sheet_number": "A-302",
+        "title": "WALL SECTIONS / DETAILS",
+        "discipline": "architecture",
+        "reading_notes": "Coping detail, expansion joint detail, flashing detail, and Section D (wall section at canopy interface). Aluminum coping, EPDM membrane, mineral wool insulation details. Neoprene closer, gasket fastener. Roll-up door section showing approach to non-discussion area."
+      },
+      {
+        "sheet_number": "A-601",
+        "title": "SCHEDULES / DOOR DETAILS",
+        "discipline": "architecture",
+        "reading_notes": "Door schedule listing 13 doors (101-113) and Room Finish Schedule. Doors are 1-3/4\" HM, levels I-IV, with various hardware groups (H1-H4), jamb types (J1-J4), sill types (S1-S4). Fire-rated doors (90 min) at workroom perimeters per ICD/ICS 705. Door types A, B (14'x14' roll-up), C shown. Room finishes: VCT in vestibule, carpet tile in workrooms/conference, resilient tile in server/IT rooms. 9'-0\" ACT ceilings in workrooms."
+      },
+      {
+        "sheet_number": "A-602",
+        "title": "PARTITION TYPES / DETAILS",
+        "discipline": "architecture",
+        "reading_notes": "Partition types 1-4 shown. Types 1 and 2 are STC 50/1-hr rated with 3\" sound attenuation batt insulation, 5/8\" Type X GWB double-layer on workroom side, 3-5/8\" metal studs. Type 3 is 1-hr rated. Type 4 runs stud to underside of deck above. All SCIF wall construction per ICD/ICS 705 Wall A specification. Sill detail shows expansion joint at floor with acoustic sealant."
+      },
+      {
+        "sheet_number": "FA-001",
+        "title": "FIRE ALARM COVER SHEET",
+        "discipline": "fire_protection_engineering",
+        "reading_notes": "Cover sheet for fire alarm system. Existing FACP is Gamewell FCI E3 addressable panel. Existing NAC booster panel in SE corner of existing HPL space to be utilized for new addition. New devices connect via extension of existing IDC. Class B circuits throughout. 48hr standby/10min alarm battery backup. Closest existing NAC booster panel powers new notification appliances."
+      },
+      {
+        "sheet_number": "FA-101",
+        "title": "FIRE ALARM FLOOR PLAN - NEW WORK",
+        "discipline": "fire_protection_engineering",
+        "reading_notes": "New 2nd floor fire alarm plan showing strobes/speakers in each workroom and corridor, pull stations at egress doors, duct smoke detectors at AHU, addressable modules. SCIF wall conduit penetration grounding detail shown. Conduit to be looped and grounded at SCIF wall penetrations per SCIF requirements."
+      },
+      {
+        "sheet_number": "FS-001",
+        "title": "FIRE SUPPRESSION COVER SHEET",
+        "discipline": "fire_protection_engineering",
+        "reading_notes": "Sprinkler system cover sheet. New wet pipe sprinkler fed from existing 4-inch main serving existing 2nd floor of Building 1470. Light hazard design for offices/corridors (0.10 gpm/1500 SF). Ordinary hazard for server/electrical rooms (0.20 gpm/2500 SF). Quick response sprinklers throughout. Hydrant flow test data: static 57 PSI, residual 54 PSI, flow 1015 GPM."
+      },
+      {
+        "sheet_number": "FS-101",
+        "title": "FIRE SUPPRESSION FLOOR PLAN - NEW WORK",
+        "discipline": "fire_protection_engineering",
+        "reading_notes": "New 2nd floor sprinkler plan. New 4-inch feed main tapping existing main. Sprinklers at max 10' spacing (K=8.0, 200 SF max coverage). SCIF wall pipe penetration grounding detail. Quick-response recessed chrome pendent in finished ceiling areas, brass upright in unfinished areas."
+      },
+      {
+        "sheet_number": "LS-001",
+        "title": "LIFE SAFETY DESIGN ANALYSIS - 1",
+        "discipline": "fire_protection_engineering",
+        "reading_notes": "Life safety egress plan sheet 1. Building classified as IBC Group B business occupancy. Type IIB construction. Unlimited area building (sprinklered, 2 stories). Occupant loads: offices 19 persons (150 SF/person), conference rooms 39 (15 SF/person), workroom 35 (15 SF/person). Exit staircase and fire door to existing building corridor provide two required exits."
+      },
+      {
+        "sheet_number": "LS-002",
+        "title": "LIFE SAFETY DESIGN ANALYSIS - 2",
+        "discipline": "fire_protection_engineering",
+        "reading_notes": "Life safety analysis continued. Exit capacity: 44\" stair (140 persons), 34\" door (170 persons). Dead-end corridor max 22 ft (limit 50 ft). Common path max 53 ft (limit 100 ft). Travel distance max 95 ft (limit 300 ft). Emergency lighting at occupant load > 50 above discharge level. 1-hr fire barrier at corridor per ICS 705 requirements."
+      },
+      {
+        "sheet_number": "M-001",
+        "title": "MECHANICAL COVER SHEET",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Mechanical cover sheet with legend, general notes, and abbreviations. Systems: DX VAV rooftop unit for main 2nd floor addition, two split systems (mini-splits) for server room dedicated cooling. Existing heat pumps to be relocated from lower roof to new high roof. Controls via BACnet MSTP connecting to existing JACE panel. Design conditions: cooling 90°F DB/81°F WB, heating 12°F DB."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "MECHANICAL FLOOR PLAN - NEW WORK",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "New 2nd floor HVAC plan. DX VAV RTU on new roof with VAV boxes with electric reheat serving each zone. Medium pressure supply ductwork, low pressure distribution. Main return ductwork back to RTU. Two mini-split systems for server room 206. Emergency shutdown buttons at egress points. VAV boxes shown above ACT ceiling in each workroom. BAS integration to existing JACE."
+      },
+      {
+        "sheet_number": "M-501",
+        "title": "MECHANICAL DETAILS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Details: wall-mounted mini-split, roof curb condensing unit, pipe through roof, typical louver, inline fan (ceiling suspended), typical room transfer duct. SCIF wall duct penetration detail and SCIF wall pipe penetration detail showing Z-duct acoustic treatment and grounding requirements."
+      },
+      {
+        "sheet_number": "M-502",
+        "title": "MECHANICAL DETAILS (CONTINUED)",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Additional details: horizontal AHU installation, hanger rod attachment, condensate drain piping, and SCIF wall penetration details for both ducts and pipes. Acoustic sealant required at all SCIF perimeter penetrations. Duct bars/grilles at penetrations exceeding 96 sq in."
+      },
+      {
+        "sheet_number": "M-601",
+        "title": "MECHANICAL SCHEDULES",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Equipment schedules: split AHU, mini-split AHU (2 units for server room), condensing units (heat pumps), RTU for main space, fan schedule, GRD schedule, louver schedule. RTU is DX VAV type with EC motor. Mini-splits for server room have seismic bracing. Unit heater schedule."
+      },
+      {
+        "sheet_number": "M-701",
+        "title": "MECHANICAL CONTROLS",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "BAS control points list and sequences of operation. DDC controls integrate with existing building BACnet MSTP system via JACE panel. Emergency shutdown button wiring to VAV controls. VAV zone controls with electric reheat."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "ELECTRICAL COVER SHEET",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical cover sheet with legend, general notes, abbreviations. System: 208/120V, 3-phase, 4-wire service from new 500 kVA dry-type transformer (480-208/120V) fed from new 600A LSI circuit breaker in existing 3000A 480V MTM switchgear. New 800A panel board as main distribution, twelve total new panels. Classified/unclassified network infrastructure (NMCI, RDT&E, CNET, JWICS) throughout."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "LIGHTING PLAN - NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "2nd floor lighting plan. LED sources 4000K/80 CRI throughout. Workrooms: 50 fc at 3' AFF, 2:1 uniformity. Conference room: 30 fc average, dimmable. Corridors: 5 fc. Electrical room: 30 fc. Server room: 50 fc. Occupancy sensors (dual technology) at all spaces. Emergency/exit lighting throughout. Lighting schedule attached."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "POWER PLAN - NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "2nd floor power plan. Surface-mounted wireway system in all labs/workrooms for power and IT/data drops. 125A sub-panels in each workroom/lab. 400A panel in server room with EPO. Floor outlet boxes in conference room. GFCI protection at appropriate locations. All conductors copper THHN/THWN-2 in EMT conduit."
+      },
+      {
+        "sheet_number": "E-103",
+        "title": "HVAC POWER PLAN - NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "HVAC power plan showing connections to new RTU on roof, mini-split condensing units, VAV boxes with electric heat, emergency shutdown buttons at egress. 600A feeder from existing switchgear to new transformer. VFDs for supply fan motor control via BACnet MSTP."
+      },
+      {
+        "sheet_number": "E-104",
+        "title": "SECURITY PLAN - NEW WORK",
+        "discipline": "security_engineering",
+        "reading_notes": "Electronic Security System (ESS) plan. Lenel access control system: 13 HID pivCLASS RPK-40-H card readers with keypads at workroom entrances, 13 Hes 4500C electric strikes, 3 Magnasphere BMS at emergency/primary doors, 17 Bosch DS938Z PIR motion detectors, 2 LNL-1100 ICM, 6 LNL-1320 DRI modules, 2 Altronix power supplies. Blue strobe lights at each workroom door. Connecting to existing controller in Room 1203 via NDW 3SP network."
+      },
+      {
+        "sheet_number": "E-105",
+        "title": "LIGHTNING PROTECTION PLAN",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lightning protection plan for new 2nd floor addition. Remove existing system on lower roof area where new addition occurs. New copper air terminals, conductors, down conductors connecting to existing building lightning protection system. UL 96A certification required for entire system. Nickel-tipped copper air terminals, 1/2\" diameter x 2'-0\"."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "ELECTRICAL DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "SCIF wall penetration grounding detail (conduit grounding clamp, bare copper wire looped to building steel), occupancy sensor wall switch detail, single door access control detail showing card reader/keypad mounting and wiring. Through-penetration firestop details."
+      },
+      {
+        "sheet_number": "E-601",
+        "title": "POWER ONE-LINE DIAGRAM",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Power one-line: Existing 3000A 480V MTM SWGR -> new 600A LSI CB -> new 500 kVA 480-208/120V transformer -> new 800A main panelboard -> 12 sub-panels (400A server room, 10x 125A workrooms/labs, etc.). Emergency shutdown functionality in server room tied to 400A MCB shunt trip. Grounding system shown."
+      },
+      {
+        "sheet_number": "E-602",
+        "title": "PANELBOARD SCHEDULES",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Panelboard R schedule and general notes. New panel 'R' is 800A 208/120V main distribution. Sub-panels 'R1' through 'R10' or similar designations for each workroom/lab (125A each), plus 400A server room panel. All copper bus, 200% neutral, AFCI breakers, tumbler locks keyed alike."
+      },
+      {
+        "sheet_number": "E-603",
+        "title": "PANELBOARD SCHEDULES (CONTINUED)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Additional panelboard schedules for sub-panels R3-R6. Each 125A, 208/120V, 42 spaces, 30 x 20A/1P branch breakers. Fed from 800A main via THHN copper in EMT."
+      },
+      {
+        "sheet_number": "T-101",
+        "title": "TELECOMMUNICATIONS PLAN - NEW WORK",
+        "discipline": "telecommunications_engineering",
+        "reading_notes": "Telecommunications/low voltage plan. Five network types: cNMCI (red), uNMCI (blue), cRDT&E (red), uRDT&E (green), CNET (orange), JWICS (yellow). CAT6A F/UTP color-coded cables, Panduit Mini-Com faceplates/jacks. Basket type cable tray in corridor. New 8\" EMT conduit from existing server room 1302O to new server room 206. Wall-mount cabinets for CNET (Liebert), NMCI (Holocom), JWICS (Hubbell QuadCab). Server room 206 designed per EIA/TIA 569-B."
+      },
+      {
+        "sheet_number": "T-601",
+        "title": "TELECOMMUNICATIONS RISER DIAGRAM",
+        "discipline": "telecommunications_engineering",
+        "reading_notes": "Telecommunications riser showing connections from new 2nd floor server room 206 to existing rooms: 1302O (current server room), 1311 (mechanical/comms room), 1705 (fiber comm room), 2276 (existing patch panels). ISP fiber (24-strand SM OS2) from Comm Room 1705 to new uNMCI cabinet. 2-fiber JWICS from 1705 to new JWICS cabinet. TMGB in server room. RCDD-approved design required."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 4200,
+        "unit": "gsf",
+        "source": "BOD p.7 (Fire Protection section)",
+        "quote": null,
+        "sheets": [
+          "A-101",
+          "LS-001"
+        ]
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "BOD General scope + SOW Part 3 Chapter 1",
+        "quote": null,
+        "sheets": [
+          "A-101",
+          "A-301"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "DX VAV rooftop unit (main 2nd floor addition space)",
+          "Two mini-split systems for server room dedicated cooling",
+          "VAV boxes with electric reheat at each zone",
+          "Existing heat pumps relocated from lower roof to new high roof",
+          "BACnet MSTP controls integrating with existing JACE panel"
+        ],
+        "electrical": [
+          "500 kVA 480-208/120V dry-type transformer (new)",
+          "600A LSI circuit breaker in existing 3000A MTM switchgear",
+          "800A main panelboard (12 new panels total)",
+          "400A panel in server room with EPO capability",
+          "12 x 125A sub-panels in workrooms/labs",
+          "LED lighting throughout (4000K/80 CRI)",
+          "Dual-technology occupancy sensors at all spaces",
+          "New lightning protection system on 2nd floor addition"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Wet pipe sprinkler system (new, fed from existing 4-inch main)",
+          "Quick-response recessed chrome pendent sprinklers in finished areas",
+          "Quick-response brass upright sprinklers in unfinished areas",
+          "Extension of existing addressable Gamewell FCI E3 fire alarm system",
+          "New NAC booster panel circuits from existing panel",
+          "Voice evacuation/mass notification system extension"
+        ]
+      }
+    }
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 1470 2nd Floor Vault Expansion",
+      "source": "BOD cover sheet",
+      "quote": "BUILDING 1470 SECOND FLOOR VAULT EXPANSION",
+      "corroboration": [
+        {
+          "source": "BOD cover sheet",
+          "claim": "Building 1470 Second Floor Vault Expansion",
+          "value": "Building 1470 2nd Floor Vault Expansion",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "Building 1470 2nd Floor Vault Expansion",
+          "value": "Building 1470 2nd Floor Vault Expansion",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of the Navy / Naval Facilities Engineering Command (NAVFAC) Washington, South Potomac",
+      "source": "SOW cover page",
+      "quote": "NAVFAC WASHINGTON, SOUTH POTOMAC, DAHLGREN",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "NAVFAC Washington, South Potomac, Dahlgren",
+          "value": "Department of the Navy / NAVFAC Washington South Potomac",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.7",
+          "claim": "Department of the Navy's, Naval Facilities Engineering Command (NAVFAC)",
+          "value": "Department of the Navy / NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy",
+      "source": "BOD p.7",
+      "quote": "Department of the Navy's, Naval Facilities Engineering Command (NAFVAC)",
+      "corroboration": [
+        {
+          "source": "BOD p.7",
+          "claim": "Department of the Navy's, Naval Facilities Engineering Command",
+          "value": "Department of the Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Dahlgren",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Naval Support Facility Dahlgren, Building 1470, Dahlgren, VA 22448",
+      "source": "BOD cover sheet",
+      "quote": "DAHLGREN, VA",
+      "corroboration": [
+        {
+          "source": "BOD cover sheet",
+          "claim": "Dahlgren, VA",
+          "value": "Dahlgren, VA",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "NSA South Potomac, Dahlgren, Virginia 22448",
+          "value": "Dahlgren, VA 22448",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-015",
+      "source": "BOD cover sheet",
+      "quote": "BFA Project: 20-015",
+      "corroboration": [
+        {
+          "source": "BOD cover sheet",
+          "claim": "BFA Project: 20-015",
+          "value": "20-015",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "N0017819PX00007",
+      "source": "SOW cover page",
+      "quote": "Document # N0017819PX00007",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "Document # N0017819PX00007",
+          "value": "N0017819PX00007",
+          "agrees": true
+        },
+        {
+          "source": "SOW Part 2",
+          "claim": "eProjects WORK ORDER NO: 1613601",
+          "value": "eProject No. 1613601",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40080-12-C-2542",
+      "source": "Drawing title block (multiple sheets)",
+      "quote": "N40080-12-C-2542",
+      "corroboration": [
+        {
+          "source": "Drawing title blocks",
+          "claim": "CONSTR. CONTR. NO. N40080-12-C-2542",
+          "value": "N40080-12-C-2542",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 4200,
+      "unit": "gsf",
+      "source": "BOD p.7 (Fire Protection section)",
+      "quote": "The entire new space will comprise approximately 4,200 sq ft",
+      "corroboration": [
+        {
+          "source": "BOD p.7",
+          "claim": "approximately 4,200 sq ft",
+          "value": 4200,
+          "agrees": true
+        },
+        {
+          "source": "BOD General scope",
+          "claim": "76' x 55' second floor facility",
+          "value": 4180,
+          "agrees": true
+        },
+        {
+          "source": "SOW Part 3 Ch 1",
+          "claim": "approximately 80' x 59' second floor facility",
+          "value": 4720,
+          "agrees": false
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-04-23",
+        "source": "BOD cover sheet - 100% Final Submittal date",
+        "quote": "100% FINAL SUBMITTAL April 23, 2021"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_secure"
+    ],
+    "program_subtype": [
+      "military_secure"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering",
+      "telecommunications_engineering",
+      "security_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "electrical_grounding_lightning",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "security_access_control",
+      "security_intrusion",
+      "security_scif_classified",
+      "telecom_structured_cabling"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "electrical_grounding",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "security_acs",
+      "security_video",
+      "security_intrusion"
+    ],
+    "construction_scope": [
+      "superstructure_concrete_frame",
+      "metals_structural_steel",
+      "masonry_cmu",
+      "masonry_brick_stone",
+      "thermal_roofing",
+      "thermal_insulation",
+      "interior_construction",
+      "finishes_flooring",
+      "finishes_ceiling",
+      "finishes_painting_wallcovering",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "communications_scope",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nsf_dahlgren",
+    "king_george_county",
+    "scif",
+    "icd_705",
+    "ics_705",
+    "sapf",
+    "above_secret",
+    "vault",
+    "classified_construction",
+    "lenel_access_control",
+    "nswcdd",
+    "hpl_lab"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Joel Andre",
+      "role_on_project": "architect_of_record"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md"
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD p.7 (Fire Protection section)",
+          "value": 4200
+        },
+        {
+          "source": "SOW Part 3 Ch 1 (Mission Statement)",
+          "value": 4720
+        },
+        {
+          "source": "BOD General scope calculation (76' x 55')",
+          "value": 4180
+        }
+      ],
+      "resolution_chosen": "BOD p.7 (Fire Protection section)",
+      "rationale": "BOD fire protection section explicitly states 'approximately 4,200 sq ft' as the total new space. The SOW Mission Statement says '80' x 59'' which yields ~4,720 SF but notes this is a slightly larger notional footprint; the detailed architectural drawings and BOD fire analysis consistently reference 4,200 SF. The 76' x 55' BOD general description (=4,180 SF) rounds to ~4,200 SF."
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "21-005",
+    "status": "present_with_value",
+    "source": "Electrical Systems Study cover page",
+    "quote": "BFA Project No.: 21-005"
+  },
+  "project_slug": "hrbt_coastal_precast",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hrbt_coastal_precast/21-005.2021.02.26.ELEC ONE-LINE DIAGRAM DRAWING.pdf",
+      "type": "drawing_set",
+      "sha256": "f74a97a0eba642a6624781f2479209e3ad48018860201b8e11e1600a846f3e45",
+      "page_count": null,
+      "included": true,
+      "notes": "One-line diagram drawing E-601 for Coastal Precast HRBT Technopref, Cape Charles VA. Text-bearing PDF; extracted via pdftotext."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hrbt_coastal_precast/21-005.2021.02.26.ELEC SYSTEMS STUDY.pdf",
+      "type": "report",
+      "sha256": "e75365a8aeeca4a693dd6f9def32e5bfca07009ecbfab0c7a731047b352e2087",
+      "page_count": null,
+      "included": true,
+      "notes": "Electrical Systems Study Final Submittal, February 26, 2021. Contains equipment evaluation, coordination study, and arc flash evaluation per IEEE 1584-2018 / NFPA 70E."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source documents are the electrical systems study report and one-line diagram drawing. No BOD, SOW, contract, or narrative present. This is a study-only engagement; sparse documentation is appropriate for its scope."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Coastal Precast HRBT Technopref — Electrical Systems Study",
+      "source": "Electrical Systems Study cover page",
+      "quote": "COASTAL PRECAST HRBY TECHNOPREF",
+      "corroboration": [
+        {
+          "source": "Electrical Systems Study cover page",
+          "claim": "COASTAL PRECAST HRBY TECHNOPREF",
+          "value": "Coastal Precast HRBT Technopref",
+          "agrees": true
+        },
+        {
+          "source": "One-Line Diagram Drawing E-601 title block",
+          "claim": "COASTAL PRECAST HRBT TECHNOPREF",
+          "value": "Coastal Precast HRBT Technopref",
+          "agrees": true,
+          "note": "Drawing uses 'HRBT'; study cover uses 'HRBY' — likely a typo in the study cover page. Arc flash report internally uses 'HRBT PLANT CPS CAPE CHARLES'."
+        },
+        {
+          "source": "Arc Flash Evaluation table header",
+          "claim": "HRBT PLANT CPS CAPE CHARLES",
+          "value": "Coastal Precast HRBT plant, Cape Charles",
+          "agrees": true,
+          "note": "Confirms HRBT and CPS (Coastal Precast Systems) association."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Coastal Precast Systems",
+      "source": "One-Line Diagram Drawing E-601 title block",
+      "quote": "COASTAL PRECAST SYSTEMS          CAPE CHARLES, VA",
+      "corroboration": [
+        {
+          "source": "One-Line Diagram Drawing E-601 title block",
+          "claim": "COASTAL PRECAST SYSTEMS          CAPE CHARLES, VA",
+          "value": "Coastal Precast Systems",
+          "agrees": true
+        },
+        {
+          "source": "Arc Flash Evaluation table header",
+          "claim": "HRBT PLANT CPS CAPE CHARLES",
+          "value": "Coastal Precast Systems (CPS)",
+          "agrees": true,
+          "note": "CPS abbreviation consistent with Coastal Precast Systems."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Coastal Precast Systems",
+      "source": "One-Line Diagram Drawing E-601 title block",
+      "quote": "COASTAL PRECAST SYSTEMS          CAPE CHARLES, VA",
+      "corroboration": [
+        {
+          "source": "One-Line Diagram Drawing E-601 title block",
+          "claim": "COASTAL PRECAST SYSTEMS          CAPE CHARLES, VA",
+          "value": "Coastal Precast Systems",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Cape Charles",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "Electrical Systems Study cover page; One-Line Diagram Drawing E-601 title block",
+      "quote": "CAPE CHARLES, VA",
+      "corroboration": [
+        {
+          "source": "Electrical Systems Study cover page",
+          "claim": "CAPE CHARLES, VA",
+          "value": "Cape Charles, VA",
+          "agrees": true
+        },
+        {
+          "source": "One-Line Diagram Drawing E-601 title block",
+          "claim": "COASTAL PRECAST SYSTEMS          CAPE CHARLES, VA",
+          "value": "Cape Charles, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-005",
+      "source": "Electrical Systems Study cover page",
+      "quote": "BFA Project No.: 21-005"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage stated in either source document. Industrial plant facility; floor area not addressed in electrical study scope."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "study_description": {
+      "value": "Electrical systems study for an industrial precast concrete manufacturing plant supplying precast elements for the Hampton Roads Bridge-Tunnel (HRBT) expansion. Scope included short-circuit analysis, coordination study, equipment evaluation, and arc flash evaluation per IEEE 1584-2018, NFPA 70E, and OSHA requirements.",
+      "source": "Electrical Systems Study — various sections",
+      "quote": null
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-02-26",
+        "source": "Electrical Systems Study cover page",
+        "quote": "FINAL SUBMITTAL\nFebruary 26, 2021"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "missing",
+      "notes": "No construction phase — BFA scope was study-only (electrical systems study, not design or construction services)."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial_manufacturing"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_service"
+    ],
+    "construction_scope": [],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "study_only"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "cape_charles",
+    "hampton_roads",
+    "hrbt",
+    "arc_flash_study",
+    "electrical_systems_study",
+    "short_circuit_study",
+    "coordination_study",
+    "industrial_precast",
+    "coastal_precast_systems",
+    "ieee_1584",
+    "nfpa_70e"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-601",
+        "title": "ELECTRICAL ONE-LINE DIAGRAM — LEGEND AND SYSTEMS DIAGRAM",
+        "discipline": "electrical_engineering",
+        "reading_notes": "One-line diagram for the Coastal Precast Systems HRBT plant at Cape Charles, VA. Source fed by a 1500 kVA utility transformer. Main distribution panel (MDP) is 800A/480V. Distribution branches to: WEST PNL (200A/480V), N EAST PNL (400A/480V), S EAST PNL (300A/480V), LTG PNL (100A/480V), XFMR QCP (100A to 75 kVA transformer → 240V QC Panel), L WELD #1 (250A), L WELD #2 (250A), EMON DMON METER (15A/480V energy monitoring). N EAST, S EAST, and WEST panels each feed a 25 kVA 480-240V transformer (RP1, RP2, RP3) with downstream 100A/240V panels. All equipment is Square D. Welding loads (LWELD #1, LWELD #2) are substantial (200A each). Energy/demand monitoring meter present. PDF text extracted; all data is from tabular input/output data sheets embedded in the report rather than visual drawing graphics."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "E-601"
+        ],
+        "notes": "No area data on one-line diagram; area information not relevant to electrical study scope."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "E-601"
+        ]
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "1500 kVA utility transformer (primary source)",
+          "800A main distribution panel (MDP), 480V, Square D, 22 kA interrupting rating",
+          "200A WEST panel, 480V, Square D",
+          "400A N EAST panel, 480V, Square D",
+          "300A S EAST panel, 480V, Square D",
+          "100A LTG (lighting) panel, 480V, Square D",
+          "250A L WELD #1 breaker (200A welding load), 480V",
+          "250A L WELD #2 breaker (200A welding load), 480V",
+          "15A EMON DMON energy/demand monitoring meter, 480V",
+          "75 kVA transformer (XFMR QCP), 480V pri / 240V sec → 200A QC panel",
+          "Three 25 kVA transformers (XFMR RP1, RP2, RP3), 480V pri / 240V sec → 100A panels (PNL RP1, RP2, RP3)",
+          "All protective devices: Square D; all passed ANSI equipment evaluation",
+          "Arc flash levels: Level 0 (no PPE required) at 480V MDP/LTG/N EAST/S EAST panels; Level 3 (arc flash suit required) at 240V downstream panels and 480V WEST PNL"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Electrical Systems Study cover page",
+          "value": "COASTAL PRECAST HRBY TECHNOPREF"
+        },
+        {
+          "source": "One-Line Diagram Drawing E-601 title block",
+          "value": "COASTAL PRECAST HRBT TECHNOPREF"
+        }
+      ],
+      "resolution_chosen": "One-Line Diagram Drawing E-601 title block",
+      "rationale": "The drawing title block uses 'HRBT' which is consistent with the arc flash report's internal project name 'HRBT PLANT CPS CAPE CHARLES'. The study cover page 'HRBY' is a likely typo (Y for T on standard keyboard). HRBT (Hampton Roads Bridge-Tunnel) is well-known regional infrastructure. 'HRBT' chosen as authoritative."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

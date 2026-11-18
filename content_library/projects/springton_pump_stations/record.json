@@ -1,0 +1,744 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "springton_pump_stations",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/2026.02.05 SPRINGTON PUMP STATION 35% Submittal Letter of Transmittal.pdf",
+      "type": "correspondence",
+      "sha256": "ed5d3af081d8c725864393cbd52fc545180aad79cfab6d4b51821e86fba1e77b",
+      "included": true,
+      "notes": "35% submittal letter of transmittal from BFA to Rodney Flores at Pinnacle Group Engineering. Confirms project number 24-046."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/2026.02.03.DIVISION 43. Electrical and Controls (PDF).pdf",
+      "type": "spec_book",
+      "sha256": "393cb2d290afd276fb5c059eb3b4e31a27a685f74cdd716a03c0422ffb11671f",
+      "included": true,
+      "notes": "Division 43 – Electrical and Controls specification. Pump station electrical, control panels, bubbler level control, transfer switch, generator receptacle, lighting, sequence of operation."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/2026.02.05.DIVISION 44. Mechanical Equipment (PDF).pdf",
+      "type": "spec_book",
+      "sha256": "a3a90e82e3e1e754909136146b9ee78510fb6885ec92ab413c8416172c6e0e78",
+      "included": true,
+      "notes": "Division 44 – Mechanical Equipment specification. Covers flooded suction pumps, suction lift (self-priming) pumps, submersible pumps, motors, sump pump, ventilation fans."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/SPRINGTON PUMPS CHANGES FOR MEP.pdf",
+      "type": "drawing_set",
+      "sha256": "e507c386c61745897f668d01d8dc9b0293e61c6996e40f0bce7310a4d9353531",
+      "included": true,
+      "notes": "In-progress working drawing markup/change document for Pump Station #290 MEP. Contains annotated detail drawing PS-4 (wet well/pump room details, keynote list) and PS-5 (pump room floor plan) with handwritten reviewer comments and questions. Engineer: E. Rodney Flores, Lic. No. 31038, Pinnacle Group Engineering, Inc."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/2026.02.05.SPRINGTON.PUMP.STATIONS.DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "de46dfa96e1f300e53b7c6b3d10d1a7f1fb73a484ad355fe84edfd6d53d033fd",
+      "included": true,
+      "notes": "BFA 35% submittal drawing set for Pump Station #290 (mechanical). 6 sheets: M-1 (HVAC Legend, Abbrev, Notes, Construction Notes, Arc Flash Hazard Analysis Note), M-2 (Mechanical Site Plan), M-3 (HVAC Floor Plans – upper and lower level), M-4 (Mechanical Details: stilling well, exhaust fan, unit heater, louver details). Two additional sheets present but without sheet titles visible beyond content: M-5/M-6 area not clearly rendered. Project No. 2024-011, date 02/05/2026, drawn by RJO."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/2026.02.02.SPRINGTON.PUMP.STATIONS.RE-35%.ELECTRICAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "287374689dd70c062e3be59c5a57197332bcdab0ff36f8255bd3860e118a3874",
+      "included": true,
+      "notes": "BFA 35% submittal electrical drawing set for Pump Station #290. 4 sheets: E-1 (Electrical Legend, Abbrev, Notes, Construction Notes, Arc Flash Hazard Analysis Note; dated 01/23/26), E-2 (Electrical Site Plan – portable generator receptacle, DE meter, manual transfer switch, generator pad), E-3 (Lighting Floor Plans – upper and lower level; lighting fixture schedule with two fixture types: Phoenix Lighting LED ceiling and Hubbell outdoor LED wall pack), E-4 (Power Floor Plans – upper and lower level; shows VFD-3, MDP-5, motorized dampers, portable generator receptacle, 4-pole DPDT safety switch). Project No. 2024-011."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/Pump Station 286-Future Bypass Pump Operation Improvements -Approved Plan Revision_03-14-2023.pdf",
+      "type": "drawing_set",
+      "sha256": "a8299534c23b4eb8706607cb7482a460aeb6eb312f6fdbae5eccf44a46698197",
+      "included": true,
+      "notes": "Approved plan revision dated 03-14-2023 for Pump Station 286 (EDA Pump Station and Force Main). Prepared for 2852 LLC. Shows upper/lower level plan views, pump station side views, wet well front view, vault front view. This is a separate older project/station from the main Springton #290 work but filed in the same project folder. Engineer: Pinnacle Group Engineering."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/Springton Pump Station Map.pdf",
+      "type": "report",
+      "sha256": "d57940ee788601e8b4af2beb8025d22fb1c3d513353427f0c48630307363fb10",
+      "included": true,
+      "notes": "GIS map showing pump station service area locations for Pump Station 289 and 290 in the Springton at Grassfield area (City of Chesapeake). Shows force main routing (Chesapeake and HRSD), gravity sewer, water main extension, and 3500-foot service area buffers."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/Fw_ Thira---sewer storage comment.msg",
+      "type": "correspondence",
+      "sha256": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Email (.msg format) – cannot read binary .msg files directly. Filename suggests sewer storage comment. SHA256 not computed; type cannot be classified beyond correspondence."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/Re_ City of Chesapeake---Sanitary Pump station design.msg",
+      "type": "correspondence",
+      "sha256": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Email (.msg format) – cannot read binary .msg files directly. Subject relates to City of Chesapeake sanitary pump station design."
+    },
+    {
+      "path": "00_admin/reference_projects/city_of_chesapeake/springton_pump_stations/Re_ Springton - Pump Station Service Areas.msg",
+      "type": "correspondence",
+      "sha256": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Email (.msg format) – cannot read binary .msg files directly. Subject: Springton pump station service areas."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Springton Pump Station",
+      "source": "Transmittal letter, 02/05/2026",
+      "quote": "Project:  Springton Pump Station",
+      "corroboration": [
+        {
+          "source": "Transmittal letter, 02/05/2026",
+          "claim": "Springton Pump Station",
+          "value": "Springton Pump Station",
+          "agrees": true
+        },
+        {
+          "source": "Springton Pump Station Map.pdf",
+          "claim": "Springton At Grassfield Pump Station Locations",
+          "value": "Springton at Grassfield Pump Stations",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title blocks (all sheets)",
+          "claim": "PUMP STATION #290",
+          "value": "Pump Station #290",
+          "agrees": true,
+          "note": "Formal project name on drawing title blocks is 'PUMP STATION #290'; transmittal uses 'Springton Pump Station' as the project label. These are consistent – the pump station is the Springton #290 station."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "City of Chesapeake",
+      "source": "Division 43 spec §43.02.A.1; Electrical drawings Construction Notes; map title",
+      "quote": "City of Chesapeake Building, Electrical and Fire Codes.",
+      "corroboration": [
+        {
+          "source": "Division 43 spec §43.02.A.1",
+          "claim": "City of Chesapeake Building, Electrical and Fire Codes",
+          "value": "City of Chesapeake",
+          "agrees": true
+        },
+        {
+          "source": "Springton Pump Station Map.pdf title",
+          "claim": "Springton At Grassfield Pump Station Locations",
+          "value": "City of Chesapeake",
+          "agrees": true
+        },
+        {
+          "source": "Electrical drawings Construction Notes",
+          "claim": "All materials, equipment and work shall be per current City of Chesapeake Department of Public Utilities construction specifications",
+          "value": "City of Chesapeake",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "City of Chesapeake Department of Public Utilities",
+      "source": "Electrical drawings E-1, Construction Notes",
+      "quote": "ALL MATERIALS, EQUIPMENT AND WORK SHALL BE PER CURRENT CITY OF CHESAPEAKE DEPARTMENT OF PUBLIC UTILITIES CONSTRUCTION SPECIFICATIONS AND STANDARDS FOR WATER AND SANITARY SEWER FACILITIES.",
+      "corroboration": [
+        {
+          "source": "Electrical drawings E-1, Construction Notes",
+          "claim": "City of Chesapeake Department of Public Utilities",
+          "value": "City of Chesapeake Department of Public Utilities",
+          "agrees": true
+        },
+        {
+          "source": "Division 43 spec §43.05.A.3 (submittals language)",
+          "claim": "submitted to the Engineer within thirty (30) days of the Notice to Proceed... the City reserves the right to select the items",
+          "value": "City of Chesapeake",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "neighborhood": "Springton at Grassfield",
+      "source": "Springton Pump Station Map.pdf; drawing title blocks",
+      "quote": "Springton At Grassfield Pump Station Locations",
+      "corroboration": [
+        {
+          "source": "Springton Pump Station Map.pdf",
+          "claim": "Springton At Grassfield Pump Station Locations",
+          "value": "Chesapeake, VA",
+          "agrees": true
+        },
+        {
+          "source": "Division 43 spec header",
+          "claim": "City of Chesapeake Building, Electrical and Fire Codes",
+          "value": "Chesapeake, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-046",
+      "source": "Transmittal letter, 02/05/2026",
+      "quote": "Project No.: 24-046",
+      "corroboration": [
+        {
+          "source": "Transmittal letter, 02/05/2026",
+          "claim": "Project No.: 24-046",
+          "value": "24-046",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title blocks (all sheets)",
+          "claim": "Project No. 2024-011",
+          "value": "2024-011",
+          "agrees": false,
+          "note": "Drawing title blocks carry project number '2024-011' (Pinnacle Group Engineering's project number). Transmittal letter carries '24-046' which is BFA's internal project number. These are different firm's numbers for the same project."
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "note": "City of Chesapeake contract/project number not found in available documents."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "Pump station infrastructure project – no building gross square footage applicable. Pump station footprint shown on drawings but no GSF stated in documents."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "submittal_stage": {
+      "value": "35%",
+      "source": "Transmittal letter, 02/05/2026; electrical drawing title blocks",
+      "quote": "35% SUBMITTAL 01/23/26",
+      "corroboration": [
+        {
+          "source": "Transmittal letter, 02/05/2026",
+          "claim": "Submittal PDF of Mechanical and Electrical Drawings and Specifications",
+          "value": "35%",
+          "agrees": true
+        },
+        {
+          "source": "Electrical drawing title blocks (E-1 through E-4)",
+          "claim": "35% SUBMITTAL 01/23/26",
+          "value": "35%",
+          "agrees": true
+        },
+        {
+          "source": "Filename of electrical drawing set",
+          "claim": "RE-35%.ELECTRICAL.DWGS",
+          "value": "35%",
+          "agrees": true
+        }
+      ]
+    },
+    "engineer_of_record_drawings": {
+      "value": "E. Rodney Flores, PE, Pinnacle Group Engineering, Inc.",
+      "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, title block; drawing title blocks",
+      "quote": "E. RODNEY FLORES Lic. No. 31038",
+      "corroboration": [
+        {
+          "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf title block",
+          "claim": "E. RODNEY FLORES, Lic. No. 31038",
+          "value": "E. Rodney Flores, PE, Pinnacle Group Engineering",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title blocks (all sheets), firm name block",
+          "claim": "PINNACLE GROUP ENGINEERING, INC. 804 Newtown Road, Suite 101, Virginia Beach, Virginia 23462",
+          "value": "Pinnacle Group Engineering, Inc.",
+          "agrees": true
+        }
+      ]
+    },
+    "transmittal_to": {
+      "value": "Rodney Flores, Pinnacle Group Engineering, Inc.",
+      "source": "Transmittal letter, 02/05/2026",
+      "quote": "Address To: Rodney Flores",
+      "note": "BFA submitted documents to Rodney Flores (EOR at Pinnacle Group Engineering), indicating BFA is subconsultant providing MEP specifications and drawings reviewed by Pinnacle Group."
+    },
+    "transmittal_signed_by": {
+      "value": "Erika Osbourne",
+      "source": "Transmittal letter, 02/05/2026",
+      "quote": "Signed: Erika Osbourne"
+    },
+    "pump_stations_in_scope": {
+      "value": [
+        "Pump Station #290",
+        "Pump Station #289"
+      ],
+      "source": "Springton Pump Station Map.pdf; drawing title blocks",
+      "quote": "Pump Station 289 - 3500' Buffer; Pump Station 290 - 3500' Buffer",
+      "note": "All MEP drawings and specifications focus on Pump Station #290. The map shows both PS-289 and PS-290. PS-286 plan revision also present in folder but is a separate older/adjacent project."
+    },
+    "pump_specifications": {
+      "value": "Gorman Rupp VS6A60-B, 6\" discharge, 8\" suction, 12.38\" impeller; design point: 1,250 RPM, 355 GPM @ 139' TDH and 310 GPM @ 40' TDH",
+      "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, pump station keynote #1",
+      "quote": "PUMP: GORMAN RUPP VS6A60-B, 6\" DISCHARGE, 8\" SUCTION, IMPELLER: 12.38\". DESIGN POINT: SHAFT SPEED: 1,250 RPM, 355 GPM @ 139' TDH AND 310 GPM @ 40' TDH"
+    },
+    "motor_specifications": {
+      "value": "60 HP, 3-phase",
+      "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, pump station keynote #2",
+      "quote": "MOTORS: 60 HP 3 PHASE"
+    },
+    "vfd_required": {
+      "value": true,
+      "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, PS-5 floor plan annotation; electrical power floor plan E-4",
+      "quote": "ADD VFD",
+      "note": "Multiple annotations on PS-5 indicate VFDs to be added. Electrical drawing E-4 (Power Floor Plan) shows VFD-3 installed."
+    },
+    "wet_well_dimensions": {
+      "value": "Circular wet well; bottom elevation -15.30, finish floor elevation +12.90, influent invert -6.30, lead pump on at -9.30, lag pump on at -8.30, high water alarm at -7.30, pump off elevation -12.30",
+      "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, Section B-B and Section A-A",
+      "quote": "BOTTOM WET WELL ELEV = -15.30; FINISH FLOOR ELEV=12.90; HIGH WATER ALARM = -7.30; LAG PUMP ON = -8.30; LEAD PUMP ON = -9.30; PUMP OFF ELEV = -12.30"
+    },
+    "forcemain": {
+      "value": "10\" PVC force main; forcemain discharge centerline elevation 8.20",
+      "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf drawing Section B-B",
+      "quote": "10\" PVC INFLUENT INV = -6.30; FORCEMAIN DISCHARGE CENTERLINE = 8.20"
+    },
+    "electrical_service": {
+      "value": "Dominion Energy Virginia (Virginia Power); service size and voltage per drawings (120/208V and 480V systems indicated in specs)",
+      "source": "Division 43 spec §43.07; Division 43 spec §43.02.A.4",
+      "quote": "Service Rules and Regulations of Virginia Power.",
+      "corroboration": [
+        {
+          "source": "Division 43 spec §43.07",
+          "claim": "Arrangement shall be as indicated and as required by Virginia Power",
+          "value": "Virginia Power / Dominion Energy Virginia",
+          "agrees": true
+        },
+        {
+          "source": "Electrical drawing E-4 Construction Notes",
+          "claim": "D/V – DOMINION ENERGY VIRGINIA",
+          "value": "Dominion Energy Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "emergency_power": {
+      "value": "Portable generator connection via generator receptacle (SPST – Single Pole Single Throw); manual transfer switch (DPDT); generator pad shown on site plan",
+      "source": "Electrical drawings E-2 (Electrical Site Plan); Division 43 spec §43.04.J, §43.04.L",
+      "quote": "A three (3) pole double throw transfer switch (600 VAC) shall be provided and wired between the incoming service and the control panel.",
+      "corroboration": [
+        {
+          "source": "Electrical drawing E-2 site plan",
+          "claim": "PORTABLE GENERATOR RECEPTACLE; DE METER; MANUAL TRANSFER SWITCH; GENERATOR PAD",
+          "value": "Portable generator with manual transfer switch",
+          "agrees": true
+        },
+        {
+          "source": "Electrical drawing E-4 (Power Floor Plan)",
+          "claim": "PORTABLE GENERATOR RECEPTACLE 42 AMP G; 4 MAIN DOUBLE THROW SAFETY SWITCH",
+          "value": "Generator receptacle 42A; DPDT safety switch",
+          "agrees": true
+        }
+      ]
+    },
+    "arc_flash_study_required": {
+      "value": true,
+      "source": "Electrical drawings E-1, Construction Notes; Mechanical drawings M-1",
+      "quote": "CONTRACTOR SHALL PERFORM AN ARC FLASH HAZARD ANALYSIS, INCLUDING TIME CURRENT COORDINATION STUDY AND SHORT CIRCUIT EQUIPMENT EVALUATION BASED UPON ACTUAL EQUIPMENT TO BE INSTALLED AND THEORETICAL VALUES FOR CABLE LENGTHS BASED ON THE ONE-LINE DIAGRAM AND PLAN LAYOUTS."
+    },
+    "level_control_system": {
+      "value": "Bubbler-type liquid level control (air purging); submersible level transducer in 6-inch Schedule 80 PVC stilling well; high level float switches (2 provided)",
+      "source": "Division 43 spec §43.05.M.5 and §43.05.N.6; SPRINGTON PUMPS CHANGES FOR MEP.pdf keynote 8; Mechanical drawings M-3",
+      "quote": "The Contractor shall furnish and install a bubbler-type liquid level pump control system housed in a NEMA 12 control panel."
+    },
+    "ventilation": {
+      "value": "Single-stage electric exhaust fan (wall-mounted) with motorized dampers (MD-1, MD-2); backdraft dampers; extruded aluminum stationary discharge/intake louvers (LV-1, LV-2); forced-air unit heater; thermostat-controlled",
+      "source": "Mechanical drawings M-1 (HVAC Legend), M-3 (HVAC Floor Plans), M-4 (Mechanical Details)",
+      "quote": "SINGLE STAGE HEATING ONLY ADJUSTABLE UNIT HEATER UH-1",
+      "note": "HVAC Legend on M-1 shows exhaust fan FF-1 (Greenheck Model AFR-20 or equal, 500 CFM, 0.7\" SP), motorized dampers MD-1 and MD-2 (Belimo VCD-23 24V), unit heater UH-1. M-3 shows HVAC floor plan with control room, wet well, and fan placements."
+    },
+    "division_43_date_code": {
+      "value": "February 1993",
+      "source": "Division 43 spec, footer on each page",
+      "quote": "2/93",
+      "note": "Spec sections carry '2/93' footer suggesting the base specification is from February 1993. This is a reuse of City of Chesapeake standard pump station specs."
+    },
+    "division_44_date_code": {
+      "value": "February 1993",
+      "source": "Division 44 spec, footer on each page",
+      "quote": "2/93",
+      "note": "Same observation as Division 43 – base specification dated February 1993."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "current_submittal_stage": {
+        "value": "35%",
+        "source": "Transmittal letter, 02/05/2026; electrical drawing title blocks",
+        "quote": "35% SUBMITTAL 01/23/26"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local_special_district"
+    ],
+    "program_type": [
+      "utilities_pump_station"
+    ],
+    "program_subtype": [
+      "utilities_pump_station"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "hvac_air_distribution",
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "plumbing_systems",
+      "plumbing_sanitary_dwv"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type_note": "City of Chesapeake Department of Public Utilities is a municipal utility department. Closest match is local_special_district (public utility authority) or simply local; mapped to local_special_district given the DPU character.",
+    "program_type_note": "utilities_pump_station is the closest entry in program_type.yaml under utilities_infrastructure > utilities_pump_station. This is a sewage pump station, fitting this category well.",
+    "bfa_role_note": "BFA prepared MEP (mechanical + electrical) drawings and specifications submitted to Pinnacle Group Engineering (EOR). Transmittal goes from BFA to Rodney Flores at Pinnacle Group. BFA is acting as MEP subconsultant under Pinnacle Group Engineering as prime.",
+    "award_type_note": "No procurement/award information in source documents. Documents are design-phase only. Marked unknown_award_type.",
+    "vocab_gaps": [
+      "utilities_pump_station: this entry exists in program_type.yaml and fits well. No gap.",
+      "local_special_district: used for City of Chesapeake DPU – this is actually a municipal department, not technically a special district. Closest available entry. Could argue 'local' parent. No dedicated 'municipal_utility_department' entry exists."
+    ]
+  },
+  "tenant_freeform_tags": [
+    "city_of_chesapeake",
+    "hampton_roads",
+    "pump_station",
+    "wastewater",
+    "sanitary_sewer",
+    "springton_at_grassfield",
+    "mep_subconsultant",
+    "pinnacle_group_engineering",
+    "gorman_rupp",
+    "bubbler_level_control",
+    "vfd",
+    "arc_flash_study",
+    "35_percent_design"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Erika Osbourne",
+      "role_on_project": "project_manager",
+      "note": "Signed transmittal letter on behalf of BFA"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M-1",
+        "title": "MECHANICAL LEGEND AND ABBREVIATIONS",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2026.02.05.SPRINGTON.PUMP.STATIONS.DRAWINGS.pdf",
+        "reading_notes": "Cover/legend sheet for the mechanical set. Contains HVAC legend (fan types FF-1, exhaust fan; LV-1, LV-2 stationary louvers; MD-1/MD-2 motorized dampers; UH-1 unit heater), abbreviations, general notes (13 items), construction notes (3 items – all work per City of Chesapeake DPU specs, refer to City Public Facilities Manual, refer to City standard submersible VFD/soft starter and PLC panel drawings). Arc Flash Hazard Analysis Note on right side mirrors the electrical set – contractor to perform study and submit as part of 50% drawing phase. Project number 2024-011, date 02/05/2026, drawn by RJO."
+      },
+      {
+        "sheet_number": "M-2",
+        "title": "MECHANICAL SITE PLAN",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2026.02.05.SPRINGTON.PUMP.STATIONS.DRAWINGS.pdf",
+        "reading_notes": "Site plan at 1\"=10' scale. Shows pump station footprint (roughly 30'×39' total site area including concrete pad areas), wet well (circular), pump/control building, proposed utility and access easement, generator pad to south of building. Proposed 12\" DI water main runs along top/north of site. 10\" PVC force main routes east from pump station. 5/8\" water meter shown. 6\" emergency pump connection shown on north side. Proposed utility/access easement shown on west side. Site appears to be in a residential subdivision context (houses shown to west/lower-left)."
+      },
+      {
+        "sheet_number": "M-3",
+        "title": "HVAC FLOOR PLANS",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2026.02.05.SPRINGTON.PUMP.STATIONS.DRAWINGS.pdf",
+        "reading_notes": "Upper level and lower level floor plans at 3/8\"=1' scale. Upper level shows: control room at right side; exhaust fans EF-1 (wet well exhaust) and FF-2 (control room exhaust fan); motorized dampers MD-1, MD-2; unit heater UH-1; backdraft dampers BDD; louvers LV-1/LV-2 (stationary, extruded aluminum). NEMA 4X SS stilling well junction box detail referenced to M-4. Lower level shows wet well (circular, dominant feature) with level transducer in 6\" Sch-80 PVC stilling well, high level float switch, high level backup float switch, Hi-Hi float switch. 9 key notes on sheet. Note indicates motorized dampers always in closed position when EF-1 is de-energized; upon exhaust fan energizing, MDs open to full open and exhaust fan starts."
+      },
+      {
+        "sheet_number": "M-4",
+        "title": "MECHANICAL DETAILS",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2026.02.05.SPRINGTON.PUMP.STATIONS.DRAWINGS.pdf",
+        "reading_notes": "Details sheet with 6 detail drawings: (1) Submersible Level Transducer and Stilling Well Detail – 12\"×12\"×8\" NEMA 4X SS enclosure, ½\" signal cable to PCP, 4\" Schedule 80 PVC pipe, 3/4\" VENT 110 F, 5/8\" SS bolts; (2) Wet Well Exhaust Fan Detail – direct drive, aluminum birdscreen, 24\" max fan diameter, 20\" max curb size, concrete slab mounting; (3) Wall Mounted Exhaust Fan Detail – extruded stationary louver, birdscreen, backraft damper, exterior/interior section; (4) Unit Heater Mounting Detail – support and bracket by manufacturer, provide 18\" clearance from ceiling; (5) Louver-Motorized Detail – 8-gauge galvanized mounting collar, 24V Belimo actuator, extruded aluminum louver, clip angle; (6) Wall Louver Detail – extruded stationary louver, birdscreen, backraft damper. All details no scale."
+      },
+      {
+        "sheet_number": "E-1",
+        "title": "ELECTRICAL LEGEND AND ABBREVIATIONS",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2026.02.02.SPRINGTON.PUMP.STATIONS.RE-35%.ELECTRICAL.DWGS.pdf",
+        "reading_notes": "Cover/legend sheet for electrical set. Electrical legend includes: ceiling/wall mounted lighting, junction box (Knox Box), door alarm contact, float switch, limit switch, pressure transducer, level transducer, high temperature sensor, magnetic flow meter, unit heater, motor connection, electrical panel board, surge protective device [SPD], double throw safety switch [DTSS], pump control panel [PCP], remote terminal unit (alarm transmitter) [RTU], variable frequency drive [VFD], phase monitor [PM], power company meter. Construction Notes: (1) all per City of Chesapeake DPU construction specs; (2) refer City Public Facilities Manual Vol I, Div 43 and 44; (3) refer City standard submersible VFD/soft starter and PLC panel drawings. Arc Flash Hazard Analysis Note prominent at right – same requirements as mechanical set. Date 01/23/26 (first submittal). Project No. 2024-011."
+      },
+      {
+        "sheet_number": "E-2",
+        "title": "ELECTRICAL SITE PLAN",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2026.02.02.SPRINGTON.PUMP.STATIONS.RE-35%.ELECTRICAL.DWGS.pdf",
+        "reading_notes": "Electrical site plan at 1\"=10' scale matching mechanical site plan. Key additions vs. M-2: portable generator receptacle shown north/northeast of building; DE (Dominion Energy) meter shown; manual transfer switch (MTS) shown; generator pad to south. Key note 1: see Sheet E-4 for exact location of electrical equipment. DE power location noted – coordinate exact location with DE. Underground conduit to building from DE point of entry. Site layout confirms generator pad and utility connection routing."
+      },
+      {
+        "sheet_number": "E-3",
+        "title": "LIGHTING FLOOR PLANS",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2026.02.02.SPRINGTON.PUMP.STATIONS.RE-35%.ELECTRICAL.DWGS.pdf",
+        "reading_notes": "Lighting floor plans (upper and lower level) at 3/8\"=1' scale plus Lighting Fixture Schedule. Upper level shows: ceiling-mounted fixtures in pump room and control room (type A – Phoenix Lighting LED, ~1336 lumens, 17W, 5600K, 120V, surface ceiling); wall-mounted fixtures exterior (type B – Hubbell Outdoor 'Geopak TRP1' series, 2674 lumens, 28.2W, 3000K LED, 120/277V, surface wall 8' AFF, dark bronze, full cutoff, integral photocell). Panel 'MDP' referenced. Lower level (wet well) shows minimal lighting – wet well is essentially empty/no fixtures at lower level. Key note only shows 'XXXXXXX' as placeholder – note not yet filled in at 35% submittal."
+      },
+      {
+        "sheet_number": "E-4",
+        "title": "POWER FLOOR PLANS",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2026.02.02.SPRINGTON.PUMP.STATIONS.RE-35%.ELECTRICAL.DWGS.pdf",
+        "reading_notes": "Power floor plans (upper and lower level) at 3/8\"=1' scale. Upper level shows: MDP-5 (main distribution panel); VFD-3 in control room area; two base-mounted pump motors shown in wet well area (refer to electrical riser diagram for ratings/connection requirements); motorized damper MDP-1 (120V, 1/4HP) and MDP-2 (120V, 1/4HP) coordinated with mechanical controls; portable generator receptacle (42 AMP G); DE meter; manual transfer switch (MTS – 4-pole DPDT safety switch shown). 5.0kW shown near control room area. Lower level (wet well) shows: level transducer in 6\" Sch-80 PVC stilling well (refer to detail M-4); high level float switch; high level backup float switch; Hi-Hi float switch. 6 key notes including: (1) connect fan to bypass thermostat and energize fan when switch in ON position; (4) main double throw safety switch lockable in all switch positions; (5) provide Knox Box for key; (6) approximate location of NEMA 4X SS wet well slab penetration junction box for float switches and level transducer."
+      },
+      {
+        "sheet_number": "PS-4",
+        "title": "DETAILS (Pump Room - Pump Station #290)",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "SPRINGTON PUMPS CHANGES FOR MEP.pdf",
+        "reading_notes": "Detailed pump room section drawings for PS #290. Sheet shows: Section B-B (wet well section, 10'-0\" wide, 12\" #57 stone base, vapor barrier, filter fabric), Section A-A (corresponding section), pump room details including W8×__ steel beam for trolley hoist, pump room dimensions (16'8\" and 12'8\" plan dimensions shown), Keynote list (1-50). Notable keynotes: #1 Gorman Rupp VS6A60-B pump; #2 60HP 3-phase motors; #12 Bilco aluminum hatch 24\"×30\"; #33 exhaust fan; #48 two-ton trolley hoist (location TBD); #49 VFD must remain. Reviewer comments visible: 'NEED TO CHANGE TO NEW PUMP SPEC 60 H.P. 700 GPM', 'PUMPS MISSING!', 'THIS NEEDS TO BE ON SHEET PS-5', 'NOTES 36-50 ON SHEET PS-4 NEEDS TO BE ON SHEET PS-5', questions about locations of items 36-50 (anti-siphon hose bib, generator receptacle, pump control panel, surge protection device, panel 'MDP', double throw safety switch, Dominion meter, wall-mounted electric heater, exhaust fan with louver, RTU, intake louver, wall pack, trolley hoist). Finish floor elevation 12.90, bottom wet well -15.30."
+      },
+      {
+        "sheet_number": "PS-5",
+        "title": "DETAILS (Pump Room Floor Plan - Pump Station #290)",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "SPRINGTON PUMPS CHANGES FOR MEP.pdf",
+        "reading_notes": "Pump room floor plan at 3/8\"=1' scale. Stilling well detail shown. Plan shows pump room dimensions (12'8\" width noted; room appears approximately 10'×14' based on scale). 'ADD VFD' notation appears twice. Knox Box shown. Refer note says to refer to Parts List on Sheet PS-4 for callout descriptions. Reviewer comments: 'PUMP ROOM FLOOR PLAN SCALE: 3/8\"=1'-0\"'. This sheet is clearly still in progress at the 35% stage."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "Infrastructure project; no building GSF. Pump station pump room is small (~12'×16' based on drawing dimensions), but this is utility infrastructure not rated in GSF."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "Mechanical drawings M-3 (HVAC Floor Plans – upper and lower level); Electrical drawings E-3, E-4",
+        "quote": null,
+        "sheets": [
+          "M-3",
+          "E-3",
+          "E-4"
+        ],
+        "note": "Two levels: upper level (pump room / control room at grade) and lower level (wet well). The 'lower level' is the subgrade wet well, not a habitable floor."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Wall-mounted exhaust fan EF-1 (wet well exhaust), direct drive, 24\" max fan diameter",
+          "Exhaust fan FF-2 (control room exhaust) per HVAC legend, Greenheck AFR-20 or equal, 500 CFM, 0.7\" SP, 1/4HP, 120/110V",
+          "Motorized dampers MD-1 and MD-2 (Belimo VCD-23, 24V electric actuator)",
+          "Backdraft dampers BDD",
+          "Extruded aluminum stationary discharge/intake louvers LV-1 (24\"×24\") and LV-2 (24\"×36\")",
+          "Unit heater UH-1 (single-stage heating, adjustable, 1/4HP, 120/110V), Markel/Dayton or equal"
+        ],
+        "electrical": [
+          "Dominion Energy Virginia power service (voltage TBD at design completion)",
+          "Main Distribution Panel MDP-5",
+          "Two base-mounted pump motors, 60 HP each, 3-phase (Gorman Rupp VS6A60-B)",
+          "Two Variable Frequency Drives (VFD-3 shown; VFDs required per annotations)",
+          "Portable generator receptacle (42 AMP, 3-pole/4-wire)",
+          "Manual transfer switch (SPST/DPDT, 4-pole double-throw safety switch)",
+          "Surge Protective Device (SPD)",
+          "Bubbler level control system (air purging type) with NEMA 12 control panel",
+          "Remote Terminal Unit / Alarm Transmitter (RTU) for telemetry",
+          "Phase monitor (PM)",
+          "Interior LED lighting: Phoenix Lighting LED series, 17W/5600K ceiling-mounted",
+          "Exterior LED wall packs: Hubbell Outdoor Geopak TRP1, 28.2W/3000K, photocell",
+          "Motorized damper actuators MD-1 and MD-2 (120V, 1/4HP each)"
+        ],
+        "plumbing": [
+          "10\" PVC influent gravity sewer (invert -6.30)",
+          "10\" ductile iron force main discharge (centerline elevation 8.20)",
+          "8\" pump discharge piping (ductile iron flange)",
+          "4\" gate valves and check valves",
+          "1-1/4\" brass pipe (terminate just above high water elevation)",
+          "PVC bubbler tube and bell (in 8\" Sch-80 PVC stilling well)",
+          "3/4\" hose bib with RPZ backflow preventer",
+          "4\" floor drain with P-trap in pump room",
+          "Sump pump (Zoeller Model 147, 1/2HP, 115V, submersible) if applicable per plans"
+        ],
+        "controls_instrumentation": [
+          "Submersible level transducer in 6\" Sch-80 PVC stilling well",
+          "High level float switch (3 floats: high level, backup high level, hi-hi)",
+          "Check valve limit switches for each pump (Allen Bradley 802T-H or equal)",
+          "Door alarm contact (for fan actuation)",
+          "High-temperature sensors for pump motors (where applicable)",
+          "Pressure transducer",
+          "Phase monitor (3-phase power monitor for phase loss/reversal/low voltage)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_internal / facts.engineer_of_record_drawings",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Transmittal letter, 02/05/2026",
+          "value": "24-046 (BFA project number)"
+        },
+        {
+          "source": "Drawing title blocks (all sheets)",
+          "value": "2024-011 (Pinnacle Group Engineering project number)"
+        }
+      ],
+      "resolution_chosen": "Both numbers preserved in separate fact fields",
+      "rationale": "These are different firms' internal project numbers for the same project. 24-046 is BFA's number; 2024-011 is Pinnacle Group's (the prime engineer). No conflict in substance – both are valid identifiers for their respective organizations."
+    },
+    {
+      "field_path": "facts.pump_specifications (draft note vs. keynote)",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, keynote #1",
+          "value": "Gorman Rupp VS6A60-B, 355 GPM @ 139' TDH, 310 GPM @ 40' TDH"
+        },
+        {
+          "source": "SPRINGTON PUMPS CHANGES FOR MEP.pdf, reviewer annotation",
+          "value": "NEED TO CHANGE TO NEW PUMP SPEC 60 H.P. 700 GPM"
+        }
+      ],
+      "resolution_chosen": "The keynote spec (355 GPM / 139' TDH) is the current spec; the 700 GPM annotation is a reviewer's requested change not yet incorporated at 35% design stage.",
+      "rationale": "The annotation is a design-review comment, not a finalized specification. The keynote represents the current design intent. 700 GPM may be the final design target; documents are at 35% only."
+    },
+    {
+      "field_path": "facts.submittal_stage (mechanical vs. electrical dates)",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Electrical drawings title blocks (RE-35% set)",
+          "value": "35% SUBMITTAL 01/23/26"
+        },
+        {
+          "source": "Transmittal letter and mechanical drawing title blocks",
+          "value": "02/05/2026 submittal date"
+        }
+      ],
+      "resolution_chosen": "Both are 35% submittals; electrical set produced 01/23/26 and submitted with mechanical set on 02/05/2026 via transmittal letter.",
+      "rationale": "Minor date difference between electrical drawing completion (01/23/26) and formal transmittal (02/05/2026). Consistent with production-then-compile workflow."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

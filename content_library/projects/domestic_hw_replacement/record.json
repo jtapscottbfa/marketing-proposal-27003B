@@ -1,0 +1,490 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "domestic_hw_replacement",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/Compiled Scope.docx",
+      "type": "sow",
+      "sha256": "be259f82ca32c4b5fdd553193295c11b590cf3696737fef441574d3f1c63f52e",
+      "included": true,
+      "notes": "Compiled scope document; contains client email scope (from Larry Hovarth), Jonathan Tapscott's scope write-up, and Robert O'Grady's option comparison notes."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/2025.12.10 Expanded Scope R1.docx",
+      "type": "sow",
+      "sha256": "e2e12901bf21f22bf155b326a0f4040814160fe4d27de8efeae36aa5ac92add5",
+      "included": true,
+      "notes": "Expanded scope revision 1 — comprehensive three-phase RFP scope (RFP #1, #2, #3). References 154+ residential units and gas-fired domestic water boilers."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/2025.12.10 Expanded Scope.docx",
+      "type": "sow",
+      "sha256": "27cafdae8f5acb32e1df95397663417121c5c52b8ac3eba282c6bf8448485962",
+      "included": true,
+      "notes": "Earlier version of expanded scope — similar content but references 170+ residential units (differs from R1 which says 154+)."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/Compare Two Options for the Replacement of the  Domestic Hot Water Storage Tank at Seagate Colony Condominiums.docx",
+      "type": "sow",
+      "sha256": "ad891b433beeba35c63a49e2fbe2077df7bdebf3cc174314a0d3a3eee386cfd2",
+      "included": true,
+      "notes": "Stand-alone option comparison document authored by R. O'Grady; details SOW for Option 1 (housekeeping room) and Option 2 (existing mechanical room) tank replacement."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/Hot Water System.Presentation.pdf",
+      "type": "narrative",
+      "sha256": "0b148ae6fd9284e44e09908df24fe909095dbbb7012712ad5aef73670391cf40",
+      "included": true,
+      "notes": "Client-side presentation by Chuck Gosstrom (Seagate Colony board member) dated 12/4/25. Contains current system description, inefficiency analysis, RFP proposal outline, and confirms 144 residential units served and BFA project number 25-055A."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/Seagate Colony - Domestic Hot Water System Upgrade Program - Project Status Report.docx",
+      "type": "report",
+      "sha256": "65b7b951f9b95e9a7e2db2089661380a41f8b6da9b20dd507c1deee9e79ddcef",
+      "included": true,
+      "notes": "BFA project status report. Confirms project location (Ocean View, VA), BFA Project # 25-055A, BFA PM (R. O'Grady), BFA Project Team (R. O'Berry, Joe T [contractor]), additional team (E. Osbourne), client contacts (Seagate Colony Board & Josh Danford, Maintenance Director). Tracks milestone schedule and weekly status notes from 02/16/2026 through 04/21/2026."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/Replace Hot Water Tank at Seagate Colony.msg",
+      "type": "correspondence",
+      "sha256": "3a24f24945cd768f49dfd393b35d0c34667cee467dbbf4987a1c80d30c5de57c",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": ".msg format (Outlook email); contents not extractable with available tools. Likely contains early project correspondence."
+    },
+    {
+      "path": "00_admin/reference_projects/seagate_colony/domestic_hw_replacement/Seagate Colony Condos - Replace DHW Storage Tank Option #2- Schematic Cost Estimate.xls",
+      "type": "cost_estimate",
+      "sha256": "cceed469387d9f591441b18903793f359fafad31bb93c180223ebee085ed8e22",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": ".xls format cost estimate for Option #2. Contents not extractable with available text tools. Likely contains schematic-level cost estimate for in-place DHW tank replacement."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No formal BOD or drawing set present. Source material is scope-of-work documents, client presentation, status report, correspondence (.msg unreadable), and cost estimate (.xls unreadable). Project is in active early phase (RFP #1 monitoring underway as of April 2026)."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Seagate Colony Domestic Hot Water System Upgrade Program",
+      "source": "Status Report header",
+      "quote": "Seagate Colony -- Domestic Hot Water System Upgrade Program",
+      "corroboration": [
+        {
+          "source": "Status Report header",
+          "claim": "Seagate Colony -- Domestic Hot Water System Upgrade Program",
+          "value": "Seagate Colony Domestic Hot Water System Upgrade Program",
+          "agrees": true
+        },
+        {
+          "source": "Expanded Scope R1.docx title context",
+          "claim": "COMPREHENSIVE SCOPE OF SERVICES (RFP #1, RFP #2, RFP #3)",
+          "value": "Seagate Colony Domestic Hot Water System Upgrade Program",
+          "agrees": true
+        },
+        {
+          "source": "Hot Water System Presentation.pdf",
+          "claim": "SEAGATE COLONY CONDOMINIUMS — HOT WATER SYSTEM",
+          "value": "Seagate Colony Hot Water System",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Seagate Colony Condominiums",
+      "source": "Status Report, field 'Client Name'",
+      "quote": "Seagate Colony Board &",
+      "corroboration": [
+        {
+          "source": "Status Report, field 'Client Name'",
+          "claim": "Seagate Colony Board",
+          "value": "Seagate Colony Board / Seagate Colony Condominiums",
+          "agrees": true
+        },
+        {
+          "source": "Compiled Scope.docx, client email header",
+          "claim": "Larry Hovarth (Seagate Colony)",
+          "value": "Seagate Colony Condominiums",
+          "agrees": true
+        },
+        {
+          "source": "Hot Water System Presentation.pdf",
+          "claim": "SEAGATE COLONY CONDOMINIUMS",
+          "value": "Seagate Colony Condominiums",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Seagate Colony Condominiums",
+      "source": "Status Report, client field",
+      "quote": "Seagate Colony Board &",
+      "corroboration": [
+        {
+          "source": "Status Report",
+          "claim": "Seagate Colony Board",
+          "value": "Seagate Colony Condominiums",
+          "agrees": true
+        }
+      ]
+    },
+    "client_contact": {
+      "value": "Josh Danford, Maintenance Director",
+      "source": "Status Report, 'Client Name & Client PM' field",
+      "quote": "Josh Danford, Maintenance Director",
+      "corroboration": [
+        {
+          "source": "Status Report",
+          "claim": "Josh Danford, Maintenance Director",
+          "value": "Josh Danford, Maintenance Director",
+          "agrees": true
+        },
+        {
+          "source": "Status Report status entries",
+          "claim": "Josh Danford was updated 4-21 via phone conversation",
+          "value": "Josh Danford",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Ocean View",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "Status Report, 'Location' field",
+      "quote": "Ocean View, VA",
+      "corroboration": [
+        {
+          "source": "Status Report",
+          "claim": "Ocean View, VA",
+          "value": "Ocean View, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "25-055A",
+      "source": "Status Report, 'BFA Project #' field",
+      "quote": "25-055A",
+      "corroboration": [
+        {
+          "source": "Status Report",
+          "claim": "25-055A",
+          "value": "25-055A",
+          "agrees": true
+        },
+        {
+          "source": "Hot Water System Presentation.pdf",
+          "claim": "BFA project number 25-055A (inferred from context of project materials)",
+          "value": null,
+          "agrees": true,
+          "notes": "Presentation does not explicitly state BFA project number; corroboration via status report only."
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No building GSF stated in any source. Project involves a multi-story residential condominium tower (referenced as 16 floors with A, B, C wings). Floor count is clear but total GSF not stated."
+    },
+    "floor_count": {
+      "value": 16,
+      "source": "Hot Water System Presentation.pdf",
+      "quote": "A-Wing has 6 units per floor, for 12 floors, plus 4 penthouses (14), and common areas (Floor 1)",
+      "notes": "Building is described as having 16 floors (1st floor mechanical room, 15th/16th floor boiler rooms referenced); consistent across all sources.",
+      "corroboration": [
+        {
+          "source": "Hot Water System Presentation.pdf",
+          "claim": "Transport loops... 16th floor",
+          "value": 16,
+          "agrees": true
+        },
+        {
+          "source": "Expanded Scope R1.docx",
+          "claim": "1st Floor Storage Mechanical Room → 16th Floor Boilers Room",
+          "value": 16,
+          "agrees": true
+        }
+      ]
+    },
+    "residential_unit_count": {
+      "value": null,
+      "status": "missing",
+      "notes": "CONFLICT — three sources give differing unit counts. See conflict_flags.",
+      "corroboration": [
+        {
+          "source": "Hot Water System Presentation.pdf",
+          "claim": "Services 144 Residential Units and Common Areas in TOWER ONLY",
+          "value": 144,
+          "agrees": null
+        },
+        {
+          "source": "Expanded Scope R1.docx",
+          "claim": "154+ residential units and 8 townhomes tied into the DHW distribution loop",
+          "value": 154,
+          "agrees": null
+        },
+        {
+          "source": "2025.12.10 Expanded Scope.docx (v0)",
+          "claim": "170+ residential units and 8 townhomes tied into the DHW distribution loop",
+          "value": 170,
+          "agrees": null
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No fee amounts appear in any readable source document. The .xls cost estimate is unreadable."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": "2026-02-12",
+        "source": "Status Report, milestone table",
+        "quote": "On-Site Kick-Off — Scheduled: 02-12-2026 — Actual: 02-12-2026",
+        "notes": "Project on-site kick-off meeting occurred 2026-02-12; reflects start of active field phase (RFP #1)."
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Study phase (RFP #1) still in progress as of 04/21/2026. RFP #2 and #3 dates marked TBD."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction phase (RFP #3) not yet activated as of document dates."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_institutional"
+    ],
+    "program_type": [
+      "residential_multifamily"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "plumbing_domestic_water",
+      "plumbing_natural_gas",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "plumbing_domestic_water",
+      "plumbing_natural_gas",
+      "hvac_hot_water",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "residential_condo",
+    "ocean_view_va",
+    "domestic_hot_water",
+    "dhw_system_upgrade",
+    "multifamily_mep",
+    "plumbing_study",
+    "seagate_colony"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "R. O'Grady",
+      "role_on_project": "project_manager"
+    },
+    {
+      "name": "R. O'Berry",
+      "role_on_project": "project_engineer"
+    },
+    {
+      "name": "E. Osbourne",
+      "role_on_project": "additional_team"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings present in source documents. GSF not stated in any text source."
+      },
+      "floor_count": {
+        "value": 16,
+        "unit": "floors",
+        "source": "Hot Water System Presentation.pdf and Expanded Scope R1.docx",
+        "quote": null,
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "plumbing": [
+          "~50-year-old DHW storage tank (converted from electric boiler in 2017), 1st floor Mechanical Room — exhibiting exterior corrosion and failing welds",
+          "2017 gas-fired domestic water heaters/boilers, 16th floor Boiler Room",
+          "Multi-floor recirculation loop (1st floor to 16th floor) — original 1975 piping",
+          "Domestic water pumps — main replacement pump installed 2023",
+          "Recirculation loop valves — regularly replaced",
+          "1981 gas conversion with subsequent modifications"
+        ],
+        "electrical": [
+          "Original electric service to DHW tank (legacy, converted 1981)",
+          "Main electrical switchgear 600V (referenced in presentation)"
+        ],
+        "fire_protection": []
+      }
+    },
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set PDF present in source directory. System inventory derived from text sources (scope docs and client presentation) only."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.residential_unit_count",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Hot Water System Presentation.pdf (client presentation dated 12/4/25)",
+          "value": 144,
+          "quote": "Services 144 Residential Units and Common Areas in TOWER ONLY"
+        },
+        {
+          "source": "Expanded Scope R1.docx (BFA scope, dated 2025-12-10, revision 1)",
+          "value": "154+",
+          "quote": "154+ residential units and 8 townhomes tied into the DHW distribution loop"
+        },
+        {
+          "source": "2025.12.10 Expanded Scope.docx (BFA scope, dated 2025-12-10, earlier version)",
+          "value": "170+",
+          "quote": "170+ residential units and 8 townhomes tied into the DHW distribution loop"
+        }
+      ],
+      "resolution_chosen": null,
+      "rationale": "Three-way disagreement between client presentation (144 units, tower only) vs. BFA R1 scope (154+, including townhomes) vs. BFA v0 scope (170+, including townhomes). The client presentation explicitly notes 'TOWER ONLY' and separately states 8 townhomes have their own hot water boilers, which may partially explain the difference. The R1 and v0 scopes likely count units served by the shared DHW loop differently, and the version evolution (170+ → 154+) may reflect a field count correction. Cannot resolve from available documents; field set to missing. Human review recommended."
+    },
+    {
+      "field_path": "facts.residential_unit_count — townhome count",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Expanded Scope R1.docx",
+          "value": 8,
+          "quote": "8 townhomes tied into the DHW distribution loop"
+        },
+        {
+          "source": "Hot Water System Presentation.pdf",
+          "value": 8,
+          "quote": "8 Townhomes have their own hot water boilers",
+          "notes": "Presentation says townhomes have separate systems; Expanded Scope says 8 townhomes are on the shared loop — direct contradiction."
+        }
+      ],
+      "resolution_chosen": null,
+      "rationale": "The client presentation explicitly states the 8 townhomes have their own hot water boilers (separate system), while the BFA expanded scope documents include the 8 townhomes as part of the DHW distribution loop. This is a meaningful contradiction for scope boundary. Flagged as minor (doesn't affect core tower system scope) but should be clarified."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

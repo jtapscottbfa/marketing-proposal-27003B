@@ -1,0 +1,116 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "manual-quick-pass-2026-05-21",
+  "extracted_at": "2026-05-21T00:00:00Z",
+  "project_slug": "rena_wright_hvac",
+  "source_documents": [
+    {
+      "path": "content_library/artifacts/22-037A Partial HVAC Replacement, Rena B Wright Primary School/PROJECT MANAGEMENT/Scope/220315_Fee Letter.pdf",
+      "type": "fee_letter_and_scope",
+      "included": true,
+      "description": "BFA Fee Letter + Scope of Work, dated March 15, 2023 (signed by Michael E. Dixon, VP). Addressed to Greg Hanson, Chesapeake Public Schools Department of New Construction."
+    },
+    {
+      "path": "content_library/artifacts/22-037A Partial HVAC Replacement, Rena B Wright Primary School/SUBMITTALS/2023.10.26.FINAL SUBMITTAL/",
+      "type": "submittal_set",
+      "included": true,
+      "description": "Final Submittal package dated October 26, 2023 — drawings, specifications, Letter of Transmittal"
+    }
+  ],
+  "facts": {
+    "project_name": {
+      "value": "Partial HVAC Replacement — Rena B. Wright Primary School",
+      "source": "Fee Letter subject line"
+    },
+    "client_name": {
+      "value": "Chesapeake Public Schools (Department of New Construction)",
+      "source": "Fee Letter recipient",
+      "contact": "Greg Hanson, 1016 Greenbrier Parkway Suite 101, Chesapeake, VA 23322"
+    },
+    "owner_name": {
+      "value": "Chesapeake Public Schools",
+      "source": "Fee Letter"
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "source": "Scope of Work title"
+    },
+    "project_number_internal": {
+      "value": "22-037A",
+      "source": "BFA project folder name"
+    },
+    "fee_proposal_date": {
+      "value": "2023-03-15",
+      "source": "Fee Letter date (Michael E. Dixon, VP signing)"
+    },
+    "submittal_dates": {
+      "value": [
+        { "milestone": "50% Submittal to City", "date": "2023-06-28" },
+        { "milestone": "95% Submittal", "date": "2023-09-26" },
+        { "milestone": "Final Submittal", "date": "2023-10-26" },
+        { "milestone": "Re-Final Submittal", "date": "2023-11-20" }
+      ],
+      "source": "SUBMITTALS folder dated subdirectories"
+    },
+    "scope_summary": {
+      "value": "Partial HVAC replacement at Rena B. Wright Primary School in Chesapeake, Virginia. Demolition of all existing rooftop multi-zone units (classrooms + media center), rooftop units (cafeteria, office, kitchen, gym, single zone), kitchen hood + exhaust + makeup air system, roof-mounted exhaust fans, electric unit heaters, impacted ceilings + light fixtures, and the complete existing HVAC control system. New work: RTUs with curbs, ductwork, grills, and fan-powered series VAV boxes in classrooms and media center; single packaged gas rooftop units in gym/cafeteria/office/kitchen/single-zone areas; new code-compliant kitchen hood system with fire suppression; new roof-mounted exhaust fans; new electric unit heaters; 2×2 lay-in ceilings with new LED lights; new Trane DDC wireless control system; ductless mini-splits for MDF and IDF closets; new gas piping with supports.",
+      "source": "Fee Letter Scope of Work"
+    },
+    "equipment_procurement": {
+      "value": "Chesapeake Public Schools pre-purchased HVAC equipment, curbs, and isolation rails directly from Damuth Trane; the Controls package and Equipment Start-up included in the General Contract.",
+      "source": "Fee Letter Scope of Work"
+    },
+    "disciplines_scope": {
+      "value": "Mechanical (HVAC + ductwork + controls + kitchen hood + suppression); Electrical (RTU and exhaust-fan power, fire alarm, LED lighting); Structural (rooftop support work); Plumbing-adjacent (gas piping); ceilings",
+      "source": "Fee Letter Scope of Work"
+    },
+    "construction_value": {
+      "value": null,
+      "status": "missing",
+      "notes": "Construction contract value not stated in available BFA-side documents (fee letter is BFA's design fee proposal, not the construction contract value)."
+    },
+    "owner_program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "Program budget not stated in fee letter or scope of work."
+    },
+    "completion_date": {
+      "value": null,
+      "status": "missing",
+      "notes": "Substantial completion date not in BFA-side documents. Construction was bid after BFA Final Submittal in October/November 2023."
+    }
+  },
+  "taxonomy": {
+    "client_type": ["state_local", "k12"],
+    "program_type": ["k12_education"],
+    "disciplines": ["mechanical_engineering", "electrical_engineering", "structural_engineering", "plumbing_engineering", "fire_protection_engineering"],
+    "delivery_method": ["design_bid_build"],
+    "contract_vehicle": ["chesapeake_public_schools_mep_term"],
+    "bfa_role": ["prime_ae"]
+  },
+  "tenant_freeform_tags": [
+    "chesapeake_public_schools",
+    "k_12_hvac",
+    "occupied_school",
+    "partial_hvac_replacement",
+    "trane_ddc_wireless_controls",
+    "damuth_trane_pre_purchase",
+    "kitchen_hood_replacement",
+    "rooftop_units",
+    "fan_powered_vav",
+    "ductless_mini_splits"
+  ],
+  "key_personnel_pending": [
+    {
+      "name": "Michael E. Dixon",
+      "role_on_project": "vice_president",
+      "notes": "BFA VP signing fee proposal (March 2023)"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md"
+  }
+}

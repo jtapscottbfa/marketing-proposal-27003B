@@ -1,0 +1,422 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "twist_martini_lounge",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/Twist Full Set.pdf",
+      "type": "drawing_set",
+      "sha256": "775c747bab99d46ed87f0c6bfc9573999e6471cd70a8aa6e4c12e2bcbb5fb96b",
+      "page_count": 4,
+      "included": true,
+      "notes": "Primary 4-sheet drawing set: M-101, M-501, E-101, E-501"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/20-095.M-101(new heaters) Layout1 (1).pdf",
+      "type": "drawing_set",
+      "sha256": "865119491e57fc51838138f849493f593210351e004d8cfda53742d1953a5b91",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet version of M-101 (Patio Plan - New Work, Controls & Schedule)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/20-095.M-501 Layout1 (1).pdf",
+      "type": "drawing_set",
+      "sha256": "32b34eea3b3ca05fea0277231264361f5d939f2cbe737cc74fdf2946aaf19510",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet version of M-501 (Unit Heater Detail)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/20-095.E-101(new heaters) Layout (1).pdf",
+      "type": "drawing_set",
+      "sha256": "1bb93aeafc129a323d829e2febdbf75eb605fd384d729afc21e1a9ba338a515a",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet version of E-101 (Patio Electrical Plan - New Work)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/20-095.E-501(new heaters) Layout (1).pdf",
+      "type": "drawing_set",
+      "sha256": "e8a07db89cbbf513e5eba4ba2f8af24fa0f12c55eda3f1fcac57d569abe31e89",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet version of E-501 (Electrical Wiring Detail)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/Heater's Accessories.pdf",
+      "type": "unknown",
+      "flag_for_human_review": true,
+      "sha256": "27ec88f61423980df0e07acd180e32355044063d817c29243c5974d72320fbe0",
+      "page_count": null,
+      "included": true,
+      "notes": "Space-Ray tube heater accessories product data sheet (Form #S46600). Vendor literature; classified unknown as no standard source-type matches."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/S46600-Space-Ray-Accessory-Sheet.pdf",
+      "type": "unknown",
+      "flag_for_human_review": true,
+      "sha256": "27ec88f61423980df0e07acd180e32355044063d817c29243c5974d72320fbe0",
+      "page_count": null,
+      "included": true,
+      "notes": "Appears to be a duplicate of Heater's Accessories.pdf (identical SHA-256). Same Space-Ray Form #S46600."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/twist_martini_lounge/Support for Columns.pdf",
+      "type": "unknown",
+      "flag_for_human_review": true,
+      "sha256": "98579806de8f1eadce49f02f1d3f03dd014916da5c6c74bf2a8a97f1de25c44e",
+      "page_count": null,
+      "included": true,
+      "notes": "Sioux Chief product data — DWV hangers, gas vent pipe supports, malleable iron wall/ceiling plate. Vendor literature for hanger/support hardware."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Twist Martini Lounge — Patio Heater Installation",
+      "source": "drawing title block (all sheets)",
+      "quote": "TWIST MARTINI LOUNGE",
+      "corroboration": [
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "TWIST MARTINI LOUNGE",
+          "value": "Twist Martini Lounge — Patio Heater Installation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Twist Martini Lounge",
+      "source": "drawing title block (all sheets)",
+      "quote": "TWIST MARTINI LOUNGE",
+      "corroboration": [
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "TWIST MARTINI LOUNGE",
+          "value": "Twist Martini Lounge",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Twist Martini Lounge",
+      "source": "drawing title block (all sheets)",
+      "quote": "TWIST MARTINI LOUNGE",
+      "corroboration": [
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "TWIST MARTINI LOUNGE",
+          "value": "Twist Martini Lounge",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": {
+        "value": "Virginia Beach",
+        "source": "drawing title block (all sheets)",
+        "quote": "VIRGINIA BEACH"
+      },
+      "state": {
+        "value": "VA",
+        "source": "drawing title block (all sheets) + BFA office address",
+        "quote": "VIRGINIA BEACH"
+      },
+      "country": "US",
+      "facility_address": {
+        "value": null,
+        "status": "missing"
+      },
+      "corroboration": [
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "VIRGINIA BEACH location label",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-095",
+      "source": "drawing title blocks (all sheets)",
+      "quote": "20-095",
+      "corroboration": [
+        {
+          "source": "drawing title blocks — all individual single-sheet PDFs",
+          "claim": "20-095",
+          "value": "20-095",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Drawing scope is limited to patio area; no area tabulation shown on drawings. Project is a small tenant-improvement scope without sq ft callout."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "design_completion_date": {
+      "value": "2020-11-30",
+      "source": "PE seal date, drawing title block (all sheets)",
+      "quote": "11-30-20",
+      "corroboration": [
+        {
+          "source": "PE seal on all 4 sheets of Twist Full Set.pdf",
+          "claim": "11-30-20",
+          "value": "2020-11-30",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_office": {
+      "value": "Bowman Foster & Associates, Inc. — Norfolk, VA",
+      "source": "drawing title block (all sheets)",
+      "quote": "BOWMAN FOSTER & ASSOCIATES, INC 6353 CENTER DR. STE. 101 NORFOLK, VA 23502"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2020-11-30",
+        "source": "PE seal date, drawing title blocks",
+        "quote": "11-30-20"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "retail_restaurant"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "plumbing_natural_gas",
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "plumbing_natural_gas",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "virginia_beach",
+    "patio_heaters",
+    "restaurant",
+    "tenant_improvement",
+    "small_project",
+    "gas_infrared_heaters",
+    "outdoor_patio"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "EO",
+      "role_on_project": "drawn_by_and_project_engineer",
+      "notes": "Initials 'EO' appear in Drawn By and Project Engineer fields on all sheets"
+    },
+    {
+      "name": "BB",
+      "role_on_project": "checked_by",
+      "notes": "Initials 'BB' appear in Checked By field on all sheets"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M-101",
+        "title": "PATIO PLAN — NEW WORK, DETAILS, CONTROLS, & SCHEDULE",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Shows patio plan at 1/4\"=1'-0\" with three suspended gas-fired infrared tube unit heaters (UH-1, UH-2, UH-3) located along the patio area adjacent to Commerce Street. Natural gas piping runs from existing 5 PSIG supply above ceiling; includes gas regulator, emergency gas shut-off valve (EGSOV), and ball valves. Y-connections shown for gas branch takeoffs. Existing patio seating fence shown as context. Gas Connection Diagram (no scale) shows unvented pressure regulator (5 PSIG to 11 WC), 6\" deep dirt leg, 24\" flexible hose, ball valve, and gas cock arrangement. Controls section specifies manual on/off operation; zone setpoint adjustable by Twist staff. Emergency shut-off sequence: wall switch activation closes gas valve via 24V/120V relay and transformer. GAS FIRED INFRARED UNIT HEATER SCHEDULE: Mark UH-1 through UH-3, Input 35 MBH high / 25 MBH low, Bottom edge of heater 8\"-11\" AFF, Gas type Natural, Burner pressure 3.5\" WC, Supply pressure minimum 5\" WC, Supply pressure maximum 14\" WC, Electrical service 120V/1ph/1.2A. Note 1: Selection based on SunStar Eclipse SIR .35 Series. Note 2: Provide with mounting bracket, relay kit, and draft inducer. Construction notes include: mounting height 10'5\" AFF from bottom of heater, existing 5 PSIG piping above ceiling, EGSOV at 48\" AFF, 6\" dirt leg required, extend vent cap per M-501, all louvers static type sealed from building interior, Type B vent support at each column and on storefront, Type B vent manifold at 9'11\"."
+      },
+      {
+        "sheet_number": "M-501",
+        "title": "PATIO PLAN — DETAIL",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Unit Heater Section (no scale) shows tube heater suspended below 2nd floor slab with architectural panel, vent cap, and Type B vent. Clearances: 1'0\" horizontal to interior wall, 4'9\" vertical to floor, 4'0\" to architectural panel above. Mounting & Draft Inducer Detail (no scale) shows suspension chain hardware, speed clip, tube flange, reflector (side view), and draft inducer assembly components — flue restrictor plate, tube flange (draft inducer), 1/4-20 locknuts, control box, access panel, tube flange gaskets, tube flange (control). Standard commercial tube heater installation detail sheet; no project-specific area dimensions."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "PATIO ELECTRICAL PLAN — NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Shows same patio plan at 1/4\"=1'-0\" with electrical work. Demolition note: disconnect and remove existing ceiling fan and ceiling fan switch; refurbish electrical circuit to power new equipment. Construction notes: (1) exhauster junction box and control box; (2) extend existing circuit to accommodate heaters — relabel panel schedule upon completion; (3) coordinate with owner for switch location. Three unit heater designations (UH-1, UH-2, UH-3) shown with wiring runs. Existing Panel A referenced. Existing ceiling fan to be removed. Existing recessed lights (existing) shown as context. Legend: sprinklers, camera, unit heater designation, recessed lights (existing), 1\" FMC with 2x#12 and 1x#12 ground THWN, 1\" FMC with 2x#16 and 1x#16 ground (common) THWN, ceiling fan junction box (existing), three-position switch Part #40147010. Wiring is 120V single-phase per heater schedule."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "PATIO ELECTRICAL PLAN — DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Manual Switch Connections diagram for Single Heater Operation Per Dual Manual Switch (no scale). Shows 120V circuit: Ground, Neutral, L1 Hot (120V) from fused disconnect switch with thermostat connection block. Each heater has: Lo/C/Hi exhauster junction box with 3 Core SJO Cable (extend for LTS installation), control box, and Low Fire / High Fire manual switches (field supplied). Note: Low Fire Switch MUST stay on during High Fire running. Wiring diagram enables two-stage (high/low) manual control of each tube heater independently. Confirms 120V single-phase supply."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawings",
+        "quote": null,
+        "sheets": [],
+        "notes": "No area tabulation on any drawing sheet. Patio area visible in plan but no dimensions that yield an area calculation."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "source": "drawings",
+        "quote": null,
+        "sheets": [],
+        "notes": "M-501 section shows '2ND FLOOR SLAB' above patio, indicating a multi-story building with first-floor patio, but floor count of the overall building is not stated."
+      },
+      "heater_count": {
+        "value": 3,
+        "unit": "unit heaters",
+        "source": "M-101 patio plan and heater schedule",
+        "quote": null,
+        "sheets": [
+          "M-101"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "3x SunStar Eclipse SIR .35 Series gas-fired infrared tube unit heaters (UH-1, UH-2, UH-3)",
+          "35 MBH high / 25 MBH low input per heater",
+          "Natural gas fuel, Type B vented with draft inducer",
+          "Two-stage (high/low) manual control per heater",
+          "Emergency gas shut-off valve (EGSOV) with 120V relay"
+        ],
+        "plumbing": [
+          "Natural gas piping from existing 5 PSIG above-ceiling supply",
+          "Gas regulator (5 PSIG to 7-14\" WC), 6\" dirt leg, ball valves, Y-connections",
+          "24\" flexible gas connector per heater"
+        ],
+        "electrical": [
+          "120V/1ph/1.2A per heater (3 heaters total)",
+          "Extend existing circuit from Panel A",
+          "1\" FMC wiring to each heater control box and exhauster junction box",
+          "Three-position (Hi/Lo/Off) manual switch per heater (Part #40147010)",
+          "Remove existing ceiling fan; refurbish circuit for heater power",
+          "Emergency shut-off: 24V relay + transformer at each EGSOV"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

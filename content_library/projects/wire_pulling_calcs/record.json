@@ -1,0 +1,457 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "wire_pulling_calcs",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hrsd/wire_pulling_calcs/SIMpull-Cable-Pull-Calculator-Blackwater_0329(1).pdf",
+      "type": "report",
+      "sha256": "68f73ac835a015350b5632b94ecea6c08f03e04369aa3df88832ae0a312045a6",
+      "page_count": 1,
+      "included": true,
+      "notes": "SIMpull Cable Pull Calculator output sheet — primary calculation with full segment-by-segment pull table. Image-based PDF; read via render_pdf_to_images."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hrsd/wire_pulling_calcs/SIMpull-Cable-Pull-Calculator-Blackwater_0329(2).pdf",
+      "type": "report",
+      "sha256": "1c1c4bcd9d7924ad3443319332ab26c8de168df76a51f422b1b86929866746ae",
+      "page_count": 1,
+      "included": true,
+      "notes": "SIMpull Cable Pull Calculator summary/diagram sheet — condensed view with pull diagram, key results, and PE stamp. Image-based PDF."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hrsd/wire_pulling_calcs/E14_ Pull Plan PARTIAL SITE PLAN - AREA 5 Rev.6 markup.pdf",
+      "type": "drawing_set",
+      "sha256": "59f7380e6f3c4186a3b0e55345f251f9387e2192344e5ab39623d19d81005388",
+      "page_count": 1,
+      "included": true,
+      "notes": "Sheet E14 — Electrical Partial Site Plan Area 5, conformed set with red-ink wire pull markup annotations. Image-based PDF."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Source documents consist entirely of wire pull calculation sheets and a marked-up electrical site plan. No BOD, SOW, contract, or narrative documents present. Project name/client fields on calc sheets are blank; client identity derived from drawing title block."
+  },
+  "facts": {
+    "project_name": {
+      "value": "HRSD Nansemond Treatment Plant Struvite Recovery Facility Improvements and Digester Capacity Upgrade",
+      "source": "Drawing E14 title block",
+      "quote": "NANSEMOND TREATMENT PLANT STRUVITE RECOVERY FACILITY IMPROVEMENTS AND DIGESTER CAPACITY UPGRADE",
+      "corroboration": [
+        {
+          "source": "Drawing E14 title block",
+          "claim": "NANSEMOND TREATMENT PLANT STRUVITE RECOVERY FACILITY IMPROVEMENTS AND DIGESTER CAPACITY UPGRADE",
+          "value": "HRSD Nansemond Treatment Plant Struvite Recovery Facility Improvements and Digester Capacity Upgrade",
+          "agrees": true
+        },
+        {
+          "source": "SIMpull Calc (1) project name field",
+          "claim": "Project name goes here (blank)",
+          "value": null,
+          "agrees": false
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Hampton Roads Sanitation District (HRSD)",
+      "source": "Drawing E14 title block",
+      "quote": "HRSD",
+      "corroboration": [
+        {
+          "source": "Drawing E14 title block",
+          "claim": "HRSD",
+          "value": "Hampton Roads Sanitation District (HRSD)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Hampton Roads Sanitation District (HRSD)",
+      "source": "Drawing E14 title block",
+      "quote": "HRSD",
+      "corroboration": [
+        {
+          "source": "Drawing E14 title block",
+          "claim": "HRSD",
+          "value": "Hampton Roads Sanitation District (HRSD)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Suffolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Nansemond Treatment Plant",
+      "source": "Drawing E14 title block",
+      "quote": "NANSEMOND TREATMENT PLANT",
+      "notes": "City identified as Suffolk, VA based on Nansemond Treatment Plant's known location; not stated explicitly in drawing title block."
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "NP013700",
+      "source": "Drawing E14 title block",
+      "quote": "CONTRACT NO. NP013700",
+      "corroboration": [
+        {
+          "source": "Drawing E14 title block",
+          "claim": "CONTRACT NO. NP013700",
+          "value": "NP013700",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "NP013700",
+      "source": "Drawing E14 title block",
+      "quote": "CONTRACT NO. NP013700"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing"
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "engineer_of_record": {
+      "value": "Hazen and Sawyer",
+      "source": "Drawing E14 title block",
+      "quote": "Hazen",
+      "corroboration": [
+        {
+          "source": "Drawing E14 title block",
+          "claim": "Hazen (Hazen and Sawyer), 4500 Main Street Suite 500, Virginia Beach VA 23462",
+          "value": "Hazen and Sawyer",
+          "agrees": true
+        }
+      ]
+    },
+    "pe_stamp": {
+      "value": "Richard H. Williams, PE — Virginia Lic. No. 048025",
+      "source": "SIMpull Calc (1) stamp; SIMpull Calc (2) stamp; Drawing E14 stamp",
+      "quote": "RICHARD H. WILLIAMS Lic. No.048025",
+      "notes": "Stamp dated 06-05-2024 on calc sheets. Drawing E14 stamp also shows Richard H. Williams. This is the engineer who performed and sealed the wire pull calculations."
+    },
+    "drawing_number": {
+      "value": "E14",
+      "source": "Drawing E14 title block",
+      "quote": "DRAWING NUMBER E14"
+    },
+    "hazen_project_number": {
+      "value": "32530-012",
+      "source": "Drawing E14 title block",
+      "quote": "HAZEN NO. 32530-012"
+    },
+    "drawing_revision": {
+      "value": "Rev. 6 / Conformed Set (09-2022); latest field order FO No. 18, 11-2023",
+      "source": "Drawing E14 revision block and filename",
+      "quote": "CONFORMED SET"
+    },
+    "cable_pull_description": {
+      "value": "Two pulls (Pull A and Pull B): 3-500KCMIL 5kV 115 Mil EPR 133% CU Tape Non Armored SIMpull-PVC Jacket + 1 SIMpull CU THHN 1/0 GW, in 4\" PVC Sch 40 or HDPE conduit, 2 sets, 156 linear feet",
+      "source": "SIMpull Calc (1); Drawing E14 red-ink annotation",
+      "quote": "156' of 3 cable(s) 500 CU 1 / C 5kV 115 Mil EPR 133% CU Tape Non Armored SIMpull-PVC Jacket and 1 SIMpull CU THHN 1 GW 4\" PVC Sch 40 or HDPE",
+      "corroboration": [
+        {
+          "source": "SIMpull Calc (1) header",
+          "claim": "156' of 3 cable(s) 500 CU 1/C 5kV 115 Mil EPR 133% CU Tape Non Armored SIMpull-PVC Jacket and 1 SIMpull CU THHN 1 GW, 4\" PVC Sch 40 or HDPE",
+          "value": "3×500KCMIL 5kV + 1/0 GW, 4\" conduit, 156 LF, 2 sets",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E14 red-ink annotation",
+          "claim": "Wire size = 3-500KCMIL (5kV) & 1-#1 GRD 600V",
+          "value": "3×500KCMIL 5kV + #1 GRD",
+          "agrees": false,
+          "note": "Minor discrepancy: calc sheet GW is 1/0, drawing annotation says #1 GRD. May reflect different interpretation of ground wire size or a markup imprecision."
+        },
+        {
+          "source": "SIMpull Calc (2) summary",
+          "claim": "Phase wire 3 x 500, Ground wire 1 x 1/0, Conduit 4\" PVC Sch 40 or HDPE, 156 ft, 2 sets",
+          "value": "3×500KCMIL + 1/0 GW, 4\" conduit, 156 LF, 2 sets",
+          "agrees": true
+        }
+      ]
+    },
+    "max_pulling_tension": {
+      "value": 416,
+      "unit": "lbs",
+      "source": "SIMpull Calc (1) results; SIMpull Calc (2) summary",
+      "quote": "This pull indicates a maximum tension (lb.) 416",
+      "corroboration": [
+        {
+          "source": "SIMpull Calc (1) Continuous Tensions column, max value",
+          "claim": "416 lb maximum continuous tension",
+          "value": 416,
+          "agrees": true
+        },
+        {
+          "source": "SIMpull Calc (2) summary",
+          "claim": "This pull indicates a maximum tension (lb.) 416",
+          "value": 416,
+          "agrees": true
+        }
+      ]
+    },
+    "max_sidewall_pressure": {
+      "value": 202,
+      "unit": "lbs",
+      "source": "SIMpull Calc (1) results; SIMpull Calc (2) summary",
+      "quote": "This pull indicates a maximum sidewall pressure (lb.) 202",
+      "corroboration": [
+        {
+          "source": "SIMpull Calc (1) Sidewall Pressure column, max value",
+          "claim": "202 lb maximum sidewall pressure",
+          "value": 202,
+          "agrees": true
+        },
+        {
+          "source": "SIMpull Calc (2) summary",
+          "claim": "This pull indicates a maximum sidewall pressure (lb.) 202",
+          "value": 202,
+          "agrees": true
+        }
+      ]
+    },
+    "coefficient_of_friction": {
+      "value": 0.2,
+      "unit": "dimensionless",
+      "source": "SIMpull Calc (1)",
+      "quote": "COF 0.2 Recommended"
+    },
+    "calc_date": {
+      "value": "2024-06-05",
+      "source": "SIMpull Calc (1) and (2) PE stamp",
+      "quote": "06-05-2024"
+    },
+    "calc_basis_document_date": {
+      "value": "February 2022",
+      "source": "Drawing E14 title block",
+      "quote": "DATE: FEBRUARY 2022"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local_special_district"
+    ],
+    "program_type": [
+      "utilities_wastewater"
+    ],
+    "program_subtype": [
+      "utilities_wastewater"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "HRSD is a regional public sanitation authority — classified as local_special_district.",
+    "delivery_method": "Assumed design-bid-build based on drawing format (Hazen as EOR, separate conformed set). No procurement documents present; flag for review.",
+    "bfa_role": "BFA role not explicitly stated in source documents. PE stamp on calculation sheets is a Virginia PE (Richard H. Williams, Lic. 048025). BFA's role as the stamping engineer is inferred. Flag for human review.",
+    "project_status": "Drawing dated February 2022, conformed set 09-2022, last FO 11-2023, calc stamp 06-2024 — project appears well into or past construction. Defaulting to complete pending confirmation.",
+    "award_type": "No procurement documentation present; award basis unknown."
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "hrsd",
+    "nansemond_treatment_plant",
+    "wire_pull_calculations",
+    "5kv_cable",
+    "struvite_recovery",
+    "wastewater_treatment",
+    "hampton_roads"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Richard H. Williams",
+      "role_on_project": "engineer_of_record_electrical",
+      "notes": "Virginia PE Lic. No. 048025; sealed wire pull calculations dated 06-05-2024"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E14",
+        "title": "ELECTRICAL — PARTIAL SITE PLAN - AREA 5",
+        "discipline": "electrical_engineering",
+        "source_file": "E14_ Pull Plan PARTIAL SITE PLAN - AREA 5 Rev.6 markup.pdf",
+        "reading_notes": "Single-sheet electrical site plan at 1\"=20' scale showing underground conduit routing across the Nansemond Treatment Plant site, Area 5. Red-ink markup annotations added by BFA/engineer for wire pull planning: (1) Two pulls labeled 'Pull A' and 'Pull B' identified with wire size '3-500KCMIL (5kV) & 1-#1 GRD 600V'; (2) conduit routing noted through manholes and process areas including Pre-Dewatering Building (PA 130), Grit Tanks (PA 120), WASSTRIP (PA 110), SNIR (PA 820); (3) 'Insert Pulley in manhole E-30' noted; (4) dimension annotations of 4', 61', 81' for conduit run segments; (5) per RFI 224, rerouting noted near Dewatering Building; (6) annotation references WCD 4 for High Mast Light 6 Power Re-route; (7) Note 1 references tee splice of 5kV cables in manhole serving Unit Substation USS-1. Hazen and Sawyer is EOR. Drawing shows interface between existing ductbank E-33-0104/0106/0107 and proposed conduit system. Scale 1\"=20'. Conformed set with field order revisions to FO No. 18 (11-2023). Key plan inset shows Area 5 location within broader plant site."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — this is a site plan for underground electrical work, not a building project."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable."
+      },
+      "conduit_run_length": {
+        "value": 156,
+        "unit": "linear_feet",
+        "source": "SIMpull Calc (1) and (2); Drawing E14 annotations",
+        "quote": "156' of 3 cable(s)",
+        "sheets": [
+          "E14"
+        ]
+      },
+      "conduit_type": {
+        "value": "4\" PVC Schedule 40 or HDPE",
+        "source": "SIMpull Calc (1) and (2)",
+        "quote": "4\" PVC Sch 40 or HDPE",
+        "sheets": []
+      },
+      "cable_sets": {
+        "value": 2,
+        "source": "SIMpull Calc (1)",
+        "quote": "Number of Sets: 2",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "3×500KCMIL 5kV EPR SIMpull-PVC insulated power cables (Pull A and Pull B) in 4\" PVC/HDPE conduit, 156 LF, 2 sets",
+          "1/0 AWG copper ground wire per pull",
+          "Connection to existing ductbank system (E-33-0104, E-33-0106, E-33-0107)",
+          "Manhole E-30 with pulley insert for pull",
+          "Feeds Unit Substation USS-1 (5kV tee splice in manhole)"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.cable_pull_description.ground_wire_size",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SIMpull Calc (1) and (2)",
+          "value": "1/0 AWG copper ground wire"
+        },
+        {
+          "source": "Drawing E14 red-ink annotation",
+          "value": "#1 AWG ground wire (600V)"
+        }
+      ],
+      "resolution_chosen": "SIMpull Calc (1) and (2)",
+      "rationale": "The engineering calculation sheets are the primary design-calculation documents for this pull, and both calc sheets consistently state 1/0 GW. The drawing annotation '#1 GRD 600V' may be a simplification by the field/construction annotator or a markup imprecision. Minor discrepancy (adjacent wire sizes); does not affect pull feasibility. PE stamp is on the calc sheets."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

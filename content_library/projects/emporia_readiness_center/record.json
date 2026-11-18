@@ -1,0 +1,447 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "emporia_readiness_center",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/dma/emporia_readiness_center/2022_05_05-INITIAL EMAIL.pdf",
+      "type": "correspondence",
+      "sha256": "481d31ee80dbb5e94d1cdcfaa290870179e93d11ddac1969735a2151ac7264f7",
+      "included": true,
+      "notes": "Email from Kenneth M. Daniel (DMA NGVA-FMO-AE) to Mike Smith (BFA), dated May 5 2022, transmitting the RFP and describing commander's intent for pathogen-adaptive HVAC capabilities."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/dma/emporia_readiness_center/Request for Fee Proposal (Emporia).pdf",
+      "type": "sow",
+      "sha256": "ce736a8aa2628e5b870ff859d089a8ec80d4b80f3d488f722b333b6feffea2b3",
+      "included": true,
+      "notes": "Request for Fee Proposal for Emporia RC HVAC Upgrades, State PN 123-18578-020 / VAFM PN 22-0023. Dated May 5, 2022. Contains full scope of services, construction requirements, timeline."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/dma/emporia_readiness_center/ATTACHMENTS.pdf",
+      "type": "drawing_set",
+      "sha256": "f834ffcb10eefb3eb083e4efc467664574eff436aaf0a3067334963041591c10",
+      "included": true,
+      "page_count": 8,
+      "notes": "Historical reference drawings attached to the RFP package. Contents: (1-2) Emporia Airport property survey plats (1976); (3) Emporia Armory as-built site survey (1993, Rouse & Associates); (4) CO2 suppression system drawing for Emporia Armory, 410 Courtland Road; (5) Pre-engineered metal storage building elevations (DMA/Facilities Eng & Mgmt, Emporia VA); (6-7) Small arms storage vault drawings (Kenneth P. Werner, Architect); (8) Vehicle marshaling area diagram. All are existing-building reference documents, not design deliverables for this project."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/dma/emporia_readiness_center/Exhibit D -Ref2-Drawing1 HVAC Design Bldg 9-4.pdf",
+      "type": "drawing_set",
+      "sha256": "d3596e3d14af424b33709adac8c4d3ca192fc82bf99af6b03d7ac278b319f2b7",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Referenced as 'Exhibit D - Ref2 - Drawing 1 HVAC Design Bldg 9-4'. PDF is corrupt/unreadable — both pdftotext and pdftoppm failed with xref table errors. Content cannot be extracted. Likely a reference HVAC drawing for Building 9-4. Requires human review or re-export from source."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "attempted",
+    "notes": "No BOD or spec book present. RFP/SOW and reference drawings only. One drawing PDF (Exhibit D HVAC) is corrupt and unreadable. ATTACHMENTS PDF contains historical reference drawings only; no design drawings for the current project. No contract document present — project captured at RFP stage."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Emporia Readiness Center HVAC Upgrades",
+      "source": "Request for Fee Proposal p.1",
+      "quote": "Emporia RC HVAC Upgrades",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal p.1",
+          "claim": "Emporia RC HVAC Upgrades",
+          "value": "Emporia RC HVAC Upgrades",
+          "agrees": true
+        },
+        {
+          "source": "2022_05_05-INITIAL EMAIL.pdf subject line",
+          "claim": "Request for Fee Proposal Emporia RC HVAC Upgrades",
+          "value": "Emporia RC HVAC Upgrades",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "Request for Fee Proposal p.1",
+      "quote": "Department of Military Affairs\nNGVA-FMO-AE, Ken Daniel",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal p.1",
+          "claim": "Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        },
+        {
+          "source": "2022_05_05-INITIAL EMAIL.pdf",
+          "claim": "Kenneth M. Daniel, Project Manager, NGVA-FMO-AE, Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Commonwealth of Virginia, Department of Military Affairs",
+      "source": "Request for Fee Proposal p.1",
+      "quote": "Department of Military Affairs\nNGVA-FMO-AE, Ken Daniel",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal p.1",
+          "claim": "Department of Military Affairs",
+          "value": "Commonwealth of Virginia, Department of Military Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Emporia",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "410 Courtland Road, Emporia, VA",
+      "source": "ATTACHMENTS.pdf page 4 (CO2 suppression drawing title block)",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "ATTACHMENTS.pdf page 4 (CO2 suppression drawing title block)",
+          "claim": "410 Courtland Road, Emporia, Virginia",
+          "value": "410 Courtland Road, Emporia, VA",
+          "agrees": true
+        },
+        {
+          "source": "ATTACHMENTS.pdf page 5 (DMA metal storage building elevations)",
+          "claim": "Emporia, VA (title block)",
+          "value": "Emporia, VA",
+          "agrees": true
+        },
+        {
+          "source": "Request for Fee Proposal p.1",
+          "claim": "Emporia Readiness Center (no street address stated)",
+          "value": null,
+          "agrees": null,
+          "note": "SOW does not provide a street address but facility name matches"
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "123-18578-020",
+      "source": "Request for Fee Proposal p.1",
+      "quote": "State PN 123-18578-020",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal p.1",
+          "claim": "State PN 123-18578-020",
+          "value": "123-18578-020",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client_secondary": {
+      "value": "22-0023",
+      "source": "Request for Fee Proposal p.1",
+      "quote": "VAFM PN 22-0023",
+      "note": "Secondary client project number; VAFM = Virginia Adjutant General / Facilities Management numbering"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "No explicit building square footage stated in any readable source document. The as-built site survey (ATTACHMENTS p.3) shows a 1-story brick building footprint but no labeled area calculation."
+    },
+    "floor_count": {
+      "value": 1,
+      "source": "ATTACHMENTS.pdf page 3 (Emporia Armory as-built drawing, Rouse & Associates, 1993)",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "ATTACHMENTS.pdf page 3 (Emporia Armory as-built drawing)",
+          "claim": "1-Story Brick Building labeled on as-built survey",
+          "value": 1,
+          "agrees": true
+        },
+        {
+          "source": "ATTACHMENTS.pdf page 5 (DMA metal storage building elevations)",
+          "claim": "Elevations show single-story structure",
+          "value": 1,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 1407000,
+      "currency": "USD",
+      "source": "Request for Fee Proposal p.1",
+      "quote": "The not-to-exceed construction budget is $1,407,000.00.",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal p.1",
+          "claim": "$1,407,000.00 not-to-exceed construction budget",
+          "value": 1407000,
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "RFP requests a fee proposal; no awarded design contract in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 210,
+        "source": "Request for Fee Proposal p.2, Section V",
+        "quote": "Design shall be completed within 210 days after NTP is given.",
+        "corroboration": [
+          {
+            "source": "Request for Fee Proposal p.2, Section V",
+            "claim": "Design shall be completed within 210 days after NTP is given.",
+            "value": 210,
+            "agrees": true
+          }
+        ]
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "Construction not yet contracted; only the not-to-exceed construction budget of $1,407,000 is stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "state"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_armory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "state_competitive"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "virginia_department_of_military_affairs",
+    "dma",
+    "national_guard",
+    "readiness_center",
+    "armory",
+    "hvac_replacement",
+    "pathogen_mitigation",
+    "emporia",
+    "greensville_county"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "ATTACH-01",
+        "title": "Plat Showing Survey and Division of Emporia Airport Property",
+        "discipline": "civil_engineering",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 1,
+        "reading_notes": "Historic survey plat (1976) of Emporia Airport property in Greensville County and Southampton County, Virginia. Drawn by Richard A. Bristow, C.L.S. Scale 1\"=500'. Shows runway area, parcels, and area summary table (total ~392 acres). Reference document only — not related to readiness center building HVAC scope. Appears to be background context on the armory property history."
+      },
+      {
+        "sheet_number": "ATTACH-02",
+        "title": "Plat Showing Survey and Division of Emporia Airport Property (Exhibit A stamp)",
+        "discipline": "civil_engineering",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 2,
+        "reading_notes": "Duplicate or alternate version of airport property plat. Stamped 'EXHIBIT A' and 'ADAP PROJECT No. 5-51-0013-01, 9/24/76'. Same content as page 1. Reference document only."
+      },
+      {
+        "sheet_number": "ATTACH-03",
+        "title": "Emporia Armory As-Built Drawing — Site Survey",
+        "discipline": "civil_engineering",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 3,
+        "reading_notes": "As-built site survey by Rouse & Associates, P.C. (Civil Engineers, Surveyors, Planners), Chesapeake, VA, dated March 15, 1993. Prepared for Hudgins Construction. Shows existing armory campus: prominent '1-STORY BRICK BUILDING' at center, 'METAL BLDG.' (pre-engineered), 'BLOCK BLDG.' noted. Scale 1\"=30'. Finished floor elevation 124.66'. This is the existing readiness center building — confirms 1-story construction. No dimension annotations visible for building footprint area."
+      },
+      {
+        "sheet_number": "ATTACH-04",
+        "title": "Emporia Armory CO2 Suppression System — Floor Plan and Piping Isometric",
+        "discipline": "fire_protection_engineering",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 4,
+        "reading_notes": "Drawing by FTI-X Corporation for Emporia Armory, 410 Courtland Road, Emporia, Virginia. CO2 suppression system design — floor plan (scale 1/4\"=1'-0\") and piping isometric (no scale). Shows carbon dioxide hazard calculations and system specifications in legend. Confirms facility address: 410 Courtland Road, Emporia, VA. Discipline: fire protection. Drawing is a reference/as-built for an existing suppression system; not HVAC design work. Sheet is heavily annotated but text is small and partially legible."
+      },
+      {
+        "sheet_number": "ATTACH-05",
+        "title": "Pre-Engineered Metal Storage Building — Elevations (DMA, Emporia VA)",
+        "discipline": "architecture",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 5,
+        "reading_notes": "DMA Facilities Engineering and Management, Commonwealth of Virginia drawing dated 12 Feb 1993. Shows North, South, East, and West elevations of a pre-engineered metal storage building at Emporia, VA. Finished floor elevation 124.66'. Sheet A-1 of 1. Single-story metal building on the armory campus (matches 'METAL BLDG.' on as-built survey). Vertical metal siding with louvers, minimal windows, bay door opening on north elevation. This is likely the vehicle storage/maintenance building associated with the armory."
+      },
+      {
+        "sheet_number": "ATTACH-06",
+        "title": "Small Arms Storage Vault — Vault Plan, Sections, and Vault Door Details",
+        "discipline": "architecture",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 6,
+        "reading_notes": "By Kenneth P. Werner, AIA Architect, 3401 Brook Road (Richmond, VA 23220). Title: 'Small Arms Storage Vault — USP&O Warehouse, Waller Depot, Richmond, VA'. Sheet 1 of 1. Shows vault plan, sections A-A, B-B, C-C, D-D, E-E, vault door section, plan of vault door. Approved by Army Installation Division / National Guard Bureau. Unclear why this drawing is included — it references Waller Depot in Richmond, not the Emporia armory. Likely an inadvertent attachment included in the historical file for reference on vault construction details."
+      },
+      {
+        "sheet_number": "ATTACH-07",
+        "title": "Small Arms Storage Vault — Vault Plan, Sections, and Vault Door Details (duplicate)",
+        "discipline": "architecture",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 7,
+        "reading_notes": "Appears to be a duplicate or second copy of ATTACH-06 (same Kenneth P. Werner vault drawing). Identical content. Possibly a different revision or reproduction copy."
+      },
+      {
+        "sheet_number": "ATTACH-08",
+        "title": "Vehicle Marshaling Area Diagram",
+        "discipline": "civil_engineering",
+        "source_file": "ATTACHMENTS.pdf",
+        "page": 8,
+        "reading_notes": "Schematic site diagram showing a Vehicle Marshaling Area. Dimensions: 1680' long access lane, 200' wide, with 435' and 50' and 680' sub-dimensions for parking/staging areas. Shows 'Air & Rail Ops Bldg (See Detail)'. High mast lighting noted. Seal visible (appears to be Army Corps / USACE-related). This may be a DMA facility expansion concept or reference for another related facility — not directly related to the Emporia Readiness Center HVAC scope."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "As-built survey shows building footprint but no labeled area. Exhibit D HVAC drawing is corrupt and unreadable. No square footage stated in any text source."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "ATTACHMENTS.pdf page 3 (Emporia Armory as-built, 1993)",
+        "quote": null,
+        "sheets": [
+          "ATTACH-03"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Complete replacement of all HVAC units (type/make not specified in available drawings — Exhibit D corrupt)",
+          "Ductwork analysis, removal and replacement or cleaning",
+          "Piping analysis, removal and replacement or cleaning",
+          "Bipolar ionization system",
+          "High efficiency filtration",
+          "UV lighting (pathogen mitigation)",
+          "Visible lighting (pathogen mitigation)",
+          "Cold fusion technology (pathogen mitigation)",
+          "Building Automation System (BAS) upgrade with humidity and temperature controls",
+          "HVAC zoning for airborne particle migration reduction"
+        ],
+        "electrical": [
+          "Minor associated electrical work (scope extent not detailed in SOW)"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Existing CO2 suppression system (reference only — from ATTACHMENTS.pdf; not in HVAC upgrade scope)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

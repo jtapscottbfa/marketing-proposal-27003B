@@ -1,0 +1,696 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "cmsa_lay_down",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/jlab/cmsa_lay_down/RFQ Letter package.pdf",
+      "type": "sow",
+      "sha256": "7a39a64936afff5558da137d4d64ac3b2126aa86f8ecc39922217a83054fdbc3",
+      "included": true,
+      "notes": "JLab RFQ letter (May 13, 2021) + A-E Project Task Order scope for Lay Down Yard Expansion; Contract JSA 21-C0683 Task Order 1"
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/cmsa_lay_down/2021-05-31_VHB_Jefferson Lab CMSA Laydown Yard.pdf",
+      "type": "contract",
+      "sha256": "41a2d1b5c462bce43c868589334d29412fcbed1af9c362ea1c44e0d9f06fe912",
+      "included": true,
+      "notes": "VHB civil engineering subconsultant Client Authorization / scope and fee proposal; Tasks 1-3 for civil design services, total $87,196"
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/cmsa_lay_down/PWM21-116G JSA 21-R399547 Task Order 1 Proposal.pdf",
+      "type": "report",
+      "sha256": "6c2f0a487fc2e0e7bf57dc53ad22f1349fa1dc09caeaee953f21708e66c61d9a",
+      "included": true,
+      "notes": "G E T Solutions geotechnical subconsultant proposal; subsurface exploration & geotechnical engineering services, estimated cost $16,805.50"
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/cmsa_lay_down/10.08.2021 - CMSA Laydown Conceptual Design.pdf",
+      "type": "submittal",
+      "sha256": "9725654ac2d5a6b3b1769d6a2682f53246381c0435a505dace4f71d5e7e42510",
+      "included": true,
+      "notes": "BFA/VHB preliminary conceptual design report and drawings (dated Oct 7-8, 2021); three site layout options; initial opinion of cost; 22 pages + drawing set (C001-C005, EX-1 exhibit); VHB project 58665.00"
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/cmsa_lay_down/20211104 - CMSA Laydown Final Conceptual Design.pdf",
+      "type": "submittal",
+      "sha256": "5880bea9341c31d01814078af11f066254d531fe3ee219dfc6e910c913b75446",
+      "included": true,
+      "notes": "BFA/VHB final conceptual design report and drawings (dated Nov 4-8, 2021); 31 pages + full drawing set (C001 existing conditions, C101/C111 Option 1, C201/C211 Option 2, C301/C311/C312/C313 Option 3, EX-1/EX-2/EX-3 exhibits); revised opinion of cost; 39 drawing sheets total"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD or separate narrative document; SOW is the RFQ task order. Design documents are conceptual only (no 35%/60%/100%/Final design deliverables present). Both conceptual design submittals (preliminary and final) are present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Jefferson Lab CMSA Yard Expansion",
+      "source": "10.08.2021 Conceptual Design p.1",
+      "quote": "CMSA YARD EXPANSION / Jefferson Laboratory, Newport News, VA",
+      "corroboration": [
+        {
+          "source": "10.08.2021 Conceptual Design p.1",
+          "claim": "CMSA YARD EXPANSION - Jefferson Laboratory, Newport News, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFQ Letter package p.1",
+          "claim": "Project Title: Lay Down Yard Expansion",
+          "agrees": true
+        },
+        {
+          "source": "VHB subconsultant proposal",
+          "claim": "Jefferson Lab – CMSA Expansion",
+          "agrees": true
+        },
+        {
+          "source": "20211104 Final Conceptual Design p.1",
+          "claim": "CMSA YARD EXPANSION / Jefferson Laboratory, Newport News, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Science Associates (JSA) / Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "source": "RFQ Letter package p.1",
+      "quote": "between Client and Jefferson Science Associates (\"JSA\" or \"Owner\")",
+      "corroboration": [
+        {
+          "source": "RFQ Letter package p.1",
+          "claim": "Jefferson Science Associates (JSA or Owner)",
+          "agrees": true
+        },
+        {
+          "source": "VHB subconsultant proposal",
+          "claim": "Jefferson Science Associates (JSA or Owner)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "U.S. Department of Energy / Jefferson Science Associates (JSA)",
+      "source": "10.08.2021 Conceptual Design drawing annotations",
+      "quote": "PARCEL #172000110 DOE (108.265 ACRE)",
+      "corroboration": [
+        {
+          "source": "Drawing annotations (C001-C003)",
+          "claim": "DOE parcel ownership noted on all option drawings",
+          "agrees": true
+        },
+        {
+          "source": "RFQ Letter package",
+          "claim": "JSA 21-C0683 as contracting vehicle with JSA as owner",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "12000 Jefferson Avenue, Newport News, VA 23606",
+      "facility_name": "Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "source": "20211104 Final Conceptual Design drawing title blocks",
+      "quote": "12000 Jefferson Avenue / Newport News, VA 23606",
+      "corroboration": [
+        {
+          "source": "20211104 Final Conceptual Design drawing title blocks",
+          "claim": "12000 Jefferson Avenue, Newport News, VA 23606",
+          "agrees": true
+        },
+        {
+          "source": "10.08.2021 Conceptual Design drawing title blocks",
+          "claim": "12000 Jefferson Avenue, Newport News, VA 23606",
+          "agrees": true
+        },
+        {
+          "source": "VHB subconsultant proposal",
+          "claim": "Thomas Jefferson National Accelerator Facility (Jefferson Lab) in Newport News, Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "JSA 21-C0683 / Task Order 1 (JSA 21-R399547)",
+      "source": "RFQ Letter package p.1",
+      "quote": "JSA 21-C0683 Request for Proposal Lay down Yard (Task Order 001)",
+      "corroboration": [
+        {
+          "source": "RFQ Letter package p.1",
+          "claim": "JSA 21-C0683, Task Order 001",
+          "agrees": true
+        },
+        {
+          "source": "VHB subconsultant proposal",
+          "claim": "contract number JSA 21-R399547 between Client and Jefferson Science Associates",
+          "agrees": true
+        },
+        {
+          "source": "GET geotechnical proposal",
+          "claim": "JSA 21-R399547 Task Order 1",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "JSA 21-C0683",
+      "source": "RFQ Letter package p.1",
+      "quote": "IDIQ Subcontract No. JSA 21-C0683",
+      "corroboration": [
+        {
+          "source": "RFQ Letter package",
+          "claim": "JSA 21-C0683",
+          "agrees": true
+        },
+        {
+          "source": "10.08.2021 Conceptual Design title page",
+          "claim": "Contract: JSA 21-C0683",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "Task Order 1 / JSA 21-R399547",
+      "source": "RFQ Letter package",
+      "quote": "Task Order No. 1 to prepare construction documents",
+      "corroboration": [
+        {
+          "source": "RFQ Letter package",
+          "claim": "Task Order No. 1",
+          "agrees": true
+        },
+        {
+          "source": "10.08.2021 Conceptual Design title page",
+          "claim": "Task Order: #1",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 78200,
+      "unit": "gsf",
+      "notes": "This is the gravel laydown expansion area size per geotechnical proposal. Final conceptual design showed three options: Option 1 = 1.85 ac (80,586 SF), Option 2 = 2.00 ac (87,120 SF), Option 3 = 2.80 ac (121,968 SF). The 78,200 SF appears in the GET proposal as the expansion target.",
+      "source": "GET geotechnical proposal",
+      "quote": "adding a 78,200 ft2 gravel laydown area to the east of the existing CMSA",
+      "corroboration": [
+        {
+          "source": "GET geotechnical proposal",
+          "claim": "78,200 ft2 gravel laydown area",
+          "value": 78200,
+          "agrees": true
+        },
+        {
+          "source": "20211104 Final Conceptual Design p.2",
+          "claim": "Option 1: 1.85 acres gravel yard expansion",
+          "value": 80586,
+          "agrees": false,
+          "note": "Final conceptual Option 1 = 1.85 ac ≈ 80,586 SF"
+        },
+        {
+          "source": "20211104 Final Conceptual Design p.2",
+          "claim": "Option 2: 2.00 acres gravel yard expansion",
+          "value": 87120,
+          "agrees": false,
+          "note": "Final conceptual Option 2 = 2.00 ac ≈ 87,120 SF"
+        },
+        {
+          "source": "20211104 Final Conceptual Design p.3",
+          "claim": "Option 3: 2.80 acres gravel yard expansion",
+          "value": 121968,
+          "agrees": false,
+          "note": "Final conceptual Option 3 = 2.80 ac ≈ 121,968 SF"
+        },
+        {
+          "source": "RFQ Task Order scope",
+          "claim": "Size drainage structures to accommodate approximately 80-120K SF square feet of future impervious surfaces/structures",
+          "value_range": "80000-120000",
+          "agrees": true,
+          "note": "RFQ range brackets all options"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 900000,
+      "currency": "USD",
+      "source": "RFQ Letter package task order scope",
+      "quote": "Project Budget: $800K to $1,000K. This includes design, construction and construction oversight by the A/E.",
+      "corroboration": [
+        {
+          "source": "RFQ Letter package task order scope",
+          "claim": "$800K to $1,000K including design, construction, and CA",
+          "agrees": true
+        },
+        {
+          "source": "20211104 Final Conceptual Design p.18",
+          "claim": "Option 1: $653,462; Option 2: $756,102; Option 3: $1,185,346 (civil+electrical construction)",
+          "note": "Final conceptual cost estimates; Option 3 exceeds budget cap",
+          "agrees": "partial"
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA's design fee to JSA not captured in source documents. VHB subconsultant total $87,196 for Tasks 1-3; GET geotechnical $16,805.50. BFA prime fee not stated."
+      },
+      "subconsultant_fees": {
+        "vhb_civil": {
+          "value": 87196,
+          "currency": "USD",
+          "source": "VHB subconsultant proposal",
+          "quote": "Total: $87,196"
+        },
+        "get_geotechnical": {
+          "value": 16805.5,
+          "currency": "USD",
+          "source": "GET geotechnical proposal",
+          "quote": "ESTIMATED TOTAL ALL SERVICES $16,805.50"
+        }
+      },
+      "started_date": {
+        "value": "2021-05",
+        "precision": "month",
+        "source": "RFQ Letter package",
+        "quote": "Submit your proposal to my attention no later than close of business on or before May 27, 2021",
+        "notes": "RFQ issued May 13, 2021; NTP expected shortly after. Exact NTP date not in source documents."
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "TBD per RFQ; estimated completion not stated. Schedule shows concept (3 weeks), 35% (4 weeks), 60% (3 weeks), 100% (2 weeks), Final (1 week) design phases."
+      },
+      "milestones": {
+        "conceptual_design_preliminary": "2021-10-08",
+        "conceptual_design_final": "2021-11-04"
+      },
+      "change_orders": [],
+      "deliverables_in_sources": [
+        "Conceptual Design (preliminary + final)",
+        "Opinion of Probable Construction Costs",
+        "Three site layout options"
+      ],
+      "deliverables_per_scope": [
+        "35% Preliminary Design",
+        "60% Definite Design",
+        "100% Design",
+        "Final Signed Design Documents",
+        "Post-Design/CA (TBD)"
+      ]
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction not contracted yet at time of documents; design services only captured. Estimated construction cost (civil + electrical): Option 1 $653,462, Option 2 $756,102, Option 3 $1,185,346 (final conceptual estimates)."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "notes": "RFQ scope requires BFA to prepare construction documents for competitive bidding. Construction CA included in project budget per RFQ but not separately scoped in sources."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "civil_engineering",
+      "electrical_engineering",
+      "geotechnical_engineering",
+      "surveying_mapping"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "civil_erosion_sediment",
+      "water_stormwater_management",
+      "electrical_lighting",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_lighting_exterior",
+      "site_paving",
+      "site_grading_drainage",
+      "site_stormwater_bmps",
+      "site_walls_fencing"
+    ],
+    "construction_scope": [
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_paving",
+      "exterior_walls_fencing",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_idiq",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "jlab",
+    "jefferson_lab",
+    "department_of_energy",
+    "doe",
+    "newport_news",
+    "laydown_yard",
+    "site_civil",
+    "gravel_yard",
+    "stormwater",
+    "nuclear_facility",
+    "radiation_monitor",
+    "vhb_subconsultant",
+    "task_order",
+    "hampton_roads"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Bruce Bowman",
+      "role_on_project": "client_manager",
+      "source": "10.08.2021 Conceptual Design report prepared by section"
+    },
+    {
+      "name": "Richard Williams, PE",
+      "role_on_project": "electrical_engineer_pm",
+      "source": "10.08.2021 Conceptual Design report prepared by section"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "C001",
+        "title": "Site Plan - Option 1",
+        "discipline": "civil_engineering",
+        "document": "10.08.2021 - CMSA Laydown Conceptual Design.pdf",
+        "reading_notes": "Preliminary conceptual Option 1 site plan. Shows existing CMSA yard with new 460' x 170' gravel expansion area to the east, separated from existing yard by proposed Level 2 Constructed Wetland BMP (~30,000 SF assumed). New extended detention basin (~20,000 SF) to north. Chain link fence with powered sliding gate/card reader. Existing compactors relocated. Shows existing site utilities: 8\" PVC, 12\" DI, SS lines, CRYO lines, power conduit. Existing woodland treeline marked. JLab campus 2 DOE parcels noted. Sheet 1 of 5. Scale 1:60 approx. Designed by WAF, checked by NCH. Oct 7, 2021. Not approved for construction."
+      },
+      {
+        "sheet_number": "C002",
+        "title": "Site Plan - Option 2",
+        "discipline": "civil_engineering",
+        "document": "10.08.2021 - CMSA Laydown Conceptual Design.pdf",
+        "reading_notes": "Preliminary conceptual Option 2. 460' x 170' gravel expansion contiguous with existing yard; BMP moved to east. Continuous paved surface. Extended detention basin (~20,000 SF) to north, Level 2 Constructed Wetland (~30,000 SF) to east/southeast. Compactors relocated. Future building and parking noted. Sheet 2 of 5."
+      },
+      {
+        "sheet_number": "C003",
+        "title": "Site Plan - Option 3",
+        "discipline": "civil_engineering",
+        "document": "10.08.2021 - CMSA Laydown Conceptual Design.pdf",
+        "reading_notes": "Preliminary conceptual Option 3. Larger expansion 460' x 170' area. Independent BMPs to north and south. Level 2 Constructed Wetland (~15,000 SF) and Extended Detention Basin (~10,000 SF). New drainage ditch (1,100' long) to SE required; wetland impact. Sheet 3 of 5."
+      },
+      {
+        "sheet_number": "C004",
+        "title": "Drainage Profile - Option 3 (1 of 2)",
+        "discipline": "civil_engineering",
+        "document": "10.08.2021 - CMSA Laydown Conceptual Design.pdf",
+        "reading_notes": "Drainage profile for Option 3 outfall ditch. Shows 0.57% slope (inadequate—would need 0.20% or less). Notes: at 0.20% slope, ditch prone to retaining water, requires increased excavation and wetland impacts. Key civil engineering challenge for Option 3. Sheet 4 of 5."
+      },
+      {
+        "sheet_number": "C005",
+        "title": "Drainage Profile - Option 3 (2 of 2)",
+        "discipline": "civil_engineering",
+        "document": "10.08.2021 - CMSA Laydown Conceptual Design.pdf",
+        "reading_notes": "Continuation of Option 3 drainage profile. Shows wetland area crossing. Sheet 5 of 5. VHB project 58665.00."
+      },
+      {
+        "sheet_number": "C001",
+        "title": "Existing Conditions Plan",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Final conceptual existing conditions plan. Detailed existing site survey with spot elevations (VHB limited on-ground survey to verify JLab-provided compiled survey). Shows existing CMSA gravel laydown yard, buildings 32/34/52, utility corridors (SS, W, CRYO, ELEC, conduit), drainage structures with inverts, wetland area, woodland treeline. Notes: (1) existing conditions based on compiled survey from JLab; (2) horizontal/vertical control from JLab site control. JLab title in drawings is 'Jefferson Lab Central Material Storage Area.' Sheet 1 of 9. Nov 8, 2021."
+      },
+      {
+        "sheet_number": "C101",
+        "title": "Site Plan - Option 1",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Final conceptual Option 1 site plan. Gravel yard expansion = 1.85 AC; approximate limits of disturbance = 3.52 AC. Expansion area 460' x 170'. New extended detention basin (~20,000 SF assumed), Level 2 Constructed Wetland (~30,000 SF assumed). Powered sliding gate with card reader. 250W LED light poles with radiation monitors (typical). Chain link fence (7' with barbed wire per report). Gravel surface: 9\" stone over woven geotextile. Min 1.0% slope. Sheet 2 of 9. Nov 8, 2021."
+      },
+      {
+        "sheet_number": "C111",
+        "title": "Grading Profile - Option 1",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Grading profile for Option 1. Shows existing grade of existing laydown yard, grading through extended detention basin, and laydown yard expansion with proposed grade. Min elevation within proposed yard = 34.00 per report. Sheet 3 of 9."
+      },
+      {
+        "sheet_number": "C201",
+        "title": "Site Plan - Option 2",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Final conceptual Option 2 site plan. Gravel yard expansion = 2.00 AC; approximate limits of disturbance = 3.56 AC. Expansion 460' x 189'. Level 2 Constructed Wetland with Clay Liner (~30,000 SF) to east. Contiguous laydown surface. Sheet 4 of 9. Nov 8, 2021."
+      },
+      {
+        "sheet_number": "C211",
+        "title": "Grading Profile - Option 2",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Grading profile for Option 2. Shows cut condition to east, minimum elevation ~31.5 at eastern edge. Clay liner required adjacent to wetlands. Sheet 5 of 9."
+      },
+      {
+        "sheet_number": "C301",
+        "title": "Site Plan - Option 3",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Final conceptual Option 3 site plan. Gravel yard expansion = 2.80 AC; limits of disturbance = 5.23 AC. Expansion 460' x 265'. Independent BMPs north and south: Level 2 Constructed Wetland (~12,000 SF) north, Extended Detention Basin with Clay Liner (~10,000 SF) south. Grade break with drainage swale to southern BMP and trench drain. Sheet 6 of 9. Nov 8, 2021."
+      },
+      {
+        "sheet_number": "C311",
+        "title": "Grading Profile - Option 3 (1 of 3)",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Option 3 grading profile section 1. Shows laydown yard expansion grade from existing yard through expansion area. Sheet 7 of 9."
+      },
+      {
+        "sheet_number": "C312",
+        "title": "Grading Profile - Option 3 (2 of 3)",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Option 3 grading profile section 2. Outfall ditch profile at 0.30% slope. Crosses wetland area. Dual culverts with endwalls. Sheet 8 of 9."
+      },
+      {
+        "sheet_number": "C313",
+        "title": "Grading Profile - Option 3 (3 of 3)",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Option 3 grading profile section 3. Continuation of outfall route to receiving ditch north of building 23. Profile at 0.18% slope. Sheet 9 of 9."
+      },
+      {
+        "sheet_number": "EX-1",
+        "title": "Site Plan Exhibit - Option 1",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Presentation-quality exhibit of Option 1 with light pole spacing dimensions (100'-9\" typical bay). Shows 250W LED lights with radiation monitors (typical). Sheet 2 of 39 exhibit set. Nov 8, 2021."
+      },
+      {
+        "sheet_number": "EX-2",
+        "title": "Site Plan Exhibit - Option 2",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Presentation-quality exhibit of Option 2 with light pole spacing. Sheet 3 of 39 exhibit set."
+      },
+      {
+        "sheet_number": "EX-3",
+        "title": "Site Plan Exhibit - Option 3",
+        "discipline": "civil_engineering",
+        "document": "20211104 - CMSA Laydown Final Conceptual Design.pdf",
+        "reading_notes": "Presentation-quality exhibit of Option 3. Sheet 6 of 39 in exhibit set context. Wetland area, extended detention basin with clay liner, and trench drain all shown. Storm pipe with endwalls. Limits of clearing noted."
+      }
+    ],
+    "facts_derived": {
+      "site_expansion_area_option1": {
+        "value": 1.85,
+        "unit": "acres",
+        "value_sf": 80586,
+        "source": "20211104 Final Conceptual Design p.2 and drawing C101",
+        "quote": "1.85 acres gravel yard expansion 3.52 acres of total disturbed area"
+      },
+      "site_expansion_area_option2": {
+        "value": 2.0,
+        "unit": "acres",
+        "value_sf": 87120,
+        "source": "20211104 Final Conceptual Design p.2 and drawing C201",
+        "quote": "2.00 acres gravel yard expansion 3.56 acres of total disturbed area"
+      },
+      "site_expansion_area_option3": {
+        "value": 2.8,
+        "unit": "acres",
+        "value_sf": 121968,
+        "source": "20211104 Final Conceptual Design p.3 and drawing C301",
+        "quote": "2.80 acres gravel yard expansion 5.25 acres of total disturbed area"
+      },
+      "expansion_dimensions": {
+        "option1": "460' x 170'",
+        "option2": "460' x 189'",
+        "option3": "460' x 265'",
+        "source": "Drawing annotations C101, C201, C301"
+      },
+      "site_surface_type": {
+        "value": "Gravel laydown (9\" crushed stone over woven geotextile subgrade stabilization)",
+        "source": "20211104 Final Conceptual Design p.1",
+        "quote": "Gravel surface will match that of the existing yard with 9\" of stone over a woven geotextile for subgrade stabilization."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "explicit_null",
+        "notes": "Site civil project; no buildings. Open gravel laydown area only."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "plumbing": [],
+        "electrical": [
+          "13 new 250W LED light poles (20 ft aluminum, 277V single-phase circuits from panel ME1-H1 in Building 34)",
+          "Radiation monitors on light poles (120V via 277V:120V transformer, NEMA 3R, <500 VA)",
+          "New 1\" PVC conduit for lighting (~1,800 LF), 2\" PVC for communications (~1,700 LF), 3/4\" for security gate",
+          "Card reader security gate (relocated/rerouted from existing gate)",
+          "Power source: existing 480/277V panel ME1-H1 (3-phase, 100A) in Building 34 (Material Handling Equipment Storage)"
+        ],
+        "fire_protection": []
+      },
+      "fence_security": {
+        "value": "7' chain-link fence with barbed wire, matching existing; powered sliding gate with card reader",
+        "source": "20211104 Final Conceptual Design p.1",
+        "quote": "Gated, controlled access will be provided for the secure gravel yard expansion area. Proposed security fence will be 7' chain-link with barbed wire, matching existing."
+      },
+      "stormwater_bmps": {
+        "option1": "Level 2 Constructed Wetland (~30,000 SF) + Extended Detention Basin (~20,000 SF)",
+        "option2": "Level 2 Constructed Wetland with Clay Liner (~30,000 SF) + Extended Detention Basin (~20,000 SF)",
+        "option3": "Level 2 Constructed Wetland (~12,000 SF) + Extended Detention Basin with Clay Liner (~10,000 SF) + new 1,100' outfall ditch/culvert"
+      },
+      "opinion_of_cost_civil": {
+        "option1_final": {
+          "value": 653462,
+          "currency": "USD",
+          "source": "20211104 Final Conceptual Design p.18",
+          "quote": "Option 1: $ 653,462"
+        },
+        "option2_final": {
+          "value": 756102,
+          "currency": "USD",
+          "source": "20211104 Final Conceptual Design p.18",
+          "quote": "Option 2: $ 756,102"
+        },
+        "option3_final": {
+          "value": 1185346,
+          "currency": "USD",
+          "source": "20211104 Final Conceptual Design p.18",
+          "quote": "Option 3: $ 1,185,346"
+        },
+        "electrical_final": {
+          "value": 160088,
+          "currency": "USD",
+          "source": "20211104 Final Conceptual Design p.20",
+          "quote": "TOTAL FOR PROJECT ... $160,088"
+        },
+        "note": "Civil costs include 20% contingency; electrical included in all option totals. Initial conceptual (Oct 2021): Options 1/2/3 = $481,185/$515,348/$549,885 + Electrical $117,584."
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "description": "Expansion area differs across sources and options. GET geotechnical proposal states 78,200 SF as the expansion target; final conceptual design shows three options ranging from 80,586 SF (Option 1, 1.85 ac) to 121,968 SF (Option 3, 2.80 ac). The 78,200 SF is the early planning estimate; final design options bracket it.",
+      "claims": [
+        {
+          "source": "GET geotechnical proposal",
+          "value": "78,200 SF"
+        },
+        {
+          "source": "Final conceptual design Option 1",
+          "value": "80,586 SF (1.85 ac)"
+        },
+        {
+          "source": "Final conceptual design Option 2",
+          "value": "87,120 SF (2.00 ac)"
+        },
+        {
+          "source": "Final conceptual design Option 3",
+          "value": "121,968 SF (2.80 ac)"
+        }
+      ],
+      "resolution_chosen": "78,200 SF as primary value per GET geotechnical proposal (original expansion target)",
+      "rationale": "The 78,200 SF is the earliest quantified design target; the three conceptual options bracket the final scope. No final design documents showing which option was selected are in the source set."
+    },
+    {
+      "field_path": "phases.design.contract_value",
+      "severity": "major",
+      "description": "BFA prime design fee to JLab not captured in any source document. Only subconsultant fees (VHB $87,196, GET $16,805.50) and BFA electrical cost estimates are available. Total prime fee is unknown.",
+      "claims": [
+        {
+          "source": "VHB subconsultant proposal",
+          "value": "$87,196 (VHB civil subconsultant only)"
+        },
+        {
+          "source": "GET geotechnical proposal",
+          "value": "$16,805.50 (GET geotechnical subconsultant only)"
+        },
+        {
+          "source": "RFQ task order",
+          "value": "Budget $800K-$1,000K total project including design, construction, CA"
+        }
+      ],
+      "resolution_chosen": "status: missing",
+      "rationale": "No source document shows BFA's prime fee. VHB/GET subconsultant fees are documented as subcosts to BFA, not BFA's fee to JLab."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md",
+      "surveying_mapping": "narratives/disciplines/surveying_mapping.md"
+    }
+  }
+}

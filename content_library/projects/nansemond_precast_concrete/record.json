@@ -1,0 +1,483 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nansemond_precast_concrete",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/nansemond_precast_concrete/#22-015 Load Letter(1).pdf",
+      "type": "correspondence",
+      "sha256": "3309a4b8645a71c47c5bec7e0908d5b262e04189ee77944bcf070f5d60633cec",
+      "page_count": 1,
+      "included": true,
+      "notes": "Load calculation letter (BFA project #22-015) listing equipment loads, signed Blair Fish 8/09/22. Later revision of the April 2022 load letter."
+    },
+    {
+      "path": "00_admin/reference_projects/nansemond_precast_concrete/#P22-015 Load Letter(1).pdf",
+      "type": "correspondence",
+      "sha256": "fc0f0c72eb5aa780e931e6fa5e1311653891ff3f294651d64744382dfff9a26c",
+      "page_count": 1,
+      "included": true,
+      "notes": "Earlier draft load calculation letter (BFA project #P22-015), signed Blair Fisher 04/12/2022. Preliminary version."
+    },
+    {
+      "path": "00_admin/reference_projects/nansemond_precast_concrete/100369482A.pdf",
+      "type": "drawing_set",
+      "sha256": "32ba0e3a4c2fff445d8413a0728c7e5123d52590ec5f2bcb92f7dacd0cf784ee",
+      "page_count": 1,
+      "included": true,
+      "notes": "Hawkeye drawing No. 100369482A — equipment layout plan showing new ePAK 150 Machine Plant, power/water/air utility requirements per machine, overhead crane 20-ton. Referenced in BFA drawing E-105/E-106 general notes as source for power and internet requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/nansemond_precast_concrete/1436_001.pdf",
+      "type": "correspondence",
+      "sha256": "11142182dcde2c9f681fc5edca6c8d581395ab45b2c43f191e96b6704349d56a",
+      "page_count": 1,
+      "included": true,
+      "notes": "Handwritten meeting notes dated 2/17/22 labeled 'Nansemond Pre-Cast'. Documents owner's requirements: separately metered building, load letter from Dominion, floor plan layout, Square-D switchgear preference, all copper wiring, exposed conduit acceptable, turn-key design + construction pricing requested, equipment already bought. Design fee proposal only for now."
+    },
+    {
+      "path": "00_admin/reference_projects/nansemond_precast_concrete/Dominion Load Letter.pdf",
+      "type": "correspondence",
+      "sha256": "9272b011c9606c69ad6570cc1b0a6af4d51c497d79d03e875709867368153e77",
+      "page_count": 3,
+      "included": true,
+      "notes": "Dominion Energy Nonresidential Load Letter (Form 725071, July 2021), signed Michael E. Dixon 2/23/2023. Service: 4000A, 3-phase 4-wire 277/480V, 700 kcmil, 9 sets, underground, termination at switchgear, outdoor meter and service equipment. Project description: 'There will be a new ePAK 150 Machine Plant.' Includes full motor equipment and electrical load schedule."
+    },
+    {
+      "path": "00_admin/reference_projects/nansemond_precast_concrete/22-015.2023.01.26.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "cbeeddd3ccbfaa6504b89cba9a3ee8e4ca583015632b441b841e34304ccf69fc",
+      "page_count": 16,
+      "included": true,
+      "notes": "Final electrical drawings issued 2023-01-26 by Bowman Foster & Associates (BFA/TAM Consultants). 16 sheets (SHT 1 OF 16 through SHT 16 OF 16), all electrical discipline. Project: Overhead Crane Support Building #3, Nansemond Pre-Cast Concrete Co., 3737 Nansemond Pkwy, Suffolk VA 23435. BFA job no. MAC-22-0001."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Nansemond Pre-Cast Concrete Co. — Overhead Crane Support Building #3 Electrical",
+      "source": "drawing E-001 title block",
+      "quote": "OVERHEAD CRANE SUPPORT BUILDING #3 NANSEMOND PRE-CAST CONCRETE CO.",
+      "corroboration": [
+        {
+          "source": "drawing E-001 title block",
+          "claim": "OVERHEAD CRANE SUPPORT BUILDING #3 NANSEMOND PRE-CAST CONCRETE CO.",
+          "value": "Nansemond Pre-Cast Concrete Co. — Overhead Crane Support Building #3 Electrical",
+          "agrees": true
+        },
+        {
+          "source": "handwritten notes 1436_001",
+          "claim": "NANSEMOND PRE-CAST",
+          "value": "Nansemond Pre-Cast Concrete",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Nansemond Pre-Cast Concrete Co.",
+      "source": "drawing E-001 title block",
+      "quote": "NANSEMOND PRE-CAST CONCRETE CO.",
+      "corroboration": [
+        {
+          "source": "drawing E-001 title block",
+          "claim": "NANSEMOND PRE-CAST CONCRETE CO.",
+          "value": "Nansemond Pre-Cast Concrete Co.",
+          "agrees": true
+        },
+        {
+          "source": "handwritten notes 1436_001",
+          "claim": "NANSEMOND PRE-CAST",
+          "value": "Nansemond Pre-Cast",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Nansemond Pre-Cast Concrete Co.",
+      "source": "drawing E-001 title block",
+      "quote": "NANSEMOND PRE-CAST CONCRETE CO.",
+      "corroboration": [
+        {
+          "source": "drawing E-001 title block",
+          "claim": "NANSEMOND PRE-CAST CONCRETE CO.",
+          "value": "Nansemond Pre-Cast Concrete Co.",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Suffolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "3737 Nansemond Parkway, Suffolk, VA 23435",
+      "source": "drawing E-001 title block",
+      "quote": "3737 NANSEMOND PARKWAY SUFFOLK, VIRGINIA 23435",
+      "corroboration": [
+        {
+          "source": "drawing E-001 title block",
+          "claim": "3737 NANSEMOND PARKWAY SUFFOLK, VIRGINIA 23435",
+          "value": "3737 Nansemond Parkway, Suffolk, VA 23435",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-015",
+      "source": "#22-015 Load Letter(1).pdf filename and BFA drawing job no. MAC-22-0001",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "#22-015 Load Letter filename",
+          "claim": "22-015",
+          "value": "22-015",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-001 job no. field",
+          "claim": "MAC-22-0001",
+          "value": "MAC-22-0001 (drawing tracking number)",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Dominion load letter form has a 'Square Footage' field but it was left blank in the submitted form. Building dimensions visible in key plan but area not stated numerically in any source."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "electrical_service_size": {
+      "value": "4000A, 3-phase 4-wire 277/480V",
+      "source": "Dominion Energy Load Letter p.1",
+      "quote": "4000 A",
+      "corroboration": [
+        {
+          "source": "Dominion Energy Load Letter p.1",
+          "claim": "4000 A, 3 Phase 4 Wire Wye 277/480",
+          "value": "4000A, 3-phase 4-wire 277/480V",
+          "agrees": true
+        },
+        {
+          "source": "#22-015 Load Letter(1).pdf",
+          "claim": "4000 A",
+          "value": "4000A",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-01-26",
+        "source": "drawing set filename and title block",
+        "quote": "JAN. 26, 2023",
+        "notes": "Final drawings date. Design phase complete by this date.",
+        "corroboration": [
+          {
+            "source": "drawing E-001 title block",
+            "claim": "JAN. 26, 2023",
+            "value": "2023-01-26",
+            "agrees": true
+          },
+          {
+            "source": "drawing set filename",
+            "claim": "22-015.2023.01.26.FINAL DRAWINGS.pdf",
+            "value": "2023-01-26",
+            "agrees": true
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "hvac_air_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "suffolk_va",
+    "hampton_roads",
+    "precast_concrete",
+    "industrial_electrical",
+    "machine_plant",
+    "overhead_crane",
+    "dominion_energy_load_letter",
+    "private_commercial_client",
+    "epak_machine"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Blair Fisher / Blair Fish",
+      "role_on_project": "electrical_engineer",
+      "notes": "Signed BFA internal load letters (April 2022 and August 2022 versions)"
+    },
+    {
+      "name": "Michael E. Dixon",
+      "role_on_project": "project_manager_or_owner_contact",
+      "notes": "Signed Dominion Energy load letter 2/23/2023; likely owner's representative or BFA PM"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-001",
+        "title": "ELECTRICAL LEGEND, ABBREVIATIONS, GENERAL CONSTRUCTION NOTES, SIGNS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Cover sheet for all electrical work. Legend defines symbols for new vs. existing devices. General notes: contractor must verify all equipment locations/sizes; all conduit ≥1/2\" EMT unless noted; all power conductors #12 AWG minimum. Project identified as 'OVERHEAD CRANE SUPPORT BUILDING #3, NANSEMOND PRE-CAST CONCRETE CO., 3737 NANSEMOND PKWY, SUFFOLK VA 23435.' BFA job no. MAC-22-0001. Date: JAN. 26, 2023. SHT 1 OF 16. Engineer of record: TAM Consultants / Bowman Foster & Associates, signed and sealed."
+      },
+      {
+        "sheet_number": "E-002",
+        "title": "SPECIFICATIONS — PART 1 GENERAL, PART 2 PRODUCTS (interior distribution, conduit, wiring, devices)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Two-page specification embedded in drawing set. Covers general requirements, wiring (all copper, #10 AWG minimum stranded), EMT conduit, flexible conduit, outlet boxes, device plates, switches, disconnect switches, fuses. Mandates UL-listed products, 2-year warranty, color-coded conductors (208/120V: A=black/B=red/C=blue; 480/277V: A=brown/B=orange/C=yellow). SHT 2 OF 16."
+      },
+      {
+        "sheet_number": "E-003",
+        "title": "SPECIFICATIONS — PART 2 PRODUCTS (lighting), PART 3 EXECUTION",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of specifications. Interior lighting requirements: LED driver and dimming switch compatibility required, energy efficiency submittals required, occupancy sensors (NEMA WD 1, UL 20, single pole). Execution: NFPA 70 compliance, conduit in concrete encased. SHT 3 OF 16."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "PARTIAL LIGHTING PLAN — NEW WORK (Bay columns 1-7, rows B.5–C)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Partial lighting plan for upper-right bay area of building. LED industrial high-bay fixtures typical throughout. Occupancy sensors. Exit signs and emergency battery units. Branch circuit panels 2-40 and 2-38 labeled. Control room shown in upper section. Keyplan shows this is the NE quadrant of the building footprint. SHT 4 OF 16."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "PARTIAL LIGHTING PLAN — NEW WORK (Bay columns 7-13, rows B–C)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of lighting plan, center-right bay area. Control room shown at column 12/row C. Branch circuit 5-11 feeds control room lighting. Occupancy sensors typical, exit signs, emergency units. SHT 5 OF 16."
+      },
+      {
+        "sheet_number": "E-103",
+        "title": "PARTIAL LIGHTING PLAN — NEW WORK (Bay columns 1-7, rows A–B)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lighting plan lower-left bay quadrant. Branch circuits 2-36, 2-34, 2-32, 2-39 labeled. LED high-bays, occupancy sensors, exit signs, emergency units. SHT 6 OF 16."
+      },
+      {
+        "sheet_number": "E-104",
+        "title": "PARTIAL LIGHTING PLAN — NEW WORK (Bay columns 7-13, rows A–B)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lighting plan lower-right bay quadrant. Completes the 4-quadrant lighting plan coverage of the full building. SHT 7 OF 16."
+      },
+      {
+        "sheet_number": "E-105",
+        "title": "PARTIAL POWER PLAN — NEW WORK (Bay columns 1-7, rows B.5–C)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Power plan upper-left quadrant. ePAK machine, PipePlus, mixer, batch plant, cement silo power connections. Branch circuits labeled N-16, N-14, N-15, N-18, etc. 3-phase 480V equipment feeders. Construction notes reference Hawkeye drawing 100369482A Issue A and additional drawing 100375736 Issue A as source for power/internet requirements. High-speed internet conduit from control room. SHT 8 OF 16."
+      },
+      {
+        "sheet_number": "E-106",
+        "title": "PARTIAL POWER PLAN — NEW WORK (Bay columns 7-13, rows B–C)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Power plan upper-right quadrant. Smart Set machine, WM-3450 device, Telekin #1/#2/#3, control room power. COL overhead door with motor operator. Construction notes reference BFA feeder schedule sheets E-601/L-601. SHT 9 OF 16."
+      },
+      {
+        "sheet_number": "E-107",
+        "title": "PARTIAL POWER PLAN — NEW WORK (Bay columns 1-7, rows A–B)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Power plan lower-left quadrant. 15-ton and 20-ton overhead crane power feeders (3-phase 400A conductors visible). Butt welder unit, DTE Wiredraw machine, MBK machine, 50kW L-ion battery charger, compressors. Note 10 references using location of exterior electrical equipment from sheet E-601 to locate panelboards 'N', '1', '2', '3'; 30 kVA dry-type transformer. SHT 10 OF 16."
+      }
+    ],
+    "sheets_not_rendered": {
+      "note": "Sheets 11-16 (SHT 11-16 OF 16) were not rendered due to memory-cap discipline; expected content based on pattern: additional partial power plans (E-108+), feeder schedules (E-601 referenced), panelboard schedules, possibly one-line diagram. These are referenced in construction notes on rendered sheets.",
+      "expected_sheet_numbers": [
+        "E-108",
+        "E-109",
+        "E-110 or similar",
+        "E-601 (feeder schedule)",
+        "E-602 or similar (panelboard schedule)",
+        "one-line or riser diagram"
+      ]
+    },
+    "facts_derived": {
+      "floor_count": {
+        "value": 1,
+        "source": "drawings E-101 through E-107 (single-level plan views only)",
+        "quote": null,
+        "sheets": [
+          "E-101",
+          "E-102",
+          "E-103",
+          "E-104",
+          "E-105",
+          "E-106",
+          "E-107"
+        ]
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Building dimensions partially readable from keyplan (appears large industrial bay, approximately 240' x 210' estimate from grid spacing at 1/8\"=1'-0\" scale, but dimensions not labeled). Dominion load letter square footage field was left blank. No confirmed numeric area in any source."
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "4000A main service entrance, 3-phase 4-wire 277/480V, underground, switchgear termination (Dominion Load Letter)",
+          "700 kcmil service conductors, 9 sets per phase",
+          "Multiple 3-phase 480V motor feeders for heavy industrial equipment (cranes, mixers, ePAK machines, hydraulic units, compressors)",
+          "LED industrial high-bay interior lighting throughout (E-101 through E-104)",
+          "Occupancy sensors, exit signs, emergency battery units throughout",
+          "Control room with dedicated power and internet/data conduit",
+          "L-ion 50kW battery charger feeder (E-107)",
+          "COL overhead door motor operators",
+          "30 kVA dry-type transformer (E-107 note 10)",
+          "Multiple panelboards ('N', '1', '2', '3') fed from 4000A switchgear",
+          "2-ton and 15-ton and 20-ton overhead crane power (E-107; E-001 equipment layout plan)"
+        ],
+        "hvac": [
+          "Multiple 1-HP 480V 3-phase high-velocity industrial fans (noted on E-105, E-106, E-107 — coordinate location in field)"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_internal",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Load letter filenames",
+          "value": "22-015 (with P prefix on preliminary: P22-015)"
+        },
+        {
+          "source": "Drawing job number field",
+          "value": "MAC-22-0001"
+        }
+      ],
+      "resolution_chosen": "22-015 as BFA project number; MAC-22-0001 as drawing tracking number",
+      "rationale": "22-015 matches the load letter project reference convention (consistent with other BFA projects using YY-NNN format). MAC-22-0001 appears to be the drawing/contract number used by TAM Consultants for this project. Both are valid references to the same project."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

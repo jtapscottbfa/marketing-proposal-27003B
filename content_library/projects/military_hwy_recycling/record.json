@@ -1,0 +1,353 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "military_hwy_recycling",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/military_hwy_recycling/21-011.2021.05.10.FINAL ONE-LINE DIAGRAM.pdf",
+      "type": "drawing_set",
+      "sha256": "b54623fa9667889591d13a9024b9a0d1319fd65e8a92de4f6124cf3c6c4bfc92",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet 5kV one-line diagram for Military Highway Recycling, Chesapeake VA. Sheet E-601."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/military_hwy_recycling/Virginia Industrial Controls - 5kV One-Line Diagram - Sig.pdf",
+      "type": "contract",
+      "sha256": "241e615cdd78a6247d6b87f0b450864f5bc550cc41aa3709ea45047784d81028",
+      "page_count": 5,
+      "included": true,
+      "notes": "Professional Services Agreement between Virginia Industrial Controls (Client) and Bowman, Foster & Associates, Inc. (Provider). Subcontract price $2,000. Signed by client 5/3/21."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only two source documents present: one drawing sheet (5kV one-line diagram) and one contract (Professional Services Agreement). No BOD, SOW, specs, or narrative documents. Project is thinly documented."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Military Highway Recycling — 5kV One-Line Diagram",
+      "source": "Drawing E-601 title block",
+      "quote": "5KV ONE-LINE DIAGRAM FOR MILITARY HIGHWAY RECYCLING",
+      "corroboration": [
+        {
+          "source": "Drawing E-601 title block (sheet title area)",
+          "claim": "5KV ONE-LINE DIAGRAM FOR MILITARY HIGHWAY RECYCLING",
+          "value": "Military Highway Recycling — 5kV One-Line Diagram",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-601 title block (right column)",
+          "claim": "MILITARY HIGHWAY RECYCLING",
+          "value": "Military Highway Recycling",
+          "agrees": true
+        },
+        {
+          "source": "Professional Services Agreement, cover",
+          "claim": "Virginia Industrial Controls and BFA Form",
+          "value": null,
+          "agrees": true,
+          "notes": "Contract references project indirectly via Project/Delivery Order: 21-011"
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Virginia Industrial Controls",
+      "source": "Professional Services Agreement, §1",
+      "quote": "Virginia Industrial Controls (Client) and Bowman, Foster & Associates, Inc., the Professional Services Provider (Provider)",
+      "corroboration": [
+        {
+          "source": "Professional Services Agreement, §1",
+          "claim": "Virginia Industrial Controls (Client)",
+          "value": "Virginia Industrial Controls",
+          "agrees": true
+        },
+        {
+          "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+          "claim": "Owner: Gutterman's",
+          "value": "Gutterman's",
+          "agrees": false,
+          "notes": "Gutterman's is the Owner (end user/facility owner), not the Client in BFA's contract. BFA's direct client is Virginia Industrial Controls (the prime contractor)."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Gutterman's",
+      "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+      "quote": "Owner: Gutterman's",
+      "corroboration": [
+        {
+          "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+          "claim": "Owner: Gutterman's",
+          "value": "Gutterman's",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "Drawing E-601 title block",
+      "quote": "E-601  MILITARY HIGHWAY RECYCLING  CHESAPEAKE, VA",
+      "corroboration": [
+        {
+          "source": "Drawing E-601, extracted text",
+          "claim": "MILITARY HIGHWAY RECYCLING  CHESAPEAKE, VA",
+          "value": "Chesapeake, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "21-011",
+      "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+      "quote": "Project/Delivery Order: 21-011",
+      "corroboration": [
+        {
+          "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+          "claim": "Project/Delivery Order: 21-011",
+          "value": "21-011",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-601 title block",
+          "claim": "21.011 (project number in title block stamp area)",
+          "value": "21.011",
+          "agrees": true,
+          "notes": "Title block shows '21.011' consistent with '21-011' in contract."
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Prime Contract # field blank in contract. No contract number provided."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage information in available source documents. One-line diagram does not convey building area."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 2000,
+        "currency": "USD",
+        "source": "Professional Services Agreement, §4 and CONTRACT INFORMATION AND DEFINITIONS",
+        "quote": "In consideration of the complete and timely performance of the Services, Client shall pay to Provider a fee of Two Thousand Dollars, $2,000.00.",
+        "corroboration": [
+          {
+            "source": "Professional Services Agreement, §4",
+            "claim": "fee of Two Thousand Dollars, $2,000.00",
+            "value": 2000,
+            "agrees": true
+          },
+          {
+            "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+            "claim": "Subcontract Price: $2,000",
+            "value": 2000,
+            "agrees": true
+          }
+        ]
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Start Date field blank in contract. Client signature date 5/3/21 is the only date anchor; BFA signature line blank."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-05-10",
+        "source": "Drawing E-601 title block (plot date)",
+        "quote": null,
+        "notes": "Drawing file name includes '2021.05.10' and title block confirms date; completion date field blank in contract. Plot/issue date treated as proxy for deliverable completion.",
+        "corroboration": [
+          {
+            "source": "Drawing file name",
+            "claim": "2021.05.10 in filename '21-011.2021.05.10.FINAL ONE-LINE DIAGRAM.pdf'",
+            "value": "2021-05-10",
+            "agrees": true
+          },
+          {
+            "source": "Drawing E-601 title block",
+            "claim": "Plot Date: May 10, 2021 (visible in drawing margin)",
+            "value": "2021-05-10",
+            "agrees": true
+          },
+          {
+            "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+            "claim": "Completion Date: [blank]",
+            "value": null,
+            "agrees": null,
+            "notes": "Field left blank — no conflict, just missing data in contract."
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": 2000,
+        "currency": "USD",
+        "source": "computed",
+        "quote": null,
+        "notes": "No change orders found in sources; actual value equals contract value."
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "missing",
+      "notes": "BFA scope was electrical engineering/design only (one-line diagram production). No construction phase for BFA."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "commercial_subconsultant"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "chesapeake",
+    "industrial_recycling",
+    "5kv_one_line",
+    "medium_voltage",
+    "virginia_industrial_controls",
+    "guttermans"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Michael Dixon",
+      "role_on_project": "vice_president_signatory"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-601",
+        "title": "5kV ONE-LINE DIAGRAM",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Single-sheet 5kV medium-voltage one-line diagram for Military Highway Recycling facility in Chesapeake, VA. Produced by Bowman Foster & Associates (BFA), project number 21-011, plot date May 10, 2021. Drawn by RTD, checked by M°D, Project Engineer MLD. Utility source is Dominion Power underground cables at 13.2 kV. Service enters via (2) 5\" conduit (4 kV) feeder by Dominion Power into a metering cabinet. From metering cabinet, (3) 6\" conduit feeders by Dominion Power route to a Dominion Power transformer. From transformer, (2) 4\" conduit feeders by Dominion Power. Downstream distribution: (1) BENSHAW 2200VAC fused switch (rated continuous current 120A, application load 400A) and (1) BENSHAW 4200VAC starter (rated continuous current 120A, application load 1000HP). Both feed (3) #70 5kV conductors in conduit to a Westinghouse Lifeline D-type LAC induction motor rated 800HP, 4160V, 3-phase, 98 FLA. The diagram is labeled 'NO SCALE.' BFA seal/stamp visible in title block. Contract number field blank. The drawing appears to be the sole design deliverable for this engagement."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not determinable from one-line diagram."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not determinable from one-line diagram."
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "Dominion Power 13.2 kV underground cable service",
+          "Medium voltage (5kV class) distribution system",
+          "Metering cabinet",
+          "Dominion Power step-down transformer",
+          "BENSHAW 2200VAC fused switch (400A application load)",
+          "BENSHAW 4200VAC motor starter (1000HP application load)",
+          "Westinghouse Lifeline D-type LAC induction motor — 800HP, 4160V, 3-phase, 98 FLA"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.client_name / facts.owner_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Professional Services Agreement, §1",
+          "value": "Virginia Industrial Controls — identified as 'Client' (BFA's direct contracting party)"
+        },
+        {
+          "source": "Professional Services Agreement, CONTRACT INFORMATION AND DEFINITIONS",
+          "value": "Gutterman's — identified as 'Owner' (the facility owner above Virginia Industrial Controls in the contracting chain)"
+        }
+      ],
+      "resolution_chosen": "client_name = Virginia Industrial Controls; owner_name = Gutterman's",
+      "rationale": "The schema has separate client_name and owner_name fields specifically to handle this federal/prime/sub-chain distinction. Virginia Industrial Controls is BFA's direct client (the prime contractor/integrator); Gutterman's is the ultimate facility owner. Both values are captured in their respective fields. No data conflict — this is a chain-of-contract structure."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

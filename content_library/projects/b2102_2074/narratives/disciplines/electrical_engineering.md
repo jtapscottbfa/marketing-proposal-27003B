@@ -1,0 +1,7 @@
+# Electrical Engineering — Building 2102 and Building 2074 SCIF/Secured Facility Conversion, NAS Patuxent River
+
+Electrical engineering was identified as a required discipline for this project in the NAWCAD Scope of Work, and the user requirements documents for both buildings specify detailed electrical system requirements. However, BFA's confirmed design scope on this project — as evidenced by the available Basis of Design document — covers mechanical and plumbing only; no electrical BOD pages are present in the project file.
+
+The electrical requirements for the two buildings were extensive and specialized, including 400Hz 3-phase AC and 28VDC power conversion/generation systems (13 connections in Building 2074, 9 in Building 2102), power tracks running along all walls with outlets every 5 feet serving standard 60Hz and specialty frequencies, TV monitor power outlets at 5.5 ft AFF, LED lighting, SCIF grounding with non-conductive breaks, and access control integration. The SOW directed the construction contractor to engage a fire alarm subcontractor with 10-day advance notice to the Contracting Officer's Representative.
+
+Whether BFA provided electrical engineering services on this project in addition to mechanical and plumbing cannot be confirmed from the available source record. If BFA's scope included electrical design, the electrical BOD is not present in the project intake files. This gap should be addressed in a Pass 1 re-run if electrical drawings or an electrical BOD can be located.

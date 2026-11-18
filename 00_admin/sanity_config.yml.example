@@ -1,0 +1,64 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# sanity_config.yml — pursuit-specific knobs for scripts/publish/sanity_check.py
+#
+# Copy to `00_admin/sanity_config.yml` and populate as the pursuit progresses.
+# Engine-side checks (verify-residue, placeholder-residue, markdown-as-text,
+# addendum-acknowledged, form-existence) run regardless of this file. The two
+# pursuit-specific check categories below — prohibited content and proof
+# points — are no-ops when this file is absent or its blocks are empty.
+#
+# Both blocks accept the same entry shape:
+#   - pattern:  <literal substring; case-sensitive>
+#     label:    <human-readable identifier used in the report>
+#     severity: critical | major | warn      # default: critical
+#
+# Reasoning is documented in the VT post-mortem (SS-04). The patterns below
+# are illustrative — replace with your own. Do NOT commit a populated
+# sanity_config.yml to the engine repo (it's gitignored alongside
+# proposal_config.yml).
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Prohibited content ────────────────────────────────────────────────────────
+# Strings that MUST NOT appear in the rendered output. Common sources:
+#   - Subconsultants who withdrew mid-pursuit (sanity_check refuses to ship if
+#     their name leaks back into the narrative — e.g., from a stale snippet).
+#   - Wrong certifications / classifications (e.g., SDVOSB language in a DSBSD
+#     pursuit — VT had this exact failure mode).
+#   - Internal draft markers that don't match the placeholder regex (e.g.,
+#     "[INTERNAL]" is caught by the engine; firm-specific shorthand isn't).
+prohibited_patterns: []
+# Example:
+# prohibited_patterns:
+#   - pattern:  "TCI"
+#     label:    "TCI (withdrew — must not appear in submission)"
+#     severity: critical
+#   - pattern:  "SDVOSB"
+#     label:    "SDVOSB (incorrect — pursuit uses DSBSD-certified language)"
+#     severity: critical
+
+# ── Proof points (required substrings) ────────────────────────────────────────
+# Strings that MUST appear at least once in the rendered .docx output.
+# These are the *searchable* form of the proof points listed in
+# 00_admin/win_themes.md — derive them after Pink Team, when proof points
+# stabilize. Each entry is a stable substring (a number, an acronym, a
+# distinctive phrase), not the full proof-point sentence.
+#
+# Severity guidance:
+#   critical — required by an explicit RFP scoring criterion or a single
+#              load-bearing claim ("only firm with X")
+#   major    — supports a win theme but redundant with other proofs
+#   warn     — nice-to-have / discriminator
+#
+# These checks run only when at least one .docx exists in _output/.
+proof_points: []
+# Example (from VT 443882616):
+# proof_points:
+#   - pattern:  "32%"
+#     label:    "V-8 generator 32% under budget (WT-2)"
+#     severity: critical
+#   - pattern:  "DSBSD"
+#     label:    "DSBSD certification language (WT-5)"
+#     severity: critical
+#   - pattern:  "Botetourt"
+#     label:    "Botetourt County regional presence (WT-6)"
+#     severity: critical

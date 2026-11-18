@@ -1,0 +1,7 @@
+Electrical engineering scope for the ORF Parking Administration Building covers interior lighting, site lighting, power distribution, and life safety lighting for a new single-story, approximately 3,895-square-foot facility at Norfolk International Airport. Interior lighting is provided throughout by LED fixtures selected from a Lithonia Lighting product schedule, with fixture types including recessed luminaires in the administrative offices and admin suite, surface-mounted fixtures in the break room and storage areas, and downlights in the corridor. Fixture lumen outputs range from approximately 3,000 to 6,000 lumens, selected for each occupancy and room configuration.
+
+Power distribution is served by three panelboards — PB-36, PB-38, and PB-40 — distributing circuits across the building's zones. Emergency and exit lighting with integral battery backup units is provided at egress paths and the building entrance. Occupancy sensor switching is installed at office doorways to support energy performance.
+
+Site lighting consists of pole-mounted LED area luminaires (Lithonia DSX2, 135W, MVOLT, 4000K) distributed around the building perimeter and the adjacent surface parking area. The electrical site lighting plan reflects the building's operational context within a parking operations environment on the airport campus.
+
+Electrical design documents were produced at the 65% submittal stage as of October 2025, with lighting fixture cutsheets advanced to the 100% submittal stage.

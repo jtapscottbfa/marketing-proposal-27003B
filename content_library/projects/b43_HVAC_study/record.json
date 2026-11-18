@@ -1,0 +1,381 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b43_HVAC_study",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/b43_HVAC_study/25-014 BLDG 43 HVAC LOAD STUDY REPORT.pdf",
+      "type": "report",
+      "sha256": "cd425ea8a2f7f5ff2852ecc571610b28cde5522dbc880da344967a1b460e04b5",
+      "page_count": 19,
+      "included": true,
+      "notes": "HVAC Load Study Report for Building 43 VAMC Hampton; includes executive summary, building assembly details (embedded tables, not text-extractable), TRACE 700 load calculations (embedded, not text-extractable), and Trane CGAM equipment selection report. BFA project number 25-014 in filename."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "deferred",
+    "notes": "Single-document project: one engineering study/report only. No BOD, SOW, contract, specs, or drawings present. Study includes embedded TRACE 700 load calculation tables and building assembly details that did not render as text via pdftotext — visual content only. No financial/contract data available."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 43 HVAC Load Study",
+      "source": "Report cover page",
+      "quote": "BUILDING 43 HVAC LOAD STUDY",
+      "corroboration": [
+        {
+          "source": "Report cover page",
+          "claim": "BUILDING 43 HVAC LOAD STUDY",
+          "value": "Building 43 HVAC Load Study",
+          "agrees": true
+        },
+        {
+          "source": "Report filename",
+          "claim": "25-014 BLDG 43 HVAC LOAD STUDY REPORT.pdf",
+          "value": "Building 43 HVAC Load Study",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Department of Veterans Affairs — Hampton VA Medical Center",
+      "source": "Report cover page and equipment report header",
+      "quote": "VAMC Bldg 43",
+      "corroboration": [
+        {
+          "source": "Report cover page",
+          "claim": "100 Emancipation Dr, Hampton, Virginia 23667 (VA Medical Center campus address)",
+          "value": "US Department of Veterans Affairs — Hampton VA Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "Equipment report header (Trane CGAM product report)",
+          "claim": "Job Name: Bowman Foster - VAMC Bldg 43",
+          "value": "VAMC — VA Medical Center client",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Department of Veterans Affairs — Hampton VA Medical Center",
+      "source": "Report cover page",
+      "quote": "VAMC Bldg 43",
+      "corroboration": [
+        {
+          "source": "Equipment report header",
+          "claim": "Job Name: Bowman Foster - VAMC Bldg 43",
+          "value": "US Department of Veterans Affairs — Hampton VA Medical Center",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Hampton",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "100 Emancipation Dr, Hampton, Virginia 23667",
+      "source": "Report cover page",
+      "quote": "100 Emancipation Dr\nHampton, Virginia 23667.",
+      "corroboration": [
+        {
+          "source": "Report cover page",
+          "claim": "100 Emancipation Dr, Hampton, Virginia 23667",
+          "value": "100 Emancipation Dr, Hampton, VA 23667",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "25-014",
+      "source": "Report filename",
+      "quote": null,
+      "notes": "BFA project number 25-014 inferred from filename '25-014 BLDG 43 HVAC LOAD STUDY REPORT.pdf'. Not explicitly labeled as project number within report body."
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Report describes building as 2-story with crawl space and partial full-height basement; no gross square footage stated. TRACE 700 load calculation tables (pages 5-6) are embedded graphics not rendered by pdftotext — floor area may appear there."
+    },
+    "floor_count": {
+      "value": 2,
+      "source": "Report Executive Summary",
+      "quote": "The 2 story building rests on a crawl space with a partial, full height basement.",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary — Existing Building",
+          "claim": "The 2 story building rests on a crawl space with a partial, full height basement.",
+          "value": 2,
+          "agrees": true
+        },
+        {
+          "source": "Report Executive Summary — floor descriptions",
+          "claim": "First Floor: Houses administrative offices... Second Floor: Dedicated to computer repair workshops",
+          "value": 2,
+          "agrees": true
+        }
+      ]
+    },
+    "building_age_approx_years": {
+      "value": 90,
+      "source": "Report Executive Summary",
+      "quote": "approximately 90 year old Building 43",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary",
+          "claim": "approximately 90 year old Building 43",
+          "value": 90,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "study_conclusion": {
+      "value": "Replace existing failed 60-ton (now effectively 40-ton) chiller with new 40-ton Trane CGAM air-cooled chiller; no changes to existing chilled water distribution or pumping system.",
+      "source": "Report Executive Summary — In Conclusion",
+      "quote": "Due to the building's load requirements, the new cooling equipment capacity is 40 tons. Capacity was determined based on output of a block load calculation. The new chiller model (CGAM).",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary — In Conclusion",
+          "claim": "new cooling equipment capacity is 40 tons",
+          "value": "40 tons",
+          "agrees": true
+        },
+        {
+          "source": "Trane CGAM product report — General",
+          "claim": "Nominal Tonnage 40 tons",
+          "value": "40 tons",
+          "agrees": true
+        }
+      ]
+    },
+    "existing_chiller_capacity_nominal_tons": {
+      "value": 60,
+      "source": "Report Executive Summary — Existing Chilled Water System",
+      "quote": "cooling for the building is provided by a nominal 60 ton, 2 circuit (one 20-ton and one 40-ton) packaged, air cooled chiller",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary — Existing Chilled Water System",
+          "claim": "nominal 60 ton, 2 circuit (one 20-ton and one 40-ton)",
+          "value": 60,
+          "agrees": true
+        }
+      ]
+    },
+    "existing_chiller_condition": {
+      "value": "20-ton circuit inoperable; chiller installed over 20 years ago; operating at reduced 40-ton capacity only",
+      "source": "Report Executive Summary — Existing Chilled Water System",
+      "quote": "The chiller, installed over 20 years ago, is operating with reduced capacity as the 20-ton circuit is now inoperable.",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary — Existing Chilled Water System",
+          "claim": "The chiller, installed over 20 years ago, is operating with reduced capacity as the 20-ton circuit is now inoperable.",
+          "value": "20-ton circuit inoperable",
+          "agrees": true
+        }
+      ]
+    },
+    "recommended_replacement_chiller": {
+      "value": "Trane CGAM 40-ton air-cooled chiller, R-454B refrigerant, 460V/3-phase, dual circuit, 4 scroll compressors, BACNet MS/TP communications, ASHRAE 90.1-2019 compliant",
+      "source": "Trane CGAM Product Report",
+      "quote": "Chiller Model CGAM",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary — In Conclusion",
+          "claim": "The new chiller model (CGAM)",
+          "value": "Trane CGAM",
+          "agrees": true
+        },
+        {
+          "source": "Trane CGAM Product Report",
+          "claim": "Chiller Model CGAM, Nominal Tonnage 40 tons, Refrigerant Charge R-454B, Unit Voltage 460. volt 3 phases",
+          "value": "Trane CGAM 40-ton, R-454B, 460V/3-phase",
+          "agrees": true
+        }
+      ]
+    },
+    "report_date": {
+      "value": "2025-05-01",
+      "source": "Report cover page",
+      "quote": "FINAL STUDY\nMay 01, 2025",
+      "corroboration": [
+        {
+          "source": "Report cover page",
+          "claim": "May 01, 2025",
+          "value": "2025-05-01",
+          "agrees": true
+        },
+        {
+          "source": "Trane CGAM Product Report",
+          "claim": "Data Generation Date 5/1/2025",
+          "value": "2025-05-01",
+          "agrees": true
+        }
+      ]
+    },
+    "design_tool_used": {
+      "value": "TRACE 700",
+      "source": "Report Executive Summary — Scope of Work",
+      "quote": "The calculations were developed using trace 700 load software.",
+      "corroboration": [
+        {
+          "source": "Report Executive Summary — Scope of Work",
+          "claim": "The calculations were developed using trace 700 load software.",
+          "value": "TRACE 700",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-05-01",
+        "source": "Report cover page",
+        "quote": "FINAL STUDY\nMay 01, 2025",
+        "notes": "Study completion date used as proxy for service completion; no explicit contract completion date available."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "missing",
+      "notes": "Study scope only; no construction phase documented in source."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_central_plant"
+    ],
+    "building_systems": [
+      "hvac_chilled_water",
+      "hvac_air_distribution"
+    ],
+    "construction_scope": [],
+    "delivery_method": [
+      "standalone_project"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "study_only"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "vamc_hampton",
+    "chiller_replacement",
+    "hvac_load_study",
+    "building_43",
+    "veterans_affairs",
+    "trace_700",
+    "trane_cgam",
+    "hampton_roads"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawing set present. TRACE 700 load calculation output tables (embedded in report pages 5-6) did not render as text via pdftotext — floor areas may be present in those tables as image-only content."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "Report text",
+        "quote": "The 2 story building rests on a crawl space with a partial, full height basement.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing: Nominal 60-ton 2-circuit air-cooled chiller (20T circuit inoperable, effectively 40T operating)",
+          "Existing: 3 built-up air handling units with chilled water coils",
+          "Existing: Single constant-volume circulator pump",
+          "Existing: 3-way coil bypass valves (constant flow maintenance)",
+          "Recommended replacement: Trane CGAM 40-ton air-cooled chiller, R-454B refrigerant, dual circuit, 4 scroll compressors, BACNet MS/TP, 460V/3-phase"
+        ],
+        "electrical": [
+          "Chiller electrical: 460V/3-phase, 41.35 kW total power input, 95A MCA, 125A MOP (single point)"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

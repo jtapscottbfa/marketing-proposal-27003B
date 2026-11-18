@@ -1,0 +1,309 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "icc_range_hood",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/icc_range_hood/22-007.2202.02.03.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "7206a39e16b4eab192bf6152a22072e01ebba8babf7ad3f9aed19ad4c529f0e6",
+      "page_count": 2,
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Prosperity Eating Disorders and Wellness Center — ICC Building 7 Range Hood Installation",
+      "source": "drawing G-001 cover sheet title block",
+      "quote": "PROSPERITY EATING DISORDERS AND WELLNESS CENTER ICC BUILDING 7 - 1ST FLOOR NORFOLK, VA",
+      "corroboration": [
+        {
+          "source": "drawing G-001 cover sheet title block",
+          "claim": "PROSPERITY EATING DISORDERS AND WELLNESS CENTER ICC BUILDING 7 - 1ST FLOOR NORFOLK, VA",
+          "value": "Prosperity Eating Disorders and Wellness Center — ICC Building 7 Range Hood Installation",
+          "agrees": true
+        },
+        {
+          "source": "drawing ME101 sheet title",
+          "claim": "ICC BUILDING 7 RANGE HOOD INSTALLATION - NEW WORK",
+          "value": "ICC Building 7 Range Hood Installation — New Work",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "ICC (Integrated Caregivers Consortium / ICC Building 7)",
+      "source": "drawing G-001 cover sheet and ME101 sheet notes",
+      "quote": "ICC BUILDING 7 - 1ST FLOOR",
+      "corroboration": [
+        {
+          "source": "drawing G-001 title block",
+          "claim": "ICC BUILDING 7 - 1ST FLOOR",
+          "value": "ICC Building 7",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": null,
+      "status": "missing"
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "drawing G-001 cover sheet",
+      "quote": "ICC BUILDING 7 - 1ST FLOOR    NORFOLK, VA"
+    },
+    "project_number_internal": {
+      "value": "22-007",
+      "source": "drawing filename and title block",
+      "quote": null
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "Project is a single-room tenant improvement (Demo Kitchen, room 115); no GSF figure provided in drawings. Room appears small — roughly 200-300 SF estimated from 1/4\"=1' floor plan, but no dimensions labeled."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-02-03",
+        "source": "drawing G-001 title block issue date",
+        "quote": "ISSUE DATE   2/3/2022"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_healthcare"
+    ],
+    "program_type": [
+      "healthcare_behavioral"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "electrical_distribution",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "fire_suppression_scope",
+      "electronic_safety_security"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "norfolk",
+    "tenant_improvement",
+    "range_hood",
+    "healthcare_behavioral",
+    "eating_disorders",
+    "icc_building_7",
+    "small_scope",
+    "cha_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Romdhya Kumar",
+      "role_on_project": "engineer_of_record"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Cover sheet for 2-sheet drawing set. Project title: 'Prosperity Eating Disorders and Wellness Center, ICC Building 7 - 1st Floor, Norfolk, VA.' Scope descriptor reads 'Tenant Improvements for Prosperity Eating Disorders and Wellness Center.' Drawing index lists only G-001 (cover) and ME101 (new work plan). Issue date 2/3/2022. Title block shows 'CHA PROJECT' in the project number field — suggests this was issued for a Construction/CA phase service rather than a full design commission. Engineer seal: Romdhya Kumar, VA License 0402465820, dated 02/03/2022. BFA firm identified as 'BOWMAN FOSTER & ASSOCIATES, INC.' with Hampton Roads address. Vicinity map shows project location in Virginia Beach / Norfolk area near Camp Pendleton and Dam Neck FTC — vicinity map marker is labeled 'PROJECT LOCATION' at Virginia Beach, though title block states Norfolk, VA — minor geographic ambiguity (could be Virginia Beach address with Norfolk jurisdiction, or vice versa)."
+      },
+      {
+        "sheet_number": "ME101",
+        "title": "ICC BUILDING 7 RANGE HOOD INSTALLATION — NEW WORK",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Single combined mechanical/electrical sheet at 1/4\"=1'-0\" scale. Floor plan shows Demo Kitchen (room 115), Dining Room (116), Pantry (114), and RR (113) on the 1st floor of ICC Building 7. Scope is narrow: install one Greenheck fire-ready range hood (Model GRR5, 30\" wide unit, self-contained fire suppression system, NFPA 101 compliant, minimum 500 CFM) in the demo kitchen. Exhaust system: 12\" diameter duct routed through cabinets and exterior wall with spun aluminum vent, wall cap, backdraft damper, and bird screen. Range hood wall cap detail shown (no scale) at upper right. Electrical scope: provide NEMA 5-15R receptacle for range control panel (115V, 1A); one existing NEMA 14-50R receptacle for the new range hood (one existing NEMA 14-50R also serves existing range — relocation may be required); add 15A/1P circuit breaker at space 22 of Existing Panel '2' to serve new range control circuit. Panel '1' and Panel '2' to remain. Panel '2' schedule shown: 225A, 208/120V, 3-phase, 3-wire, surface mount. Fire alarm: provide pull station connected to hood per manufacturer's instructions. Construction notes 1-8 visible and legible. Note 8: 'Existing electrical room located in the corridor of Building 7.' Manufacturer reference: Square D, Type NQOB, Cat. #NQ0B-19128-2C1 for panelboard. This is a very small-scope tenant improvement — effectively a single appliance installation with associated exhaust and electrical rough-in."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing ME101",
+        "quote": null,
+        "sheets": [
+          "ME101"
+        ],
+        "note": "No area schedule or code summary provided. Project scope is limited to Demo Kitchen room 115 and associated exhaust penetration. Room dimensions not dimensioned on plan."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawing G-001 and ME101",
+        "quote": null,
+        "sheets": [
+          "G-001",
+          "ME101"
+        ],
+        "note": "Scope limited to 1st floor of ICC Building 7. Number of floors in the building overall is unknown from these drawings."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Greenheck Model GRR5 fire-ready range hood, 30\" wide, self-contained fire suppression (NFPA 101), minimum 500 CFM",
+          "12\" diameter exhaust duct through exterior wall with spun aluminum vent, wall cap, backdraft damper, bird screen"
+        ],
+        "electrical": [
+          "NEMA 14-50R receptacle — existing, serves existing range; one for new range hood (relocation may be required)",
+          "NEMA 5-15R receptacle (new) — 115V, 1A — range control panel",
+          "15A/1P circuit breaker added at space 22 of Existing Panel '2' (225A, 208/120V, 3-phase surface mount, Square D NQOB)",
+          "Existing Panel '1' and Panel '2' to remain"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Self-contained fire suppression system integral to range hood (Greenheck GRR5)",
+          "Fire alarm pull station connected to hood per manufacturer instructions"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.city",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing G-001 title block",
+          "value": "Norfolk, VA"
+        },
+        {
+          "source": "drawing G-001 vicinity map label",
+          "value": "Virginia Beach (vicinity map PROJECT LOCATION marker)"
+        }
+      ],
+      "resolution_chosen": "drawing G-001 title block",
+      "rationale": "Title block explicitly states 'NORFOLK, VA.' Vicinity map marker at 'PROJECT LOCATION' may simply reflect the approximate location shown on the regional map and could span the Virginia Beach / Norfolk boundary zone (Camp Pendleton / Dam Neck area is Virginia Beach). Title block is the authoritative address field."
+    }
+  ]
+}

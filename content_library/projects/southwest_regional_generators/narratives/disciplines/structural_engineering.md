@@ -1,0 +1,7 @@
+Structural engineering scope on this project was focused on foundation and support design for the two generator installations at the Southwest Virginia RRC in Abingdon, Virginia.
+
+Each generator required a concrete equipment pad designed to carry the static and dynamic loads of the generator unit and its integral diesel sub-base fuel tank. Pad design was coordinated with the generator equipment footprint and the maintenance access envelope established during electrical equipment selection.
+
+Each installation also includes a galvanized steel maintenance platform with stairs and railings, providing code-compliant operational and maintenance access to the generator equipment. The structural scope for these elements encompassed member sizing and connection design, with galvanized finishes specified to ensure corrosion resistance appropriate for exterior installations at an active military facility.
+
+The structural engagement on this project is classified as structural foundation work — a focused scope supporting the primary electrical engineering deliverables rather than a broad building structural systems role. Specific structural design details, including pad dimensions, reinforcement schedules, and platform framing member sizes, are not individually captured in the available source records. These elements are referenced in the project Basis of Design in the context of the overall generator installation scope and the associated concrete and metals construction trade packages.

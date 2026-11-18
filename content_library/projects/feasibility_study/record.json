@@ -1,0 +1,662 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "feasibility_study",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/2025-RFP-MRC01-Feasibility Study - Construction.pdf",
+      "type": "sow",
+      "sha256": "b467035bc81d2bddf0f87027be5ec7911bfec42c229afb16472f8e0261d275b9",
+      "included": true,
+      "notes": "RFP document 25-RFP-MRC01 issued April 25, 2025 by Melwood; contains scope of work and building program requirements."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/Melwood_ROM Cost Estimate_(22-April-2026).pdf",
+      "type": "cost_estimate",
+      "sha256": "ebabcb0627eae5a36dadc7591551a7c0a52a9c170f1411309a91f058069a08da",
+      "included": true,
+      "notes": "ROM Cost Estimate prepared by OACCI, designed by BFA, dated 4/22/2026. Total project cost ~$15M."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/Fire Protection Requirements for ROM Estimate Memo 4_21 Update.pdf",
+      "type": "report",
+      "sha256": "9b2aecee054d1d822fc08b0dd3cf62aeebd2a398a0b49a67519622c1613b3123",
+      "included": true,
+      "notes": "Fire protection memo from Jensen Hughes to Lorenso Wesley (BFA), dated 4/21/2025 Rev 1 (updated 4/21/2026). JH# 1AMD25001.000."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/MRC Activity Building Proposed Layout.pdf",
+      "type": "drawing_set",
+      "sha256": "64d8f01ebc13d4521aac898a353cae7a4553f3fbddafcc92a27e1bb390b0d251",
+      "included": true,
+      "page_count": 1,
+      "notes": "Schematic floor plan diagram of Multipurpose Activity Building — bubble diagram style, not stamped engineering drawing."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/BARN PLANS-C CLASSRMS.pdf",
+      "type": "drawing_set",
+      "sha256": "7311c9421ebbd2a767ca601858841de0d4278a346341d3cc4a34c78d48e0361b",
+      "included": true,
+      "page_count": 1,
+      "notes": "Classroom Building floor plan, Concept C, sheet SDA-002, dated 02-02-2026. Drawn by Bowman Foster & Associates + Andre Marquez Architects. Total floor area 4,492 SF."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/BARN PLANS-C GYM.pdf",
+      "type": "drawing_set",
+      "sha256": "bc04a9c658fb04f998803447e6051bdeec6b80fbcf5a99121fb63292ad229139",
+      "included": true,
+      "page_count": 1,
+      "notes": "Multipurpose Building floor plan, Concept C, sheet SDA-001, dated 02-02-2026. Drawn by Bowman Foster & Associates + Andre Marquez Architects. Total floor area 11,810 SF."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/potential bldg locations.pdf",
+      "type": "drawing_set",
+      "sha256": "e76c530dfb2aa4ee1322f27f21220f327a02150a49987dc93d251ce6920c6797",
+      "included": true,
+      "page_count": 1,
+      "notes": "Aerial site photograph with annotated building locations (red circle = Medical Bldg in existing cabin area; teal outline = Activity/Multi-purpose Bldg in open field near Caretaker's House). Address 9035 Ironsides Rd visible."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/MELWOOD SEPTIC 2025-1 SEWAGE EASEMENT PLAT.pdf",
+      "type": "drawing_set",
+      "sha256": "050295a37976dde611a17710ba7e928577f2b571b490a8704bfcfddbc0aa5cd4",
+      "included": true,
+      "notes": "Sewage easement plat for MRC septic systems, 2025. Civil/survey drawing."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/MELWOOD SEPTIC 2025-1 SEWAGE EASEMENT PLAT 2.pdf",
+      "type": "drawing_set",
+      "sha256": "8f4b94ac351896c6e4144c320c03eaf48191bf88c36af538d5e6ed3cc035a974",
+      "included": true,
+      "notes": "Second sewage easement plat variant (near-identical to first). Civil/survey drawing."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/MRC Septic systems drawing.pdf",
+      "type": "drawing_set",
+      "sha256": "d964c0ee7474bb6005174553d4cfadff2c9e507cf7ed36f7be1d83b3b9767380",
+      "included": true,
+      "notes": "Existing MRC septic systems map (Attachment C to RFP). Large-format site drawing."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/proposed septic locations.pdf",
+      "type": "drawing_set",
+      "sha256": "32bd6237f67561f03574dc7f2e3d9176f8dd1e1fbff2871f2ca7442f0fcc2bc6",
+      "included": true,
+      "notes": "Proposed septic locations for new buildings (Attachment G to RFP)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/FW_ 25#029_Melwood_Feasibility Study.msg",
+      "type": "correspondence",
+      "sha256": "7266600eba009d841a1ce7c71fd135928aaed0f6f377f1ee92d042047847cbd4",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Email correspondence file (.msg format). Not readable by extraction tools; contents unknown. Flagged for human review."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/melwood/feasibility_study/Attachment A - Pricing Schedule_25RFP-MRC01.xlsx",
+      "type": "unknown",
+      "sha256": "6fc7ddd0cff43816c3e85578f0c48b5a9dc42140117398f8345e61811c781239",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Excel pricing schedule (Attachment A to RFP). Not readable by extraction tools in this format; flagged for human review."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Melwood Recreation Center Feasibility Study — New Construction",
+      "source": "RFP 25-RFP-MRC01 p.1",
+      "quote": "FEASIBILITY STUDY - CONSTRUCTION",
+      "corroboration": [
+        {
+          "source": "RFP 25-RFP-MRC01 p.4 Section II §1",
+          "claim": "feasibility study for proposed new construction (Medical Cabin and Activity/Multipurpose Buildings) at the Melwood Recreation Center (MRC)",
+          "value": "Melwood Recreation Center Feasibility Study — New Construction",
+          "agrees": true
+        },
+        {
+          "source": "ROM Cost Estimate header",
+          "claim": "MELWOOD RECREATION CENTER ROM COST ESTIMATE",
+          "value": "Melwood Recreation Center",
+          "agrees": true
+        },
+        {
+          "source": "Fire Protection Memo subject line",
+          "claim": "Project: Melwood Recreation Center in Nanjemoy, MD",
+          "value": "Melwood Recreation Center",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Melwood Horticultural Training Center, Inc.",
+      "source": "RFP 25-RFP-MRC01 p.1",
+      "quote": "Melwood Horticultural Training Center, Inc. (Melwood) is seeking PROPOSALS for a feasibility study",
+      "corroboration": [
+        {
+          "source": "RFP 25-RFP-MRC01 p.1",
+          "claim": "Melwood Horticultural Training Center, Inc. (Melwood)",
+          "value": "Melwood Horticultural Training Center, Inc.",
+          "agrees": true
+        },
+        {
+          "source": "RFP 25-RFP-MRC01 footer",
+          "claim": "Melwood Horticultural Training Center, Inc.",
+          "value": "Melwood Horticultural Training Center, Inc.",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Melwood Horticultural Training Center, Inc.",
+      "source": "RFP 25-RFP-MRC01 p.1",
+      "quote": "Melwood Horticultural Training Center, Inc. (Melwood) is seeking PROPOSALS for a feasibility study",
+      "corroboration": [
+        {
+          "source": "RFP 25-RFP-MRC01 p.1",
+          "claim": "Melwood Horticultural Training Center, Inc.",
+          "value": "Melwood Horticultural Training Center, Inc.",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Nanjemoy",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "9035 Ironsides Rd, Nanjemoy, MD 20662",
+      "source": "RFP 25-RFP-MRC01 p.1 and Classroom Building drawing",
+      "quote": "located at 9035 Ironsides Rd. Nanjemoy, MD 20662",
+      "corroboration": [
+        {
+          "source": "RFP 25-RFP-MRC01 p.1",
+          "claim": "9035 Ironsides Rd. Nanjemoy, MD 20662",
+          "value": "9035 Ironsides Rd, Nanjemoy, MD 20662",
+          "agrees": true
+        },
+        {
+          "source": "RFP 25-RFP-MRC01 §IV Scope p.9",
+          "claim": "9035 Ironsides Rd. Nanjemoy, MD 20662",
+          "value": "9035 Ironsides Rd, Nanjemoy, MD 20662",
+          "agrees": true
+        },
+        {
+          "source": "RFP 25-RFP-MRC01 §II p.4",
+          "claim": "9305 Ironsides Rd. Nanjemoy, MD 20662",
+          "value": "9305 Ironsides Rd, Nanjemoy, MD 20662",
+          "agrees": false,
+          "note": "Typo variant — 9305 vs 9035. Building drawings and site map confirm 9035."
+        },
+        {
+          "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+          "claim": "9035 IRONSIDES RD. NANJEMOY, MD 20662",
+          "value": "9035 Ironsides Rd, Nanjemoy, MD 20662",
+          "agrees": true
+        },
+        {
+          "source": "Fire Protection Memo",
+          "claim": "9305 Ironsides Rd. Nanjemoy, MD 20662",
+          "value": "9305 Ironsides Rd, Nanjemoy, MD 20662",
+          "agrees": false,
+          "note": "Same 9305 typo variant as in RFP §II. Engineering drawings (SDA-001, SDA-002) and site aerial confirm 9035."
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "25-RFP-MRC01",
+      "source": "RFP 25-RFP-MRC01 p.1",
+      "quote": "25- RFP- MRC01",
+      "corroboration": [
+        {
+          "source": "RFP 25-RFP-MRC01 p.1",
+          "claim": "25-RFP-MRC01",
+          "value": "25-RFP-MRC01",
+          "agrees": true
+        },
+        {
+          "source": "FW_ 25#029_Melwood_Feasibility Study.msg filename",
+          "claim": "25#029",
+          "value": "25#029",
+          "agrees": false,
+          "note": "Email subject uses '25#029' — may be BFA's internal pursuit number rather than client solicitation number."
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 22661,
+      "unit": "gsf",
+      "source": "ROM Cost Estimate (22-April-2026)",
+      "quote": null,
+      "notes": "Total across all three buildings per ROM: 22,661 SF. Multipurpose Building = 11,814 SF (ROM) / 11,810 SF (drawing SDA-001); Classroom Building = 4,415 SF (ROM) / 4,492 SF (drawing SDA-002); Medical Building area not broken out separately in ROM.",
+      "corroboration": [
+        {
+          "source": "ROM Cost Estimate header row",
+          "claim": "22,661 SF total (11,814 + 4,415 + balance for Medical)",
+          "value": 22661,
+          "agrees": true
+        },
+        {
+          "source": "BARN PLANS-C GYM.pdf (SDA-001)",
+          "claim": "TOTAL FLOOR AREA: 11,810 SF",
+          "value": 11810,
+          "agrees": false,
+          "note": "Drawing shows 11,810 SF vs ROM 11,814 SF for Multipurpose Building — minor 4 SF rounding difference."
+        },
+        {
+          "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+          "claim": "TOTAL FLOOR AREA: 4492 SF",
+          "value": 4492,
+          "agrees": false,
+          "note": "Drawing shows 4,492 SF vs ROM 4,415 SF for Classroom Building — 77 SF discrepancy, minor."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No owner-stated program budget in source documents. ROM estimate is BFA/OACCI-generated cost estimate, not an owner-stated budget."
+    },
+    "estimated_construction_cost": {
+      "value": 13534290,
+      "currency": "USD",
+      "source": "ROM Cost Estimate (22-April-2026)",
+      "quote": null,
+      "notes": "ROM estimated construction cost (ECC) including design contingency and escalation. Label reads 'ESTIMATED CONSTRUCTION COST (ECC)'.",
+      "corroboration": [
+        {
+          "source": "ROM Cost Estimate (22-April-2026)",
+          "claim": "$ 13,534,290",
+          "value": 13534290,
+          "agrees": true
+        }
+      ]
+    },
+    "total_project_cost_rom": {
+      "value": 15023062,
+      "currency": "USD",
+      "source": "ROM Cost Estimate (22-April-2026)",
+      "quote": null,
+      "notes": "Total project cost per ROM including ECC + soft costs (F&E at 5% + design fees at 6%). Per-SF: $662.95/SF.",
+      "corroboration": [
+        {
+          "source": "ROM Cost Estimate (22-April-2026)",
+          "claim": "$ 15,023,062 $ 662.95",
+          "value": 15023062,
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "This record covers the feasibility study phase. Design fee not separately contracted yet; ROM estimate projects design fees at 6% of ECC (~$812,057 when design proceeds)."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "RFP 25-RFP-MRC01 §I §9",
+        "quote": "Any award resulting from this solicitation shall be for up to six (6) months, beginning upon Notice to Proceed",
+        "notes": "Six months = ~180 days. This is the feasibility study contract term, not a full design contract."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction not yet procured. This project is in feasibility study phase."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_institutional"
+    ],
+    "program_type": [
+      "recreational_community",
+      "healthcare_ambulatory"
+    ],
+    "program_subtype": [
+      "recreational_community"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "civil_site_design",
+      "civil_utilities"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "electrical_systems",
+      "plumbing_systems",
+      "fire_protection_systems",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "site_utilities",
+      "site_grading_drainage"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "earthwork_scope",
+      "utilities_scope",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_competitive"
+    ],
+    "award_type": [
+      "best_value"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "maryland",
+    "charles_county",
+    "nanjemoy",
+    "melwood",
+    "camp_accomplish",
+    "recreation_center",
+    "disability_services",
+    "feasibility_study",
+    "new_construction",
+    "rural_site",
+    "no_public_water",
+    "private_well",
+    "septic_system"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Lorenso Wesley",
+      "role_on_project": "project_manager",
+      "notes": "Named as BFA contact in fire protection memo addressed to 'Lorenso Wesley - Bowman, Foster & Associates'"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "SDA-001",
+        "title": "MULTIPURPOSE BUILDING FLOOR PLAN — CONCEPT C",
+        "discipline": "architecture",
+        "source_file": "BARN PLANS-C GYM.pdf",
+        "dated": "02-02-2026",
+        "reading_notes": "Single-story floor plan at 3/32\"=1'-0\". Overall dimensions 86'-4\" wide x 131'-6\" tall. Program includes stage with prop storage, custom storage, and under-stage storage; full basketball court with two half-court arcs (one painted circle visible); indoor rock wall area on west side; men's and women's restrooms on east side with lobby entry; storage room at south. Sheet is stamped by both Bowman Foster & Associates (Norfolk/Arlington VA) and Andre Marquez Architects. Client logos for Melwood and Children's National Hospital visible — suggests Children's National is a funding partner or program co-sponsor. No MEP content on this sheet."
+      },
+      {
+        "sheet_number": "SDA-002",
+        "title": "CLASSROOM BUILDING FLOOR PLAN — CONCEPT C",
+        "discipline": "architecture",
+        "source_file": "BARN PLANS-C CLASSRMS.pdf",
+        "dated": "02-02-2026",
+        "reading_notes": "Single-story floor plan at 1/8\"=1'-0\". Overall dimensions 68'-8\" wide x 65'-0\" tall. Program includes Music Studio, Arts & Craft Studio, Photography Studio, Stor/Kiln Room, Pottery Studio, General Storage, and bathrooms (shown top right). Same team stamps as SDA-001. IBC occupancy classified as I-4 (per fire protection memo). The RFP calls this building 'Activity/Multipurpose' with classroom uses; drawings label it 'Classroom Building' — see conflict note below."
+      },
+      {
+        "sheet_number": "N/A",
+        "title": "PROPOSED LAYOUT — MULTIPURPOSE ACTIVITY BUILDING (Schematic Bubble Diagram)",
+        "discipline": "architecture",
+        "source_file": "MRC Activity Building Proposed Layout.pdf",
+        "reading_notes": "Schematic bubble/block diagram showing room relationships for the Activity Building (note: this is NOT the same as SDA-001). Shows Stage with Props Closet and Costume Closet and access ramps; Basketball Court; Indoor Rock Wall; Music Room; Arts/Crafts Room; Pottery Room; Photography Room; Foam Pit/Obstacle Course Room; Bathrooms w/ Adult Changing Tables; Storage Space. This appears to be an earlier conceptual layout or owner-provided program diagram, distinct from the Concept C architectural drawings SDA-001/SDA-002 which show a different room arrangement. Reconciliation: the gym/basketball building (SDA-001) absorbed the main court; the Classroom Building (SDA-002) absorbed the arts/crafts/pottery/photo/music program. Some rooms in the bubble diagram (Foam Pit/Obstacle Course Room) do not appear in SDA-001 or SDA-002 — flagged."
+      },
+      {
+        "sheet_number": "N/A",
+        "title": "POTENTIAL BUILDING LOCATIONS — AERIAL SITE MAP",
+        "discipline": "civil_engineering",
+        "source_file": "potential bldg locations.pdf",
+        "reading_notes": "Aerial Google Maps screenshot with annotated building footprint zones. Red circle annotates Medical Building zone in existing cabin area (northwest of campus). Teal outline annotates Activity/Multi-purpose Building zone in open field near Caretaker's House (south-central campus). Site address 9035 Ironsides Rd visible. Rural wooded site adjacent to Potomac River / tidal creek visible at lower left. Adjacent county parcel with construction activity visible to east. No scale bar or north arrow present."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage_multipurpose_building": {
+        "value": 11810,
+        "unit": "gsf",
+        "source": "BARN PLANS-C GYM.pdf (SDA-001)",
+        "quote": null,
+        "sheets": [
+          "SDA-001"
+        ],
+        "notes": "Drawing states 'TOTAL FLOOR AREA: 11,810 SF'. ROM cost estimate shows 11,814 SF — minor 4 SF discrepancy."
+      },
+      "gross_square_footage_classroom_building": {
+        "value": 4492,
+        "unit": "gsf",
+        "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+        "quote": null,
+        "sheets": [
+          "SDA-002"
+        ],
+        "notes": "Drawing states 'TOTAL FLOOR AREA: 4492 SF'. ROM cost estimate shows 4,415 SF — 77 SF discrepancy."
+      },
+      "floor_count_multipurpose": {
+        "value": 1,
+        "source": "BARN PLANS-C GYM.pdf (SDA-001)",
+        "quote": null,
+        "sheets": [
+          "SDA-001"
+        ],
+        "notes": "Single floor plan sheet; no indication of upper floors."
+      },
+      "floor_count_classroom": {
+        "value": 1,
+        "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+        "quote": null,
+        "sheets": [
+          "SDA-002"
+        ],
+        "notes": "Single floor plan sheet; no indication of upper floors."
+      },
+      "floor_count_medical_cabin": {
+        "value": 2,
+        "source": "Fire Protection Memo §Medical Cabin",
+        "quote": "The Medical Cabin is a two-story building that contains a single treatment area, two sick bays and a medication administration station on level 1.",
+        "sheets": [],
+        "notes": "No architectural drawing for Medical Cabin received. Two-story confirmed by fire protection memo."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Wet-pipe sprinkler system required for all three buildings (Multipurpose, Classroom, Medical Cabin) per IBC and NFPA 101",
+          "No HVAC equipment shown on drawings — MEP drawings not provided at feasibility stage"
+        ],
+        "electrical": [
+          "Standby generator required for Medical Cabin medication administration area (per RFP scope)",
+          "Emergency generator not required for fire pump (per fire protection memo, assumes reliable primary power)"
+        ],
+        "plumbing": [
+          "Public water not available — rural site served by private wells",
+          "Existing septic systems on site; new septic systems preferred for new buildings",
+          "70,000-gallon water storage tank required for fire protection water supply"
+        ],
+        "fire_protection": [
+          "Wet-pipe sprinkler systems required in all three buildings",
+          "Multipurpose Building: emergency voice alarm fire alarm system with visible signals (strobes) required",
+          "Classroom Building: manual fire alarm + smoke detection system required",
+          "Medical Cabin: fire alarm (horns/strobes) + smoke alarms in sleeping rooms required",
+          "500-gpm fire pump at 100 psi in dedicated detached pump house",
+          "6-inch or 8-inch water supply piping from tank to buildings"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.facility_address",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP 25-RFP-MRC01 p.1",
+          "value": "9035 Ironsides Rd, Nanjemoy, MD 20662"
+        },
+        {
+          "source": "RFP 25-RFP-MRC01 §II p.4",
+          "value": "9305 Ironsides Rd, Nanjemoy, MD 20662"
+        },
+        {
+          "source": "Fire Protection Memo",
+          "value": "9305 Ironsides Rd, Nanjemoy, MD 20662"
+        },
+        {
+          "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+          "value": "9035 Ironsides Rd, Nanjemoy, MD 20662"
+        }
+      ],
+      "resolution_chosen": "RFP 25-RFP-MRC01 p.1 and drawing SDA-002 (9035)",
+      "rationale": "Two of four sources say 9035; the 9305 variant appears to be a transposition typo. Aerial site map shows address pin consistent with the 9035 location. Stamped architectural drawings are treated as authoritative for address."
+    },
+    {
+      "field_path": "drawings.facts_derived.gross_square_footage_classroom_building",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+          "value": 4492
+        },
+        {
+          "source": "ROM Cost Estimate (22-April-2026)",
+          "value": 4415
+        }
+      ],
+      "resolution_chosen": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+      "rationale": "Architectural drawings dated 02-02-2026 are more granular than the ROM, which may reflect a slightly earlier design iteration or rounding. 77 SF difference (1.7%) is minor."
+    },
+    {
+      "field_path": "drawings.facts_derived.gross_square_footage_multipurpose_building",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BARN PLANS-C GYM.pdf (SDA-001)",
+          "value": 11810
+        },
+        {
+          "source": "ROM Cost Estimate (22-April-2026)",
+          "value": 11814
+        }
+      ],
+      "resolution_chosen": "BARN PLANS-C GYM.pdf (SDA-001)",
+      "rationale": "4 SF difference — within rounding tolerance. Drawing is primary source."
+    },
+    {
+      "field_path": "taxonomy.program_type — building naming inconsistency",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP 25-RFP-MRC01 scope",
+          "value": "Two buildings: Medical Cabin and Activity/Multipurpose Building"
+        },
+        {
+          "source": "ROM Cost Estimate",
+          "value": "Three buildings: Multipurpose Building, Classroom Building, Medical Building"
+        },
+        {
+          "source": "BARN PLANS-C CLASSRMS.pdf (SDA-002)",
+          "value": "Classroom Building (separate from Gym/Multipurpose Building SDA-001)"
+        }
+      ],
+      "resolution_chosen": "ROM Cost Estimate and drawing set (three buildings)",
+      "rationale": "The RFP was issued April 2025; by the time drawings were prepared (Feb 2026) and the ROM was produced (April 2026), the scope had evolved from two buildings to three. The Activity/Multipurpose function was split into a gymnasium/activity building (SDA-001) and a classroom/arts building (SDA-002). The three-building scope represents the current state of the project at extraction time."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Electrical engineering on this project provided site lighting and grounding design for the new fuel tank farm installation at the Perry Point VA Medical Center boiler plant.
+
+The site lighting design relocated the existing underground lighting circuit to serve the new tank farm layout, providing code-compliant illumination for the replacement tank area without the cost and disruption of installing an entirely new service. Coordination with civil engineering for conduit routing within the containment pad and tank pad construction was required to integrate the underground circuit relocation into the civil construction sequence.
+
+Tank grounding was designed as part of the electrical scope, providing bonding and grounding connections for the three new double-wall aboveground storage tanks in accordance with applicable NFPA requirements for flammable and combustible liquid storage. Grounding design was coordinated with the mechanical engineering cathodic protection system to ensure compatibility between the two systems.
+
+The electrical scope on this project was limited relative to the overall design effort, reflecting the nature of the work as a fuel infrastructure replacement rather than a facility expansion. Specific power distribution capacity, panel schedules, and load calculations are not captured in the available source record; the electrical sub-disciplines documented in the record are electrical power distribution and electrical grounding and lightning protection.

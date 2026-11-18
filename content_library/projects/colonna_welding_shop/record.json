@@ -1,0 +1,400 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "21-010",
+    "source": "Electrical Systems Study cover page",
+    "quote": "BFA Project #21-010"
+  },
+  "project_slug": "colonna_welding_shop",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/colonna_welding_shop/21-010.2021.04.09.ELEC SYSTEMS STUDY.pdf",
+      "type": "report",
+      "sha256": "3898d1231635b1db4ce93da5b73a8507aee46de73448a6322c3c0dd1be723cf4",
+      "included": true,
+      "notes": "Electrical Systems Study — Final Submittal, April 9, 2021. Contains: one-line diagram input data, short circuit data, equipment evaluation report (ANSI), coordination study (TCCs), arc flash evaluation (IEEE 1584 2018 / NFPA 70E), arc flash labels."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/colonna_welding_shop/21-010.2021.04.09.ELEC ONE-LINE DIAGRAM DRAWING.pdf",
+      "type": "drawing_set",
+      "sha256": "0314b1689a8a8cbabf1f34a92e38d2537b21f0c7629f2935d7c33b336c1f1a68",
+      "included": true,
+      "notes": "One-page drawing set. Sheet E-601: Electrical One-Line Diagram, Colonna Welding Shop 2000A Service. Project No. 21-010, dated 04-09-21."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source documents present are an electrical systems study report (treated as 'report' type) and one one-line diagram drawing sheet. No BOD, SOW, contract, or narrative documents available. Project value, contract terms, and client relationship data not determinable from available sources."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Colonna Welding Shop 2000A Service",
+      "source": "Electrical Systems Study cover page",
+      "quote": "COLONNA WELDING SHOP 2000A SERVICE",
+      "corroboration": [
+        {
+          "source": "Electrical Systems Study cover page",
+          "claim": "COLONNA WELDING SHOP 2000A SERVICE",
+          "value": "Colonna Welding Shop 2000A Service",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-601 title block",
+          "claim": "COLONNA WELDING SHOP 2000A SERVICE",
+          "value": "Colonna Welding Shop 2000A Service",
+          "agrees": true
+        },
+        {
+          "source": "Arc flash report header",
+          "claim": "COLONNA WELD, Base Project",
+          "value": "Colonna Welding Shop 2000A Service",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Colonna's Shipyard",
+      "source": "Electrical Systems Study cover page",
+      "quote": "COLONNA'S SHIPYARD, NORFOLK, VA",
+      "corroboration": [
+        {
+          "source": "Electrical Systems Study cover page",
+          "claim": "COLONNA'S SHIPYARD, NORFOLK, VA",
+          "value": "Colonna's Shipyard",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-601 title block",
+          "claim": "COLONNA'S SHIPYARD",
+          "value": "Colonna's Shipyard",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Colonna's Shipyard",
+      "source": "Electrical Systems Study cover page",
+      "quote": "COLONNA'S SHIPYARD, NORFOLK, VA"
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "Electrical Systems Study cover page",
+      "quote": "COLONNA'S SHIPYARD, NORFOLK, VA"
+    },
+    "project_number_internal": {
+      "value": "21-010",
+      "source": "Electrical Systems Study cover page",
+      "quote": "BFA Project #21-010"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Study-only scope for an existing industrial shipyard facility. No building area data in source documents."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "study_submittal_date": {
+      "value": "2021-04-09",
+      "source": "Electrical Systems Study cover page",
+      "quote": "FINAL SUBMITTAL\nApril 9, 2021",
+      "notes": "Non-standard field — schema has no dedicated field for study/report submittal date. Captured here; see retro for spec gap."
+    },
+    "electrical_service": {
+      "value": "2000A, 480/277V, 3-phase, 4-wire, Dominion Energy utility",
+      "source": "Electrical Systems Study — One-Line Diagram Input Data section; Drawing E-601",
+      "quote": "2000A PNL\n480.0 V\nContinuousRating 2000.0A\nRatingVoltage 480 V\nShortCircuitRating 100.000 kA",
+      "notes": "Non-standard field. Key technical fact for the study scope. Utility provider identified as Dominion Energy (Dominion Virginia Power).",
+      "corroboration": [
+        {
+          "source": "Electrical Systems Study — One-Line Input Data",
+          "claim": "2000A PNL, 480.0V, ContinuousRating 2000.0A",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-601 title",
+          "claim": "COLONNA WELDING SHOP 2000A SERVICE",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E-601 legend note C",
+          "claim": "2000A MCB PANEL 480/277V, 3Ø, 4W",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "notes": "Study/investigation scope only — not a standard design-phase contract. No design contract value in source documents.",
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-04-09",
+        "source": "Electrical Systems Study cover page",
+        "quote": "FINAL SUBMITTAL\nApril 9, 2021",
+        "notes": "Inferred: Final Submittal date used as study completion date. Actual study period start date unknown."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "notes": "Construction phase not part of BFA scope. Study-only engagement.",
+      "contract_value": {
+        "value": null,
+        "status": "explicit_null",
+        "source": "scope inference",
+        "quote": null
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution"
+    ],
+    "construction_scope": [],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "study_only"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "norfolk",
+    "hampton_roads",
+    "colonna_shipyard",
+    "shipyard",
+    "arc_flash_study",
+    "short_circuit_study",
+    "coordination_study",
+    "electrical_systems_study",
+    "480v_service",
+    "ieee_1584",
+    "nfpa_70e",
+    "industrial_electrical",
+    "private_client"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "RTD",
+      "role_on_project": "drafter",
+      "source": "Drawing E-601 title block — 'Drawn by: RTD'"
+    },
+    {
+      "name": "MJD",
+      "role_on_project": "project_engineer_or_checker",
+      "source": "Drawing E-601 title block — 'Checked by: MJD; Project Engineer: M?D'"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-601",
+        "title": "ELECTRICAL ONE-LINE DIAGRAM — COLONNA WELDING SHOP 2000A SERVICE",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Single-page one-line diagram showing the complete 480/277V 4W distribution system for the Colonna Welding Shop. Utility source (Dominion) feeds a 2000A MCB panel at 480V. From the 2000A main panel, loads branch to: 600A PNL, three automation train circuits (W1, W2, W3 — each 60A), W12 (60A), W13 (60A), HYD MECH (30A), 400A PNL (480/277V), 100A SW1 (100AF heavy-duty switch), 75A SW2 (75AF, sub arc train), EX SERVICE 3-PH 200A, 100A SW2 (100AF), T1 50KVA transformer (480→277V), TNEW 75KVA transformer (480→277V), and IRONWORKER (10hp motor). Transformers T1 and TNEW step down to 277V feeding EX PNL 200A and NEW 200A PNL respectively. Legend identifies wire types A through K and conduit sizing. All wire is copper 3-wire+ground. Sheet is stamped by a Virginia PE (signature visible, license number partially legible). Title block lists two office addresses: Norfolk, VA 23502 and Alexandria, VA 22312. Project No. 21-010. Scale: AS NOTED. Contract No.: blank (not filled in)."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Industrial shipyard welding shop — no building area on drawings or in study."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "2000A, 480/277V, 3Ø, 4W main distribution panel (MCB) fed from Dominion utility",
+          "600A sub-panel (480V)",
+          "400A sub-panel (480/277V)",
+          "Three welding automation train circuits (W1, W2, W3) at 60A each — 480V",
+          "W12 and W13 branch circuits at 60A — 480V",
+          "HYD MECH (hydraulic mechanical) branch at 30A — 480V",
+          "100A SW1 and 100A SW2 heavy-duty safety switches — 480V",
+          "75A SW2 (sub arc train) — 480V",
+          "EX SERVICE 3-phase 200A (480V) — existing service panel",
+          "T1: 50 kVA step-down transformer 480V→277V; feeds EX PNL 200A",
+          "TNEW: 75 kVA step-down transformer 480V→277V (new); feeds NEW 200A PNL",
+          "IRONWORKER motor load (10 hp) — 480V",
+          "Utility available fault current: 37,302A (3-phase symmetrical) from Dominion"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "study_findings": {
+    "equipment_evaluation": {
+      "standard": "ANSI Fault Analysis",
+      "result": "All devices passed",
+      "source": "Electrical Systems Study — Equipment Evaluation Report",
+      "quote": "After completion of the equipment evaluation, no pieces of equipment were found to have failed the evaluation.",
+      "devices_evaluated": [
+        "2000A PNL MCB (Square D PC series, 100 kA IR)",
+        "CB-600A PNL (Square D PA series, 50 kA IR)",
+        "CB-400A PNL (Square D LA series, 30 kA IR)",
+        "CB-100A SW1 (Square D ED series, 18 kA IR)",
+        "CB-100A SW2 (Square D ED series, 18 kA IR)",
+        "CB-75A SW2 (Square D ED series, 18 kA IR)",
+        "CB-EX SERVICE (Square D KC series, 65 kA IR)",
+        "CB-HYD MECH (Square D FA series, 14 kA IR)",
+        "CB-IRONWORKER (Square D ED series, 18 kA IR)",
+        "CB-T1 50KVA (Square D ED series, 18 kA IR)",
+        "CB-TNEW 75KVA (Square D FD series, 18 kA IR)",
+        "CB-W1/W2/W3 AUTO TRAIN (Square D FA series, 18 kA IR each)",
+        "CB-W12, CB-W13 (Square D FA series, 18 kA IR each)",
+        "100A SW1, 75A SW2, PD-0025 (Eaton/Cutler-Hammer DH Heavy Duty, 200 kA IR)"
+      ]
+    },
+    "coordination_study": {
+      "result": "All circuit breakers properly coordinated",
+      "source": "Electrical Systems Study — Coordination Study section",
+      "quote": "All circuit breakers were found to be properly coordinated with the next upstream or downstream device, indicating proper system overcurrent device coordination.",
+      "tcc_curves_produced": 15
+    },
+    "arc_flash_evaluation": {
+      "standard": "IEEE 1584 2018 + NFPA 70E",
+      "software": "SKM Power Tools",
+      "source": "Electrical Systems Study — Arc Flash Evaluation",
+      "buses_analyzed": [
+        {
+          "bus": "2000A PNL",
+          "voltage_v": 480,
+          "incident_energy_cal_cm2": 2.84,
+          "ppe_level": "Level 3",
+          "arc_flash_boundary_in": 31,
+          "label_number": "0004"
+        },
+        {
+          "bus": "400A PNL",
+          "voltage_v": 480,
+          "incident_energy_cal_cm2": 0.43,
+          "ppe_level": "Level 0",
+          "arc_flash_boundary_in": 10,
+          "label_number": "0005"
+        },
+        {
+          "bus": "600A PNL",
+          "voltage_v": 480,
+          "incident_energy_cal_cm2": 1.82,
+          "ppe_level": "Level 3",
+          "arc_flash_boundary_in": 23,
+          "label_number": "0006"
+        },
+        {
+          "bus": "EX PNL 200A",
+          "voltage_v": 277,
+          "incident_energy_cal_cm2": 4.49,
+          "ppe_level": "Level 3",
+          "arc_flash_boundary_in": 41,
+          "label_number": "0007",
+          "notes": "(*N9) Max Arcing Duration Reached flag"
+        },
+        {
+          "bus": "EX SERVICE 3-PH 200A",
+          "voltage_v": 480,
+          "incident_energy_cal_cm2": 0.62,
+          "ppe_level": "Level 0",
+          "arc_flash_boundary_in": 12,
+          "label_number": "0008"
+        },
+        {
+          "bus": "NEW 200A PNL",
+          "voltage_v": 277,
+          "incident_energy_cal_cm2": 5.36,
+          "ppe_level": "Level 3",
+          "arc_flash_boundary_in": 46,
+          "label_number": "0011",
+          "notes": "(*N9) Max Arcing Duration Reached flag"
+        }
+      ],
+      "arc_flash_labels_produced": 6
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

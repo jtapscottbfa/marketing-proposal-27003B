@@ -1,0 +1,713 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "87_reroof",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/jlab/87_reroof/Task Order.pdf",
+      "type": "task_order",
+      "sha256": "8ad02306738e21b38dcd02d0c396826f4f92c4adaba173badc4e9d353717e7fc",
+      "included": true,
+      "notes": "JSA/Jefferson Lab Purchase Order 21C0683003 dated 04/25/2022 + A-E Project Task Order No. 3 ('87 Re-Roof Design'), 5 pages combined. Type 'task_order' chosen because the document combines the PO and the formal task order."
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/87_reroof/Building 87 Re-Roofing_Drawings-Final Submittal.pdf",
+      "type": "drawing_set",
+      "sha256": "c65aadc2bbc340a846bbf6bfbbe7e2d465a950059a51236fd8a805e1a5554ccd",
+      "page_count": 7,
+      "included": true,
+      "notes": "Final submittal drawing set, sealed 08/16/2022. 7 sheets: G-001, A-001, AD-101, A-101, A-501, ED-101, E-101. Architecture sealed by Clay C. Dills (Dills Architects, VA Lic. 013034); electrical sealed by Richard H. Williams (BFA, VA Lic. 048025)."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "Two documents only: a combined PO+task order (acts as SOW) and the final submittal drawing set. No standalone BOD, no spec book, no construction-side documents (CO log, NTP, completion). Drawing set includes a project narrative on A-001 that supplements the task order."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 87 Re-Roof Design",
+      "source": "Task Order p.1 / Drawing G-001",
+      "quote": "Project Title: 87 Re-Roof Design",
+      "corroboration": [
+        {
+          "source": "Task Order p.1",
+          "claim": "Project Title: 87 Re-Roof Design",
+          "value": "87 Re-Roof Design",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 (cover sheet)",
+          "claim": "BUILDING 87 RE-ROOF DESIGN",
+          "value": "Building 87 Re-Roof Design",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683003 line 1 description",
+          "claim": "BUILDING 89 RE-ROOF DESIGN SERVICES",
+          "value": "Building 89 Re-Roof Design",
+          "agrees": false
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Science Associates, LLC (JSA) / Thomas Jefferson National Accelerator Facility",
+      "source": "Task Order p.1 / Drawing G-001",
+      "quote": "JSA, LLC / JEFFERSON LAB",
+      "corroboration": [
+        {
+          "source": "PO 21C0683003 header",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "value": "Jefferson Science Associates, LLC / Jefferson Lab",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001",
+          "claim": "JEFFERSON SCIENCE ASSOCIATES, LLC",
+          "value": "Jefferson Science Associates, LLC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Department of Energy",
+      "source": "Drawing G-001",
+      "quote": "UNITED STATES DEPARTMENT OF ENERGY",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 cover sheet",
+          "claim": "United States Department of Energy / Jefferson Science Associates, LLC",
+          "value": "United States Department of Energy",
+          "agrees": true
+        },
+        {
+          "source": "All sheet title blocks",
+          "claim": "United States Department of Energy   Newport News, VA",
+          "value": "United States Department of Energy",
+          "agrees": true
+        }
+      ],
+      "notes": "DOE is the federal owner; Jefferson Science Associates, LLC is the management & operating contractor (FFRDC operator). JSA holds the design contract with BFA on DOE's behalf."
+    },
+    "location": {
+      "city": {
+        "value": "Newport News",
+        "source": "Task Order p.1 / Drawing G-001",
+        "quote": "12000 JEFFERSON AVE., SUITE 12 NEWPORT NEWS, VA 23606"
+      },
+      "state": {
+        "value": "VA",
+        "source": "Task Order p.1 / Drawing G-001",
+        "quote": "NEWPORT NEWS, VA 23606"
+      },
+      "country": {
+        "value": "US",
+        "source": "computed",
+        "quote": null
+      },
+      "facility_address": {
+        "value": "12000 Jefferson Avenue, Newport News, VA 23606",
+        "source": "Drawing G-001",
+        "quote": "12000 JEFFERSON AVE. NEWPORT NEWS, VA 23606"
+      },
+      "corroboration": [
+        {
+          "source": "PO 21C0683003 ship-to",
+          "claim": "12000 Jefferson Ave., Suite 12, Newport News, VA 23606",
+          "value": "12000 Jefferson Avenue, Newport News, VA 23606",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001",
+          "claim": "12000 JEFFERSON AVE. NEWPORT NEWS, VA 23606",
+          "value": "12000 Jefferson Avenue, Newport News, VA 23606",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing",
+      "source": "BFA internal records",
+      "quote": null,
+      "notes": "BFA filename references on drawings show 'BFA Filename: G:\\2021\\21-001C Bldg 87 Re-Roofing\\...' suggesting BFA internal project number 21-001C. However this is a filename string, not an authoritative project_id assignment. Defer to retroactive CSV fill."
+    },
+    "project_number_client": {
+      "value": "21C0683003",
+      "source": "PO 21C0683003 header",
+      "quote": "Purchase Order: 21C0683003",
+      "corroboration": [
+        {
+          "source": "PO header",
+          "claim": "Purchase Order: 21C0683003",
+          "value": "21C0683003",
+          "agrees": true
+        }
+      ],
+      "notes": "JSA Purchase Order number; functions as the client's project/contract identifier."
+    },
+    "contract_number": {
+      "value": "21C0683003",
+      "source": "PO 21C0683003 header",
+      "quote": "Purchase Order: 21C0683003",
+      "corroboration": [
+        {
+          "source": "PO header",
+          "claim": "Purchase Order: 21C0683003",
+          "value": "21C0683003",
+          "agrees": true
+        }
+      ],
+      "notes": "JSA Purchase Order is the contracting instrument."
+    },
+    "task_order_number": {
+      "value": "3",
+      "source": "Task Order p.1",
+      "quote": "Task Order No. ___3___",
+      "corroboration": [
+        {
+          "source": "Task Order header (pp. 1, 2, 3, 5)",
+          "claim": "Task Order No. 3",
+          "value": "3",
+          "agrees": true
+        },
+        {
+          "source": "Task Order p.4 header",
+          "claim": "Task Order No. 2",
+          "value": "2",
+          "agrees": false
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 6720,
+      "unit": "gsf",
+      "source": "Task Order p.1",
+      "quote": "The 6720 square foot building is a one story, pre-engineered building constructed in 1996.",
+      "corroboration": [
+        {
+          "source": "Task Order p.1 project description",
+          "claim": "The 6720 square foot building",
+          "value": 6720,
+          "agrees": true
+        },
+        {
+          "source": "Drawing A-001 project narrative",
+          "claim": "BUILDING 87 IS AN EXISTING 6,720 SQUARE FOOT, ONE STORY, PRE-ENGINEERED METAL BUILDING",
+          "value": 6720,
+          "agrees": true
+        },
+        {
+          "source": "Drawings AD-101 and A-101 plan dimensions",
+          "claim": "107'-5\" ± x 62'-3\" ± building footprint (≈6,687 SF)",
+          "value": 6687,
+          "agrees": true,
+          "notes": "Plan dimensions yield ~6,687 SF, within 0.5% of the 6,720 SF stated value; close enough to corroborate."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 130000,
+      "currency": "USD",
+      "source": "Task Order p.1",
+      "quote": "Construction costs including a final design project contingency of 5% shall not exceed $ 130,000.",
+      "corroboration": [
+        {
+          "source": "Task Order p.1 Project Budget section",
+          "claim": "Construction costs ... shall not exceed $130,000",
+          "value": 130000,
+          "agrees": true
+        }
+      ]
+    },
+    "year_built_existing": {
+      "value": 1996,
+      "source": "Task Order p.1",
+      "quote": "a one story, pre-engineered building constructed in 1996",
+      "corroboration": [
+        {
+          "source": "Task Order p.1",
+          "claim": "constructed in 1996",
+          "value": 1996,
+          "agrees": true
+        },
+        {
+          "source": "Drawing A-001 project narrative",
+          "claim": "ORIGINALLY CONSTRUCTED IN 1996",
+          "value": 1996,
+          "agrees": true
+        }
+      ],
+      "notes": "Not a v0.1.0 schema field; captured as supplemental fact because the project is a renovation of an existing building. Flag to retro for spec gap."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 31064,
+        "currency": "USD",
+        "source": "PO 21C0683003 line 1",
+        "quote": "BUILDING 89 RE-ROOF DESIGN SERVICES ... LOT 31,064 1.00 $31,064.00",
+        "corroboration": [
+          {
+            "source": "PO line 1 extended cost",
+            "claim": "$31,064.00",
+            "value": 31064,
+            "agrees": true
+          },
+          {
+            "source": "PO Total Amt",
+            "claim": "PO Total Amt: $31,064.00",
+            "value": 31064,
+            "agrees": true
+          }
+        ],
+        "notes": "PO description text says 'BUILDING 89' — clerical error; project is unambiguously Building 87 per the bound task order and all drawings."
+      },
+      "awarded_date": {
+        "value": "2022-04-22",
+        "source": "PO 21C0683003 header",
+        "quote": "Order Date 04/22/22",
+        "corroboration": [
+          {
+            "source": "PO header order date",
+            "claim": "04/22/22",
+            "value": "2022-04-22",
+            "agrees": true
+          },
+          {
+            "source": "PO authorized signature digital signature",
+            "claim": "Date: 2022.04.25 10:37:18 -04'00'",
+            "value": "2022-04-25",
+            "agrees": false,
+            "notes": "PO signed/dated 04/25/2022 (3 days after order date); minor difference between order placement and signature."
+          }
+        ]
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null,
+        "notes": "NTP date not present in source documents."
+      },
+      "completion_date": {
+        "value": "2022-08-16",
+        "source": "Drawing set seal dates",
+        "quote": null,
+        "corroboration": [
+          {
+            "source": "Drawing G-001 PE seal (R.H. Williams)",
+            "claim": "8/16/2022",
+            "value": "2022-08-16",
+            "agrees": true
+          },
+          {
+            "source": "Drawing A-001 architectural seal (C.C. Dills)",
+            "claim": "08/16/2022",
+            "value": "2022-08-16",
+            "agrees": true
+          },
+          {
+            "source": "Task Order p.3 schedule",
+            "claim": "Final 7/19/22",
+            "value": "2022-07-19",
+            "agrees": false,
+            "notes": "Scheduled final design completion was 7/19/2022 per task order; actual sealed final-submittal drawings dated 8/16/2022 — ~4 weeks slip. Possibly within review-comment cycle."
+          }
+        ],
+        "notes": "Inferred from professional seal date on the final-submittal drawing set; not an explicit completion-date statement."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "source": "Task Order p.3",
+        "quote": "**TBD – Number of days to be provided by the A/E with proposal and negotiated with the contract award.",
+        "notes": "Schedule shown contractual milestones (35% TBD days from NTP; 100% by 6/30/22; Final 7/19/22) but the 35% duration is explicitly TBD and total duration is not stated as a single value."
+      },
+      "change_orders": {
+        "value": [],
+        "status": "missing",
+        "source": null,
+        "quote": null,
+        "notes": "No change-order documentation in source set."
+      },
+      "actual_value": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null,
+        "notes": "BFA scope is design only (with construction support negotiable). No construction-phase contract value in source set; the $130,000 figure is the construction-cost budget cap, not an awarded GC contract value."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": {
+        "value": [],
+        "status": "missing"
+      },
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "Construction phase not in BFA's awarded scope per task order; 'Construction Support Services: Services will be negotiated after the 100 percent design.' Construction-phase data absent from source set."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal",
+      "federal_civilian"
+    ],
+    "client_type_notes": "Jefferson Lab is a DOE-owned FFRDC operated by Jefferson Science Associates (a contractor consortium). The contracting party from BFA's perspective is JSA, LLC, but ultimate ownership is federal civilian (DOE Office of Science). This is a multi-tenancy and vocabulary tension — see retro.",
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [],
+    "program_type_notes": "Building 87 was originally a pre-engineered structure renovated into an office building per the A-001 narrative; it sits within a federal science research campus (Jefferson Lab is a particle physics accelerator facility). Best-fit top-level program is science_research because the project context is the campus mission, but the specific building's function reads more as commercial_office. Encoded as science_research because project context dominates; flagged for retro.",
+    "disciplines": [
+      "architecture",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_envelope",
+      "architectural_roofing",
+      "electrical_grounding_lightning"
+    ],
+    "building_systems": [
+      "envelope_roofing",
+      "envelope_waterproofing",
+      "electrical_grounding"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "thermal_roofing",
+      "thermal_insulation",
+      "thermal_waterproofing",
+      "electronic_safety_security"
+    ],
+    "construction_scope_notes": "Lightning protection scope doesn't map cleanly to construction_scope vocabulary; closest TWT-original entry is electronic_safety_security (which the vocab definition says includes 'fire alarm, access control, video surveillance, intrusion detection' — lightning protection isn't explicitly listed). See retro vocab gap.",
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "contract_vehicle_notes": "Awarded as a task order under what appears to be an A-E IDIQ pool with JSA. Specific master contract number not stated; only PO/task-order numbers are visible.",
+    "procurement_type": [
+      "federal"
+    ],
+    "procurement_type_notes": "DOE-funded work executed via JSA's procurement; specific procurement competition method (full and open vs. task-order competition vs. sole source) not documented in source set.",
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "project_status_notes": "Design final-submittal drawings dated 08/16/2022 are in hand; no construction-phase information available, so design_complete is the most defensible status as of the documents provided.",
+    "bfa_role": [
+      "subconsultant",
+      "specialty_consultant"
+    ],
+    "bfa_role_notes": "Architecture sealed by Dills Architects (Clay C. Dills, AIA, VA Lic. 013034). BFA's contribution is the electrical drawings ED-101 (lightning protection demolition) and E-101 (lightning protection new work), sealed by Richard H. Williams, PE (VA Lic. 048025). However, the PO is issued directly to BFA ('Order To: BOWMAN FOSTER AND ASSOCIATES INC'), which suggests BFA may be the prime A-E with Dills as architecture sub. This is an ambiguity worth flagging."
+  },
+  "tenant_freeform_tags": [
+    "jefferson_lab",
+    "jlab",
+    "doe",
+    "ffrdc",
+    "newport_news",
+    "hampton_roads",
+    "reroofing",
+    "lightning_protection",
+    "metal_building",
+    "small_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Richard H. Williams, PE",
+      "role_on_project": "engineer_of_record_electrical",
+      "license": "Virginia PE 048025",
+      "firm": "BFA",
+      "source": "Drawing G-001 and ED-101/E-101 PE seal"
+    },
+    {
+      "name": "Clay C. Dills, AIA",
+      "role_on_project": "architect_of_record",
+      "license": "Virginia Architect 013034",
+      "firm": "Dills Architects",
+      "source": "Drawing A-001/AD-101/A-101/A-501 architect seal"
+    },
+    {
+      "name": "Bruce Bowman",
+      "role_on_project": "bfa_contact",
+      "firm": "BFA",
+      "source": "PO 21C0683003 'Contact: BRUCE BOWMAN'"
+    },
+    {
+      "name": "Christine Snetter",
+      "role_on_project": "client_design_project_manager",
+      "firm": "JSA / Jefferson Lab",
+      "source": "Task Order p.5 'Design Project Manager (TR): Christine Snetter'"
+    },
+    {
+      "name": "Carolyn Stepney",
+      "role_on_project": "client_procurement_officer",
+      "firm": "JSA / Jefferson Lab",
+      "source": "Task Order p.5 'Procurement Officer: Carolyn Stepney'"
+    },
+    {
+      "name": "MKH",
+      "role_on_project": "designer_architectural",
+      "firm": "Dills Architects",
+      "source": "Drawings A-001/A-101/A-501 title block"
+    },
+    {
+      "name": "TBB",
+      "role_on_project": "drawn_by_architectural",
+      "firm": "Dills Architects",
+      "source": "Drawings A-001/A-101/A-501 title block"
+    },
+    {
+      "name": "RHW",
+      "role_on_project": "designer_electrical",
+      "firm": "BFA",
+      "source": "Drawings G-001/ED-101/E-101 title block (initials match Richard H. Williams)"
+    },
+    {
+      "name": "RFD",
+      "role_on_project": "drawn_by_electrical",
+      "firm": "BFA",
+      "source": "Drawings ED-101/E-101 title block"
+    },
+    {
+      "name": "LAW",
+      "role_on_project": "drawn_by_cover",
+      "firm": "BFA",
+      "source": "Drawing G-001 title block"
+    }
+  ],
+  "drawings": {
+    "sheet_count": 7,
+    "drawing_set_date": "2022-08-16",
+    "issuance": "Final Submittal",
+    "drawing_size": "ANSI D / 22\" x 34\" per task order; sheets show seven-column / five-row title block grid",
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "drawing_number": "220013-007-G001-087",
+        "reading_notes": "Standard JLab cover sheet. Shows Jefferson Lab campus location map ('WORK LOCATION' arrow points to Building 87 in northern portion of campus) and regional vicinity map (Newport News / Fort Eustis / Langley AFB / Poquoson / Hampton). Sealed by Richard H. Williams PE (BFA) — interesting that the COVER is sealed by BFA's PE rather than the architect; consistent with BFA being the prime A-E. Index of drawings lists 7 sheets total. Designer: RHW; Drawn: LAW. JLab title block lists ES&H Manager S. Hoey, Fire Protection Manager T. Minga, Design Manager S. Chandra, Engineering Manager J. Dolbeck, FM&L Division Manager J. Sprouse."
+      },
+      {
+        "sheet_number": "A-001",
+        "title": "LEGENDS, ABBREVIATIONS AND NOTES",
+        "discipline": "architecture",
+        "drawing_number": "220013-002-A001-087",
+        "reading_notes": "Architectural legend, abbreviations, materials legend (cover board, batt insulation, plywood, wood blocking, rigid insulation), 10 general notes, and a 4-paragraph PROJECT NARRATIVE that supplements the task order. Narrative confirms 6,720 SF building, 1996 construction, original building 'later renovated into an office building' (this clarifies current building use vs. task order which doesn't state current function). Specifies new roof system: 'mechanically adhered EPDM roof over 1 1/2\" polyisocyanurate insulation.' Notes scope to 'temporarily remove and then reinstall' rooftop lightning protection grid; 'existing vertical down conductors and the rest of the protection system shall remain.' Notes non-working antenna on north side to be removed and exhaust fans + circuits to be demolished back to panelboard. Sealed by Clay C. Dills, AIA (Dills Architects). Designer: MKH; Drawn: TBB; both 8/16/2022."
+      },
+      {
+        "sheet_number": "AD-101",
+        "title": "DEMOLITION ROOF PLAN",
+        "discipline": "architecture",
+        "drawing_number": "220013-003-AD101-087",
+        "reading_notes": "1/8\"=1'-0\" demo plan with one 1 1/2\"=1'-0\" enlarged demo/new-work detail. Building footprint 107'-5\" ± x 62'-3\" ± (~6,687 SF — corroborates 6,720 stated SF). Four photographic elevations: existing lighting rod, existing typical solatube, existing antenna, existing mech vent. 10 demolition key notes covering gutters, solatubes (remove and store), VTRs (must remain), mech roof vents, lightning protection grid (remove and store), splash blocks, coping, antenna (per ED101), and metal roof edge flashing. Owner-occupied during construction per general note 1. Architect-sealed."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "ROOF PLAN",
+        "discipline": "architecture",
+        "drawing_number": "220013-004-A101-087",
+        "reading_notes": "New-work 1/8\"=1'-0\" roof plan with same 107'-5\" x 62'-3\" footprint. Detail callouts to A-501 (A1 roof edge, B1 roof edge/parapet, A3 solatube curb, D1 vent thru roof). 11 key work notes: pre-finished metal gutters/downspouts, 12\" prefab solatube curbs, VTR retention, deck patching, lightning protection reinstallation reference, splash block replacement, prefinished metal coping, walkway pads, ladder tie-off, commercial safety ladder dock, fall restraint anchors (Honeywell Miller Fusion roof anchor post). Approximately 13-14 solatubes shown distributed across roof plus 2 mech vent locations near center. Slope arrows show roof crown along centerline draining north and south to gutters. Architect-sealed."
+      },
+      {
+        "sheet_number": "A-501",
+        "title": "DETAILS",
+        "discipline": "architecture",
+        "drawing_number": "220013-005-A501-087",
+        "reading_notes": "Four roof details at 3\"=1'-0\": D1 roof edge, B1 roof edge/parapet, D3 vent thru roof, A1 gutter, A3 solatube prefab curb. 21 key work notes describing materials sequence: existing coated metal panel + 1 1/2\" rigid insulation between flutes + 1/2\" cover board + EPDM roof membrane. Pressure-treated wood blocking, prefinished metal coping, prefabricated pipe boot flashing, 12\" solatube curb. Architect-sealed. Confirms the build-up assembly described narratively on A-001."
+      },
+      {
+        "sheet_number": "ED-101",
+        "title": "LIGHTNING PROTECTION ROOF PLAN — DEMOLITION",
+        "discipline": "electrical_engineering",
+        "drawing_number": "220013-006-ED101-087",
+        "reading_notes": "1/8\"=1'-0\" lightning protection demo plan. Shows existing rooftop grid: perimeter conductor on grids A and E (top and bottom of building), 24 typical air terminals around perimeter, 4 corner air terminals, vertical down conductors at four corners. 5 demolition notes: disconnect/remove rooftop LP grid (salvage), remove air terminals (salvage), remove antenna and wiring (dispose), existing down conductor must remain, disconnect/remove circuit to exhaust fan back to panel source. Sealed by Richard H. Williams, PE (BFA, VA Lic. 048025). Designer: RHW; Drawn: RFD. Note 'Exothermic welds are prohibited' — JLab convention, likely radiation-area rule given accelerator-facility context."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "LIGHTNING PROTECTION ROOF PLAN — NEW WORK",
+        "discipline": "electrical_engineering",
+        "drawing_number": "220013-007-E101-087",
+        "reading_notes": "1/8\"=1'-0\" lightning protection new-work plan, mirrors ED-101 layout. 3 construction notes: reinstall LP grid conductor and connect to existing down conductors and through-roof penetrations (damaged conductors replaced with No. A24 Class 1 copper, 24 strands of 14 AWG); reinstall air terminals (damaged replaced with 1/2\" x 12\" minimum solid copper equivalent); reconnect to existing down conductors. Note 3 specifies third-party UL-certified post-construction testing with master label certificate. BFA-sealed. Designer: RHW; Drawn: RFD. The conductor (A24/Class 1) and air terminal (1/2\" x 12\" solid copper) specs follow NFPA 780 / UL 96A typical practice."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 6720,
+        "unit": "gsf",
+        "source": "Drawing A-001 project narrative; corroborates Task Order",
+        "quote": "BUILDING 87 IS AN EXISTING 6,720 SQUARE FOOT, ONE STORY, PRE-ENGINEERED METAL BUILDING",
+        "sheets": [
+          "A-001",
+          "AD-101",
+          "A-101"
+        ]
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "Drawing A-001 project narrative; corroborates Task Order",
+        "quote": "ONE STORY, PRE-ENGINEERED METAL BUILDING",
+        "sheets": [
+          "A-001"
+        ]
+      },
+      "building_footprint_dimensions": {
+        "value": "107'-5\" ± x 62'-3\" ±",
+        "source": "Drawings AD-101 and A-101 plan dimensions",
+        "quote": null,
+        "sheets": [
+          "AD-101",
+          "A-101"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing rooftop mechanical exhaust vents (count not enumerated; demolished, openings patched). VTRs (vent-through-roof) for plumbing remain.",
+          "Existing exhaust fans demolished and circuits removed back to panelboard."
+        ],
+        "electrical": [
+          "Existing rooftop lightning protection system: perimeter air terminals (24 typical + 4 corner = 28 total), perimeter conductor on grids A and E, vertical down conductors at four building corners. Rooftop grid temporarily removed and reinstalled; down conductors and below-roof system remain.",
+          "New conductor spec where damaged: No. A24 Class 1 copper (24 strands of 14 AWG).",
+          "New air terminal spec where damaged: 1/2\" x 12\" minimum solid copper equivalent.",
+          "Post-construction third-party UL-certified test with master label certificate required."
+        ],
+        "plumbing": [
+          "Existing vent-through-roof (VTR) penetrations remain; new pipe boot flashings provided. Count not enumerated."
+        ],
+        "fire_protection": [
+          "Not in scope of this project; no FP information in source documents."
+        ],
+        "envelope_other": [
+          "Existing solatube tubular daylighting devices (~13–14 distributed across roof plus center mech rooftop): existing acrylic domes removed/disconnected/stored, reinstalled on new 12\" prefabricated solatube curbs.",
+          "Non-working rooftop antenna removed and disposed (north side).",
+          "Existing exterior parapet/coping/flashing replaced with new prefinished metal coping and edge flashing; existing gutters/downspouts replaced with larger prefinished metal gutters/downspouts.",
+          "Existing concrete splash blocks salvaged and reinstalled (broken units replaced).",
+          "New roof assembly: existing coated metal roof + 1 1/2\" polyisocyanurate insulation between flutes + 1/2\" cover board + mechanically adhered EPDM membrane."
+        ]
+      }
+    }
+  },
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "PO 21C0683003 line 1 description",
+          "value": "Building 89 Re-Roof Design Services"
+        },
+        {
+          "source": "Task Order title, all 7 drawings, project narrative on A-001",
+          "value": "Building 87 Re-Roof Design"
+        }
+      ],
+      "resolution_chosen": "Task Order + drawings",
+      "rationale": "PO line-item description is a clerical transcription error. The bound task order document (which the PO references) explicitly says 'Project Title: 87 Re-Roof Design'; the project narrative on A-001 says 'Building 87'; all 7 drawings are titled 'BUILDING 87 RE-ROOF DESIGN'; PE/architect seals are dated and reference Building 87. Single isolated PO description error vs. consistent designation across all other source artifacts."
+    },
+    {
+      "field_path": "facts.task_order_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Task Order pp. 1, 2, 3, 5 headers",
+          "value": "3"
+        },
+        {
+          "source": "Task Order p. 4 header",
+          "value": "2"
+        }
+      ],
+      "resolution_chosen": "Task Order pp. 1, 2, 3, 5",
+      "rationale": "4 of 5 pages say Task Order No. 3; p. 4 (the submittals-quantity table page) says No. 2 — almost certainly a copy-paste artifact from a prior task order template. Task Order No. 3 is the consistent designation."
+    },
+    {
+      "field_path": "phases.design.completion_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Task Order p.3 Schedule",
+          "value": "2022-07-19"
+        },
+        {
+          "source": "Drawing professional seals (RHW PE; CC Dills AIA)",
+          "value": "2022-08-16"
+        }
+      ],
+      "resolution_chosen": "Drawing seal dates (2022-08-16)",
+      "rationale": "Scheduled final-design completion was 7/19/2022; final-submittal drawings are sealed 8/16/2022 — ~4-week slip, plausibly attributable to JLab review-comment cycle (35% review + 100% review per task order schedule). Seal dates are the most defensible 'design complete' date because they reflect what was actually delivered."
+    },
+    {
+      "field_path": "taxonomy.bfa_role",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "PO 21C0683003 'Order To: BOWMAN FOSTER AND ASSOCIATES INC'",
+          "value": "BFA holds the prime PO with JSA"
+        },
+        {
+          "source": "Drawing seals (architectural by Dills Architects; electrical by BFA)",
+          "value": "BFA appears to provide only electrical (lightning protection) scope; architecture by Dills"
+        }
+      ],
+      "resolution_chosen": "Encoded as both subconsultant + specialty_consultant pending clarification",
+      "rationale": "The PO is issued directly to BFA, which is the strongest evidence of prime contract holding. But the actual architectural design content is sealed by Dills Architects, who appear in their own title-block panel labeled 'DA Dills Architects' alongside the JLab title block. Most likely interpretation: BFA is the prime A-E (holding the JSA contract) with Dills as BFA's architectural sub. The taxonomy.bfa_role would then be ['prime_consultant'], not subconsultant. Without an explicit teaming-agreement document or letter of agreement to confirm, the encoding is ambiguous. Flagged for human review and Pass-1 retro."
+    }
+  ]
+}

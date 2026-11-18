@@ -1,0 +1,536 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b340_replace_ccc",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b340_replace_ccc/22-044.2023.04.06 FINAL REVIEW SUBMITTAL - BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "2d172ff3ac8c273840688adc9b22df91cd2914e20e5a7a7ed45a4498d6a8cbe0",
+      "page_count": 10,
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b340_replace_ccc/1655654 Design Engineering Package (DB-RFP Package).pdf",
+      "type": "sow",
+      "sha256": "8faf968825ad3ee5635b4b9910e52d373fa1d4f1fa6523b3f70384a6d1c7ef62",
+      "page_count": 10,
+      "included": true,
+      "notes": "NAVFAC design-build RFP package (Parts 2–6 visible in 10-page render). eProjects WO# 1655654. Full document is larger; only first 10 pages rendered — page 2 TOC shows Parts 2–6 present."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b340_replace_ccc/Syncon-Cooling Tower Scopes of Work.pdf",
+      "type": "unknown",
+      "flag_for_human_review": true,
+      "sha256": "623b800140adb2ee237754d8008c7527b5967c8cab78f3b8b434967d013fc642",
+      "page_count": 27,
+      "included": true,
+      "notes": "Image-based PDF assembled by SYNCON LLC (the design-build prime contractor). Contains sub-contractor proposals/estimates (Damuth-Trane DDC controls, Power Electric electrical, Hercules Fence, Wyatt & Co. mechanical/plumbing demo and new work), EVAPCO equipment technical data sheets, EVAPCO shop drawings, and VFD control panel drawings. No dollar amounts filled in on sub-contractor estimate forms. Not a standard source-document type; classified as 'unknown'."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No standalone specification book or executed contract document available. Syncon sub-contractor estimate file contains EVAPCO shop/submittal drawings and a VFD control panel drawing set. RFP includes prescriptive spec sections (01 31 23.13.20, 01 32 16.00 20, 01 35 26.05 20) within the Part 5 of the RFP package."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 340 Replace Closed Circuit Evaporative Cooler",
+      "source": "BOD cover page",
+      "quote": "BUILDING 340 REPLACE CLOSED CIRCUIT EVAPORATIVE COOLER",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BUILDING 340 REPLACE CLOSED CIRCUIT EVAPORATIVE COOLER",
+          "value": "Building 340 Replace Closed Circuit Evaporative Cooler",
+          "agrees": true
+        },
+        {
+          "source": "DB-RFP p.1",
+          "claim": "BUILDING 340 REPLACE CLOSED CIRCUIT EVAPORATIVE COOLER",
+          "value": "Building 340 Replace Closed Circuit Evaporative Cooler",
+          "agrees": true
+        },
+        {
+          "source": "DB-RFP header (all pages)",
+          "claim": "Building 340 – Replace Closed Circuit Evaporative Cooler",
+          "value": "Building 340 Replace Closed Circuit Evaporative Cooler",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC) Mid-Atlantic",
+      "source": "DB-RFP p.1",
+      "quote": "NAVFAC MID-ATLANTIC",
+      "corroboration": [
+        {
+          "source": "DB-RFP p.1",
+          "claim": "NAVFAC MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "DB-RFP p.1 (prepared by line)",
+          "claim": "NAVFAC MID-ATLANTIC, PWD OCEANA FEAD, PM&E PRA211/214",
+          "value": "NAVFAC Mid-Atlantic / PWD Oceana FEAD",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / NAVFAC Mid-Atlantic",
+      "source": "DB-RFP p.1",
+      "quote": "NAVFAC MID-ATLANTIC",
+      "corroboration": [
+        {
+          "source": "DB-RFP p.1",
+          "claim": "Naval Facilities Engineering Systems Command NAVFAC MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Air Station Oceana, Building 340",
+      "facility_address": "NAS Oceana, Virginia Beach, Virginia",
+      "source": "DB-RFP p.1",
+      "quote": "Naval Air Station Oceana\nVirginia Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "DB-RFP p.1",
+          "claim": "Naval Air Station Oceana, Virginia Beach, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Virginia Beach, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "BOD Civil §",
+          "claim": "The project site is located adjacent to and south of the intersection of Tomcat Blvd and E Avenue on NAS Oceana in Virginia Beach, VA, on the northeast side of Building 340.",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-044",
+      "source": "BOD cover page",
+      "quote": "BFA Project #22-044"
+    },
+    "project_number_client": {
+      "value": "1655654",
+      "source": "DB-RFP p.1",
+      "quote": "eProjects WO#: 1655654",
+      "corroboration": [
+        {
+          "source": "DB-RFP p.1",
+          "claim": "eProjects WO#: 1655654",
+          "agrees": true
+        },
+        {
+          "source": "DB-RFP header (all pages)",
+          "claim": "eProjects 1655654",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "This is a mechanical equipment replacement project, not a building renovation with a measurable gross square footage. The limit of disturbance (LOD) for the site work is approximately 750 SF per BOD Civil section, but this is not a building gross square footage."
+    },
+    "site_disturbance_area": {
+      "value": 750,
+      "unit": "sf",
+      "source": "BOD Civil section",
+      "quote": "The LOD (limit of disturbance) for the site is approximately 750 SF.",
+      "corroboration": [
+        {
+          "source": "BOD Civil section",
+          "claim": "approximately 750 SF",
+          "value": 750,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No design contract fee stated in any source document. BFA served as Designer of Record (DOR) under SYNCON LLC, the design-build prime contractor."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-04-07",
+        "source": "BOD cover page",
+        "quote": "FINAL INTERIM SUBMITTAL\nApril 07 ,2023",
+        "notes": "Date of Final Review (Interim) BOD submittal. Design completion date, if different from this submittal date, is not stated."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No construction contract value stated in any source document. Sub-contractor estimate line items (Wyatt & Co., Damuth-Trane, Power Electric, Hercules Fence) have quantities listed but dollar amounts are blank/redacted in the Syncon Scopes of Work file. EVAPCO equipment quotation from RWH Mechanical also has the price field redacted."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "structural_engineering",
+      "civil_engineering",
+      "architecture"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "structural_foundation",
+      "structural_steel",
+      "civil_site_design",
+      "civil_grading_drainage"
+    ],
+    "building_systems": [
+      "hvac_chilled_water",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_sanitary_dwv",
+      "site_grading_drainage"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "concrete_scope",
+      "metals_structural_steel",
+      "earthwork_scope",
+      "exterior_improvements",
+      "finishes_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "nas_oceana",
+    "navfac_mid_atlantic",
+    "virginia_beach",
+    "cooling_tower_replacement",
+    "closed_circuit_evaporative_cooler",
+    "design_build",
+    "dor_under_syncon",
+    "mechanical_equipment_replacement",
+    "small_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "DB-RFP-001",
+        "title": "NAVFAC DB-RFP Cover Sheet — Building 340 Replace Closed Circuit Evaporative Cooler",
+        "discipline": "program_project_management",
+        "source_file": "1655654 Design Engineering Package (DB-RFP Package).pdf",
+        "page": 1,
+        "reading_notes": "NAVFAC Mid-Atlantic RFP cover sheet. eProjects WO# 1655654. RFP prepared by NAVFAC PWD Oceana FEAD PM&E PRA211/214. Design Manager David W. Gregory III, P.E. Approved by Christopher B. Morris, P.E. (Design Engineering Branch Manager), signed digitally 2022-06-29. Confirms design-build delivery method."
+      },
+      {
+        "sheet_number": "DB-RFP-002",
+        "title": "Table of Contents",
+        "discipline": "program_project_management",
+        "source_file": "1655654 Design Engineering Package (DB-RFP Package).pdf",
+        "page": 2,
+        "reading_notes": "TOC shows Parts 2 (General Requirements), 3 (Statement of Work/Project Program), 4 (Minimum Materials/Engineering/Construction Requirements), 5 (Prescriptive Specifications), and 6 (Attachments including Vicinity Map, Site Map, Reference Documents: ATC System Bldg 340, Energy Conservation Measures Bldg 340, and Equipment Inventory Form). Only first 10 pages of full RFP package were rendered."
+      },
+      {
+        "sheet_number": "DB-RFP-003",
+        "title": "Part 2 — General Requirements (cover)",
+        "discipline": "program_project_management",
+        "source_file": "1655654 Design Engineering Package (DB-RFP Package).pdf",
+        "page": 3,
+        "reading_notes": "Section divider for Part 2 General Requirements. Confirms project title 'BUILDING 340 – REPLACE CLOSED CIRCUIT EVAPORATIVE COOLER, NAVAL AIR STATION OCEANA, VIRGINIA BEACH, VIRGINIA'."
+      },
+      {
+        "sheet_number": "DB-RFP-004 to 010",
+        "title": "Part 2 — General Requirements (pages 1–7 of 28)",
+        "discipline": "program_project_management",
+        "source_file": "1655654 Design Engineering Package (DB-RFP Package).pdf",
+        "page": "4–10",
+        "reading_notes": "Standard NAVFAC design-build general requirements boilerplate: definitions, accessibility (UFC 1-200-01), warranty (1 year), equipment inventory forms, summary of work (FAR 52.236-9 protection of government property), work restrictions (base access via DBIDS), price and payment procedures (NAVFAC forms, WAWF), administrative requirements (superintendent qualifications). Work hours 0700–1530 Mon–Fri. Security access via DBIDS biometric credentialing required for all contractor personnel. No project-specific dollar amounts stated in these pages."
+      },
+      {
+        "sheet_number": "SYNCON-01",
+        "title": "Damuth-Trane Proposal — DDC Controls (NAS Oceana Bldg 340)",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": 1,
+        "reading_notes": "Proposal from Damuth-Trane (Chesapeake VA) to SYNCON dated August 11, 2022. Scope: modification of existing Trane Tracer DDC Control System, disconnect controls for existing CCEC, provide BACnet controls for new CCEC, standalone water temperature sensor/display, programming by Trane Controls Technician, 1-year labor/materials warranty. Excludes: power wiring, smoke detectors/fire alarm interface, control valve/sensor installation, commissioning. Price not shown."
+      },
+      {
+        "sheet_number": "SYNCON-02",
+        "title": "Site Plan with Annotations — Enlarged Floor Plan Bldg 340",
+        "discipline": "civil_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": 2,
+        "reading_notes": "Shows existing EVAPCO CC-1 name plate (model ESW-102-33H, Virginia Beach serial). Annotated floor plan shows: CC-1 location on exterior pad, mechanical room (166) and training room (164), underground piping to geothermal well field. Handwritten annotations: 'REMOVE FENCE', 'DEMO CONC PAD / NEW CONCRETE PAD', 'REMOVE 18 VITEX 48 LONG'. Existing 400Hz generator (167) visible adjacent. Direct reading CWS temperature sensor location shown. North arrow on plan — confirms exterior pad on NE side of building."
+      },
+      {
+        "sheet_number": "SYNCON-03",
+        "title": "Hercules Fence Proposal — Cooling Tower Enclosure",
+        "discipline": "civil_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": 3,
+        "reading_notes": "Proposal from Hercules Fence (Norfolk VA) to SYNCON dated August 11, 2022. Scope: 50 LF of 7-foot high pressure-treated wood fence enclosure. Exclusions include removal of existing enclosure. Price not shown."
+      },
+      {
+        "sheet_number": "SYNCON-04 to 07",
+        "title": "Wyatt & Co. Mechanical/Plumbing Estimate (pages 1–4)",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "4–7",
+        "reading_notes": "Estimate from Wyatt & Co. of Virginia (Chesapeake VA) to SYNCON (Tommy Phelps) dated August 11, 2022 for 'B-340, NASO, Cool Tower.' Detailed scope breakdown includes: MECHANICAL DEMO — disconnect/remove existing CC-1 cooler, crane lifts (2 lifts), remove condenser water piping/insulation, demo CWS wall mounted sensor, demo floor drain/trap in mech room 166. PLUMBING DEMO — demo CC-1 make-up water from mech room. PLUMBING NEW WORK — provide/install new trench drain system, chemical shot feeder piping, new CC-1 make-up water system, new drain system to sanitary sewer in mech room 166, 25% glycol (6 units). MECHANICAL NEW WORK — provide EVAPCO CCEC with VFD panel, install CC-1, new VFD panel, new condenser water pipe/fittings/supports, pipe insulation, chemical water treatment with Neptune filter feeder, heat tracing on piping, Trane DDC controls, assist TABs contractor. Rate/Amount columns are blank — price data not captured."
+      },
+      {
+        "sheet_number": "SYNCON-08 to 09",
+        "title": "Power Electric Company Proposal — Electrical",
+        "discipline": "electrical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "8–9",
+        "reading_notes": "Proposal from Power Electric Company (Chesapeake VA, division of CHAMPCO Inc.) to SYNCON dated August 11, 2022. Scope: lockout/tagout existing chiller circuits, disconnect and remove conduit/wire back to source, remove existing breaker; provide new 40A circuit from panelboard in RM 165 to new CC-1 VFD control panel; provide 60A 3PH NEMA 4X fused disconnect at 40A; install 60/3 breaker in panelboard in RM 165; remove/reinstall/re-lamp 6 mechanical room lighting fixtures; demolish GFCI receptacle; reuse existing breaker and provide conduit/wire to new GFCI receptacle. Excludes: painting, bond, HVAC controls conduit, control panel and VFD. Price not shown."
+      },
+      {
+        "sheet_number": "SYNCON-10",
+        "title": "RWH Mechanical Sales Quotation — EVAPCO Closed Circuit Cooler and VFD Panel",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": 10,
+        "reading_notes": "Equipment quotation from RWH Mechanical Sales (Norfolk VA) dated August 11, 2022. One (1) EVAPCO ESW4 9-43G18-SP-R induced draft closed circuit cooler: 524.8 GPM, 25% propylene glycol, EWT 100F/LWT 90F at 80F WB, coil pressure drop 2.3 PSI, all 304 stainless steel construction, two 5 HP inverter-duty fan motors, vibration switch, two 6 kW sump heaters, 1 x 7.5 HP sump pump, electronic water level control, external service platform with ladder, motor davit, low sound fan. Approx dimensions 18' x 8.5' x 18.5' high. Ships in 2 sections, heaviest section 11,620 lbs. One (1) Stainless Steel NEMA 4X VFD panel. Lead time ~12 weeks. Price field redacted ('Your Cost... Freight Allowed --- $')."
+      },
+      {
+        "sheet_number": "SYNCON-11 to 12",
+        "title": "EVAPCO Technical Data Sheet — ESW4 9-43G18-SP-R Closed Circuit Cooler",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "11–12",
+        "reading_notes": "EVAPCO factory technical data sheet for ESW4 9-43G18-SP-R. Confirms: Flow 524.8 GPM, fluid 25% propylene glycol, EWT 100F/LWT 90F/WB 80F, required capacity 2,523.95 MBH (168.26 tons). Physical data: overall dimensions 8'-5.5\" W x 18'-0\" L x 18'-5.75\" H, operating weight 26,450 lbs, shipping weight 18,420 lbs, heaviest section 11,617 lbs. Fan data: 2 fans, 2 motors, 5 HP each (10 HP total nameplate). Pump: 1 pump, 7.5 HP. IBC structural design certified, Seismic (Sps) up to 1.6g, Wind up to 119 psf. Sound data (low sound fan) approximately 78–80 dBA at 5'. Ships in 2 sections. CTI certified."
+      },
+      {
+        "sheet_number": "SYNCON-13",
+        "title": "EVAPCO Shop Drawing — ESW4 9-43G18-SP-R Unit Drawing (Plan/Elevation/Coil Connections)",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": 13,
+        "reading_notes": "EVAPCO factory drawing SLWX40918-DA. Overall unit dimensions confirmed: 8'-5.5\" W x 18'-0\" L x 18'-5.75\" H. Coil connections at Faces B & D (2x 4\" BFW fluid in, 2x 4\" BFW fluid out). Drain/makeup connections shown. Unit weight on drawing: 26,450 lbs operating, 18,360+ lbs shipping. Two shipping sections. Note: drawing is dated 7/26/2022."
+      },
+      {
+        "sheet_number": "SYNCON-14",
+        "title": "EVAPCO Shop Drawing — Steel Support Configuration",
+        "discipline": "structural_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": 14,
+        "reading_notes": "EVAPCO factory drawing SLWX40918-DA showing steel beam support configuration. Plan view and end view of mounting hole layout. Dimension 19'-0\" typical between support beams. Mounting holes and unit outline shown. Factory-recommended steel support guidance; actual support design by BFA per BOD structural section."
+      },
+      {
+        "sheet_number": "SYNCON-15 to 16",
+        "title": "EVAPCO Shop Drawings — Electric Water Level Control, Vibration Switch Wiring",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "15–16",
+        "reading_notes": "Factory drawings for make-up water level control assembly (standpipe, Y-strainer, electric make-up valve) and vibration switch single-speed wiring diagram. Standard equipment accessories."
+      },
+      {
+        "sheet_number": "SYNCON-17 to 22",
+        "title": "EVAPCO Shop Drawings — Heater Location, 3-Phase Heater Wiring, External Service Platform, Fan Motor Space Heaters",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "17–22",
+        "reading_notes": "Factory heater location drawing (HLWX409VE-DA): two immersion heaters (2x 6 kW) in basin. 3-phase heater wiring diagram (2 heaters, 460V/3/60). External service platform drawing (PLWX40918-DB): H-dimension 10'-3\" to 14'-9\" range across model family; for ESW4-9-43G18, service platform H ~ 14'-2\". Removable davit drawing showing fan/motor removal rigging. Fan motor space heater wiring (120V, <2 amps). All standard factory drawings."
+      },
+      {
+        "sheet_number": "SYNCON-23 to 24",
+        "title": "EVAPCO Sound Data Sheet and Certificate of Sound Compliance",
+        "discipline": "mechanical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "23–24",
+        "reading_notes": "Full-speed sound data for ESW4 9-43G18-SP-R with Low Sound Fan option. Motor: 5 HP, 2 motors, full speed. Sound pressure levels (Calc dBA at 5 ft): End 77, Motor Side 79, Opp End 77, Opp Mtr Side 78, Top 80. Overall Calc dBA at 5': ~80 dBA (top face). CTI ATC-128 Certificate of Compliance for independent sound validation."
+      },
+      {
+        "sheet_number": "SYNCON-25 to 27",
+        "title": "VFD Control Panel Drawings — Cooling Tower Control Panel (NEMA 4X Stainless, 460V 3PH)",
+        "discipline": "electrical_engineering",
+        "source_file": "Syncon-Cooling Tower Scopes of Work.pdf",
+        "page": "25–27",
+        "reading_notes": "Control panel drawings from Associated Starters & Controls (Norfolk VA). Title: 'COOLING TOWER CONTROL PANEL ENCLOSURE – 460V – 3PH'. NEMA 4X, 36\"x30\"x12\" stainless steel enclosure. Connected load: 40.1 AMPS; max run load: 25A; HCR: 60A; MCP: 31.3A. Includes VFD for fan motors (WEG CFV11), motor contactors for Fan 1, Fan 2, spray pump, plus basin heaters (2x 6kW). Control logic includes hand/off/auto for fan and spray pump, vibration switch interlock, thermostat condensation control, water level controls (high/low alarm, EVLC valve), basin heater control. Two wiring schematics pages. Designed/approved 07/29/2022."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — mechanical equipment replacement project, not a building with a measurable gross SF. Site LOD is approximately 750 SF per BOD Civil."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — single exterior mechanical equipment pad replacement plus interior mechanical room work."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "One (1) new EVAPCO ESW4 9-43G18-SP-R closed-circuit evaporative cooler (induced draft, 524.8 GPM, 25% propylene glycol, 168.26 tons/2,523.95 MBH capacity at 80F WB)",
+          "New condenser water piping (supply and return) with insulation and supports",
+          "New VFD panel (NEMA 4X stainless, 460V 3PH, 40.1A connected load) for cooler fan and pump control",
+          "DDC integration: modification of existing Trane Tracer control system via BACnet",
+          "New chemical water treatment with Neptune filter feeder and glycol system (25% propylene glycol, 6 units)",
+          "Heat tracing on new piping",
+          "New 12\"x36\" trench drain in mechanical equipment room (Room 166)"
+        ],
+        "electrical": [
+          "New 40A circuit from panelboard 'LA' or 'HC' in Room 165 to new CC-1 VFD control panel",
+          "New 60A 3PH NEMA 4X fused disconnect",
+          "New 60/3 breaker installed in panelboard RM 165",
+          "Remove/reinstall/re-lamp 6 mechanical room fluorescent lighting fixtures",
+          "New GFCI receptacle adjacent to 60A disconnect",
+          "Existing building power: 480Y/277V, 3-phase, 4-wire and 208Y/120V, 3-phase, 4-wire in Room 165"
+        ],
+        "plumbing": [
+          "New trench drain system (12\"x36\") in mechanical room 166 connecting to sanitary sewer",
+          "New CC-1 make-up water system",
+          "Chemical shot feeder piping for water treatment"
+        ],
+        "fire_protection": []
+      },
+      "structural_notes": [
+        "New 2'-6\" thick reinforced concrete mat foundation (#6 at 12\" OC top, #8 at 12\" OC bottom)",
+        "Two-level W12 steel beam support frame raising cooler bottom to +2'-0\" above foundation",
+        "3/4\" diameter anchor bolts for lateral (wind and seismic) resistance",
+        "1\" thick steel bearing plates under lower W12 beams",
+        "Design loads: DL 26,450 lbs (cooler) + 1,020 lbs (platform); wind 124 MPH (Vult), seismic Sms=0.124g",
+        "Special inspections by Broyles and Associates, P.C.",
+        "Foundation setback 3 ft from existing building to avoid imposing load on existing foundations"
+      ],
+      "civil_site_notes": [
+        "LOD approximately 750 SF on NE side of Building 340",
+        "Demolition of existing concrete pad, concrete walk pavement, and wood fence/gate",
+        "New concrete utility pad/foundation (elevated 6\" above surrounding grade)",
+        "New fence enclosure (50 LF, 7-ft pressure-treated wood per Hercules Fence proposal)",
+        "Bermuda grass sod for disturbed areas",
+        "Silt fence ESC measures; no DEQ permit required (<10,000 SF disturbance)",
+        "No additional impervious surface >5,000 SF; no LID calculations required"
+      ]
+    }
+  },
+  "conflict_flags": []
+}

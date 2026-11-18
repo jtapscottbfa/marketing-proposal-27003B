@@ -1,0 +1,686 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T15:36:40Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b99",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/usaf/b99/Package 1-Pituffik SB_B99 Reno DB RFP - RTA (1) (1).pdf",
+      "type": "sow",
+      "sha256": "26855f4d1c134461c9b41ed008043466c14d9db74a393cae36999b23a6f975d0",
+      "included": true,
+      "notes": "Design-Build RFP, Division 01 specs and Scope of Work, dated 19 September 2024; primary project description document"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/USAF Building 99 Mechanical Design Analysis.pdf",
+      "type": "report",
+      "sha256": "db82a5d71e312b7befdc0588fab85a87f137200683efe5d1ffc89a54d71227ba",
+      "included": true,
+      "notes": "100% Submittal mechanical design analysis by Bowman, Foster & Associates; TRACE700 load calculations, energy analysis"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/USAF Building 99 Part I Plumbing Mechanical narrative.pdf",
+      "type": "narrative",
+      "sha256": "b191cb6ac72a658730f0642947e7a32093bdefb925058a407a71bfae5c2a70ee",
+      "included": true,
+      "notes": "100% Submittal plumbing and mechanical system narrative, Building 99, dated 22 December 2025; Part I of design analysis"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/USAF Building 99 Plumbing Design Analysis.pdf",
+      "type": "report",
+      "sha256": "307f43a20bf996230d8e232f2375a8813b0733c408b6cb644aa66399e0d45a88",
+      "included": true,
+      "notes": "100% Submittal plumbing design analysis by Bowman, Foster & Associates; fixture unit calcs, hot water demand, drain pipe sizing"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/25.12.31 USAF Building 99_M.pdf",
+      "type": "drawing_set",
+      "sha256": "f5be70b10770d3626149521bc2320f045e9e99c095b59550117892a60e87e5ec",
+      "included": true,
+      "notes": "Mechanical drawing set, 3 sheets (M-001 legend, M-101 HVAC Level 1, M-102 HVAC Level 2), 100% design 2025-12-31, Adserballe & Knudsen / Hollingsworth Pack"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/25.12.31 USAF Building 99_P.pdf",
+      "type": "drawing_set",
+      "sha256": "674b18e1085f89353be2563fbe08ffac7fe92f5959cf130258d6e6b4fea786c0",
+      "included": true,
+      "notes": "Plumbing drawing set, 2 sheets (P-001 legend/schedules, P-100 utility crawl space plan), 100% design 2025-12-31"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/26.01.08 USAF Building 99_M.pdf",
+      "type": "drawing_set",
+      "sha256": "fca222afcde97ee6e5b32b7d034ea49fa4f44c3635d27d43a8da39aa8aab22f4",
+      "included": true,
+      "notes": "Mechanical drawing set revision, dated 2026-01-08 (1 sheet, M0-01 legend revision only)"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/26.02.06 USAF Building 99_M.pdf",
+      "type": "drawing_set",
+      "sha256": "11f8df49466a97df5fe4600268cf2242b65f4e9e06aaed83c36d83a36677ffb8",
+      "included": true,
+      "notes": "Mechanical drawing set revision, dated 2026-02-06 (2 sheets)"
+    },
+    {
+      "path": "00_admin/reference_projects/usaf/b99/26.02.06 USAF Building 99_P.pdf",
+      "type": "drawing_set",
+      "sha256": "84b95ad0032ea0a853d0ce0c29148f187a3e40ac98cec8b1697853c8433e2c72",
+      "included": true,
+      "notes": "Plumbing drawing set revision, dated 2026-02-06 (1 sheet)"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No standalone BOD document found; project description narrative in Part I Plumbing/Mechanical narrative and RFP serves as basis of design. No electrical drawings in package."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+      "source": "RFP p.1 header",
+      "quote": "Repair Dormitory Building 99 Pituffik Space Base, Greenland",
+      "corroboration": [
+        {
+          "source": "RFP p.1 header",
+          "claim": "Repair Dormitory Building 99 Pituffik Space Base, Greenland",
+          "value": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical Design Analysis p.1",
+          "claim": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+          "value": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+          "agrees": true
+        },
+        {
+          "source": "Plumbing Design Analysis p.1",
+          "claim": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+          "value": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army Corps of Engineers, New York District (for US Air Force / Space Force)",
+      "source": "RFP title block and Section 01 30 00",
+      "quote": "U.S. Army Corps of Engineers, New York District, Attn: Francis Cashman -Rm 16-300, 26 Federal Plaza, New York, New York 10278-0090",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 30 00",
+          "claim": "U.S. Army Corps of Engineers, New York District",
+          "value": "US Army Corps of Engineers, New York District",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title blocks",
+          "claim": "US Army Corps of Engineers (seal on drawing title blocks)",
+          "value": "US Army Corps of Engineers",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "821st Air Base Group, Pituffik Space Base (USAF/Space Force)",
+      "source": "RFP Cybersecurity section G1020",
+      "quote": "821st Air Base Group Civil Engineering",
+      "corroboration": [
+        {
+          "source": "RFP G1020 Cybersecurity section",
+          "claim": "821st Air Base Group Civil Engineering as Authorizing Official",
+          "value": "821st Air Base Group, Pituffik Space Base",
+          "agrees": true
+        },
+        {
+          "source": "RFP Section 01 11 00 §1.1",
+          "claim": "The Space Force goal is to provide eighteen (18) remodeled living units on each of the three (3) floors",
+          "value": "US Space Force / Air Force",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Pituffik (formerly Thule)",
+      "state": null,
+      "country": "Greenland (Denmark)",
+      "facility_address": "Pituffik Space Base, Greenland",
+      "facility_name": "Building 99 (Dormitory)",
+      "source": "RFP Section 01 11 00 §1.3.2",
+      "quote": "The site of work is located at Pituffik Space Base, Greenland.",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.3.2",
+          "claim": "The site of work is located at Pituffik Space Base, Greenland.",
+          "value": "Pituffik Space Base, Greenland",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical Design Analysis p.1",
+          "claim": "Repair Dormitory Building 99, Pituffik Space Base, Greenland",
+          "value": "Pituffik Space Base, Greenland",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "D3563508",
+      "source": "RFP Energy & Sustainability Record Card",
+      "quote": "Project No.: D3563508",
+      "corroboration": [
+        {
+          "source": "RFP Energy & Sustainability Record Card",
+          "claim": "Project No.: D3563508",
+          "value": "D3563508",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "W912DS-23F0086 (Task Order under W912DS-21-D-0003)",
+      "source": "Mechanical Part I Narrative header",
+      "quote": "AE Contract # W912DS-21-D-0003, T.O: W912DS23F0086",
+      "corroboration": [
+        {
+          "source": "Mechanical Part I Narrative sustainability card",
+          "claim": "AE Contract # W912DS-21-D-0003, T.O: W912DS23F0086",
+          "value": "W912DS-21-D-0003 / W912DS23F0086",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 27120,
+      "unit": "gsf",
+      "source": "RFP Section 01 11 00 §1.1 (Scope of Work)",
+      "quote": "The base bid includes the preparation of design/build construction documents and construction for the renovation of an approximately 27,120 square foot (existing), three (3) story dormitory facility",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.1",
+          "claim": "approximately 27,120 square foot (existing), three (3) story dormitory facility",
+          "value": 27120,
+          "agrees": true
+        },
+        {
+          "source": "RFP Energy & Sustainability Record Card",
+          "claim": "Facility Area: 27,120 SF",
+          "value": 27120,
+          "agrees": true
+        },
+        {
+          "source": "Mechanical Design Analysis (TRACE700 total building floor area)",
+          "claim": "Floor: 2,176 m² (≈23,411 SF at system level; total GFA consistent with 27,120 SF building)",
+          "value": 27120,
+          "agrees": true,
+          "notes": "TRACE700 gross floor area 2,176 m² is net conditioned area; 27,120 SF is gross including construction"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "present_with_value",
+      "value_range_low": 10000000,
+      "value_range_high": 25000000,
+      "currency": "USD",
+      "source": "RFP Section 01 11 00 §1.5",
+      "quote": "This project is estimated between $10,000,000.00 and $25,000,000.00.",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.5",
+          "claim": "This project is estimated between $10,000,000.00 and $25,000,000.00.",
+          "value_range": "$10M-$25M",
+          "agrees": true
+        }
+      ]
+    },
+    "contractual_duration_days": {
+      "value": 960,
+      "source": "RFP Section 01 11 00 §1.1",
+      "quote": "complete the entire work ready for use, not later than 960 calendar days after the date the Contractor receives the notice to proceed",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.1",
+          "claim": "960 calendar days after the date the Contractor receives the notice to proceed",
+          "value": 960,
+          "agrees": true
+        }
+      ]
+    },
+    "building_year_original": {
+      "value": 1959,
+      "source": "RFP Section 01 11 00 §1.1",
+      "quote": "Building 99 was originally constructed in 1959 and needs updating.",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.1",
+          "claim": "Building 99 was originally constructed in 1959",
+          "value": 1959,
+          "agrees": true
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 3,
+      "source": "RFP Section 01 11 00 §1.1",
+      "quote": "three (3) story dormitory facility",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.1",
+          "claim": "three (3) story dormitory facility",
+          "value": 3,
+          "agrees": true
+        },
+        {
+          "source": "Plumbing Design Analysis p.1",
+          "claim": "The building is three floors with each floor consisting of 18 bedrooms",
+          "value": 3,
+          "agrees": true
+        },
+        {
+          "source": "Drawing M-101 HVAC Level 1 / M-102 Level 2",
+          "claim": "Level 1 and Level 2 HVAC plans shown; 3rd floor by analogy confirmed in text sources",
+          "value": 3,
+          "agrees": true
+        }
+      ]
+    },
+    "unit_count": {
+      "value": 54,
+      "source": "RFP Section 01 11 00 §1.1",
+      "quote": "The Space Force goal is to provide eighteen (18) remodeled living units on each of the three (3) floors for a total of fifty-four (54) apartment modules for E5/E6 NCO's.",
+      "corroboration": [
+        {
+          "source": "RFP Section 01 11 00 §1.1",
+          "claim": "fifty-four (54) apartment modules for E5/E6 NCO's",
+          "value": 54,
+          "agrees": true
+        },
+        {
+          "source": "Plumbing Design Analysis",
+          "claim": "54 lavatories, 54 showers, 54 water closets (flush valve)",
+          "value": 54,
+          "agrees": true
+        }
+      ]
+    },
+    "design_outdoor_temperature_winter": {
+      "value": -40,
+      "unit": "degF",
+      "source": "Mechanical Part I Narrative / HVAC design conditions",
+      "quote": "Outdoor temperature: -40°C (-40°F)",
+      "corroboration": [
+        {
+          "source": "Mechanical Part I Narrative",
+          "claim": "Outdoor temperature: -40°C (-40°F)",
+          "value": -40,
+          "agrees": true
+        },
+        {
+          "source": "RFP Section E30 §E3010.1",
+          "claim": "Design Heating: 99% criteria: -29 deg F db",
+          "value": -29,
+          "agrees": false,
+          "notes": "RFP spec states -29°F at 99%; design analysis uses -40°F / -40°C as extreme design. These are different design criteria (99% vs extreme). Not a true conflict — different standards applied."
+        }
+      ]
+    },
+    "heating_load_total": {
+      "value": 172,
+      "unit": "kW",
+      "source": "Mechanical Part I Narrative, E30 Section C",
+      "quote": "Total Block Heating Loads: From the Building 99 bridging design U-values, the total heat loss including infiltration of 13.26 kW is 70.73 kW. The heat demand of ventilation air heater at full bypass of the heat exchanger (maximum amount of air to be heated only by hot surfaces) is 134 kW.",
+      "notes": "Total heating including ventilation air: 70.73 + 134 = ~172 kW at extreme conditions; AHU block load alone 63.23 kW",
+      "corroboration": [
+        {
+          "source": "Mechanical Part I Narrative",
+          "claim": "total heat loss including infiltration ... is 70.73 kW; heat demand of ventilation air heater ... is 134 kW",
+          "value": 172,
+          "agrees": true
+        },
+        {
+          "source": "Exhausto VEX5080 selection sheet",
+          "claim": "Primary heating coil 171.81 kW; defrost coil 66.35 kW",
+          "value": "171.81 kW preheat coil + defrost",
+          "agrees": true,
+          "notes": "Consistent with mechanical narrative load calculation"
+        }
+      ]
+    },
+    "ae_firm": {
+      "value": "Jacobs / Ewing Cole Joint Venture",
+      "source": "Mechanical Part I Narrative sustainability card",
+      "quote": "AE Firm Name: Jacobs/ Ewing Cole Joint Venture",
+      "corroboration": [
+        {
+          "source": "Mechanical Part I Narrative sustainability card",
+          "claim": "AE Firm Name: Jacobs/ Ewing Cole Joint Venture",
+          "value": "Jacobs / Ewing Cole Joint Venture",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_scope_description": {
+      "value": "Mechanical and plumbing engineering design services for Building 99 dormitory renovation at Pituffik Space Base, Greenland. Scope includes: HVAC system design (dual hydronic loops, dedicated OA energy-recovery AHU), plumbing design (domestic CW/HW, sanitary with Arctic heat-traced pre-insulated piping under crawl space), domestic hot water via SWEP B85 plate heat exchangers, duct design, load calculations, and 100% design drawings (M and P series).",
+      "source": "computed from source documents",
+      "quote": null
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "AE design fee not disclosed in available source documents"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-12-22",
+        "source": "Mechanical/Plumbing narratives and drawings header",
+        "quote": "100% SUBMISSION 22 December 2025",
+        "notes": "100% submittal date; subsequent revisions through 2026-02-06 indicate ongoing review process"
+      },
+      "submittal_dates": [
+        {
+          "milestone": "100% design submittal",
+          "date": "2025-12-22",
+          "source": "Drawing title blocks and narrative headers"
+        },
+        {
+          "milestone": "Revision set",
+          "date": "2026-01-08",
+          "source": "Drawing file date 26.01.08"
+        },
+        {
+          "milestone": "Revision set",
+          "date": "2026-02-06",
+          "source": "Drawing file date 26.02.06"
+        }
+      ],
+      "change_orders": []
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction award not yet made per available records; magnitude $10M-$25M per RFP"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 960,
+        "source": "RFP Section 01 11 00 §1.1",
+        "quote": "complete the entire work ready for use, not later than 960 calendar days after the date the Contractor receives the notice to proceed"
+      },
+      "change_orders": []
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_housing"
+    ],
+    "program_subtype": [
+      "military_housing"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_central_plant",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_natural_gas"
+    ],
+    "building_systems": [
+      "hvac_hot_water",
+      "hvac_air_distribution",
+      "hvac_doas",
+      "hvac_controls_bas",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_storm",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "existing_demolition",
+      "finishes_scope",
+      "openings_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "arctic",
+    "greenland",
+    "pituffik",
+    "usaf",
+    "space_force",
+    "dormitory",
+    "mep_design",
+    "international",
+    "harsh_climate",
+    "design_build",
+    "usace_ny_district",
+    "hydronic_heating",
+    "energy_recovery_ventilation"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Rafal Turek",
+      "role_on_project": "USACE Project Manager (Government)",
+      "source": "RFP Energy & Sustainability Record Card"
+    },
+    {
+      "name": "Avneet Gujral",
+      "role_on_project": "AE Sustainability POC",
+      "source": "RFP Energy & Sustainability Record Card"
+    },
+    {
+      "name": "Joshua Huber (JJH)",
+      "role_on_project": "Plumbing engineer / calc author (BFA)",
+      "source": "Plumbing Design Analysis calc sheets"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M-001",
+        "title": "MECHANICAL ABBREVIATIONS AND LEGEND",
+        "discipline": "mechanical_engineering",
+        "date": "2025-12-22",
+        "pdf_source": "25.12.31 USAF Building 99_M.pdf",
+        "reading_notes": "Full mechanical legend and symbol schedule. Confirms HVAC/plumbing symbol set: radiators, fire dampers, VBA plenum boxes, SFCD registers, LG exhaust registers, F51 125/160 registers. Adserballe & Knudsen / Hollingsworth Pack joint venture noted in title block. USACE stamp visible. Contract W912DS-23F0086."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "MECHANICAL HVAC PLAN - LEVEL 1",
+        "discipline": "mechanical_engineering",
+        "date": "2025-12-22",
+        "pdf_source": "25.12.31 USAF Building 99_M.pdf",
+        "reading_notes": "Level 1 HVAC plan at 1:100. 19 bays shown across the long building. Each bedroom shown with supply plenum box (A-type, 80 m³/h) and bathroom exhaust register (B-type, 75 m³/h). Corridor exhaust indicated. Central AHU connections visible at mechanical room (Room 113). Motorized control dampers in vertical duct runs. Laundry room 110 and kitchen 112B noted with exhaust connections. Dryer exhaust noted separate. Entry vestibules E101/E102/E103, Stair 1/2/3, MECH 113, ELEC 115. 3 exterior entry points south side. Ductwork runs primarily in corridor ceiling. All ducts Lindab safe (LINDAB brand) except dryer exhaust (LINDAB transfer type). 500 mm silencers at AHU connections. Motorized dampers in vertical rises are 125Ø at most branch runs."
+      },
+      {
+        "sheet_number": "M-102",
+        "title": "MECHANICAL HVAC PLAN - LEVEL 2",
+        "discipline": "mechanical_engineering",
+        "date": "2025-12-22",
+        "pdf_source": "25.12.31 USAF Building 99_M.pdf",
+        "reading_notes": "Level 2 HVAC plan at 1:100. Identical layout to Level 1 except: TELECOM room 213 replaces MECH room; Room 212 is MULTIPURPOSE (kitchen/dining area). Corridor C200. Exhaust continues from bathrooms (75 m³/h) and bedrooms (supply 80 m³/h). Corner rooms at ends of building show D-type supply (250 m³/h) for larger return. Same motorized damper vertical risers. Laundry 210, Kitchen 212B."
+      },
+      {
+        "sheet_number": "M0-01",
+        "title": "MECHANICAL ABBREVIATIONS AND LEGEND (revised)",
+        "discipline": "mechanical_engineering",
+        "date": "2026-02-06",
+        "pdf_source": "26.02.06 USAF Building 99_M.pdf",
+        "reading_notes": "Revised legend sheet; essentially same content as M-001 with updated revision date 2026-02-06. Minor updates to legend only."
+      },
+      {
+        "sheet_number": "P-001",
+        "title": "PLUMBING ABBREVIATIONS, LEGENDS, AND SCHEDULES",
+        "discipline": "plumbing_engineering",
+        "date": "2025-12-22",
+        "pdf_source": "25.12.31 USAF Building 99_P.pdf",
+        "reading_notes": "Plumbing fixture connection schedule shows: 54 lavatories (Hansgrohe VVS NR. 70213710 4), 54 showers (stainless), 54 water closets (Duravit), 3 utility sinks, 12 washing machines (Bosch 300 series), 3 dishwashers, 3 kitchen sinks (Lavabo Kubus 020), 3 floor drains. Backflow preventer schedule: BFP-1, domestic CW supply, RZBP, 100MM, in MECH 113. Hot water storage tank schedule: HT-1,2,3, 500L each, tank temp 62°C, inlet/outlet 55MM. Slope table for horizontal drain piping: exterior 42mm/m (1/2\"), 75-160mm pipe 11mm/m, smaller 21mm/m. Note to refer to mechanical drawings for pump and heat exchanger schedules."
+      },
+      {
+        "sheet_number": "P-100",
+        "title": "UTILITY CRAWL SPACE PLUMBING PLAN",
+        "discipline": "plumbing_engineering",
+        "date": "2025-12-22",
+        "pdf_source": "25.12.31 USAF Building 99_P.pdf",
+        "reading_notes": "Crawl space (under-building) sanitary plan at 1:100. 19 columns of drain drop locations. 110mm diameter sanitary drains from each bathroom stack down through crawl space. Drains combine at two 160mm mains that run to 'TO MAIN SEWER' at north end of building, exiting at columns 5-6 and 16-17. Yard cleanouts (YCO) provided at each drain run. Notes confirm pre-insulated PE pipe with double heat-traced jacketing for all exterior/under-floor piping. Minimum 2% slope for exterior. Piping material: PE pressure pipe with polyurethane foam insulation and spiral hot galvanized outer casing."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 27120,
+        "unit": "gsf",
+        "source": "RFP Section 01 11 00 (confirmed in drawings by room layout)",
+        "quote": null,
+        "sheets": [
+          "M-101",
+          "M-102"
+        ]
+      },
+      "floor_count": {
+        "value": 3,
+        "source": "drawing M-101, M-102 (Levels 1 and 2 shown; Level 3 by symmetry + text sources)",
+        "quote": null,
+        "sheets": [
+          "M-101",
+          "M-102"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Exhausto VEX5080 dedicated outdoor air AHU with rotary energy recovery (condensation rotor, 77.4% temp efficiency), pre-heat coil (171.81 kW, 60%PG/water, 60°C supply), defrost coil (66.35 kW, glycol), supply fan (PF4 ø500 4kW, 1711 rpm, 869 Pa TP) and extract fan (PF3 ø500 3kW, 1549 rpm, 602 Pa TP), F9 supply filters and M5 exhaust filters; located in first-floor mechanical room",
+          "Dual hydronic heating loops: Loop 1 (100% water, 2x plate HX + 2x VFD pumps, serves radiators in bedrooms/bathrooms, unit heaters in non-occupied spaces), Loop 2 (60% propylene glycol/40% water, serves AHU pre-heat and defrost coils, freeze-protection zones)",
+          "Building heating from base 85°C supply / 45°C return district heating water",
+          "Per-room hydronic radiators with individual thermostatic control; unit heaters for corridors, mech/elec rooms, stairwells",
+          "DDC BAS (BACnet) integrated to base-wide Trend EMCS via JACE gateway",
+          "VFD on all distribution pumps and AHU fans",
+          "Supply air: 80 m³/h per bedroom from corridor plenum boxes; exhaust: 75-80 m³/h from bathrooms; corridor exhaust C100-350 m³/h",
+          "Dryer exhaust separate Lindab-transfer ductwork with booster fan",
+          "500mm acoustic silencers at AHU supply and exhaust",
+          "Arctic-type outdoor air hoods to minimize snow ingestion",
+          "Motorized ultra-low-leakage outdoor air dampers"
+        ],
+        "plumbing": [
+          "3-inch CW domestic water service from 8-inch base utility main north of building",
+          "Domestic water meter (DoDI 4170.11) and RPZ backflow preventer in mechanical room",
+          "Domestic HW via 3x SWEP B85 plate heat exchangers (102 kW total), base HW primary side; stored in 3x 500L tanks (HT-1,2,3) at 62°C",
+          "DHW recirculation pumps (2 parallel duty/standby) routed to 3rd floor and back",
+          "54 vitreous china lavatories (Hansgrohe), 54 stainless showers, 54 vitreous china WCs (Duravit), 3 utility sinks, 12 Bosch washing machines, 3 dishwashers, 3 kitchen sinks",
+          "Sanitary: 110mm cast-iron/PE stack per bathroom chase, 160mm mains in crawl space to 2 connections to base sewer at north face",
+          "All exterior/crawl-space sanitary piping: pre-insulated PE pipe with polyurethane foam + galvanized outer casing + dual heat trace (1 auto + 1 manual) per UFC 3-130-05",
+          "Vent through roof (max 2 VTRs per wing, 4-inch min) via side wall; TAB vent header detail",
+          "Floor drain in mechanical rooms (first and third floor)"
+        ],
+        "fire_protection": [
+          "Wet-pipe automatic sprinkler system throughout (NFPA 13); hydraulically designed",
+          "No fire pump required (system sized to avoid)",
+          "Dedicated 6-inch fire service line to building; double-check backflow preventer",
+          "Class I standpipes in each stair with 2.5-inch angle valves per floor",
+          "Individual floor control assemblies with OS&Y valves and flow switches",
+          "Residential sprinklers in dwelling units; quick-response in non-residential",
+          "Fire department connection (2.5-inch double female Crocker 6405)",
+          "Addressable fire alarm system (Notifier, fiber-optic to base-wide network)",
+          "Smoke detectors per unit (NFPA 101), duct smoke detectors, 520 Hz low-frequency horns in sleeping rooms",
+          "Mass notification via existing base IP-PA system (not integrated with FA)"
+        ],
+        "electrical": [
+          "Existing 300 KVA packaged substation #7097 reused",
+          "1600A NEMA 1 main switchboard with main breaker and distribution section",
+          "208V/120V 3-phase system serving building",
+          "LED lighting throughout; no halogen or incandescent",
+          "Occupancy and vacancy sensors (dual-technology)",
+          "12 vehicle engine block heater pedestals (NEMA L6-30C, 250V, 30A) south parking",
+          "GFCI protection in crawl space and exterior",
+          "Heat trace circuits with GFCI protection",
+          "Emergency egress lighting; battery-inverter units in fixtures",
+          "Grounding system utilizing existing counterpoise ground loop around building",
+          "Arc-flash study, short-circuit analysis, coordination study required",
+          "Access control (Siemens Sipass standard), video surveillance, IP-PA audio system",
+          "Structured cabling: 12-strand SM fiber, Cat 6 horizontal; 3 telecom rooms stacked vertically",
+          "Building DDC BAS (Trend compatible, BACnet, JACE gateway)"
+        ]
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.design_outdoor_temperature_winter",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Mechanical Part I Narrative (design conditions)",
+          "value": "-40°C / -40°F"
+        },
+        {
+          "source": "RFP Section E30 §E3010.1",
+          "value": "-29°F dry bulb (99% design heating criteria)"
+        }
+      ],
+      "resolution_chosen": "Mechanical Part I Narrative (-40°C)",
+      "rationale": "The RFP 99% criterion and the design analysis extreme design temperature serve different purposes. BFA applied -40°C for equipment sizing (worst-case), consistent with UFC 3-130-07 Arctic construction practice. The -29°F is the statistical ASHRAE 99% bin temperature; -40°C is the extreme or 99.6% value consistent with Pituffik data. Not a true conflict — two different design temperature standards."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python scripts/hooks/cwd_guard_hook.py",
+            "timeout": 10,
+            "statusMessage": "Checking file_path is inside repo root..."
+          }
+        ]
+      }
+    ]
+  }
+}

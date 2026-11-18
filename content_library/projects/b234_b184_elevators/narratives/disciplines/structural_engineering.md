@@ -1,0 +1,9 @@
+# Structural Engineering — Building 234 / Building 184 Freight Elevator Replacement, NNSY
+
+Structural engineering scope involved site investigation, condition assessment, and repair design for elevator pits, shaft walls, and machine rooms at both buildings — work made necessary by the age and deteriorated condition of the existing structures.
+
+At both Building 234 and Building 184, existing elevator shaft walls and machine room walls were found to be cracked and spalled. The site engineering investigation documented the extent of damage, and the design included appropriate repairs to all damaged portions of the applicable walls. At both buildings, structural analysis of all applicable existing structural members was performed to confirm adequate capacity to support the new elevator equipment and machinery loads, with reinforcement or replacement of structural supports specified where required.
+
+At Building 234, the elevator type change from hydraulic to geared traction introduced a specific structural challenge: the existing hydraulic piston hole in the pit floor had to be infilled and patched, with waterproofing provided at the pit floor and walls after the piston casing was removed and backfilled. The A-E designed the pit floor repair to restore the structural integrity of the slab while providing a waterproof envelope suitable for the traction elevator pit environment. Additional repairs addressed cracks in exterior walls of the elevator machine room, damaged walls at the top level of an adjacent stairwell, and concrete crack and spall repairs throughout the shaft walls, with exterior surfaces finished to match existing.
+
+Structural work at both buildings was governed by applicable UFC requirements and current building codes, as confirmed through the design quality control process and NAVFAC design review.

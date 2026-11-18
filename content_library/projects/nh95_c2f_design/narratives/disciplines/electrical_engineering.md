@@ -1,0 +1,7 @@
+# Electrical Engineering — C2F NH95 Renovations
+
+The electrical engineering scope for the C2F NH95 Renovations encompasses complete demolition and replacement of all electrical systems on both floors of Building NH-95. All existing conduit, wiring, disconnect switches, and lighting fixtures throughout the renovation area are removed. The existing 480Y/277V and 208Y/120V, 3-phase, 4-wire electrical services are retained; all downstream distribution is replaced with new panelboards serving general power and lighting circuits throughout the facility.
+
+New LED lighting is provided throughout at 3500K correlated color temperature and a minimum 80 CRI, supporting the visual task requirements of a command headquarters environment. Occupancy and vacancy sensors are installed in common areas, bathrooms, and offices to provide automated lighting control. Emergency and exit lighting with 90-minute battery backup is provided in required locations to meet life-safety requirements.
+
+Power distribution is tailored to the diverse load profile of the command facility: dedicated 20A circuits serve office equipment; GFI protection is installed in kitchen and restroom areas; 208V, 3-phase connections are provided for HVAC equipment; and modular furniture workstations are served via power poles and whips, providing flexible power access for the command's operational layout. Existing and new panelboards are coordinated to accommodate the renovated load schedule while maintaining continuity of service to unaffected building areas during construction.

@@ -1,0 +1,347 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "24-004",
+    "status": "present_with_value",
+    "source": "BOD cover page",
+    "quote": "BFA Project #24-004"
+  },
+  "project_slug": "replace_smoke_fans",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/replace_smoke_fans/25.02.12 FINAL BOD.pdf",
+      "type": "bod",
+      "sha256": "066ea17e408c14c4264ed94789e79ba2e8577de4b7ac0672c3d417b028a9c3d8",
+      "page_count": 5,
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/replace_smoke_fans/SOW.pdf",
+      "type": "sow",
+      "sha256": "51b2e8c1358e03ccae4d12216b1038f4faae0f2b3220df34268e4d0782f34898",
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "SOW includes prescriptive specifications (Parts 2-5). No drawing set present in intake folder. Concept/reference drawings referenced in SOW Part 6 Attachments but not provided."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 285 Demolish Three Smoke Fans, NAS Oceana",
+      "source": "BOD cover page",
+      "quote": "BUILDING 285 DEMOLISH THREE SMOKE FANS\nNaval Air Station Oceana\nBASIS OF DESIGN",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BUILDING 285 DEMOLISH THREE SMOKE FANS / Naval Air Station Oceana",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "BUILDING 285 DEMOLISH THREE SMOKE EXHAUST FANS (F-14, F-15, & F-16) At the Naval Air Station Oceana, Virginia Beach, Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC Mid-Atlantic)",
+      "source": "SOW cover page",
+      "quote": "NAVFAC MID-ATLANTIC, PWD OCEANA FEAD, PM&E PRA211/214\nNAS Oceana, 953 Hornet Drive, Building 820, Suite 210\nVirginia Beach, Virginia 23460-2197",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "NAVFAC MID-ATLANTIC, PWD OCEANA FEAD, PM&E PRA211/214",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Air Station Oceana",
+      "source": "SOW cover page and Part 3",
+      "quote": "Naval Air Station Oceana, Virginia Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "Naval Air Station Oceana, Virginia Beach, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Naval Air Station Oceana",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Air Station Oceana, Building 285",
+      "facility_address": "NAS Oceana, Virginia Beach, Virginia",
+      "source": "SOW cover page",
+      "quote": "Naval Air Station Oceana, Virginia Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "Naval Air Station Oceana, Virginia Beach, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Naval Air Station Oceana",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-004",
+      "source": "BOD cover page",
+      "quote": "BFA Project #24-004"
+    },
+    "project_number_client": {
+      "value": "1703410",
+      "source": "SOW cover page",
+      "quote": "eProjects WO#: 1703410"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW is structured as a Request for Proposal (RFP); task order number not stated in available documents."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No building GSF stated in BOD or SOW. Project is a selective demolition of mechanical equipment; overall building area not relevant to scope."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW Part 4 states 'the design-build contract must not exceed the available funding limit as set forth by the Contracting Officer' but no dollar figure is stated."
+    },
+    "bod_date": {
+      "value": "2025-02-12",
+      "source": "BOD cover page / filename",
+      "quote": "INTERIM FINAL SUBMITTAL\nFebruary 12, 2025"
+    },
+    "rfp_approved_date": {
+      "value": "2023-05-30",
+      "source": "SOW cover page",
+      "quote": "Submitted By: Christopher B. Morris P.E.. Date: 30 May 2023"
+    },
+    "project_description": {
+      "value": "Design-build demolition of three smoke exhaust fans (F-14, F-15, F-16), each 20,000 CFM axial fans, from mechanical rooms in Building 285 at NAS Oceana. Scope includes removal of fans, associated ductwork, duct silencers, electrical circuits, and exterior louvers; infill of three 72\"x30\" louver openings with 8\" CMU and EIFS to match existing; structural infill of three ~46\" floor openings left by demolished ductwork; and replacement of acoustical ceiling tiles disturbed by demolition.",
+      "source": "SOW Part 3 §1.0",
+      "quote": "Demolish Three Smoke Exhaust Fans F-14, F-15, F-16 each (20,000 CFM) from Mechanical Rooms in Building 285. Work shall also include demolition of Ductwork, and Louvers (72\"x30\") and the associated Electrical Components and disposal off government property of demolished items. Openings left from demolition of louvers shall be infilled with masonry and finished to match/coordinate with existing construction.",
+      "corroboration": [
+        {
+          "source": "SOW Part 3 §1.0",
+          "claim": "Demolish Three Smoke Exhaust Fans F-14, F-15, F-16 each (20,000 CFM)... louvers (72\"x30\")",
+          "agrees": true
+        },
+        {
+          "source": "BOD Architectural section",
+          "claim": "removal of three smoke exhaust Fans F-14, F-15, F-16 from Mechanical Rooms in Building 285. Ductwork, and associated louvers will also be demolished. Openings left from demolition of louvers shall be infilled with masonry",
+          "agrees": true
+        }
+      ]
+    },
+    "delivery_type": {
+      "value": "Design-Build",
+      "source": "SOW cover page and Part 2",
+      "quote": "REQUEST FOR PROPOSAL (RFP)",
+      "notes": "Contract structured as design-build RFP per multiple references: 'Designer of Record (DOR)', 'design-build contract', UFGS design-build specifications throughout."
+    },
+    "scope_summary": {
+      "mechanical": "Demolish exhaust fans F-14, F-15, F-16 (30\" dia., ~540 lbs each, 20,000 CFM axial); remove ductwork (180 SF + 105 SF to louver per fan), duct silencers (30\" dia., 60 lbs each), hangers, and appurtenances from second-floor mechanical room to first-floor ceiling.",
+      "electrical": "Demolish all electrical circuits feeding fans F-14, F-15, F-16 — conductors, raceway, junction boxes, disconnect switches, transformer — back to source panel.",
+      "architectural": "Remove three 72\"x30\" exterior louvers and flashing; infill openings with 8\" CMU + 1\" EPS board + vinyl copolymer aggregate finish on reinforcing fabric to match existing EIFS. Remove mechanical ceiling grills; replace disturbed ACT.",
+      "structural": "Infill three ~46\" diameter openings in mechanical room concrete floor (left by 42\" dia. duct demolition); infill designed for 50 PSF LL or 1000 lb point load, flush with existing floor; 3-1/4\" reinforced concrete slab on 11-ga light gauge metal plate on HSS2x4 tubes connected to existing ring plates.",
+      "source": "BOD all disciplines + SOW Part 3 §1.0"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "BOD dated 2025-02-12 labeled 'INTERIM FINAL SUBMITTAL' — design was in progress as of that date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_maintenance"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "structural_engineering",
+      "architecture"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "structural_existing_assessment",
+      "architectural_design"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "electrical_distribution",
+      "interior_construction",
+      "interior_finishes"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "mechanical_hvac",
+      "electrical_power",
+      "masonry_scope",
+      "concrete_scope",
+      "finishes_acoustical_ceilings"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "best_value"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "nas_oceana",
+    "virginia_beach",
+    "navfac_mid_atlantic",
+    "smoke_fans",
+    "selective_demolition",
+    "building_285",
+    "design_build_rfp",
+    "mechanical_demolition"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Joseph McKeown, P.E.",
+      "role_on_project": "design_manager_mechanical",
+      "note": "Listed as DM and Mechanical on SOW cover page as NAVFAC preparer; not BFA personnel"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings in intake; building area not stated in text documents."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "SOW Part 3 §1.0 and BOD Mechanical section",
+        "quote": "Demolish Exhaust Fans (F-14,F-15,F-16) and associated Ductwork and appurtenances in its entirety from Mechanical Room on the Second floor to the first floor ceiling.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Three axial smoke exhaust fans F-14, F-15, F-16 (30\" dia., 540 lbs each, 20,000 CFM each) — DEMOLISHED",
+          "Associated ductwork (180 SF + 105 SF per fan) — DEMOLISHED",
+          "Duct silencers/sound attenuators (30\" dia., 20,000 CFM rated) — DEMOLISHED"
+        ],
+        "electrical": [
+          "Power circuits and conduit to fans F-14, F-15, F-16 back to source panel — DEMOLISHED",
+          "Disconnect switches and transformer(s) associated with fans — DEMOLISHED"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md"
+    }
+  }
+}

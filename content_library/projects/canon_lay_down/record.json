@@ -1,0 +1,562 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "canon_lay_down",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/jlab/canon_lay_down/2022-10-31_VHB_Jefferson Lab Canon Blvd Laydown.pdf",
+      "type": "sow",
+      "sha256": "5d5e9002e3925f697920725e99dcca948c3541c9bd48156e58f60997e18d105d",
+      "included": true,
+      "notes": "VHB subconsultant Client Authorization / Proposal for civil engineering services (Tasks 1-4); dated 2022-10-31; includes labor budget table. Classified as sow (scope of work / subconsultant agreement)."
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/canon_lay_down/20230526 Concept Design - Canon Laydown Conceptual Design Narrative.docx",
+      "type": "narrative",
+      "sha256": "37cd10fe8e0be3decd7f868d5a769078761adb29ababa3baa5d20655b70ca1be",
+      "included": true,
+      "notes": "Conceptual Design Narrative (Word/DOCX source); Final Concept Design 05/31/2023. Covers general, stormwater management, wetlands impacts, electrical sections."
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/canon_lay_down/21C0683006.pdf",
+      "type": "contract",
+      "sha256": "2a72a8d03a758baa6c25557570a132e14428c74d37501f4a4fb2a1bf389de44d",
+      "included": true,
+      "notes": "JSA Purchase Order 21C0683006 to Bowman Foster and Associates Inc; dated 02/01/2023; $38,862.00 for conceptual design of CMSA per BFA Quote V2.1 dated 1/23/23."
+    },
+    {
+      "path": "00_admin/reference_projects/jlab/canon_lay_down/Canon Laydown Area 100% Conceptual Design.pdf",
+      "type": "narrative",
+      "sha256": "8b2988e7bd6f8468b00e4ae58470c158adfb3a84255dc2cb796c862d622d51a8",
+      "included": true,
+      "notes": "100% Conceptual Design report (PDF); 6 pages; Final Concept Design 05/31/2023. Formatted BFA-letterhead version of the conceptual design narrative (same content as DOCX). Not a CAD drawing set — all pages are text/table report content.",
+      "page_count": 6
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No separate CAD drawing set present. The 'Canon Laydown Area 100% Conceptual Design.pdf' is a text/narrative report, not a drawing set. No construction documents, specifications, or BOD found. Conceptual design phase only."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Canon Boulevard Laydown Yard Expansion",
+      "source": "Conceptual Design Narrative (DOCX) title page",
+      "quote": "Canon Boulevard Laydown Yard Expansion",
+      "corroboration": [
+        {
+          "source": "Conceptual Design Narrative (DOCX) title page",
+          "claim": "Canon Boulevard Laydown Yard Expansion",
+          "value": "Canon Boulevard Laydown Yard Expansion",
+          "agrees": true
+        },
+        {
+          "source": "VHB proposal p.1",
+          "claim": "Jefferson Lab – Canon Blvd Laydown Yard",
+          "value": "Jefferson Lab – Canon Blvd Laydown Yard",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683006",
+          "claim": "PROVIDE CONCEPTUAL DESIGN FOR THE EXISTING CENTRAL MATERIAL STORAGE AREA (CMSA) PER BFA QUOTE V2.1 DATED 1/23/23",
+          "value": "Central Material Storage Area (CMSA) Conceptual Design",
+          "agrees": false
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Science Associates, LLC (JSA)",
+      "source": "PO 21C0683006",
+      "quote": "JSA, LLC / JEFFERSON LAB",
+      "corroboration": [
+        {
+          "source": "PO 21C0683006",
+          "claim": "JSA, LLC / JEFFERSON LAB",
+          "value": "Jefferson Science Associates, LLC (JSA)",
+          "agrees": true
+        },
+        {
+          "source": "VHB proposal p.1",
+          "claim": "Jefferson Science Associates (\"JSA\" or \"Owner\")",
+          "value": "Jefferson Science Associates, LLC (JSA)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Jefferson Science Associates, LLC (JSA) / Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "source": "VHB proposal p.1",
+      "quote": "Jefferson Science Associates (\"JSA\" or \"Owner\")",
+      "corroboration": [
+        {
+          "source": "VHB proposal p.1",
+          "claim": "Jefferson Science Associates (\"JSA\" or \"Owner\")",
+          "value": "Jefferson Science Associates, LLC (JSA)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "facility_address": "12000 Jefferson Ave, Newport News, VA 23606",
+      "source": "PO 21C0683006 / VHB proposal p.1",
+      "quote": "Thomas Jefferson National Accelerator Facility (\"Jefferson Lab\") in Newport News, Virginia",
+      "corroboration": [
+        {
+          "source": "VHB proposal p.1",
+          "claim": "Thomas Jefferson National Accelerator Facility (\"Jefferson Lab\") in Newport News, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "PO 21C0683006",
+          "claim": "12000 JEFFERSON AVE., SUITE 12 / NEWPORT NEWS, VA 23606",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "JSA 21-C0683, Task Order #6",
+      "source": "Conceptual Design Narrative (DOCX) title page",
+      "quote": "Contract: JSA 21-C0683 / Task Order: #6",
+      "corroboration": [
+        {
+          "source": "Conceptual Design Narrative (DOCX) title page",
+          "claim": "Contract: JSA 21-C0683 / Task Order: #6",
+          "value": "JSA 21-C0683, Task Order #6",
+          "agrees": true
+        },
+        {
+          "source": "VHB proposal p.1",
+          "claim": "contract number JSA 21-R399547 between Client and Jefferson Science Associates (\"JSA\" or \"Owner\") … as Task Order 6",
+          "value": "JSA 21-R399547, Task Order 6",
+          "agrees": false
+        },
+        {
+          "source": "PO 21C0683006",
+          "claim": "Purchase Order: 21C0683006",
+          "value": "PO 21C0683006",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "JSA 21-C0683",
+      "source": "Conceptual Design Narrative (DOCX) title page",
+      "quote": "Contract: JSA 21-C0683",
+      "corroboration": [
+        {
+          "source": "Conceptual Design Narrative (DOCX) title page",
+          "claim": "Contract: JSA 21-C0683",
+          "value": "JSA 21-C0683",
+          "agrees": true
+        },
+        {
+          "source": "VHB proposal p.1",
+          "claim": "contract number JSA 21-R399547",
+          "value": "JSA 21-R399547",
+          "agrees": false
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "6",
+      "source": "Conceptual Design Narrative (DOCX) title page",
+      "quote": "Task Order: #6",
+      "corroboration": [
+        {
+          "source": "Conceptual Design Narrative (DOCX) title page",
+          "claim": "Task Order: #6",
+          "value": "6",
+          "agrees": true
+        },
+        {
+          "source": "VHB proposal p.1",
+          "claim": "Task Order 6",
+          "value": "6",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 171000,
+      "unit": "sf",
+      "source": "Conceptual Design Narrative (DOCX), General section",
+      "quote": "approximately 171,000 total square feet",
+      "notes": "This is the maximum laydown yard expansion area (Option 2, full build-out including wetland impacts). Base bid is 90,000 SF impervious; full build-out is 171,000 SF. Site area is approximately 3-3.92 acres.",
+      "corroboration": [
+        {
+          "source": "Conceptual Design Narrative (DOCX), General section",
+          "claim": "approximately 171,000 total square feet",
+          "value": 171000,
+          "agrees": true
+        },
+        {
+          "source": "Conceptual Design Narrative (DOCX), Stormwater section",
+          "claim": "a large yard expansion of around 171,000 square feet (3.92 acres)",
+          "value": 171000,
+          "agrees": true
+        },
+        {
+          "source": "VHB proposal p.1",
+          "claim": "The site area is approximately 3 acres in size.",
+          "value": 130680,
+          "agrees": false
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 1556809,
+      "currency": "USD",
+      "source": "Conceptual Design Narrative (DOCX), General section",
+      "quote": "$1,556,809",
+      "notes": "Opinion of Probable Construction Cost for Option 2 (171,000 SF expansion). This is the construction cost estimate, not the design fee."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 38862,
+        "currency": "USD",
+        "source": "PO 21C0683006",
+        "quote": "PO Total Amt: $38,862.00",
+        "corroboration": [
+          {
+            "source": "PO 21C0683006",
+            "claim": "$38,862.00",
+            "value": 38862,
+            "agrees": true
+          },
+          {
+            "source": "VHB proposal p.1 (subconsultant)",
+            "claim": "PROJECT TOTAL: $21,550",
+            "value": 21550,
+            "agrees": false,
+            "notes": "VHB's fee is a subconsultant portion of BFA's total contract. BFA PO is $38,862; VHB sub is $21,550. Difference (~$17,312) represents BFA's retained fee/coordination."
+          }
+        ]
+      },
+      "awarded_date": {
+        "value": "2023-02-01",
+        "source": "PO 21C0683006",
+        "quote": "Order Date: 02/01/2023"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-05-31",
+        "source": "Conceptual Design Narrative (DOCX) title page",
+        "quote": "Final Concept Design -- 05/31/2023",
+        "corroboration": [
+          {
+            "source": "Conceptual Design Narrative (DOCX) title page",
+            "claim": "Final Concept Design -- 05/31/2023",
+            "value": "2023-05-31",
+            "agrees": true
+          },
+          {
+            "source": "VHB proposal p.1",
+            "claim": "Estimated Date of Completion: June 30, 2023",
+            "value": "2023-06-30",
+            "agrees": false
+          },
+          {
+            "source": "PO 21C0683006",
+            "claim": "Due Date: 03/31/23",
+            "value": "2023-03-31",
+            "agrees": false
+          }
+        ]
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": 38862,
+        "currency": "USD",
+        "source": "computed",
+        "quote": null
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Only conceptual design phase documented. No construction contract found."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "utilities_infrastructure",
+      "science_research"
+    ],
+    "program_subtype": [
+      "utilities_pump_station"
+    ],
+    "disciplines": [
+      "civil_engineering",
+      "electrical_engineering",
+      "water_resources_engineering",
+      "environmental_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "civil_erosion_sediment",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "water_stormwater_management",
+      "environmental_wetlands"
+    ],
+    "building_systems": [
+      "site_systems",
+      "site_grading_drainage",
+      "site_stormwater_bmps",
+      "site_paving",
+      "electrical_lighting_exterior",
+      "security_acs"
+    ],
+    "construction_scope": [
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_paving",
+      "exterior_walls_fencing",
+      "utilities_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "electronic_safety_security"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_idiq"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "task_order_competition"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "jefferson_lab",
+    "jlab",
+    "newport_news",
+    "doe_facility",
+    "laydown_yard",
+    "cmsa",
+    "stormwater_bmp",
+    "wetlands",
+    "site_civil",
+    "federal_research_facility",
+    "hampton_roads"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Bruce Bowman",
+      "role_on_project": "client_manager"
+    },
+    {
+      "name": "Richard Williams, PE",
+      "role_on_project": "electrical_engineer_pm"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "N/A-p1",
+        "title": "Canon Boulevard Laydown Yard Expansion — Conceptual Design Cover / General",
+        "discipline": "civil_engineering",
+        "reading_notes": "BFA letterhead cover page and beginning of General/Executive Summary narrative. Confirms project name, location (Jefferson Laboratory, Newport News, VA), contract JSA 21-C0683, Task Order #6, Final Concept Design 05/31/2023. Lists common features of all options (gravel surface, 7-ft chain-link fence with barbed wire, LED lighting). Not a traditional CAD drawing sheet — this is a formatted narrative report in PDF."
+      },
+      {
+        "sheet_number": "N/A-p2",
+        "title": "General — Analysis of Option 2 / Construction Cost Summary",
+        "discipline": "civil_engineering",
+        "reading_notes": "Continues General section. Presents Option 2 analysis: 171,000 SF total laydown area, base bid 90,000 SF, Year Out +31,000 SF, Bid Alt 1 +19,000 SF, Bid Alt 2 +31,000 SF. Opinion of Probable Construction Cost = $1,556,809. Earthwork: 5,691 CY cut, 10,361 CY fill, 4,670 CY net fill. Stormwater: retrofitting East Pond as Level 1 Wet Pond. Still narrative PDF format, no plan view."
+      },
+      {
+        "sheet_number": "N/A-p3",
+        "title": "General — Earthwork Table / Option Opinion",
+        "discipline": "civil_engineering",
+        "reading_notes": "Earthwork table for Option 2 (same data as p2). Opinion statement: Option 2 pros = larger usable surface, greater accessibility, resilient against flooding; cons = higher cost, wetland impacts require permitting and mitigation."
+      },
+      {
+        "sheet_number": "N/A-p4",
+        "title": "Report Prepared By / Personnel List",
+        "discipline": "civil_engineering",
+        "reading_notes": "Lists report authors: Bruce Bowman (Client Manager, BFA), Richard Williams PE (Electrical Engineer/PM, BFA), Nicholas Hadiaris PE (Civil Engineer, VHB), Arash Niroomandi PhD PE (Water Resource Engineer, VHB)."
+      },
+      {
+        "sheet_number": "N/A-p5",
+        "title": "Stormwater Management — Overview / Option 2 Analysis",
+        "discipline": "civil_engineering",
+        "reading_notes": "Stormwater management narrative. Site drains to Brick Kiln Creek watershed. Option 2 = 171,000 SF (3.92 acres) using East Pond retrofit. Three options evaluated: Option 1 on-site wet pond (78,000 SF min), Option 2 East Pond retrofit (171,000 SF, selected), Option 3 reclamation pump system. Phosphorus treatment: East Pond reduces 19.41 lb/yr; remaining 3.04 lb/yr via nutrient credits. References VRRM, 9VAC25-870-63, VA BMP Clearinghouse."
+      },
+      {
+        "sheet_number": "N/A-p6",
+        "title": "Stormwater Management — Water Quality/Quantity Methodology",
+        "discipline": "water_resources_engineering",
+        "reading_notes": "VRRM water quality compliance methodology. EPA SWMM 5.1 hydraulic modeling. 100-year storm event: max HGL at elevation 30.5 ft NAVD88. Emergency spillway at 30.5 ft; top of bank at 31.5 ft (1 ft freeboard). Storage-depth curve table for Level 1 Wet Pond provided. PCSWMM model includes Jefferson Lab property and Oyster Point North Commerce Center areas."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 171000,
+        "unit": "sf",
+        "source": "Conceptual Design Narrative, General section",
+        "quote": null,
+        "sheets": [
+          "N/A-p2"
+        ],
+        "notes": "Site laydown area expansion, not building floor area. Maximum build-out (Option 2 full). Base bid = 90,000 SF."
+      },
+      "site_area_acres": {
+        "value": 3.92,
+        "unit": "acres",
+        "source": "Conceptual Design Narrative (DOCX), Stormwater section",
+        "quote": "a large yard expansion of around 171,000 square feet (3.92 acres)",
+        "sheets": [
+          "N/A-p5"
+        ]
+      },
+      "floor_count": {
+        "value": null,
+        "status": "explicit_null",
+        "notes": "Project is a site civil laydown yard — no building floors."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "17 LED light pole fixtures (perimeter), 250-400W, 20 ft aluminum poles",
+          "Underground conduit ~1,600 LF from panel PA in Building 64",
+          "208/120V, 3-phase, 60-amp panel PA (existing in Bldg 64) as power source",
+          "Automatic sliding gate (2-HP motor)"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_client / facts.contract_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Conceptual Design Narrative (DOCX) title page / BFA report",
+          "value": "JSA 21-C0683, Task Order #6"
+        },
+        {
+          "source": "VHB proposal p.1",
+          "value": "JSA 21-R399547, Task Order 6"
+        }
+      ],
+      "resolution_chosen": "Conceptual Design Narrative (DOCX) title page",
+      "rationale": "BFA's own deliverable (the conceptual design narrative) is the client-facing document and most likely to reflect the final awarded contract number. VHB's proposal was issued in October 2022 referencing the master contract vehicle (JSA 21-R399547); JSA 21-C0683 appears to be the specific task order contract number. Both are consistent with the PO number 21C0683006."
+    },
+    {
+      "field_path": "phases.design.completion_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Conceptual Design Narrative (DOCX/PDF) title page",
+          "value": "2023-05-31"
+        },
+        {
+          "source": "VHB proposal (Oct 2022)",
+          "value": "2023-06-30"
+        },
+        {
+          "source": "PO 21C0683006",
+          "value": "2023-03-31"
+        }
+      ],
+      "resolution_chosen": "Conceptual Design Narrative (DOCX) title page",
+      "rationale": "The Final Concept Design dated 05/31/2023 on the deliverable itself is the most reliable indicator of actual completion. The VHB proposal estimated June 30, 2023 (schedule estimate, not actual). The PO desired date of 03/31/23 appears to have been an optimistic target that slipped."
+    },
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Conceptual Design Narrative (DOCX/PDF)",
+          "value": "Canon Boulevard Laydown Yard Expansion"
+        },
+        {
+          "source": "PO 21C0683006",
+          "value": "Conceptual Design for the Existing Central Material Storage Area (CMSA)"
+        }
+      ],
+      "resolution_chosen": "Conceptual Design Narrative (DOCX/PDF)",
+      "rationale": "The PO description references the CMSA, which is the broader program context. The VHB proposal explains this is a follow-on to the original CMSA conceptual design, evaluating an alternate site near Canon Blvd. BFA's deliverable consistently uses 'Canon Boulevard Laydown Yard Expansion' as the project name."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "water_resources_engineering": "narratives/disciplines/water_resources_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md"
+    }
+  }
+}

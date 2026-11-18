@@ -1,0 +1,653 @@
+vocabulary_id: sub_discipline
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original (SF330-informed)
+anchor_standard_version: null
+hierarchy: two_level
+multi_select: true
+governance_notes: |
+  Granular sub-disciplines under each top-level discipline in discipline.yaml.
+  Used for personnel matrix filtering and project scope breakdown. Multi-select
+  because most projects involve multiple sub-disciplines within a discipline
+  (a typical MEP project covers HVAC, plumbing, fire protection, power, and
+  lighting at minimum).
+
+  parent_id references entries in discipline.yaml. This vocabulary is
+  TWT-original at the granularity level used; SF330 stops at the top-level
+  discipline and does not standardize sub-disciplines.
+future_migration: null
+
+entries:
+  # ============ ARCHITECTURE sub-disciplines ============
+  - canonical_id: architectural_design
+    display_name: Architectural Design
+    definition: Primary architectural design services for new construction or major renovation.
+    parent_id: architecture
+    aliases:
+      - building_design
+    standard_reference: null
+
+  - canonical_id: architectural_programming
+    display_name: Architectural Programming
+    definition: Pre-design programming, space programming, needs assessment.
+    parent_id: architecture
+    aliases:
+      - programming
+      - space_programming
+    standard_reference: null
+
+  - canonical_id: architectural_historic
+    display_name: Historic Preservation Architecture
+    definition: Architectural services for historic preservation, restoration, adaptive reuse.
+    parent_id: architecture
+    aliases:
+      - historic_architecture
+      - preservation_architecture
+    standard_reference: null
+
+  - canonical_id: architectural_envelope
+    display_name: Building Envelope
+    definition: Building envelope design and consulting, including roofing, walls, fenestration.
+    parent_id: architecture
+    aliases:
+      - envelope_consulting
+      - facade_engineering
+    standard_reference: null
+
+  - canonical_id: architectural_roofing
+    display_name: Roofing Design
+    definition: Roofing system design and roof consulting.
+    parent_id: architecture
+    aliases:
+      - roofing
+      - roof_design
+    standard_reference: null
+
+  # ============ MECHANICAL sub-disciplines ============
+  - canonical_id: hvac_design
+    display_name: HVAC Design
+    definition: Heating, ventilation, and air conditioning system design.
+    parent_id: mechanical_engineering
+    aliases:
+      - hvac
+      - heating_cooling
+      - air_conditioning
+    standard_reference: null
+
+  - canonical_id: hvac_central_plant
+    display_name: HVAC — Central Plant
+    definition: Central chilled water, hot water, and steam plant design.
+    parent_id: mechanical_engineering
+    aliases:
+      - central_plant_design
+      - chilled_water_plant
+      - boiler_plant
+    standard_reference: null
+
+  - canonical_id: hvac_controls
+    display_name: HVAC Controls / BAS
+    definition: HVAC controls, building automation system (BAS/BMS) design.
+    parent_id: mechanical_engineering
+    aliases:
+      - bas
+      - bms
+      - building_automation
+      - controls_design
+    standard_reference: null
+
+  - canonical_id: hvac_air_distribution
+    display_name: HVAC — Air Distribution
+    definition: Air handling, ductwork, terminal units (VAV/VRF/FCU), and air distribution design.
+    parent_id: mechanical_engineering
+    aliases:
+      - air_distribution
+      - ductwork_design
+      - vav_design
+    standard_reference: null
+
+  - canonical_id: mechanical_clean_room
+    display_name: Mechanical — Clean Room/Specialty Environments
+    definition: Clean room, vivarium, lab, or specialty environment mechanical design.
+    parent_id: mechanical_engineering
+    aliases:
+      - cleanroom_hvac
+      - lab_hvac
+    standard_reference: null
+
+  - canonical_id: mechanical_industrial_process
+    display_name: Mechanical — Industrial Process
+    definition: Industrial process piping, compressed air, vacuum, and process mechanical design.
+    parent_id: mechanical_engineering
+    aliases:
+      - process_piping
+      - industrial_mechanical
+    standard_reference: null
+
+  - canonical_id: mechanical_energy_recovery
+    display_name: Mechanical — Energy Recovery
+    definition: Energy recovery ventilation, heat recovery, geothermal mechanical systems.
+    parent_id: mechanical_engineering
+    aliases:
+      - erv
+      - heat_recovery
+      - geothermal
+    standard_reference: null
+
+  # ============ ELECTRICAL sub-disciplines ============
+  - canonical_id: electrical_power_distribution
+    display_name: Electrical Power Distribution
+    definition: Service entrance, distribution, panelboards, switchgear, transformers, and feeder design.
+    parent_id: electrical_engineering
+    aliases:
+      - power_distribution
+      - electrical_distribution
+    standard_reference: null
+
+  - canonical_id: electrical_lighting
+    display_name: Electrical Lighting
+    definition: Lighting circuit design, lighting controls, photometric calculations.
+    parent_id: electrical_engineering
+    aliases:
+      - lighting_circuits
+      - electrical_lighting_design
+    standard_reference: null
+
+  - canonical_id: electrical_emergency_power
+    display_name: Electrical — Emergency/Standby Power
+    definition: Generator, UPS, ATS, and emergency/standby power system design.
+    parent_id: electrical_engineering
+    aliases:
+      - generator_design
+      - ups_design
+      - emergency_power
+      - standby_power
+    standard_reference: null
+
+  - canonical_id: electrical_grounding_lightning
+    display_name: Electrical — Grounding/Lightning Protection
+    definition: Grounding, bonding, and lightning protection system design.
+    parent_id: electrical_engineering
+    aliases:
+      - grounding
+      - lightning_protection
+      - lps
+    standard_reference: null
+
+  - canonical_id: electrical_renewable
+    display_name: Electrical — Renewable/On-Site Generation
+    definition: Solar PV, wind, battery storage, microgrid, and on-site generation electrical design.
+    parent_id: electrical_engineering
+    aliases:
+      - solar_pv
+      - battery_storage
+      - microgrid
+    standard_reference: null
+
+  - canonical_id: electrical_motor_control
+    display_name: Electrical — Motor Control
+    definition: Motor control centers, VFDs, and motor control system design.
+    parent_id: electrical_engineering
+    aliases:
+      - mcc_design
+      - motor_control
+      - vfd_design
+    standard_reference: null
+
+  - canonical_id: electrical_substation_utility
+    display_name: Electrical — Substation/Utility
+    definition: Utility-scale or campus-scale substation and medium/high voltage design.
+    parent_id: electrical_engineering
+    aliases:
+      - substation_design
+      - medium_voltage
+      - high_voltage
+    standard_reference: null
+
+  # ============ PLUMBING sub-disciplines ============
+  - canonical_id: plumbing_domestic_water
+    display_name: Plumbing — Domestic Water
+    definition: Domestic cold and hot water distribution system design.
+    parent_id: plumbing_engineering
+    aliases:
+      - domestic_water
+    standard_reference: null
+
+  - canonical_id: plumbing_sanitary
+    display_name: Plumbing — Sanitary/DWV
+    definition: Sanitary waste, vent, and drain system design.
+    parent_id: plumbing_engineering
+    aliases:
+      - sanitary
+      - dwv
+      - waste_vent
+    standard_reference: null
+
+  - canonical_id: plumbing_storm
+    display_name: Plumbing — Storm Drainage
+    definition: Roof drainage, interior storm drainage system design.
+    parent_id: plumbing_engineering
+    aliases:
+      - storm_drainage
+      - roof_drainage
+    standard_reference: null
+
+  - canonical_id: plumbing_natural_gas
+    display_name: Plumbing — Natural Gas
+    definition: Natural gas distribution, propane systems design.
+    parent_id: plumbing_engineering
+    aliases:
+      - natural_gas
+      - gas_piping
+      - propane
+    standard_reference: null
+
+  - canonical_id: plumbing_medical_gas
+    display_name: Plumbing — Medical Gas
+    definition: Medical gas systems (oxygen, vacuum, compressed air, nitrogen) per NFPA 99.
+    parent_id: plumbing_engineering
+    aliases:
+      - medical_gas
+      - med_gas
+      - nfpa_99
+    standard_reference: null
+
+  - canonical_id: plumbing_lab_specialty
+    display_name: Plumbing — Lab/Specialty
+    definition: Laboratory waste, deionized water, RO water, and specialty fluids systems.
+    parent_id: plumbing_engineering
+    aliases:
+      - lab_plumbing
+      - specialty_plumbing
+      - acid_waste
+    standard_reference: null
+
+  # ============ FIRE PROTECTION sub-disciplines ============
+  - canonical_id: fire_suppression_wet
+    display_name: Fire Suppression — Wet Sprinkler
+    definition: Wet pipe sprinkler system design.
+    parent_id: fire_protection_engineering
+    aliases:
+      - wet_sprinkler
+      - sprinkler_design
+    standard_reference: null
+
+  - canonical_id: fire_suppression_dry
+    display_name: Fire Suppression — Dry/Pre-Action
+    definition: Dry pipe, pre-action, deluge sprinkler system design.
+    parent_id: fire_protection_engineering
+    aliases:
+      - dry_sprinkler
+      - pre_action
+      - deluge
+    standard_reference: null
+
+  - canonical_id: fire_suppression_clean_agent
+    display_name: Fire Suppression — Clean Agent/Special Hazard
+    definition: Clean agent, FM-200, FE-25, CO2, or special hazard suppression system design.
+    parent_id: fire_protection_engineering
+    aliases:
+      - clean_agent
+      - fm200
+      - co2_suppression
+      - special_hazard
+    standard_reference: null
+
+  - canonical_id: fire_alarm
+    display_name: Fire Alarm
+    definition: Fire alarm and detection system design per NFPA 72.
+    parent_id: fire_protection_engineering
+    aliases:
+      - fire_alarm_design
+      - nfpa_72
+    standard_reference: null
+
+  - canonical_id: fire_smoke_control
+    display_name: Fire Protection — Smoke Control
+    definition: Smoke control, atrium smoke management, stairwell pressurization design.
+    parent_id: fire_protection_engineering
+    aliases:
+      - smoke_control
+      - smoke_management
+    standard_reference: null
+
+  # ============ STRUCTURAL sub-disciplines ============
+  - canonical_id: structural_steel
+    display_name: Structural — Steel
+    definition: Structural steel design.
+    parent_id: structural_engineering
+    aliases:
+      - steel_design
+    standard_reference: null
+
+  - canonical_id: structural_concrete
+    display_name: Structural — Concrete
+    definition: Reinforced and post-tensioned concrete design.
+    parent_id: structural_engineering
+    aliases:
+      - concrete_design
+      - post_tensioned
+    standard_reference: null
+
+  - canonical_id: structural_masonry
+    display_name: Structural — Masonry
+    definition: Masonry structural design.
+    parent_id: structural_engineering
+    aliases:
+      - masonry_design
+    standard_reference: null
+
+  - canonical_id: structural_timber
+    display_name: Structural — Timber/Wood
+    definition: Wood frame, heavy timber, and mass timber (CLT) design.
+    parent_id: structural_engineering
+    aliases:
+      - timber_design
+      - wood_design
+      - clt
+      - mass_timber
+    standard_reference: null
+
+  - canonical_id: structural_seismic
+    display_name: Structural — Seismic
+    definition: Seismic design and seismic retrofit.
+    parent_id: structural_engineering
+    aliases:
+      - seismic_design
+      - seismic_retrofit
+    standard_reference: null
+
+  - canonical_id: structural_blast
+    display_name: Structural — Blast/Progressive Collapse
+    definition: Blast-resistant design, progressive collapse, anti-terrorism force protection.
+    parent_id: structural_engineering
+    aliases:
+      - blast_design
+      - atfp
+      - progressive_collapse
+    standard_reference: null
+
+  - canonical_id: structural_foundation
+    display_name: Structural — Foundation
+    definition: Foundation design (shallow and deep foundations).
+    parent_id: structural_engineering
+    aliases:
+      - foundation_design
+    standard_reference: null
+
+  - canonical_id: structural_existing_assessment
+    display_name: Structural — Existing Building Assessment
+    definition: Existing structure assessment, capacity analysis, retrofit design.
+    parent_id: structural_engineering
+    aliases:
+      - existing_building
+      - structural_assessment
+      - retrofit
+    standard_reference: null
+
+  # ============ CIVIL sub-disciplines ============
+  - canonical_id: civil_site_design
+    display_name: Civil — Site Design
+    definition: General site civil design — grading, drainage, paving, layout.
+    parent_id: civil_engineering
+    aliases:
+      - site_design
+      - site_civil
+    standard_reference: null
+
+  - canonical_id: civil_grading_drainage
+    display_name: Civil — Grading and Drainage
+    definition: Site grading, earthwork, surface drainage design.
+    parent_id: civil_engineering
+    aliases:
+      - grading
+      - drainage_design
+    standard_reference: null
+
+  - canonical_id: civil_utilities
+    display_name: Civil — Site Utilities
+    definition: Site water, sanitary sewer, storm sewer, gas, and dry utility design (5' from building outward).
+    parent_id: civil_engineering
+    aliases:
+      - site_utilities
+      - underground_utilities
+    standard_reference: null
+
+  - canonical_id: civil_paving
+    display_name: Civil — Paving and Roadways
+    definition: Site paving, parking lots, driveways, on-site roadway design.
+    parent_id: civil_engineering
+    aliases:
+      - paving
+      - parking_lot_design
+    standard_reference: null
+
+  - canonical_id: civil_erosion_sediment
+    display_name: Civil — Erosion and Sediment Control
+    definition: ESC plans, SWPPP, and construction stormwater management.
+    parent_id: civil_engineering
+    aliases:
+      - esc
+      - swppp
+      - sediment_control
+    standard_reference: null
+
+  - canonical_id: civil_pavement_design
+    display_name: Civil — Pavement Engineering
+    definition: Pavement section design, asphalt and concrete pavement engineering.
+    parent_id: civil_engineering
+    aliases:
+      - pavement_engineering
+      - pavement_section
+    standard_reference: null
+
+  # ============ TRANSPORTATION sub-disciplines ============
+  - canonical_id: transportation_roadway
+    display_name: Transportation — Roadway Design
+    definition: Roadway geometric design, alignment, and roadway plans.
+    parent_id: transportation_engineering
+    aliases:
+      - roadway_design
+      - geometric_design
+    standard_reference: null
+
+  - canonical_id: transportation_traffic
+    display_name: Transportation — Traffic Engineering
+    definition: Traffic studies, signal design, signing/striping, ITS.
+    parent_id: transportation_engineering
+    aliases:
+      - traffic_design
+      - traffic_signal
+      - its
+    standard_reference: null
+
+  - canonical_id: transportation_bridge
+    display_name: Transportation — Bridge Engineering
+    definition: Bridge design, inspection, rehabilitation.
+    parent_id: transportation_engineering
+    aliases:
+      - bridge_design
+      - bridge_inspection
+    standard_reference: null
+
+  - canonical_id: transportation_airport
+    display_name: Transportation — Airport
+    definition: Airfield pavement, taxiway, runway, airport civil design.
+    parent_id: transportation_engineering
+    aliases:
+      - airfield_design
+      - runway_design
+    standard_reference: null
+
+  # ============ WATER RESOURCES sub-disciplines ============
+  - canonical_id: water_stormwater_management
+    display_name: Water Resources — Stormwater Management
+    definition: Stormwater quantity and quality management, BMPs, MS4 compliance.
+    parent_id: water_resources_engineering
+    aliases:
+      - stormwater_management
+      - swm
+      - bmp_design
+    standard_reference: null
+
+  - canonical_id: water_floodplain
+    display_name: Water Resources — Floodplain/Hydraulic Modeling
+    definition: Floodplain analysis, hydraulic modeling, FEMA submittals, CLOMR/LOMR.
+    parent_id: water_resources_engineering
+    aliases:
+      - floodplain_analysis
+      - hydraulic_modeling
+      - clomr
+      - lomr
+    standard_reference: null
+
+  - canonical_id: water_treatment_design
+    display_name: Water Resources — Treatment Process
+    definition: Water/wastewater treatment process design.
+    parent_id: water_resources_engineering
+    aliases:
+      - treatment_process
+    standard_reference: null
+
+  - canonical_id: water_distribution_collection
+    display_name: Water Resources — Distribution/Collection
+    definition: Water distribution main and wastewater collection system design.
+    parent_id: water_resources_engineering
+    aliases:
+      - water_distribution
+      - sewer_collection
+    standard_reference: null
+
+  # ============ ENVIRONMENTAL sub-disciplines ============
+  - canonical_id: environmental_nepa
+    display_name: Environmental — NEPA Compliance
+    definition: NEPA documents (CATEX, EA, EIS) and federal environmental compliance.
+    parent_id: environmental_engineering
+    aliases:
+      - nepa
+      - environmental_assessment
+      - eis
+    standard_reference: null
+
+  - canonical_id: environmental_remediation
+    display_name: Environmental — Remediation
+    definition: Site assessment, remediation design, brownfield, RCRA/CERCLA.
+    parent_id: environmental_engineering
+    aliases:
+      - remediation
+      - brownfield
+      - phase_ii
+    standard_reference: null
+
+  - canonical_id: environmental_air_quality
+    display_name: Environmental — Air Quality
+    definition: Air permitting, emissions modeling, indoor air quality.
+    parent_id: environmental_engineering
+    aliases:
+      - air_quality
+      - air_permitting
+    standard_reference: null
+
+  - canonical_id: environmental_wetlands
+    display_name: Environmental — Wetlands/Natural Resources
+    definition: Wetland delineation, mitigation, threatened species, natural resource compliance.
+    parent_id: environmental_engineering
+    aliases:
+      - wetlands
+      - natural_resources
+    standard_reference: null
+
+  # ============ TELECOM / LOW-VOLTAGE sub-disciplines ============
+  - canonical_id: telecom_structured_cabling
+    display_name: Telecom — Structured Cabling
+    definition: Structured cabling, copper, fiber backbone and horizontal cabling design.
+    parent_id: telecommunications_engineering
+    aliases:
+      - structured_cabling
+      - cabling_design
+    standard_reference: null
+
+  - canonical_id: telecom_av
+    display_name: Telecom — Audiovisual (AV)
+    definition: Audiovisual systems design, conferencing, displays, sound reinforcement.
+    parent_id: telecommunications_engineering
+    aliases:
+      - av
+      - audiovisual
+    standard_reference: null
+
+  - canonical_id: telecom_wireless
+    display_name: Telecom — Wireless/DAS
+    definition: Wireless infrastructure, DAS, in-building cellular, Wi-Fi design.
+    parent_id: telecommunications_engineering
+    aliases:
+      - das
+      - wireless_design
+      - wifi_design
+    standard_reference: null
+
+  # ============ SECURITY sub-disciplines ============
+  - canonical_id: security_access_control
+    display_name: Security — Access Control
+    definition: Access control system (ACS), credential management, door hardware integration.
+    parent_id: security_engineering
+    aliases:
+      - acs
+      - access_control
+    standard_reference: null
+
+  - canonical_id: security_video_surveillance
+    display_name: Security — Video Surveillance
+    definition: CCTV, IP video, video management system design.
+    parent_id: security_engineering
+    aliases:
+      - cctv
+      - video_surveillance
+      - vms
+    standard_reference: null
+
+  - canonical_id: security_intrusion
+    display_name: Security — Intrusion Detection
+    definition: Intrusion detection, alarm, perimeter security system design.
+    parent_id: security_engineering
+    aliases:
+      - intrusion_detection
+      - alarm_system
+    standard_reference: null
+
+  - canonical_id: security_scif_classified
+    display_name: Security — SCIF/Classified Construction
+    definition: ICD/ICS-705 SCIF design, classified-construction security integration.
+    parent_id: security_engineering
+    aliases:
+      - scif_design
+      - icd_705
+      - tempest
+    standard_reference: null
+
+  # ============ COMMISSIONING sub-disciplines ============
+  - canonical_id: commissioning_new_construction
+    display_name: Commissioning — New Construction
+    definition: New construction commissioning (NCx), enhanced commissioning per LEED.
+    parent_id: commissioning
+    aliases:
+      - new_construction_cx
+      - enhanced_cx
+    standard_reference: null
+
+  - canonical_id: commissioning_retrocommissioning
+    display_name: Commissioning — Retrocommissioning
+    definition: Existing building retrocommissioning (RCx), monitoring-based commissioning.
+    parent_id: commissioning
+    aliases:
+      - rcx
+      - retrocommissioning
+    standard_reference: null
+
+  - canonical_id: commissioning_envelope
+    display_name: Commissioning — Building Envelope
+    definition: Building envelope commissioning (BECx).
+    parent_id: commissioning
+    aliases:
+      - becx
+      - envelope_commissioning
+    standard_reference: null

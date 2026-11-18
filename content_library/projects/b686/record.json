@@ -1,0 +1,381 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b686",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b686/1654651 Bldg 686 Renovation SAES R16 DBB 4 2 20.pdf",
+      "type": "sow",
+      "sha256": "c07c67b668b95d123be038b212d28b49f88ee5129b826bae137ddd9d212d9bb0",
+      "page_count": 14,
+      "included": true,
+      "notes": "NAVFAC SAES (Statement of Architect-Engineer Services) Rev16, dated for FY20 task order. Contains scope, funding, deliverables, and contract information. Attachments referenced but not included in this PDF (Scope of Work Attachment 5, Concept Drawings Attachment 11, etc.)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b686/BLDG 686 BOD-BFA EDIT.doc",
+      "type": "bod",
+      "sha256": "ca81ed7658e522c0286e81a785e25fde67ad591e945c45b5cdf12bfc15039c0a",
+      "page_count": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Basis of Design document, BFA-edited version. File is a binary .doc (Word 97-2003 format) that failed both pandoc extraction and plain-text read. Contents unreadable by extractor. SHA-256 computed; file present on disk. Human review required to extract BOD facts."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "BOD present but unreadable (.doc format, extraction failed). SAES/SOW fully read. No drawing set, no specs, no narrative present in intake folder. Concept drawings referenced as Attachment 11 to the SAES but not included in the provided PDF. BOD is the primary missing data source — most project-specific facts (square footage, floor count, existing conditions, specific MEP systems) would have come from the BOD."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 686 Renovation, WPNSTA Yorktown",
+      "source": "SAES p.1",
+      "quote": "BUILDING 686 RENOVATIONS",
+      "corroboration": [
+        {
+          "source": "SAES p.1 (title block)",
+          "claim": "BUILDING 686 RENOVATIONS",
+          "value": "Building 686 Renovations",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A1",
+          "claim": "FY-20 Project RM 20-1055, Building 686 Renovation",
+          "value": "Building 686 Renovation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command Mid-Atlantic (NAVFAC MIDLANT)",
+      "source": "SAES p.1",
+      "quote": "Naval Facilities Engineering Command Mid Atlantic (NAVFAC MIDLANT) will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "Naval Facilities Engineering Command Mid Atlantic (NAVFAC MIDLANT) will administer this T.O.",
+          "value": "NAVFAC MIDLANT",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Weapons Station Yorktown",
+      "source": "SAES p.1",
+      "quote": "Naval Weapons Station Yorktown, Yorktown, VA",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "Naval Weapons Station Yorktown, Yorktown, VA",
+          "value": "Naval Weapons Station Yorktown",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Yorktown",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Weapons Station Yorktown (WPNSTA Yorktown)",
+      "facility_address": null,
+      "source": "SAES §A1",
+      "quote": "Project Location: WPNSTA Yorktown, Yorktown, VA",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Project Location: WPNSTA Yorktown, Yorktown, VA",
+          "value": "Yorktown, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "RM 20-1055",
+      "source": "SAES §A1",
+      "quote": "FY-20 Project RM 20-1055, Building 686 Renovation",
+      "corroboration": [
+        {
+          "source": "SAES p.1 header",
+          "claim": "FY20 PROJECT RM 20-1055",
+          "value": "RM 20-1055",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A1",
+          "claim": "FY-20 Project RM 20-1055",
+          "value": "RM 20-1055",
+          "agrees": true
+        }
+      ]
+    },
+    "eprojects_work_order": {
+      "value": "1654651",
+      "source": "SAES §A1",
+      "quote": "eProjects Work Order No.: 1654651",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "eProjects Work Order No.: 1654651",
+          "value": "1654651",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-17-D-0347",
+      "source": "SAES §A1",
+      "quote": "Contract No.: N40085-17-D-0347 Dills Architects",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Contract No.: N40085-17-D-0347 Dills Architects",
+          "value": "N40085-17-D-0347",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "explicit_null",
+      "source": "SAES §A1",
+      "quote": "Task Order: Unknown"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "BOD unreadable; SAES does not state building square footage. Would be in BOD or Attachment 10 (DD1391)."
+    },
+    "program_budget": {
+      "value": 1105000,
+      "currency": "USD",
+      "source": "SAES §C1",
+      "quote": "Project Cost/Program Amount: $1,105,000.",
+      "corroboration": [
+        {
+          "source": "SAES §C1",
+          "claim": "Project Cost/Program Amount: $1,105,000.",
+          "value": 1105000,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 974441,
+      "currency": "USD",
+      "source": "SAES §C2",
+      "quote": "Estimated Construction Cost (ECC): $974,441.",
+      "corroboration": [
+        {
+          "source": "SAES §C2",
+          "claim": "Estimated Construction Cost (ECC): $974,441.",
+          "value": 974441,
+          "agrees": true
+        }
+      ]
+    },
+    "design_funding_year": {
+      "value": "FY2020",
+      "source": "SAES §A1",
+      "quote": "Design Funding Year: FY 2020"
+    },
+    "construction_completion_date": {
+      "value": null,
+      "status": "explicit_null",
+      "source": "SAES §A1",
+      "quote": "Estimated Construction Completion Date: Unknown"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "A-E fee was to be negotiated at task order award per SAES §A4. No fee amount stated in SAES."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Schedule referenced as Attachment 1 to SAES; not included in provided PDF."
+      },
+      "design_submittals": {
+        "value": [
+          "35%",
+          "100% Pre-Final",
+          "Final"
+        ],
+        "source": "SAES §D3",
+        "quote": "Design submittals will be due at the 35%, 100% Pre-Final and Final Design stages."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract not yet awarded per SAES; ECC of $974,441 is the government cost estimate, not a contracted value."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "explicit_null",
+        "source": "SAES §A1",
+        "quote": "Estimated Construction Completion Date: Unknown"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "scope_description": {
+    "value": "Renovation of Building 686 at Naval Weapons Station Yorktown. Scope includes full design-bid-build construction documents (drawings, specifications, cost estimate, basis of design), demolition with hazardous materials investigation and abatement, and incorporation of Physical Security Equipment (ESS/IDS/CCTV/AACS) infrastructure and Audio-Visual (AV) equipment infrastructure. Engineering deliverables include Site Engineering Investigation (SEI), hazardous materials survey and testing, environmental/construction permits, and Draft DD Form 1354 update. Post Construction Award Services (PCAS) also required.",
+    "source": "SAES Sections A2, D, F, H",
+    "quote": null
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "fire_alarm",
+      "security_access_control",
+      "security_video_surveillance"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "electrical_systems",
+      "fire_protection_systems",
+      "security_systems"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_matoc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_8a_set_aside"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "wpnsta_yorktown",
+    "building_renovation",
+    "federal_military",
+    "fy20",
+    "dills_architects",
+    "8a_procurement"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawing set provided. BOD unreadable. SF would be in BOD or Attachment 10 DD1391."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    },
+    "extraction_notes": "No drawing set was provided in the intake folder. The SAES references Attachment 11 (Concept Drawings) but these were not included in the provided PDF. The 14-page PDF is entirely text-based (the SAES document itself). Drawing extraction status: deferred — no drawing files present."
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

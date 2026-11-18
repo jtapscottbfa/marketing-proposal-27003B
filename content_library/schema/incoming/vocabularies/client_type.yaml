@@ -1,0 +1,265 @@
+vocabulary_id: client_type
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: NAICS-informed (sector classification)
+anchor_standard_version: NAICS 2022
+hierarchy: two_level
+multi_select: true
+governance_notes: |
+  Captures who is paying for and contracting the project. Distinct from
+  program_type (what kind of facility). A federal K-12 school is
+  client_type=federal, program_type=education_k12. Top-level entries are the
+  primary classification used by federal proposal evaluators ("have you done
+  federal work"); sub-level entries provide additional specificity where
+  meaningful (e.g., DoD vs civilian federal, state DOT vs general state).
+future_migration: null
+
+entries:
+  # ============ FEDERAL ============
+  - canonical_id: federal
+    display_name: Federal
+    definition: Project funded and/or contracted by a US federal agency.
+    parent_id: null
+    aliases:
+      - federal_government
+      - usg
+      - us_government
+    standard_reference: null
+
+  - canonical_id: federal_civilian
+    display_name: Federal — Civilian Agency
+    definition: Federal project under a non-DoD civilian agency (GSA, VA, NPS, USDA, DOE, etc.).
+    parent_id: federal
+    aliases:
+      - civilian_federal
+    standard_reference: null
+
+  - canonical_id: federal_dod
+    display_name: Federal — Department of Defense
+    definition: Federal project under DoD or a military service branch (Army, Navy, Air Force, USMC, USCG, Space Force).
+    parent_id: federal
+    aliases:
+      - dod
+      - department_of_defense
+      - military
+    standard_reference: null
+
+  - canonical_id: federal_va
+    display_name: Federal — Department of Veterans Affairs
+    definition: Federal project for the VA, including VA medical centers and CBOCs.
+    parent_id: federal
+    aliases:
+      - va
+      - veterans_affairs
+    standard_reference: null
+
+  - canonical_id: federal_gsa
+    display_name: Federal — General Services Administration
+    definition: Federal project under GSA (federal building portfolio, courthouses, leased space).
+    parent_id: federal
+    aliases:
+      - gsa
+    standard_reference: null
+
+  - canonical_id: federal_usace
+    display_name: Federal — US Army Corps of Engineers
+    definition: Federal project executed by USACE, including civil works and military construction support.
+    parent_id: federal
+    aliases:
+      - usace
+      - corps_of_engineers
+      - army_corps
+    standard_reference: null
+
+  - canonical_id: federal_navfac
+    display_name: Federal — Naval Facilities Engineering Systems Command
+    definition: Federal project executed by NAVFAC for Navy and Marine Corps facilities.
+    parent_id: federal
+    aliases:
+      - navfac
+    standard_reference: null
+
+  - canonical_id: federal_afcec
+    display_name: Federal — Air Force Civil Engineer Center
+    definition: Federal project executed by AFCEC for Air Force facilities.
+    parent_id: federal
+    aliases:
+      - afcec
+    standard_reference: null
+
+  - canonical_id: federal_intelligence
+    display_name: Federal — Intelligence Community
+    definition: Federal project for IC agencies (often classified clients; CIA, NSA, NRO, NGA, ODNI).
+    parent_id: federal
+    aliases:
+      - ic
+      - intelligence_community
+    standard_reference: null
+
+  - canonical_id: federal_dhs
+    display_name: Federal — Department of Homeland Security
+    definition: Federal project for DHS components (CBP, USCG, FEMA, USCIS, etc.).
+    parent_id: federal
+    aliases:
+      - dhs
+    standard_reference: null
+
+  # ============ STATE / LOCAL ============
+  - canonical_id: state
+    display_name: State
+    definition: Project funded and contracted by a US state agency or state-controlled entity.
+    parent_id: null
+    aliases:
+      - state_government
+    standard_reference: null
+
+  - canonical_id: state_dot
+    display_name: State — Department of Transportation
+    definition: Project for a state DOT or transportation agency.
+    parent_id: state
+    aliases:
+      - vdot
+      - state_doh
+      - state_transportation
+    standard_reference: null
+
+  - canonical_id: state_university_system
+    display_name: State — Public University System
+    definition: Project for a state-operated public university or university system.
+    parent_id: state
+    aliases:
+      - public_university
+      - state_higher_ed
+    standard_reference: null
+
+  - canonical_id: state_general
+    display_name: State — General Government
+    definition: State project not under DOT or university system (capitol facilities, state office buildings, state agencies).
+    parent_id: state
+    aliases:
+      - state_facilities
+    standard_reference: null
+
+  - canonical_id: local
+    display_name: Local — Municipal/County
+    definition: Project funded and contracted by a city, town, or county government.
+    parent_id: null
+    aliases:
+      - municipal
+      - county
+      - city_government
+    standard_reference: null
+
+  - canonical_id: local_school_district
+    display_name: Local — School District
+    definition: Project for a public K-12 school district (independent or county-operated).
+    parent_id: local
+    aliases:
+      - school_district
+      - public_schools
+      - k12_district
+    standard_reference: null
+
+  - canonical_id: local_special_district
+    display_name: Local — Special District/Authority
+    definition: Project for a special-purpose district or authority (water, sewer, transit, port, airport, parks).
+    parent_id: local
+    aliases:
+      - special_district
+      - public_authority
+      - port_authority
+      - airport_authority
+      - water_authority
+    standard_reference: null
+
+  # ============ TRIBAL ============
+  - canonical_id: tribal
+    display_name: Tribal Government
+    definition: Project for a federally-recognized tribal government or tribal enterprise.
+    parent_id: null
+    aliases:
+      - tribal_government
+      - native_american
+    standard_reference: null
+
+  # ============ PRIVATE ============
+  - canonical_id: private_commercial
+    display_name: Private — Commercial
+    definition: Project for a private for-profit entity (corporation, LLC, developer, REIT).
+    parent_id: null
+    aliases:
+      - commercial
+      - private_sector
+      - corporate
+    standard_reference: null
+
+  - canonical_id: private_developer
+    display_name: Private — Developer
+    definition: Project for a real estate developer (commercial, residential, mixed-use).
+    parent_id: private_commercial
+    aliases:
+      - developer
+      - real_estate_developer
+    standard_reference: null
+
+  - canonical_id: private_institutional
+    display_name: Private — Institutional
+    definition: Project for a private nonprofit institution (private university, hospital system, foundation, religious organization).
+    parent_id: null
+    aliases:
+      - nonprofit
+      - institutional
+    standard_reference: null
+
+  - canonical_id: private_university
+    display_name: Private — University/College
+    definition: Project for a private (non-state) university or college.
+    parent_id: private_institutional
+    aliases:
+      - private_higher_ed
+    standard_reference: null
+
+  - canonical_id: private_healthcare
+    display_name: Private — Healthcare System
+    definition: Project for a private hospital system or healthcare provider organization.
+    parent_id: private_institutional
+    aliases:
+      - private_hospital_system
+      - healthcare_system
+    standard_reference: null
+
+  - canonical_id: private_religious
+    display_name: Private — Religious Organization
+    definition: Project for a religious organization, denomination, or congregation.
+    parent_id: private_institutional
+    aliases:
+      - religious
+      - faith_based
+    standard_reference: null
+
+  - canonical_id: private_foundation
+    display_name: Private — Foundation
+    definition: Project for a charitable foundation or grant-making institution.
+    parent_id: private_institutional
+    aliases:
+      - foundation
+    standard_reference: null
+
+  - canonical_id: private_individual
+    display_name: Private — Individual
+    definition: Project for an individual private client (custom residential, individual landowner).
+    parent_id: null
+    aliases:
+      - individual_owner
+      - private_residence
+    standard_reference: null
+
+  # ============ FOREIGN ============
+  - canonical_id: foreign_government
+    display_name: Foreign Government
+    definition: Project for a non-US government, including foreign military sales (FMS) work.
+    parent_id: null
+    aliases:
+      - foreign
+      - international_government
+    standard_reference: null

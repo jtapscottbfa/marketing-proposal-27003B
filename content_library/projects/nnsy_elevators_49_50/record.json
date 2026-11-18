@@ -1,0 +1,576 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nnsy_elevators_49_50",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_elevators_49_50/20-007F.2022.08.24.ELEV 49.BASIS OF DESIGN_FINAL.pdf",
+      "type": "bod",
+      "sha256": "61833aa5ad5c37c14697f7c26b800a9b004483a935e7411b045371f1081724f2",
+      "included": true,
+      "notes": "Basis of Design for Elevator #49 replacement, Final Design Submittal 24 August 2022. BFA Project No. 20-007F, eProjects W.O. 1362120. Includes Appendix B (Vertical Transportation Report), SHPO Outline, 3D scan drawings."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_elevators_49_50/20-007F.2022.08.24.ELEV 50.BASIS OF DESIGN_FINAL.pdf",
+      "type": "bod",
+      "sha256": "0e9a35df80196074c54af08188b1bd27a2fcdb0a2deb6437ddd6cc8533bf036f",
+      "included": true,
+      "notes": "Basis of Design for Elevator #50 replacement, Final Design Submittal 24 August 2022. BFA Project No. 20-007F, eProjects W.O. 1681187. Includes Appendix B (Vertical Transportation Report), 3D scan drawings."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_elevators_49_50/SAES - 1362120.pdf",
+      "type": "sow",
+      "sha256": "e65de7818d7ca9040b22dd4bb527b957bd99b2ceaeccb30b316c96a197a78428",
+      "included": true,
+      "notes": "Scope of Architect-Engineer Services (SAES) for Task Order under Contract N40085-20-D0005. Covers both Elevator #49 (J.O. 1362120) and #50 (J.O. 1681187). Includes project funding, schedule, and submittal requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_elevators_49_50/APPENDIX C THRU.pdf",
+      "type": "drawing_set",
+      "sha256": "fb662a16c92ef076a8d1b58c16472ff4909be92c8b199a6901292b31a915c034",
+      "included": true,
+      "notes": "Contains 3D laser scan survey drawings of elevator hoistway walls (as-built vs plumb line deviations), sheets A101-A104, prepared by Bowman Foster & Associates, project NNSY_B276, dated 2022-01-12. Also contains placeholder pages for Appendix C (Manufacturer Drawings), D (Construction Schedule), and E (3D Scans) with no content beyond section labels."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nnsy_elevators_49_50/SHPO.pdf",
+      "type": "report",
+      "sha256": "1bf9179372dd9c05e43972f464cb2b0112007222cb90c26d175dae4158c40c4c",
+      "included": true,
+      "notes": "State Historic Preservation Office (SHPO) Project Outline for Building 276 Elevator #49 Replacement. Stand-alone document (separate from the SHPO Appendix F included in the Elev 49 BOD). Addresses exterior stair addition and window replacement on a contributing historic property."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "Two BODs (one per elevator), SAES (SOW equivalent), SHPO report, and 3D scan drawings present. No construction specifications book, no executed contract, no cost estimate document, no change orders."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 276 – Replace Elevator #49 and Replace Elevator #50, Norfolk Naval Shipyard",
+      "source": "SAES §A1",
+      "quote": "BUILDING 276 - REPLACE ELEVATOR #49\nBUILDING 276 - REPLACE ELEVATOR #50",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "BUILDING 276 - REPLACE ELEVATOR #49 / BUILDING 276 - REPLACE ELEVATOR #50",
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 49 cover",
+          "claim": "Building 276 - Replace Elevator #49",
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 50 cover",
+          "claim": "Building 276 - Replace Elevator #50",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC), PWD Portsmouth",
+      "source": "BOD Elev 49 cover page and SAES §B1",
+      "quote": "Naval Facilities Engineering Command, PWD Portsmouth",
+      "corroboration": [
+        {
+          "source": "BOD Elev 49 cover",
+          "claim": "Naval Facilities Engineering Command, PWD Portsmouth",
+          "agrees": true
+        },
+        {
+          "source": "SAES §B1",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC), PWD Portsmouth / Norfolk Naval Shipyard",
+      "source": "SAES §A2a",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES §A2a",
+          "claim": "NAVFAC PWD Portsmouth administers; Norfolk Naval Shipyard is the installation",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Norfolk Naval Shipyard, Building 276",
+      "facility_address": null,
+      "source": "BOD Elev 49 cover page",
+      "quote": "Norfolk Naval Shipyard, Portsmouth, VA",
+      "corroboration": [
+        {
+          "source": "BOD Elev 49 cover",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A1",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "SHPO",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-007F",
+      "source": "BOD Elev 49 cover page",
+      "quote": "BFA Project No. 20-007F",
+      "corroboration": [
+        {
+          "source": "BOD Elev 49 cover",
+          "claim": "BFA Project No. 20-007F",
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 50 cover",
+          "claim": "BFA Project No. 20-007F",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "1362120 (Elev #49) / 1681187 (Elev #50)",
+      "source": "SAES §A1",
+      "quote": "eProjects Work Order No.  Elevator #49: 1362120\n                          Elevator #50: 1681187",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Elevator #49: 1362120; Elevator #50: 1681187",
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 49 cover",
+          "claim": "Elevator #49: 1362120",
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 50 cover",
+          "claim": "Elevator #50: 1681187",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-20-D0005",
+      "source": "SAES §A1 and BOD Elev 49 cover",
+      "quote": "A/E Contract No.: N40085-20-D0005",
+      "corroboration": [
+        {
+          "source": "BOD Elev 49 cover",
+          "claim": "N40085-20-D0005",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A1",
+          "claim": "Contract No. N40085-20-D0005- BOWMAN FOSTER",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "SAES references 'Task Order ###[, Modification No.' with placeholder brackets indicating the task order number was not filled in at time of document creation."
+    },
+    "square_footage": {
+      "value": 600,
+      "unit": "gsf",
+      "source": "BOD Elev 49 §4.4",
+      "quote": "At each floor level the area of work is approximately 600 SF, including the lobbies and the Machine Room is around 570 SF.",
+      "notes": "600 SF is the area of work per floor level (not total building). Total building is 544,000 GSF per Introduction section. These serve different purposes; see program_budget note.",
+      "corroboration": [
+        {
+          "source": "BOD Elev 49 §4.4",
+          "claim": "approximately 600 SF per floor level; Machine Room ~570 SF",
+          "value": 600,
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 50 §4.4",
+          "claim": "approximately 600 SF per floor level; Machine Room ~570 SF",
+          "value": 600,
+          "agrees": true
+        }
+      ]
+    },
+    "building_gross_area": {
+      "value": 544000,
+      "unit": "gsf",
+      "source": "BOD Elev 49 §1",
+      "quote": "the building was originally constructed in 1942 and it is approximately 544,000 square feet in area",
+      "corroboration": [
+        {
+          "source": "BOD Elev 49 §1",
+          "claim": "approximately 544,000 square feet in area",
+          "value": 544000,
+          "agrees": true
+        },
+        {
+          "source": "BOD Elev 50 §1",
+          "claim": "approximately 544,000 square feet in area",
+          "value": 544000,
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2a",
+          "claim": "approximately 544,000 square feet in area",
+          "value": 544000,
+          "agrees": true
+        },
+        {
+          "source": "SHPO",
+          "claim": "approximately 544,000 square feet in area",
+          "value": 544000,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 3220000,
+      "currency": "USD",
+      "source": "SAES §C1",
+      "quote": "$1,660,000.00 - Building 276 – Elevator #49\n$1,560,000.00 - Building 276 – Elevator #50",
+      "corroboration": [
+        {
+          "source": "SAES §C1",
+          "claim": "$1,660,000 (Elev 49) + $1,560,000 (Elev 50) = $3,220,000 total program amount",
+          "value": 3220000,
+          "agrees": true
+        },
+        {
+          "source": "SAES §C2",
+          "claim": "Estimated Construction Cost (ECC) = $1,660,000 (Elev 49) + $1,560,000 (Elev 50)",
+          "value": 3220000,
+          "agrees": true
+        },
+        {
+          "source": "VT Report §C3a",
+          "claim": "Elevators work budget: $1,000,000–$1,200,000 per elevator (elevator contractor only, excluding other trades)",
+          "value": null,
+          "agrees": false,
+          "note": "VT consultant budget is for elevator contractor scope only; SAES program amount includes full A-E and construction cost. Not a true conflict — different scope boundaries."
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES states fees will be negotiated per fixed-rate schedule in basic IQ contract. No design fee dollar amount stated in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-08-24",
+        "source": "BOD Elev 49 and 50 cover pages",
+        "quote": "FINAL DESIGN SUBMITTAL\n24 AUGUST 2022",
+        "notes": "Final design submittal date; per SAES schedule, Final Design Submittal is the last deliverable. Treated as design completion date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": 3220000,
+        "currency": "USD",
+        "source": "SAES §C2",
+        "quote": "$1,660,000.00 - Building 276 – Elevator #49\n$1,560,000.00 - Building 276 – Elevator #50",
+        "notes": "Estimated Construction Cost (ECC) per SAES. Presented as two separate project amounts; summed here. These are program/ECC values, not necessarily bid prices."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-12-31",
+        "source": "SAES §A1",
+        "quote": "Estimated Construction Completion Date: December 2023",
+        "notes": "Estimated date only; no specific day given. Encoded as end-of-month December 2023."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "structural_existing_assessment",
+      "structural_foundation"
+    ],
+    "building_systems": [
+      "conveying_elevators",
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_sanitary_dwv"
+    ],
+    "construction_scope": [
+      "conveying_scope",
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "plumbing_scope",
+      "finishes_scope",
+      "metals_misc_metals"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "navfac_mid_atlantic",
+    "nnsy",
+    "norfolk_naval_shipyard",
+    "elevator_replacement",
+    "freight_elevator",
+    "historic_property",
+    "contributing_historic_property",
+    "wwii_era",
+    "hazmat_abatement",
+    "building_276",
+    "portsmouth_va",
+    "ufc_3_490_06",
+    "shpo_coordination"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Dranan Sparks",
+      "role_on_project": "project_manager",
+      "notes": "Named as point of contact in Vertical Transportation Report. LEED AP BD+C, GGP."
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "A101",
+        "title": "West/East Wall - North (Hoistway 3D Scan Survey)",
+        "discipline": "architecture",
+        "reading_notes": "3D laser scan survey of north hoistway wall showing as-built vs. plumb line deviations. Floor levels shown: Pit (93'-11-11/16\"), Level 1 (100'-0-3/8\"), Level 2 (115'-0-3/16\"), Level 3 (125'-11-13/16\"), Level 4 (137'-0-1/16\"), Level 5 (148'-4-1/16\"), Level 6 (157'-9-9/16\"), Roof (172'-10-1/16\"). North wall width between levels approximately 19'-0\". Deviations from plumb measured in fractions of an inch; generally small (<5/8\") except at Level 5 where deviation reads 0'-0-17/32\". Project number NNSY_B276, drawn 2022-01-12 by TKM. Scale 1/4\"=1'-0\"."
+      },
+      {
+        "sheet_number": "A102",
+        "title": "East/West Wall - South (Hoistway 3D Scan Survey)",
+        "discipline": "architecture",
+        "reading_notes": "3D laser scan survey of south hoistway wall. Similar floor level arrangement to A101. Width approximately 19'-0\" between levels. Deviations generally small (0\"-9/16\"). Plumb line vs. as-built overlay shown. Scale 1/4\"=1'-0\"."
+      },
+      {
+        "sheet_number": "A103",
+        "title": "North Wall - East and South Wall - East (Hoistway 3D Scan Survey)",
+        "discipline": "architecture",
+        "reading_notes": "3D laser scan survey showing two walls: East wall north side and East wall south side. Nominal hoistway dimension in the east-west direction approximately 12'-1\" to 12'-3-1/2\". Notable deviation at Level 6 on north side: 0'-3-5/16\" from plumb (larger than typical — flagged as potentially significant for elevator guide rail alignment). Deviations on south side generally smaller (<1\"). Scale 1/4\"=1'-0\"."
+      },
+      {
+        "sheet_number": "A104",
+        "title": "South Wall - West and North Wall - West (Hoistway 3D Scan Survey)",
+        "discipline": "architecture",
+        "reading_notes": "3D laser scan survey of west wall faces. Nominal dimension approximately 12'-1\" to 12'-3\". Some deviations at upper levels (Level 6: up to 0'-2-21/32\" on south-west face). General pattern: hoistway walls are reasonably plumb at lower levels but have greater deviation at upper levels near roof. This is consistent with the structural BOD narrative about the 1942 concrete construction."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 4,
+        "source": "BOD Elev 49 §1 and 3D scan drawings",
+        "quote": "Elevator 49 has a total of four stops.",
+        "notes": "Building has 4 occupied floors served by elevators plus rooftop machine room. Scan drawings show 6 'levels' but Level 5 and Level 6 appear to be penthouse/machine room levels above the 4th floor. Floor count confirmed as 4 (1st through 4th).",
+        "sheets": [
+          "A101",
+          "A102",
+          "A103",
+          "A104"
+        ]
+      },
+      "hoistway_dimensions": {
+        "value": "approximately 19'-0\" (north-south) x 12'-3\" (east-west) per hoistway",
+        "source": "3D scan drawings A101-A104",
+        "quote": null,
+        "notes": "Dimensions read from 3D scan survey drawings. These are as-built hoistway dimensions (with minor plumb deviations noted).",
+        "sheets": [
+          "A101",
+          "A102",
+          "A103",
+          "A104"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "One ductless split air conditioning system (outdoor + wall/ceiling fan coil unit) in machine room — new per Elevator 49 BOD",
+          "Existing exhaust fans and louvers — one relocated, thermostat controlled and interlocked with intake louvers",
+          "BAS/DDC integration required per SAES: HVAC system connects to NNSY base-wide DDC system"
+        ],
+        "electrical": [
+          "New 3P/200A breaker in existing Switchboard CL (480Y/277V) for Elevator #49",
+          "New 100A, 208Y/120V, 3-phase, 4-wire panelboard in machine room for Elevator #49",
+          "New 30 kVA 480-208Y/120V dry type transformer",
+          "Fused elevator control switch with integral shunt trip relay — both elevators",
+          "LED lighting throughout: machine room, hoistway, cab",
+          "GFCI duplex receptacles in machine room, pit, top of hoistway",
+          "Elevator #50 existing 3P/200A breaker in Switchboard CL to be reused for new #50 feeder",
+          "Emergency communications: two-way intercom, master station in machine room, lobby station at 1st floor"
+        ],
+        "plumbing": [
+          "Submersible sump pump in elevator pit — schedule 40 steel discharge piping to building exterior",
+          "Sump pump with oil minder system"
+        ],
+        "fire_protection": [
+          "Existing wet pipe sprinkler system modified for elevator shaft/machine room coordination",
+          "New sprinkler piping to machine room from 4th floor with supervised shut-off valve, check valve, waterflow switch, and test valve",
+          "Shunt trip breaker actuation from waterflow switch",
+          "Smoke detection at all elevator landings and machine room",
+          "Fire alarm system modified to interface with elevator controllers for Firefighters' Emergency Operation (FEO)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.program_budget / phases.construction.contract_value",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES §C1-C2",
+          "value": 3220000,
+          "description": "$1,660,000 (Elev 49) + $1,560,000 (Elev 50) = $3,220,000 total program/ECC"
+        },
+        {
+          "source": "VT Report §C3a",
+          "value": null,
+          "description": "Elevator contractor scope budget only: $1,000,000–$1,200,000 per elevator; plus 'work by other trades: A/E to provide pricing'"
+        }
+      ],
+      "resolution_chosen": "SAES §C1-C2",
+      "rationale": "SAES program/ECC values are the authoritative construction budget figures. VT Report budget covers elevator contractor scope only (Division 14), explicitly excluding other-trade work. Not a true conflict — different scope boundaries. SAES is complete project cost."
+    },
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Elev 49 §4.4 / BOD Elev 50 §4.4",
+          "value": 600,
+          "description": "~600 SF area of work per floor level (elevator lobby + machine room)"
+        },
+        {
+          "source": "BOD Elev 49 §1",
+          "value": 544000,
+          "description": "~544,000 SF total building gross area"
+        }
+      ],
+      "resolution_chosen": "Both values retained in separate fields (square_footage = renovation work area per floor; building_gross_area = total building)",
+      "rationale": "Two different measures: work area and total building area. Both accurately reported in separate fact fields. Not a true conflict."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    }
+  }
+}

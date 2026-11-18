@@ -1,0 +1,468 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "24-034",
+    "status": "present_with_value",
+    "source": "EF-1 equipment cut sheet file path",
+    "quote": null
+  },
+  "project_slug": "deep_creek_church",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/2302_C1-0 - 030824.pdf",
+      "type": "drawing_set",
+      "sha256": "84160e17f1202c8296789f3a690897ae755a1fc64560951d29a2dbaea7a28d2f",
+      "page_count": 1,
+      "included": true,
+      "notes": "Cover sheet / code summary — architect Bondurant Associates (job 2302); site info, index of drawings, description of proposed work"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/2302_A1-1_REV1 -042424.pdf",
+      "type": "drawing_set",
+      "sha256": "628109329242e7e89558cfdea7518373a96af0d47c90a7c6caf1aa5bfb34087a",
+      "page_count": 1,
+      "included": true,
+      "notes": "Architectural sheet A1.1 Rev1 (04-24-24) — Demolition Floor Plan and New Work Floor Plan; Womens/Mens restrooms and Pastor Study area"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/2302_A1-2 - 030824.pdf",
+      "type": "drawing_set",
+      "sha256": "56c3b577ed5d06118396d5e38e0f2b6f441e362830986a8007b8e4b73d7afc24",
+      "page_count": 1,
+      "included": true,
+      "notes": "Architectural sheet A1.2 (03-08-24) — Schedules and Details (door schedule, hardware schedule, partition types, construction details)"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/2024.07.26.FINAL PROGRESS DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "d3ab3bde0db242f3c1b8cf6c7fd37edcc4458fee50ce3c8fa7899892241fc0e6",
+      "page_count": 3,
+      "included": true,
+      "notes": "BFA progress drawings (final, 07-25-24): PD101 plumbing demolition plans, P-101 plumbing new work plans + fixture/pump schedules, M-101 mechanical new work plan + exhaust fan schedule"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/EF-1 EQUIPMENT CUT SHEET.pdf",
+      "type": "submittal",
+      "sha256": "1a4e545bb15d25dff147cd994ded161a2de14e6e03ab6ab60d4e30788c0dab65",
+      "page_count": 2,
+      "included": true,
+      "notes": "Greenheck CSP-A390 inline cabinet fan cut sheet for EF-1 (220 CFM); BFA project 24-034; generated 07/24/2024"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/EF-2 EQUIPMENT CUT SHEET.pdf",
+      "type": "submittal",
+      "sha256": "76f17af9b6af691e59dc98b43d8b13c046e5f7bf484264a25060b981a3b68537",
+      "page_count": 2,
+      "included": true,
+      "notes": "Greenheck CSP-A250 inline cabinet fan cut sheet for EF-2 (200 CFM); BFA project 24-034; generated 07/24/2024"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/deep_creek_church/4608 Deep Creek Blvd - Portsmouth VA.msg",
+      "type": "correspondence",
+      "sha256": "67e34185d5124fa5a68dddf4ea97e256e83a940d05d0d20c87df84e5d6f731d0",
+      "page_count": null,
+      "included": false,
+      "notes": "Outlook .msg file — could not read content (binary MSG format); flagged for human review",
+      "flag_for_human_review": true
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD, SOW, contract, or spec book present. Source documents are architectural and MEP drawings plus mechanical equipment submittals and one unreadable .msg correspondence file. All facts derived from drawings and cut sheets."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Partial Renovation of The Way, The Truth, and The Life Church",
+      "source": "drawing C1.0 title block",
+      "quote": "PARTIAL RENOVATION OF THE WAY, THE TRUTH, AND THE LIFE CHURCH",
+      "corroboration": [
+        {
+          "source": "drawing C1.0 title block",
+          "claim": "PARTIAL RENOVATION OF THE WAY, THE TRUTH, AND THE LIFE CHURCH",
+          "value": "Partial Renovation of The Way, The Truth, and The Life Church",
+          "agrees": true
+        },
+        {
+          "source": "drawing A1.1 title block",
+          "claim": "PARTIAL RENOVATION OF TENANT SPACE — THE WAY, THE TRUTH, AND THE LIFE CHURCH RESTROOM RENOVATION",
+          "value": "Partial Renovation of The Way, The Truth, and The Life Church",
+          "agrees": true
+        },
+        {
+          "source": "BFA progress drawings PD101/P-101/M-101 title block",
+          "claim": "THE WAY, THE TRUTH, AND THE LIFE CHURCH RESTROOM RENOVATION",
+          "value": "Partial Renovation of The Way, The Truth, and The Life Church",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "The Way, The Truth, and The Life Church",
+      "source": "drawing C1.0 cover sheet",
+      "quote": null,
+      "notes": "Church name appears as project title; no separate client/owner line visible in code summary block on cover sheet. Church is the owner/client.",
+      "corroboration": [
+        {
+          "source": "drawing C1.0 cover sheet",
+          "claim": "Project name / client organization inferred as 'The Way, The Truth, and The Life Church'",
+          "value": "The Way, The Truth, and The Life Church",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "The Way, The Truth, and The Life Church",
+      "source": "drawing C1.0 cover sheet",
+      "quote": null,
+      "notes": "Same as client_name; no separate contracting entity identified in drawings."
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "4608 Deep Creek Blvd, Portsmouth, Virginia 23702",
+      "source": "drawing C1.0 cover sheet",
+      "quote": "4608 DEEP CREEK BLVD. PORTSMOUTH, VIRGINIA 23702",
+      "corroboration": [
+        {
+          "source": "drawing C1.0 cover sheet",
+          "claim": "4608 DEEP CREEK BLVD. PORTSMOUTH, VIRGINIA 23702",
+          "value": "4608 Deep Creek Blvd, Portsmouth, Virginia 23702",
+          "agrees": true
+        },
+        {
+          "source": "drawing A1.1 title block",
+          "claim": "4608 DEEP CREEK BLVD, PORTSMOUTH, VIRGINIA 23702",
+          "value": "4608 Deep Creek Blvd, Portsmouth, Virginia 23702",
+          "agrees": true
+        },
+        {
+          "source": ".msg file name",
+          "claim": "4608 Deep Creek Blvd - Portsmouth VA",
+          "value": "4608 Deep Creek Blvd, Portsmouth, Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-034",
+      "source": "EF-1 equipment cut sheet, file path reference",
+      "quote": null,
+      "notes": "Derived from file path G:\\2024\\24-034 Deep Creek Church Renovation\\... in cut sheet footer; also shown as 'PROJECT NO.: 24 034' in BFA progress drawing title block.",
+      "corroboration": [
+        {
+          "source": "EF-1 cut sheet file path (footer)",
+          "claim": "G:\\2024\\24-034 Deep Creek Church Renovation\\...",
+          "value": "24-034",
+          "agrees": true
+        },
+        {
+          "source": "EF-2 cut sheet file path (footer)",
+          "claim": "G:\\2024\\24-034 Deep Creek Church Renovation\\...",
+          "value": "24-034",
+          "agrees": true
+        },
+        {
+          "source": "BFA progress drawings title block",
+          "claim": "PROJECT NO.: 24 034",
+          "value": "24-034",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "notes": "Architect Bondurant Associates uses job number 2302 (drawn from drawing numbers 2302_A1-1, 2302_A1-2, 2302_C1-0). This is the architect's job number, not a client project number."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No overall building square footage stated in drawings. Scope is limited to a partial tenant renovation of two restrooms (mens/womens) and an office/pastor's study area. The renovation area appears small (restroom suite with corridor) based on 1/4\"=1'-0\" plan scale but no area tabulation was found in any document."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "description_of_work": {
+      "value": "Partial renovation of existing tenant space including relocation and renovation of mens restroom, womens restroom, and office. New interior finishes, fixtures, plumbing systems (domestic water and sanitary), and mechanical exhaust ventilation.",
+      "source": "drawing C1.0, Description of Proposed Work block",
+      "quote": null,
+      "notes": "Quote not available at image resolution for full Description of Proposed Work text block on C1.0; value is a synthesis of legible elements."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Earliest drawing date is 03-08-2024 (A1.2 initial issue, Bondurant Associates job 2302). BFA progress drawings issued 07-25-2024."
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_religious"
+    ],
+    "program_type": [
+      "religious"
+    ],
+    "program_subtype": [
+      "religious_worship"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_air_distribution",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "mechanical_hvac",
+      "finishes_scope",
+      "existing_demolition",
+      "openings_doors_frames"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "portsmouth_va",
+    "church_renovation",
+    "restroom_renovation",
+    "tenant_improvement",
+    "small_project",
+    "mep_subconsultant"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "C1.0",
+        "title": "COVER SHEET / CODE SUMMARY INFORMATION",
+        "discipline": "architecture",
+        "source_pdf": "2302_C1-0 - 030824.pdf",
+        "drawing_date": "2023-10-03",
+        "issued_by": "Bondurant Associates Engineering & Architecture",
+        "reading_notes": "Cover sheet for the Bondurant Associates architect-of-record drawing set (job 2302). Contains: vicinity map locating site at 4608 Deep Creek Blvd Portsmouth VA 23702; project title 'Partial Renovation of The Way, The Truth, and The Life Church'; index of drawings (C1.0, A1.1, A1.2); code summary block (Virginia construction codes, city Portsmouth jurisdiction); Description of Proposed Work block (partially legible — describes relocation/renovation of mens restroom, womens restroom, and office; replacement of interior finishes and fixtures); lead design professional Jeffrey H. Neighbors AIA; architectural firm Bondurant Associates / James A. Hall Jr. (license 0401058869). Building permit data block includes construction type, fire district, hazardous materials fields. Per index: sheet set is C1.0 + A1.1 + A1.2 only (3 sheets total for architect's set)."
+      },
+      {
+        "sheet_number": "A1.1",
+        "title": "DEMOLITION FLOOR PLAN AND NEW WORK FLOOR PLAN",
+        "discipline": "architecture",
+        "source_pdf": "2302_A1-1_REV1 -042424.pdf",
+        "drawing_date": "2024-04-24",
+        "revision": "Rev 1",
+        "issued_by": "Bondurant Associates Engineering & Architecture",
+        "reading_notes": "Sheet 01 of 02 for Bondurant Associates set. Three plan views at 1/4\"=1'-0\": (left) New Work Reflected Ceiling Plan, (center) New Work Floor Plan, (right) Demolition Floor Plan. Scope: Womens Restroom (multi-fixture, right side), Mens Restroom (multi-fixture, left side), a Corridor connecting both, and a Future Pastor's Study adjacent. The new floor plan shows new partitions creating two restroom suites; the demolition plan shows removal of existing partitions and fixtures. Fixtures annotated numerically per door/hardware/fixture schedules on A1.2. Wall type markers reference legend. The reflected ceiling plan shows new suspended ceiling system, access panels, and light fixture locations. No area square footage given; plan dimensions legible for individual rooms (e.g., restroom approximate 10'-12' widths visible but not specifically annotated as a total). General notes require fire extinguishers per local code, continuous sealant bead, vinyl base."
+      },
+      {
+        "sheet_number": "A1.2",
+        "title": "SCHEDULES AND DETAILS",
+        "discipline": "architecture",
+        "source_pdf": "2302_A1-2 - 030824.pdf",
+        "drawing_date": "2024-03-08",
+        "issued_by": "Bondurant Associates Engineering & Architecture",
+        "reading_notes": "Sheet 02 of 02 for Bondurant Associates set. Contains: Door Schedule (2 doors: D01 interior restroom — 3'x7'x1-3/4\", hollow metal frame, wood door; D02 womens restroom — same size, hollow metal); Hardware Schedule (2 hardware sets); Elevation — Toilet Accessories (ADA grab bars, tissue holder, paper towel dispenser, mirror, lavatory, baby changing station); structural/architectural construction details including new-to-existing slab detail, section at new opening, typical new-to-existing slab detail at trenches, partition types (4 types with varying heights relative to slab/deck), deflection track detail. Partitions General Notes visible (metal stud specs, bracing). Legend for partition heights. This sheet documents scope requiring slab saw-cut and patch for new plumbing rough-in — confirms below-slab DWV work."
+      },
+      {
+        "sheet_number": "PD101",
+        "title": "PLUMBING DEMOLITION PLANS (DOMESTIC WATER AND SANITARY)",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "2024.07.26.FINAL PROGRESS DRAWINGS.pdf",
+        "drawing_date": "2024-07-25",
+        "issued_by": "Bowman Foster & Associates, Inc. (BFA)",
+        "reading_notes": "Page 1 of 3 in BFA progress drawing package. BFA project 24-034. Two plan views at 1/4\"=1'-0\": (left) Domestic Water Plan - Demolition, (right) Sanitary Plan - Demolition. Notes call for: (1) remove fixtures including supports, domestic water supply connections and associated appurtenances completely; (2) remove domestic water piping, supports, and associated appurtenances completely to point indicated; (3) remove sanitary piping completely to point indicated; (4) 40-gallon gas-fired water heater shall remain; (5) domestic water piping to remain to point indicated; (6) sanitary piping to remain. Existing fixture locations shown dashed. Two restroom suites visible (one each side). Water heater identified as gas-fired 40-gallon unit — to remain. This confirms gas service exists at building."
+      },
+      {
+        "sheet_number": "P-101",
+        "title": "PLUMBING NEW WORK PLANS (DOMESTIC WATER AND SANITARY)",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "2024.07.26.FINAL PROGRESS DRAWINGS.pdf",
+        "drawing_date": "2024-07-25",
+        "issued_by": "Bowman Foster & Associates, Inc. (BFA)",
+        "reading_notes": "Page 2 of 3 in BFA progress drawing package. Two plan views at 1/4\"=1'-0\": (left) Domestic Water Plan - New Work, (right) Sanitary Plan - New Work. Plumbing Fixture Connection Schedule: P-1 Flush Tank Water Closet (HC) floor-mounted (qty 2, CW 1/2\"), P-2 Flush Tank Water Closet floor-mounted, P-3 Flush Valve Urinal wall-mounted, P-4 Lavatory counter-mounted (CW/HW 1/2\", waste 1-1/2\"), P-5 Shower floor (CW/HW 3/4\"). Pump Schedule: RCP-1 Recirculating pump — Inline type, 5 GPM, 0.5 HP, 120V, 1-phase — with Note 'X' indicating additional detail. Notes on sheet: (1) provide top-mounted centerset faucet with flow rate of 0.5 GPM; (2) see architectural drawings for mounting heights; (3) provide stops. Sanitary plan shows 4\" FCO (floor clean-out), 2\" FD (floor drain), VTR (vent through roof), typical 2\" vents. New 2\" to 4\" sanitary piping routed to existing lines. Domestic hot water recirculation loop provided (RCP-1 pump). Below-slab work confirmed (saw-cut per A1.2 details)."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "MECHANICAL NEW WORK PLAN",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "2024.07.26.FINAL PROGRESS DRAWINGS.pdf",
+        "drawing_date": "2024-07-25",
+        "issued_by": "Bowman Foster & Associates, Inc. (BFA)",
+        "reading_notes": "Page 3 of 3 in BFA progress drawing package. Single floor plan view at 1/4\"=1'-0\": Mechanical Plan - New Work. Two inline exhaust fans (EF-1 and EF-2) shown serving the two restroom suites via ductwork routed at ceiling. Supply grilles (type A: 6x6 neck / 10x10 face) and exhaust grilles (type B: 10x10 neck / 10x10 face). Exhaust Fan Schedule: EF-1 inline, 220 CFM, 0.5 ESP, 1035 RPM, 115V/1PH, 1.42 FLA; EF-2 inline, 200 CFM, 0.47 ESP, 1000 RPM, 115V/1PH, 0.56 FLA. Grille/Register/Diffuser Schedule: Type A grille (6x6 neck, 10x10 face, 0.06 APD) for exhaust; Type B grille (10x10, same). Notes: (1) exhaust fan, refer to spec sheet M-601 for additional information; (2) provide wall-mounted gravity damper; (3) provide manual balancing damper. Remarks: (1) provide with disconnect switch; (2) exhaust fan shall be controlled by occupancy sensor. No supply/heating system shown — limited to exhaust ventilation only. Existing HVAC serving the larger church space presumably handles general conditioning; BFA scope limited to restroom exhaust."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "unit": "gsf",
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [],
+        "notes": "No area tabulation present in any drawing. Renovation scope is limited to two restroom suites and adjacent office/pastor's study. Based on plan scale and visible dimensions, renovation area is estimated at under 1,000 SF, but no reliable count is extractable without scaling — not attempted per medium-depth rules."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawings A1.1, P-101, M-101",
+        "quote": null,
+        "sheets": [
+          "A1.1",
+          "P-101",
+          "M-101"
+        ],
+        "notes": "All plans are single-floor. Ceiling heights reference bottom-of-roof-deck and bottom-of-bar-joists (per A1.2 partition legend). No second floor or basement shown. Below-slab plumbing work (saw-cut trenches) confirms slab-on-grade construction."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "EF-1: Greenheck CSP-A390 inline cabinet exhaust fan, 220 CFM, 115V/1PH (Mens Restroom)",
+          "EF-2: Greenheck CSP-A250 inline cabinet exhaust fan, 200 CFM, 115V/1PH (Womens Restroom)",
+          "Wall-mounted gravity dampers at exhaust discharge",
+          "Manual balancing dampers",
+          "Occupancy-sensor controls for exhaust fans",
+          "Note: No HVAC supply/heating system shown in BFA scope — existing system presumed to serve general conditioning"
+        ],
+        "plumbing": [
+          "Domestic cold and hot water distribution, new — 1/2\" CW and HW branches to lavatories, 3/4\" to shower",
+          "40-gallon gas-fired domestic water heater (existing to remain)",
+          "Hot water recirculation pump RCP-1 (inline, 5 GPM, 0.5 HP, 120V, 1-phase)",
+          "Sanitary waste and vent system — new 2\" to 4\" lines routed to existing",
+          "Floor drains (2\" FD) and floor clean-outs (4\" FCO)",
+          "Vent through roof (VTR)",
+          "Fixtures: flush-tank water closets (HC accessible and standard), flush-valve urinal, lavatories (low-flow 0.5 GPM faucets), shower",
+          "Below-slab DWV rough-in with saw-cut and patched slab (per A1.2 details)"
+        ],
+        "electrical": [],
+        "fire_protection": []
+      },
+      "architect_of_record": {
+        "value": "Bondurant Associates Engineering & Architecture",
+        "source": "drawing C1.0 title block",
+        "quote": "BONDURANT ASSOCIATES ENGINEERING ARCHITECTURE",
+        "sheets": [
+          "C1.0",
+          "A1.1",
+          "A1.2"
+        ],
+        "notes": "BFA served as MEP subconsultant (mechanical/plumbing) under Bondurant Associates as architect of record. Lead design professional: Jeffrey H. Neighbors AIA; licensed architect: James A. Hall Jr. (VA license 0401058869). Bondurant Associates address: 414 Crawford Street, Suite 200, Portsmouth VA (per drawing C1.0 title block area)."
+      },
+      "drawing_issue_dates": {
+        "earliest": "2024-03-08",
+        "latest": "2024-07-25",
+        "source": "drawing title blocks",
+        "quote": null,
+        "sheets": [
+          "A1.2",
+          "A1.1",
+          "C1.0",
+          "PD101",
+          "P-101",
+          "M-101"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [],
+  "notes": "No major-severity conflicts identified. Primary data limitation is the absence of any BOD, SOW, contract, or spec book — all facts derive from drawings and equipment submittals. Financial data (contract value, fee, dates) is entirely absent. The .msg correspondence file could not be read (binary Outlook format) and may contain additional facts. BFA's role is clearly MEP subconsultant under Bondurant Associates Architecture; the project is a small religious facility restroom renovation in Portsmouth VA."
+}

@@ -1,0 +1,7 @@
+Electrical engineering scope for the Twist Martini Lounge patio heater installation provided power distribution and control wiring for three gas-fired infrared tube unit heaters in an outdoor patio space in Virginia Beach, Virginia. Each heater operates at 120V single-phase, drawing 1.2 amperes, for a total connected load of 3.6 amperes across the three units.
+
+The design extended an existing circuit from Panel A to serve the new heater equipment, with the panel schedule to be relabeled upon completion. Wiring to each heater uses 1-inch flexible metal conduit (FMC) with 2x#12 and 1x#12 ground THWN conductors routed to the exhauster junction box and control box; a separate FMC run with 2x#16 and 1x#16 ground THWN serves the common control wiring.
+
+Each heater is controlled by an individual three-position (Hi/Lo/Off) manual switch (Part #40147010), enabling two-stage firing control. Per the E-501 wiring diagram, the Low Fire switch must remain energized during High Fire operation. An emergency shut-off relay circuit integrates with the mechanical gas system: wall-switch activation closes the emergency gas shut-off valve (EGSOV) via a 24V relay and transformer at each heater location, providing a single-point safety control for venue staff.
+
+Demolition work included removal of an existing ceiling fan and its associated ceiling fan switch. The existing electrical circuit was refurbished and repurposed to power the new heating equipment. Switch location for the new manual controls was designated as a coordination item with the owner prior to installation.

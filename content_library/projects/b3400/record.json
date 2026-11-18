@@ -1,0 +1,506 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b3400",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/usace/b3400/2025.04.18 B3400 65%SUBMITTAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "da7f907255f25615179408fc54d48b365f309420fc41075995bbca3f49e1fa00",
+      "page_count": 8,
+      "included": true,
+      "notes": "Header reads '95% SUBMITTAL April 15, 2025' despite filename saying 65%. Multi-discipline BOD: General, Architectural, Plumbing, Mechanical, Electrical sections. BFA Project #24-081C."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/b3400/EXHIBIT A - SOW B3400.pdf",
+      "type": "sow",
+      "sha256": "60f2a16e0ff0f0098a628e3b96b78e3a68ed208c961e7bb21cd6d9938a172ba6",
+      "included": true,
+      "notes": "Fort Gregg-Adams DPW CMB 'Exhibit A' SOW. Includes Special Provisions, Environmental Considerations, and detailed construction narrative for PB00002-4J. Dated 06-10-2024."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/b3400/SOW PB00002-4J Construct New Offices B3400.pdf",
+      "type": "sow",
+      "sha256": "a07baa929d0ce038aef8fb4a79cca3ae7d078dc68d289ffb48206109269f665a",
+      "included": true,
+      "notes": "PDF version of the DPW CMB SOW for PB00002-4J. Content appears identical to EXHIBIT A SOW PDF. Includes project coordination sign-off sheet."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/b3400/SOW PB00002-4J Construct New Offices B3400.docx",
+      "type": "sow",
+      "sha256": "11ba9c634def30bdbe45cf227ae50f657111e7dd565e8d4665ddd4edcacd1e37",
+      "included": true,
+      "notes": "DOCX source of the DPW CMB SOW for PB00002-4J. Content matches PDF versions."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/b3400/PLANS PB00002-4J Construct New Offices B3400.pdf",
+      "type": "drawing_set",
+      "sha256": "957f992ec2545412d1484ba1f4c42a9e0c7cf19d4a3666c211839cfa9e5a6745",
+      "page_count": 2,
+      "included": true,
+      "notes": "Two-sheet drawing set: D-101 (demolition floor plan) and A-101 (new work architectural floor plan). Scale 5/8\"=1'-0\". Fort Gregg-Adams DPW CAD standard title block."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "3400 Construct New Offices",
+      "source": "BOD p.1",
+      "quote": "3400 CONSTRUCT NEW OFFICES",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "3400 CONSTRUCT NEW OFFICES",
+          "value": "3400 Construct New Offices",
+          "agrees": true
+        },
+        {
+          "source": "SOW (Exhibit A) subject line",
+          "claim": "PB00002-4J Construct New Offices – Bldg. 3400",
+          "value": "Construct New Offices – Bldg. 3400",
+          "agrees": true
+        },
+        {
+          "source": "Drawing D-101 title block",
+          "claim": "CONSTRUCT OFFICES BLDG 3400 PAO/TDS",
+          "value": "Construct Offices Bldg 3400",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army / Fort Gregg-Adams Directorate of Public Works",
+      "source": "SOW (Exhibit A) header",
+      "quote": "Fort Gregg-Adams\n825 19th Street\nFort Gregg-Adams, Virginia 23801",
+      "corroboration": [
+        {
+          "source": "SOW (Exhibit A) header",
+          "claim": "Fort Gregg-Adams, Directorate of Public Works, Contract Management Branch",
+          "value": "US Army / Fort Gregg-Adams DPW",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Fort Gregg-Adams",
+          "value": "Fort Gregg-Adams",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Army / Fort Gregg-Adams",
+      "source": "SOW (Exhibit A) header",
+      "quote": "Fort Gregg-Adams\n825 19th Street\nFort Gregg-Adams, Virginia 23801",
+      "corroboration": [
+        {
+          "source": "SOW (Exhibit A) header",
+          "claim": "Fort Gregg-Adams (Army installation)",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Fort Gregg-Adams",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Fort Gregg-Adams",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "825 19th Street, Fort Gregg-Adams, Virginia 23801",
+      "source": "SOW (Exhibit A) header",
+      "quote": "825 19th Street\nFort Gregg-Adams, Virginia 23801"
+    },
+    "project_number_internal": {
+      "value": "24-081C",
+      "source": "BOD cover page",
+      "quote": "BFA Project #24-081C"
+    },
+    "project_number_client": {
+      "value": "PB00002-4J",
+      "source": "SOW (Exhibit A) subject line",
+      "quote": "PB00002-4J Construct New Offices – Bldg. 3400",
+      "corroboration": [
+        {
+          "source": "SOW (Exhibit A) subject line",
+          "claim": "PB00002-4J",
+          "agrees": true
+        },
+        {
+          "source": "Drawing D-101 title block",
+          "claim": "PB00002-4J",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 3700,
+      "unit": "gsf",
+      "source": "BOD Architectural p.2",
+      "quote": "renovating/reconfiguring approximately 3,700sf of a first-floor office area of Building 3400",
+      "corroboration": [
+        {
+          "source": "BOD Architectural p.2",
+          "claim": "approximately 3,700sf",
+          "value": 3700,
+          "agrees": true
+        },
+        {
+          "source": "Drawing A-101",
+          "claim": "Dimensions on drawing consistent with ~3,700 sf footprint (bay dimensions visible but no explicit area annotation)",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "scope_description": {
+      "value": "Interior renovation/reconfiguration of approximately 3,700 SF of first-floor office space (Suite 117) in Building 3400 at Fort Gregg-Adams. Scope includes selective demolition of existing partitions, ceilings, flooring, doors, casework, and plumbing fixtures; new interior construction including metal stud partitions with GWB and sound batt insulation, new carpet tile flooring, 2x2 ACT ceiling, LED lighting, new solid core wood doors, break room casework and sinks, HVAC reconfiguration (new VAV boxes, ductwork, diffusers), and new power/data outlets.",
+      "source": "BOD p.2 and SOW (Exhibit A) construction narrative",
+      "quote": "The scope of work consists of renovating/reconfiguring approximately 3,700sf of a first-floor office area of Building 3400, located at Fort Gregg-Adams, VA. The existing office spaces in suite 117 will be reconfigured for a new use."
+    },
+    "building_number": {
+      "value": "3400",
+      "source": "BOD p.1",
+      "quote": "3400 CONSTRUCT NEW OFFICES",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "Building 3400",
+          "agrees": true
+        },
+        {
+          "source": "SOW (Exhibit A) subject line",
+          "claim": "Bldg. 3400",
+          "agrees": true
+        },
+        {
+          "source": "Drawing D-101 title block",
+          "claim": "BLDG 3400",
+          "agrees": true
+        }
+      ]
+    },
+    "suite_number": {
+      "value": "117",
+      "source": "BOD Architectural p.2",
+      "quote": "The existing office spaces in suite 117 will be reconfigured for a new use.",
+      "corroboration": [
+        {
+          "source": "BOD Architectural p.2",
+          "claim": "suite 117",
+          "agrees": true
+        },
+        {
+          "source": "Drawing A-101 room labels",
+          "claim": "All new rooms labeled 117x series",
+          "agrees": true
+        }
+      ]
+    },
+    "davis_bacon_wage_determination": {
+      "value": "VA20230170, 01/13/2023, VA170 Building",
+      "source": "SOW (Exhibit A) General Comments",
+      "quote": "DAVIS-BACON WAGE RATE DETERMINATION: \"VA20230170, 01/13/2023, VA170 Building\""
+    },
+    "user_during_construction": {
+      "value": "Active military training unit (soldiers continue training during construction)",
+      "source": "SOW (Exhibit A) Limits of Work",
+      "quote": "Soldiers will continue training in the building during construction."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "submittal_milestones": [
+        {
+          "milestone": "65% Submittal",
+          "date_approximate": "2025-04",
+          "source": "BOD filename",
+          "quote": null,
+          "notes": "BOD filename references 65% submittal; document header says 95% — conflict flagged. April 2025 date is consistent across both."
+        },
+        {
+          "milestone": "95% Submittal",
+          "date": "2025-04-15",
+          "source": "BOD cover page",
+          "quote": "95% SUBMITTAL\nApril 15, 2025"
+        }
+      ]
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "sow_date": {
+      "value": "2024-06-10",
+      "source": "SOW (Exhibit A) date field",
+      "quote": "DATE: 06-10-2024"
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "interior_construction",
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling",
+      "finishes_wall",
+      "hvac_systems",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_systems",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "openings_door_hardware",
+      "specialties_scope",
+      "specialties_toilet_partitions",
+      "equipment_scope",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "wood_architectural_woodwork"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_dod"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "fort_gregg_adams",
+    "army",
+    "usace",
+    "office_renovation",
+    "interior_fit_out",
+    "suite_117",
+    "military_occupied_construction",
+    "pao_tds",
+    "davis_bacon",
+    "dpw_cmb"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "D-101",
+        "title": "ENLARGED FIRST FLOOR PLAN — DEMOLITION",
+        "discipline": "architecture",
+        "reading_notes": "Demolition floor plan for Suite 117, first floor of Building 3400. Shows existing room layout prior to renovation: Exam 117D, JAG/Soiled Linen 117E, Stor 117F/117G, Men's Toilet 117G, Women's Toilet 117H, OIC 117T, Lab 117J, Medical/Waiting 117Q, Immunization 117K, Files/Records 117S, Record Review 117O, Optometry 117N, Audiology 117L, Admin 117R, Exam2 117N, Exam3 117M. Scale 5/8\"=1'-0\". 12 demolition keynotes listed (remove ceilings, furniture, flooring, restroom fixtures/accessories/partitions/plumbing, mop sink, casework, wall-mounted sinks, signage, soffits). Title block reads 'CONSTRUCT OFFICES BLDG 3400 PAO/TDS, FORT GREGG-ADAMS, VIRGINIA'. Sheet 1 of 2. The existing suite appears to have been a medical/clinic use (exam rooms, optometry, audiology, immunization rooms) — a significant program-type change is occurring from clinic to administrative offices."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "ENLARGED FIRST FLOOR PLAN — ARCHITECTURAL NEW WORK",
+        "discipline": "architecture",
+        "reading_notes": "New work floor plan showing proposed layout for reconfigured Suite 117. New rooms: Intake/Waiting Room 117T, Break Room (×2), Record/File Room 117T, Dressing Rooms 117H, Photo Lab 117J, Conference Room 117B, Record/Studio 117C, Storage/Files 117D, Reception/Open Office 117T, Copy Area, Cubicle/Open Office 117Q (×2 areas), Office 117K, Office 117L, Paralegal Office 117T, Attorney Office 117Q, Attorney Office 117S, Office 117R, Director's Office 117M. New walls shown hatched/heavy black; existing walls shown thin. Scale 5/8\"=1'-0\". Key room dimensions shown (13'-11\", 13'-10\", 17'-2\", 13'-8\", 13'-6\", 10', 19'-4\", etc.) but no explicit total area annotation. 8 new-work plan notes: (1) new 5/8\" GWB + 3-5/8\" metal stud walls with sound batt insulation; (2) new Roppe 700 series wall base; (3) new 3'-0\" x 7'-0\" wood doors; (4) new 24 oz 2x2 carpet tiles; (5) Sherwin Williams SW6119 Antique White paint; (6) patch/paint existing walls; (7) extend walls floor to below slab (offices, conference room, studio); (8) new 6'-0\" x 7'-0\" cased opening. Program is administrative/legal offices including PAO (Public Affairs Office) and TDS (Trial Defense Services). A photo lab and dressing rooms are notable specialty spaces. Legend shows new carpet tile and new vs. existing walls."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 3700,
+        "unit": "gsf",
+        "source": "BOD Architectural p.2",
+        "quote": "approximately 3,700sf of a first-floor office area",
+        "sheets": [
+          "A-101"
+        ],
+        "notes": "Drawing A-101 shows room dimensions consistent with ~3,700 sf but no explicit area annotation. BOD is the authoritative source for this figure."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD Architectural p.2 and drawings D-101, A-101",
+        "quote": null,
+        "sheets": [
+          "D-101",
+          "A-101"
+        ],
+        "notes": "Work is confined to the first floor only. Building 3400 likely has multiple floors but scope is first-floor Suite 117 only."
+      },
+      "ceiling_height": {
+        "value": "9'-0\"",
+        "source": "BOD Architectural p.2",
+        "quote": "The ceiling height shall be 9'-0\".",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Single duct VAV boxes (new, replacing demolished VAVs)",
+          "New VAV controls coordinated with existing BAS",
+          "New low-pressure ductwork, diffusers, and return air grilles",
+          "Existing central system (AHU/chiller plant) to remain — scope limited to suite distribution"
+        ],
+        "electrical": [
+          "New LED lighting throughout with integral emergency capabilities",
+          "LED fixtures: 4000K and 5000K CCT, minimum 80 CRI",
+          "EMT/IMC/RMC conduit, minimum 3/4\"",
+          "Existing electrical service: 480Y/277V 3-phase 4-wire and 208Y/120V 3-phase 4-wire",
+          "New power and data outlets throughout reconfigured space"
+        ],
+        "plumbing": [
+          "New sinks in 2 break room spaces (2 sinks each = 4 sinks total)",
+          "Domestic cold and hot water supply (Type L copper above ground, Type K below ground)",
+          "Sanitary waste and vent (Schedule 40 PVC)",
+          "Existing hot water system to remain/be used",
+          "Floor drains in mechanical rooms and at condensate equipment areas"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "phases.design.submittal_milestones",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD filename",
+          "value": "65% SUBMITTAL"
+        },
+        {
+          "source": "BOD cover page header",
+          "value": "95% SUBMITTAL, April 15, 2025"
+        }
+      ],
+      "resolution_chosen": "BOD cover page header",
+      "rationale": "The document header (95% Submittal, April 15, 2025) is the authoritative content; the filename (65%) likely reflects the file was originally saved at 65% and the header updated for the 95% submittal without renaming the file. The header is the authoritative label."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

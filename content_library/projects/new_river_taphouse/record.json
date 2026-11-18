@@ -1,0 +1,424 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "new_river_taphouse",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/new_river_taphouse/22-012.2022.03.03.PERMIT DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "6925768baa174d16098d40ce0da97c79d59b0f0db9b50a4a6824cce054d57d5a",
+      "page_count": 6,
+      "included": true,
+      "notes": "Permit drawing set dated 2022-03-03. Drawing index on cover sheet (G-001) lists 10 sheets total; this PDF contains 6 of 10 (G-001, A-001, AD101, A-101, A-102, A-501). Sheets P-101, M-501, and E-101 are referenced in the index but absent from the PDF file."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source document is a partial permit drawing set (6 of 10 sheets). No BOD, SOW, contract, or narrative documents present. MEP sheets (P-101, M-501, E-101) referenced in drawing index are absent from the PDF. Facts are drawing-derived only."
+  },
+  "facts": {
+    "project_name": {
+      "value": "New River Tap House Renovation",
+      "source": "drawing G-001, title block",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing G-001, cover sheet title",
+          "claim": "NEW RIVER TAP HOUSE RENOVATION",
+          "value": "New River Tap House Renovation",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block (all sheets)",
+          "claim": "NEW RIVER TAP HOUSE RENOVATION",
+          "value": "New River Tap House Renovation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "owner_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "drawing G-001, cover sheet subtitle and Virginia PE stamp",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing G-001, cover sheet subtitle",
+          "claim": "VIRGINIA BEACH VIRGINIA",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block (all sheets), vertical text",
+          "claim": "VIRGINIA BEACH",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-012",
+      "source": "drawing G-001, title block — PROJECT NO. field",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing G-001, title block",
+          "claim": "22-012",
+          "value": "22-012",
+          "agrees": true
+        },
+        {
+          "source": "drawing filename",
+          "claim": "22-012.2022.03.03.PERMIT DRAWINGS.pdf",
+          "value": "22-012",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "Gross SF not stated on any available drawing sheet. Floor plans at 1/8\"=1'-0\" scale; approximate footprint visible but not labeled. Two floors confirmed. Cannot reliably measure from rendered images at this resolution.",
+      "corroboration": []
+    },
+    "floor_count": {
+      "value": 2,
+      "source": "drawings AD101, A-101 — floor plan labels",
+      "quote": null,
+      "notes": "AD101 shows 'FIRST FLOOR – DEMOLITION' and 'SECOND FLOOR – DEMOLITION'. A-101 shows 'FIRST FLOOR – NEW WORK', 'SECOND FLOOR – NEW WORK', 'SECOND FLOOR ENLARGED PLAN – NEW WORK', 'SECOND FLOOR RESTROOM CEILING PLAN – NEW WORK'. Drawing index also references A-102 'ENLARGED FLOOR PLANS'. Attic space noted on A-102 ('ATTIC') above second floor.",
+      "corroboration": [
+        {
+          "source": "drawing AD101",
+          "claim": "FIRST FLOOR – DEMOLITION and SECOND FLOOR – DEMOLITION",
+          "value": 2,
+          "agrees": true
+        },
+        {
+          "source": "drawing A-101",
+          "claim": "FIRST FLOOR – NEW WORK and SECOND FLOOR – NEW WORK",
+          "value": 2,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "drawing_date": {
+      "value": "2022-03-03",
+      "source": "drawing G-001, title block and filename",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing title block (all sheets), date field",
+          "claim": "03/03/2022",
+          "value": "2022-03-03",
+          "agrees": true
+        },
+        {
+          "source": "filename",
+          "claim": "2022.03.03",
+          "value": "2022-03-03",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-03-03",
+        "source": "drawing G-001, title block — permit drawing date",
+        "quote": null,
+        "notes": "Permit drawings dated 2022-03-03 represent design completion to permit-submission level. Actual design contract dates unknown."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "client_type_notes": "Taphouse/bar is a private commercial food-and-beverage business. No client name available in source documents; classification inferred from program type.",
+    "program_type": [
+      "retail_restaurant"
+    ],
+    "program_subtype": [
+      "retail_restaurant"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "electrical_engineering"
+    ],
+    "disciplines_notes": "Architecture confirmed from sheets G-001, A-001, AD101, A-101, A-102, A-501. Mechanical (M-501), plumbing (P-101), and electrical (E-101) sheets referenced in drawing index but absent from this PDF; disciplines confirmed from cross-references on architectural sheets (e.g., 'Refer to Mechanical for additional information', 'Refer to Electrical drawings for additional information').",
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "electrical_lighting",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "interior_construction",
+      "interior_partitions",
+      "interior_finishes",
+      "finishes_ceiling",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "hvac_systems",
+      "electrical_lighting_interior"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "finishes_drywall_plaster",
+      "finishes_acoustical_ceilings",
+      "plumbing_scope",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "specialties_toilet_partitions"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "delivery_method_notes": "No contract documents available; design_bid_build assumed as default for a commercial renovation permit set.",
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "project_status_notes": "Permit drawings dated 2022-03-03; project is a renovation with permit submission. Status inferred as complete given the 2022 date and presence in reference project archive, but no direct confirmation in source documents.",
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "virginia_beach",
+    "commercial_renovation",
+    "taphouse",
+    "bar_renovation",
+    "food_beverage",
+    "ada_restroom"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Jill (last name not legible)",
+      "role_on_project": "drafter",
+      "source": "drawing title block — Drawn by: Jill"
+    },
+    {
+      "name": "ROW (initials)",
+      "role_on_project": "checker",
+      "source": "drawing A-001 title block — Checked by: ROW"
+    },
+    {
+      "name": "WJW (initials)",
+      "role_on_project": "project_engineer",
+      "source": "drawing title block — Project Engineer: WJW"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "conflict_flags": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Cover sheet with location map (aerial photo showing building near Northampton Blvd / First Colonial Rd / Pleasant House Rd area, Virginia Beach VA). Drawing index lists 10 sheets: G-001, A-001, AD101, A-101, A-102, A-501, P-101, A-501[sic — likely second A sheet or a typo], M-501, E-101. BFA logo (Bowman Foster & Associates, Inc.) in upper right; Hampton Roads & Washington Metro Area listed. Virginia PE seal dated 03/03/2022 visible. Project No. 22-012 in title block. CONTRACT NO. field is blank. This PDF contains only 6 of the 10 indexed sheets."
+      },
+      {
+        "sheet_number": "A-001",
+        "title": "LEGEND, ABBREVIATIONS AND GENERAL NOTES",
+        "discipline": "architecture",
+        "reading_notes": "Materials legend (section symbols for wood-rough, wood blocking, plywood, aluminum, gypsum board, batt/loose fill insulation, acoustical tile ceiling). 14 general construction notes covering: disposal of removed items, all materials new, wood blocking/steel continuous, verify field conditions, demolition of MEP not to include plumbing/mechanical/electrical (refer to separate drawings), dimensions for new work to face of stud/masonry, contractor study docs and report errors, protect adjoining spaces, floor patching to manufacturer tolerances, temporary supports for ceiling-mounted items, new walls to transition seamlessly, patch existing GWB, seal exterior penetrations, temporary shoring for demolition. Drawn by Jill, Checked by ROW, Project Engineer WJW."
+      },
+      {
+        "sheet_number": "AD101",
+        "title": "FLOOR PLANS – DEMOLITION",
+        "discipline": "architecture",
+        "reading_notes": "First floor demolition plan (1/8\"=1'-0\"): existing floor to remain; shows removal areas with dashed lines; plumbing fixtures shown (likely existing to be removed or capped). Second floor demolition plan (1/8\"=1'-0\"): second floor existing skylights to be covered per owner requirements; remove existing wall complete. Three demolition notes on sheet. Building footprint shows an irregular plan on first floor; second floor appears to be a smaller footprint (partial second floor or mezzanine-like arrangement). Three numbered demolition notes on this sheet."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "FLOOR PLANS AND ENLARGED FLOOR PLAN – NEW WORK",
+        "discipline": "architecture",
+        "reading_notes": "Four plans on this sheet: (1) First Floor – New Work (1/8\"=1'-0\"): first floor existing to remain per construction note 1; minor coordination items. (2) Second Floor – New Work (1/8\"=1'-0\"): shows new partition layout on second floor. (3) Second Floor Enlarged Plan – New Work (3/4\"=1'-0\"): uni-sex toilet room, approx 9'-2\" wide, with ADA-compliant layout; toilet, lavatory, grab bars, accessories (paper towel dispenser, soap dispenser, sanitary napkin dispenser, waste paper dispenser per construction notes 6-10). (4) Second Floor Restroom Ceiling Plan – New Work (1/8\"=1'-0\"): 2'x2' drop-in ceiling grid, exhaust fan noted (refer to Mechanical). Construction notes on sheet specify: first floor existing to remain; 2'x2' drop-in ceiling grid; exhaust fan (refer to mechanical); lighting fixture (refer to electrical); stainless steel accessories (SS paper towel, soap dispenser, grab bars, sanitary napkin, waste paper)."
+      },
+      {
+        "sheet_number": "A-102",
+        "title": "ENLARGED FLOOR PLANS",
+        "discipline": "architecture",
+        "reading_notes": "Two enlarged plans: (1) Enlarged Floor Plan – New Work (3/4\"=1'-0\"): bar area with partition wall 4'-0\" tall, knee wall with counter top 44\" tall; 12\"x12\" bar sink and 3-compartment sink per construction notes 1 and 2; attic space labeled above. (2) Enlarged Floor Plan – New Work (second plan, 3/4\"=1'-0\"): knee wall with counter top 44\" tall; similar bar counter configuration in a different bay. Both plans reference attic above. Sheet labeled 'ENLARGED FLOOR PLANS' in title. The bar sinks and 3-compartment sink confirm food/beverage service scope."
+      },
+      {
+        "sheet_number": "A-501",
+        "title": "DETAILS, ELEVATIONS AND WALL SECTION",
+        "discipline": "architecture",
+        "reading_notes": "Three items on this sheet: (1) Restroom Clearance Details (no scale): ADA clearance layouts showing 54\" min, 42\" min, 36\" min, 60\" floor space dimensions for toilet, lavatory, and grab bar configurations per ADA. (2) Wall Section (no scale, referenced from A-101 detail 2): 6\" metal studs @ 16\" O.C. with (1) layer 5/8\" gypsum board, 6\" sound/acoustical batt insulation; slotted deflection track assembly at top; runner track and resilient base/floor per owner at bottom. (3) Two Elevations (no scale, A3 and A4 from A-101): restroom interior elevations showing tile wall at 8\" height, toilet paper holder, grab bars. 6\" metal studs @ 16\" O.C. w/ acoustical batt insulation in wall section."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 2,
+        "source": "drawings AD101 and A-101 — floor plan labels",
+        "quote": null,
+        "sheets": [
+          "AD101",
+          "A-101"
+        ]
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null,
+        "sheets": [],
+        "notes": "Not labeled on any available sheet. Plans at 1/8\"=1'-0\" scale but building area not annotated."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Exhaust fan for second floor restroom (referenced on A-101 note 4: 'Exhaust fan. Refer to Mechanical for additional information'); full scope on M-501 not available in this PDF"
+        ],
+        "plumbing": [
+          "12\"x12\" bar sink (drawing A-102, construction note 1)",
+          "3-compartment sink (drawing A-102, construction note 2)",
+          "Uni-sex restroom with toilet and lavatory (drawing A-101, second floor enlarged plan)",
+          "Full plumbing scope on P-101 not available in this PDF"
+        ],
+        "electrical": [
+          "Interior lighting fixtures for second floor restroom and bar area (cross-referenced from A-101 note 5: 'Lighting fixture. Refer to Electrical drawings for additional information'); full scope on E-101 not available in this PDF"
+        ],
+        "fire_protection": []
+      },
+      "ada_features": [
+        "Uni-sex ADA-compliant restroom on second floor with grab bars, required clearances per ADA (A-101, A-501)",
+        "ADA restroom clearance details shown on A-501"
+      ]
+    }
+  },
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,633 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "yorktown_exhaust",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/yorktown_exhaust/e-Project 1697374 Buiding 1816 Replace and Upgrade Exhaust Fans BOD.docx",
+      "type": "bod",
+      "sha256": "9da6a478064305df0972be764fa073115b4a2cf6d99b0402b457a74e322f7081",
+      "included": true,
+      "notes": "Basis of Design for Building 1816 Replace and Upgrade Exhaust Systems, e-Project 1697374. Covers architectural, structural, fire alarm, environmental, mechanical, and electrical disciplines."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/yorktown_exhaust/1697374 ATT(5) Scope of Work 3 23 2022.pdf",
+      "type": "sow",
+      "sha256": "2fabae739ba87f7ad4c1ce454df5d9d3adc5cf61efda13670a3733b58fd5957c",
+      "included": true,
+      "notes": "Attachment (5) Scope of Work, FY22 Project RM 22-0238, Rev 18. Detailed mechanical, electrical, architectural, structural, and other discipline requirements for the project."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/yorktown_exhaust/1816 Replace and upgrade exhaust systems SAES-IDIQ-TO-DBB with ECI - Rev18  3 23 2022.pdf",
+      "type": "sow",
+      "sha256": "9ad669ce96dc66c6ed1140bbf254a921726b6e73e353a4131ec730b7fb364c57",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES) for the IDIQ Task Order, FY21 Special Project RM 22-0238, Rev 18. Defines A-E scope, procurement strategy, contract identification, points of contact, and supplementary requirements. Note: titled FY21 but project funding year per other documents is FY22."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "not_applicable",
+    "notes": "No drawing set PDF present in intake folder. BOD and SOW (including SAES task order document) are present. No executed contract, no cost estimate, no narrative documents."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 1816 Replace and Upgrade Exhaust Systems",
+      "source": "BOD title page",
+      "quote": "Building 1816 Replace and Upgrade Exhaust Systems",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "Building 1816 Replace and Upgrade Exhaust Systems",
+          "value": "Building 1816 Replace and Upgrade Exhaust Systems",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) header",
+          "claim": "Building 1816 Replace and Upgrade Exhaust Systems",
+          "value": "Building 1816 Replace and Upgrade Exhaust Systems",
+          "agrees": true
+        },
+        {
+          "source": "SAES title",
+          "claim": "Bldg. 1816 Repair and Upgrade Exhaust Systems",
+          "value": "Building 1816 Repair and Upgrade Exhaust Systems",
+          "agrees": false,
+          "note": "Minor word difference: SAES uses 'Repair' while BOD and SOW use 'Replace'. BOD/SOW chosen as authoritative."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC) Mid-Atlantic / WPNSTA Yorktown",
+      "source": "SAES p.1",
+      "quote": "Naval Facilities Engineering Systems Command (NAVFAC) Yorktown will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "Naval Facilities Engineering Systems Command (NAVFAC) Yorktown will administer this T.O.",
+          "value": "NAVFAC Yorktown",
+          "agrees": true
+        },
+        {
+          "source": "SAES B1",
+          "claim": "Mrs. Sharan Lind, Building 16, WPNSTA Yorktown",
+          "value": "WPNSTA Yorktown / NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Weapons Station Yorktown (WPNSTA Yorktown), US Navy",
+      "source": "BOD General section",
+      "quote": "Building 1816 is the depot-level maintenance facility for the MK-48 torpedo on the Naval Weapons Station, Yorktown, VA.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "Naval Weapons Station, Yorktown, VA",
+          "value": "Naval Weapons Station Yorktown",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §1.0",
+          "claim": "Naval Weapons Station, Yorktown, VA",
+          "value": "Naval Weapons Station Yorktown",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Yorktown",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Weapons Station Yorktown (WPNSTA Yorktown), Building 1816",
+      "facility_address": "Building 1816, Sharpe Road at Lee Road, WPNSTA Yorktown, Yorktown, VA",
+      "source": "SOW ATT(5) §3.0",
+      "quote": "Building 1816 project site is located off of Sharpe road to the left at the intersection of Lee road and Sharpe road on the Naval Weapons Station Yorktown, Yorktown, Virginia.",
+      "corroboration": [
+        {
+          "source": "SOW ATT(5) §3.0",
+          "claim": "Yorktown, Virginia — Sharpe road/Lee road intersection, WPNSTA",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Building 1816, WPNSTA Yorktown, Yorktown VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "RM 22-0238",
+      "source": "SOW ATT(5) header",
+      "quote": "FY 22 PROJECT RM 22-0238",
+      "corroboration": [
+        {
+          "source": "SOW ATT(5) header",
+          "claim": "FY 22 PROJECT RM 22-0238",
+          "value": "RM 22-0238",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "FY21 SPECIAL PROJECT RM 22-0238",
+          "value": "RM 22-0238",
+          "agrees": true,
+          "note": "Project number matches across both documents; FY designation differs (FY21 vs FY22) — see conflict_flags."
+        }
+      ]
+    },
+    "eproject_number": {
+      "value": "1697374",
+      "source": "BOD title page",
+      "quote": "e-Project 1697374",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "e-Project 1697374",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) header",
+          "claim": "e-Projects 1697374",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "eProjects Work Order number 1697374",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N4008520D0005",
+      "source": "SOW ATT(5) header",
+      "quote": "N4008520D0005",
+      "corroboration": [
+        {
+          "source": "SOW ATT(5) header",
+          "claim": "N4008520D0005",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Contract No. N4008520D0005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SAES field shows 'Task Order No. ###' — placeholder, not yet assigned at time of document preparation."
+    },
+    "square_footage": {
+      "value": 48373,
+      "unit": "gsf",
+      "source": "BOD Architectural section",
+      "quote": "Building 1816, in its current configuration encompasses 48,373 square feet.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "48,373 square feet",
+          "value": 48373,
+          "agrees": true
+        },
+        {
+          "source": "BOD Architectural section — Gross Area",
+          "claim": "The building will be approximately 48,373 square feet.",
+          "value": 48373,
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §1.0",
+          "claim": "encompasses 48,373 square feet",
+          "value": 48373,
+          "agrees": true
+        }
+      ]
+    },
+    "renovated_area": {
+      "value": 3014,
+      "unit": "sf",
+      "source": "SAES F2",
+      "quote": "The existing building will require three rooms to be renovated for a total of 3,014 square foot area.",
+      "corroboration": [
+        {
+          "source": "SAES F2",
+          "claim": "3,014 square foot area",
+          "value": 3014,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No construction program amount stated in available source documents. SAES references DD Form 1391 (draft, listed as attachment 11) but that document was not in the intake package. A-E fee also not stated."
+    },
+    "year_built_existing": {
+      "value": 1976,
+      "source": "BOD General section",
+      "quote": "The building was originally constructed in 1976 as a maintenance facility for torpedoes.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "originally constructed in 1976",
+          "value": 1976,
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §1.0",
+          "claim": "originally constructed in 1976",
+          "value": 1976,
+          "agrees": true
+        }
+      ]
+    },
+    "fiscal_year": {
+      "value": "FY22",
+      "source": "SOW ATT(5) header",
+      "quote": "FY 22 PROJECT RM 22-0238",
+      "corroboration": [
+        {
+          "source": "SOW ATT(5) header",
+          "claim": "FY 22 PROJECT RM 22-0238",
+          "value": "FY22",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "FY21 SPECIAL PROJECT RM 22-0238",
+          "value": "FY21",
+          "agrees": false,
+          "note": "SAES uses FY21 designation. SOW/BOD use FY22. See conflict_flags."
+        }
+      ]
+    },
+    "project_description": {
+      "value": "Replace and upgrade HVAC exhaust systems in Building 1816, a depot-level MK-48 torpedo maintenance facility at Naval Weapons Station Yorktown. Scope includes replacement of three rooftop air handling units (AHU-14, AHU-15, AHU-16), fourteen exhaust fans (EF-8 through EF-21), new ductwork for AHU-14 and AHU-15, supplemental boiler, hot water pump replacement, DDC controls upgrade, and hazardous material abatement (ACM, lead paint, PCBs).",
+      "source": "computed",
+      "quote": null
+    },
+    "facility_use": {
+      "value": "Depot-level maintenance facility for the MK-48 torpedo; handles Otto Fuel II (highly toxic propellant)",
+      "source": "BOD General section",
+      "quote": "Building 1816 is the depot-level maintenance facility for the MK-48 torpedo on the Naval Weapons Station, Yorktown, VA.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "depot-level maintenance facility for the MK-48 torpedo",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §2.3",
+          "claim": "MK-48 torpedoes are propelled by a very toxic and highly volatile Otto fuel II",
+          "agrees": true
+        }
+      ]
+    },
+    "otto_fuel_context": {
+      "value": "Rooms 101, 102, and 103 handle Otto Fuel II (propylene glycol dinitrate, ~75% of fuel) during torpedo defueling/refueling. Negative pressure ventilation (0.05–0.10 in H2O) required to prevent fume spread.",
+      "source": "SOW ATT(5) §2.3",
+      "quote": "MK-48 torpedoes are propelled by a very toxic and highly volatile Otto fuel II. The fuel contains propylene glycol dinitrate (PGDN) as the major constituent, representing approximately 75 percent of the total fuel.",
+      "corroboration": [
+        {
+          "source": "SOW ATT(5) §2.3",
+          "claim": "Otto Fuel II / PGDN / negative pressure 0.05-0.10 in H2O",
+          "agrees": true
+        }
+      ]
+    },
+    "key_equipment_replaced": {
+      "value": "AHU-14, AHU-15, AHU-16 (rooftop air handling units); EF-8 through EF-21 (14 exhaust fans); hot water pump P-1 (280 GPM → 500 GPM); supplemental boiler (1,624 MBTU, 162 GPM circulation pump)",
+      "source": "BOD General section",
+      "quote": "The current project is to replace and upgrade AHU-14, AHU-15, and AHU-16, provide new ductwork for AHU-14 and AHU-15, and provide new exhaust fans for EF-8, EF-9, EF-10, EF-11, EF-12, EF-13, EF-14, EF-15, EF-16, EF-17, EF-18, EF-19, EF-20 and EF-21.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "AHU-14, AHU-15, AHU-16 + EF-8 through EF-21",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §1.0",
+          "claim": "same equipment list",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §2.3 item p",
+          "claim": "P-1 is currently pumping 280 gpm and will have to be replaced with a new 500 gpm pump",
+          "agrees": true
+        },
+        {
+          "source": "SOW ATT(5) §2.3 item q",
+          "claim": "new boiler will be 1,624 MBTU with 162 gpm circulation pump",
+          "agrees": true
+        }
+      ]
+    },
+    "hazmat_findings": {
+      "value": "ACM identified: HVAC roof curb flashing (2-3% Chrysotile), HVAC duct mastic (presumed). Lead, cadmium, and chromium found in paint samples. PCB-assumed ballasts and mercury lamps in existing fluorescent fixtures.",
+      "source": "BOD Environmental Design section",
+      "quote": "Analytical results of the bulk samples identified the following ACM: HVAC Roof Curb Flashing (2-3% Chrysotile) [and] HVAC Duct Mastic (Presumed, the suspect material was not accessible)",
+      "corroboration": [
+        {
+          "source": "BOD Environmental Design section",
+          "claim": "ACM, lead/cadmium/chromium paint, PCB ballasts, mercury lamps",
+          "agrees": true
+        },
+        {
+          "source": "SAES D4.g",
+          "claim": "ACM floor tiles, sealant, pipe insulation; Lead paint; PCB ballasts",
+          "agrees": true,
+          "note": "SAES lists ACM floor tiles as assumption at task order issue; BOD later refined to roof curb flashing and duct mastic based on actual sampling. Minor discrepancy in ACM locations — expected (SAES was pre-survey assumption)."
+        }
+      ]
+    },
+    "construction_delivery_context": {
+      "value": "A-E design for a Design-Bid-Build (DBB) construction contract. Construction to be procured separately via SBA-8(a) MACC set-aside under LPTA methodology.",
+      "source": "SAES D2.f",
+      "quote": "Competitive Negotiation; Low Price Technically Acceptable\nSBA-8A Set Aside MACC",
+      "corroboration": [
+        {
+          "source": "SAES D2.f",
+          "claim": "LPTA, SBA-8A Set Aside MACC",
+          "agrees": true
+        },
+        {
+          "source": "SAES file name",
+          "claim": "SAES-IDIQ-TO-DBB with ECI",
+          "agrees": true,
+          "note": "ECI = Early Contractor Involvement; DBB = Design-Bid-Build"
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES states fee will be negotiated at task order issuance using pre-negotiated IDIQ rates; specific A-E design fee not stated in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design schedule referenced in Attachment (1) Project Design Schedule, which was not in the intake package."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "submittals_required": [
+        "Design Development (35-50%)",
+        "Pre-Final (100%)",
+        "Final Design"
+      ]
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "DD Form 1391 (draft) referenced as Attachment 11 in SAES but not included in intake package. No construction contract value stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "source": "SAES A1",
+        "quote": "Estimated Construction Completion Date Unknown"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "procurement_method": {
+        "value": "SBA-8(a) MACC set-aside, LPTA",
+        "source": "SAES D2.f",
+        "quote": "Competitive Negotiation; Low Price Technically Acceptable\nSBA-8A Set Aside MACC"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "military_maintenance"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "environmental_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_motor_control",
+      "electrical_grounding_lightning",
+      "fire_alarm",
+      "structural_existing_assessment",
+      "environmental_remediation"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "hvac_packaged",
+      "electrical_systems",
+      "electrical_distribution",
+      "fp_fire_alarm",
+      "plumbing_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_hazmat_abatement",
+      "existing_demolition",
+      "thermal_roofing",
+      "electronic_safety_security"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_matoc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_8a_set_aside"
+    ],
+    "award_type": [
+      "lowest_price_technically_acceptable"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": null,
+      "source": null,
+      "quote": null,
+      "status": "missing",
+      "notes": "No SWaM or socioeconomic subcontracting data present in available source documents."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "navfac",
+    "wpnsta_yorktown",
+    "nws_yorktown",
+    "mk48_torpedo",
+    "otto_fuel",
+    "exhaust_systems",
+    "hazmat_abatement",
+    "dod_military",
+    "building_1816",
+    "idiq_task_order",
+    "8a_set_aside"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "David W. Harris, P.E.",
+      "role_on_project": "NAVFAC Project Manager (Government)"
+    },
+    {
+      "name": "Eric Chadwell, P.E.",
+      "role_on_project": "NAVFAC Design Manager (Government)"
+    },
+    {
+      "name": "Sharan Lind",
+      "role_on_project": "NAVFAC Contracting Officer (Government)"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 48373,
+        "unit": "gsf",
+        "source": "BOD Architectural section",
+        "quote": "The building will be approximately 48,373 square feet.",
+        "sheets": []
+      }
+    },
+    "notes": "No drawing set PDF was present in the intake package. SAES Attachment (7) references existing record drawings available via DOD Safe file exchange. Drawing extraction status: not applicable for this intake."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.fiscal_year",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW ATT(5) header / BOD",
+          "value": "FY22"
+        },
+        {
+          "source": "SAES A1 title",
+          "value": "FY21"
+        }
+      ],
+      "resolution_chosen": "FY22 — SOW ATT(5) and BOD",
+      "rationale": "The Scope of Work (Attachment 5) and BOD both consistently label the project 'FY 22 PROJECT RM 22-0238'. The SAES document title shows 'FY21 SPECIAL PROJECT RM 22-0238' but the project number (RM 22-0238) is consistent. The discrepancy likely reflects an evolving project: the SAES may have been drafted in FY21 and revised into FY22 (Rev 18, dated APR 2021 on all docs). The SOW/BOD are the more scope-defining documents."
+    },
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD title page / SOW ATT(5)",
+          "value": "Replace and Upgrade Exhaust Systems"
+        },
+        {
+          "source": "SAES title",
+          "value": "Repair and Upgrade Exhaust Systems"
+        }
+      ],
+      "resolution_chosen": "Replace and Upgrade — BOD / SOW",
+      "rationale": "'Replace' is used in the two primary technical documents (BOD and SOW). 'Repair' in the SAES administrative cover document may reflect an earlier draft title. The scope clearly involves full replacement of AHUs and exhaust fans, not repair."
+    },
+    {
+      "field_path": "facts.hazmat_findings",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Environmental section (post-survey)",
+          "value": "ACM: roof curb flashing (2-3% chrysotile) + duct mastic (presumed)"
+        },
+        {
+          "source": "SAES D4.g (pre-survey assumption)",
+          "value": "ACM floor tiles, sealant, pipe insulation"
+        }
+      ],
+      "resolution_chosen": "BOD Environmental section (actual survey results)",
+      "rationale": "SAES assumptions were pre-survey placeholders. BOD reflects actual sampling results. The ACM locations differ (floor tiles vs. roof curb flashing) because the survey superseded the assumptions. No conflict in final design basis."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md"
+    }
+  }
+}

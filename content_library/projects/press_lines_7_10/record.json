@@ -1,0 +1,569 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "24-040J",
+    "status": "present_with_value",
+    "source": "BOD Press 10 cover page; BOD Press 7 cover page",
+    "quote": "BFA Project #24-040J"
+  },
+  "project_slug": "press_lines_7_10",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/press_lines_7_10/2025.02.07 EXTRUSION PRESS LINE 10 BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "dad65083711ff9ff9c2fe2d6fbf216ed85a7fb924d92ba6b9f0ec927cbf39bb7",
+      "page_count": null,
+      "included": true,
+      "notes": "65% Submittal BOD for Press Line 10, February 7, 2025. Covers structural design scope only."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/press_lines_7_10/2025.02.07 EXTRUSION PRESS LINE 7 BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "5de4a69ccfc3139aa9995d982dec2523d198fcd844bd07159a505fff8b0f960c",
+      "page_count": null,
+      "included": true,
+      "notes": "65% Submittal BOD for Press Line 7, February 7, 2025. Covers structural design scope only."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/press_lines_7_10/PWS - Extrusion Line Renovations - Press line 10 (final 4-24-24) 1.pdf",
+      "type": "sow",
+      "sha256": "a46685a179bc6e8060c0b75d0791f3a5f31b15a9790adef6441e1570acd666ac",
+      "page_count": null,
+      "included": true,
+      "notes": "Performance Work Statement for Press Line 10 renovations, Final 4/24/24. eProjects #1748574. Includes CWAP 23-012 and ESR Memo. Also contains combined PWS for Press 10 and 7 in an intermediate section dated 4/17/24."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/press_lines_7_10/PWS - Extrusion Line Renovations - Press line 7 (final 4-24-24) 1 (1).pdf",
+      "type": "sow",
+      "sha256": "f85a857cc7cfaa68389a37675c6c0527db9ace248a1d9ddf1705f1584f6e06ce",
+      "page_count": null,
+      "included": true,
+      "notes": "Performance Work Statement for Press Line 7 renovations, Final 4/17/24. eProjects #1750151. Includes CWAP 23-012A and ESR Memo."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No standalone drawing set PDF present. PWS appendices contain hand-drawn sketches (walkway details, building plans) rendered as scanned images within the PWS text PDF. BODs are structural-discipline only (65% submittal); no MEP BOD present. No contract document present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Extrusion Press Line Repairs – Press Lines 7 and 10",
+      "source": "BOD Press 10 cover page; BOD Press 7 cover page; PWS Press 10 §Project Title; PWS Press 7 §Project Title",
+      "quote": "EXTRUSION PRESS LINE REPAIRS – PRESS 10",
+      "corroboration": [
+        {
+          "source": "BOD Press 10 cover page",
+          "claim": "EXTRUSION PRESS LINE REPAIRS – PRESS 10",
+          "agrees": true
+        },
+        {
+          "source": "BOD Press 7 cover page",
+          "claim": "EXTRUSION PRESS LINE REPAIRS – PRESS 7",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 10 §Project Title",
+          "claim": "Extrusion press line repairs – Press 10",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 §Project Title",
+          "claim": "Extrusion press line repairs – Press 7",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC) / Public Works Department South Potomac",
+      "source": "PWS Press 10 header; PWS Press 7 header",
+      "quote": "Public Works Department South Potomac",
+      "corroboration": [
+        {
+          "source": "PWS Press 10 header",
+          "claim": "Public Works Department South Potomac",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 header",
+          "claim": "Public Works Department South Potomac",
+          "agrees": true
+        },
+        {
+          "source": "CWAP 23-012 Section A",
+          "claim": "Organization Submitting Application: NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Surface Warfare Center Indian Head Division (NSWC IHD) / NSF Indian Head",
+      "source": "CWAP 23-012 Section A",
+      "quote": "Organization Funding Proposed Action: NSWC",
+      "corroboration": [
+        {
+          "source": "CWAP 23-012 Section A",
+          "claim": "Organization Funding Proposed Action: NSWC",
+          "agrees": true
+        },
+        {
+          "source": "CWAP 23-012A Section A",
+          "claim": "Organization Funding Proposed Action: NSWC IHD",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Indian Head",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "Naval Support Facility (NSF) Indian Head",
+      "facility_address": null,
+      "source": "BOD Press 10 cover page; PWS Press 10 header",
+      "quote": "NSF – Indian Head, Maryland",
+      "corroboration": [
+        {
+          "source": "BOD Press 10 cover page",
+          "claim": "NSF – Indian Head, Maryland",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 10 header",
+          "claim": "Site: Naval Support Facility, Indian Head, MD",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 header",
+          "claim": "Site: Naval Support Facility, Indian Head, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-040J",
+      "source": "BOD Press 10 cover page; BOD Press 7 cover page",
+      "quote": "BFA Project #24-040J"
+    },
+    "project_number_client": {
+      "value": "1748574 (Press 10); 1750151 (Press 7)",
+      "source": "PWS Press 10 §eProjects #; PWS Press 7 §eProjects #",
+      "quote": "eProjects #: 1748574",
+      "corroboration": [
+        {
+          "source": "PWS Press 10",
+          "claim": "eProjects #: 1748574",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7",
+          "claim": "eProjects #: 1750151",
+          "agrees": true
+        }
+      ],
+      "notes": "Two separate eProjects numbers, one per press line."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Documents reference CWAP tracking numbers 23-012 (Press 10) and 23-012A (Press 7) but no contract or task order number is stated in any source document."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No gross square footage stated for any individual building in the source documents. Buildings are small industrial structures; historical drawing appendix shows oven bays at approximately 16'x9'-6\" and heater rooms 7'-0\" x 14'-9\" per building, but total building SF not aggregated anywhere in sources."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "CWAP estimated project cost is stated as a range ($100,000–$500,000 per press line) not a specific budget."
+    },
+    "estimated_cost_range": {
+      "value": "$100,000–$500,000 per press line",
+      "source": "CWAP 23-012 Section A; CWAP 23-012A Section A",
+      "quote": "Estimated Project Cost: $100,000 - $500,000",
+      "corroboration": [
+        {
+          "source": "CWAP 23-012 Section A",
+          "claim": "Estimated Project Cost: $100,000 - $500,000",
+          "agrees": true
+        },
+        {
+          "source": "CWAP 23-012A Section A",
+          "claim": "Estimated Project Cost: $100,000 - $500,000",
+          "agrees": true
+        }
+      ]
+    },
+    "period_of_performance_days": {
+      "value": 335,
+      "unit": "calendar_days",
+      "source": "PWS Press 10 §2.a; PWS Press 7 §2.a",
+      "quote": "The period of performance for this project shall be 335 days.",
+      "corroboration": [
+        {
+          "source": "PWS Press 10 §2.a",
+          "claim": "335 days",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 §2.a",
+          "claim": "335 days",
+          "agrees": true
+        }
+      ]
+    },
+    "buildings_in_scope": {
+      "press_10": [
+        "564",
+        "569",
+        "1234",
+        "1725"
+      ],
+      "press_7": [
+        "561",
+        "568",
+        "567",
+        "1233",
+        "1232",
+        "1722"
+      ],
+      "source": "PWS Press 10 §Location of work; PWS Press 7 §Location of work",
+      "quote": "Location of work: Buildings 564, 569, 1234, and 1725 Extrusion Plant, NSF Indian Head, MD",
+      "corroboration": [
+        {
+          "source": "PWS Press 10 §Location of work",
+          "claim": "Buildings 564, 569, 1234, and 1725",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 §Location of work",
+          "claim": "Buildings 561, 568, 567, 1233, 1232, and 1722",
+          "agrees": true
+        },
+        {
+          "source": "BOD Press 10 §General Scope",
+          "claim": "press line 10 for buildings 564 and 569",
+          "agrees": true,
+          "note": "BOD references only 564 and 569; PWS adds 1234 and 1725 to Press 10 scope"
+        },
+        {
+          "source": "BOD Press 7 §General Scope",
+          "claim": "press line 7 for building 561, 568, and 567",
+          "agrees": true,
+          "note": "BOD references only 561, 568, 567; PWS adds 1233, 1232, 1722 to Press 7 scope"
+        }
+      ]
+    },
+    "submittal_level": {
+      "value": "65% Design Submittal (BODs); Final PWS",
+      "source": "BOD Press 10 cover page; PWS Press 10 date block",
+      "quote": "65% SUBMITTAL",
+      "corroboration": [
+        {
+          "source": "BOD Press 10 cover page",
+          "claim": "65% SUBMITTAL, February 7, 2025",
+          "agrees": true
+        },
+        {
+          "source": "BOD Press 7 cover page",
+          "claim": "65% SUBMITTAL, February 7, 2025",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 10",
+          "claim": "FINAL 4/24/24",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7",
+          "claim": "FINAL 4/17/24",
+          "agrees": true
+        }
+      ]
+    },
+    "facility_type": {
+      "value": "Explosive processing/manufacturing facility (extrusion press lines for energetic/explosive materials)",
+      "source": "PWS Press 10 §1.b; PWS Press 7 §1.b; CWAP 23-012 Explosives Safety Conditions",
+      "quote": "B564 is a mostly thick concrete structures used for processing of explosive materials.",
+      "corroboration": [
+        {
+          "source": "PWS Press 10 §1.b",
+          "claim": "B564 is a mostly thick concrete structures used for processing of explosive materials.",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 §1.b",
+          "claim": "B561 is a mostly thick concrete structure used for processing of explosive materials.",
+          "agrees": true
+        }
+      ]
+    },
+    "historic_district": {
+      "value": true,
+      "source": "PWS Press 10 §2.e; PWS Press 7 §2.e",
+      "quote": "All buildings in this project are part of the historical district and subject to SHPO consultation.",
+      "corroboration": [
+        {
+          "source": "PWS Press 10 §2.e",
+          "claim": "All buildings in this project are part of the historical district and subject to SHPO consultation.",
+          "agrees": true
+        },
+        {
+          "source": "PWS Press 7 §2.e",
+          "claim": "All buildings in this project are part of the historical district and subject to SHPO consultation.",
+          "agrees": true
+        },
+        {
+          "source": "CWAP 23-012 Historic Resources Conditions",
+          "claim": "A Section 106 Consultation with the Maryland State Historic Preservation Officer (SHPO) is required.",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "BODs dated 2025-02-07 at 65% submittal indicate design is in progress as of that date."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "CWAP estimated cost range $100,000–$500,000 per press line; no contracted amount in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "CWAP states 'Project start date is to be determined.'"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 335,
+        "source": "PWS Press 10 §2.a; PWS Press 7 §2.a",
+        "quote": "The period of performance for this project shall be 335 days."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "industrial"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "structural_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "structural_existing_assessment",
+      "electrical_lighting",
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "electrical_grounding_lightning"
+    ],
+    "building_systems": [
+      "envelope_roofing",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "electrical_grounding",
+      "superstructure",
+      "interior_construction"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "thermal_roofing",
+      "electrical_lighting_scope",
+      "electrical_power",
+      "wood_rough_carpentry",
+      "exterior_improvements",
+      "finishes_scope",
+      "metals_misc_metals"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "nsf_indian_head",
+    "explosive_facilities",
+    "hazmat_abatement",
+    "historic_preservation_shpo",
+    "extrusion_press_lines",
+    "nswc_ihd",
+    "epdm_roofing",
+    "led_lighting_upgrade",
+    "hazardous_location_electrical"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "App-C-1",
+        "title": "Wood Walkway Detail (Press 10 / Press 7)",
+        "discipline": "structural_engineering",
+        "source_document": "PWS Press 10 Appendix C; PWS Press 7 Appendix C",
+        "reading_notes": "Hand-drawn/typed sketch showing pressure-treated wood walkway construction: 4\"x4\" treated posts ~92\" OC, 2\"x10\" joists, 2\"x6\" treated decking, 2\"x4\" braces at each post, 3'-0\" width, walkway cover detail with slope. Safety yellow top rail and material slide noted. Both press lines use same walkway detail."
+      },
+      {
+        "sheet_number": "App-C-2",
+        "title": "Building 561/564 Damproofing — Typical Floor Plan and Cross Section",
+        "discipline": "structural_engineering",
+        "source_document": "PWS Press 10 Appendix C; PWS Press 7 Appendix C",
+        "reading_notes": "Scanned hand-drawn drawings (historic) showing typical floor plan for Buildings 561/564: control room adjacent to below-grade press bay. Cross section shows press bay buried below grade, blow-off roof elevated. French drain detail with 4\" slotted PVC, gravel, filter fabric, and 6-mil polyethylene sheeting behind retaining wall. Same plan applies to both 561 (Press 7) and 564 (Press 10)."
+      },
+      {
+        "sheet_number": "App-C-3",
+        "title": "Buildings 567/568/569 — Floor Plan and Section",
+        "discipline": "structural_engineering",
+        "source_document": "PWS Press 10 Appendix C; PWS Press 7 Appendix C",
+        "reading_notes": "Scanned historic drawings (scale 1/4\"=1'-0\") showing warming oven buildings. Floor plan indicates heater room (7'-0\" x 14'-9\"), oven bays (~6'-10\" x 9'-6\" each), and exhaust penetrations through roof. Section shows wood-framed roof (2\"x8\" @ 16\" O.C.) on CMU/reinforced concrete walls, 3\" concrete floor on cinder fill, asbestos board ceiling (noted as existing — to be abated). Note: drawings show asbestos board as existing material, consistent with PWS abatement scope. Building dimensions: oven bay coverage ~16'-8\" overall, ~149'-8\" length referenced on plan (likely overall plant dimensions, not individual building)."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "App-C-2",
+          "App-C-3"
+        ],
+        "notes": "Individual building footprints readable from historic plan sketches but not stated as totals. Buildings are small industrial structures. Storage sheds noted as ~12'W x 10'L x 7'H each in PWS text."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawing extraction + PWS text",
+        "quote": "The control room is a one-story structure",
+        "sheets": [
+          "App-C-2"
+        ],
+        "notes": "Control rooms (Buildings 561, 564) are one-story above grade. Press bays are below grade. Warming oven buildings (567, 568, 569) are single-story. Blow-off roof and elevator cage are elevated roof structures, not additional occupied floors."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing HVAC/mechanical equipment in press bay (to be demoed per PWS Press 7 §2.s.i.1.j)",
+          "Steam and ventilation lines adjacent to retaining walls (to be temporarily removed for French drain installation)"
+        ],
+        "electrical": [
+          "Existing electrical panels (to be demoed and replaced per both PWS)",
+          "New 100A underground electrical service with concrete duct bank (Buildings 568/569 and 567)",
+          "New disconnect, meter, surge protection at utility pole",
+          "Explosion-proof LED area lighting (Class 1 Div 1 Groups C&D / Class 2 Div 1 Groups E,F,G) in press bays",
+          "New LED wall packs exterior (non-explosion-proof)",
+          "Secondary ground girdle system, #6 bare solid copper wire throughout",
+          "New rigid conduit runs on walkways for lighting and future control wiring",
+          "New 120/240V panelboard (Building 561)"
+        ],
+        "plumbing": [
+          "French drain (4\" slotted PVC) behind control room retaining walls (Buildings 561, 564)",
+          "Floor drain cap and fill (control rooms)",
+          "Water line repair at floor penetration (control rooms)",
+          "Backflow prevention device inspection/certification required (Buildings 561, 564)"
+        ],
+        "fire_protection": [
+          "Lightning protection system per OP-5 and NFPA 780 — remove, save, and reinstall with grounding continuity testing"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.buildings_in_scope",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Press 10 §General Scope",
+          "value": "press line 10 for buildings 564 and 569"
+        },
+        {
+          "source": "PWS Press 10 §Location of work",
+          "value": "Buildings 564, 569, 1234, and 1725"
+        }
+      ],
+      "resolution_chosen": "PWS Press 10 §Location of work",
+      "rationale": "BOD is a 65% design submittal addressing structural scope only; PWS is the final owner-issued document covering all scope. PWS explicitly lists Buildings 1234 and 1725 (small ancillary structures) that are within construction scope even though structural BOD does not address them."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

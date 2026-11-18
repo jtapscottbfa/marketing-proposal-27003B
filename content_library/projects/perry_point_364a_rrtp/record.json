@@ -1,0 +1,103 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "manual-quick-pass-2026-05-21",
+  "extracted_at": "2026-05-21T00:00:00Z",
+  "project_slug": "perry_point_364a_rrtp",
+  "source_documents": [
+    {
+      "path": "content_library/artifacts/18-069B Renovate Building 364A for RRTP - Design/SUBMITTALS/2019.05.07.95% SUBMITTAL/18-069B.2019.05.07.95% SUBMITTAL.BASIS OF DESIGN.pdf",
+      "type": "bod_95",
+      "included": true,
+      "description": "95% Submittal Basis of Design, May 7, 2019 — HBFA joint venture, BFA Project 18-069B, NRM No. 512A5-19-303"
+    }
+  ],
+  "facts": {
+    "project_name": {
+      "value": "Renovate Building 364A for RRTP — Perry Point VAMC",
+      "source": "95% BOD title page",
+      "quote": "RENOVATE BUILDING 364A FOR RRTP, VA MARYLAND HEALTHCARE SYSTEM PERRY POINT, MD"
+    },
+    "client_name": {
+      "value": "U.S. Department of Veterans Affairs — VA Maryland Healthcare System / Perry Point VA Medical Center",
+      "source": "95% BOD title and architectural narrative"
+    },
+    "owner_name": {
+      "value": "U.S. Department of Veterans Affairs",
+      "source": "95% BOD title"
+    },
+    "location": {
+      "city": "Perry Point",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "Perry Point VAMC, Perry Point, MD",
+      "source": "95% BOD title page"
+    },
+    "project_number_client": {
+      "value": "512A5-19-303",
+      "source": "95% BOD cover page (NRM No.)"
+    },
+    "project_number_internal": {
+      "value": "18-069B",
+      "source": "95% BOD cover page (BFA Project No.)"
+    },
+    "delivery_team": {
+      "value": "Hartigan, Bowman, Foster & Associates (HBFA) joint venture",
+      "source": "95% BOD letterhead — HBFA logo and Carrollton VA office address",
+      "notes": "HBFA is the SDVOSB joint venture pairing Hartigan with Bowman, Foster & Associates. Same JV that delivered the Perry Point Emergency Power project (18-069A)."
+    },
+    "facility_size": {
+      "value": "17,000 SF (Unit 364A in Building 364)",
+      "source": "95% BOD Architectural Scope of Work",
+      "quote": "This project involves the renovation of the 17000 SF of Unit 364A in Building 364"
+    },
+    "design_completion_date": {
+      "value": "2019-05-07",
+      "source": "95% BOD cover page",
+      "notes": "95% Submittal date. Construction date not in available documents."
+    },
+    "scope_summary": {
+      "value": "Renovation of a 17,000 SF unit within Building 364 to convert a former 'Locked Inpatient Psychiatry STAR Unit' into a new Mental Health Residential Rehabilitation Treatment Program (RRTP) — a less restrictive, more recovery-oriented, residential-style environment for Veterans. Scope includes interior finish replacement (LVT flooring, acoustic ceilings, paint, tile), conversion of saloon-style bathroom doors to standard hardware, replacement of anti-ligature plumbing fixtures with commercial hotel-type fixtures, conversion of North-wing bedrooms to offices and group meeting rooms, demolition and rebuild of the Nurses' Station as an open four-workstation design with maintained line-of-sight to wings and Day Room/Recreation Area, conversion of Tub Room A147 to a Urine Sampling room, and installation of patient code access locks, monitored exit devices, and CCTV monitored at the Nurses' Station.",
+      "source": "95% BOD General + Architectural sections"
+    },
+    "design_codes_and_standards": {
+      "value": "IBC 2015 (ICC); NFPA 101 Life Safety Code 2015; ABAAS (Architectural Barriers Act Accessibility Standards May 2006); VA Technical Information Library (TIL) — specifically the VA Mental Health Design Guide Standards",
+      "source": "95% BOD Architectural Design Criteria + Scope of Work narrative"
+    },
+    "specialty_features": {
+      "value": [
+        "Anti-ligature → commercial-hotel plumbing fixture conversion",
+        "Patient Code Access Locks on doors",
+        "Monitored exit devices for life safety + residents movement control",
+        "CCTV monitored at Nurses' Station",
+        "Translucent glazed privacy partition in double bedrooms",
+        "Day Room / Recreation Area acoustic and finish retrofit"
+      ],
+      "source": "95% BOD Architectural scope"
+    }
+  },
+  "taxonomy": {
+    "client_type": ["federal", "federal_va"],
+    "program_type": ["healthcare", "mental_health", "residential_treatment"],
+    "disciplines": ["architectural", "mechanical_engineering", "electrical_engineering", "plumbing_engineering", "fire_protection_engineering"],
+    "delivery_method": ["design_bid_build"],
+    "contract_vehicle": ["va_ae_idiq"],
+    "bfa_role": ["joint_venture_partner_hbfa"]
+  },
+  "tenant_freeform_tags": [
+    "perry_point",
+    "va_maryland_health_care_system",
+    "mental_health",
+    "residential_rehabilitation_treatment_program",
+    "rrtp",
+    "va_til",
+    "va_mental_health_design_guide",
+    "anti_ligature_to_residential",
+    "occupied_federal_medical_center",
+    "hbfa_joint_venture",
+    "sdvosb"
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md"
+  }
+}

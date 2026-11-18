@@ -1,0 +1,419 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "retaining_wall",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/retaining_wall/Task Order 4 RFQ retaining wall.pdf",
+      "type": "sow",
+      "sha256": "e5ea7356e4cd6daf0d56e9bf65393959062892fcaef502a23bb826650342646e",
+      "included": true,
+      "notes": "RFQ letter dated April 11, 2022 with A-E Task Order scope of services for JSA 21-C0683 Task Order 004"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/retaining_wall/Hall A Retaining Wall Concept Design.docx",
+      "type": "narrative",
+      "sha256": "7871896a9de7e8762d70422d2e91b68da3d6078f5fff012814f112e05b77db0b",
+      "included": true,
+      "notes": "Cover/binder title page for Task Order 011 concept design deliverable; BFA Job #21-001D"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/retaining_wall/Detailed Design Retaining Wall A Berm.docx",
+      "type": "narrative",
+      "sha256": "03a4c73ed22c24f631df19a5628687b62c663e8c491c5d5a848950f33ec6a0ce",
+      "included": true,
+      "notes": "Cover/binder title page for Task Order 12 detailed design deliverable; BFA Job #21-001D and H"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/jlab/retaining_wall/Retaining Wall Site Narrative Concept-All Disciplines.pdf",
+      "type": "drawing_set",
+      "sha256": "4e4224a8ea0ebe3f56b1c82aea4fad06f291a0c670883630306ad222051cbe09",
+      "included": true,
+      "notes": "Multi-discipline concept design drawing set with embedded narrative text blocks; dated August 2023 based on file timestamps; sheets C200, C300, SC-100, EC-100; VHB project 58665.02"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Hall A Retaining Wall and ESR Access Road — Jefferson Lab",
+      "source": "Task Order 4 RFQ p.1",
+      "quote": "Project Title: Hall A Retaining Wall and ESR Access Road",
+      "corroboration": [
+        {
+          "source": "Task Order 4 RFQ p.1",
+          "claim": "Hall A Retaining Wall and ESR Access Road",
+          "agrees": true
+        },
+        {
+          "source": "Hall A Retaining Wall Concept Design.docx",
+          "claim": "Hall A Retaining Wall Concept Design",
+          "agrees": true
+        },
+        {
+          "source": "Detailed Design Retaining Wall A Berm.docx",
+          "claim": "Detailed Design Retaining Wall A Berm",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Jefferson Lab (Thomas Jefferson National Accelerator Facility)",
+      "source": "Task Order 4 RFQ p.1",
+      "quote": "Jefferson Lab is considering issueing you Task Order No. 4",
+      "corroboration": [
+        {
+          "source": "Task Order 4 RFQ p.1",
+          "claim": "Jefferson Lab",
+          "agrees": true
+        },
+        {
+          "source": "Retaining Wall Site Narrative Concept-All Disciplines.pdf drawing title block",
+          "claim": "Thomas Jefferson National Accelerator Facility",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Department of Energy",
+      "source": "Retaining Wall Site Narrative Concept-All Disciplines.pdf drawing title block",
+      "quote": null,
+      "notes": "Drawing title block identifies owner as United States Department of Energy; Jefferson Lab is the operator/contracting entity"
+    },
+    "location": {
+      "city": "Newport News",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Thomas Jefferson National Accelerator Facility (Jefferson Lab)",
+      "source": "Hall A Retaining Wall Concept Design.docx",
+      "quote": "Jefferson Lab\nNewport News, Virginia"
+    },
+    "project_number_internal": {
+      "value": "21-001D",
+      "source": "Hall A Retaining Wall Concept Design.docx",
+      "quote": "BFA Job # 21-001D",
+      "corroboration": [
+        {
+          "source": "Hall A Retaining Wall Concept Design.docx",
+          "claim": "BFA Job # 21-001D",
+          "agrees": true
+        },
+        {
+          "source": "Detailed Design Retaining Wall A Berm.docx",
+          "claim": "BFA Job # 21-001D and H",
+          "agrees": true,
+          "notes": "Detailed design phase added suffix 'H', suggesting an expansion or second task"
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "JSA 21-C0683",
+      "source": "Task Order 4 RFQ p.1",
+      "quote": "JSA 21-C0683 Request for Proposal Retaining Wall Concept (Task Order 004)"
+    },
+    "task_order_number": {
+      "value": "Task Order 004 (concept); Task Order 011 (concept design); Task Order 012 (detailed design)",
+      "source": "Task Order 4 RFQ p.1; Hall A Retaining Wall Concept Design.docx; Detailed Design Retaining Wall A Berm.docx",
+      "quote": null,
+      "notes": "Multiple task orders under same base contract JSA 21-C0683. TO 004 = RFQ for concept; TO 011 = concept design deliverable; TO 012 = detailed design deliverable."
+    },
+    "project_description": {
+      "value": "Replacement of deteriorated wooden retaining wall at lower end of berm for Hall A on east side of Hall at Jefferson Lab; also includes design of an ESR access road in the area between buildings ESR1 and ESR2 that has become inaccessible to larger vehicles due to utility cooling pipes.",
+      "source": "Task Order 4 RFQ p.1",
+      "quote": "There is a wooden retaining wall structure at the lower end of berm for Hall A on the east side of the Hall. The wall is over 25 years old and has deteriorated, failed in some areas and needs to be replaced."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Infrastructure/civil project — no building square footage applicable"
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "design_contingency": {
+      "value": "10-25%",
+      "source": "Task Order 4 RFQ p.5 (cost estimates section)",
+      "quote": "10-25%"
+    },
+    "construction_contingency": {
+      "value": "5%",
+      "source": "Task Order 4 RFQ p.5 (cost estimates section)",
+      "quote": "5%"
+    },
+    "design_project_manager_client": {
+      "value": "Suresh Chandra",
+      "source": "Task Order 4 RFQ p.5",
+      "quote": "Design Project Manager (SOTR): Suresh Chandra"
+    },
+    "procurement_officer_client": {
+      "value": "Carolyn Stepney",
+      "source": "Task Order 4 RFQ p.1",
+      "quote": "Carolyn Stepney\nSr. Procurement Officer"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Fixed price proposal requested but final negotiated fee not in source documents"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawing set timestamp August 2023 suggests concept/design work extended at least to mid-2023"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Schedule table in RFQ shows 7 days for preliminary conceptual design and 28 days for 35% submittal from NTP, but table appears partially filled"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "civil_engineering",
+      "structural_engineering",
+      "geotechnical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "structural_foundation",
+      "structural_concrete",
+      "structural_existing_assessment",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "site_utilities",
+      "site_grading_drainage"
+    ],
+    "construction_scope": [
+      "concrete_cast_in_place",
+      "earthwork_scope",
+      "exterior_paving",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "jlab",
+    "jefferson_lab",
+    "doe_facility",
+    "newport_news",
+    "retaining_wall",
+    "civil_infrastructure",
+    "access_road",
+    "multi_task_order",
+    "vhb_subconsultant"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "C200",
+        "title": "GRADING PLAN",
+        "discipline": "civil_engineering",
+        "reading_notes": "Shows two grading plan options side by side. Option 1 uses 1:1 layback slope; Option 2 uses 2:1 layback slope. Temporary construction access road shown along west side of Building 104. Existing wooden retaining wall at Building 104 / Hall A berm shown. 15' wide temporary construction access road. Underground Hall A structure shown with critical infrastructure note — Radcon must review and approve any excavation inside fence line. Existing underground utilities shown: 8\" ABS sanitary sewer (MH 29 connection), 12\" DIP waterline, 6\" DIP waterline, 15\" RCP storm drain. Existing concrete walkway shown. Note indicates soil stockpiling with radiation contamination investigation needed. CAD file: 5866502-C-GRAD PLAN.dwg, plotted Aug 17, 2023 by mcharron. VHB project 58665.02."
+      },
+      {
+        "sheet_number": "C300",
+        "title": "PLAN & PROFILE — CROSS SECTION A-A",
+        "discipline": "civil_engineering",
+        "reading_notes": "Plan view and profile/section for construction access road along west side of Building 104. Shows two options (1:1 and 2:1 slope). Station-based profile showing existing and proposed grades. Key stationing data: 0+96.45 existing fence line; 1+20.96 8\" sanitary sewer crossing (elev unknown); 1+27.15 existing 12\" DIP waterline crossing (elev unknown); 1+30.12 existing retaining wall BW elev=38.50; 1+34.61 approx exhaust vent; 1+48.65 16\" cold piping main transfer line (pipe center elev=50.00); 0+89.84 underground Hall A structure (ground floor elev=3.50); 1+50.30 center of underground truck ramp (ground elev ±8.30). Critical note: Radcon needs to review any excavation of material inside fence line. Fire Line 'min 4 ft below bottom of retaining wall.' CAD file: 5866502-C-PROF.dwg, plotted Aug 17, 2023 by mcharron."
+      },
+      {
+        "sheet_number": "SC-100",
+        "title": "SITE PLAN — STRUCTURAL AND GEOTECHNICAL",
+        "discipline": "structural_engineering",
+        "reading_notes": "Site plan overlaid with structural and geotechnical narrative text. Structural narrative states: cantilevered reinforced concrete retaining wall system to replace existing wooden wall; foundation is continuous reinforced spread footing approximately 18\" thick and 6' wide; wall approximately 16\" wide reinforced concrete; drain board on back (soil side) face with drain holes through base to minimize water pressure. Geotechnical: proposed soil boring extraction locations shown on plan. Existing utilities called out including 8\" ABS sanitary sewer and 12\" DIP waterline west of existing wooden wall, confirmed at least 4' below toe of slope. Recommends private utility locator to investigate and confirm depth, location, size. Note: foundations that support existing pipe adjacent to area of work could be undermined by excavation — structural engineer to provide input to geotechnical and civil. Drainage: 8' of excavation around wall perimeter; 6' wide concrete footer zone plus 6' clear construction access zone. Title block: JEFFERSON LAB - RETAINING WALL, United States Department of Energy, Thomas Jefferson National Accelerator Facility, Newport News VA."
+      },
+      {
+        "sheet_number": "EC-100",
+        "title": "SITE PLAN — ELECTRICAL CONCEPT",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Site plan electrical concept overlay. Key note: 480V, 3-phase circuit (power source and circuit name TBD) to ACCU — circuit will be temporarily removed and capped at limits shown to allow excavation for new retaining wall; circuit shall be reinstalled upon completion of new retaining wall and access road. Existing air-cooled chiller noted — if equipment is mission-critical, recommended to provide a generator to ensure operation during construction. Existing exhaust fan shown — equipment is mission-critical and must remain operational throughout construction. Extensive underground utility network shown including CHW (chilled water), SAN (sanitary), G (gas), COMM (communications), CRYO (cryogenic), CW (cooling water), DIWP (deionized water), and others — consistent with particle accelerator facility utility complexity."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Infrastructure/civil project — no building square footage applicable"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — retaining wall and access road"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing air-cooled chiller near project site (mission-critical; temporary generator recommended during construction per EC-100)",
+          "Existing exhaust fan (mission-critical; must remain operational during construction per EC-100)"
+        ],
+        "electrical": [
+          "480V, 3-phase circuit to ACCU — to be temporarily capped during excavation and reinstalled (EC-100)"
+        ],
+        "plumbing": [
+          "8\" ABS sanitary sewer crossing west of existing wooden retaining wall — at least 4 ft below toe of slope (C300, SC-100)",
+          "12\" DIP waterline crossing west of existing wooden retaining wall — at least 4 ft below toe of slope (C300, SC-100)",
+          "16\" cold piping main transfer line (pipe center elev=50.00) (C300)"
+        ],
+        "fire_protection": [
+          "Fire line — minimum 4 ft below bottom of retaining wall (C300)"
+        ],
+        "specialty": [
+          "Cryogenic distribution (CRYO) lines visible on EC-100 near Hall A — characteristic of particle accelerator facility",
+          "Chilled water (CHW) distribution throughout site",
+          "Deionized water (DIWP) distribution",
+          "Cooling water (CW) distribution",
+          "Communications (COMM) ductbanks throughout site"
+        ]
+      },
+      "retaining_wall_specifications": {
+        "type": "Cantilevered reinforced concrete",
+        "source": "SC-100 structural narrative",
+        "footing_thickness": "approximately 18 inches",
+        "footing_width": "approximately 6 feet",
+        "wall_thickness": "approximately 16 inches",
+        "drainage": "drain board on soil-side face with drain holes through base"
+      },
+      "access_road": {
+        "width": "15 feet",
+        "type": "Temporary construction access road; permanent access road for long-term maintenance",
+        "source": "C200, C300"
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.task_order_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Task Order 4 RFQ p.1",
+          "value": "Task Order 004 (RFQ/concept scope)"
+        },
+        {
+          "source": "Hall A Retaining Wall Concept Design.docx",
+          "value": "Task Order 011 (concept design deliverable)"
+        },
+        {
+          "source": "Detailed Design Retaining Wall A Berm.docx",
+          "value": "Task Order 012 (detailed design deliverable)"
+        }
+      ],
+      "resolution_chosen": "All three task orders noted; they are sequential, not contradictory",
+      "rationale": "The RFQ was for TO 004 (concept only), but the project evidently grew through TO 011 (concept design) and TO 012 (detailed design) under the same base contract. The documents span the project lifecycle. No contradiction — sequential scope growth."
+    },
+    {
+      "field_path": "facts.project_number_internal",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Hall A Retaining Wall Concept Design.docx",
+          "value": "BFA Job # 21-001D"
+        },
+        {
+          "source": "Detailed Design Retaining Wall A Berm.docx",
+          "value": "BFA Job # 21-001D and H"
+        }
+      ],
+      "resolution_chosen": "21-001D used as primary internal number",
+      "rationale": "The 'H' suffix in the detailed design binder likely indicates an extension or additional task added to the same job number (Task Order H = TO 012 detailed design). The core number 21-001D is consistent across both documents."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

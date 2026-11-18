@@ -1,0 +1,722 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nh95_c2f_rfp",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_c2f_rfp/Bowman-Foster - NAVFAC MIDLANT SAES-DB - Rev18C.pdf",
+      "type": "sow",
+      "sha256": "86ee4216eb9cef200b16db4b19e9a82fcd357ce395beaa4def136ca7db952ecc",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES) Rev18C Sep 2023, Task Order SAES under IDIQ contract N4008520D005; governs DB RFP development scope. Classified here as 'sow' (no dedicated 'saes' type in controlled list)."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nh95_c2f_rfp/2024_09-05 N4008520D005 C2F FINAL Charrette Report.pdf",
+      "type": "report",
+      "sha256": "8ea747f07b59f58b350dcfdd04bfc9b1727088940fd08d8257958c265ad6e886",
+      "included": true,
+      "notes": "Final Charrette Report, 20 Sep 2024. Includes VE Study, DD Form 1391 (both DBB and DB versions), concept drawings, meeting minutes, cost estimates, and scheduling options. This is the primary source for project scope, cost, and design facts."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No executed contract in source files. SAES is the governing scope document (sow). Drawings are concept-level floor plans embedded in the charrette report PDF; no separate drawing-set PDF. Text extraction sufficed — no separate image rendering required as the plan drawings are embedded in the PDF text-extraction output (legends and seat counts extracted)."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Convert Space in NH-95 for Commander, U.S. Second Fleet",
+      "source": "Charrette Report title page and DD Form 1391 Block 4",
+      "quote": "Convert Space in NH-95 for Commander, U.S. Second Fleet",
+      "corroboration": [
+        {
+          "source": "Charrette Report title page",
+          "claim": "Convert Space in NH-95 for Commander, U.S. Second Fleet",
+          "value": "Convert Space in NH-95 for Commander, U.S. Second Fleet",
+          "agrees": true
+        },
+        {
+          "source": "SAES Rev18C header",
+          "claim": "C2F NH95 RENOVATIONS",
+          "value": "C2F NH95 RENOVATIONS",
+          "agrees": false,
+          "note": "SAES uses abbreviated working title; DD 1391 records the government-approved final title."
+        },
+        {
+          "source": "DD Form 1391, Block 4",
+          "claim": "Convert Space in NH-95 for Commander, U.S. Second Fleet (C2F)",
+          "value": "Convert Space in NH-95 for Commander, U.S. Second Fleet",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC MIDLANT)",
+      "source": "SAES Rev18C, Section A",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C, Section A",
+          "claim": "NAVFAC MIDLANT will administer this T.O.",
+          "agrees": true
+        },
+        {
+          "source": "Charrette Report title page",
+          "claim": "Prepared for: NAVFAC MID-ATLANTIC (via Contract Number: N4008520D005)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Support Activity Hampton Roads",
+      "source": "DD Form 1391, Block 3",
+      "quote": "NAVSUPPACT HAMPTON ROADS VA NORFOLK, VIRGINIA (N57095)",
+      "note": "NAVFAC MIDLANT is the contracting/administering command; NSA Hampton Roads (N57095) is the installation owner. The using activity is Commander, U.S. 2nd Fleet (C2F)."
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "NSA Hampton Roads, Norfolk, VA 23511 (Building NH-95)",
+      "source": "SAES Rev18C, Section A1; Charrette Report title",
+      "quote": "Project Location: NSA Hampton Roads"
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing",
+      "note": "BFA internal YY-NNNN code not present in source documents. BFA Job # 20-007L is referenced in meeting minutes attendee sheets."
+    },
+    "bfa_job_number": {
+      "value": "20-007L",
+      "source": "Charrette Report, Appendix E meeting minutes headers",
+      "quote": "BFA Job #: 20-007L",
+      "note": "Spec gap — BFA internal job number is not a defined SPEC.md field; captured here as supplemental fact. See retro."
+    },
+    "project_number_client": {
+      "value": "RM24-2031",
+      "source": "DD Form 1391, Block 7; Charrette Report §1.6",
+      "quote": "Project Number = RM24-2031",
+      "corroboration": [
+        {
+          "source": "DD Form 1391, Block 7",
+          "claim": "RM24-2031",
+          "agrees": true
+        },
+        {
+          "source": "SAES Rev18C header",
+          "claim": "FY 24 SPECIAL PROJECT RM24-2031",
+          "agrees": true
+        },
+        {
+          "source": "Charrette Report §1.6",
+          "claim": "Project Number = RM24-2031",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N4008520D005",
+      "source": "SAES Rev18C, Section A1",
+      "quote": "Contract No. N4008520D005",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C, Section A1",
+          "claim": "N4008520D005",
+          "agrees": true
+        },
+        {
+          "source": "Charrette Report title page",
+          "claim": "Contract Number: N4008520D005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": "SAES Rev18C, Section A1",
+      "quote": "Task Order No. ###",
+      "note": "Task order number was TBD/placeholder at time of SAES issuance (Rev18C). Not resolved in available source documents."
+    },
+    "eprojects_work_order": {
+      "value": "1797165",
+      "source": "SAES Rev18C, Section A1",
+      "quote": "eProjects Work Order number 1797165",
+      "note": "Spec gap — eProjects work order is a NAVFAC-specific identifier not covered by SPEC.md. Captured as supplemental fact."
+    },
+    "square_footage": {
+      "value": 20810,
+      "unit": "gsf",
+      "source": "DD Form 1391, Block 9 / Charrette Report cost estimate",
+      "quote": "Repairs 20,810 square feet (SF) of Building NH-95",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C, Section A2",
+          "claim": "approximately 30,000SF of space in building NH95",
+          "value": 30000,
+          "agrees": false,
+          "note": "SAES issued before charrette; scope narrowed during programming."
+        },
+        {
+          "source": "Charrette Report §2.4",
+          "claim": "approximately 21,000 SF within building NH-95",
+          "value": 21000,
+          "agrees": false,
+          "note": "Rounded figure in narrative text. Cost estimate and 1391 use 20,810 as the definitive number."
+        },
+        {
+          "source": "DD Form 1391 cost estimate block (both DBB and DB versions)",
+          "claim": "20,810 SF",
+          "value": 20810,
+          "agrees": true
+        },
+        {
+          "source": "VE Study, Project Description",
+          "claim": "approximately 30,000 SF of space",
+          "value": 30000,
+          "agrees": false,
+          "note": "VE report restates original SAES scope; scope was refined during charrette."
+        }
+      ]
+    },
+    "building_total_sf": {
+      "value": 275409,
+      "unit": "gsf",
+      "source": "DD Form 1391, Block 10 description",
+      "quote": "Building NH-95 (Headquarters Operational Control Center; 275,409 SF)",
+      "corroboration": [
+        {
+          "source": "DD Form 1391, Facilities Data (both versions)",
+          "claim": "275,400 SF (rounded in Facilities Data block)",
+          "agrees": true,
+          "note": "Minor rounding difference in data block vs. narrative description."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 39000000,
+      "currency": "USD",
+      "source": "SAES Rev18C, Section C1",
+      "quote": "Project Cost/Program Amount: $39,000,000.00",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C, Section C1",
+          "claim": "$39,000,000.00",
+          "value": 39000000,
+          "agrees": true
+        },
+        {
+          "source": "VE Study, Project Description",
+          "claim": "approximately $39.0 Million",
+          "value": 39000000,
+          "agrees": true
+        }
+      ]
+    },
+    "dd1391_total_project_cost_db": {
+      "value": 27800000,
+      "currency": "USD",
+      "source": "DD Form 1391 (Design-Build version), Block 8",
+      "quote": "$27,800",
+      "note": "DD 1391 amounts in $000. Design-Build version total project cost. DBB version shows $27,000,000.",
+      "corroboration": [
+        {
+          "source": "DD Form 1391 (DBB version), Block 8",
+          "claim": "$27,000,000",
+          "value": 27000000,
+          "agrees": false,
+          "note": "DBB vs DB difference: DB version includes 4% design fee ($833K additional)."
+        },
+        {
+          "source": "Charrette Report §1.4 post-charrette cost",
+          "claim": "Post Charrette ECC: $23,242,000",
+          "value": 23242000,
+          "agrees": false,
+          "note": "ECC is below total project cost; total includes contingency 20% and SIOH 8%."
+        },
+        {
+          "source": "Final Concept K cost estimate (Appendix A)",
+          "claim": "TOTAL PROJECT (PA): $28,023,000",
+          "value": 28023000,
+          "agrees": false,
+          "note": "Cost estimate total ($28.023M) is slightly higher than 1391 DB version ($27.8M). Minor rounding/timing difference."
+        }
+      ]
+    },
+    "construction_ecc_post_charrette": {
+      "value": 23242000,
+      "currency": "USD",
+      "source": "Charrette Report §1.4",
+      "quote": "Post Charrette ECC: $23,242,000",
+      "note": "Estimated Construction Cost (ECC) after post-charrette scope adjustments. Excludes SIOH, contingency, design fee."
+    },
+    "estimated_construction_cost_saes": {
+      "value": null,
+      "status": "missing",
+      "source": "SAES Rev18C, Section C2",
+      "quote": "Estimated Construction Cost (ECC): $TBD",
+      "note": "ECC was TBD at SAES issuance; defined during charrette process."
+    },
+    "building_facility": {
+      "value": "Building NH-95, Headquarters Operational Control Center, NSA Hampton Roads",
+      "source": "DD Form 1391, Facilities Data block",
+      "quote": "NH95 NFA100000967297 HDQTRS OPCON CENTER 14365 SF 275,400 $150,483 99 87 88",
+      "note": "Building constructed 1959. CCN 14365. MUIC N57095. PRV $177,289,428 per PRC (per DD 1391 Notes)."
+    },
+    "building_year_built": {
+      "value": 1959,
+      "source": "DD Form 1391, Block 10",
+      "quote": "NH-95 is a two-story building, constructed in 1959."
+    },
+    "building_prv": {
+      "value": 177289428,
+      "currency": "USD",
+      "source": "DD Form 1391, Notes section",
+      "quote": "PRV = $177,289,428 on Property Record Card (PRC)"
+    },
+    "project_delivery_method_note": {
+      "value": "Design-Build RFP (sole source modification to existing construction contract)",
+      "source": "SAES Rev18C, Section D2f",
+      "quote": "Sole source modification to existing construction contract.",
+      "note": "Procurement strategy is DB RFP issued to the existing NH-95 Fire Protection Repairs contractor (WMJ). This is an unusual DB vehicle — not open competition."
+    },
+    "construction_duration_days": {
+      "value": 360,
+      "source": "Charrette Report, Appendix A cost estimate narrative, Section III",
+      "quote": "Duration: 360 Days (12 Months)"
+    },
+    "construction_start_assumed": {
+      "value": "2026-01-01",
+      "source": "Charrette Report, Appendix A, Section III",
+      "quote": "Start: January 2026",
+      "note": "Assumed start per cost estimate midpoint calculation."
+    },
+    "construction_completion_assumed": {
+      "value": "2027-01-01",
+      "source": "Charrette Report, Appendix A, Section III",
+      "quote": "Completion: January 2027"
+    },
+    "rfe_final_due": {
+      "value": "2024-12-20",
+      "source": "Charrette Report, Major Milestones schedule (Day 1 presentation)",
+      "quote": "Final DB RFP Due: 20 DEC 2024"
+    },
+    "hazardous_materials": {
+      "value": "Present — wall finishes, insulation, paints in renovation areas; survey required",
+      "source": "DD Form 1391, Section B (Hazardous Material Information)",
+      "quote": "A hazardous materials (HAZMAT) investigation was performed prior to the NH-95 fire protection system repair project (ST19-0641; FY22; ongoing). That project is expected to abate most of the HAZMAT in the building. However, some HAZMAT may remain (e.g., wall finishes, insulation, and paints) and may be impacted by this project."
+    },
+    "value_engineering_net_savings": {
+      "value": 5162000,
+      "currency": "USD",
+      "source": "Charrette Report, Appendix B VE Study Executive Summary",
+      "quote": "the net change in project cost resulting from the workshop was a savings of $5,162,000"
+    },
+    "swam_participation": {
+      "value": null,
+      "status": "missing",
+      "note": "No SWaM participation data found in source documents. Federal NAVFAC procurement — SWaM is Virginia-specific and not applicable here. Small business set-aside status not specified in available documents."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "A-E fee negotiated at time of task order issuance per pre-negotiated IDIQ prices (SAES §A4). Specific design fee not stated in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": "2024-03-29",
+        "source": "Charrette Report, Appendix G Schedule Option 1",
+        "quote": "AE CONTRACT AWARD: 3/29/24",
+        "note": "Date shown as A-E contract award / task order start on schedule."
+      },
+      "completion_date": {
+        "value": "2025-01-21",
+        "source": "Charrette Report, Appendix G Schedule Option 1",
+        "quote": "SUBMIT CORRECTED DB RFP: 1/21/25"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "services_scope": "Design-Build RFP development (Parts 1-6), DD Form 1391, cost estimate, CSRA, charrette, post-construction award services (PCAS) as option"
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "Construction to be procured as sole-source modification to existing Fire Protection Repairs contract. GC contract value not yet established at time of available source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 360,
+        "source": "Charrette Report, Appendix A cost estimate narrative",
+        "quote": "Duration: 360 Days (12 Months)"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_operations"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "architecture",
+      "interior_design",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "telecommunications_engineering",
+      "security_engineering",
+      "cost_estimating"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "structural_existing_assessment",
+      "telecom_structured_cabling",
+      "telecom_av",
+      "security_access_control",
+      "security_video_surveillance"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_systems",
+      "telecom_structured_cabling",
+      "telecom_av",
+      "security_acs",
+      "security_video",
+      "interior_construction",
+      "interior_partitions",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling",
+      "superstructure"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "existing_conditions",
+      "concrete_scope",
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "finishes_flooring",
+      "finishes_acoustical_ceilings",
+      "finishes_painting_wallcovering",
+      "specialties_scope",
+      "specialties_toilet_partitions",
+      "specialties_signage",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "communications_scope",
+      "electronic_safety_security",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_satoc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "nsa_hampton_roads",
+    "navy_c2f",
+    "second_fleet",
+    "norfolk_naval",
+    "db_rfp",
+    "nh95",
+    "special_project",
+    "military_renovation",
+    "flag_suite",
+    "scif_adjacent",
+    "fy24"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Erika Osbourne",
+      "role_on_project": "project_manager",
+      "firm": "Bowman Foster & Associates, Inc."
+    },
+    {
+      "name": "Rick O'Berry",
+      "role_on_project": "mechanical_plumbing_engineer",
+      "firm": "Bowman Foster & Associates, Inc."
+    },
+    {
+      "name": "Andrew Rowe",
+      "role_on_project": "electrical_engineer",
+      "firm": "Bowman Foster & Associates, Inc."
+    },
+    {
+      "name": "Jeff Pierce",
+      "role_on_project": "lead_architect",
+      "firm": "Dills Architects, P.C."
+    },
+    {
+      "name": "Anna Campbell",
+      "role_on_project": "project_manager_architecture",
+      "firm": "Dills Architects, P.C."
+    }
+  ],
+  "drawings": {
+    "notes": "No separate drawing-set PDF provided. Concept drawings (floor plan schematics, not construction documents) are embedded in the Charrette Report PDF (Appendix D). These are schematic-level concept plans developed during the design charrette, showing space layouts at 1/32\"=1'-0\" and 1/8\"=1'-0\" scales. PDF text extraction captured legends, seat counts, and room names. No MEP engineering drawings available at this project stage (DB RFP development phase).",
+    "sheets": [
+      {
+        "sheet_number": "APP-D-1",
+        "title": "OVERALL FIRST FLOOR CONCEPT K PLAN — FINAL PREFERRED CONCEPT",
+        "discipline": "architecture",
+        "reading_notes": "Final approved concept. First floor shows C2F Areas 6 and 11. Area 6: 9 offices + 70 workstations + existing 11 workstations in rooms 132A-B-C. Area 11: Flag Suite with COM/VCOM/DCOM/RVCOM/COS/RCOS/FMC offices, executive kitchenette, conference/dining, secure entrance. Legend distinguishes C2F, DISA, Flag Suite, Electrical, Common Spaces, Not In Scope. Seat count confirmed: 16 offices, 82 workstations."
+      },
+      {
+        "sheet_number": "APP-D-2",
+        "title": "OVERALL SECOND FLOOR CONCEPT K PLAN — FINAL PREFERRED CONCEPT",
+        "discipline": "architecture",
+        "reading_notes": "Second floor: C2F Area 8/10 (2 offices, 34 workstations, open conference). DISA Area 10 (3 offices, 12 workstations). Total second floor: 5 offices, 46 workstations."
+      },
+      {
+        "sheet_number": "APP-D-3",
+        "title": "PARTIAL FIRST FLOOR CONCEPT K PLAN — AREA 6",
+        "discipline": "architecture",
+        "reading_notes": "Detailed view of Area 6. Shows 9 private offices, numbered workstations 1-70, existing rooms 132A-B-C (11 WS), large conference room, open conference, break area, existing comm rooms to remain. Print area shown. Department groups labeled: CMC, MOC DIR, Reserve DIR, Chaplain, Medical, Public Affairs, N1, Culinary Team, FMC Staff, Protocol Officer."
+      },
+      {
+        "sheet_number": "APP-D-4",
+        "title": "PARTIAL FIRST FLOOR CONCEPT K PLAN — AREA 11",
+        "discipline": "architecture",
+        "reading_notes": "Flag Suite layout. Shows secure entrance, vestibule, waiting area, COM Office (302 SF), VCOM/DCOM/RVCOM offices, COS/RCOS/FMC offices, executive kitchenette (276 SF), storage (134 SF), conference/dining (669 SF), toilet/shower facilities (2 units — one private COM, one shared suite), C2F open office (8 WS), Women's restroom. New secure entrance from exterior."
+      },
+      {
+        "sheet_number": "APP-D-5",
+        "title": "PARTIAL SECOND FLOOR CONCEPT K PLAN — AREA 8/10",
+        "discipline": "architecture",
+        "reading_notes": "C2F Area 8/10: 2 private offices (134 SF and 121 SF), 34 numbered workstations in open office (2714 SF), open conference (291 SF). N4 and N7 directorates. Existing rooms A211, A214, A216, A219, A220 shown in context."
+      },
+      {
+        "sheet_number": "APP-D-6",
+        "title": "PARTIAL SECOND FLOOR CONCEPT K PLAN — AREA 10 (DISA)",
+        "discipline": "architecture",
+        "reading_notes": "DISA space: 3 private offices, 12 workstations, work room, storage, comm/electrical room, corridor with ramp, safes. Existing room A237C (DISA work room) and A237D (DISA open office with servers). Ramp down to expansion joint shown."
+      },
+      {
+        "sheet_number": "APP-D-RS",
+        "title": "NH-95 C2F/DISA FINAL CONCEPT ROOM SCHEDULE",
+        "discipline": "architecture",
+        "reading_notes": "Room schedule tabulates SF for each space. C2F total: 18,241 SF. DISA total: 2,583 SF (per schedule sum). Combined renovation: ~20,824 SF. Notable rooms: COM Office 302 SF, VCOM 302 SF, DCOM 297 SF, RVCOM 296 SF, Conference/Dining 669 SF, Executive Kitchenette 276 SF. Confirms final scope is primarily interior renovation with new secure entrance to Area 11."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 20810,
+        "unit": "gsf",
+        "source": "DD Form 1391 Block 9 and cost estimate",
+        "quote": null,
+        "sheets": [
+          "APP-D-RS"
+        ],
+        "note": "Room schedule sums to ~20,824 SF (C2F 18,241 + DISA 2,583); cost estimate and 1391 use 20,810 SF as the contract quantity."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "DD Form 1391 Block 10; concept floor plan sheets",
+        "quote": null,
+        "sheets": [
+          "APP-D-1",
+          "APP-D-2"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing VAV (Variable Air Volume) systems in admin areas — reconfiguration in scope",
+          "Existing CRAC (Computer Room Air Conditioning) units in data spaces — demolish and replace with VAV",
+          "New VAV system in areas currently used as data centers (Area 11)",
+          "New DDC controls throughout",
+          "Executive kitchenette cooking exhaust — new centrifugal kitchen exhaust fan with kitchen hood",
+          "Ductless split systems — provided in select areas",
+          "Existing air handlers serving Areas 6, 11, and 8/10 retained (VE item M-1.0 accepted)"
+        ],
+        "electrical": [
+          "Remove and replace all lighting fixtures with LED (4000K, 80+ CRI)",
+          "New wiring devices and branch circuits from existing panelboards",
+          "Communications distribution removed and replaced",
+          "Vacancy sensor lighting controls",
+          "Emergency lighting — standalone LED fixture type",
+          "ESS (Electronic Security System) pathways — contractor provides, government provides devices",
+          "Fiber-optic cable trunks — government furnished in contractor-provided pathways",
+          "Telecommunications cabling for NIPR/SIPR/NMCI networks",
+          "No new motor control centers"
+        ],
+        "plumbing": [
+          "New restroom in Area 11 (ladies 3-fixture + accessible unisex 1-fixture — VE A-1.0 accepted)",
+          "Executive kitchenette: 3-compartment sink, garbage disposal, domestic hot and cold water",
+          "Flush valve water closets (ASME A112.19.2)",
+          "Copper domestic water piping (ASTM B88, Type K, L, or M)",
+          "Cast iron DWV piping",
+          "Bi-level water coolers",
+          "Electric water heaters (dual element, 4.5 KW each)"
+        ],
+        "fire_protection": [
+          "Fire sprinkler systems reconfigured to match new floor plan layouts (wet pipe throughout — dry/pre-action being replaced under concurrent FP Repairs project N4008522R2634)",
+          "Clean agent system in Area 11 Room 044 DELETED from scope (VE item M-2.0 accepted)",
+          "Fire alarm/mass notification system device relocation for renovated areas",
+          "New sprinkler and FA layouts per UFC 3-600-01, NFPA 13, NFPA 72"
+        ]
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES Rev18C §A2 (project inception)",
+          "value": 30000,
+          "label": "approximately 30,000 SF"
+        },
+        {
+          "source": "VE Study Project Description",
+          "value": 30000,
+          "label": "approximately 30,000 SF"
+        },
+        {
+          "source": "Charrette Report §2.4",
+          "value": 21000,
+          "label": "approximately 21,000 SF"
+        },
+        {
+          "source": "DD Form 1391 / Cost Estimate (definitive)",
+          "value": 20810,
+          "label": "20,810 SF"
+        }
+      ],
+      "resolution_chosen": "DD Form 1391 / Cost Estimate: 20,810 SF",
+      "rationale": "Scope was refined during the charrette process. SAES stated initial scope estimate; actual programming produced a smaller footprint. DD Form 1391 and the cost estimate use 20,810 SF as the definitive contract quantity. The 21,000 SF in the charrette narrative is a rounded approximation of the same number. Severity is minor because the conflict is chronological (before vs. after charrette) rather than reflecting genuinely contradictory claims at the same point in time."
+    },
+    {
+      "field_path": "facts.dd1391_total_project_cost_db",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "DD Form 1391 DBB version, Block 8",
+          "value": 27000000,
+          "label": "$27,000,000"
+        },
+        {
+          "source": "DD Form 1391 DB version, Block 8",
+          "value": 27800000,
+          "label": "$27,800,000"
+        },
+        {
+          "source": "Final Concept K cost estimate (Appendix A)",
+          "value": 28023000,
+          "label": "$28,023,000 Total PA"
+        }
+      ],
+      "resolution_chosen": "DD Form 1391 Design-Build version: $27,800,000",
+      "rationale": "Two 1391 versions were prepared (DBB and DB) per the charrette report. The DB version is the recommended acquisition strategy per NAVFAC Mid-Atlantic. The $28.023M cost estimate figure is the pre-approval cost estimate; the 1391 DB version rounds down to $27.8M. Severity minor — all three figures are consistent within normal rounding/contingency treatment."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "interior_design": "narratives/disciplines/interior_design.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md",
+      "cost_estimating": "narratives/disciplines/cost_estimating.md"
+    }
+  },
+  "related_projects": [
+    {
+      "description": "NH-95 Fire Protection System Repairs (concurrent construction contract)",
+      "contract_number": "N4008522R2634",
+      "eprojects_number": "1687420",
+      "navfac_project_id": "ST19-0641",
+      "note": "This renovation project was designed to be issued as a sole-source modification to / DB RFP to the existing Fire Protection Repairs contractor. The two projects share the building, phasing, and some construction elements (sprinkler/FA systems, modular swing space). Deep scheduling coordination required."
+    }
+  ]
+}

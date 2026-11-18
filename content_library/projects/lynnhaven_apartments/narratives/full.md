@@ -1,0 +1,33 @@
+# Lynnhaven Apartments — Full Project Narrative
+
+## Project Overview
+
+Lynnhaven Apartments is a three-story multifamily residential building renovation in Virginia Beach, Virginia. The project involved a comprehensive renewal of an existing apartment complex containing a mix of one-bedroom and two-bedroom residential units arranged across three floors. The engineering team was engaged as MEP subconsultant to the prime architectural consultant (Architectural Concepts) under a professional services agreement executed in November 2021. The design package was delivered as a pre-final submittal dated November 26, 2021, representing the engineering team's response to a second round of review comments — indicating the design underwent at least one complete review cycle prior to this submittal.
+
+The project is classified as a private commercial residential multifamily renovation, delivered through a design-bid-build method under a negotiated commercial contract.
+
+## Scope of Services
+
+The MEP subconsultant scope covered three primary engineering areas across the three-story building.
+
+**Plumbing Engineering.** Complete new domestic water distribution systems were designed for all units, including cold water (¾-inch CW distribution throughout, ½-inch branch to kitchen) and hot water piping to all plumbing fixtures. Electric water heaters were sized and scheduled by unit type: 47-gallon, 4,500W/240V units (EWH-1) for one-bedroom apartments and 66-gallon, 1,500W/240V units (EWH-2) for two-bedroom apartments. Each water heater installation included expansion tank provisions (diaphragm type, 100 PSIG maximum), dielectric unions, T&P relief valve, and heat trap connections per the project's water heater piping diagram detail. Fixture connections were designed for water closets, lavatories, kitchen sinks, shower and tub combinations (with mixing valves), washer connection boxes (with ¾-inch CW/HW supply and 2-inch standpipe drain), ice maker connections, and garbage disposals (1/3 HP, 120V). New sanitary waste and vent (DWV) systems were designed throughout all units, connecting to existing underslab piping with contractor-furnished transition fittings. Vent-through-roof details addressed shingle-integrated flashing with stainless-steel draw band and sealant.
+
+**Mechanical Engineering — HVAC Coordination.** The design indicates air handling units (AHUs) installed per apartment unit. The engineering team coordinated HVAC equipment placement within the unit-level plumbing design, positioning electric water heaters below the in-unit AHUs and routing AHU condensate drains to the sanitary system. While dedicated mechanical drawing sheets are not present in the available submittal package, the plumbing construction documents confirm the presence of per-unit HVAC systems and reflect full coordination of plumbing and mechanical equipment at the unit level.
+
+**Fire Protection Engineering.** A wet fire suppression system was designed for the three-story building, with dedicated sprinkler rooms at each end of the building per the architectural floor plans. In addition, the engineering team developed a comprehensive suite of fire-resistive penetration sealing details for all plumbing penetrations through rated floor-ceiling and wall assemblies, using UL-listed through-penetration firestop assemblies (UL F-C-1010, F-C-1074, F-C-2032, F-C-2157, W-L-1040, and W-L-2241), covering metallic pipe, copper pipe, PVC, CPVC, ABS, and flexible conduit penetrations through 1- to 2-hour rated constructions.
+
+## Role on Project
+
+The engineering team served as MEP subconsultant to the prime architectural consultant. The professional services agreement was executed directly between Architectural Concepts (prime) and the engineering firm. The ultimate building owner is not identified in the available project documents. The contractual scope was limited to engineering design services; no construction administration services are reflected in the available records. The design contract value was $9,834.00, as stated in the professional services agreement: "Architectural Concepts shall pay to Bowman Foster & Associates a fee of $9,834.00 for Services shall be computed and paid, as the Services are completed."
+
+## Key Challenges and Resolutions
+
+**Unit-by-unit MEP coordination across multiple unit types.** The project involved designing complete new plumbing systems for a multi-unit residential building with distinct one-bedroom and two-bedroom configurations. Each unit type required a separate equipment schedule, sized water heaters, and individualized piping layouts. The design addressed this by developing dedicated typical unit plumbing plans (sheet P1.1) documenting both unit types side-by-side — a format that supports construction coordination across repetitive residential floor plans. End units (two-bedroom) included two bathrooms; center units (one-bedroom) had a single bathroom, with the plumbing scope fully capturing each configuration.
+
+**Fire-resistive assembly compliance across rated penetrations.** The three-story construction required that all plumbing penetrations through rated floor-ceiling and wall assemblies comply with UL-listed firestop system requirements. The engineering team produced a dedicated penetration sealing detail set (sheets P5.1 and P5.2) referencing six UL-listed assemblies, with through-penetrant materials, T-ratings, F-ratings, and approved sealing products tabulated for each assembly type. This approach provides contractors with clear, code-compliant installation guidance for every penetration condition in the building.
+
+**Design responsiveness to review.** The submittal package represents the second round of responses to review comments, indicating the engineering team engaged through a structured review cycle. The pre-final designation and second-response context suggest the design resolved prior review comments and was positioned for final approval.
+
+## Outcomes
+
+The MEP design package was completed as a pre-final submittal in November 2021 under a professional services agreement valued at $9,834.00. The construction documents covered complete plumbing, HVAC coordination, and fire protection engineering for the three-story multifamily residential building, including construction-ready unit plumbing plans, equipment schedules, fire suppression system design, and a full suite of fire-resistive penetration sealing details. The design was compliant with the International Plumbing Code (IPC), ASHRAE standards, and applicable Virginia building codes. Based on the project timeline, the renovation is expected to be complete.

@@ -1,0 +1,254 @@
+vocabulary_id: contract_vehicle
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original (aggregated from federal, state, commercial usage)
+anchor_standard_version: null
+hierarchy: two_level
+multi_select: true
+governance_notes: |
+  Contract vehicle captures the procurement instrument under which a project is
+  awarded. Distinct from delivery_method (DBB vs DB vs CMAR) — a CMAR project
+  can be procured via IDIQ task order or as a standalone project.
+
+  Multi-select because some projects are awarded under multiple vehicles
+  (a task order under a MATOC contract is both task_order and matoc).
+future_migration: null
+
+entries:
+  # ============ STANDALONE / SINGLE PROJECT ============
+  - canonical_id: standalone_project
+    display_name: Standalone Project
+    definition: Project procured and contracted as a single, project-specific contract (not under any IDIQ/MATOC).
+    parent_id: null
+    aliases:
+      - standalone
+      - single_project
+      - project_specific_contract
+    standard_reference: null
+
+  # ============ FEDERAL VEHICLES ============
+  - canonical_id: federal_idiq
+    display_name: Federal — IDIQ
+    definition: Federal Indefinite Delivery Indefinite Quantity contract.
+    parent_id: null
+    aliases:
+      - idiq
+      - federal_idiq
+      - indefinite_delivery
+    standard_reference: null
+
+  - canonical_id: federal_matoc
+    display_name: Federal — MATOC
+    definition: Multiple Award Task Order Contract (federal IDIQ with multiple awardees competing for task orders).
+    parent_id: federal_idiq
+    aliases:
+      - matoc
+      - multiple_award
+    standard_reference: null
+
+  - canonical_id: federal_satoc
+    display_name: Federal — SATOC
+    definition: Single Award Task Order Contract (federal IDIQ awarded to a single firm).
+    parent_id: federal_idiq
+    aliases:
+      - satoc
+      - single_award_idiq
+    standard_reference: null
+
+  - canonical_id: federal_task_order
+    display_name: Federal — Task Order
+    definition: Individual task order issued under an IDIQ/MATOC/SATOC.
+    parent_id: federal_idiq
+    aliases:
+      - task_order
+      - to
+    standard_reference: null
+
+  - canonical_id: federal_basic_ordering_agreement
+    display_name: Federal — Basic Ordering Agreement (BOA)
+    definition: Federal basic ordering agreement; not a contract but a written instrument enabling future orders.
+    parent_id: null
+    aliases:
+      - boa
+      - basic_ordering_agreement
+    standard_reference: null
+
+  - canonical_id: federal_bpa
+    display_name: Federal — Blanket Purchase Agreement (BPA)
+    definition: Federal blanket purchase agreement under FAR Part 13 simplified acquisition.
+    parent_id: null
+    aliases:
+      - bpa
+      - blanket_purchase
+    standard_reference: null
+
+  - canonical_id: federal_gsa_schedule
+    display_name: Federal — GSA Schedule
+    definition: Order against GSA Multiple Award Schedule (MAS).
+    parent_id: null
+    aliases:
+      - gsa_mas
+      - gsa_schedule
+      - federal_supply_schedule
+    standard_reference: null
+
+  - canonical_id: federal_gwac_oasis
+    display_name: Federal — GWAC (OASIS, etc.)
+    definition: Government-Wide Acquisition Contract (OASIS, Alliant, etc.) used for professional services.
+    parent_id: null
+    aliases:
+      - gwac
+      - oasis
+      - alliant
+    standard_reference: null
+
+  - canonical_id: federal_8a_stars
+    display_name: Federal — 8(a) STARS
+    definition: 8(a) STARS GWAC for small disadvantaged business set-asides.
+    parent_id: null
+    aliases:
+      - 8a_stars
+      - stars
+    standard_reference: null
+
+  - canonical_id: federal_sewp
+    display_name: Federal — SEWP
+    definition: Solutions for Enterprise-Wide Procurement (NASA-managed GWAC for IT and AV).
+    parent_id: null
+    aliases:
+      - sewp
+    standard_reference: null
+
+  # ============ FEDERAL CONSTRUCTION-SPECIFIC ============
+  - canonical_id: federal_macc
+    display_name: Federal — MACC
+    definition: Multiple Award Construction Contract (DoD/USACE/NAVFAC construction IDIQ).
+    parent_id: federal_idiq
+    aliases:
+      - macc
+    standard_reference: null
+
+  - canonical_id: federal_socc
+    display_name: Federal — SOCC
+    definition: Single Order Construction Contract.
+    parent_id: federal_idiq
+    aliases:
+      - socc
+    standard_reference: null
+
+  - canonical_id: federal_ssac
+    display_name: Federal — SSAC
+    definition: Sources Sought Activity Contract or similar federal small project vehicle.
+    parent_id: null
+    aliases:
+      - ssac
+    standard_reference: null
+
+  - canonical_id: federal_joc
+    display_name: Federal — JOC
+    definition: Federal Job Order Contracting vehicle for rapid construction delivery.
+    parent_id: null
+    aliases:
+      - federal_joc
+    standard_reference: null
+
+  - canonical_id: federal_sabre
+    display_name: Federal — SABER
+    definition: Simplified Acquisition of Base Engineer Requirements (Air Force JOC vehicle).
+    parent_id: null
+    aliases:
+      - saber
+    standard_reference: null
+
+  - canonical_id: federal_aedc
+    display_name: Federal — A-E IDIQ Pool
+    definition: Federal architect-engineer IDIQ pool contract.
+    parent_id: federal_idiq
+    aliases:
+      - ae_idiq
+      - architect_engineer_idiq
+    standard_reference: null
+
+  # ============ STATE / LOCAL VEHICLES ============
+  - canonical_id: state_term_contract
+    display_name: State — Term Contract
+    definition: State multi-year term contract for ongoing or on-call services.
+    parent_id: null
+    aliases:
+      - term_contract
+      - state_term
+    standard_reference: null
+
+  - canonical_id: state_eva
+    display_name: State — eVA (Virginia)
+    definition: Virginia eVA procurement; statewide cooperative procurement system.
+    parent_id: null
+    aliases:
+      - eva
+      - virginia_eva
+    standard_reference: null
+
+  - canonical_id: state_master_agreement
+    display_name: State — Master Agreement
+    definition: State master services agreement, typically renewable annually.
+    parent_id: null
+    aliases:
+      - state_msa
+      - master_agreement
+    standard_reference: null
+
+  - canonical_id: state_idiq
+    display_name: State/Local — IDIQ
+    definition: State or local indefinite delivery contract.
+    parent_id: null
+    aliases:
+      - state_idiq
+      - local_idiq
+    standard_reference: null
+
+  - canonical_id: state_on_call
+    display_name: State/Local — On-Call Contract
+    definition: On-call professional services contract for state, local, or institutional client.
+    parent_id: null
+    aliases:
+      - on_call
+      - on_call_services
+    standard_reference: null
+
+  - canonical_id: cooperative_purchasing
+    display_name: Cooperative Purchasing (Sourcewell, OMNIA, etc.)
+    definition: Cooperative purchasing organization vehicle (Sourcewell, OMNIA Partners, NJPA, etc.).
+    parent_id: null
+    aliases:
+      - sourcewell
+      - omnia
+      - njpa
+      - cooperative_purchasing
+    standard_reference: null
+
+  # ============ COMMERCIAL VEHICLES ============
+  - canonical_id: commercial_msa
+    display_name: Commercial — Master Services Agreement
+    definition: Commercial master services agreement with rolling work orders.
+    parent_id: null
+    aliases:
+      - commercial_msa
+      - msa
+    standard_reference: null
+
+  - canonical_id: commercial_retainer
+    display_name: Commercial — Retainer
+    definition: Ongoing retainer relationship with a private commercial client.
+    parent_id: null
+    aliases:
+      - retainer
+    standard_reference: null
+
+  - canonical_id: commercial_subconsultant
+    display_name: Commercial — Subconsultant Agreement
+    definition: Sub-agreement under a prime designer or contractor (project basis).
+    parent_id: null
+    aliases:
+      - subconsultant
+      - sub_agreement
+    standard_reference: null

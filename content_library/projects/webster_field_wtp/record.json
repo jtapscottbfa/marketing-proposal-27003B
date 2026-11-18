@@ -1,0 +1,458 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "webster_field_wtp",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/webster_field_wtp/B8175 WWTP Pitched Roof Over Drying Bed  SOW.pdf",
+      "type": "sow",
+      "sha256": "e237a19a14460963b90f95471cedafa666721612543fa58dcbd347cc20935f7b",
+      "included": true,
+      "notes": "Bilateral modification document (CLIN 0001 scope addition); contains project name, location, contract number, original and revised contract values and completion dates, scope description"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/webster_field_wtp/20-051.2022.02.14.FINAL SPECS.pdf",
+      "type": "spec_book",
+      "sha256": "b5c11558de0773801839a4e52ba4b55e75828618e30db8025fca652a8f5dadaa",
+      "included": true,
+      "notes": "Final specifications dated March 18 2022; cover page shows Bowman Foster & Associates and BFA project #1613723; sections 03 30 00 (cast-in-place concrete), 06 10 00 (rough carpentry), 07 31 13 (asphalt shingles)"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/webster_field_wtp/20-051.2022.02.11.DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "60a33521324b497b0197c5049fb162353ed59d06a195a25a9fb517239fd6cbe9",
+      "included": true,
+      "page_count": 7,
+      "notes": "7-sheet drawing set dated 2022-02-11; construction contract N40080-19-D-0003; structural engineer of record Marcos Freeman PE MD Lic. 841286; sheets G-001, B-101, S-001, S-002, S-101, S-102, S-201"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "B8175 Modify Wastewater Treatment Plant — Construct Pitched Roof Over Drying Bed",
+      "source": "SOW / Specs cover page",
+      "quote": "B8175 MODIFY WASTEWATER TREATMENT PLANT",
+      "corroboration": [
+        {
+          "source": "SOW",
+          "claim": "WWTP-Construct a Pitched Roof Over Drying Bed",
+          "agrees": true
+        },
+        {
+          "source": "Spec book cover page",
+          "claim": "B8175 MODIFY WASTEWATER TREATMENT PLANT",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "B8175 MODIFY WASTE WATER TREATMENT PLANT",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command – Washington (NAVFAC Washington)",
+      "source": "Drawing G-001 title block",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND – WASHINGTON",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND – WASHINGTON",
+          "agrees": true
+        },
+        {
+          "source": "Drawing B-101 title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND – WASHINGTON",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / NAVFAC Washington",
+      "source": "Drawing G-001 title block",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND – WASHINGTON",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND – WASHINGTON",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "St. Inigoes",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "Webster Field Annex",
+      "facility_address": null,
+      "source": "SOW / Drawing G-001",
+      "quote": "WWTP-Construct a Pitched Roof Over Drying Bed . . . Wastewater Treatment Plant (WWTP) on Webster Field in St. Inigoes, MD",
+      "corroboration": [
+        {
+          "source": "SOW",
+          "claim": "Webster Field in St. Inigoes, MD",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001",
+          "claim": "WEBSTER FIELD ANNEX, ST. INIGOES, MD.",
+          "agrees": true
+        },
+        {
+          "source": "Spec book cover page",
+          "claim": "Webster Field, St. Inigoes, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "1613723",
+      "source": "Spec book cover page",
+      "quote": "Project #1613723",
+      "corroboration": [
+        {
+          "source": "Spec book cover page",
+          "claim": "Project #1613723",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "corroboration": []
+    },
+    "contract_number": {
+      "value": "N40080-19-D-0003",
+      "source": "Drawing G-001 title block",
+      "quote": "CONSTRUCTION CONTRACT NO.: N40080-19-D-0003",
+      "corroboration": [
+        {
+          "source": "Drawing G-001",
+          "claim": "N40080-19-D-0003",
+          "agrees": true
+        },
+        {
+          "source": "SOW",
+          "claim": "N40080-19-D-0003",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW references a task order number but the text is encoded in obfuscated characters in the PDF extraction; cannot reliably read the task order number from available text. Drawing G-001 confirms the IDIQ/MACC base contract N40080-19-D-0003."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Structure is an open outdoor roof shelter over three drying beds, not a conditioned building. Roof plan shows overall footprint approximately 78'-7.5\" × 38'-0\" ≈ 2,989 SF of roof coverage (calculated from drawing dimensions), but this is a sheltered area, not GSF in the traditional sense. No GSF stated in source documents.",
+      "corroboration": []
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "corroboration": []
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA's design fee is not stated in available source documents. Only the construction contract value is documented."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-03-18",
+        "source": "Spec book cover page",
+        "quote": "Final Submittal, March 18, 2022",
+        "notes": "Final specs submission date; represents design completion milestone"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": 750486.62,
+        "currency": "USD",
+        "source": "SOW",
+        "quote": "the contract value for CLIN 0001 increases by $354,874.62 from $395,612.00 to $750,486.62",
+        "corroboration": [
+          {
+            "source": "SOW",
+            "claim": "revised CLIN 0001 value $750,486.62",
+            "value": 750486.62,
+            "agrees": true
+          }
+        ]
+      },
+      "original_contract_value": {
+        "value": 395612.0,
+        "currency": "USD",
+        "source": "SOW",
+        "quote": "the contract value for CLIN 0001 increases by $354,874.62 from $395,612.00 to $750,486.62"
+      },
+      "change_order_value": {
+        "value": 354874.62,
+        "currency": "USD",
+        "source": "SOW",
+        "quote": "the contract value for CLIN 0001 increases by $354,874.62 from $395,612.00 to $750,486.62"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "NTP date not stated in available documents. SOW references RFP dated 2/8/2021 and Contractor's Proposal dated 6/1/2021."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "original_completion_date": {
+        "value": "2021-02-25",
+        "source": "SOW",
+        "quote": "from the current CCD of 25 February 2021 to a revised CCD of 2 June 2022"
+      },
+      "completion_date": {
+        "value": "2022-06-02",
+        "source": "SOW",
+        "quote": "from the current CCD of 25 February 2021 to a revised CCD of 2 June 2022"
+      },
+      "contractual_duration_days": {
+        "value": 363,
+        "source": "SOW",
+        "quote": "This modification extends the period of performance by 363 calendar days from the current CCD of 25 February 2021 to a revised CCD of 2 June 2022"
+      },
+      "change_orders": [
+        {
+          "co_number": "CLIN 0001 Bilateral Modification",
+          "value": 354874.62,
+          "currency": "USD",
+          "date": null,
+          "reason": "scope_addition",
+          "description": "Added scope to construct a permanent pitched roof over drying beds at the WWTP; also extends period of performance 363 calendar days",
+          "source": "SOW",
+          "quote": "The subject task order is hereby modified to compensate the contractor for the following Proposed Changes: C**** - WWTP-Construct a Pitched Roof Over Drying Bed"
+        }
+      ],
+      "actual_value": {
+        "value": 750486.62,
+        "currency": "USD",
+        "source": "computed",
+        "quote": null,
+        "notes": "Per SOW; final contract value after bilateral modification. No further changes documented."
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "utilities_wastewater"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "structural_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "structural_concrete",
+      "structural_timber",
+      "structural_foundation"
+    ],
+    "building_systems": [
+      "envelope_roofing",
+      "envelope_exterior_walls"
+    ],
+    "construction_scope": [
+      "concrete_scope",
+      "wood_rough_carpentry",
+      "thermal_roofing",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_macc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac_washington",
+    "webster_field",
+    "st_inigoes_md",
+    "wwtp",
+    "wastewater_treatment",
+    "drying_bed_cover",
+    "structural_only",
+    "macc_task_order",
+    "wood_truss_roof",
+    "military_federal"
+  ],
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Marcos Freeman, PE",
+      "role_on_project": "structural_engineer_of_record",
+      "license": "Maryland PE Lic. 841286",
+      "source": "Drawing title blocks (all sheets)"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "navfac_drawing_no": "13141921",
+        "title": "COVER SHEET",
+        "discipline": "structural_engineering",
+        "reading_notes": "Cover sheet showing drawing index for 7 sheets. Project title: B8175 MODIFY WASTE WATER TREATMENT PLANT, Webster Field Annex, St. Inigoes, MD. Construction Contract No. N40080-19-D-0003. Vicinity map and location map shown. BFA logo and NAVFAC seal visible. EOR stamp: Marcos Freeman, MD Lic. 841286, dated 2-14-22."
+      },
+      {
+        "sheet_number": "B-101",
+        "navfac_drawing_no": "13141922",
+        "title": "BORING LOGS",
+        "discipline": "geotechnical_engineering",
+        "reading_notes": "Boring logs from Bob Taylor Engineering, Inc. Two boring logs (B-1 and B-2) shown. Boring location plan at 1/8\"=1'-0\" shows three sludge drying beds in a row (approximate footprint ~78' × 38'). Soils include brown silty sand and loose gray sands. Key notes indicate existing building to remain, existing 8\" CMU stem wall foundation, existing concrete slab-on-grade, and existing sand."
+      },
+      {
+        "sheet_number": "S-001",
+        "navfac_drawing_no": "13141923",
+        "title": "GENERAL NOTES",
+        "discipline": "structural_engineering",
+        "reading_notes": "General structural notes, design codes and governing standards, design loads. Key data: ROOF LIVE LOAD = 20 PSF; SNOW LOAD (Pg) = 20 PSF, Exposure Ce = 1.0; WIND: Ultimate design wind speed 105 MPH (ASCE 7, 2nd Gust), Nominal 82 MPH, Risk Category I, Wind Exposure C; SEISMIC: Risk Category I, Ie = 1.0, Seismic Design Category A. Design codes: UFC 1-200-01, UFC 3-301-01 (Architecture), UFC 3-110-05 (Roofing), UFC 3-201-01 (Civil), UFC 3-301-01 (Structural), IBC 2018, ASCE 7, AWC NDS-2015. Foundation: max allowable soil bearing 2,000 PSF (Bob Taylor Engineering geotechnical report). Abbreviations table included. Prefabricated metal-plate-connected wood trusses per TPI design standards; southern pine (SPIB rules), pressure treated, MC ≤15%."
+      },
+      {
+        "sheet_number": "S-002",
+        "navfac_drawing_no": "13141924",
+        "title": "TYPICAL DETAILS",
+        "discipline": "structural_engineering",
+        "reading_notes": "Typical structural connection details. Includes: typical concrete pier and footing detail (4\"×4\" sq. pier, 4'-6\"×4'-6\"×1'-0\" footing, #6 vert. bars); typical plywood diaphragm detail; typical multi-ply LVL beam connection detail; typical beam-to-post connection details (1/2\" galv. steel plates, 3/4\" thru bolts); typical brace-to-king truss connection detail (8×8 P.T. brace). All structure open — no side walls or panels. Confirms A-frame design."
+      },
+      {
+        "sheet_number": "S-101",
+        "navfac_drawing_no": "13141925",
+        "title": "FOUNDATION PLAN",
+        "discipline": "structural_engineering",
+        "reading_notes": "Partial foundation plan at 1/4\"=1'-0\". Overall footprint: 78'-7.5\" (width across 4 column lines) × 38'-0\" (depth). Column bay spacings: 2'-7.5\" + 23'-11.5\" + 29'-10.5\" + 24'-9.5\" + 2'-7.5\" = 83'-6.5\" (with overhang adjustments). New 2\"–4\"× concrete piers on 4'-6\"×4'-6\"×1'-0\" concrete footings at each post location. 12×12 pressure-treated posts. Existing CMU stem walls, slab-on-grade, and concrete light pole pier noted to remain. No roof area tabulation shown."
+      },
+      {
+        "sheet_number": "S-102",
+        "navfac_drawing_no": "13141926",
+        "title": "ROOF FRAMING PLAN",
+        "discipline": "structural_engineering",
+        "reading_notes": "Roof framing plan at 1/4\"=1'-0\". Overall roof framing span: 78'-7.5\" × 38'-0\". LVL beams: (5)-1 3/4\"×18\" LVL along each column line (top and bottom chord). Rafters: 2× (pressure treated) wood trusses, equally spaced not to exceed 24\" o.c. King trusses at each interior column line (3-ply king truss). 8×8 braces at each post. 5 rows of trusses across width — 4 bays spanning three drying beds. Roof ridge at centerline. Confirms open structure, no walls."
+      },
+      {
+        "sheet_number": "S-201",
+        "navfac_drawing_no": "13141927",
+        "title": "SECTIONS",
+        "discipline": "structural_engineering",
+        "reading_notes": "Four cross-sections at 1\"=1'-0\" (B1, B3 at ends; A1, A3 at interior). Key dimension: 16'-5\" from top of concrete slab to underside of beam/truss assembly (eave height ~14'-4\" above slab based on 4:12 pitch and 12 unit run). Roof pitch confirmed 4:12 (3-unit rise over 12 units with 12 labeled). Continuous aluminum gutter on both sides. 3/4\" roof sheathing with asphalt shingles. 1/2\" galv. steel connection plates at truss-to-beam. Simpson Strong-Tie H55 hurricane clips on all trusses. 8×8 P.T. braces at each post for lateral stability. Open structure — no enclosure."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Open outdoor shelter structure — not a conditioned building. Roof coverage area approximately 78.6 ft × 38 ft ≈ 2,987 SF derived from drawing dimensions, but this is not conventionally reported as GSF."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "Drawing S-102 (Roof Framing Plan), S-201 (Sections)",
+        "quote": null,
+        "notes": "Single-story open shelter structure covering existing slab-on-grade drying beds."
+      },
+      "structure_footprint_sf": {
+        "value": 2987,
+        "unit": "sf",
+        "source": "Drawing S-102 (Roof Framing Plan) — calculated from stated dimensions",
+        "quote": null,
+        "notes": "78'-7.5\" × 38'-0\" ≈ 2,987 SF overall roof footprint (three drying beds covered). Approximate — drawings are to scale reductions; graphic scale must be used."
+      },
+      "structure_dimensions": {
+        "width": "78'-7.5\"",
+        "depth": "38'-0\"",
+        "eave_height_min": "14 ft",
+        "roof_pitch": "4:12",
+        "source": "Drawings S-101, S-102, S-201 and SOW",
+        "quote": "Minimum Eave height of 14 feet off existing concrete slab"
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Drawing G-001",
+          "value": "B8175 MODIFY WASTE WATER TREATMENT PLANT"
+        },
+        {
+          "source": "Spec book cover page",
+          "value": "B8175 MODIFY WASTEWATER TREATMENT PLANT"
+        }
+      ],
+      "resolution_chosen": "Spec book cover page",
+      "rationale": "Minor formatting difference (WASTE WATER vs. WASTEWATER); both refer to the same project. Spec book uses the more standard compound form. Not a material conflict."
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "lpd_nns_welding_services",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/lpd_nns_welding_services/24-052.LPD.NNS.WELDING.SERVICES.ELECTRICAL.SHEET.E-501.DETAILS.pdf",
+      "type": "drawing_set",
+      "sha256": "1d6216a0d1341ea7d1619f6dbeedecd4f45bcb631943efe1121f714c446f8c27",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet electrical drawing set. Sheet E-501, DETAILS. Only source document present for this project."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "LPD NNS Welding Services",
+      "source": "drawing E-501 title block",
+      "quote": "LPD NNS WELDING SERVICES",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "LPD NNS WELDING SERVICES",
+          "value": "LPD NNS Welding Services",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Newport News Shipbuilding (Huntington Ingalls Industries)",
+      "source": "drawing E-501 title block",
+      "quote": null,
+      "notes": "Client abbreviation 'NNS' in drawing title inferred as Newport News Shipbuilding / Huntington Ingalls Industries. No formal client name text block present; project number and contract number fields are redacted (XXXXXX).",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "NNS (abbreviation in project title)",
+          "value": "Newport News Shipbuilding (Huntington Ingalls Industries)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Newport News Shipbuilding (Huntington Ingalls Industries)",
+      "source": "drawing E-501 title block",
+      "quote": null,
+      "notes": "Same as client_name; inferred from 'NNS' abbreviation."
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "drawing E-501 title block",
+      "quote": "NORFOLK",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "NORFOLK (location stamp in title block side bar)",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-052",
+      "source": "drawing E-501 title block",
+      "quote": "24-052",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "24-052 (upper right corner of title block)",
+          "value": "24-052",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "notes": "Project number field in title block shows redacted placeholder 'XXXXXX-XX'."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Contract number field in title block shows redacted placeholder 'XXX-XXXXXXXXX'."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Single electrical detail sheet; no building area or site area indicated. Project is a power distribution infrastructure installation, not a building."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "design_completion_date": {
+      "value": "2024-08-27",
+      "source": "drawing E-501 title block",
+      "quote": "Aug 27, 2024",
+      "notes": "Drawing date from title block. Taken as design/issue date; actual contract award or construction dates not documented.",
+      "corroboration": [
+        {
+          "source": "drawing E-501 title block",
+          "claim": "Aug 27, 2024 (drawing date field)",
+          "value": "2024-08-27",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-08-27",
+        "source": "drawing E-501 title block",
+        "quote": "Aug 27, 2024",
+        "notes": "Drawing issue date used as proxy for design completion; no explicit contract completion date available."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial_manufacturing"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_emergency_power"
+    ],
+    "building_systems": [
+      "electrical_service",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "newport_news_shipbuilding",
+    "hii_nns",
+    "shipyard",
+    "welding_power",
+    "lpd",
+    "norfolk",
+    "industrial_electrical",
+    "34kv_primary_service",
+    "480v_distribution"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "EAO",
+      "role_on_project": "designer_of_record_initials"
+    },
+    {
+      "name": "MRD",
+      "role_on_project": "project_engineer_checker_initials"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-501",
+        "title": "DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Single-sheet electrical detail set for LPD NNS Welding Services. Contains four distinct diagrams: (1) ONE LINE DIAGRAM — depicts 34.5kV overhead 3φ 4W primary service feeding through a fused cutout (60A USLD) and 27kV arrestors to a pad-mounted MU12 transformer (4000/3 main, 85kV insulation), then to a 4000A, 277/480V, NEMA 3R main switchboard with multiple 800A/3 main breakers and 400A/3 branch breakers plus spares, distributing via 10 4-inch conduits (including 2 spares) to 7 service rack locations. (2) TRANSFORMER SWITCHBOARD — plan/elevation view of pad-mounted transformer and associated NEMA 3R 4000A, 480/277V, 3φ, 4W switchboard on concrete pad. (3) SERVICE RACK TYPICAL 6 — detail of 400A, 277/480V, 3φ, 4W panelboard on exterior plywood/treated-post rack with four 100A breakers serving 200A outlets (two) and 100A outlets (two); note flags rack may use owner-furnished transformer. (4) SERVICE LOCATIONS 1-7 — right-panel detail showing 400A panelboard serving 200A RS 3φ 4W outlets (typ of 2) and 100A RS 3φ 4W outlets (typ of 4) via discrete branch breakers, panel wall-mounted on plywood backboard. SIDE VIEW CONDUIT RACK detail also shown: 4-inch PVC conduits on galvanized strut supports from grade. All details are NO SCALE. Drawing is stamped with Virginia PE seal (Bowman Foster & Associates). Title block shows BFA project no. 24-052, date Aug 27, 2024, drawn EAO, checked/project engineer MRD. Contract and client project numbers redacted."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No building area on this drawing; project is outdoor/industrial electrical infrastructure."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — outdoor power distribution installation."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": [],
+        "electrical": [
+          "34.5kV overhead primary service, 3φ, 4W",
+          "Fused cutout (USLD) at 60A",
+          "27kV surge arrestors",
+          "Pad-mounted transformer MU12, 4000/3 main, 85kV — 34,500/480-277V",
+          "Main switchboard: 4000A, 277/480V, NEMA 3R, 3φ, 4W (SW Switchboard)",
+          "Multiple 800A/3 main breakers and 400A/3 branch breakers in switchboard",
+          "10 runs of 4-inch conduit from switchboard to 7 service rack locations (2 conduit spares)",
+          "Service Rack Typical (7 locations): 400A, 277/480V, 3φ, 4W panelboards",
+          "200A RS 3φ, 4W outlets (welding receptacles) — typ 2 per rack at several locations",
+          "100A RS 3φ, 4W outlets — typ 4 per rack at several locations",
+          "Exterior plywood backboards and 4×4 salt-treated wood post mounting structures",
+          "15/8-inch galvanized strut conduit supports on conduit rack"
+        ]
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": []
+}

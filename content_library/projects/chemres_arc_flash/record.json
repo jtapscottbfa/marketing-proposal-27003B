@@ -1,0 +1,589 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "chemres_arc_flash",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/chemres/chemres_arc_flash/22-005.2022.08.03.FINAL STUDY REPORT.pdf",
+      "type": "report",
+      "sha256": "b8c864118cfafc9aac2d241a84c7f0147ddb342e1d8fe6811742997b04d93eb6",
+      "included": true,
+      "notes": "Power Systems Study Final Report — Short Circuit, Coordination, and Arc Flash Study; BFA project number 22-005; dated August 3, 2022"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/chemres/chemres_arc_flash/22-005.2022.08.03.FINAL ONE-LINE DIAGRAM DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "0e5658937f661714abc6c07e76096c4af951fb8ba3e72fa9ac64bb4bd5db7134",
+      "included": true,
+      "notes": "Final One-Line Diagram Drawings, 12 sheets (F-601 through F-612), dated 08/03/22; drawing set title: 'One-Line Diagram Input Data'"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only source documents are the Final Study Report and One-Line Diagram Drawings. No BOD, SOW, contract, or narrative documents present. All facts derive from the study report and drawings."
+  },
+  "facts": {
+    "project_name": {
+      "value": "CHEMRES Chemical Plant Arc Flash, Short Circuit, and Coordination Study",
+      "source": "Study Report cover page",
+      "quote": "POWER SYSTEMS STUDY ... Prepared for: CHEMRES CHESAPEAKE, VIRGINIA ... FINAL STUDY AUGUST 3, 2022",
+      "corroboration": [
+        {
+          "source": "Study Report cover page",
+          "claim": "POWER SYSTEMS STUDY ... CHEMRES ... CHESAPEAKE, VIRGINIA ... FINAL STUDY AUGUST 3, 2022",
+          "value": "CHEMRES Chemical Plant Arc Flash, Short Circuit, and Coordination Study",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601 title block",
+          "claim": "CHEMRES ARC FLASH STUDY — ONE-LINE DIAGRAM INPUT DATA",
+          "value": "CHEMRES Chemical Plant Arc Flash, Short Circuit, and Coordination Study",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "CHEMRES",
+      "source": "Study Report cover page",
+      "quote": "Prepared for: CHEMRES CHESAPEAKE, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "Study Report cover page",
+          "claim": "Prepared for: CHEMRES CHESAPEAKE, VIRGINIA",
+          "value": "CHEMRES",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601 title block",
+          "claim": "CHEMRES (project title)",
+          "value": "CHEMRES",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "CHEMRES",
+      "source": "Study Report cover page",
+      "quote": "Prepared for: CHEMRES CHESAPEAKE, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "Study Report cover page",
+          "claim": "Prepared for: CHEMRES CHESAPEAKE, VIRGINIA",
+          "value": "CHEMRES",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "facility_name": "CHEMRES Chemical Plant",
+      "source": "Study Report cover page",
+      "quote": "CHEMRES CHESAPEAKE, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "Study Report cover page",
+          "claim": "CHEMRES CHESAPEAKE, VIRGINIA",
+          "value": "Chesapeake, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-005",
+      "source": "Study Report filename and arc flash study table header",
+      "quote": "Project: 22-005 CHEMRES ARC FLASH STUDY",
+      "corroboration": [
+        {
+          "source": "Study Report IEEE 1584 Bus Report header",
+          "claim": "Project: 22-005 CHEMRES ARC FLASH STUDY, Base Project",
+          "value": "22-005",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601 title block",
+          "claim": "22-005 (drawing number prefix)",
+          "value": "22-005",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "This is an electrical engineering study — building square footage is not relevant and not documented."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "study_date": {
+      "value": "2022-08-03",
+      "source": "Study Report cover page and drawing title block",
+      "quote": "FINAL STUDY AUGUST 3, 2022",
+      "corroboration": [
+        {
+          "source": "Study Report cover page",
+          "claim": "FINAL STUDY AUGUST 3, 2022",
+          "value": "2022-08-03",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601 title block",
+          "claim": "08/03/22",
+          "value": "2022-08-03",
+          "agrees": true
+        }
+      ]
+    },
+    "service_voltage": {
+      "value": "34500V (34.5 kV)",
+      "source": "Study Report, Study Input Data section",
+      "quote": "Rated Max kV ... 34,500",
+      "corroboration": [
+        {
+          "source": "Study Report Introduction",
+          "claim": "Westinghouse Power Circuit Breaker/Switch, Type 345GS1500 at 34500 kV, 1200 Rated Continuous Amperes fed from Dominion Power",
+          "value": "34500V (34.5 kV)",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601, utility service entry",
+          "claim": "DOM PWR SW — FrameVoltage 34500.0V",
+          "value": "34500V (34.5 kV)",
+          "agrees": true
+        }
+      ]
+    },
+    "utility_provider": {
+      "value": "Dominion Power",
+      "source": "Study Report Introduction",
+      "quote": "fed from Dominion Power",
+      "corroboration": [
+        {
+          "source": "Study Report Introduction",
+          "claim": "fed from Dominion Power",
+          "value": "Dominion Power",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601, one-line diagram",
+          "claim": "DOMINION POWER (label at top of one-line)",
+          "value": "Dominion Power",
+          "agrees": true
+        }
+      ]
+    },
+    "transformer_count": {
+      "value": 5,
+      "source": "Study Report Introduction",
+      "quote": "This substation feeds five step-down 1151 KVA 34500V-480V transformers",
+      "corroboration": [
+        {
+          "source": "Study Report Introduction",
+          "claim": "five step-down 1151 KVA 34500V-480V transformers",
+          "value": 5,
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601",
+          "claim": "Five transformers shown: Sub B, Sub A, Sub C, Sub 6C, Sub E1",
+          "value": 5,
+          "agrees": true
+        }
+      ]
+    },
+    "transformer_sizes": {
+      "value": "Four 1151 kVA (34.5kV–480V) and one 1500 kVA (34.5kV–480V)",
+      "source": "Study Report Introduction and Drawing F-601",
+      "quote": "five step-down 1151 KVA 34500V-480V transformers",
+      "notes": "Drawing F-601 shows Sub E1 as 1500 KVA XFMR; the report introduction states 'five step-down 1151 KVA' but drawing confirms Sub E1 is 1500 KVA — minor conflict flagged.",
+      "corroboration": [
+        {
+          "source": "Study Report Introduction",
+          "claim": "five step-down 1151 KVA 34500V-480V transformers",
+          "value": "Five 1151 kVA transformers",
+          "agrees": false
+        },
+        {
+          "source": "Drawing F-601 input data",
+          "claim": "1151 KVA XFMR SUB B, SUB A, SUB C, SUB 6C (four transformers); 1500 KVA XFMR SUB E1 (one transformer)",
+          "value": "Four 1151 kVA + one 1500 kVA",
+          "agrees": true
+        },
+        {
+          "source": "Study Report Input Data table",
+          "claim": "S Size 1500 kVA for Sub E1",
+          "value": "Four 1151 kVA + one 1500 kVA",
+          "agrees": true
+        }
+      ]
+    },
+    "equipment_evaluation_result": {
+      "value": "No equipment failed the evaluation",
+      "source": "Study Report, Equipment Evaluation Report section",
+      "quote": "no pieces of equipment were found to have failed the evaluation",
+      "corroboration": [
+        {
+          "source": "Study Report Equipment Evaluation Report section",
+          "claim": "no pieces of equipment were found to have failed the evaluation",
+          "value": "All passed",
+          "agrees": true
+        },
+        {
+          "source": "Study Report Introduction",
+          "claim": "No equipment was found to have failed the Equipment Evaluation",
+          "value": "All passed",
+          "agrees": true
+        }
+      ]
+    },
+    "arc_flash_labels_count": {
+      "value": 35,
+      "source": "Study Report, Arc Flash Labels section (count of labeled equipment locations)",
+      "quote": null,
+      "notes": "Counted from arc flash label pages: 35 labeled equipment locations including BUS DUCT C (highest incident energy: 61.9 cal/cm2 at maximum trip time), E/W SUB A (64.8 cal/cm2), E/W SUB B (61.2 cal/cm2).",
+      "corroboration": [
+        {
+          "source": "Study Report IEEE 1584 Bus Report table",
+          "claim": "Labels #0001 through #0035 plus additional unlabeled entries",
+          "value": 35,
+          "agrees": true
+        }
+      ]
+    },
+    "highest_incident_energy": {
+      "value": "64.8 cal/cm2 at E/W SUB A (maximum trip time at 2.0 seconds)",
+      "source": "Study Report IEEE 1584 Bus Report",
+      "quote": "MaxTripTime @2.0s ... 64.8 (*N2) (*N9)",
+      "notes": "Multiple buses with extremely high incident energy due to MaxTripTime condition. E/W Sub A: 64.8 cal/cm2, Bus Duct C: 61.9 cal/cm2, E/W Sub B: 61.2 cal/cm2 — all requiring full arc flash suit PPE.",
+      "corroboration": [
+        {
+          "source": "Study Report Arc Flash Labels section",
+          "claim": "E/W SUB A: 218 in arc flash boundary, 64.8 cal/cm2",
+          "value": "64.8 cal/cm2",
+          "agrees": true
+        }
+      ]
+    },
+    "study_software": {
+      "value": "SKM Power Tools",
+      "source": "Study Report Introduction",
+      "quote": "generate a model of the system using SKM Power Tools",
+      "corroboration": [
+        {
+          "source": "Study Report Introduction",
+          "claim": "generate a model of the system using SKM Power Tools",
+          "value": "SKM Power Tools",
+          "agrees": true
+        },
+        {
+          "source": "Study Report Equipment Evaluation Report footer",
+          "claim": "SKM disclaims responsibility or liability from use and interpretation of this report.",
+          "value": "SKM Power Tools",
+          "agrees": true
+        }
+      ]
+    },
+    "standards_applied": {
+      "value": [
+        "OSHA",
+        "IEEE Std 1584-2018",
+        "NFPA 70-2022",
+        "NFPA 70E-2021"
+      ],
+      "source": "Study Report Arc Flash Evaluation section",
+      "quote": "Various industry standards have been recently expanded to include certain requirements ... OSHA ... IEEE Std 1584b ... NFPA 70-2022 ... NFPA 70E-2021",
+      "corroboration": [
+        {
+          "source": "Study Report Arc Flash Evaluation section",
+          "claim": "Five industry standards also address the issue of arc flash hazards: OSHA, IEEE Std 1584b, NFPA 70-2022, NFPA 70E-2021",
+          "value": [
+            "OSHA",
+            "IEEE Std 1584-2018",
+            "NFPA 70-2022",
+            "NFPA 70E-2021"
+          ],
+          "agrees": true
+        }
+      ]
+    },
+    "total_plant_load": {
+      "value": "2556.2 kW / 2091.4 kVAR",
+      "source": "Study Report One-Line Diagram — Power Load Flow Data",
+      "quote": "2556.2 kW ... 2091.4 kVAR ... ubLF PQ",
+      "corroboration": [
+        {
+          "source": "Study Report One-Line Diagram Power Load Flow Data section",
+          "claim": "DOMINION POWER — 2556.2 kW, 2091.4 kVAR",
+          "value": "2556.2 kW / 2091.4 kVAR",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_role_description": {
+      "value": "Engineer of Record — performed power systems study including short circuit analysis, coordination study, equipment evaluation, and arc flash hazard analysis",
+      "source": "Study Report Introduction",
+      "quote": "Bowman, Foster & Associates, Inc. (BFA) was tasked with performing an arc flash study on the electrical distribution system for the CHEMRES Chemical Plant in Chesapeake, Virginia.",
+      "corroboration": [
+        {
+          "source": "Study Report Introduction",
+          "claim": "Bowman, Foster & Associates, Inc. (BFA) was tasked with performing an arc flash study ... The short circuit, coordination, and arc flash study included ...",
+          "value": "Engineer performing power systems study",
+          "agrees": true
+        },
+        {
+          "source": "Drawing F-601 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC — 6353 Center Dr, Suite 101 — Norfolk, VA 23502",
+          "value": "BFA as engineer of record",
+          "agrees": true
+        }
+      ]
+    },
+    "completion_date": {
+      "value": "2022-08-03",
+      "source": "Study Report cover page",
+      "quote": "FINAL STUDY AUGUST 3, 2022",
+      "corroboration": [
+        {
+          "source": "Study Report cover page",
+          "claim": "FINAL STUDY AUGUST 3, 2022",
+          "value": "2022-08-03",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block",
+          "claim": "08/03/22",
+          "value": "2022-08-03",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-08-03",
+        "source": "Study Report cover page",
+        "quote": "FINAL STUDY AUGUST 3, 2022"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "missing",
+      "notes": "Not applicable — this is a study/report project only; no construction phase."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_service"
+    ],
+    "construction_scope": [],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "study_only"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "arc_flash_study",
+    "power_systems_study",
+    "chesapeake_va",
+    "chemical_plant",
+    "private_industrial",
+    "short_circuit_study",
+    "coordination_study",
+    "ieee_1584",
+    "nfpa_70e",
+    "skm_power_tools",
+    "dominion_power"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "RFD",
+      "role_on_project": "project_engineer",
+      "notes": "Initials 'RFD' appear in drawing F-601 title block as 'Drawn by', 'Project Engineer'. Full name unknown from source documents."
+    },
+    {
+      "name": "RP",
+      "role_on_project": "checker",
+      "notes": "Initials 'RP' appear in drawing F-601 title block as 'Checked by'. Full name unknown."
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "F-601",
+        "title": "ONE-LINE DIAGRAM INPUT DATA — Sheet 1 of 12",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Overall one-line diagram showing utility service (Dominion Power at 34.5 kV), main substation switch (Westinghouse Type 345GS1500, 1200A, 34.5 kV), five step-down transformers (Sub B, Sub A, Sub C, Sub 6C as 1151 kVA each; Sub E1 as 1500 kVA), 38 kV gas switches on transformer primaries, and secondary bus distribution at 480V. Three main buses shown: E/W Sub B, E/W Sub A (with 3200A and 2400A main breakers), and Sub 6C. Shows beginning of 1600A bus duct (W) branch feeding Bus Duct A loads. ECB load (110A) shown on right branch. Drawing shows input data for all cable sizes, transformer impedances, and breaker ratings. Discrepancy between report narrative ('five 1151 KVA transformers') and drawing (Sub E1 is 1500 KVA) — flagged in corroboration."
+      },
+      {
+        "sheet_number": "F-602",
+        "title": "ONE-LINE DIAGRAM INPUT DATA — Sheet 2 of 12",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of one-line diagram showing 1600A Bus Duct (W) load distribution: MCC 14, PNL HVPB, MCC 7, E1 CC, MCC 12, MCC 8, MCC 9, MCC 10, NRM 4C/5C, MCC 11, MFM15, MM5CC, E5 GALA, E5 EXT, MFCRL PNL, and Bus Duct C with 800A MCB (MCC #13 via Bus Duct C sub-distribution). PNL A and PNL A1 (Chillers C1, C1-A and pumps). PNL FL with E-5 DC motor (500 hp shown). PNL PH. Multiple downstream MCCs, sub-panels, and transformers shown. Very complex distribution system consistent with large industrial chemical plant with multiple production areas (Extruders E1-E5, film line, gel machine, pulverizer, blowers, etc.). Plant lighting panels, level 1/2/3 panels (LVLP1/2/3), Lab Panel, Pilot Room MCC."
+      },
+      {
+        "sheet_number": "F-603 through F-612",
+        "title": "ONE-LINE DIAGRAM CONTINUATION — Sheets 3–12 of 12",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Sheets 3–12 not rendered; they contain detailed branch circuit data for specific production areas, MCC downstream loads, and the remainder of the 12-sheet drawing set. Based on sheet 1–2 context, these sheets contain sub-distribution for the nine remaining substations and MCC sections covering chemical production equipment (extruders, bag house, conveyors, pneumatic blowers, chillers, lab equipment, pilot room). Not rendered due to drawing cap; key system-level facts fully captured from sheets 1–2 and the study report."
+      }
+    ],
+    "facts_derived": {
+      "service_voltage": {
+        "value": "34500V (34.5 kV)",
+        "unit": null,
+        "source": "Drawing F-601",
+        "quote": null,
+        "sheets": [
+          "F-601"
+        ]
+      },
+      "main_breaker_rating": {
+        "value": "1200A continuous, 22,000A short circuit, 34.5 kV",
+        "unit": null,
+        "source": "Drawing F-601, Study Report Input Data table",
+        "quote": null,
+        "sheets": [
+          "F-601"
+        ]
+      },
+      "distribution_voltage": {
+        "value": "480V (primary distribution), 240V and 208V (secondary/transformer secondaries)",
+        "unit": null,
+        "source": "Drawing F-601 and F-602",
+        "quote": null,
+        "sheets": [
+          "F-601",
+          "F-602"
+        ]
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "34.5 kV utility service from Dominion Power via Westinghouse 345GS1500 power circuit breaker (1200A)",
+          "Five 34.5kV–480V step-down transformers: (4×) 1151 kVA + (1×) 1500 kVA",
+          "38 kV gas switches (Cutler-Hammer WLI, 600A, 25 kA interrupting) at each transformer primary",
+          "1600A bus duct (W) at 480V (East/West Sub B)",
+          "3200A bus duct at 480V (East/West Sub A)",
+          "Bus Duct C at 480V with 800A MCB to MCC #13",
+          "13 Motor Control Centers (MCC 7, 8, 9, 10, 11, 12, 13, 14, 15 Pilot Rm, and MCC section for E5)",
+          "Multiple distribution panels: PNL A/A1 (chillers), PNL FL, PNL PH, PNL HVPB, PNL WH, PNL LVLP1/2/3, PNL LP1, PNL LVPB, PNL PP21, LTG PNL VEST, LAB PNL, 800A Main Dist PNL, Breakroom Panel, Plant Lights Panel, Emergency Power Panels (EMER PWR CKT PNL #2, EMER PNL 1)",
+          "Emergency transfer switch (40A/3P ATS) with 30kVA transformer",
+          "500 hp motor (E-5 DC) — largest single motor identified",
+          "Multiple chillers (Chiller C1, C1-A, Vkat Chiller)",
+          "Pulverizer with 400A fused disconnect switch"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.transformer_sizes",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Study Report Introduction",
+          "value": "Five 1151 KVA transformers (34500V–480V)"
+        },
+        {
+          "source": "Drawing F-601 and Study Report Input Data section",
+          "value": "Four 1151 KVA + one 1500 KVA transformer (Sub E1)"
+        }
+      ],
+      "resolution_chosen": "Drawing F-601 and Study Report Input Data section",
+      "rationale": "The narrative introduction overstates uniformity — all five are listed as '1151 KVA' but the Study Input Data and drawings clearly show Sub E1 is 1500 KVA (Z 6.2703% vs 5.7054% for others). The drawings and tabular data are more authoritative than the prose summary."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "22-001",
+    "status": "present_with_value",
+    "source": "Design Analysis cover page",
+    "quote": "BFA Project No.: 22-001"
+  },
+  "project_slug": "dc_or_chiller_replacement",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/veterans_affairs/dc_or_chiller_replacement/2025.03.10 OR CHILLER Design Analysis.pdf",
+      "type": "report",
+      "sha256": "519d6bba3e4bf5beebe7150f26425fa319fd2df14a01c5d718bf080a98055245",
+      "page_count": 6,
+      "included": true,
+      "notes": "Single PDF containing two concatenated design analyses: (1) OR Chiller Replacement cover page only (no chiller body text in this file) and (2) Roof Fall Protection Design Analysis, Final, 3/03/2025. BFA Project No. 22-001, VA Project No. 688-22-004."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "has_report": true,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only one document present: a 6-page design analysis report combining a chiller replacement cover page and a roof fall protection design analysis. No BOD, SOW, specs, or separate drawings. The chiller replacement component has no body text in this PDF — cover page only. The fall protection analysis is the substantive content."
+  },
+  "facts": {
+    "project_name": {
+      "value": "OR Chiller Replacement — VAMC Washington D.C.",
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "OR CHILLER REPLACEMENT\n\nVAMC Washington D.C.",
+      "corroboration": [
+        {
+          "source": "Design Analysis cover page (p.1)",
+          "claim": "OR CHILLER REPLACEMENT / VAMC Washington D.C.",
+          "value": "OR Chiller Replacement — VAMC Washington D.C.",
+          "agrees": true
+        },
+        {
+          "source": "Roof Fall Protection cover page (p.2)",
+          "claim": "ROOF FALL PROTECTION / PROJECT # 688-22-004 / VAMC, Washington DC",
+          "value": "Roof Fall Protection — VAMC Washington DC",
+          "agrees": false,
+          "note": "Second document in same PDF has different title; same VA project number. Folder slug references chiller replacement. Both scopes appear to be under BFA Project 22-001."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Veterans Affairs — VA Medical Center, Washington D.C.",
+      "source": "Design Analysis cover page (p.1); Roof Fall Protection cover page (p.2)",
+      "quote": "VAMC Washington D.C.",
+      "corroboration": [
+        {
+          "source": "Design Analysis cover page (p.1)",
+          "claim": "VAMC Washington D.C.",
+          "value": "VA Medical Center Washington D.C.",
+          "agrees": true
+        },
+        {
+          "source": "Roof Fall Protection cover page (p.2)",
+          "claim": "VAMC, Washington DC",
+          "value": "VA Medical Center Washington DC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs — VA Medical Center, Washington D.C.",
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "VAMC Washington D.C."
+    },
+    "location": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "facility_name": "VA Medical Center Washington D.C.",
+      "facility_address": {
+        "value": null,
+        "status": "missing"
+      },
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "VAMC Washington D.C."
+    },
+    "project_number_internal": {
+      "value": "22-001",
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "BFA Project No.: 22-001"
+    },
+    "project_number_client": {
+      "value": "688-22-004",
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "Project No.: 688-22-004"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "Gross building SF not stated in available documents. Roof area served by fall protection railing is approximately 7,300 LF perimeter, but building GSF not derivable from this."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "scope_summary": {
+      "value": "Two-scope project under one project number: (1) OR Chiller Replacement — replacement of operating room chiller at VAMC Washington D.C. (cover page only; no chiller body text in available document); (2) Roof Fall Protection Design Analysis — identification of all locations requiring fall protection along Building 1 and Building 6 roof areas, totaling approximately 7,300 LF of required railing, with structural analysis and railing system recommendations.",
+      "source": "Design Analysis cover page (p.1); Roof Fall Protection Analysis body text",
+      "quote": "The scope of this project is to identify all locations along the Building 1 and Building 6 Roof areas where fall protection is required. The study is intended to identify locations, quantities, and types of fall protection required for complete railing installation across the entire scope area, as well as provide a general fall protection construction document sheet for provision to and Designers or Contractors who will be performing design or construction work near fall risk areas in the scope location."
+    },
+    "railing_linear_footage": {
+      "value": 7300,
+      "unit": "lf",
+      "source": "Roof Fall Protection Design Analysis body text",
+      "quote": "The total linear length of railing required is approximately 7300 lf."
+    },
+    "roof_structure": {
+      "value": "10-inch thick reinforced concrete slabs with calculated allowable live loads over 100 psf",
+      "source": "Roof Fall Protection Design Analysis, Structural Considerations section",
+      "quote": "All roof structures within the scope area are constructed using 10\" thick reinforced concrete slabs, likely originally designed for future vertical expansion, with calculated allowable live leads over 100 psf."
+    },
+    "roof_systems_present": {
+      "value": [
+        "Ballast (weighted rock/pebble on membrane)",
+        "TPO (thermoplastic polyolefin)",
+        "EPDM (ethylene propylene diene terpolymer)"
+      ],
+      "source": "Roof Fall Protection Design Analysis, Structure, Roof Type and Recommendations section",
+      "quote": "The primary roofing systems encountered were: \"Ballast\": a large ballast system (weighted rocks/pebbles) on felt fabric... \"TPO\": (thermoplastic polyolefin) is a single-ply white membrane... \"EPDM\": (ethylene propylene diene terpolymer) is an extremely durable synthetic rubber roofing membrane..."
+    },
+    "submittal_date": {
+      "value": "2025-03-10",
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "FINAL SUBMITTAL\nMarch 10, 2025"
+    },
+    "fall_protection_submittal_date": {
+      "value": "2025-03-03",
+      "source": "Roof Fall Protection Design Analysis footer",
+      "quote": "3/03/2025"
+    },
+    "design_codes": {
+      "value": [
+        "IBC 2024",
+        "OSHA Standard 1926 / 29 CFR",
+        "VA TIL",
+        "ASCE 7-22"
+      ],
+      "source": "Roof Fall Protection Design Analysis, Design Criteria section",
+      "quote": "IBC (International Building Code) 2024 Edition\nOSHA (Occupational Safety and Health Administration) - Standard 1926 / 29 CFR\nVA Technical Information Library (TIL)\nASCE 7-22 Minimum Design Loads and Associated Criteria for Buildings and Other Structures"
+    },
+    "sdvosb_status": {
+      "value": "SDVOSB (Service-Disabled Veteran-Owned Small Business) company",
+      "source": "Design Analysis cover page (p.1); Roof Fall Protection cover page (p.2)",
+      "quote": "SDVOSB COMPANY"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-03-10",
+        "source": "Design Analysis cover page (p.1)",
+        "quote": "FINAL SUBMITTAL\nMarch 10, 2025"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "structural_engineering",
+      "mechanical_engineering"
+    ],
+    "sub_disciplines": [
+      "structural_existing_assessment",
+      "hvac_central_plant"
+    ],
+    "building_systems": [
+      "envelope_roofing",
+      "hvac_chilled_water"
+    ],
+    "construction_scope": [
+      "thermal_roofing",
+      "mechanical_hvac"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_sdvosb"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "description": "BFA is listed as SDVOSB company on all document headers. No subcontractor socioeconomic participation data available in source documents.",
+      "proposed_pct": null,
+      "final_pct": null,
+      "source": "Design Analysis cover page (p.1)",
+      "quote": "SDVOSB COMPANY"
+    }
+  ],
+  "tenant_freeform_tags": [
+    "vamc_washington_dc",
+    "va_medical_center",
+    "fall_protection",
+    "roof_fall_protection",
+    "or_chiller",
+    "chiller_replacement",
+    "sdvosb",
+    "federal_va",
+    "washington_dc"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Design Analysis cover page (p.1)",
+          "value": "OR Chiller Replacement — VAMC Washington D.C."
+        },
+        {
+          "source": "Roof Fall Protection cover page (p.2)",
+          "value": "Roof Fall Protection — VAMC Washington DC (Project #688-22-004)"
+        }
+      ],
+      "resolution_chosen": "Design Analysis cover page (p.1)",
+      "rationale": "The intake folder is named dc_or_chiller_replacement, which matches the cover page title. Both documents share VA Project No. 688-22-004 and BFA Project No. 22-001, suggesting this is a single multi-scope project. The chiller replacement is the primary project name; fall protection is a companion scope item under the same project number."
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "p.1",
+        "title": "OR Chiller Replacement — Cover Page",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Cover page only. Project: OR CHILLER REPLACEMENT, VAMC Washington D.C. BFA Project No. 22-001, VA Project No. 688-22-004. Final Submittal dated March 10, 2025. No chiller system analysis body text present in this 6-page PDF — only the cover page for the chiller scope exists."
+      },
+      {
+        "sheet_number": "p.2",
+        "title": "Roof Fall Protection Design Analysis — Cover Page with Aerial Photo",
+        "discipline": "structural_engineering",
+        "reading_notes": "Second document cover page. Title: ROOF FALL PROTECTION / PROJECT # 688-22-004 / VAMC, Washington DC. Aerial photo shows the VAMC Washington DC campus — large multi-wing hospital complex with extensive flat roofing. Buildings are multi-story. Final dated 3/03/2025. SDVOSB Company noted."
+      },
+      {
+        "sheet_number": "p.3-4",
+        "title": "Fall Protection Design Analysis — General, Scope, Background, Design Criteria",
+        "discipline": "structural_engineering",
+        "reading_notes": "Scope of work text: identifies fall protection locations on Building 1 and Building 6 roof areas. Background: IBC Section 1015 guardrail requirements. Design criteria: IBC 2024, OSHA 1926/29 CFR, VA TIL, ASCE 7-22. No square footage or floor count stated."
+      },
+      {
+        "sheet_number": "p.5",
+        "title": "Layout of Fall Protection — Roof Plan Diagram",
+        "discipline": "structural_engineering",
+        "reading_notes": "Plan diagram of VAMC roof showing Building 1 and Building 6 fall protection extents (dashed red line indicates required railing locations). Complex multi-wing roof plan. Crane staging areas marked at two locations. Numbered railing segments visible (approximately 15+ distinct numbered zones). No scale bar or dimensions shown at this rendered resolution. The roof plan suggests a large, irregular hospital complex."
+      },
+      {
+        "sheet_number": "p.6",
+        "title": "Fall Protection Investigation — Site Photos",
+        "discipline": "structural_engineering",
+        "reading_notes": "Site photos showing existing ballasted roof conditions with orange traffic cones at roof edges (inadequate fall protection). Confirms ballast roof type with large gravel/aggregate. Shows multi-story building height. B1 mechanical core visible in background."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "Building GSF not stated in documents. Roof plan visible but no area calculations provided.",
+        "sheets": [
+          "p.5"
+        ]
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "note": "Multi-story building confirmed by aerial photo and fall risk descriptions ('Roof Edge to Ground Fall Risk (Multi-Story)') but exact floor count not stated.",
+        "sheets": [
+          "p.2",
+          "p.6"
+        ]
+      },
+      "railing_linear_footage": {
+        "value": 7300,
+        "unit": "lf",
+        "source": "Fall Protection Design Analysis body text",
+        "quote": "The total linear length of railing required is approximately 7300 lf.",
+        "sheets": [
+          "p.3-4"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "OR Chiller (existing, to be replaced — scope from cover page only; no technical details available in this document)",
+          "Mechanical equipment platforms on Building 1 and Building 6 rooftops (visible in site photos and referenced in fall protection scope)"
+        ],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+## Project Overview
+
+The D323 Server Room Fire Protection System Modernization is a Design-Build project at Naval Support Facility (NSF) Indian Head, Maryland, executed under ECMP 1204 of the Kekolu Design-Build Job Order Contract. The project addresses the end-of-life fire protection system in the basement server room (Room 003) of Building D323, known as Farragut Hall — a 32,645 SF Naval Operations Center and Information Services facility for Naval Surface Warfare Center Indian Head Division (NSWC IHD), constructed in 1941. The active project scope is approximately 1,980 SF: the server room proper (Room 003, 1,817 SF of raised-floor data processing space) and an adjacent corridor segment (H002, 163 SF) incorporated to accommodate a pressure relief vent. The building is a historic federal structure and contains asbestos-containing materials (ACM) and lead-based paint (LBP) throughout, imposing hazmat constraints on all mechanical and electrical rough-in work.
+
+## Scope
+
+**Fire Suppression System.** The existing Halon 1301 suppression system — Kidde KPH-60 cylinders bearing 1982 DOT stamps and a Fire Lite Sensiscan 1000 control panel — is at end of service life and relies on an ozone-depleting suppression agent subject to regulatory phase-out. The replacement is a pre-engineered NFPA 2001-compliant clean agent system, with nitrogen or Novec 1230 as the suppression agent. P.E.-stamped conceptual design calculations (Jemmel A. Pursoo, PE, May 2025) establish approximately 39 total cylinders to achieve 30% design concentration for combined under-floor and above-floor protection of the 1,980 SF scope area. Room integrity work includes a fan pressurization leak test per NFPA 2001 and installation of a pressure relief vent at the wall between Corridor H002 and Vestibule V002, designed for a 0.06 atm / 136 psf differential pressure. Halon cylinders are turned in to DLA Distribution Richmond per DoD ozone-depleting substance procedures.
+
+**Fire Detection and Alarm.** A new Fire Alarm Releasing Control Panel replaces the obsolete panel and integrates a layered detection strategy: Very Early Warning Smoke Detection (VEWSD) in the under-raised-floor plenum, above-floor smoke detectors covering the room volume, EPO switch supervision monitoring emergency power-off status, and relay interfaces coordinating suppression release with Computer Room Air Conditioning units. The releasing panel connects to the building's main Fire Alarm Control Panel (System 3, first-floor lobby) and transmits to the Emergency Operations Center in Building D327 via an AES radio mesh network.
+
+**Exhaust System.** A companion exhaust system — documented in separate Electrical and Mechanical Basis of Design packages — provides controlled post-discharge ventilation to clear residual clean agent from the protected space and allow safe fire service re-entry. The system includes inline exhaust fans, dedicated exhaust ductwork, intake/exhaust air louvers with motorized dampers, and underfloor grilles. Electrical scope covers new fan power circuits, disconnect switch replacement, clean agent release panel control wiring, air sampling detector circuits, and damper/louver actuator wiring.
+
+**Demolition and Hazmat Coordination.** All existing halon suppression equipment — piping, cylinders, detectors, and control panel — is demolished as part of the base scope. The host building contains ACM in floor tile mastic and pipe insulation, and LBP on concrete surfaces. The design-build scope requires a hazmat sampling and abatement plan to activate if ACM is disturbed during conduit strapping or penetration work; disturbance is to be minimized by design intent.
+
+## Role on Project
+
+The specific role of the design team within the design-build team structure is not captured in the available source record. Source documents consist of government-authored materials: the SOW and calculations package prepared by NSWC IHD Facilities Branch (Code 102), with P.E.-stamped calculations by Jemmel A. Pursoo, PE; hazmat assessment by Leidos; and enclosure integrity testing by Harris Fire Protection. Design-builder selection, design-team firm assignments, and personnel roles are not identified in the pre-award documents.
+
+## Key Challenges and Resolutions
+
+**Legacy Halon System Replacement in an Active Federal Server Room.** The existing system protects a live Naval Operations Center server room and dates to 1982. Replacement requires sequencing to maintain protection continuity during demolition and new-system installation. The pre-award approach uses P.E.-stamped conceptual calculations to define the system ahead of award, reducing post-award design risk and enabling the design-builder to proceed from a validated technical baseline.
+
+**Room Integrity and Agent Hold Time.** Clean agent system effectiveness depends on maintaining design agent concentration above minimum design levels for the required hold time. A pre-award enclosure integrity test conducted by Harris Fire Protection (May 2025) established a hold time of 12.13 minutes at the 7-ft minimum height for Novec 1230 at 4.5% concentration — a baseline condition the design must sustain. The pressure relief vent between H002 and V002, designed for 0.06 atm / 136 psf, manages overpressure during agent discharge without compromising hold time.
+
+**Hazmat Constraints in a 1941 Building.** The historic building contains ACM and LBP throughout. Mechanical and electrical rough-in for the new suppression and exhaust systems must minimize disturbance, with targeted abatement triggered only when penetrations or strapping cannot avoid hazardous material. The comprehensive Leidos building assessment (July 2021) provides sampling data for all areas of the building to support this risk-managed approach.
+
+**Agent Disposition under DoD ODS Protocols.** Halon 1301 is an ozone-depleting substance managed under DoD policy. The project requires coordinated turnover of halon cylinders to DLA Distribution Richmond ahead of demolition — a regulatory coordination step that must be sequenced into the construction phasing plan.
+
+**Post-Discharge Re-entry for Fire Services.** Clean agent systems create a re-entry hazard after discharge. The exhaust system variant addresses this by providing a controlled ventilation path to clear residual agent before fire services enter, satisfying life safety requirements that the base fire protection scope alone does not cover.
+
+## Outcomes
+
+This project was in pre-award solicitation status at the time source documents were prepared (SOW dated August 13, 2025). Contract award, construction schedule, and project completion outcomes are not captured in the source record.

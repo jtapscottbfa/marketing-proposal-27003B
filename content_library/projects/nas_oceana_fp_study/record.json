@@ -1,0 +1,406 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nas_oceana_fp_study",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/nas_oceana_fp_study/1663960 Final SAES.pdf",
+      "type": "sow",
+      "sha256": "383d7a807a36abc546f947a55e6b538038c8affd1b7ecffc2db732febcbf995c",
+      "page_count": null,
+      "included": true,
+      "notes": "NAVFAC Scope of A-E Services (SAES) for Task Order under Contract N40085-15-D-0003; eProjects #1663960; includes Statement of Work and Project Deliverables. Rev16 dated 17 August 2018."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/nas_oceana_fp_study/Study Fire Protection Systems at NSWDG Compound.pdf",
+      "type": "report",
+      "sha256": "f95d8710d404fb8ef7914bdca845096ac6ce44620826b0432427351d81a32861",
+      "page_count": null,
+      "included": true,
+      "notes": "Interim Final Submission of the fire protection study report, dated February 24, 2023. Prepared by Jacobs Engineering as subconsultant to Bowman Foster Associates. Contains executive summary, site engineering investigation results, hydraulic modeling, deficiency analysis, recommendations, cost estimates, and extensive appendices."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawings or specifications in intake folder. The study report (PDF) contains embedded figures (maps, system diagrams) but these are not standalone drawing sheets. The SAES is the contract scope document; the study report is the deliverable."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Study Fire Protection Systems at NSWDG Compound, NAS Oceana, Dam Neck Annex",
+      "source": "Study report cover page",
+      "quote": "Study Fire Protection Systems at NSWDG Compound",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Study Fire Protection System at NSWDG Compound",
+          "value": "Study Fire Protection System at NSWDG Compound",
+          "agrees": true
+        },
+        {
+          "source": "Study report cover page",
+          "claim": "Study Fire Protection Systems at NSWDG Compound",
+          "value": "Study Fire Protection Systems at NSWDG Compound",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC Mid-Atlantic)",
+      "source": "Study report cover page",
+      "quote": "Prepared for Naval Facilities Engineering Systems Command Mid-Atlantic",
+      "corroboration": [
+        {
+          "source": "SAES cover page",
+          "claim": "Naval Facilities Engineering Command, Mid-Atlantic",
+          "value": "Naval Facilities Engineering Command Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "Study report cover page",
+          "claim": "Prepared for Naval Facilities Engineering Systems Command Mid-Atlantic",
+          "value": "Naval Facilities Engineering Systems Command Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / Naval Special Warfare Development Group (NSWDG)",
+      "source": "SAES §A1; Study report §1.1",
+      "quote": "Naval Special Warfare Development Group (NSWDG) compound at Naval Air Station (NAS) Oceana, Dam Neck Annex in Virginia Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "NAS Oceana, Dam Neck Annex",
+          "value": "Naval Special Warfare Development Group facility at NAS Oceana",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "NAS Oceana, Dam Neck Annex, Virginia Beach, VA",
+      "source": "SAES §A1; Study report §1.1",
+      "quote": "NAS Oceana, Dam Neck Annex"
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "N40085-15-D-0003 / eProjects WON 1663960",
+      "source": "SAES §A1; Study report cover page",
+      "quote": "Contract Number N40085-15-D-00003\neProjects Work Order No 1663960",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Contract No. N40085-15-D-0003; eProjects Work Order No. 1663960",
+          "value": "N40085-15-D-0003 / eProjects WON 1663960",
+          "agrees": true
+        },
+        {
+          "source": "Study report cover page",
+          "claim": "Contract Number N40085-15-D-00003; eProjects Work Order No 1663960",
+          "value": "N40085-15-D-00003 / eProjects WON 1663960",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-15-D-0003",
+      "source": "SAES §A1",
+      "quote": "Contract No. N40085-15-D-0003"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SAES states 'Task Order TBD' at time of issuance. The task order was subsequently issued under this IQ contract but specific TO number not captured in source documents."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "This is a study/engineering investigation project, not a building construction project. The study scope covers approximately 200 acres with approximately 81 buildings at the NSWDG compound. No single building area applies."
+    },
+    "study_area_description": {
+      "value": "NSWDG Compound, NAS Oceana Dam Neck Annex – approximately 200 acres with approximately 81 buildings and structures; bounded by compound fence to south, Atlantic shoreline to east, Batt Street to north, Lake Redwing to west. Also includes Pass & ID Office B383/389, Building 250 complex west of Lake Redwing, outdoor shooting range facilities, and EOD compound/magazines north of Batt Street.",
+      "source": "Study report §1.2; SAES Attachment 1 §VII",
+      "quote": "The NSWDG compound encompasses approximately 200 acres with approximately 81 buildings and structures of various sizes having a fire flow requirement."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "design_fee": {
+      "value": null,
+      "status": "missing",
+      "notes": "SAES indicates fees to be negotiated at time of task order issuance based on IQ contract rates. Actual design fee not stated in source documents."
+    },
+    "study_deliverable_status": {
+      "value": "Interim Final Submission",
+      "source": "Study report cover page",
+      "quote": "Interim Final Submission"
+    },
+    "study_date": {
+      "value": "2023-02-24",
+      "source": "Study report cover page",
+      "quote": "February 24, 2023"
+    },
+    "saes_date": {
+      "value": "2018-08-17",
+      "source": "SAES cover page",
+      "quote": "Rev16 / 17 August 2018"
+    },
+    "jacobs_project_number": {
+      "value": "D3572600",
+      "source": "Study report document information block",
+      "quote": "Project No: D3572600"
+    },
+    "subconsultant": {
+      "value": "Jacobs Engineering Inc., Virginia Beach, VA",
+      "source": "Study report cover page / document block",
+      "quote": "Jacobs Engineering Inc.\n5701 Cleveland Street\nSuite 200\nVirginia Beach, VA 23462"
+    },
+    "project_manager_jacobs": {
+      "value": "Mark Pratt, PE",
+      "source": "Study report document block",
+      "quote": "Project Manager: Mark Pratt, PE"
+    },
+    "authors_jacobs": {
+      "value": [
+        "Robert J. Tabet, PE",
+        "Mark Osborne, PE"
+      ],
+      "source": "Study report document block",
+      "quote": "Authors: Robert J. Tabet, PE\nMark Osborne, PE"
+    },
+    "navfac_pm": {
+      "value": "Mr. Hilario S.D. Cortado, R.A.",
+      "source": "SAES §B2",
+      "quote": "Mr. Hilario S.D. Cortado, R.A., Code PRA211, (757) 433-2595"
+    },
+    "navfac_dm": {
+      "value": "Mr. Kraig Sarver, P.E.",
+      "source": "SAES §B3",
+      "quote": "Mr. Kraig Sarver, P.E., Code PRA 211, (757) 433-2998"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "This task order was for a study/site engineering investigation, not a design contract. Construction plans and specifications were explicitly excluded (SAES §A: 'There are no construction plans or specifications associated with this T.O.'). Fee amount not stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-02-24",
+        "source": "Study report cover page (Interim Final Submission date)",
+        "quote": "February 24, 2023",
+        "notes": "This is the date of the Interim Final Submission. Final report date not confirmed in source documents."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "notes": "This was a study/investigation task order only. No construction phase was included.",
+      "contract_value": {
+        "value": null,
+        "status": "explicit_null",
+        "source": "SAES §A",
+        "quote": "There are no construction plans or specifications associated with this T.O."
+      }
+    }
+  },
+  "study_scope_summary": {
+    "scope_elements": [
+      "Facility assessment of approximately 81 buildings within NSWDG compound to establish fire flow and fire water demand requirements",
+      "Documentation of two existing water systems: high-pressure non-potable fire main and Installation domestic water distribution system",
+      "Field investigation including hydrant flow tests, system valve assessments, pipe identification surveys",
+      "Development of hydraulic models (Bentley WaterGEMS) for both water distribution systems",
+      "Identification of deficiencies relative to UFC 3-600-01 requirements",
+      "Analysis and recommendations with ROM cost estimates for five NAVFAC-selected deficiencies",
+      "Non-potable water distribution system maintenance program"
+    ],
+    "key_findings": {
+      "high_pressure_system": "High-pressure system (served by Fire Pump Station 352 and Water Storage Tank 351, 200,000 gal) generally adequate to support fire water demands for the 14 sprinklered buildings served; system delivers approximately 1,900 gpm at 20 psi residual. Two dead-end service mains are non-compliant with UFC 3-600-01.",
+      "domestic_system": "Domestic water system capable of approximately 1,650 gpm at 20 psi residual; inadequate for approximately 10 buildings with fire flow demands exceeding 1,650 gpm. Water Storage Tank 531 (250,000 gal elevated) lacks sufficient reserve for fire flow beyond daily domestic demand (only ~50,000 gal available for fire). Dead-end service main to Building 250 compound is non-compliant.",
+      "deficiencies_count": "11 deficiency categories identified in Section 7"
+    },
+    "recommendations_with_rom_costs": [
+      {
+        "item": "Reprogram SCADA to increase domestic system operating pressures",
+        "description": "Increase pump station set point pressures to raise fire flow from 1,650 gpm to ~1,900 gpm",
+        "rom_cost_usd": 0,
+        "source": "Study report Executive Summary / §8.1.1",
+        "quote": "ROM Cost: $0 construction costs. Only labor to reprogram the SCADA system."
+      },
+      {
+        "item": "New 250,000-gallon elevated water storage tank at north end of NSWDG Compound",
+        "description": "Supplement domestic system storage capacity; increase fire flow from 1,650 gpm to ~2,500 gpm",
+        "rom_cost_usd": 2398596,
+        "source": "Study report Executive Summary / §8.1.2 Alternative 2",
+        "quote": "ROM Cost: $2,398,596"
+      },
+      {
+        "item": "Replace 450,000-gallon elevated water storage tank (replacing Tank 531)",
+        "description": "Replace existing Tank 531 with larger tank; increase fire flow ~14%",
+        "rom_cost_usd": 3351723,
+        "source": "Study report §8.1.2 Alternative 1",
+        "quote": "($3,351,723). Replace the elevated Water Storage Tank 531 with a new 450,000-gallon elevated storage tank."
+      },
+      {
+        "item": "Demolish and replace/relocate Pump Station 329",
+        "description": "Replace 1960s-era Pump Station 329, increase pumping from 240 gpm to 600 gpm, relocate to north end of compound",
+        "rom_cost_usd": 1364097,
+        "source": "Study report Executive Summary / §8.2",
+        "quote": "ROM Cost: $1,364,097"
+      },
+      {
+        "item": "Eliminate dead-end service main serving Building 250 compound",
+        "description": "Install new 8-inch water main connecting Building 250 distribution loop to Installation water system via directional drill under Redwing Lake",
+        "rom_cost_usd": 897170,
+        "source": "Study report Executive Summary / §8.3",
+        "quote": "ROM Cost: $897,170"
+      },
+      {
+        "item": "Install seven new fire hydrants and supporting piping",
+        "description": "Correct most significant fire hydrant spacing deficiencies; approximately 44 buildings deficient in hydrant coverage",
+        "rom_cost_usd": 1074933,
+        "source": "Study report Executive Summary / §8.4",
+        "quote": "ROM Cost: $1,074,933"
+      },
+      {
+        "item": "Disconnect seven high-pressure hydrants and reconnect to domestic/potable system",
+        "description": "Consolidate hydrants under single potable system, eliminate cross-contamination risk",
+        "rom_cost_usd": 40000,
+        "source": "Study report Executive Summary / §8.5",
+        "quote": "ROM Cost: $40,000"
+      }
+    ]
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "fire_protection_engineering",
+      "civil_engineering",
+      "water_resources_engineering"
+    ],
+    "sub_disciplines": [
+      "fire_suppression_wet",
+      "fire_suppression_dry",
+      "water_distribution_collection",
+      "water_treatment_design",
+      "civil_site_design",
+      "civil_utilities"
+    ],
+    "building_systems": [
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "site_utilities",
+      "plumbing_systems"
+    ],
+    "construction_scope": [
+      "fire_suppression_scope",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ],
+    "taxonomy_notes": "This is a study/site engineering investigation task order under a NAVFAC IQ A-E contract for fire protection projects. BFA held the prime contract with NAVFAC; Jacobs Engineering served as subconsultant. The 'design_bid_build' delivery method applies to the underlying IQ vehicle, though this was a study-only task order with no construction. program_type set to military_defense / military_operations for the NSWDG special operations compound context."
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "nas_oceana",
+    "dam_neck_annex",
+    "nswdg",
+    "fire_protection_study",
+    "water_distribution",
+    "hydraulic_modeling",
+    "site_engineering_investigation",
+    "iq_contract",
+    "jacobs_subconsultant",
+    "hampton_roads",
+    "virginia_beach"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Mark Pratt, PE",
+      "role_on_project": "project_manager",
+      "firm": "Jacobs Engineering (subconsultant)"
+    },
+    {
+      "name": "Robert J. Tabet, PE",
+      "role_on_project": "lead_fire_protection_engineer",
+      "firm": "Jacobs Engineering (subconsultant)"
+    },
+    {
+      "name": "Mark Osborne, PE",
+      "role_on_project": "fire_protection_engineer",
+      "firm": "Jacobs Engineering (subconsultant)"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No standalone drawing set present in intake folder. The study report PDF (Study Fire Protection Systems at NSWDG Compound.pdf) contains embedded figures including site maps, water system diagrams (Appendices A–C), facility summary sheets (Appendix D), and hydraulic model node diagrams (Appendix K), but these are report figures embedded in the text PDF, not a separately rendered drawing set."
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "water_resources_engineering": "narratives/disciplines/water_resources_engineering.md"
+    }
+  }
+}

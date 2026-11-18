@@ -1,0 +1,461 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "lighting_retrofit",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/lidl/lighting_retrofit/155222-001_0_RFQ(3).pdf",
+      "type": "sow",
+      "sha256": "66bc600c4542e21663430df6cc0539c6f42eac5bc39fc151e934289f95105705",
+      "included": true,
+      "notes": "RFQ from DWM Inc. to BFA for Lidl Store #1105, 1209 Edison Road, Virginia Beach, VA. Job #155222-001, issued 1/28/2020. Scope of work for lighting retrofit CAD/as-built services."
+    },
+    {
+      "path": "00_admin/reference_projects/lidl/lighting_retrofit/162520-001_0_RFQ.pdf",
+      "type": "sow",
+      "sha256": "40df0fb6e545327f47ed6807462c737c72fd5731b7e56de3d20e42eaabd6b3c1",
+      "included": true,
+      "notes": "RFQ from DWM Inc. to BFA for Lidl Store #1057, 6196 Providence Road, Virginia Beach, VA. Job #162520-001, issued 11/17/2020. Scope of work for lighting retrofit CAD/as-built services."
+    },
+    {
+      "path": "00_admin/reference_projects/lidl/lighting_retrofit/20-008.2021.03.18.LIGHTING CALCULATIONS - STORE #1057.pdf",
+      "type": "report",
+      "sha256": "13ceb61d5c9bdb372bc0ea19e3046d84e7fbe5a96b1f9ff7e9415dc1777d2373",
+      "included": true,
+      "notes": "Lighting photometric calculation summary for Lidl Store #1057. Dated 03/18/2021. Designer RFD. Contains fixture schedule and calc zone statistics."
+    },
+    {
+      "path": "00_admin/reference_projects/lidl/lighting_retrofit/20-008.2021.03.18.LIGHTING CALCULATIONS - STORE #1105.pdf",
+      "type": "report",
+      "sha256": "4450649af21950bc5774041bc6faa243f98eef8e88721c80489586f27f3caa6e",
+      "included": true,
+      "notes": "Lighting photometric calculation summary for Lidl Store #1105. Dated 03/18/2021. Designer RFD. Contains fixture schedule and calc zone statistics."
+    },
+    {
+      "path": "00_admin/reference_projects/lidl/lighting_retrofit/20-008.2021.03.18.PROGRESS DRAWINGS - STORE #1057.pdf",
+      "type": "drawing_set",
+      "sha256": "3cefdb38bc0130d4c5ea7ddaf65f8e3b841e0de6b04762a04eafc1169486c6a2",
+      "included": true,
+      "notes": "Progress drawings for Lidl Store #1057, 6196 Providence Road, Virginia Beach, VA. 2 sheets: E-101 Lighting Lower Level Plan, E-501 Lighting Fixture Schedule. Dated 03/18/2021."
+    },
+    {
+      "path": "00_admin/reference_projects/lidl/lighting_retrofit/20-008.2021.03.18.PROGRESS DRAWINGS - STORE #1105.pdf",
+      "type": "drawing_set",
+      "sha256": "460e51b25f76dabe9b3e98c5ea44573bea64ec4fbe792677713220c171229827",
+      "included": true,
+      "notes": "Progress drawings for Lidl Store #1105, 1209 Edison Road, Virginia Beach, VA. 2 sheets: E-101 Lighting Lower Level Plan, E-501 Lighting Fixture Schedule. Dated 03/18/2021."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Lidl Lighting Retrofit — Stores #1057 & #1105",
+      "source": "drawing title blocks, RFQs",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "RFQ 155222-001 (Store #1105)",
+          "claim": "lighting retrofit project at the LIDL USA store 1105",
+          "value": "Lidl Store #1105 Lighting Retrofit",
+          "agrees": true
+        },
+        {
+          "source": "RFQ 162520-001 (Store #1057)",
+          "claim": "lighting retrofit project at the LIDL USA store 1057",
+          "value": "Lidl Store #1057 Lighting Retrofit",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block, E-101 Store #1057",
+          "claim": "LIDL STORE #1057 – 6196 PROVIDENCE RD LIGHTING RETROFIT PROJECT",
+          "value": "Lidl Store #1057 Lighting Retrofit",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block, E-101 Store #1105",
+          "claim": "LIDL STORE #1105 – 1209 EDISON ROAD LIGHTING RETROFIT PROJECT",
+          "value": "Lidl Store #1105 Lighting Retrofit",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-008",
+      "source": "drawing title block (project number field)",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing title block, E-101 Store #1057 and E-501",
+          "claim": "Project number shown as 20-008 in drawing border",
+          "value": "20-008",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block, E-101 Store #1105 and E-501",
+          "claim": "Project number shown as 20-008 in drawing border",
+          "value": "20-008",
+          "agrees": true
+        },
+        {
+          "source": "lighting calculation filenames",
+          "claim": "20-008.2021.03.18.LIGHTING CALCULATIONS",
+          "value": "20-008",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "client_name": {
+      "value": "DWM, Inc.",
+      "source": "RFQ 155222-001 p.1, RFQ 162520-001 p.1",
+      "quote": "DWM, Inc.",
+      "corroboration": [
+        {
+          "source": "RFQ 155222-001",
+          "claim": "Company: ISSUER — DWM, Inc.",
+          "value": "DWM, Inc.",
+          "agrees": true
+        },
+        {
+          "source": "RFQ 162520-001",
+          "claim": "Company: ISSUER — DWM, Inc.",
+          "value": "DWM, Inc.",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Lidl US, LLC",
+      "source": "RFQ 155222-001 p.1, RFQ 162520-001 p.1",
+      "quote": "Lidl",
+      "corroboration": [
+        {
+          "source": "RFQ 155222-001",
+          "claim": "Company: SITE — Lidl (#1105)",
+          "value": "Lidl",
+          "agrees": true
+        },
+        {
+          "source": "RFQ 162520-001",
+          "claim": "Company: SITE — Lidl (#1057)",
+          "value": "Lidl",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Multiple: 6196 Providence Road, Virginia Beach, VA 23464 (Store #1057); 1209 Edison Road, Virginia Beach, VA 23454 (Store #1105)",
+      "source": "RFQ 155222-001 and RFQ 162520-001",
+      "quote": "1209 EDISON RD VIRGINIA BEACH, VA 23454-5720",
+      "corroboration": [
+        {
+          "source": "RFQ 155222-001",
+          "claim": "1209 EDISON RD VIRGINIA BEACH, VA 23454-5720",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFQ 162520-001",
+          "claim": "6196 PROVIDENCE RD VIRGINIA BEACH, VA 23464-3737",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block, E-101 Store #1057",
+          "claim": "6196 PROVIDENCE RD, VIRGINIA BEACH",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block, E-101 Store #1105",
+          "claim": "1209 EDISON ROAD, VIRGINIA BEACH",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Store GSF not stated in any source document. Lighting floor plan scale 3/32\" = 1'-0\" indicates a single-story retail grocery footprint; dimensions not enumerated in text sources."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFQs are requests for quote — vendor pricing not filled in on source documents provided. BFA's fee not stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-03-18",
+        "source": "drawing title blocks and lighting calculation dates",
+        "quote": null,
+        "notes": "Progress drawings and lighting calculations both dated 03/18/2021. This is the latest deliverable date in sources."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "retail_grocery"
+    ],
+    "program_subtype": [
+      "retail_grocery"
+    ],
+    "disciplines": [
+      "electrical_engineering",
+      "lighting_design"
+    ],
+    "sub_disciplines": [
+      "electrical_lighting",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_lighting_interior",
+      "electrical_lighting_controls"
+    ],
+    "construction_scope": [
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "commercial_subconsultant"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "lidl",
+    "lighting_retrofit",
+    "virginia_beach",
+    "commercial_retail",
+    "grocery",
+    "multi_store",
+    "trilux",
+    "oktalite",
+    "led_retrofit",
+    "dwm_inc"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "RFD",
+      "role_on_project": "designer_of_record",
+      "notes": "Initials only from drawing title block: Drawn by RFD, Project Engineer RFD"
+    },
+    {
+      "name": "BF",
+      "role_on_project": "checker",
+      "notes": "Initials only from drawing title block: Checked by BF"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "lighting_design": "narratives/disciplines/lighting_design.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-101",
+        "title": "LIGHTING LOWER LEVEL PLAN",
+        "discipline": "electrical_engineering",
+        "source_file": "20-008.2021.03.18.PROGRESS DRAWINGS - STORE #1057.pdf",
+        "store": "#1057",
+        "reading_notes": "Single-story retail grocery floor plan showing full new LED lighting layout. Rows of suspended Trilux linear LED fixtures (triangular symbols) covering the sales floor, aligned along aisle runs. Spot/track lighting symbols visible in perimeter and end-cap areas (Oktalite EL370 spotlights). Note (1): Use same lighting circuits for new retrofit fixtures — implies overlay on existing circuit infrastructure. Note (2): Refer to lighting calculations for spotlight angles. Note (3): Refer to lighting fixture schedule on E-501. Scale 3/32\" = 1'-0\". BFA project number 20-008. No scale bar showing overall dimensions but footprint is consistent with a mid-size grocery store (~20,000–30,000 SF estimate from plan proportion at stated scale — not confirmed by text source). Back-of-house areas (break room, storage, office) shown in lower-right but no fixtures indicated there."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "LIGHTING FIXTURE SCHEDULE",
+        "discipline": "electrical_engineering",
+        "source_file": "20-008.2021.03.18.PROGRESS DRAWINGS - STORE #1057.pdf",
+        "store": "#1057",
+        "reading_notes": "Lighting fixture schedule with 5 fixture types. F1A: 76500T LED5500, 120V, 50W, suspended, trunk-mount compatible; F1C: 76500T LED2200, 120V, 20W, suspended, trunk-mount compatible; F2A: EL370 LOBU G2 LED4000, 120V, 30W, suspended, trunk-mount compatible; F10C: 07650B/35 Metal US, N/A wattage (trunk/accessory); F10D: 07650B/L370 Metal US, N/A wattage (trunk/accessory). Product data cut sheets for TRILUX E-Line LED (F1A diffuse optic), E-Line F1C (diffuse optic short), TRILUX E-Line LED Spotlights F2A & F2B, and E-Line blanking covers/trunking accessories shown. All fixtures are TRILUX/Oktalite brand (Trillux US distribution). Consistent with both stores — same schedule appears on Store #1105 E-501."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "LIGHTING LOWER LEVEL PLAN",
+        "discipline": "electrical_engineering",
+        "source_file": "20-008.2021.03.18.PROGRESS DRAWINGS - STORE #1105.pdf",
+        "store": "#1105",
+        "reading_notes": "Virtually identical layout to Store #1057 E-101. Same single-story grocery retail footprint and fixture layout. Additional note (4) specific to Store #1105: 'LIGHTING ON AISLES #5 & #6 HAS ALREADY BEEN INSTALLED BY ANOTHER VENDOR. VERIFY LIGHTING FIXTURES IF THEY ARE MOUNTED AT 11' 6\" AFF.' This indicates partial prior work at Store #1105 by a different contractor before BFA's involvement, and BFA's drawings accommodate this condition. General notes (1–3) are identical to Store #1057."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "LIGHTING FIXTURE SCHEDULE",
+        "discipline": "electrical_engineering",
+        "source_file": "20-008.2021.03.18.PROGRESS DRAWINGS - STORE #1105.pdf",
+        "store": "#1105",
+        "reading_notes": "Identical fixture schedule to Store #1057 E-501 — same five fixture types and product data sheets. Confirms the program-level standardized fixture specification across both Lidl stores."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 1,
+        "source": "drawings E-101 Store #1057 and E-101 Store #1105",
+        "quote": null,
+        "sheets": [
+          "E-101 (Store #1057)",
+          "E-101 (Store #1105)"
+        ],
+        "notes": "Single 'Lighting Lower Level Plan' sheet per store; no upper-level plan present. Both stores are single-story retail."
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawings E-101",
+        "quote": null,
+        "sheets": [
+          "E-101 (Store #1057)",
+          "E-101 (Store #1105)"
+        ],
+        "notes": "GSF not annotated. Scale is 3/32\" = 1'-0\" but no overall dimension annotation visible. Estimate from plan proportion vs. scale would require pixel measurement — not performed at medium depth per D-023."
+      },
+      "mep_system_inventory": {
+        "electrical": {
+          "lighting": [
+            "242 TRILUX 7650OT LED5500-840 ET linear LED fixtures, 40W, 5800 lumens/lamp, 0.9 LLF (per lighting calcs — note: drawings show 50W fixture F1A; likely discrepancy in rated vs. input wattage between two sources)",
+            "40 TRILUX 7650OT LED2200-840 ETDD linear LED fixtures (short), 40W, 3735 lumens/lamp, 0.9 LLF",
+            "132 OKTALITE EL370 LobuG2 MF LED4000-831 L27 spotlights, 32W, 0.9 LLF, 60-degree tilt",
+            "Trunk mounting system (07650B/35 Metal US and 07650B/L370 Metal US accessories)",
+            "Fixtures mounted at 11'-6\" AFF",
+            "All 120V supply; utilize existing lighting circuits (retrofit overlay)"
+          ],
+          "lighting_levels": "Average 53.9 fc, Max 112.7 fc, Min 2.8 fc (Calc Zone #1, sales floor) — identical for both stores per calculations"
+        },
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "drawings.facts_derived.mep_system_inventory.electrical.lighting[0].wattage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Lighting calculations (both stores)",
+          "value": "40W for TRILUX 7650OT LED5500-840 ET"
+        },
+        {
+          "source": "Fixture schedule E-501 (both stores drawings)",
+          "value": "50W for F1A (76500T LED5500)"
+        }
+      ],
+      "resolution_chosen": "Both values retained in reading notes; likely 40W = LED driver input per IES file, 50W = circuit design wattage or rated system wattage — minor catalog/spec variance",
+      "rationale": "Small magnitude discrepancy (40W vs 50W); could reflect different measurement basis (driver input vs. system wattage including ballast/driver losses or different model suffix). No bearing on project narrative but worth flagging."
+    },
+    {
+      "field_path": "facts.client_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFQs (both)",
+          "value": "DWM, Inc. (the party contracting BFA)"
+        },
+        {
+          "source": "Drawing title blocks",
+          "value": "Lidl (named in project title)"
+        }
+      ],
+      "resolution_chosen": "DWM, Inc. as client_name; Lidl as owner_name",
+      "rationale": "DWM is the contracting party issuing the RFQ to BFA. Lidl is the facility owner/end client. This is a three-tier relationship: Lidl (owner) → DWM, Inc. (facility management/retrofit contractor) → BFA (subconsultant for CAD/engineering services)."
+    }
+  ]
+}

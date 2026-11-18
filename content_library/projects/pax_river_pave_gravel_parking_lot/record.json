@@ -1,0 +1,448 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "pax_river_pave_gravel_parking_lot",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_pave_gravel_parking_lot/B2829 RFP.pdf",
+      "type": "sow",
+      "sha256": "8fcd71736113913b1d0ba87c5db3d3851a1360d9911fe5c3d265671f59627075",
+      "included": true,
+      "notes": "RFP for design-build contract; contains SOW, Part 3 project program, Part 4 min requirements. RFP date May 15, 2020. WO# 1577286. Note: Part 4 header shows WO# 1595722 / B2100 EMP Concrete Pad Expansion — indicates boilerplate template was not fully updated for this project. Part 3 content is project-specific."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_pave_gravel_parking_lot/20-062.2021.05.27.100% ELEC DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "aadfaaea229ed8c356d92bea86fcf0aac02cc77ff153285e1ecb3239b5874cb3",
+      "page_count": 4,
+      "included": true,
+      "notes": "100% electrical design drawings dated 2021-05-27. BFA project number 20-062. NAVFAC Drawing No. 13135488. 4 sheets: E-001, ES101, E-501, E-601."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_pave_gravel_parking_lot/20-062.2021.05.27.PARKING LOT LIGHT CALCS.pdf",
+      "type": "report",
+      "sha256": "f2d0770a89fb8e7a683bacd3680fee02a48aa63291bbd3eb944014ed7d42e5f7",
+      "included": true,
+      "notes": "Lighting calculation report dated 2021-05-27. Photometric summary for parking lot site plan."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "RFP serves as SOW/project program. No separate BOD or specifications in intake (specifications are contractor-originated per design-build delivery). Civil/stormwater drawings not in intake (NAVFAC-provided 70% civil drawings referenced in RFP but not present). Only electrical design drawings present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "B2829 Pave Gravel Parking Lot",
+      "source": "B2829 RFP.pdf title page",
+      "quote": "B2829 PAVE GRAVEL PARKING LOT",
+      "corroboration": [
+        {
+          "source": "B2829 RFP.pdf title page",
+          "claim": "B2829 PAVE GRAVEL PARKING LOT",
+          "value": "B2829 Pave Gravel Parking Lot",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-001 title block",
+          "claim": "B2829 PAVE GRAVEL PARKING LOT",
+          "value": "B2829 Pave Gravel Parking Lot",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC), Naval Air Station Patuxent River",
+      "source": "B2829 RFP.pdf title page",
+      "quote": "PATUXENT RIVER NAVAL AIR STATION",
+      "corroboration": [
+        {
+          "source": "B2829 RFP.pdf title page",
+          "claim": "PATUXENT RIVER NAVAL AIR STATION",
+          "value": "Naval Air Station Patuxent River",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-001 title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND WASHINGTON, NAVAL AIR STATION PATUXENT RIVER, MD",
+          "value": "Naval Facilities Engineering Command (NAVFAC), Naval Air Station Patuxent River",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC)",
+      "source": "drawing E-001 title block",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND WASHINGTON",
+      "corroboration": [
+        {
+          "source": "drawing E-001 title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND WASHINGTON",
+          "value": "Naval Facilities Engineering Command (NAVFAC)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "22445 Peary Road, Building 504, Patuxent River, Maryland 20670",
+      "installation_name": "Naval Air Station Patuxent River",
+      "source": "B2829 RFP.pdf title page",
+      "quote": "PATUXENT RIVER, MD",
+      "corroboration": [
+        {
+          "source": "B2829 RFP.pdf title page",
+          "claim": "Patuxent River, Maryland 20670",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-001 title block",
+          "claim": "PATUXENT RIVER, MD",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-062",
+      "source": "drawing file name (20-062.2021.05.27.100% ELEC DRAWINGS.pdf) and drawing title block",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing file name",
+          "claim": "20-062",
+          "value": "20-062",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "WO# 1577286",
+      "source": "B2829 RFP.pdf title page",
+      "quote": "WO#: 1577286",
+      "corroboration": [
+        {
+          "source": "B2829 RFP.pdf title page",
+          "claim": "WO#: 1577286",
+          "value": "WO# 1577286",
+          "agrees": true
+        },
+        {
+          "source": "B2829 RFP.pdf Part 2 header",
+          "claim": "WO#: 1577286",
+          "value": "WO# 1577286",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP is pre-award; contract number not assigned in available documents."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 19630,
+      "unit": "sf",
+      "source": "20-062.2021.05.27.PARKING LOT LIGHT CALCS.pdf",
+      "quote": null,
+      "notes": "Area derived from lighting calculation report: 19,630.0 ft² parking lot area. This is the paved parking lot area, not building GSF (this is a site project with no building).",
+      "corroboration": [
+        {
+          "source": "lighting calculation report",
+          "claim": "19630.0 ft² area",
+          "value": 19630,
+          "agrees": true
+        },
+        {
+          "source": "B2829 RFP.pdf Part 3 §2.3",
+          "claim": "proposed disturbance for this work will exceed 5000 square feet",
+          "value": null,
+          "agrees": true,
+          "notes": "Confirms project area >5,000 SF; consistent with 19,630 SF lot"
+        }
+      ]
+    },
+    "parking_spaces": {
+      "value": 46,
+      "source": "B2829 RFP.pdf Part 3 §G2020",
+      "quote": "Provide asphalt parking lot for at least 46 private motor vehicles (PMVs) in location of existing gravel parking lot, including the required number of handicap parking spaces.",
+      "corroboration": [
+        {
+          "source": "B2829 RFP.pdf Part 3 §G2020",
+          "claim": "at least 46 private motor vehicles (PMVs)",
+          "value": 46,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No contract value or program budget stated in RFP. RFP is a design-build solicitation; price to be proposed by contractor."
+    },
+    "rfp_date": {
+      "value": "2020-05-15",
+      "source": "B2829 RFP.pdf title page",
+      "quote": "May 15, 2020"
+    },
+    "design_completion_date": {
+      "value": "2021-05-27",
+      "source": "drawing file name and drawing title block date",
+      "quote": null,
+      "notes": "100% electrical drawings dated 2021-05-27, indicating design was completed approximately one year after RFP."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-05-27",
+        "source": "drawing file date stamp",
+        "quote": null,
+        "notes": "100% electrical drawings completed 2021-05-27; design completion inferred"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "transportation_parking"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_lighting",
+      "electrical_power_distribution",
+      "civil_site_design",
+      "civil_grading_drainage",
+      "water_stormwater_management"
+    ],
+    "building_systems": [
+      "electrical_lighting_exterior",
+      "electrical_lighting_controls",
+      "site_paving",
+      "site_stormwater_bmps",
+      "site_grading_drainage"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope",
+      "exterior_paving",
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_landscaping"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "pax_river",
+    "navfac_washington",
+    "parking_lot",
+    "led_lighting",
+    "site_civil",
+    "design_build",
+    "stormwater_mde",
+    "outdoor_lighting",
+    "maryland"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Brandon McH (partial — see drawing title block)",
+      "role_on_project": "project_manager",
+      "notes": "Name partially legible in drawing approval block as 'BRANDON MCH'; full name not confirmed."
+    },
+    {
+      "name": "Evan Welch",
+      "role_on_project": "designer",
+      "notes": "Listed in drawing approval block as 'EVAN WELCH' (drawn by)"
+    },
+    {
+      "name": "Craig Guth",
+      "role_on_project": "designer",
+      "notes": "Listed in drawing approval block as 'CRAIG GUTH' (branch manager/reviewer)"
+    },
+    {
+      "name": "Richard H. Huang",
+      "role_on_project": "engineer_of_record",
+      "notes": "Licensed engineer seal on drawings; 'RICHARD H. HUANG' visible on Maryland PE seal"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND, ABBREVIATIONS, SCHEDULES AND DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Cover sheet with legend, abbreviations, and four detail blocks. Lighting Fixture Schedule shows one fixture type: XL-03 fixture symbol = Lithonia RSX1 LED P3 40K R4, 277V, 110W, pole-mounted, 8 lamps per luminaire, 8 luminaires total. Notes call for NEMA Type V distribution. Details show LED Area Luminaire, Anchor Base Steel/Aluminum Pole (XL-27), Anchor Base Pole Foundation (XL-29), and Luminaire Mounting Arm Details (XL-31). Pole heights: XL-26 (20') per schedule table. Drawn by Evan Welch, reviewed Craig Guth, PE seal Richard H. Huang (Maryland). BFA project number 13135488 appears in NAVFAC drawing number field. Stamp reads 'BOWMAN FOSTER & ASSOCIATES, INC., 6353 CENTER DR., STE. 101, NORFOLK, VA 23502.' Sheet dated 04/22/2021, issued 05/27/2021."
+      },
+      {
+        "sheet_number": "ES101",
+        "title": "PARKING LOT SITE PLAN — NEW WORK",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Site plan at 1/16\"=1'-0\" scale. Shows new asphalt parking lot north of Building 2829. Eight (8) LED pole-mounted luminaires distributed across the lot: groups of 2 on west and east ends, and single poles along rows (L1-5 and L1-7 circuit designations). Conduit runs direct-buried (UG) to poles from Building 2829. Connection to existing panels L1 and R1 (SEC 1) inside Building 2829 (Electrical Room 117). Generator building and crushed storm structure visible at north edge of lot. Demolished rubble pile shown at east side. Construction notes reference: 1\" direct-buried schedule 40 PVC conduit, (2) 20A/1P circuit breakers in existing Panel L1 (spaces 5, 7, and 9), lighting control panel connects to spare breaker in Panel R1 SEC 1 (space 27). Note: 1/16\" scale makes individual space counts harder to verify from drawing alone — parking space striping visible but individual count not stated on this sheet."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "DIAGRAM",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Lighting Controls Diagram and Conduit Detail. LCP1 panel designation, located at Electrical Room 117. Power circuit R1 (SEC 1)-27. Two zones/relays: Relay 1 (L1-5, parking lot lights) and Relay 2 (L1-7, parking lot lights), both with photocell on/off and manual switch override control scenario. Photocell mounted on NEMA 3R junction box on Building 2829 roof. Conduit detail shows transition from underground PVC (direct buried) to galvanized rigid steel conduit (GRC) above grade with underground warning ribbon."
+      },
+      {
+        "sheet_number": "E-601",
+        "title": "PANELBOARD SCHEDULES",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Two existing panelboard schedules. Panel L1: 400A MCB, 480/277V, 3-phase, 4-wire, 22 KAIC min, surface mount. New circuits added: Parking Lot Lights Relay #1 (20A, circuit 5) and Parking Lot Lights Relay #2 (20A, circuit 7 — but also a space shown at circuit 9 per note on ES101). Panel R1 (SEC 1): 225A MCB, 208Y/120V, 3-phase, 4-wire, 10 KAIC min, surface mount. New circuit: Lighting Control Panel (5A, circuit 27). Both panels located in Building 2829 Electrical Room 117. No new electrical service introduced — project taps existing building panels."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Site project — no building GSF applicable. Parking lot area is 19,630 SF per lighting calculations."
+      },
+      "parking_lot_area_sf": {
+        "value": 19630,
+        "unit": "sf",
+        "source": "lighting calculation report",
+        "quote": null,
+        "sheets": [
+          "lighting calc report"
+        ]
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — surface parking lot, no multi-story structure."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "8 × Lithonia RSX1 LED P3 40K R4 pole-mounted area luminaires, 277V, 110W each (875.5W total)",
+          "LED poles (20' height, XL-26 type), anchor base mounted",
+          "Lighting Control Panel LCP1, 2-zone photocell/relay control",
+          "Photocell on NEMA 3R enclosure, building roof-mounted",
+          "Direct-buried 1\" Schedule 40 PVC conduit, transitions to GRC above grade",
+          "Connection to existing Panel L1 (480/277V, 3-phase) in Building 2829 Electrical Room 117",
+          "Connection to existing Panel R1 SEC 1 (208Y/120V, 3-phase) for lighting controls"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_client",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "B2829 RFP.pdf Part 3 and title page",
+          "value": "WO# 1577286"
+        },
+        {
+          "source": "B2829 RFP.pdf Part 4 header (boilerplate)",
+          "value": "WO# 1595722 / B2100 EMP Concrete Pad Expansion"
+        }
+      ],
+      "resolution_chosen": "WO# 1577286",
+      "rationale": "Part 4 header contains boilerplate template language from a different project (B2100 EMP Concrete Pad Expansion, WO# 1595722). This is a standard NAVFAC small project template not fully updated. All project-specific sections (title page, Parts 1-3) consistently show WO# 1577286 and B2829."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

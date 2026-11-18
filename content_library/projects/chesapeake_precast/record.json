@@ -1,0 +1,349 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "chesapeake_precast",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/chesapeake_precast/21-006.04.07.21.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "286704274db5bd13dbfb87b35f031c8470aa396d3de5f9c48e60d5c8c71c24ca",
+      "page_count": 3,
+      "included": true,
+      "notes": "Only source document present. Three-sheet drawing set: G-001 (Cover), PS001 (Existing Site Plan), P-101 (Enlarged Plan – New Work). Final Submittal dated April 2021. No BOD, SOW, or contract document present."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Install a Digital Water Meter for the Precast Shop",
+      "source": "drawing G-001, project title block",
+      "quote": "INSTALL A DIGITAL WATER METER FOR THE PRECAST SHOP",
+      "corroboration": [
+        {
+          "source": "drawing G-001, project title block",
+          "claim": "INSTALL A DIGITAL WATER METER FOR THE PRECAST SHOP",
+          "value": "Install a Digital Water Meter for the Precast Shop",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Coastal Precast Systems",
+      "source": "drawing G-001, project title block",
+      "quote": "COASTAL PRECAST SYSTEMS",
+      "corroboration": [
+        {
+          "source": "drawing G-001, project title block",
+          "claim": "COASTAL PRECAST SYSTEMS",
+          "value": "Coastal Precast Systems",
+          "agrees": true
+        },
+        {
+          "source": "drawings PS001, P-101, title blocks",
+          "claim": "COSTAL PRECAST SYSTEMS",
+          "value": "Costal Precast Systems (variant spelling)",
+          "agrees": false,
+          "note": "Title blocks on PS001 and P-101 spell the name 'COSTAL' (missing 'A') — appears to be a drafting typographic error; cover sheet title uses 'COASTAL'"
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Coastal Precast Systems",
+      "source": "drawing G-001, project title block",
+      "quote": "COASTAL PRECAST SYSTEMS",
+      "corroboration": [
+        {
+          "source": "drawing G-001, project title block",
+          "claim": "COASTAL PRECAST SYSTEMS",
+          "value": "Coastal Precast Systems",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "1316 Yacht Drive, Chesapeake, VA",
+      "source": "drawing G-001, project title block",
+      "quote": "1316 YACHT DRIVE CHESAPEAKE VA.",
+      "corroboration": [
+        {
+          "source": "drawing G-001, project title block",
+          "claim": "1316 YACHT DRIVE CHESAPEAKE VA.",
+          "value": "1316 Yacht Drive, Chesapeake, VA",
+          "agrees": true
+        },
+        {
+          "source": "drawing PS001, title block",
+          "claim": "CHESAPEAKE",
+          "value": "Chesapeake, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-006",
+      "source": "drawing G-001, title block PROJECT NO. field",
+      "quote": "21-006",
+      "corroboration": [
+        {
+          "source": "drawing G-001, title block",
+          "claim": "21-006",
+          "value": "21-006",
+          "agrees": true
+        },
+        {
+          "source": "drawings PS001, P-101, title blocks",
+          "claim": "21-006",
+          "value": "21-006",
+          "agrees": true
+        },
+        {
+          "source": "filename",
+          "claim": "21-006.04.07.21.FINAL DRAWINGS.pdf",
+          "value": "21-006",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "No square footage stated in drawings. Site plan scale is 1\"=60'-0\"; building footprints visible but not dimensioned with area. Scope is a single water meter installation — GSF not relevant to scope."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "submittal_date": {
+      "value": "2021-04-07",
+      "source": "filename and drawing title block date field",
+      "quote": null,
+      "note": "Filename encodes date 04.07.21; title block confirms 'FINAL SUBMITTAL'. Date interpreted as April 7, 2021."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-04-07",
+        "source": "filename / drawing title block — 'FINAL SUBMITTAL' dated 04.07.21",
+        "quote": "FINAL SUBMITTAL",
+        "note": "Final submittal date used as proxy for design completion date. No separate design contract dates available."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "industrial"
+    ],
+    "program_subtype": [
+      "industrial_manufacturing"
+    ],
+    "disciplines": [
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "plumbing_domestic_water"
+    ],
+    "building_systems": [
+      "plumbing_domestic_water"
+    ],
+    "construction_scope": [
+      "plumbing_scope"
+    ],
+    "delivery_method": [
+      "unknown_delivery_method"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "chesapeake_va",
+    "precast_concrete",
+    "industrial",
+    "water_meter",
+    "plumbing_only",
+    "small_project",
+    "private_client"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "W.J.R.",
+      "role_on_project": "drawn_by_and_project_engineer",
+      "note": "Initials only — drawn by: WJR, checked by: PP, project engineer: WJR per title block"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "plumbing_engineering",
+        "reading_notes": "Cover sheet. Project title: 'Install a Digital Water Meter for the Precast Shop.' Client: Coastal Precast Systems, 1316 Yacht Drive, Chesapeake VA. Stamped 'FINAL SUBMITTAL.' Drawing index lists 3 sheets: G-001 (Cover Sheet), PS001 (Existing Site Plan), P-101 (Enlarged Plan – New Work). BFA firm identified as Bowman Foster & Associates, Inc., with offices at Norfolk VA 23502 and Alexandria VA 22312. PE seal visible. Project No. 21-006. Scale: AS NOTED."
+      },
+      {
+        "sheet_number": "PS001",
+        "title": "EXISTING SITE PLAN",
+        "discipline": "plumbing_engineering",
+        "reading_notes": "Site plan at scale 1\"=60'-0\". Shows large industrial property at 1316 Yacht Drive, Chesapeake VA. Key features: Batch Plant building in northwest quadrant of property; large precast shop building labeled 'Piedmont Rebar Fabrication' running east-west; concrete runways/slabs throughout site. Norfolk-Portsmouth Belt Line Railroad runs along east site boundary. Towing Service Inc. abuts to east across RR. Dominion Gas and Virginia Gas Corporation pipeline easements shown along north boundary. Sal Pond noted to west. CJ Concrete Pumper at south boundary. New Work Note 1: 'Area of work to install new digital water meter — see Sheet P-101.' Circle-1 symbol locates the water meter installation area at southwest entry of wood working area. Single-story industrial facility; no floor count expressed."
+      },
+      {
+        "sheet_number": "P-101",
+        "title": "ENLARGED PLAN – NEW WORK",
+        "discipline": "plumbing_engineering",
+        "reading_notes": "Enlarged plan at 1/4\"=1'-0\" showing wood working shop entry area. Existing 2\" domestic cold water (CW) main enters the wood working shop through exterior wall. New Work Notes: (1) Existing 2\" water main entering the wood working shop. (2) Existing isolation valve — remain. (3) Provide a digital water meter in the vertical pipe; refer to Detail 1/P-101 'Water Meter Piping Detail' for additional information. Water Meter Piping Detail (no scale) shows: 2\"CW supply, union connection, digital water meter (M symbol), Y-strainer, 2\"CW downstream continuation. No other MEP systems shown. Scope is limited to a single 2\" digital water meter installation on existing domestic water line."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "PS001"
+        ],
+        "note": "Site plan at 1\"=60' shows building footprints but no area annotation. Building footprint is large (industrial precast shop, multi-hundred-foot dimension visible) but no calculated area provided."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawing PS001, PS001 site plan context",
+        "quote": null,
+        "sheets": [
+          "PS001"
+        ],
+        "note": "Single-story industrial facility inferred from site plan appearance; no multi-level indication present."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [],
+        "plumbing": [
+          "2\" domestic cold water (CW) supply line to wood working shop",
+          "Digital water meter installation on 2\" CW line — new work",
+          "Y-strainer on 2\" CW line — new work",
+          "Union connection — new work",
+          "Existing isolation valve — remain"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.client_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing G-001, project title block (large title)",
+          "value": "COASTAL PRECAST SYSTEMS"
+        },
+        {
+          "source": "drawings PS001 and P-101, title blocks",
+          "value": "COSTAL PRECAST SYSTEMS"
+        }
+      ],
+      "resolution_chosen": "drawing G-001, project title block (large title)",
+      "rationale": "The large-format project title on G-001 reads 'COASTAL PRECAST SYSTEMS' (correct spelling). The title blocks on PS001 and P-101 read 'COSTAL PRECAST SYSTEMS' — a drafting typographic error (dropped 'A'). The cover sheet title is treated as authoritative; 'COASTAL' is used in the record. The actual legal entity name cannot be confirmed from drawings alone."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

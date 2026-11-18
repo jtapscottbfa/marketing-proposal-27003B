@@ -1,0 +1,430 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-20T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b100_chiller",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b100_chiller/BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "2d5c329cea499aef9e42a623871cee2661776e7468b8a602bf0b5c0dda87e8e6",
+      "page_count": 9,
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b100_chiller/1656492 Final SAES.pdf",
+      "type": "sow",
+      "sha256": "783eca614dd9330010da8b3ff42362852c601283ebcb9b88b14ddfba687bf143",
+      "page_count": 24,
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 100 Chiller Replacement, NAS Oceana",
+      "source": "BOD title page",
+      "quote": "BUILDING 100 CHILLER REPLACEMENT NAS OCEANA",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "BUILDING 100 CHILLER REPLACEMENT NAS OCEANA",
+          "value": "Building 100 Chiller Replacement, NAS Oceana",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Building 100 – Chiller Replacement / NAS Oceana",
+          "value": "Building 100 Chiller Replacement, NAS Oceana",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC)",
+      "source": "SAES header",
+      "quote": "OTHER PROJECTS UNDER THE COGNIZANCE OF NAVAL FACILITIES ENGINEERING COMMAND",
+      "corroboration": [
+        {
+          "source": "SAES header",
+          "claim": "Naval Facilities Engineering Command (NAVFAC)",
+          "value": "Naval Facilities Engineering Command (NAVFAC)",
+          "agrees": true
+        },
+        {
+          "source": "BOD title page",
+          "claim": "Contract No. N40085-20-D-0005 — NAS Oceana",
+          "value": "Naval Facilities Engineering Command (NAVFAC)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Air Station Oceana / US Navy",
+      "source": "BOD title page; SAES A1",
+      "quote": "NAS Oceana",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "NAS Oceana",
+          "value": "Naval Air Station Oceana / US Navy",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Project Location NAS Oceana",
+          "value": "Naval Air Station Oceana / US Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Air Station Oceana",
+      "facility_address": null,
+      "source": "SAES B2",
+      "quote": "953 Hornet Drive, Building 820, Suite 210, Virginia Beach, VA 23460",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "NAS Oceana",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES B2",
+          "claim": "Virginia Beach, VA 23460",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "eProjects #1656492",
+      "source": "BOD title page; SAES header",
+      "quote": "eProjects Work Order No. 1656492",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "eProjects Work Order No. 1656492",
+          "value": "1656492",
+          "agrees": true
+        },
+        {
+          "source": "SAES header",
+          "claim": "eProjects #1656492",
+          "value": "1656492",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-20-D-0005",
+      "source": "BOD title page; SAES header",
+      "quote": "Contract No. N40085-20-D-0005",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "Contract No. N40085-20-D-0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        },
+        {
+          "source": "SAES header",
+          "claim": "N40085-20-D-0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": "SAES A1",
+      "quote": "Task Order TBD"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing"
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "estimated_construction_cost": {
+      "value": 424707,
+      "currency": "USD",
+      "source": "SAES C1",
+      "quote": "Estimated Construction Cost (ECC): $424,707",
+      "corroboration": [
+        {
+          "source": "SAES C1",
+          "claim": "$424,707",
+          "value": 424707,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_summary": {
+      "value": "Replace two existing rooftop air-cooled chillers at Building 100 with a single new air-cooled chiller to provide backup cooling for mission-critical radar equipment, with associated structural, architectural, mechanical, and electrical work.",
+      "source": "BOD General Scope; SAES Attachment 1 §1",
+      "quote": "This project includes the removal of two stand-by air cooled chillers serving mission critical radar equipment for Building 100. One air cooled chiller shall replace the two removed.",
+      "corroboration": [
+        {
+          "source": "BOD General Scope",
+          "claim": "removal of two stand-by air cooled chillers; one air cooled chiller shall replace the two removed",
+          "value": "2-for-1 rooftop chiller replacement, mission-critical radar backup cooling",
+          "agrees": true
+        },
+        {
+          "source": "SAES Attachment 1 §1",
+          "claim": "Replace two existing rooftop, air-cooled chillers with single chiller. New chiller will provide backup cooling for radar system when chiller plant is down.",
+          "value": "2-for-1 rooftop chiller replacement, mission-critical radar backup cooling",
+          "agrees": true
+        }
+      ]
+    },
+    "existing_chiller_capacity": {
+      "value": "Two (2) 30-ton air-cooled chillers (backup); primary chiller plant Building 119 has two 450-ton water-cooled chillers",
+      "source": "BOD Mechanical p.6-7",
+      "quote": "N+1 redundancy via (2) 30 ton air cooled chillers mounted on the north end of the first floor roof of the building",
+      "corroboration": [
+        {
+          "source": "BOD Mechanical p.6-7",
+          "claim": "(2) 30 ton air cooled chillers",
+          "value": "2 x 30-ton backup air-cooled chillers",
+          "agrees": true
+        },
+        {
+          "source": "SAES Attachment 1 §1",
+          "claim": "two existing rooftop, air-cooled chillers",
+          "value": "two backup air-cooled chillers",
+          "agrees": true
+        }
+      ]
+    },
+    "chiller_pump_flow": {
+      "value": "72 GPM (2.4 GPM/ton × 30 tons × 2 pumps in parallel assumed)",
+      "source": "BOD Mechanical p.6",
+      "quote": "The flow is assumed to be 2.4 GPM/ton totaling 72 GPM",
+      "corroboration": [
+        {
+          "source": "BOD Mechanical p.6",
+          "claim": "2.4 GPM/ton totaling 72 GPM",
+          "value": "72 GPM",
+          "agrees": true
+        }
+      ]
+    },
+    "existing_electrical_panel": {
+      "value": "Panel 'PJ': 400A MLO, 208Y/120V, 3-phase, 4-wire; manufactured by General Electric; located in mechanical room 207",
+      "source": "BOD Electrical p.8",
+      "quote": "Panel \"PJ\" is a 400A MLO, 208Y/120V, 3 phase, 4 wire surface mounted panelboard rated for 10 Kaic and manufactured by General Electric (G.E.) located in mechanical room 207",
+      "corroboration": [
+        {
+          "source": "BOD Electrical p.8",
+          "claim": "400A MLO, 208Y/120V, 3 phase, 4 wire, G.E., room 207",
+          "value": "Panel PJ details",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 150,
+        "source": "SAES Attachment 2, Project Design Schedule",
+        "quote": null,
+        "note": "Computed from schedule: Final Design Submittal due 150 cumulative days after T.O. Award"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "structural_engineering",
+      "architecture"
+    ],
+    "sub_disciplines": [
+      "hvac_central_plant",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "structural_existing_assessment",
+      "architectural_roofing"
+    ],
+    "building_systems": [
+      "hvac_chilled_water",
+      "hvac_air_distribution",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_emergency_power"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition",
+      "thermal_roofing",
+      "metals_structural_steel"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_8a_set_aside"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nas_oceana",
+    "virginia_beach",
+    "chiller_replacement",
+    "mission_critical",
+    "radar_cooling",
+    "8a_set_aside",
+    "fy2020",
+    "idiq_task_order",
+    "n40085-20-d-0005"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  },
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Two (2) existing 30-ton air-cooled backup chillers on roof (to be replaced with one)",
+          "Two (2) in-line centrifugal chilled water pumps (Pump #11 and #12) in mechanical room",
+          "CRAC unit in radar room (existing, chilled water-cooled)",
+          "AHU serving support room (existing, chilled water-cooled)",
+          "Primary chilled water from Building 119: two 450-ton water-cooled chillers with 100 HP VFD pumps"
+        ],
+        "electrical": [
+          "Panel PJ: 400A MLO, 208Y/120V, 3Ø, GE — serves both chillers",
+          "Existing chillers: 146 MCA, 200V, 3-phase, Trane",
+          "Panel LV4: 100A MLO, 208Y/120V, 3Ø, Cutler Hammer — serves chiller pumps",
+          "Onan Bypass Transfer Switch for emergency power in main electrical room",
+          "Generator in adjacent room providing emergency power to building"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": []
+}

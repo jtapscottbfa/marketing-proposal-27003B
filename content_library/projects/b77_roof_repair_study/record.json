@@ -1,0 +1,340 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b77_roof_repair_study",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b77_roof_repair_study/23-059.2024.02.14.NSWC BLDG 77H WEST ROOF REPAIRS PHASE 2 SURVEY.pdf",
+      "type": "drawing_set",
+      "sha256": "301047e20c768ad02de59120a97c85361cebbccf7d43927a3c412659249ec70c",
+      "page_count": 4,
+      "included": true,
+      "notes": "BFA drawing set No. 23-059, dated 02-14-2024. Electrical survey drawings of NSWC Building 77H West mezzanine level. 4 sheets (E-101 through E-103, two pages for E-103). Rendered to PNG for visual extraction."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b77_roof_repair_study/RFP B77H WEST Roof Repair- Lighting Removal-20231110-signed.pdf",
+      "type": "correspondence",
+      "sha256": "c3d7f851f21ec3a0daddbbd0347dc5f489fdc725c790d10d933380f29717bcf1",
+      "page_count": 2,
+      "included": true,
+      "notes": "Proposed Change/Request for Proposal (RFP) issued 9-Nov-2023 by NAVFAC ROICC to contractor ARGUS CJW JV 3 LLC for Building 77H West Roof Repair Phase 2 lighting removal. Signed by COAR Daniel O'Neill."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Source documents consist of one drawing set (BFA-authored survey drawings) and one NAVFAC RFP/change proposal letter. No BOD, SOW, formal contract, or narrative documents present. The RFP is addressed to the GC (ARGUS CJW JV 3 LLC), not directly to BFA — BFA's involvement is inferred from the drawing set they produced. This is a thinly-documented project from an intake perspective."
+  },
+  "facts": {
+    "project_name": {
+      "value": "NSWC Building 77H West Roof Repairs Phase 2 — Electrical Survey",
+      "source": "drawing set E-101 title block",
+      "quote": "NSWC BUILDING 77H WEST ROOF REPAIRS PHASE 2 SURVEY",
+      "corroboration": [
+        {
+          "source": "drawing set E-101 title block",
+          "claim": "NSWC BUILDING 77H WEST ROOF REPAIRS PHASE 2 SURVEY",
+          "value": "NSWC Building 77H West Roof Repairs Phase 2 Survey",
+          "agrees": true
+        },
+        {
+          "source": "RFP p.1 header",
+          "claim": "N4008520D0158/N4008523F6427 - Building 77H West Roof Repair Phase-2",
+          "value": "Building 77H West Roof Repair Phase-2",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command — Mid Atlantic (NAVFAC MIDLANT)",
+      "source": "drawing set E-101 title block",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND - MID ATLANTIC",
+      "corroboration": [
+        {
+          "source": "drawing set E-101 title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND - MID ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "RFP p.1 header",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND RESIDENT OFFICER IN CHARGE OF CONSTRUCTION",
+          "value": "NAVFAC ROICC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Command — Mid Atlantic (NAVFAC MIDLANT)",
+      "source": "drawing set E-101 title block",
+      "quote": "NAVAL FACILITIES ENGINEERING COMMAND - MID ATLANTIC"
+    },
+    "location": {
+      "city": {
+        "value": "Dahlgren",
+        "source": "inferred from NSWC designation",
+        "quote": null,
+        "status": "missing",
+        "notes": "NSWC = Naval Surface Warfare Center. The most prominent NSWC facility in NAVFAC MIDLANT area is NSWC Dahlgren (VA) or NSWC Carderock (MD). Cannot confirm from documents alone."
+      },
+      "state": {
+        "value": null,
+        "status": "missing"
+      },
+      "country": "US",
+      "facility_name": {
+        "value": "Naval Surface Warfare Center (NSWC) — Building 77H",
+        "source": "drawing set E-101 title block and general notes",
+        "quote": "NSWC BUILDING 77H WEST ROOF REPAIRS PHASE 2 SURVEY"
+      },
+      "source": "drawing set E-101 title block",
+      "quote": "NSWC BUILDING 77H WEST ROOF REPAIRS PHASE 2 SURVEY"
+    },
+    "project_number_internal": {
+      "value": "23-059",
+      "source": "drawing set filename and title block",
+      "quote": null,
+      "notes": "BFA drawing project number 23-059 extracted from filename '23-059.2024.02.14.NSWC BLDG 77H WEST ROOF REPAIRS PHASE 2 SURVEY.pdf'. Not confirmed by title-block text at the resolution available, but consistent with BFA's YY-NNN numbering convention."
+    },
+    "project_number_client": {
+      "value": "N4008520D0158/N4008523F6427",
+      "source": "RFP p.1",
+      "quote": "N4008520D0158/N4008523F6427 - Building 77H West Roof Repair Phase-2"
+    },
+    "contract_number": {
+      "value": "N4008520D0158/N4008523F6427",
+      "source": "RFP p.1 CONTRACT/TASK ORDER NUMBER field",
+      "quote": "N4008520D0158/N4008523F6427 - Building 77H West Roof Repair Phase-2",
+      "notes": "N4008520D0158 appears to be the base IDIQ contract number; N4008523F6427 appears to be the task order number under it. These are the GC's contract numbers; BFA's own contract/task-order number is not in the source documents."
+    },
+    "task_order_number": {
+      "value": "N4008523F6427",
+      "source": "RFP p.1 CONTRACT/TASK ORDER NUMBER field",
+      "quote": "N4008520D0158/N4008523F6427 - Building 77H West Roof Repair Phase-2",
+      "notes": "Interpreted as the task order number component of the combined contract/TO designation. This is the GC's task order; BFA's own task order is not documented."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Drawing scale is 3/32\" = 1'-0\". Affected work area in the RFP is described as 'approximately between column line D11 and D18' but no explicit area figure is given in any source document. Column bays appear approximately 20'-0\" each (per dimension callouts on drawings), spanning roughly 7 bays × ~20' = ~140 LF. No total building GSF derivable from available documents."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "drawing_date": {
+      "value": "2024-02-14",
+      "source": "drawing set filename and title block date stamp",
+      "quote": null,
+      "notes": "Date '02-14-2024' appears in the signed/stamped seal area of each drawing sheet (PE seal dated 02-14-2024)."
+    },
+    "rfp_date": {
+      "value": "2023-11-09",
+      "source": "RFP p.1",
+      "quote": "Date Issued: 9-Nov-2023"
+    },
+    "rfp_proposal_due_date": {
+      "value": "2023-11-30",
+      "source": "RFP p.1",
+      "quote": "11/30/23"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-02-14",
+        "source": "drawing set date stamp (PE seal)",
+        "quote": null,
+        "notes": "Drawing production completed by 2024-02-14 per PE seal date. This is the delivery date of the survey drawings, not necessarily the project closeout date."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP requested the GC (ARGUS CJW JV 3 LLC) to provide a price for the lighting removal scope; no awarded value captured in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_lighting_interior",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "electrical_power",
+      "electrical_lighting_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_idiq"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "study_only"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "navfac_midlant",
+    "nswc",
+    "roof_repair",
+    "electrical_survey",
+    "gypsum_deck",
+    "building_77h",
+    "existing_conditions_survey",
+    "lighting_removal"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-101",
+        "title": "PARTIAL MEZZANINE PLAN SURVEY — BLDG. 77H",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Partial mezzanine plan survey covering columns roughly D/E-10 through D/E-18 (west portion). Scale 3/32\" = 1'-0\". Shows existing electrical devices attached to gypsum roof deck: lighting fixtures (numbered with circled integers), junction boxes (flush-mounted in deck and surface-mounted on steel beams), conduit runs (1/2\" embedded in roof deck, 3/4\" on steel beams), panel callouts for Panel 'MDP' (600A, 480Y/277V, 3Ø) and Panel 'L-16' (250A, 240/120V, 3Ø) both located on ground floor. Existing 100A, 3Ø elevator disconnect switch to remain. Abandoned mechanical ductwork called out between columns D-16/17 (26\"×26\"D) and D-17/18 (20\"×20\"D), with branch ductwork routing to ground floor. Key plan in lower right shows three mezzanine survey zones (this sheet = west zone). BFA PE stamp dated 02-14-2024. NAVFAC MIDLANT client. Sheet key notes describe 17 different existing conditions (attached fixtures, flush boxes, embedded conduit, abandoned ductwork, panels, elevator disconnect, NMCI fiber cabling). Roof type zoning shown at bottom: LOW ROOF, LOW MONITOR ROOF, 40+ MONITOR ROOF — indicating variable roof heights across the mezzanine floor plan."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "PARTIAL MEZZANINE PLAN SURVEY — BLDG. 77H",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Partial mezzanine plan survey covering columns D/E-18 through D/E-26 (center portion of mezzanine). Scale 3/32\" = 1'-0\". Match lines at left (to E-101) and right (to E-103). Very similar inventory to E-101: existing lighting fixtures, junction boxes, conduit. General notes (carried on all sheets) repeat: abandoned mechanical ductwork items D-17/18 through D-22/23 with varying sizes (20\"×20\"D, 26\"×26\"D, 29\"×32\"W, 35\"×38\"W, 43\"×43\"W, 44\"×46-1/2\"W). Sheet key notes identify 12 conditions: abandoned lighting circuits, flush JBs, embedded 1/2\" conduit, abandoned conduit with cut-control wiring, HVAC controller conduit (to remain), HVAC controller (to remain), 1×4 lighting fixture on steel beam, steel strut support conduit on stairwell wall, NMCI cabling in corrugated PVC, NMCI pullbox, existing junction box on mechanical equipment (to remove and relocate), 1×4 lighting fixture not operating (to replace lamps). Roof zoning same pattern as E-101 across top of plan."
+      },
+      {
+        "sheet_number": "E-103",
+        "title": "PARTIAL MEZZANINE PLAN SURVEY — BLDG. 77H + MECHANICAL PENTHOUSE PLAN + LIGHTING ONE-LINE DIAGRAM",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Three drawings on this sheet (two pages in PDF): (1) Partial mezzanine plan survey east zone (columns D/E-26 through D/E-31). Match line at left to E-102. Abandoned ductwork items D-26/27 through D-29/30 called out in general notes (44\"×41\"Wx, 43\"×43\"Wx, 38\"×41\"Wx). Sheet key notes: surface JB on steel beam below roof deck, flush JB in roof deck underside, embedded 1/2\" empty conduit, embedded 1/2\" empty conduit dead-end, abandoned lighting circuit wiring in embedded conduit, 1/2\" conduit dead end in mech penthouse, conduit from south face of column D-27 to junction box at mezzanine level then to exterior wall column E-27 and dead-ends at ground floor. (2) Mechanical Penthouse Plan: small plan showing mezzanine platform area near columns D-26/27, with junction boxes, lighting fixture (incandescent bulb), conduit routed down column D-27. (3) Lighting One-Line Diagram (two instances — one for mezzanine lighting circuit, one for elevator circuit): Panel L-16 (250A, 240/120V, 3Ø, ground floor, column B-13) feeding mezzanine lighting circuit L-16-17 with parallel timer switches. Panel MDP (600A, 480Y/277V, 3Ø, ground floor) feeding elevator circuit MDP-38 (100A, 3Ø) through disconnect switch. Confirms panels are ground-floor equipment; circuits traverse to mezzanine level through conduit. BFA PE stamp 02-14-2024."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No area tabulation on drawings. Mezzanine plan drawn at 3/32\"=1'-0\". Bay spacing approximately 20'-0\" per dimension callouts. Survey spans columns D/E-10 through D/E-31 (approximately 21 bays). Width not explicitly dimensioned. Could not reliably derive GSF at medium depth without scaling the drawings carefully."
+      },
+      "floor_count": {
+        "value": 2,
+        "unit": "levels",
+        "source": "drawing set E-101 through E-103",
+        "quote": null,
+        "notes": "Building has at minimum a ground floor and a mezzanine level. Mechanical penthouse shown on E-103 suggests at least a partial third level. Survey scope is mezzanine level only.",
+        "sheets": [
+          "E-101",
+          "E-102",
+          "E-103"
+        ]
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "Panel 'L-16': 250A, 240/120V, 3Ø, ground floor (column B-13) — serves mezzanine lighting circuit L-16-17",
+          "Panel 'MDP': 600A, 480Y/277V, 3Ø, 4W, ground floor (column D-12) — serves elevator disconnect switch (100A, 3Ø)",
+          "Existing lighting fixtures: 1×4 and 1×8 fluorescent types on mezzanine, mounted to steel beam underside or flush-recessed in gypsum deck",
+          "Embedded 1/2\" conduit in gypsum roof deck (numerous runs)",
+          "3/4\" conduit on steel beams below roof deck",
+          "1-1/4\" conduit from elevator disconnect switch to roof deck underside",
+          "Parallel timer switches for mezzanine lighting circuit",
+          "100A, 3Ø elevator disconnect switch (to remain)",
+          "CO detectors and smoke detectors attached to gypsum deck (referenced in RFP, not individually tagged on drawings)",
+          "NMCI fiber cabling in corrugated PVC/plastic piping along steel beams",
+          "18\"×18\"×6\"D NMCI fiber pullbox on steel beam",
+          "Flush-mounted and surface junction boxes throughout mezzanine"
+        ],
+        "hvac": [
+          "Abandoned mechanical ductwork throughout mezzanine (columns D-16/17 through D-29/30): various sizes from 20\"×20\"D to 44\"×46-1/2\"W",
+          "Existing HVAC controller and control wiring conduit (to remain per E-102 notes)",
+          "Mechanical penthouse with existing junction box and conduit (E-103)"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Existing smoke detectors attached to gypsum deck (referenced in RFP for removal/salvage)",
+          "Existing CO detectors attached to gypsum deck (referenced in RFP for removal/salvage)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

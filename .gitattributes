@@ -1,0 +1,43 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# .gitattributes — line-ending and diff policy for ae-proposal-engine
+#
+# Enforces consistent line endings across Windows + macOS + Linux contributors.
+# Without this file, core.autocrlf=true on Windows rewrites checked-out files
+# to CRLF, which trips shellcheck (\r at end of every line) and can break
+# scripts when run on a Linux CI runner.
+#
+# Rule of thumb:
+#   text eol=lf   = always LF in working tree, regardless of platform
+#                   (use for code files where line endings matter)
+#   text          = normalized in repo (LF), native in working tree
+#                   (use for human docs where Windows tools may want CRLF)
+#   binary        = no diffing or line-ending conversion
+# ══════════════════════════════════════════════════════════════════════════════
+
+# Default: treat unknown files as text and let git auto-detect
+*           text=auto
+
+# Code files — must be LF on every platform
+*.sh        text eol=lf
+*.py        text eol=lf
+*.js        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.json      text eol=lf
+
+# Docs and config — LF in repo, native in working tree (CRLF on Windows is fine)
+*.md        text
+*.txt       text
+.gitignore  text
+.gitattributes text
+.markdownlint.yml text eol=lf
+
+# Binary assets — no conversion, no text diff
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.pdf       binary
+*.docx      binary
+*.xlsx      binary
+*.zip       binary

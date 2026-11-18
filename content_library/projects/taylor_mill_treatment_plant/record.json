@@ -1,0 +1,604 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "taylor_mill_treatment_plant",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/RFP for TMTP UV, PAC, pump 3, filter valve and actuator Evaluation and D....pdf",
+      "type": "sow",
+      "sha256": "8609a82bcad2a08473b2ed39d42c03df1576087b782c1c1b6e5076288970a97b",
+      "included": true,
+      "notes": "Request for Proposals issued 2020-06-15 by NKWD; primary project scope document"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/NKWD TMTP Clarification Memo 1.pdf",
+      "type": "correspondence",
+      "sha256": "eb5e2493f9e2249fbd2f0d331bc58c518c0776fce2149775d2682bc9fe71f9d4",
+      "included": true,
+      "notes": "RFP Clarification Memo No. 1 dated 2020-07-09; provides budget figure ($1,615,000) and scope additions (concrete repair in tunnel, clarifier launder trough repairs)"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/20-059.FINAL.SUBMITTAL.DWGS.pdf",
+      "type": "drawing_set",
+      "sha256": "b222fe682c99bdc942705a55a0535ba1c6e7d5720f4a58c0a543be258fe593b7",
+      "page_count": 4,
+      "included": true,
+      "notes": "Final submittal drawings, May 2023; job number 011904; 4 sheets: M1.1, E.01, E1.0, E1.1; prepared by Cornwell Engineering Group, Newport News VA; BFA logo on title block"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/230513 SF - Common Motor Requirements for HVAC Equipment.pdf",
+      "type": "spec_book",
+      "sha256": "eaf32287b674ca662b9584ba5e9a51ccf794ce324f8e1e6092228ebd4fed7670",
+      "included": true,
+      "notes": "Specification section 230513 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/230529 SF - Hangers and Supports for HVAC Piping and Equipment.pdf",
+      "type": "spec_book",
+      "sha256": "c5269c502b00d8094ceabfd50ed3e3c0ee30ff5a10d8127bc78df5b6918ebf6a",
+      "included": true,
+      "notes": "Specification section 230529 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/230593 SF - Testing, Adjusting, and Balancing for HVAC.pdf",
+      "type": "spec_book",
+      "sha256": "cd211c8b0adaf1edc7ae739c638cf3a69e9e9438823fbc4a9dfa22ba4ad1aae4",
+      "included": true,
+      "notes": "Specification section 230593 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/230923.12 SF - Control Dampers.pdf",
+      "type": "spec_book",
+      "sha256": "cf9846daebf8061432c113ba264e7ce60b2fe0cc234e6252da6ea7afae832884",
+      "included": true,
+      "notes": "Specification section 230923.12 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/233113 SF - Metal Ducts.pdf",
+      "type": "spec_book",
+      "sha256": "68cab12b84a76d7214698c53758985d4d36a9340aa9404af3848beca23a619f1",
+      "included": true,
+      "notes": "Specification section 233113 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/233423 SF - HVAC Power Ventilators.pdf",
+      "type": "spec_book",
+      "sha256": "0f104f9845048059434b347625e330abd917f645e910cb446a153fd26c8109cb",
+      "included": true,
+      "notes": "Specification section 233423 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260010 SF - Supplemental Requirements for Electrical.pdf",
+      "type": "spec_book",
+      "sha256": "75d17c78519a228071681330f3dec2f48c2e8be2f60db5d0cbc8c9b912c2c142",
+      "included": true,
+      "notes": "Specification section 260010 — Taylor Mill Treatment Plant / NKWD; AIA MasterSpec-based"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260519 SF - Low-Voltage Electrical Power Conductors and Cables.pdf",
+      "type": "spec_book",
+      "sha256": "b06895f8c327929e345621a6c59df611ba5ebab97df577cf9580f17dc54f6677",
+      "included": true,
+      "notes": "Specification section 260519 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260526 SF - Grounding and Bonding for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": "adf64d6ce8cf720a25459a8f3a8c267754010bb06c9e2c52316efe86994044a9",
+      "included": true,
+      "notes": "Specification section 260526 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260529 SF - Hangers and Supports for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": "08912acbcb050185e6f61c74137b7c60ff169c3a8e95f1212373845b211d7a9c",
+      "included": true,
+      "notes": "Specification section 260529 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260533.13 SF - Conduits for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": "690134e52e2a45dff9febf592f407cee9890660d6a91dd40098b6f7b6c25eced",
+      "included": true,
+      "notes": "Specification section 260533.13 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260533.16 SF - Boxes and Covers for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": "d83d5fc78e474b8c4b86ebb15f30ac3c7e2380ee5a4e5dde6f4b1048ee429771",
+      "included": true,
+      "notes": "Specification section 260533.16 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/260553 SF - Identification for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": "51c20a1179891f5657ea41bcc23736a74255dc8ced4f6795600b41ff35b3e49d",
+      "included": true,
+      "notes": "Specification section 260553 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/262416 SF - Panelboards.pdf",
+      "type": "spec_book",
+      "sha256": "9a0e147de6cd6f2e53e86d6a10ffd6ab9365f5e5aa57c74a86a7da6f5854400e",
+      "included": true,
+      "notes": "Specification section 262416 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/262726 SF - Wiring Devices.pdf",
+      "type": "spec_book",
+      "sha256": "5e01715bb967a754ca4ffeef5cd3b57e2a3275904d0a3e816bf155f70f85dbbc",
+      "included": true,
+      "notes": "Specification section 262726 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/265119 SF - LED Interior Lighting.pdf",
+      "type": "spec_book",
+      "sha256": "bb72ba63629bfe1ffed9095d4df0d3dfdf77dad0e49302fb994f4439308dd086",
+      "included": true,
+      "notes": "Specification section 265119 — Taylor Mill Treatment Plant / NKWD"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/Attachment A- TMTP Improvements.xls",
+      "type": "unknown",
+      "sha256": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Excel cost proposal form (Attachment A); binary XLS not readable by extractor; contains cost breakdown template by task"
+    },
+    {
+      "path": "00_admin/reference_projects/taylor_mill_treatment_plant/NKWD - Memo 2- RFP for Professional Services- TMTP UV PAC Pump #3 Project .msg",
+      "type": "correspondence",
+      "sha256": null,
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Outlook .msg email file; binary format not readable by extractor; appears to be a second memo related to the RFP process"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD. No executed contract (RFP only — this project record is sourced from the pre-award phase). No narrative. Two binary files (XLS, .msg) not readable by extractor."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Taylor Mill Treatment Plant UV Disinfection and PAC Feed System, Pump #3, and Filter Valve & Actuator Upgrades & Improvements",
+      "source": "RFP p.1",
+      "quote": "TAYLOR MILL TREATMENT PLANT UV DISINFECTION AND PAC FEED SYSTEM, PUMP #3, AND FILTER VALVE & ACTUATOR EVALUATION, DESIGN, AND CONSTRUCTION PHASE SERVICES",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "TAYLOR MILL TREATMENT PLANT UV DISINFECTION AND PAC FEED SYSTEM, PUMP #3, AND FILTER VALVE & ACTUATOR EVALUATION, DESIGN, AND CONSTRUCTION PHASE SERVICES",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title block (all 4 sheets)",
+          "claim": "TAYLOR MILL TREATMENT PLANT / TMTP UPGRADES & IMPROVEMENTS",
+          "agrees": true
+        },
+        {
+          "source": "Clarification Memo 1 header",
+          "claim": "TAYLOR MILL TREATMENT PLANT UV DISINFECTION AND PACK FEED SYSTEM, PUMP #3, AND FILTER VALVE & ACTUATOR EVALUATION, DESIGN AND CONSTRUCTION PHASE SERVICES",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Northern Kentucky Water District",
+      "source": "RFP p.1",
+      "quote": "Northern Kentucky Water District",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "Northern Kentucky Water District",
+          "agrees": true
+        },
+        {
+          "source": "Spec sections (all) header",
+          "claim": "NORTHERN KENTUCKY WATER DISTRICT",
+          "agrees": true
+        },
+        {
+          "source": "Drawing title blocks (all 4 sheets) — client listed as project owner",
+          "claim": "Owner is Northern Kentucky Water District (implicit from spec/drawing header)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Northern Kentucky Water District",
+      "source": "RFP p.1",
+      "quote": "Northern Kentucky Water District",
+      "corroboration": [
+        {
+          "source": "RFP p.1",
+          "claim": "Northern Kentucky Water District",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Taylor Mill",
+      "state": "KY",
+      "country": "US",
+      "facility_address": null,
+      "source": "RFP p.1",
+      "quote": "Taylor Mill Treatment Plant",
+      "notes": "Plant name references Taylor Mill, KY. NKWD headquarters is in Erlanger, KY (2835 Crescent Springs Road, P.O. Box 18640, Erlanger, KY 41018). Specific plant street address not given in source documents.",
+      "corroboration": [
+        {
+          "source": "RFP p.1, project title",
+          "claim": "Taylor Mill Treatment Plant — Kentucky",
+          "agrees": true
+        },
+        {
+          "source": "Drawings — all sheets stamped by a PE licensed in Kentucky (per RFP requirement and Kentucky PE seal on drawings)",
+          "claim": "Project located in Kentucky",
+          "agrees": true
+        },
+        {
+          "source": "RFP p.7: NKWD mailing address",
+          "claim": "Erlanger, KY 41018 (NKWD HQ address, not plant address)",
+          "agrees": true,
+          "note": "NKWD HQ is Erlanger; plant is Taylor Mill — two different KY cities"
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "notes": "No formal NKWD project number stated in source documents; RFP references 'Taylor Mill Treatment Plant Project' by name only"
+    },
+    "engineer_job_number": {
+      "value": "011904",
+      "source": "Drawing title blocks, all 4 sheets",
+      "quote": "JOB NO. 011904",
+      "corroboration": [
+        {
+          "source": "Drawing M1.1 title block",
+          "claim": "JOB NO. 011904",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E.01 title block",
+          "claim": "JOB NO. 011904",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E1.0 title block",
+          "claim": "JOB NO. 011904",
+          "agrees": true
+        },
+        {
+          "source": "Drawing E1.1 title block",
+          "claim": "JOB NO. 011904",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Water treatment plant infrastructure upgrade; no building square footage stated in source documents. Project involves work within existing plant buildings (pipe gallery, chemical building, main treatment building) but scope is system-specific, not building-area-based."
+    },
+    "program_budget": {
+      "value": 1615000,
+      "currency": "USD",
+      "source": "Clarification Memo 1, Q16",
+      "quote": "$1,615,000",
+      "corroboration": [
+        {
+          "source": "Clarification Memo 1, Q16",
+          "claim": "$1,615,000",
+          "agrees": true
+        },
+        {
+          "source": "RFP — no budget figure given in RFP itself",
+          "claim": "Not stated",
+          "agrees": true,
+          "note": "Corroboration gap: budget only appears in clarification memo, not in original RFP"
+        }
+      ]
+    },
+    "plant_capacity": {
+      "value": "10 MGD",
+      "source": "RFP §I Background",
+      "quote": "the 10 MGD Taylor Mill Treatment Plant (TMTP)",
+      "corroboration": [
+        {
+          "source": "RFP §I Background",
+          "claim": "10 MGD Taylor Mill Treatment Plant",
+          "agrees": true
+        }
+      ]
+    },
+    "plant_year_built": {
+      "value": 1953,
+      "source": "RFP §I Background",
+      "quote": "The Taylor Mill Treatment Plant was built in 1953",
+      "corroboration": [
+        {
+          "source": "RFP §I Background",
+          "claim": "built in 1953",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design fee not stated in available source documents. RFP solicits a cost proposal (Attachment A, not readable XLS); no awarded amount in sources."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings dated May 2023; this likely represents final design submittal but date not confirmed in text sources"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Anticipated project budget is $1,615,000 (per Clarification Memo Q16) representing estimated construction cost; engineering fee component unknown"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings are final submittal dated May 2023; construction completion date unknown from available sources"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP clarification memo Q9 states anticipated construction duration 'no longer than the allotted shutdown of Labor Day-Memorial Day' (approximately 9 months); specific calendar days not stated"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local_special_district"
+    ],
+    "program_type": [
+      "utilities_water_treatment"
+    ],
+    "program_subtype": [
+      "utilities_water_treatment"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_grounding_lightning"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_grounding"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "existing_demolition",
+      "existing_conditions"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local_competitive"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "water_treatment",
+    "kentucky",
+    "nkwd",
+    "uv_disinfection",
+    "pac_feed_system",
+    "pump_replacement",
+    "filter_valves",
+    "water_utility",
+    "industrial_process",
+    "hazardous_classification_areas"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "RAO",
+      "role_on_project": "designer_of_record",
+      "notes": "Initials 'RAO' appear on drawing DES and OWN fields on M1.1"
+    },
+    {
+      "name": "BFF",
+      "role_on_project": "designer_of_record",
+      "notes": "Initials 'BFF' appear on drawing DES field on E1.0"
+    },
+    {
+      "name": "MED",
+      "role_on_project": "designer_of_record",
+      "notes": "Initials 'MED' appear on drawing DES field on E.01 (Legend sheet)"
+    },
+    {
+      "name": "BB",
+      "role_on_project": "checker",
+      "notes": "Initials 'BB' appear on CKD field on multiple sheets"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M1.1",
+        "title": "CHEMICAL BUILDING — MECHANICAL DEMOLITION AND NEW WORK",
+        "discipline": "mechanical_engineering",
+        "reading_notes": "Plan of chemical building showing demolition of existing HVAC equipment and new work. Key scope items: new roof-mounted exhaust fan EF-1 (Greenheck G-095-VG, 690 CFM, 0.5 ESP, 1/6 HP, 115V direct drive) serving chemical building; new motorized intake louver L-1 (20x20 inches, steel, in Room 106); two Class B/Div 2 hazardous-area designations visible on plan, relevant to explosion-proof equipment requirements. Exhaust fan-roof-centrifugal detail and louver-motorized detail shown. Floor elevation approximately 521.80±. Rooms labeled 104, 105, 106, 107. Date May 2023. Designer RAO, owner RAO, checker BB. Note: drawing title block shows 'Bowman Foster & Associates, Inc.' DBA/in association with Cornwell Engineering Group — BFA logo and address (712 Gum Rock Ct, Newport News VA 23606) confirmed on title block, confirming BFA as the engineer of record."
+      },
+      {
+        "sheet_number": "E.01",
+        "title": "LEGEND AND ABBREVIATIONS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical legend sheet. Defines construction note symbols, demolition note symbols, lighting and panel/switchboard schedule note symbols. Fixture schedule note references: fluorescent and LED lighting fixtures shown. Equipment symbols defined: duplex convenience receptacle (20A, 125VAC, NEMA 5-20R), exhaust fan connection, unit heater connection, motor connection HP as indicated, electrical panelboard (208Y/120V), disconnect switch, homeruns to panel (panel and circuit designations as indicated). Notably shows specification for explosion-proof LED luminaire LE551 (4-ft, 2-row, 64W, 4000K, 120-277/277-480V input, Class I Div 2 / Class II Div 2 rated; copper-free cast aluminum housing, borosilicate glass tubes, powder coat black). Reference note: 'NKWD has a separate project to install emergency generators' — confirms parallel generator replacement project ongoing at site. General note 13: Fort Thomas supply line to pumps 1, 2, and 5 shall not be disrupted during construction outages. May 2023. Designer MED, Owner LAW, Checker BAS."
+      },
+      {
+        "sheet_number": "E1.0",
+        "title": "CHEMICAL BUILDING — ELECTRICAL DEMOLITION",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical demolition plan for chemical building at scale 1/4\"=1'-0\". Scope of demolition: disconnect/remove multiple 1/2 HP polymer feed valve motors, filter aid polymer feed pumps (LPB-25, LPB-27, LPB-29, LPB-31), hybrid coagulant transfer pump (LPB-25), existing sump pump (1HP, LPD-33), carbon mixer (3/4HP, LPB-34), carbon screw feeder (1HP, LPB-32), PAC feeder pump (3/4HP, LPB-21), PAC feeder pump (3/4HP). Existing dust collector exhaust fans 1HP to remain. Existing unit heater/exhaust fan to remain. Remove existing filter and polymer control panel (salvage panels for owner). Remove existing polymer feed valve control panel. Remove existing mixer and polymer sump pump controller. Remove existing polymer mixer control panel. Remove existing lighting fixtures. Scale 1/4\"=1'-0\". Powdered activated carbon system area labeled. Class 1, Division 2 area in lower right of plan. Two rooms visible (104, 105, 107). Date May 2023. Designer BFF, Owner LAW, Checker BAS. Note: extensive demolition scope shows substantial replacement of existing chemical feed/PAC systems."
+      },
+      {
+        "sheet_number": "E1.1",
+        "title": "MAIN TREATMENT BUILDING — ELECTRICAL DEMOLITION (UV)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical demolition plan for main treatment building at scale 1/8\"=1'-0\" focused on UV system. Shows finished water clearwells (4 sections), high service pump area (pumps #1, #2, #3), UV Train 1, UV Train 2 (24\" CFE noted), electrical panels (LPB-1, LPB-2), air blower panel, LPHV, LPUV, XFLV panels, elevator, LP-1, PP-UPS. Floor elevation 510.17±. Demolition notes: remove UV system control panel (disconnect wiring extend to new controller on first floor); remove existing UV reactor 'A1' (existing wiring to remain for connection to new unit); disconnect/remove existing UV reactor 'A2' (remove all power and control wiring and conduit); remove existing UV UPS complete including all panels and battery bank in tunnel between buildings; existing control valve to remain (serving power circuit). Note that UV Train 2 label implies one train designated for removal, one being refurbished/replaced. NKWD has separate project for emergency generators/electrical service replacement running concurrently. Date May 2023. Designer B?? (partially legible), Owner /W, Checker BAS."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Square footage not derivable from drawings; drawings show infrastructure plans (pipe gallery, chemical building, main treatment building) without explicit area annotations"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Treatment plant is multi-level (basement pipe gallery, first floor referenced for UV controller) but floor count not explicitly stated in drawings"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Roof-mounted exhaust fan EF-1: Greenheck G-095-VG, 690 CFM, 0.5 ESP, 1/6 HP, 115V, direct drive — chemical building (drawing M1.1)",
+          "Motorized intake louver L-1: 20x20 inches, steel, Room 106 — chemical building (drawing M1.1)",
+          "Existing dust collector exhaust fans (1 HP) — chemical building, to remain (drawing E1.0)",
+          "Existing unit heater — chemical building, to remain (drawing E1.0)",
+          "Existing motorized door (1/2 HP) — chemical building, to remain (drawing E1.0)",
+          "TAB (Testing, Adjusting and Balancing) specified for HVAC systems per spec section 230593",
+          "Air blower system visible in main treatment building plan (drawing E1.1)"
+        ],
+        "electrical": [
+          "Explosion-proof LED luminaires LE551 (4-ft, 2-row, 64W, 4000K, Class I Div 2 / Class II Div 2) — chemical building (drawing E.01)",
+          "Panelboard schedule references: LPB-25, LPB-27, LPB-29, LPB-31, LPD-33, LPB-34, LPB-32, LPB-21 (demolition panels)",
+          "New electrical panels for PAC feed system and UV system (new controller on first floor of main treatment building)",
+          "LPB-1, LPB-2 panelboards in main treatment building; LP-1 in main treatment building (drawing E1.1)",
+          "PP-UPS (existing UV UPS panel — to be demolished, drawing E1.1)",
+          "Grounding and bonding system specified (spec section 260526)",
+          "Conduit systems: EMT, IMC, LFMC, PVC — multiple spec sections",
+          "Panelboards specified per section 262416; wiring devices per 262726",
+          "SCADA/BAS integration scope included — spec 260010 references SCADA system automation diagrams in EPM program"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      },
+      "hazardous_area_classifications": [
+        "Class B, Division 2 areas in chemical building (drawing M1.1)",
+        "Class 1, Division 2 area in chemical building near PAC/carbon system (drawing E1.0)",
+        "Class II, Division 2 areas also referenced in explosion-proof fixture specification (drawing E.01)"
+      ],
+      "engineer_of_record": {
+        "value": "Bowman Foster & Associates, Inc. (BFA) in association with Cornwell Engineering Group",
+        "source": "Drawing title blocks, all 4 sheets",
+        "quote": null,
+        "notes": "BFA logo and address (712 Gum Rock Ct, Newport News VA 23606) appear on all 4 drawing title blocks. Cornwell Engineering Group text also appears. PE seal on drawings shows Kentucky license. This confirms BFA as engineer of record (or prime in association) for this project."
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.city",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP project title / plant name",
+          "value": "Taylor Mill (city where plant is located)"
+        },
+        {
+          "source": "RFP §III submittal address",
+          "value": "Erlanger, KY 41018 (NKWD headquarters, not plant)"
+        }
+      ],
+      "resolution_chosen": "Taylor Mill, KY for city (plant location); NKWD HQ in Erlanger noted separately",
+      "rationale": "The project facility is Taylor Mill Treatment Plant; NKWD's mailing address is Erlanger. These are two different municipalities within Northern Kentucky. Plant city = Taylor Mill is correct."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

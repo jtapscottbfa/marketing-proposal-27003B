@@ -1,0 +1,518 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nh95_c2f_design",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_c2f_design/__FY24 - 1797165 - C2F-NH95 - NAVFAC MIDLANT SAES-DBB - Rev18C.pdf",
+      "type": "sow",
+      "sha256": "1f463c2780108c36b2c5d984c149eafa87d7fdf2ad5924f7a9db6d71403d66fd",
+      "included": true,
+      "notes": "NAVFAC MIDLANT Statement of A-E Services (SAES) for Task Order, FY24 Special Project RM24-2031, Rev18C, SEP 2023. Design-Bid-Build. eProjects Work Order 1797165."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_c2f_design/Electrical Basis of Design .docx",
+      "type": "bod",
+      "sha256": "dd4cc263630e0a2cb75d1f96970a0c5f2138b934a6c8ce62e2aa4b59aeb2544c",
+      "included": true,
+      "notes": "Electrical Basis of Design for NH95 C2F, Norfolk Navy Base."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_c2f_design/mech design bod.pdf",
+      "type": "bod",
+      "sha256": "90634951ea23f076213b24630fa72d09e8d01c4bc8b254b13d18e3136f088c56",
+      "included": true,
+      "notes": "Mechanical Design Basis of Design for NH95 C2F. Image-based PDF; extracted via render+read. BFA letterhead (Bowman Foster & Associates). 2 pages."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_c2f_design/PLUMBING BOD NH95 C2F.docx",
+      "type": "bod",
+      "sha256": "d4fbcfd1d47da000961e806d94a80bc9cf091eccfdf85623363a8fb116a40b0d",
+      "included": true,
+      "notes": "Plumbing Design Basis of Design for NH95 C2F."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "Three discipline-specific BODs (mechanical, electrical, plumbing) plus SAES/SOW present. No construction drawings, no spec book, no contract document."
+  },
+  "facts": {
+    "project_name": {
+      "value": "C2F NH95 Renovations",
+      "source": "SAES Rev18C cover",
+      "quote": "C2F NH95 RENOVATIONS",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C cover",
+          "claim": "C2F NH95 RENOVATIONS",
+          "value": "C2F NH95 Renovations",
+          "agrees": true
+        },
+        {
+          "source": "Electrical BOD header",
+          "claim": "NH95 C2F",
+          "value": "NH95 C2F",
+          "agrees": true
+        },
+        {
+          "source": "Plumbing BOD header",
+          "claim": "PLUMBING BOD NH95 C2F",
+          "value": "NH95 C2F",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical BOD header",
+          "claim": "MECHANICAL DESIGN (BFA letterhead, shortened project name/information)",
+          "value": "NH95 C2F",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) MIDLANT",
+      "source": "SAES Rev18C p.1",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C p.1",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+          "value": "NAVFAC MIDLANT",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Station Norfolk (NSA Hampton Roads)",
+      "source": "SAES Rev18C §A2",
+      "quote": "renovate portions building NH 95 and NSA Hampton in Norfolk, Virginia",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §A1",
+          "claim": "NSA Hampton Roads",
+          "value": "NSA Hampton Roads",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Station Norfolk (NSA Hampton Roads), Building NH-95",
+      "source": "SAES Rev18C §A1–A2",
+      "quote": "NSA Hampton Roads",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §A2",
+          "claim": "renovate portions building NH 95 and NSA Hampton in Norfolk, Virginia",
+          "value": "Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES Rev18C §B2",
+          "claim": "9324 Virginia Avenue, Bldg. Z-140 Norfolk VA 23511",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "RM24-2031 / eProjects WO 1797165",
+      "source": "SAES Rev18C §A1",
+      "quote": "FY 24 SPECIAL PROJECT RM24-2031 ... eProjects Work Order number 1797165",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C cover/header",
+          "claim": "FY 24 SPECIAL PROJECT RM24-2031",
+          "value": "RM24-2031",
+          "agrees": true
+        },
+        {
+          "source": "SAES Rev18C §A1",
+          "claim": "eProjects Work Order number 1797165",
+          "value": "1797165",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N4008520D005",
+      "source": "SAES Rev18C §A1",
+      "quote": "Contract No. N4008520D005",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §A1",
+          "claim": "Contract No. N4008520D005",
+          "value": "N4008520D005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Task Order No. field in SAES is blank (###); not yet assigned at time of document."
+    },
+    "square_footage": {
+      "value": 36000,
+      "unit": "gsf",
+      "source": "Electrical BOD — Telecom section",
+      "quote": "The facilities shall be 36,000 square feet, which excludes the thickness of the exterior walls.",
+      "notes": "This figure appears in the Telecom scope section and describes the LR-167 & LR-168 facilities (net interior). It is the only square footage figure in any document. May represent a portion of the building or a specific tenant area, not the full building footprint. Flag for human review.",
+      "flag_for_human_review": true,
+      "corroboration": [
+        {
+          "source": "Electrical BOD — Telecom section",
+          "claim": "The facilities shall be 36,000 square feet, which excludes the thickness of the exterior walls.",
+          "value": 36000,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 39000000,
+      "currency": "USD",
+      "source": "SAES Rev18C §C1",
+      "quote": "$39,000,000.00",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §C1",
+          "claim": "Project Cost/Program Amount: $39,000,000.00",
+          "value": 39000000,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Renovation of portions of Building NH-95 at NSA Hampton Roads for the US Second Fleet (C2F) Command. Work includes MEP systems renovation across first and second floors: reconfiguration of existing dual-duct VAV systems; demolition of Data Center CRAC units with new VAV system in former data center areas; new DDC controls; 36\" range exhaust hood for Admiral's cook staff galley; new restroom facilities; demolition and replacement of all electrical distribution, lighting, and communications systems; new LED lighting, occupancy controls, power distribution; and new secure/non-secure telecom systems including fiber/copper and an EF/POP room meeting ICD 705 requirements. Hazardous material abatement (ACM, lead paint, PCB ballasts) required.",
+      "source": "SAES Rev18C §A2; Mechanical BOD p.1; Electrical BOD; Plumbing BOD",
+      "quote": null
+    },
+    "hazardous_materials": {
+      "value": "ACM floor tiles, sealant, pipe insulation; lead paint; PCB ballasts",
+      "source": "SAES Rev18C §D4.f",
+      "quote": "1)ACM floor tiles, sealant, pipe insulation\n2)Lead paint\n3)PCB ballasts",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §D4.f",
+          "claim": "ACM floor tiles, sealant, pipe insulation; Lead paint; PCB ballasts",
+          "value": "ACM, lead, PCB",
+          "agrees": true
+        }
+      ]
+    },
+    "existing_electrical_service": {
+      "value": "480Y/277V 3-phase 4-wire and 208Y/120V 3-phase 4-wire",
+      "source": "Electrical BOD — Existing section",
+      "quote": "The electrical services that are available are 480Y/277, 3 phase, 4 wire and 208Y/120V, 3 phase, 4 wire.",
+      "corroboration": [
+        {
+          "source": "Electrical BOD",
+          "claim": "480Y/277, 3 phase, 4 wire and 208Y/120V, 3 phase, 4 wire",
+          "value": "480Y/277V and 208Y/120V, 3-phase 4-wire",
+          "agrees": true
+        }
+      ]
+    },
+    "construction_procurement_method": {
+      "value": "Sole Source",
+      "source": "SAES Rev18C §D2.f",
+      "quote": "Construction Procurement Strategies: The following method will be used to procure the required construction services – Sole Source",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §D2.f",
+          "claim": "Sole Source",
+          "value": "Sole Source",
+          "agrees": true
+        }
+      ]
+    },
+    "security_requirements": {
+      "value": "Electronic Security System (ESS) required; ICD 705 Type A walls for EF/POP room; controlled area design requirements apply; no alien personnel allowed on site.",
+      "source": "SAES Rev18C §D4.a; Electrical BOD Telecom section; SAES Rev18C §F9",
+      "quote": "The military areas of work expected under this T.O. will not allow the entry of aliens.",
+      "corroboration": [
+        {
+          "source": "SAES Rev18C §D4.a",
+          "claim": "military areas of work expected under this T.O. will not allow the entry of aliens",
+          "value": "US-persons only",
+          "agrees": true
+        },
+        {
+          "source": "Electrical BOD Telecom section",
+          "claim": "The EF/POP room walls must meet ICD 705 type A walls.",
+          "value": "ICD 705 type A walls",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES states fee will be negotiated at time of issuance; no fixed fee stated in documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES §A1: 'Estimated Construction Completion Date TBD'"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "telecommunications_engineering",
+      "security_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "electrical_grounding_lightning",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "telecom_structured_cabling",
+      "security_access_control",
+      "security_video_surveillance",
+      "security_scif_classified"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "electrical_grounding",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "telecom_structured_cabling",
+      "telecom_av",
+      "security_acs",
+      "security_video"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "communications_scope",
+      "electronic_safety_security",
+      "finishes_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "norfolk_naval_station",
+    "second_fleet",
+    "c2f",
+    "nh95",
+    "command_facility",
+    "nsa_hampton_roads",
+    "fy24_special_project",
+    "icd705",
+    "scif_adjacent",
+    "hazmat_abatement",
+    "data_center_conversion"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 36000,
+        "unit": "gsf",
+        "source": "Electrical BOD — Telecom section",
+        "quote": "The facilities shall be 36,000 square feet, which excludes the thickness of the exterior walls.",
+        "notes": "Appears in telecom scope for LR-167 & LR-168 facilities specifically. May be net interior or a subset of total building area. No drawing set available to corroborate.",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "Electrical BOD; Mechanical BOD",
+        "quote": "Building renovation will take place on the first and second floors.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing dual-duct VAV system — reconfigured to serve renovated areas (areas 6, 8, 10, 11)",
+          "Data Center CRAC units — demolished; new VAV system in former data center areas",
+          "New DDC controls for dual-ducted VAV boxes, coordinated with building AOC",
+          "36\" range exhaust hood (390 CFM or less) for Admiral's cook staff galley",
+          "IT Closet area 11 — exhaust fan",
+          "Building entry for area 11 — 3kW electric wall heater",
+          "Design conditions: Cooling 91°F DB/76°F WB (1%); Heating 20°F DB; Interior: 78°F DB <50%RH / 68°F heating"
+        ],
+        "electrical": [
+          "Complete demo of existing conduit, wiring, disconnect switches, and lighting fixtures on both floors",
+          "Existing 480Y/277V and 208Y/120V 3-phase 4-wire services retained",
+          "New LED lighting, 3500K CCT, 80 CRI minimum throughout",
+          "Occupancy/vacancy sensor controls in common areas, bathrooms, offices",
+          "Emergency/exit lighting with 90-min battery backup",
+          "208V 3-phase HVAC equipment connections",
+          "Existing and new panelboards for general power and lighting circuits",
+          "GFI outlets in kitchens/restrooms; dedicated 20A outlets for office equipment",
+          "Power poles/whips to modular furniture workstations"
+        ],
+        "plumbing": [
+          "New restroom facilities (water closets, lavatories, water coolers — bi-level)",
+          "Cook staff galley: 2-compartment sink, mop sink, domestic water/sanitary connections",
+          "Electric water heaters (UL 174, 4.5 kW dual elements)",
+          "Copper tubing domestic water (ASTM B88, Type K/L/M)",
+          "Cast iron sanitary piping",
+          "Mineral fiber insulation on DHW; cellular glass on domestic cold water piping"
+        ],
+        "fire_protection": [
+          "Fire suppression survey required including water flow testing of existing supply",
+          "Mass notification system survey required",
+          "Clean agent suppression system survey required for areas of work",
+          "Fire suppression plans and fire alarm/mass notification plans required in design package"
+        ],
+        "telecom_security": [
+          "Secure and non-secure communications systems demolished and replaced",
+          "New fiber/copper telecommunications infrastructure for data/voice/video",
+          "EF/POP room for data services per PDS Guidelines; ICD 705 Type A walls",
+          "Two LR-167 & LR-168 relocatable facilities (~36,000 SF)",
+          "ESS: perimeter sensors, CCTV at primary entrance, card reader with keypad, PCU with backup power"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Electrical BOD — Telecom section",
+          "value": "36,000 SF (excludes wall thickness) — stated as the two LR-167 & LR-168 facilities"
+        },
+        {
+          "source": "No other document",
+          "value": "No other SF figure present"
+        }
+      ],
+      "resolution_chosen": "Electrical BOD — Telecom section",
+      "rationale": "Only SF figure available. Likely describes the interior area of the specific telecom facility scope, not the total NH-95 building footprint. Single-source; treat with caution."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md"
+    }
+  }
+}

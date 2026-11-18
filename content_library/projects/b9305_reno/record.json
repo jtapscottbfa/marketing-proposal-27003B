@@ -1,0 +1,464 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b9305_reno",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/usace/b9305_reno/EXHIBIT A - SOW 9305.pdf",
+      "type": "sow",
+      "sha256": "5db42d1a6bc38321a4d8a662e0d3de2559a6945bec1440c4ee6d95f531c4cd4b",
+      "included": true,
+      "notes": "Shorter version — environmental/special provisions sections only; SCOPE OF WORK narrative also included. Subset of the longer SOW file."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/b9305_reno/SOW PB00010-2J Renovate Facility B9305.pdf",
+      "type": "sow",
+      "sha256": "4269182e9d51109619aa0308ed40d949bb8343992211f7e892231a0f3b523b7e",
+      "included": true,
+      "notes": "Full SOW including project coordination sheet, special provisions, environmental section, and complete construction narrative with CSI-division specs."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/b9305_reno/2025.05.28 B9305 RECORD DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "993576eca186bc657309f5397f740b67d2bc162ef443f1982c171c6e15c54a60",
+      "page_count": 11,
+      "included": true,
+      "notes": "Record drawings dated 28 May 2025. As-built conditions shown. Produced by Bowman, Foster & Assoc. Consulting Engineers, Norfolk VA."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "PB00010-2J Renovate Facility – Building 9305",
+      "source": "SOW PB00010-2J p.1",
+      "quote": "SUBJECT: PB00010-2J Renovate Facility – Bldg. 9305",
+      "corroboration": [
+        {
+          "source": "SOW PB00010-2J p.1",
+          "claim": "PB00010-2J Renovate Facility – Bldg. 9305",
+          "value": "PB00010-2J Renovate Facility – Bldg. 9305",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 title block",
+          "claim": "PB00010-2J RENOVATE FACILITY- BUILDING 9305",
+          "value": "PB00010-2J Renovate Facility – Building 9305",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army Corps of Engineers / Fort Gregg-Adams Directorate of Public Works",
+      "source": "SOW PB00010-2J header; drawing G-001 title block",
+      "quote": "Fort Gregg-Adams, Virginia 23801",
+      "corroboration": [
+        {
+          "source": "SOW PB00010-2J header",
+          "claim": "Fort Gregg-Adams, Directorate of Public Works, Contract Management Branch",
+          "value": "Fort Gregg-Adams DPW CMB",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 title block",
+          "claim": "US Army Corps of Engineers logo and header",
+          "value": "US Army Corps of Engineers",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Army / Fort Gregg-Adams",
+      "source": "SOW PB00010-2J header",
+      "quote": "Fort Gregg-Adams, Virginia 23801",
+      "corroboration": [
+        {
+          "source": "SOW PB00010-2J",
+          "claim": "Fort Gregg-Adams DPW is the owner/contracting entity",
+          "value": "Fort Gregg-Adams DPW",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Fort Gregg-Adams",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Building 9305, Fort Gregg-Adams, Virginia 23801",
+      "source": "SOW PB00010-2J header; drawing G-001",
+      "quote": "Fort Gregg-Adams, Virginia 23801"
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "PB00010-2J",
+      "source": "SOW PB00010-2J p.1",
+      "quote": "SUBJECT: PB00010-2J Renovate Facility – Bldg. 9305",
+      "corroboration": [
+        {
+          "source": "SOW PB00010-2J p.1",
+          "claim": "PB00010-2J",
+          "value": "PB00010-2J",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001 title block",
+          "claim": "PB00010-2J RENOVATE FACILITY- BUILDING 9305",
+          "value": "PB00010-2J",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "corroboration": [
+        {
+          "source": "SOW PB00010-2J",
+          "claim": "No GSF stated anywhere in SOW",
+          "value": null,
+          "agrees": true
+        },
+        {
+          "source": "drawing set (all 11 sheets)",
+          "claim": "No area/GSF schedule on any sheet; no code summary block with total area",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 2,
+      "source": "drawing D-100 (Enlarged First Floor Demolition Plan) and D-105 / A-105 (Second Floor sheets)",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing D-100",
+          "claim": "Enlarged First Floor Demolition Plan — first floor confirmed",
+          "value": 2,
+          "agrees": true
+        },
+        {
+          "source": "drawings D-105 / A-105",
+          "claim": "Second Floor Dayroom Demolition Plan / Second Floor Dayroom Plan — second floor confirmed",
+          "value": 2,
+          "agrees": true
+        },
+        {
+          "source": "SOW PB00010-2J",
+          "claim": "'At second floor dayrooms' and 'Install (1) second exit at the former day room' references",
+          "value": 2,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "sow_date": {
+      "value": "2024-07-15",
+      "source": "SOW PB00010-2J p.1",
+      "quote": "DATE: 07-15-2024"
+    },
+    "record_drawings_date": {
+      "value": "2025-05-28",
+      "source": "drawing G-001 title block",
+      "quote": "28 MAY 2025"
+    },
+    "davis_bacon_wage_determination": {
+      "value": "VA20230170, 01/13/2023, VA170 Building",
+      "source": "SOW PB00010-2J General Comments",
+      "quote": "DAVIS-BACON WAGE RATE DETERMINATION: \"VA20230170, 01/13/2023, VA170 Building\""
+    },
+    "design_firm": {
+      "value": "Bowman, Foster & Assoc. Consulting Engineers",
+      "source": "drawing G-001 title block",
+      "quote": null,
+      "notes": "BFA logo and address (4379 Center Dr., Norfolk, VA 23502) appear in Project Team block on G-001"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense",
+      "healthcare_ambulatory"
+    ],
+    "program_subtype": [
+      "healthcare_military_medical"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "civil_site_design"
+    ],
+    "building_systems": [
+      "hvac_hot_water",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "interior_finishes",
+      "interior_construction"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "concrete_cast_in_place",
+      "finishes_tile",
+      "finishes_drywall_plaster",
+      "finishes_painting_wallcovering",
+      "finishes_acoustical_ceilings",
+      "plumbing_scope",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "exterior_improvements",
+      "specialties_toilet_partitions",
+      "specialties_signage",
+      "openings_doors_frames"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "fort_gregg_adams",
+    "fort_lee",
+    "usace",
+    "army",
+    "ada_compliance",
+    "restroom_renovation",
+    "healthcare_clinic",
+    "pemh",
+    "virginia"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "TITLE SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Title sheet for record drawings package, dated 28 May 2025. Project is PB00010-2J Renovate Facility B9305, Fort Gregg-Adams, Virginia. Drawing index shows 11 total sheets: G-001, D-100 through D-105, C-100, A-101, A-102, A-105. Architect/Engineer of record: Bowman, Foster & Assoc. Consulting Engineers, 4379 Center Dr., Norfolk, VA 23502. Applicable codes block references NFPA, MIL-HDBK-1191, UBC 1997, ASHRAE, NFPA 70 (NEC), JCAHO standards, WRAMC Construction Safety Policy, DA PAM 40-50-3 (Army Industrial Hygiene), OSHA, USACE CEGS sections, IBC, UFC 4.510.01 (Design Guide for Built Environment of Behavioral Health Facilities) — the JCAHO and UFC 4.510.01 references confirm a healthcare/clinic occupancy. Project description block states: 'The objective of this project is for the contractor to provide all labor, materials and equipment necessary to complete a scoping survey and report, prepare a Type III work plan and complete the construction and repair requirements for active duty PEMH renovation, in accordance with all federal, state, and installation codes and laws... to ensure the provision of health services can be adequately provided for the next 20 years. The existing clinic will provide continuing patient care via transition space.' Aerial photograph shows a large two-story masonry building. Sheet is marked AS-BUILT."
+      },
+      {
+        "sheet_number": "D-100",
+        "title": "ENLARGED FIRST FLOOR DEMOLITION PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Enlarged plan at 3/32\"=1'-0\" showing the full first floor of Building 9305. Scale indicates a substantial footprint — building appears to be roughly 200+ feet in the long direction based on graphic scale. Building is an H- or E-shaped masonry structure with multiple wings. Work areas called out include: men's bathroom (ref D-101), women's bathroom (ref D-102), former DFAC area (ref D-103), and B-wing entrance (ref D-104). Demolition legend distinguishes total demolition (solid fill) from extents-only (dashed). Multiple demolition callouts throughout first floor. Building appears to be an existing barracks/training/clinic type structure with CMU construction. Sheet marked AS-BUILT."
+      },
+      {
+        "sheet_number": "D-101",
+        "title": "MENS BATHROOM DEMOLITION PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Detailed plan at 1/2\"=1'-0\" of the men's bathroom. Existing layout shows: counter-top sinks, toilet partitions, shower stalls (multiple), urinals, and associated plumbing. Demolition notes call for removal of: counter-top sink and faucet, all lavatory/urinal fixtures, accessories (grab bars, dispensers, mirrors), toilet partitions, wall tile and substrate down to studs/CMU, tile curb at showers, shower seat, existing showers and associated plumbing, floor tile. Note 9 states 'EXISTING TO REMAIN FRAME ONLY.' Shows existing shower area to be completely gutted. The bathroom is a group shower/toilet room consistent with a barracks or gymnasium building. Sheet marked AS-BUILT CONDITIONS SHOWN."
+      },
+      {
+        "sheet_number": "D-102",
+        "title": "WOMENS BATHROOM DEMOLITION PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Detailed plan at 1/2\"=1'-0\" of the women's bathroom. Similar existing layout to men's: toilet partitions, shower area, plumbing fixtures. Demolition scope mirrors men's bathroom — full gut to studs/CMU. Note 9 calls for removal of existing 3'-0\"x7'-0\" door. Confirms two separate restrooms being fully renovated. Sheet marked AS-BUILT CONDITIONS SHOWN."
+      },
+      {
+        "sheet_number": "D-103",
+        "title": "FIRST FLOOR FORMER DFAC DEMOLITION PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Plan at 1/4\"=1'-0\" showing demolition at the former Dining Facility (DFAC) area on the first floor. Demolition scope is limited: (1) Remove existing 3'-0\"x7'-0\" door and metal frame; (2) Remove existing stud wall. A partial floor plan is visible. The space is being opened up to allow ADA-compliant ramp installation in this area. Sheet marked AS-BUILT."
+      },
+      {
+        "sheet_number": "D-104",
+        "title": "B-WING ENTRANCE DEMOLITION PLAN",
+        "discipline": "civil_engineering",
+        "reading_notes": "Plan at 1/4\"=1'-0\" showing demolition at the B-Wing exterior entrance. Demolition notes: (1) Remove existing concrete stair entrance and prepare for new walkway; (2) Remove existing concrete sidewalk and prepare for new walkway. Shows a small exterior entrance vestibule/stair area to be demolished. This is the exterior work area where a new ADA-compliant 1:20-slope stair and walkway combination is to be installed. Sheet marked AS-BUILT."
+      },
+      {
+        "sheet_number": "D-105",
+        "title": "SECOND FLOOR DAYROOM DEMOLITION PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Plan at 1/4\"=1'-0\" showing second floor dayroom demolition. Demolition note: (1) Remove existing metal stud wall and frame opening to receive new 3'-0\"x6'-8\" door and metal frame. Shows two adjacent rooms on second floor — one wall partition being partially removed to create a door opening, converting a dayroom to provide a second exit and conference use. Sheet marked AS-BUILT CONDITIONS SHOWN. NOTE: Sheet number D-105 is also used on the B-Wing Entrance Demolition Plan (page 6 of PDF — that sheet carries D-105, Sheet 1 of 2 in its title block, but is titled B-WING ENTRANCE DEMOLITION PLANE). The drawing index on G-001 lists D-104 as 'B-WING ENTRANCE DEMOLITION PLAN' and D-105 as 'SECOND FLOOR DAYROOM DEMOLITION PLAN'. The PDF page 6 sheet title block reads D-105 — possible misnumbering or the index lists D-104 for the B-Wing entrance but the rendered sheet for B-Wing carries D-105. Flagged as drawing numbering anomaly."
+      },
+      {
+        "sheet_number": "C-100",
+        "title": "ADA COMPLIANT CURB RAMP PLAN",
+        "discipline": "civil_engineering",
+        "reading_notes": "Civil sheet showing existing curb/sidewalk demolition and new ADA curb ramp installation at the parking lot corner adjacent to the building. Site plan (NTS aerial photo) shows building location context. Demolition plan shows existing 6\" concrete curb and sidewalk to be removed to prepare for new ADA curb ramp, landing, and new curb return. Plan notes: (1) Provide new ADA compliant curb ramp (1:12 slope max); (2) Provide detectable warning surface (truncated domes); (3) Provide new concrete curb to match existing. Sheet marked AS-BUILT."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "MENS RESTROOM FIRST FLOOR PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Construction plan at 1/2\"=1'-0\" for the renovated men's restroom. New layout: multiple new toilet partitions, new ADA water closet with grab bars (~5'-0\" wide stall), standard water closets, new urinal, new vitreous china wall-hung lavatories, shower area with new drain. Key plan notes: (1) New cement backer board and wall tile floor-to-ceiling; (2) New toilet partitions; (3) New vitreous china lavatory sinks; (4) New water closets; (5) New ADA water closet with grab bars and toilet accessories; (6) New urinal; (7) Slope floor to new shower drain; (8) New ADA grab bars, seat and shower accessories; (9) Existing 3'-0\"x7'-0\" wood door and metal frame. Sheet marked AS-BUILT CONDITIONS SHOWN."
+      },
+      {
+        "sheet_number": "A-102",
+        "title": "WOMENS RESTROOM FIRST FLOOR PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Construction plan at 3/8\"=1'-0\" for the renovated women's restroom. New layout shows: ADA water closet with grab bars, standard water closets, new vitreous china wall-hung lavatories, shower area with new drain. Same plan notes as A-101 except no urinal. Scale difference from A-101 (3/8\" vs 1/2\") suggests women's restroom is somewhat smaller. Dimensions show ~4'-2\" and 3'-0\" clearances at fixtures. Sheet marked AS-BUILT CONDITIONS SHOWN."
+      },
+      {
+        "sheet_number": "A-105",
+        "title": "SECOND FLOOR DAYROOM PLAN",
+        "discipline": "architecture",
+        "reading_notes": "Construction plan at 1/4\"=1'-0\" for the second floor dayroom area. New wall construction: 5/8\" gypsum board and 3-5/8\" metal stud with sound batt insulation, 6\" above ceiling grid. Dimension shows 6'-2-1/4\" wall length. Plan notes: (1) Install new wall with sound batt insulation; (2) Provide and install existing 3'-0\"x6'-8\" wood door and metal frame; (3) Provide and install new ceiling grid and acoustical tile as required. Confirms second floor work is limited to partition/door addition and minor ceiling/ACT work. Sheet marked AS-BUILT CONDITIONS SHOWN."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing set — no area schedule present on any sheet",
+        "quote": null,
+        "sheets": [],
+        "notes": "No GSF stated on any drawing sheet or in either SOW. The D-100 enlarged plan at 3/32\"=1'-0\" shows a large multi-wing footprint but no area schedule or code summary block with total area is present."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "drawings D-100 (first floor), D-105 and A-105 (second floor)",
+        "quote": null,
+        "sheets": [
+          "D-100",
+          "D-105",
+          "A-105"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Baseboard heaters — new units in each renovated restroom, connected to existing hot water supply (SOW Section 23 05 02; pressure testing of line sets required)"
+        ],
+        "electrical": [
+          "New surface-mounted lights in men's and women's restrooms (SOW Section 26 05 00)",
+          "Exit signs at new exterior door (both restrooms)",
+          "Occupancy sensor for light control",
+          "LOTO of existing electrical features required during demolition"
+        ],
+        "plumbing": [
+          "New wall-hung vitreous china lavatories — men's and women's restrooms (SOW Section 22 42 16; drawings A-101, A-102)",
+          "New floor-mounted ADA and standard water closets — men's and women's restrooms (SOW Section 22 42 13)",
+          "New wall-hung vitreous china urinal — men's restroom (SOW Section 22 42 13)",
+          "ADA stainless steel panel with fixed handheld showerhead — men's and women's restrooms (SOW Section 22 42 33)",
+          "New floor drains at shower locations; concrete slab saw-cut for plumbing re-route (SOW Section 03 30 53)"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

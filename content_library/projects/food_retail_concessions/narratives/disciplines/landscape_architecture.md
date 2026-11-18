@@ -1,0 +1,5 @@
+The landscape architecture scope for the NEXCOM Food & Retail Concessions project provided site landscape design for the grounds surrounding the new food and retail concessions building at Naval Station Norfolk, Norfolk, Virginia. Landscape design was coordinated with the civil site design to address planting areas, pedestrian circulation, and the overall site character consistent with Naval Station Norfolk installation standards and applicable Naval Facilities design criteria.
+
+Landscape scope encompassed exterior planting design and site improvements in the areas adjacent to the building footprint and drive-thru facility approach and departure routes. Site landscape elements were integrated with the civil grading, drainage, and pavement design to ensure continuity of the pedestrian environment between the building entries, parking areas, and the base street network at CV Towway Drive and Fourth Avenue.
+
+Specific planting species selections, hardscape material specifications, and detailed landscape program elements beyond what is documented in the project's Basis of Design are not captured in the available source record for this project.

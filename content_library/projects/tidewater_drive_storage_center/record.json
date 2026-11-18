@@ -1,0 +1,452 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "20-009",
+    "status": "present_with_value",
+    "source": "drawing P-101 CAD file path in title bar",
+    "quote": null
+  },
+  "project_slug": "tidewater_drive_storage_center",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/tidewater_drive_storage_center/P-001 LEGEND, ABBREAVATION, SCHEDULES AND GENERAL NOTES M-001 (1).pdf",
+      "type": "drawing_set",
+      "sha256": "a1d2b31ba5c5070bea299228a4e0e6dd8ed3cba45216cb4a83794c06b1cb3454",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet drawing: P-001 Legend, Abbreviations, Schedules, General Notes. Plumbing discipline. Tidewater Drive Storage Center Phase II."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/tidewater_drive_storage_center/P-101 FLOOR PLAN PLUMBING - NEW WORK M-001 (1).pdf",
+      "type": "drawing_set",
+      "sha256": "c7e466f79136b1f50c5d99f604e89cf61492735e1c86f691f535346061e185ff",
+      "page_count": 1,
+      "included": true,
+      "notes": "Single-sheet drawing: P-101 Plumbing Floor Plan – New Work. Scale 1/8\"=1'-0\". Tidewater Drive Storage Center Phase II, Norfolk VA. BFA file path visible in DWG title bar: G:\\2020\\20-009 Tidewater Drive Storage Center - Phase II."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Only two drawing sheets present (P-001 and P-101, both plumbing discipline). No BOD, SOW, contract, or narrative documents available. Drawing set appears partial — P-101 title block references Sheet 1 of a larger set; only two sheets staged here. Project number 20-009 extracted from CAD file path in drawing title bar."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Tidewater Drive Storage Center Phase II",
+      "source": "drawing P-101 title block",
+      "quote": "TIDEWATER DRIVE STORAGE CENTER PHASE II",
+      "corroboration": [
+        {
+          "source": "drawing P-101 title block",
+          "claim": "TIDEWATER DRIVE STORAGE CENTER PHASE II",
+          "value": "Tidewater Drive Storage Center Phase II",
+          "agrees": true
+        },
+        {
+          "source": "drawing P-001 title block",
+          "claim": "TIDEWATER DRIVE STORAGE CENTER PHASE II",
+          "value": "Tidewater Drive Storage Center Phase II",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "owner_name": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "location": {
+      "city": {
+        "value": "Norfolk",
+        "source": "drawing P-101 title block",
+        "quote": "NORFOLK, VA",
+        "corroboration": [
+          {
+            "source": "drawing P-101 title block",
+            "claim": "NORFOLK, VA",
+            "value": "Norfolk",
+            "agrees": true
+          }
+        ]
+      },
+      "state": {
+        "value": "VA",
+        "source": "drawing P-101 title block",
+        "quote": "NORFOLK, VA",
+        "corroboration": [
+          {
+            "source": "drawing P-101 title block",
+            "claim": "NORFOLK, VA",
+            "value": "VA",
+            "agrees": true
+          }
+        ]
+      },
+      "country": "US",
+      "facility_address": {
+        "value": "Tidewater Drive, Norfolk, VA",
+        "source": "drawing P-101 title block — street name field",
+        "quote": "TIDEWATER DR",
+        "corroboration": [
+          {
+            "source": "drawing P-101 title block",
+            "claim": "TIDEWATER DR",
+            "value": "Tidewater Drive, Norfolk, VA",
+            "agrees": true
+          }
+        ]
+      }
+    },
+    "project_number_internal": {
+      "value": "20-009",
+      "source": "drawing P-101 CAD title bar file path",
+      "quote": null,
+      "notes": "Extracted from DWG file path visible in title bar: G:\\2020\\20-009 Tidewater Drive Storage Center - Phase II\\NAVIGATOR\\P-101 FLOOR PLAN PLUMBING – NEW WORK.dwg. Format consistent with BFA YY-NNN convention."
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "No area schedule or code summary block present in the two available drawing sheets. Scale is 1/8\"=1'-0\" on P-101; approximate building footprint estimation possible but not attempted per quote-or-null discipline — no annotated area figure in drawings.",
+      "corroboration": []
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "corroboration": []
+    },
+    "project_phase_label": {
+      "value": "Phase II",
+      "source": "drawing P-101 title block",
+      "quote": "TIDEWATER DRIVE STORAGE CENTER PHASE II",
+      "notes": "Project is explicitly labeled Phase II, implying a Phase I preceded it. Phase I scope and dates unknown from available documents."
+    },
+    "drawing_submittal_date": {
+      "value": "2020",
+      "source": "drawing P-101 CAD title bar",
+      "quote": null,
+      "notes": "Plot Date visible in P-101 title bar: Apr 06, 2020. Submittal date on title block is partially obscured (###/###/2020). Year 2020 confirmed. Month/day not legible."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing",
+        "source": null,
+        "quote": null
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": {
+      "value": [
+        "private_commercial"
+      ],
+      "source": "drawing extraction — inference from facility type",
+      "quote": null,
+      "notes": "Self-storage facility on a named street in Norfolk VA with no federal or governmental indicators. Inferred private commercial. Flag for human review — no BOD/SOW to confirm.",
+      "flag_for_human_review": true
+    },
+    "program_type": {
+      "value": [
+        "industrial_warehouse"
+      ],
+      "source": "drawing P-101 — floor plan shows long rows of individual storage units",
+      "quote": null,
+      "notes": "Self-storage / commercial storage facility. Closest match in program_type.yaml is industrial_warehouse (warehouse, distribution center, or fulfillment facility). No dedicated 'self_storage' entry exists in vocabulary. Flagged as vocab gap.",
+      "flag_for_human_review": true
+    },
+    "program_subtype": {
+      "value": [],
+      "status": "missing",
+      "notes": "No suitable subtype entry for self-storage in program_type.yaml."
+    },
+    "disciplines": {
+      "value": [
+        "plumbing_engineering"
+      ],
+      "source": "drawing P-001 and P-101 — both sheets are plumbing discipline drawings",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "drawing P-001 sheet designation",
+          "claim": "P-001 prefix indicates plumbing discipline; legend includes sanitary waste line, sump pump symbols",
+          "agrees": true
+        },
+        {
+          "source": "drawing P-101 title",
+          "claim": "PLUMBING FLOOR PLAN – NEW WORK",
+          "agrees": true
+        }
+      ]
+    },
+    "sub_disciplines": {
+      "value": [
+        "plumbing_sanitary",
+        "plumbing_domestic_water"
+      ],
+      "source": "drawing P-001 legend — sanitary waste line symbol; drawing P-101 construction notes reference oil water separator and sump pump drainage",
+      "quote": null,
+      "notes": "Sanitary/DWV: sump pumps discharge to sanitary waste. Domestic water: construction note 3 references 'oil water separator' connection to 'main waste piping and make final connection from oil water separator' — unclear if domestic water service is also in scope; flagged."
+    },
+    "building_systems": {
+      "value": [
+        "plumbing_sanitary_dwv",
+        "plumbing_storm"
+      ],
+      "source": "drawing P-001 pump schedule and P-101 construction notes",
+      "quote": null,
+      "notes": "Sump pumps in elevator pits (SP-1, SP-2) discharge to sanitary/waste. Oil/water separator for elevator pit drainage. Storm drainage path via oil/water separator to main waste."
+    },
+    "construction_scope": {
+      "value": [
+        "plumbing_scope"
+      ],
+      "source": "drawing P-101 title — PLUMBING FLOOR PLAN – NEW WORK",
+      "quote": "PLUMBING FLOOR PLAN – NEW WORK"
+    },
+    "delivery_method": {
+      "value": [
+        "design_bid_build"
+      ],
+      "source": "drawing extraction — inference from drawing set format",
+      "quote": null,
+      "flag_for_human_review": true,
+      "notes": "No contract documents available; design_bid_build assumed as default for commercial building permit set. Flag for human review."
+    },
+    "contract_vehicle": {
+      "value": [
+        "standalone_project"
+      ],
+      "source": "drawing extraction — inference",
+      "quote": null,
+      "flag_for_human_review": true
+    },
+    "procurement_type": {
+      "value": [
+        "commercial_negotiated"
+      ],
+      "source": "drawing extraction — inference from private commercial client type",
+      "quote": null,
+      "flag_for_human_review": true
+    },
+    "award_type": {
+      "value": [
+        "unknown_award_type"
+      ],
+      "source": "drawing extraction — no contract documents available",
+      "quote": null
+    },
+    "project_status": {
+      "value": [
+        "complete"
+      ],
+      "source": "drawing extraction — inference from 2020 plot date and available drawing set",
+      "quote": null,
+      "flag_for_human_review": true,
+      "notes": "Drawings dated April 2020. No evidence of ongoing work. Assumed complete, but status not confirmed by any non-drawing source. Flag for human review."
+    },
+    "bfa_role": {
+      "value": [
+        "prime_consultant"
+      ],
+      "source": "drawing P-101 title block — BFA logo and firm name appear as engineer of record",
+      "quote": null,
+      "notes": "BOWMAN FOSTER & ASSOCIATES, INC. (BFA) shown in title block of both sheets as the engineering firm. Role is prime consultant (plumbing engineer of record). No general contractor or prime architect identified from available sheets.",
+      "corroboration": [
+        {
+          "source": "drawing P-001 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC. logo and address shown as engineer",
+          "agrees": true
+        },
+        {
+          "source": "drawing P-101 title block",
+          "claim": "BOWMAN FOSTER & ASSOCIATES, INC. 5042 CHESHIRE AVE, STE. 101, ALEXANDRIA, VA 22312",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "norfolk_va",
+    "self_storage",
+    "commercial_storage",
+    "phase_ii",
+    "plumbing_only",
+    "elevator_sump_pumps",
+    "oil_water_separator",
+    "tidewater_drive",
+    "drawing_only_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "P-001",
+        "title": "LEGEND, ABBREVIATIONS, SCHEDULES AND GENERAL NOTES",
+        "discipline": "plumbing_engineering",
+        "reading_notes": "Cover/legend sheet for the plumbing set. Contains: (1) piping legend with sanitary waste line (single line), piping turn down, construction note symbol, sump pump mark symbol, and limit of demolition/point of new connection symbol; (2) abbreviations list (standard plumbing abbrevs: AFF, DIA, EXIST, FT, FXT, GAL, GPH, GPM, HD, H2O, HP, HZ, IN, MAX, MIN, NOM, RPM, PSI, SAN, TEMP, TYP, V, VOLT, DWV, UON); (3) Pump Schedule with two sump pumps SP-1 (Elevator 1 service, 55 GPM, 16 ft TDH, 5 HP, 1750 RPM, 208V, 3-phase, 60Hz, notes 1&2) and SP-2 (Elevator 2 service, same specs); (4) Slope of Horizontal Drainage Piping schedule (4\" or less: 1/4\" per foot; 6\" or greater: 1/8\" per foot); (5) Pipe Hanger Detail (no scale); (6) Sump Pump and Sump Pit Detail (no scale — shows submersible sump pump, check valve, float switch, union, and connection to sanitary piping). General Notes (8 notes): standard construction compliance, contractor responsibilities, AHJ coordination, diagrammatic nature of drawings, verification of existing conditions, contractor review before starting work, equipment protection, and coordination with other trades. Title block: BOWMAN FOSTER & ASSOCIATES, INC., address partially obscured in P-001 but legible as Norfolk VA. Sheet stated as 1 of ?? (total count obscured). Submittal date block shows ###/###/2020 (year confirmed, month/day not legible)."
+      },
+      {
+        "sheet_number": "P-101",
+        "title": "PLUMBING FLOOR PLAN – NEW WORK",
+        "discipline": "plumbing_engineering",
+        "reading_notes": "Single-level plumbing floor plan at 1/8\"=1'-0\" scale showing the entirety of the Tidewater Drive Storage Center Phase II building footprint. The building appears to be a large single-story commercial self-storage facility with two distinct wings or zones: (1) a large left/upper portion with long parallel rows of individual storage unit bays (approximately 12-15 rows visible), served by a central corridor, with a service area at upper left containing toilet/sink fixtures (restroom); (2) a lower-right portion with additional storage bays, smaller office area, and a separate service corridor. Plumbing new work shown: SP-1 and SP-2 sump pumps located at elevator pits (two elevators visible on the plan, one in each major section of the building); oil/water separator (labeled OWS-1) shown near the elevator area in lower section; sanitary piping shown routing from sump pits through building to exterior connection. Construction Notes on sheet: (1) provide sump pump in elevator pit per P-001 detail; (2) provide piping route to interior of building, refer to product data/hanger detail for additional info on supporting pipe; (3) provide sump pump flush with grade, refer to oil water separator for requirements of OWS; (4) provide oil water separator flush with grade, refer to product data; (5) provide CAP, pipe underground, route to existing building and route underground to existing main waste piping, and make final connection from oil water separator. Title block: BOWMAN FOSTER & ASSOCIATES, INC., 5042 CHESHIRE AVE, STE. 101, ALEXANDRIA, VA 22312; location: TIDEWATER DR, NORFOLK, VA. BFA DWG file path in CAD title bar: G:\\2020\\20-009 Tidewater Drive Storage Center - Phase II\\NAVIGATOR\\P-101 FLOOR PLAN PLUMBING – NEW WORK.dwg (plot date Apr 06 2020). The building plan shows a one-story layout; however, the presence of two elevator pits (and associated sump pumps) strongly implies a multi-story building — elevators typically serve 2+ floors in self-storage. At 1/8\"=1'-0\" scale, the plan footprint is substantial. Note: no area schedule, no GSF annotation visible on either sheet. Toilet/restroom in service area shows water closet(s) and lavatory but piping for those fixtures not shown as 'new work' on this sheet, suggesting domestic water and sanitary connections for restrooms may be Phase I work."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction — no area schedule or annotation present",
+        "quote": null,
+        "sheets": [
+          "P-101"
+        ],
+        "notes": "Scale is 1/8\"=1'-0\" on P-101. Building footprint is large and spans the full sheet. No annotated GSF or area schedule found on either sheet. Estimate not attempted per quote-or-null discipline."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction — P-101 shows one floor plan only",
+        "quote": null,
+        "sheets": [
+          "P-101"
+        ],
+        "notes": "Only one floor plan sheet present. However, two elevator sump pumps (SP-1 for Elevator 1, SP-2 for Elevator 2) indicate at least 2 floors served by elevators. Actual floor count cannot be confirmed without additional drawing sheets (floor plan of upper floors) or a BOD/SOW."
+      },
+      "mep_system_inventory": {
+        "plumbing": [
+          "Two submersible sump pumps in elevator pits: SP-1 (Elevator 1, 55 GPM, 5 HP, 208V/3-phase) and SP-2 (Elevator 2, same specs) — P-001 Pump Schedule",
+          "Oil/water separator (OWS-1) for elevator pit drainage — P-101 construction notes",
+          "Sanitary waste piping (new) routing from elevator sump pits through building to main waste connection — P-101",
+          "Restroom (water closet, lavatory) present in service area — fixtures visible on P-101 but piping shown as existing/Phase I work, not new"
+        ],
+        "hvac": [],
+        "electrical": [
+          "Sump pump power supply: 208V, 3-phase, 60Hz for both SP-1 and SP-2 — P-001 Pump Schedule (Note: electrical connections are a coordination item; whether BFA designed the electrical feed is not confirmed from available sheets)"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}
