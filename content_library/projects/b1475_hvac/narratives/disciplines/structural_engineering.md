@@ -1,0 +1,9 @@
+# Structural Engineering — Building 1475 HVAC Replacement, Phase II
+
+BFA's structural team conducted a comprehensive assessment of the existing roof structure at Building 1475, Norfolk Naval Shipyard, to support the design of new mechanical equipment installations on the existing roof.
+
+Building 1475 is identified as the Nuclear Refueling/Radcon Facility for the NNSY drydock. The original structural drawings (NAVFAC No. 1380568, approved June 20, 1971) documented a reinforced cast-in-place concrete and steel composite system — with the second-floor office areas framed by a flat concrete slab on wide-flange beams and columns, and the roof consisting of 1½" Type B metal roof deck on 18" steel bar joists spanning to wide-flange beams. The high bay and clean room areas are framed with 36" deep joists at 11'-0" on center bearing on concrete walls.
+
+The structural scope identified that a portion of the lower roof is rated at 50 psf equipment load capacity while the adjacent area carries a 20 psf live load rating — a critical constraint for locating new rooftop mechanical equipment. Modifications included: reinforcement of existing 18" bar joists beneath relocated dunnage post positions; removal of existing dunnage posts (4" round and 4" square) and supporting steel beams to match the new equipment footprint; deck infill at abandoned openings with new 1½" Type B metal deck on steel angle edges; and L4×4 angle reinforcement at new duct penetration perimeters.
+
+New duct support brackets and posts anchored to existing roof joists were designed for the rooftop ductwork. A key design note: final mechanical equipment weights from the manufacturer were not available at the time of structural design, so structural drawings include provisions requiring the construction contractor to verify and absorb any required alterations at no additional cost or contract time. Design was performed per UFC 1-200-01, UFC 3-301-01, IBC 2021, IEBC 2021, and ASCE 7-16.

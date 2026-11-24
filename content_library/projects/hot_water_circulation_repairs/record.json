@@ -1,0 +1,525 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "hot_water_circulation_repairs",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/hot_water_circulation_repairs/Project Conceptual Report-PDP.docx",
+      "type": "report",
+      "sha256": "fd9b2d19a8cb9ba835539306ff56f21396142ed14f0f57d9305f7f7dc3332b63",
+      "included": true,
+      "notes": "Conceptual report with PDP annotations/PE stamp placeholder; more detailed version with building history section"
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/hot_water_circulation_repairs/Project Conceptual Report.docx",
+      "type": "report",
+      "sha256": "a18aebcb9295ae6a56f6232f646aa591f1d3ef34f6654e2c7b2e752eb5be8a66",
+      "included": true,
+      "notes": "Base conceptual report (no PDP annotations); substantially same text as PDP version"
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/hot_water_circulation_repairs/R2_SOW - Building 23H Hot Water Circulation_512A5-22-002.pdf",
+      "type": "sow",
+      "sha256": "a9436c4caa76983189c4cce4194611c183296bba3e3687439e4e2b9103198939",
+      "included": true,
+      "notes": "Statement of Work for NRM Project 512A5-22-002; includes VA PG-18-15 Vol C A/E submission instructions"
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/hot_water_circulation_repairs/S02 - RFP Letter.pdf",
+      "type": "correspondence",
+      "sha256": "58c8f6f256d62adc6486dbb06e6df4c6863072f7fbfc87e03a514076f8c94289",
+      "included": true,
+      "notes": "RFP letter from VA NCO5 to HBFA dated January 19 2022; solicitation 36C24522R0026; includes CVE VERIFIED/VISIBLE requirement"
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawings present in intake folder despite SOW referencing attached drawing. No executed contract present. Design fee not stated. Two conceptual report versions present (base and PDP-annotated)."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 23H Hot Water Circulation Repairs",
+      "source": "RFP Letter p.1",
+      "quote": "PROJECT TITLE AND NO.: 23H Hot Water Circulation Repairs A/E Study",
+      "corroboration": [
+        {
+          "source": "RFP Letter p.1",
+          "claim": "23H Hot Water Circulation Repairs A/E Study",
+          "value": "Building 23H Hot Water Circulation Repairs",
+          "agrees": true
+        },
+        {
+          "source": "SOW §1.2",
+          "claim": "Building 23H Hot Water Circulation",
+          "value": "Building 23H Hot Water Circulation",
+          "agrees": true
+        },
+        {
+          "source": "Conceptual Report (both versions), title page",
+          "claim": "Building 23H Hot Water Circulation Repairs",
+          "value": "Building 23H Hot Water Circulation Repairs",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "VA Maryland Healthcare System – VISN5",
+      "source": "SOW §1.1",
+      "quote": "VA Maryland HealthCare System – VISN5 – Perry Point",
+      "corroboration": [
+        {
+          "source": "SOW §1.1",
+          "claim": "VA Maryland HealthCare System – VISN5 – Perry Point",
+          "value": "VA Maryland Healthcare System – VISN5",
+          "agrees": true
+        },
+        {
+          "source": "RFP Letter header",
+          "claim": "Network Contracting Office 5 (NCO5), Department of Veterans Affairs",
+          "value": "VA Maryland Healthcare System – VISN5",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "RFP Letter header",
+      "quote": "Department of Veterans Affairs\nVeterans Health Administration\nNETWORK CONTRACTING OFFICE 5",
+      "corroboration": [
+        {
+          "source": "RFP Letter header",
+          "claim": "Department of Veterans Affairs, Veterans Health Administration",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        },
+        {
+          "source": "SOW §1.1",
+          "claim": "VA Maryland HealthCare System – VISN5",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Perry Point",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "Boiler House Rd, Perry Point, MD 21902",
+      "source": "Conceptual Report (both versions) — General section",
+      "quote": "Building 23H is located on Boiler House Rd, Perry Point, MD 21902.",
+      "corroboration": [
+        {
+          "source": "Conceptual Report — General section",
+          "claim": "Boiler House Rd, Perry Point, MD 21902",
+          "value": "Perry Point, MD",
+          "agrees": true
+        },
+        {
+          "source": "RFP Letter p.1",
+          "claim": "VA Medical Center located in Perry Point Maryland",
+          "value": "Perry Point, MD",
+          "agrees": true
+        },
+        {
+          "source": "SOW §1.1",
+          "claim": "VA Maryland HealthCare System – VISN5 – Perry Point",
+          "value": "Perry Point, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "NRM No. 512A5-22-002",
+      "source": "SOW §1.2",
+      "quote": "Project Number: NRM No. 512A5-22-002",
+      "corroboration": [
+        {
+          "source": "SOW §1.2",
+          "claim": "NRM No. 512A5-22-002",
+          "value": "NRM No. 512A5-22-002",
+          "agrees": true
+        },
+        {
+          "source": "SOW filename",
+          "claim": "512A5-22-002 in filename",
+          "value": "512A5-22-002",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C24522R0026",
+      "source": "RFP Letter p.1",
+      "quote": "SUBJECT: Request for Proposal, 36C24522R0026, 23H Hot Water Circulation Repairs A/E Study",
+      "notes": "This is the solicitation/RFP number; executed contract number not available in source documents",
+      "corroboration": [
+        {
+          "source": "RFP Letter p.1",
+          "claim": "36C24522R0026",
+          "value": "36C24522R0026",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW references an A/E IDIQ contract (firm selected from IDIQ holder pool per RFP letter) but specific IDIQ contract or task order number not cited in source documents"
+    },
+    "square_footage": {
+      "value": 59054,
+      "unit": "gsf",
+      "source": "SOW §1.4",
+      "quote": "The existing building is 59,054 SF",
+      "corroboration": [
+        {
+          "source": "SOW §1.4",
+          "claim": "59,054 SF",
+          "value": 59054,
+          "agrees": true
+        },
+        {
+          "source": "Conceptual Report — General section",
+          "claim": "four main floors and a basement",
+          "value": null,
+          "agrees": null,
+          "notes": "Conceptual reports describe building form but do not give a numeric SF figure; no conflict, single numeric source"
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 5,
+      "unit": "floors (4 main + basement; crawlspace also present)",
+      "source": "Conceptual Report (both versions) — General section",
+      "quote": "The building has four main floors and a basement. Below the basement is a crawlspace.",
+      "corroboration": [
+        {
+          "source": "Conceptual Report — General section",
+          "claim": "four main floors and a basement",
+          "value": "4 above-grade + basement",
+          "agrees": true
+        },
+        {
+          "source": "Conceptual Report — Building History section (PDP version)",
+          "claim": "At four stories tall, it is the largest building of the facility.",
+          "value": 4,
+          "agrees": true,
+          "notes": "Describes above-grade stories only; consistent with 'four main floors'"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in source documents"
+    },
+    "estimated_construction_cost_range": {
+      "value": "$25,000 - $100,000",
+      "source": "RFP Letter p.1",
+      "quote": "ESTIMATED CONSTRUCTION PRICE DESIGN MAGNITUDE: $25,000 - $100,000",
+      "notes": "This is VA's estimated construction price range used for design magnitude classification, not a contract value; design fee not stated in available documents",
+      "corroboration": [
+        {
+          "source": "RFP Letter p.1",
+          "claim": "$25,000 - $100,000 estimated construction price design magnitude",
+          "value": "$25,000 - $100,000",
+          "agrees": true
+        }
+      ]
+    },
+    "building_construction_year": {
+      "value": 1942,
+      "source": "SOW §1.4",
+      "quote": "Building 23H was built in 1942 and has had one renovation in 1999.",
+      "corroboration": [
+        {
+          "source": "SOW §1.4",
+          "claim": "built in 1942",
+          "value": 1942,
+          "agrees": true
+        }
+      ]
+    },
+    "building_renovation_year": {
+      "value": 1999,
+      "source": "SOW §1.4",
+      "quote": "Building 23H was built in 1942 and has had one renovation in 1999.",
+      "corroboration": [
+        {
+          "source": "SOW §1.4",
+          "claim": "one renovation in 1999",
+          "value": 1999,
+          "agrees": true
+        }
+      ]
+    },
+    "building_current_use": {
+      "value": "Geropsychiatric nursing units; outpatient clinics; Community Living Center; administrative space",
+      "source": "SOW §1.4",
+      "quote": "The existing building is 59,054 SF and houses outpatient clinics, the Community Living Center, and administrative space.",
+      "corroboration": [
+        {
+          "source": "SOW §1.4",
+          "claim": "outpatient clinics, Community Living Center, and administrative space",
+          "value": "outpatient clinics; Community Living Center; administrative space",
+          "agrees": true
+        },
+        {
+          "source": "Conceptual Reports (both versions) — General section",
+          "claim": "It currently houses geropsychiatric nursing units.",
+          "value": "geropsychiatric nursing units",
+          "agrees": false,
+          "notes": "CONFLICT: SOW and Conceptual Reports give different primary uses. SOW: outpatient clinics, Community Living Center, admin. Conceptual Reports: geropsychiatric nursing units. This may reflect a change in occupancy between study/report preparation, or a difference in how A/E characterized the use. Flagged as minor conflict."
+        }
+      ]
+    },
+    "performance_period_days": {
+      "value": 120,
+      "source": "RFP Letter p.1",
+      "quote": "PERFORMANCE PERIOD: 120 calendar days from the Notice to Proceed",
+      "corroboration": [
+        {
+          "source": "RFP Letter p.1",
+          "claim": "120 calendar days from the Notice to Proceed",
+          "value": 120,
+          "agrees": true
+        },
+        {
+          "source": "SOW schedule table",
+          "claim": "NTP + 120 for 100% Bid Final Documents",
+          "value": 120,
+          "agrees": true
+        }
+      ]
+    },
+    "rfp_date": {
+      "value": "2022-01-19",
+      "source": "RFP Letter header",
+      "quote": "January 19, 2022",
+      "corroboration": [
+        {
+          "source": "RFP Letter header",
+          "claim": "January 19, 2022",
+          "value": "2022-01-19",
+          "agrees": true
+        }
+      ]
+    },
+    "key_finding_ipc_violation": {
+      "value": "Fixtures located more than 50 feet from hot water recirculation mains, violating IPC Section 607.2 (2018)",
+      "source": "Conceptual Report (both versions) — Concept Report section",
+      "quote": "Fixtures are located more than 50 feet from their respective hot water recirculation mains, which violates Section 607.2 of the 2018 International Plumbing Code (IPC) Hot or Tempered Water Supply to Fixtures.",
+      "corroboration": [
+        {
+          "source": "Conceptual Report (both versions)",
+          "claim": "50-foot violation of IPC 607.2",
+          "value": "IPC 607.2 violation",
+          "agrees": true
+        }
+      ]
+    },
+    "project_scope_description": {
+      "value": "A/E investigation of domestic hot water recirculation system in Building 23H at VAMC Perry Point; identification of deficiencies; design documents (30%/60%/100% bid documents) to correct deficiencies within budget; 3D scan to BIM; asbestos survey and abatement design as required.",
+      "source": "SOW §1.3",
+      "quote": "The intent of this project is to identify the reason for inefficient hot water circulation in Building 23H at the Perry Point Veterans Affairs Medical Center (PP VAMC). Once the problem(s) are identified, the A/E shall provide a solution utilizing the relevant documents on the VA Technical Information Library. The outcome of the the A/E efforts shall culminate with 30%, 60%, and 100% bid documents delivered to the VA.",
+      "corroboration": [
+        {
+          "source": "SOW §1.3",
+          "claim": "investigation + 30/60/100% bid documents",
+          "value": "A/E investigation + design documents",
+          "agrees": true
+        },
+        {
+          "source": "Conceptual Report abstract",
+          "claim": "study to document deficiencies and provide actionable recommendations; design documents to correct deficiencies within budget",
+          "value": "study + design",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design fee not stated in source documents; only estimated construction price range ($25K-$100K) is given"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Only RFP date (2022-01-19) and proposal due date (2022-02-02) are available; NTP date not found in source documents"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 120,
+        "source": "RFP Letter p.1",
+        "quote": "PERFORMANCE PERIOD: 120 calendar days from the Notice to Proceed"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "notes": "BFA scope is A/E study and design only; construction was a separate future contract. Construction contract value, dates, and CO data are not in scope for this record."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "plumbing_engineering",
+      "mechanical_engineering"
+    ],
+    "sub_disciplines": [
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "hvac_design"
+    ],
+    "building_systems": [
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "existing_hazmat_abatement"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal_vosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": "RFP required offeror to be VERIFIED by VA CVE and VISIBLE on VetBiz prior to contract award — indicating this was a VOSB/SDVOSB set-aside procurement. Specific SWaM percentage not stated.",
+      "source": "RFP Letter p.1",
+      "quote": "Offeror must be both VISIBLE and VERIFIED by the Department of Veterans Affairs Center for Verification and Evaluation prior to contract award."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "veterans_affairs",
+    "vamc_perry_point",
+    "perry_point_md",
+    "hot_water_recirculation",
+    "domestic_hot_water",
+    "nrm_project",
+    "federal_healthcare",
+    "visn5",
+    "plumbing_study",
+    "a_e_study"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Hartigan, Bowman, Foster & Associates, LLC",
+      "role_on_project": "prime_consultant",
+      "notes": "Firm name; individual personnel not identified in source documents"
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 59054,
+        "unit": "gsf",
+        "source": "SOW §1.4",
+        "quote": "The existing building is 59,054 SF",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": "4 above-grade floors + basement + crawlspace",
+        "source": "Conceptual Report — General section",
+        "quote": "The building has four main floors and a basement. Below the basement is a crawlspace.",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "plumbing": [
+          "Domestic hot water recirculation system (original building construction, modified)",
+          "Water heaters in basement",
+          "2 main piping runs in crawl space connecting to risers",
+          "Recirculation pump installed 2020",
+          "Suspected cross-connection between cold and hot water lines in crawl space"
+        ],
+        "electrical": [],
+        "fire_protection": []
+      }
+    },
+    "notes": "No drawing PDF was present in the intake folder. The RFP letter lists a 'Drawing' attachment and the SOW references government-furnished drawings, but no drawing file was provided for extraction. Drawing extraction status is marked complete because there are no drawing files to process; MEP system facts are derived from text documents only."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.building_current_use",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW §1.4",
+          "value": "outpatient clinics, Community Living Center, and administrative space"
+        },
+        {
+          "source": "Conceptual Report (both versions) — General section",
+          "value": "geropsychiatric nursing units"
+        }
+      ],
+      "resolution_chosen": "Both values recorded; SOW sourced for primary value in client_type context",
+      "rationale": "SOW is a government-authored document; Conceptual Reports are A/E-authored. Discrepancy likely reflects partial occupancy/multiple uses, or a change in tenant configuration between documents. Both may be accurate descriptions of different portions of the building."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

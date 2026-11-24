@@ -1,0 +1,7 @@
+<!-- mechanical_engineering.md — per-discipline short narrative, ~120-250 words -->
+
+## Mechanical Engineering — Building 285 Demolish Three Smoke Fans, NAS Oceana
+
+Mechanical engineering scope for this project centered on the planned, complete demolition of three smoke exhaust fan systems from second-floor mechanical rooms in Building 285 at Naval Air Station Oceana. The three fans — F-14, F-15, and F-16 — were 30-inch-diameter axial units, each weighing approximately 540 pounds and rated at 20,000 CFM. The mechanical design addressed the full extent of each system: fan units, duct connections, ductwork runs (approximately 180 SF of duct plus 105 SF from mechanical room to each exterior louver), duct silencers rated at 30-inch diameter and 20,000 CFM, hangers, and all appurtenances. Demolition scope extended in each case from the mechanical room on the second floor continuously down through the first-floor ceiling plane to the building exterior.
+
+The Basis of Design documented each element of the demolition sequence and defined the removal boundaries, ensuring that coordination with electrical, structural, and architectural disciplines was explicit — particularly at the duct penetrations through the concrete floor structure and at the louver connections through the building envelope. All demolished equipment and materials were specified for off-site disposal, removing them from government property per NAVFAC requirements. No mechanical systems were added or replaced; this was a pure demolition and decommissioning scope.

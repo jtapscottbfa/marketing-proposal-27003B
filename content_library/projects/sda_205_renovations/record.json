@@ -1,0 +1,793 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "sda_205_renovations",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/sda_205_renovations/1361583 BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "509ac236b536b8edca5113ad787c1c97cbfbbe2cc792db9d1a72d6c064a5e224",
+      "included": true,
+      "notes": "Final Design Submittal, 3 March 2021. Authored by Dills Architects, P.C. Covers all disciplines: architectural, civil, structural, hazmat, fire protection, plumbing, mechanical, electrical."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/sda_205_renovations/SAES - 1361583_SDA-205 Repairs and Renovation_.pdf",
+      "type": "sow",
+      "sha256": "cca9dca8dd04470dff4846fce46cbeb6aec7575f93e742bcfc6fe67f3c99e670",
+      "included": true,
+      "notes": "Statement of Architectural and Engineering Services (SAES) issued by NAVFAC Mid-Atlantic. FY19. Includes funding amounts, contract identification, and design service scope."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/sda_205_renovations/SOW Requirements - SDA-205 Repairs and Renovations.pdf",
+      "type": "sow",
+      "sha256": "14d400724fd22e1585906e9a3f6a4f2b7d7934a4bce37bd9ec561347d3eeb5e6",
+      "included": true,
+      "notes": "Attachment (01) to SAES — Scope of Work Requirements. FY19. Per-bay scope details; some differences in scope detail vs. BOD (e.g., truck ramp in Bay 1, expanded Bay 5 customer area)."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set PDF present in intake folder. No specs present. BOD + SAES + SOW attachment only. drawing_extraction_status set to 'complete' because no drawings to extract."
+  },
+  "facts": {
+    "project_name": {
+      "value": "SDA-205 Repairs and Renovation",
+      "source": "BOD cover page",
+      "quote": "SDA-205 Repairs and Renovation",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "SDA-205 Repairs and Renovation",
+          "value": "SDA-205 Repairs and Renovation",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1 Contract Identification",
+          "claim": "SDA-205 Repairs and Renovation",
+          "value": "SDA-205 Repairs and Renovation",
+          "agrees": true
+        },
+        {
+          "source": "SOW Attachment (01) cover",
+          "claim": "SDA-205 REPAIRS AND RENOVATION",
+          "value": "SDA-205 Repairs and Renovation",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) Mid-Atlantic",
+      "source": "SAES p.1",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) Mid-Atlantic will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "NAVFAC Mid-Atlantic administers the task order",
+          "value": "Naval Facilities Engineering Command (NAVFAC) Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "A/E Contract No.: N40085-17-D-0347",
+          "value": "NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Support Activity, Norfolk",
+      "source": "BOD cover page",
+      "quote": "Naval Support Activity, Norfolk, VA",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Naval Support Activity, Norfolk, VA",
+          "value": "Naval Support Activity, Norfolk",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Project Location: Naval Station, Norfolk, VA",
+          "value": "Naval Station Norfolk / Naval Support Activity Norfolk",
+          "agrees": true
+        }
+      ]
+    },
+    "end_user": {
+      "value": "DLA Disposition Service",
+      "source": "BOD §1 Introduction",
+      "quote": "currently occupied by the DLA Disposition Service",
+      "corroboration": [
+        {
+          "source": "BOD §1 Introduction",
+          "claim": "currently occupied by the DLA Disposition Service",
+          "value": "DLA Disposition Service",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Support Activity Norfolk",
+      "facility_address": "Intersection of Leutze Blvd. and 9th Street, Naval Support Activity, Norfolk, Virginia",
+      "source": "BOD §1 Introduction",
+      "quote": "Warehouse SDA 205 is located off the intersection of Leutze Blvd. and 9th Street, Naval Support Activity, Norfolk, Virginia.",
+      "corroboration": [
+        {
+          "source": "BOD §1 Introduction",
+          "claim": "Naval Support Activity, Norfolk, Virginia",
+          "value": "Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Naval Station, Norfolk, VA",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-17-D-0347",
+      "source": "BOD cover page",
+      "quote": "A/E Contract No.: N40085-17-D-0347",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "A/E Contract No.: N40085-17-D-0347",
+          "value": "N40085-17-D-0347",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "Contract No. N40085-17-D-0347",
+          "value": "N40085-17-D-0347",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": "SAES A1",
+      "quote": "Task Order: To Be Determined",
+      "notes": "Task order number was TBD at time SAES was issued. Not established in any available document."
+    },
+    "eprojects_work_order": {
+      "value": "1361583",
+      "source": "BOD cover page",
+      "quote": "eProjects W.O. No.: 1361583",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "eProjects W.O. No.: 1361583",
+          "value": "1361583",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "eProjects Work Order No.: 1361583",
+          "value": "1361583",
+          "agrees": true
+        }
+      ]
+    },
+    "da_number": {
+      "value": "20015",
+      "source": "BOD cover page",
+      "quote": "DA No. 20015",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "DA No. 20015",
+          "value": "20015",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 118029,
+      "unit": "gsf",
+      "source": "BOD §7 Fire Protection",
+      "quote": "The total facility footprint area is approximately 118,029 ft2.",
+      "corroboration": [
+        {
+          "source": "BOD §1 Introduction",
+          "claim": "approximately 118,000 square feet (SF)",
+          "value": 118000,
+          "agrees": true,
+          "notes": "Rounded figure; consistent with the precise 118,029 ft² stated in fire protection section"
+        },
+        {
+          "source": "BOD §7 Fire Protection",
+          "claim": "118,029 ft2",
+          "value": 118029,
+          "agrees": true
+        },
+        {
+          "source": "BOD §2 Scope of Work",
+          "claim": "approx. 116,000 sf (concrete floor to resurface)",
+          "value": 116000,
+          "agrees": true,
+          "notes": "Floor resurfacing scope; slightly smaller than total footprint due to docks/exterior features"
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 1,
+      "source": "BOD §1 Introduction",
+      "quote": "The Warehouse structure is a single-story, steel-framed structure",
+      "corroboration": [
+        {
+          "source": "BOD §1 Introduction",
+          "claim": "single-story, steel-framed structure",
+          "value": 1,
+          "agrees": true
+        },
+        {
+          "source": "BOD §7 Fire Protection",
+          "claim": "The entire facility will be treated functionally as a single-story building",
+          "value": 1,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 7322400,
+      "currency": "USD",
+      "source": "SAES C1",
+      "quote": "Project Cost/Program Amount: $7,322,400",
+      "corroboration": [
+        {
+          "source": "SAES C1",
+          "claim": "$7,322,400",
+          "value": 7322400,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 6780000,
+      "currency": "USD",
+      "source": "SAES C2",
+      "quote": "Estimated Construction Cost (ECC): $6,780,000",
+      "corroboration": [
+        {
+          "source": "SAES C2",
+          "claim": "$6,780,000",
+          "value": 6780000,
+          "agrees": true
+        }
+      ]
+    },
+    "design_funding_year": {
+      "value": "FY2019",
+      "source": "SAES A1",
+      "quote": "Design Funding Year: FY 2019",
+      "corroboration": [
+        {
+          "source": "SAES A1",
+          "claim": "Design Funding Year: FY 2019",
+          "value": "FY2019",
+          "agrees": true
+        },
+        {
+          "source": "SAES cover / SOW cover",
+          "claim": "FY19",
+          "value": "FY2019",
+          "agrees": true
+        }
+      ]
+    },
+    "ae_firm_prime": {
+      "value": "Dills Architects, P.C.",
+      "source": "BOD cover page",
+      "quote": "Design by: Dills Architects, P.C.",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Design by: Dills Architects, P.C.",
+          "value": "Dills Architects, P.C.",
+          "agrees": true
+        },
+        {
+          "source": "SAES A1",
+          "claim": "A&E Firm: Dills Architects, P.C.",
+          "value": "Dills Architects, P.C.",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_role_in_project": {
+      "value": null,
+      "status": "missing",
+      "source": null,
+      "quote": null,
+      "notes": "BFA's role on this project (prime, subconsultant to Dills Architects, etc.) is not stated in any available source document. Project is filed in BFA's reference_projects/navfac directory. Given BFA's MEP specialization and Dills Architects being an architecture firm, BFA was likely subconsultant providing MEP and/or fire protection services. Flag for human review."
+    },
+    "final_design_submittal_date": {
+      "value": "2021-03-03",
+      "source": "BOD cover page",
+      "quote": "FINAL DESIGN SUBMITTAL 3 MARCH 2021",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "FINAL DESIGN SUBMITTAL 3 MARCH 2021",
+          "value": "2021-03-03",
+          "agrees": true
+        }
+      ]
+    },
+    "construction_start_date": {
+      "value": null,
+      "status": "missing"
+    },
+    "construction_completion_date": {
+      "value": null,
+      "status": "missing"
+    },
+    "building_construction_type": {
+      "value": "Type II-B",
+      "source": "BOD §7 Fire Protection",
+      "quote": "The existing building is of Type II-B construction.",
+      "corroboration": [
+        {
+          "source": "BOD §7 Fire Protection",
+          "claim": "Type II-B construction",
+          "value": "Type II-B",
+          "agrees": true
+        }
+      ]
+    },
+    "building_construction_year": {
+      "value": "early 1940s",
+      "source": "BOD §1 Introduction",
+      "quote": "The facility was constructed in the early Forties",
+      "corroboration": [
+        {
+          "source": "BOD §1 Introduction",
+          "claim": "constructed in the early Forties",
+          "value": "early 1940s",
+          "agrees": true
+        }
+      ]
+    },
+    "occupancy_use": {
+      "value": "Warehouse / Storage (S-1) with accessory Office (Group B)",
+      "source": "BOD §7 Fire Protection",
+      "quote": "The primary use of the building will be for storage functions.",
+      "corroboration": [
+        {
+          "source": "BOD §7 Fire Protection",
+          "claim": "Bay 1 classified as S-1 Storage and Business Group B occupancies",
+          "value": "S-1 Storage with Business Group B accessory",
+          "agrees": true
+        }
+      ]
+    },
+    "hazardous_materials_present": {
+      "value": true,
+      "source": "BOD §4 Hazardous Materials",
+      "quote": "the following materials were determined to be ACM: 9\" green floor tile and mastic (bottom layer) – 504 SF",
+      "notes": "ACM (asbestos), lead-based paint, PCB-containing light fixtures (assumed non-PCB per testing, mercury-containing lamps confirmed)"
+    },
+    "fire_pump": {
+      "value": "1,250 gpm / 60 psi electric fire pump",
+      "source": "BOD §7 Fire Protection",
+      "quote": "a fire pump is required. A 1,250 gpm 60 psi electric pump will be provided.",
+      "corroboration": [
+        {
+          "source": "BOD §7 Fire Protection",
+          "claim": "1,250 gpm 60 psi electric pump",
+          "value": "1,250 gpm / 60 psi electric",
+          "agrees": true
+        },
+        {
+          "source": "BOD §2 Scope of Work",
+          "claim": "Provide new Fire Pump",
+          "value": "fire pump required",
+          "agrees": true
+        }
+      ]
+    },
+    "electrical_service_existing": {
+      "value": "Two separate electrical services: Service #1 = 300 KVA 11.5KV-208Y/120V with 800A MCB in Bay 3; Service #2 = 225 KVA 11.5KV-208Y/120V with exterior 800A MCB",
+      "source": "BOD §10 Electrical",
+      "quote": "The building currently has two separate electrical services. Service #1 consists of a 300 KVA, 11.5 KV-208Y/120 Volt, pad mounted transformer with overhead service cables, and an 800 Amp MCB, main distribution panel in Bay 3. Service #2 consists of a 225 KVA, 11.5 KV-208Y/120 Volt, pad mounted transformer and an exterior 800 Amp MCB, distribution panel mounted adjacent to the transformer."
+    },
+    "electrical_service_proposed": {
+      "value": "Consolidate two services into one; retain 300 KVA transformer; add secondary lateral for 60 HP fire pump",
+      "source": "BOD §10 Electrical",
+      "quote": "these two services will be combined into one. The existing overhead service lateral serving electrical service #2 MDP will be removed back to the exterior distribution panel. The existing 300 KVA pad mounted transformer and overhead service lateral serving electrical service #1 MDP will remain. An additional secondary service lateral will be provided from the 300 KVA pad mounted transformer to serve a new 60 HP fire pump."
+    },
+    "hvac_scope": {
+      "value": "All existing mechanical systems demolished; new system: three heat pump split systems plus exhaust for restrooms and storage",
+      "source": "BOD §9 Mechanical",
+      "quote": "All existing mechanical systems will be demolished complete... New system equipment shall include three heat pump split systems and associated piping; and an exhaust system for restroom and storage room ventilation.",
+      "corroboration": [
+        {
+          "source": "BOD §9 Mechanical",
+          "claim": "three heat pump split systems",
+          "value": "3 split system heat pumps",
+          "agrees": true
+        },
+        {
+          "source": "BOD §2 Scope of Work",
+          "claim": "Bay 4: Provide Radiant Heat",
+          "value": "radiant heat in Bay 4 (additional to split systems)",
+          "agrees": true
+        }
+      ]
+    },
+    "plumbing_scope": {
+      "value": "Demo all existing plumbing in Bays 1 and 5; provide new restrooms, domestic water, DWV, electric water heaters, eyewash stations",
+      "source": "BOD §8 Plumbing",
+      "quote": "All existing plumbing systems shall be demolished. New rest rooms shall be constructed.",
+      "notes": "Bay 1 and Bay 5 full plumbing demo and replacement. New fixtures: floor-mounted water closets, wall-mounted lavatories, urinals, countertop sinks, electric water heaters, emergency eyewash."
+    },
+    "fire_protection_scope": {
+      "value": "New automatic sprinkler system (wet and dry pipe per area) throughout all five bays; new fire alarm and mass notification system; new fire pump (1,250 gpm / 60 psi electric)",
+      "source": "BOD §7 Fire Protection",
+      "quote": "Facility SDA-205 will be equipped with a fully automatic supervised wet-pipe and dry-pipe sprinkler system in all five bays.",
+      "corroboration": [
+        {
+          "source": "BOD §2 Scope of Work",
+          "claim": "Demolish existing and provide new Automatic Sprinkler System. Provide Fire Alarm and Mass Notification System. Provide new Fire Pump.",
+          "value": "full fire protection scope confirmed",
+          "agrees": true
+        }
+      ]
+    },
+    "lighting_scope": {
+      "value": "Full demo of all interior and exterior lighting; new LED throughout including high bay, low bay, recessed, and pendant; wireless controls with daylight harvesting and occupancy sensors; battery backup emergency lighting",
+      "source": "BOD §10 Electrical",
+      "quote": "Demolish existing interior and exterior lighting throughout warehouse and administration spaces... Provide new interior and exterior lighting throughout warehouse and new administration spaces. Provide emergency and exit lighting. All new interior and exterior lighting will be LED.",
+      "corroboration": [
+        {
+          "source": "BOD §2 Scope of Work",
+          "claim": "Demolish and provide lighting with new LED lights.",
+          "value": "full LED lighting replacement",
+          "agrees": true
+        }
+      ]
+    },
+    "telecommunications_scope": {
+      "value": "Existing outside plant cabling and telephone entrance room to remain; relocate one IT cabinet for new admin space; new Cat-6 outlets in new spaces",
+      "source": "BOD §10.2 Telecommunications",
+      "quote": "Existing copper and fiber optic outside plan cabling serving SDA-205 must remain. The existing Telephone Entrance Room located in Bay 1 administration area must remain."
+    },
+    "access_control_scope": {
+      "value": "Access Control System (ACS) at personnel doors; card readers, keypads, door position switches, electronic strikes; reporting to base monitoring station",
+      "source": "BOD §10.3 Physical Security Equipment",
+      "quote": "An Access Control System (ACS) will be provided at personnel doors in accordance with the RFP. Devices include, but are not limited to, card readers and keypads, door position switches, electronic door strikes, and system control panels. The system will report to the existing base monitoring station."
+    },
+    "av_scope": {
+      "value": "Relocate existing VTC system from existing conference room to new conference/training room",
+      "source": "BOD §10.4 Audio/Visual",
+      "quote": "The existing Video Teleconferencing (VTC) system located in the existing Customer Service/Office conference room will be relocated to the newly constructed Conference/Training room."
+    },
+    "water_supply_test": {
+      "value": "Hydrant flow test 1 September 2020: Static 69 psi, Residual 54 psi, Flow 1,130 gpm",
+      "source": "BOD §7 Fire Protection",
+      "quote": "Static pressure: 69 psi Residual pressure: 54 psi Flow: 1,130 gpm"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES fee schedule shows blank dollar amounts (to be negotiated). A-E design fee total not recorded in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES states task order number TBD; award date not in available documents."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-03-03",
+        "source": "BOD cover page",
+        "quote": "FINAL DESIGN SUBMITTAL 3 MARCH 2021",
+        "notes": "Final design submittal date; represents design completion milestone."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "ECC of $6,780,000 is the estimated figure from SAES; actual construction contract value not available."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod",
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "industrial_warehouse"
+    ],
+    "program_subtype": [
+      "military_dining_morale"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "architecture",
+      "civil_engineering",
+      "structural_engineering",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_suppression_dry",
+      "fire_alarm",
+      "civil_site_design",
+      "civil_utilities",
+      "structural_existing_assessment",
+      "environmental_remediation",
+      "security_access_control",
+      "telecom_structured_cabling",
+      "telecom_av"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "electrical_lighting_controls",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "fp_dry_pre_action",
+      "fp_fire_alarm",
+      "security_acs",
+      "telecom_structured_cabling",
+      "telecom_av",
+      "site_utilities"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "electronic_safety_security",
+      "communications_scope",
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "finishes_scope",
+      "openings_doors_frames",
+      "specialties_toilet_partitions",
+      "exterior_improvements",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "program_subtype_flag": "program_subtype 'military_dining_morale' used as workaround — no ideal vocab entry exists for 'military warehouse / logistics / DLA storage facility'. Closest match in military_defense subtypes is this, but it is not accurate. Proposed v0.1.1 vocab addition: military_warehouse_storage or military_logistics_facility under military_defense.",
+    "bfa_role_flag": "bfa_role 'subconsultant' is inferred from project filing context and Dills Architects being the named prime A-E. No source document explicitly states BFA's role. Flag for human review.",
+    "procurement_type_flag": "SAES describes competitive procurement with 'Best Value Source Selection' or 'Competitive Bid (Firm-Fixed-Price)' for construction. For A-E services under the IDIQ, award was qualifications-based per IDIQ award. Both procurement approaches noted."
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 118029,
+        "unit": "gsf",
+        "source": "BOD §7 Fire Protection",
+        "quote": null,
+        "notes": "Derived from BOD text, not drawing extraction. No drawing set available."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD §1 Introduction",
+        "quote": null
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "3x split system heat pumps (office/restroom areas Bays 1 and 5)",
+          "Radiant heat (Bay 4)",
+          "Exhaust system for restrooms and storage room ventilation",
+          "Motorized 2-position outside air dampers"
+        ],
+        "electrical": [
+          "300 KVA 11.5KV-208Y/120V pad-mounted transformer (existing, to remain)",
+          "800A MCB main distribution panel (existing Bay 3, to remain)",
+          "New secondary service lateral for 60 HP fire pump",
+          "New 208Y/120V branch circuit panelboards in new admin spaces",
+          "LED lighting throughout (high bay, low bay, recessed troffers, pendant)",
+          "Wireless lighting control system with daylight harvesting and occupancy sensors",
+          "Battery backup inverters for emergency egress lighting"
+        ],
+        "plumbing": [
+          "New domestic cold/hot water distribution (Bays 1 and 5)",
+          "New sanitary/DWV (Bays 1 and 5)",
+          "New 8-inch ductile iron fire main from cut-in on 9th Street water main",
+          "Electric water heaters",
+          "Emergency eyewash stations (Bays 1 and 5)",
+          "Thermostatic mixing valves for restroom lavatories (110°F)"
+        ],
+        "fire_protection": [
+          "Fully automatic wet-pipe and dry-pipe sprinkler system (all five bays)",
+          "New 1,250 gpm / 60 psi electric fire pump",
+          "New fire pump room with 1-hour fire barrier separation",
+          "Combined fire alarm and mass notification system (voice evacuation + MNS)",
+          "Federal Signal UVRI transceiver interfacing with base-wide MNS",
+          "Zoned telegraphic transmitter (DET 16) reporting to central fire alarm station",
+          "Manual pull stations at all exits",
+          "Carbon monoxide detection in rooms with fuel-fired equipment",
+          "Duct smoke detectors per NFPA 90A"
+        ]
+      }
+    },
+    "extraction_notes": "No drawing set PDF provided in the intake folder. All system inventory facts derived from BOD and SOW text documents only. Drawing extraction status is effectively N/A (no drawings to process)."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD §1 Introduction",
+          "value": 118000,
+          "text": "approximately 118,000 square feet (SF)"
+        },
+        {
+          "source": "BOD §7 Fire Protection",
+          "value": 118029,
+          "text": "approximately 118,029 ft2"
+        }
+      ],
+      "resolution_chosen": "BOD §7 Fire Protection",
+      "rationale": "The fire protection section provides the precise code-compliance value (118,029 ft²) needed for building area calculations; the introduction uses a rounded approximation. Both are from the same document. Chose the precise figure as the canonical value."
+    },
+    {
+      "field_path": "facts.overhead_doors_demolished",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD §2 Scope of Work",
+          "value": 9,
+          "text": "Demolish overhead coiling doors (9)"
+        },
+        {
+          "source": "SOW Attachment (01)",
+          "value": 8,
+          "text": "(8) Demolish overhead coiling doors"
+        }
+      ],
+      "resolution_chosen": "BOD §2 (Final Design Submittal)",
+      "rationale": "BOD represents the Final Design Submittal (3 March 2021), which postdates the SOW (August 2019). The quantity likely changed during design development. Chose BOD as later, more authoritative document."
+    },
+    {
+      "field_path": "taxonomy.bfa_role",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "inferred from project filing context",
+          "value": "subconsultant",
+          "text": "Project is in BFA's navfac reference_projects folder; prime AE is named as Dills Architects, P.C."
+        },
+        {
+          "source": "no source document",
+          "value": null,
+          "text": "No source document explicitly identifies BFA's role or involvement"
+        }
+      ],
+      "resolution_chosen": "subconsultant (inferred)",
+      "rationale": "Dills Architects is explicitly named as prime A-E on both BOD and SAES. BFA's MEP specialization aligns with the MEP scope in this project. Subconsultant is the most plausible role but is unverified. MUST be confirmed by BFA internal records.",
+      "flag_for_human_review": true
+    }
+  ],
+  "tenant_freeform_tags": [
+    "navfac",
+    "navfac_midlant",
+    "nsa_norfolk",
+    "dla",
+    "dla_disposition_service",
+    "warehouse_renovation",
+    "idiq_task_order",
+    "hampton_roads",
+    "federal_warehouse",
+    "hazmat_abatement",
+    "mass_notification",
+    "fire_pump"
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    }
+  }
+}

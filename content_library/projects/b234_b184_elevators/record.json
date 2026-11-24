@@ -1,0 +1,648 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b234_b184_elevators",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b234_b184_elevators/20-032_PF PME BASIS OF DESIGN.doc",
+      "type": "bod",
+      "sha256": "2a666db81ec77805338b3bb16ae4918d86aef164d62dcc4821052c2830e96126",
+      "included": false,
+      "flag_for_human_review": true,
+      "extraction_note": "pandoc failed: couldn't unpack docx container — file appears corrupt or is a legacy binary .doc format not convertible. Content not extractable."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b234_b184_elevators/20201.03.12.ELEV 34 SITE INVESTIGATION REPORT.docx",
+      "type": "report",
+      "sha256": "131f393344b842a76250a3df665587b63f8821c74a98fa542be7e5187b002a2d",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b234_b184_elevators/20201.03.12.ELEV 60 SITE INVESTIGATION REPORT.docx",
+      "type": "report",
+      "sha256": "f0924dcab05f91e467dfab8b3cfc50bfe7bb35c4d8b0fe9ec545243ba8ce1da0",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b234_b184_elevators/2021.03.12 ELEV 34 SUSTAINABLE DESIGN REPORT.docx",
+      "type": "report",
+      "sha256": "8f6942e2279eba913b960abe155876aa94727198b81895a60e7072311cad1b4b",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b234_b184_elevators/2021.03.12 ELEV 60 SUSTAINABLE DESIGN REPORT.docx",
+      "type": "report",
+      "sha256": "06701fa0ec19c906d60206a34d9bace709386b556e6b1e861fd401a7e33446ee",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b234_b184_elevators/X009 SAES.pdf",
+      "type": "sow",
+      "sha256": "eb0279dbecb198b1f2ec531593ff914c02c6e27ad354e1d5e68daca9dbe352ed",
+      "included": true,
+      "note": "Scope of Architect-Engineer Services (SAES) — primary project scoping document"
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD (.doc) present but unreadable — legacy binary format or corrupt. SAES (sow) fully readable. Two site engineering reports and two sustainable design reports readable. No drawing set present in intake folder; SAES references reference drawings as attachments but they were not included. BOD content loss is significant; many fact fields reliant on BOD are missing."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 234 – Replace Freight Elevator 34 / Building 184 – Replace Freight Elevator 60, Norfolk Naval Shipyard",
+      "source": "SAES p.1",
+      "quote": "BUILDING 234 – REPLACE FREIGHT ELEVATOR 34\nBUILDING 184 – REPLACE FREIGHT ELEVATOR 60",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "BUILDING 234 – REPLACE FREIGHT ELEVATOR 34 / BUILDING 184 – REPLACE FREIGHT ELEVATOR 60",
+          "agrees": true
+        },
+        {
+          "source": "ELEV 34 Site Investigation Report",
+          "claim": "BUILDING 234 – REPLACE FREIGHT ELEVATOR 34",
+          "agrees": true
+        },
+        {
+          "source": "ELEV 60 Site Investigation Report",
+          "claim": "BUILDING 184 – REPLACE FREIGHT ELEVATOR 60",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC), PWD Portsmouth",
+      "source": "SAES p.1",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth will administer this T.O.",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / Norfolk Naval Shipyard",
+      "source": "SAES p.1",
+      "quote": "NORFOLK NAVAL SHIPYARD, PORTSMOUTH, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "NORFOLK NAVAL SHIPYARD, PORTSMOUTH, VIRGINIA",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Norfolk Naval Shipyard",
+      "source": "SAES p.1",
+      "quote": "Norfolk Naval Shipyard, Portsmouth, Virginia",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "ELEV 34 Site Investigation Report",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "ELEV 60 Site Investigation Report",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "eProject #1362310 / 1636078",
+      "source": "SAES p.1",
+      "quote": "eProject #1362310/1636078",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "eProject #1362310/1636078",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-17-D-0347",
+      "source": "SAES §A1",
+      "quote": "Contract No. N40085-17-D-0347",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Contract No. N40085-17-D-0347",
+          "agrees": true
+        },
+        {
+          "source": "SAES header",
+          "claim": "N40085-17-D-0347",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "explicit_null",
+      "source": "SAES §A1",
+      "quote": "Task Order TBD"
+    },
+    "fiscal_year": {
+      "value": "FY2020",
+      "source": "SAES p.1",
+      "quote": "FY 2020",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "FY 2020",
+          "agrees": true
+        },
+        {
+          "source": "SAES attachments",
+          "claim": "Project FY 2020",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "No GSF data in available source documents. BOD unreadable."
+    },
+    "program_budget": {
+      "value": 2675461,
+      "currency": "USD",
+      "source": "SAES §C1 and §C2",
+      "quote": "$1,275,461 - Building 234 – Elevator 34\n$1,400,000 – Building 184 – Elevator 60",
+      "breakdown": {
+        "b234_elevator_34": {
+          "value": 1275461,
+          "currency": "USD",
+          "source": "SAES §C1",
+          "quote": "$1,275,461 - Building 234 – Elevator 34"
+        },
+        "b184_elevator_60": {
+          "value": 1400000,
+          "currency": "USD",
+          "source": "SAES §C1",
+          "quote": "$1,400,000 – Building 184 – Elevator 60"
+        }
+      },
+      "corroboration": [
+        {
+          "source": "SAES §C1",
+          "claim": "$1,275,461 (B234) + $1,400,000 (B184)",
+          "value": 2675461,
+          "agrees": true
+        },
+        {
+          "source": "SAES §C2",
+          "claim": "Estimated Construction Cost (ECC): $2,675,461",
+          "value": 2675461,
+          "agrees": true,
+          "note": "SAES §C2(a) explicitly states the ECC is derived by subtracting SIOH/contingency/PCAS from the Program Amount. However, §C2 states ECC = $2,675,461, which arithmetically equals the sum of the two §C1 Program Amounts. This is internally contradictory: if ECC excludes those fees, it should be less than the Program Amounts, not equal to them. Most likely interpretation: the SAES §C2 'ECC' label is used loosely to mean the total program budget across both projects (or the SIOH/contingency costs are tracked outside this document). Flagged as minor because it affects categorization of the dollar figure, not its magnitude."
+        }
+      ]
+    },
+    "estimated_construction_completion_date": {
+      "value": "2023-08-30",
+      "source": "SAES §A1",
+      "quote": "Estimated Construction Completion Date: August 30, 2023",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Estimated Construction Completion Date: August 30, 2023",
+          "agrees": true
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "A-E design services for design-bid-build replacement of two freight elevators at Norfolk Naval Shipyard: (1) Building 234 Elevator 34 — hydraulic, 10,000-lb capacity, 3-floor, replaced with new geared electric traction unit; (2) Building 184 Elevator 60 — geared traction, 16,000-lb capacity, 4-floor, replaced in-kind. Scope includes structural analysis and repairs to shaft walls and machine rooms, MEP modifications, HVAC for machine rooms with DDC controls tied to base-wide system, fire protection upgrades, hazmat survey and abatement of hydraulic oil and underground piston casing (B234), SHPO window replacement coordination, and post-construction award services.",
+      "source": "SAES §A2",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "SAES §A2 (B234 scope)",
+          "claim": "Elevator 34 in Building 234 is a hydraulic, 10,000-pound capacity freight elevator that serves three floors.",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2 (B184 scope)",
+          "claim": "Elevator 60 in Building 184 is a geared traction freight elevator with a machine room, 16,000-pound capacity that serves four floors.",
+          "agrees": true
+        }
+      ]
+    },
+    "b234_elevator_34_capacity_lb": {
+      "value": 10000,
+      "unit": "lb",
+      "source": "SAES §A2",
+      "quote": "Elevator 34 in Building 234 is a hydraulic, 10,000-pound capacity freight elevator that serves three floors."
+    },
+    "b234_elevator_34_floors_served": {
+      "value": 3,
+      "source": "SAES §A2",
+      "quote": "freight elevator that serves three floors"
+    },
+    "b184_elevator_60_capacity_lb": {
+      "value": 16000,
+      "unit": "lb",
+      "source": "SAES §A2",
+      "quote": "Elevator 60 in Building 184 is a geared traction freight elevator with a machine room, 16,000-pound capacity that serves four floors."
+    },
+    "b184_elevator_60_floors_served": {
+      "value": 4,
+      "source": "SAES §A2",
+      "quote": "freight elevator with a machine room, 16,000-pound capacity that serves four floors"
+    },
+    "new_elevator_speed_fpm": {
+      "value": "200–250",
+      "unit": "fpm",
+      "source": "SAES §A2",
+      "quote": "geared, 10,000 lb, electric traction freight elevator, rated between 200 fpm and 250 fpm",
+      "note": "Same speed spec applies to both replacement units per SAES §A2 (B234) and §A2 (B184)."
+    },
+    "elevator_class": {
+      "value": "Class C1",
+      "source": "SAES §A2",
+      "quote": "Class C1, to comply with current building codes, and UFC requirements"
+    },
+    "saes_revision_date": {
+      "value": "2018-08-17",
+      "source": "SAES header",
+      "quote": "Rev16 / 17 August 2018"
+    },
+    "applicable_codes": {
+      "value": [
+        "UFC 3-490-06",
+        "ASME A17.1-2016",
+        "ASME A17.2",
+        "ASHRAE 90.1",
+        "UFC 3-410-01",
+        "UFC 1-200-02",
+        "NFPA 72",
+        "UFC 3-600-01"
+      ],
+      "source": "SAES §A2 and §I",
+      "quote": "UFC 3-490-06, ELEVATORS and current elevator codes ASME A17.1 and ASME A17.2",
+      "corroboration": [
+        {
+          "source": "SAES §A2",
+          "claim": "UFC 3-490-06, ASME A17.1, ASME A17.2",
+          "agrees": true
+        },
+        {
+          "source": "Sustainable Design Reports (both)",
+          "claim": "ASHRAE 90.1 and UFC 3-410-01",
+          "agrees": true
+        },
+        {
+          "source": "SAES §I11",
+          "claim": "UFC 3-600-01, NFPA 72",
+          "agrees": true
+        }
+      ]
+    },
+    "shpo_coordination_required": {
+      "value": true,
+      "source": "SAES §D5, §A2",
+      "quote": "Replace existing windows to comply with State Historic Preservation Office (SHPO) requirements to achieve a finding of No Adverse Effect.",
+      "corroboration": [
+        {
+          "source": "SAES §D5(b)",
+          "claim": "Coordination by the A-E with State Historic Preservation Office may be required under this T.O.",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2 (B234, item g)",
+          "claim": "Replace existing windows to comply with State Historic Preservation Office (SHPO) requirements to achieve a finding of No Adverse Effect.",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2 (B184, item g)",
+          "claim": "Replace existing windows to comply with State Historic Preservation Office (SHPO) requirements to achieve a finding of No Adverse Effect.",
+          "agrees": true
+        }
+      ]
+    },
+    "hazmat_required": {
+      "value": true,
+      "source": "SAES §F4",
+      "quote": "The accomplishment of the work covered under this T.O. will require verification of the presence of hazardous materials such as, but not limited to, asbestos, lead, , PCB, mercury, etc."
+    },
+    "b234_existing_elevator_type": {
+      "value": "hydraulic",
+      "source": "SAES §A2",
+      "quote": "Elevator 34 in Building 234 is a hydraulic, 10,000-pound capacity freight elevator"
+    },
+    "b184_existing_elevator_type": {
+      "value": "geared traction",
+      "source": "SAES §A2",
+      "quote": "Elevator 60 in Building 184 is a geared traction freight elevator with a machine room"
+    },
+    "b234_electrical_service_existing": {
+      "value": "3P/150A plug-in circuit breaker from 480V three-phase bus duct, powered from Unit Substation YA (11.5kV–480Y/277V)",
+      "source": "ELEV 34 Site Investigation Report",
+      "quote": "The electrical service to the elevator 34 is served from a 3P/150A plug-in circuit breaker connected to a 480 volt, three phase, bus duct in the second floor ceiling space. The bus duct is powered by a low voltage power circuit breaker in existing Unit Substation \"YA\", 11.5 kV -- 480Y/277 volt, on the second floor."
+    },
+    "b184_electrical_service_existing": {
+      "value": "3P/225A enclosed circuit breaker from 208Y/120V switchboard, first floor",
+      "source": "ELEV 60 Site Investigation Report",
+      "quote": "The electrical service to the elevator 60 is served from a 3P/225A enclosed circuit breaker tapped to the bus of existing 208Y/120 volt switchboard on the first floor."
+    },
+    "b234_plumbing_existing": {
+      "value": "120V submersible sump pump in elevator pit — submerged in mud, inoperable",
+      "source": "ELEV 34 Site Investigation Report",
+      "quote": "The plumbing for elevator 34 consists of a single, 120v, fractional horsepower, submersible sump pump with discharge piping. This equipment is in the pit of the elevator. The sump pump is submerged in mud and appears to be inoperable."
+    },
+    "b184_plumbing_existing": {
+      "value": "120V submersible sump pump in elevator pit — submerged in mud, inoperable",
+      "source": "ELEV 60 Site Investigation Report",
+      "quote": "The plumbing for elevator 60 consists of a single, 120v, fractional horsepower, submersible sump pump with discharge piping. This equipment is in the pit of the elevator. The sump pump is submerged in mud and appears to be inoperable."
+    },
+    "b234_mechanical_existing": {
+      "value": "Single electric wall-mounted unit heater in machine room",
+      "source": "ELEV 34 Site Investigation Report",
+      "quote": "The mechanical system for elevator 34 consists of a single, electric, wall mounted unit heater. Equipment is in the elevator machine room."
+    },
+    "b184_mechanical_existing": {
+      "value": "Single electric wall-mounted unit heater in machine room",
+      "source": "ELEV 60 Site Investigation Report",
+      "quote": "The mechanical system for elevator 60 consists of a single, electric, wall mounted unit heater. Equipment is in the elevator machine room."
+    },
+    "sustainable_design_standards": {
+      "value": "ASHRAE 90.1, UFC 3-410-01, UFC 1-200-02 (HPSB); Energy Star equipment specified; no on-site renewables; no plumbing fixtures in scope; no landscaping irrigation; manual lighting controls in machine room and hoistway",
+      "source": "ELEV 34 and ELEV 60 Sustainable Design Reports",
+      "quote": "Optimize efficiency performance will meet the requirements of ASHRAE 90.1 and UFC 3-410-01.",
+      "corroboration": [
+        {
+          "source": "ELEV 34 Sustainable Design Report",
+          "claim": "ASHRAE 90.1 and UFC 3-410-01",
+          "agrees": true
+        },
+        {
+          "source": "ELEV 60 Sustainable Design Report",
+          "claim": "ASHRAE 90.1 and UFC 3-410-01",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "A-E fee to be negotiated at T.O. issuance per SAES §A4. No value in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "note": "Design schedule in Attachment (1) provides milestone durations (e.g., 80 days to 35% after kick-off, 110 days to 100% after 35% review) but no total calendar days from NTP to Final Design explicitly stated."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "ECC of $2,675,461 per SAES §C2 is the total program amount for both buildings combined; actual construction contract value not available in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-08-30",
+        "source": "SAES §A1",
+        "quote": "Estimated Construction Completion Date: August 30, 2023",
+        "note": "Estimated date only, from the SAES."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "architecture"
+    ],
+    "disciplines_note": "Conveying/elevator specialty is the primary discipline but does not appear in discipline.yaml. The six disciplines above are all explicitly required by SAES kickoff/review meeting attendee list and scope. See retro for vocab gap on conveying_systems.",
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "structural_existing_assessment",
+      "structural_concrete"
+    ],
+    "building_systems": [
+      "conveying_elevators",
+      "hvac_systems",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "superstructure"
+    ],
+    "construction_scope": [
+      "conveying_scope",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "finishes_scope",
+      "openings_windows",
+      "openings_doors_frames"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "norfolk_naval_shipyard",
+    "nnsy",
+    "portsmouth_virginia",
+    "elevator_replacement",
+    "freight_elevator",
+    "historic_preservation",
+    "shpo",
+    "industrial_facility",
+    "shipyard",
+    "dod_navy",
+    "two_building_project",
+    "hydraulic_elevator_removal",
+    "geared_traction_elevator"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "No drawings in intake folder. SAES references reference drawings as attachments but none included."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "note": "Per-building floor counts inferred from elevator floors served (B234: 3, B184: 4) but building floor counts not directly stated."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Machine room unit heater (existing, wall-mounted electric) — both buildings",
+          "New HVAC for machine room with DDC controls tied to NNSY base-wide DDC system — both buildings",
+          "T&B (testing and balancing) required"
+        ],
+        "electrical": [
+          "B234: 480V 3-phase supply from Unit Substation YA; existing bus duct to remain; new feeder and breaker for new elevator",
+          "B234: 100A 208Y/120V panel for machine room loads (cab lights and power)",
+          "B184: 208Y/120V switchboard feed; new circuit breaker, feeder, and panel for new elevator",
+          "Emergency communication system (telephone in car and machine room) — both buildings",
+          "Shunt trip breaker for elevator shutdown on sprinkler flow — both buildings"
+        ],
+        "plumbing": [
+          "Sump pump in elevator pit — both buildings (existing inoperable; new sump pump discharge to approved drainage point)",
+          "B234: Hydraulic oil removal and piston casing backfill (hazmat/demolition)"
+        ],
+        "fire_protection": [
+          "Wet sprinkler system in machine room — both buildings",
+          "Fire alarm interface for elevator recall/shutdown per UFC and NFPA 72",
+          "Smoke detectors at elevator landings (wall-mounted above elevator doors per NFPA 72)",
+          "Existing Simplex 4010 fire alarm panel on first floor (B234) — interface required",
+          "Firestop all penetrations into elevator shaft and machine room — both buildings"
+        ]
+      }
+    },
+    "reading_notes": "No drawing-set PDFs were present in the intake folder. The SAES (X009 SAES.pdf) is a text-bearing scope document and was processed as text. SAES Attachments (6)–(13) list reference drawings (B234 floor plans 2005, B234 floor plans 1943, B234 elevator rehab 1980, B234 electrical rehab 1989, B184 floor plans, B184 original elevator drawings 1945, B184 elevator rehab 1984, B184 renovation 1993) but these were not included in the intake folder."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.program_budget",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES §C1",
+          "description": "Per-project Total Authorized Funding (PA): $1,275,461 (B234) + $1,400,000 (B184) = $2,675,461 total. These are the 'Total Authorized Funding' from DD Form 1391 Block 8, which per §C2(a) includes SIOH, contingency, PCAS, and other fees."
+        },
+        {
+          "source": "SAES §C2",
+          "description": "Estimated Construction Cost (ECC) = $2,675,461. Per §C2(a), ECC = Program Amount MINUS SIOH, contingency, PCAS, and other fees."
+        }
+      ],
+      "resolution_chosen": "SAES §C1 program amounts used as program_budget; §C2 ECC label noted in extraction.",
+      "rationale": "SAES §C2(a) explicitly states the ECC is derived by subtracting SIOH/contingency/PCAS from the Program Amount. However, §C2 states ECC = $2,675,461, which arithmetically equals the sum of the two §C1 Program Amounts. This is internally contradictory: if ECC excludes those fees, it should be less than the Program Amounts, not equal to them. Most likely interpretation: the SAES §C2 'ECC' label is used loosely to mean the total program budget across both projects (or the SIOH/contingency costs are tracked outside this document). Flagged as minor because it affects categorization of the dollar figure, not its magnitude."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

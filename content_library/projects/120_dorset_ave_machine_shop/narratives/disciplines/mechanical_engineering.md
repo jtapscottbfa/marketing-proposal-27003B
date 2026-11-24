@@ -1,0 +1,9 @@
+# Mechanical Engineering — 120 Dorset Avenue Interior Renovations
+
+Bowman Foster & Associates provided mechanical engineering design services for the interior renovation of an existing industrial manufacturing facility at 120 Dorset Avenue, Virginia Beach, VA. The mechanical scope encompassed full HVAC demolition and replacement for the affected areas, along with new compressed air distribution throughout the industrial floor.
+
+Demolition included removal of the existing heat pump and air handling unit (heat pump was returned to the owner), all associated ductwork, diffusers, grilles, and piping supports. One existing AHU was documented as remaining in place.
+
+New HVAC equipment centered on AHU-1, an 840 CFM air handling unit operating on 100% outside air — a configuration consistent with a clean room or specialty process environment — paired with HP-1, an air-cooled R-410a heat pump condensing unit (208V/1-phase, 26.3A MCA). The unit provides 29.5 MBH total cooling and 24.1 MBH electric heating via a 7.5 kW electric coil, with leaving air conditions of 54.5°F DB (cooling) and 89.1°F DB (heating). AHU-1 is platform-mounted with an auxiliary drain pan piped to the mop sink. Two inline exhaust fans (EF-1 at 900 CFM/1.5 HP and EF-2 at 150 CFM/0.5 HP) provide exhaust ventilation for the facility.
+
+New rectangular galvanized supply and return ductwork serves the clean work area, with 24×24 supply diffusers, 12×12 exhaust grilles, and perimeter registers. Manual volume dampers, a 7-day programmable thermostat, and 2-inch mineral-fiber duct insulation were specified. Compressed air distribution was extended from the existing compressor with 1-inch mains and 3/4-inch drops with quick-disconnects serving the industrial floor. Refrigerant piping was specified per Section 232300 (R-410a); HVAC piping insulation per Section 230719; TAB per Section 230593.

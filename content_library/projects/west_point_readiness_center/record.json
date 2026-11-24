@@ -1,0 +1,423 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "west_point_readiness_center",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/dma/west_point_readiness_center/INITIAL EMAIL.pdf",
+      "type": "correspondence",
+      "sha256": "cdcaef7c668a1e24bcfd7cdaab021aa662ff5392af01b5a5026cdd59a173d374",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/dma/west_point_readiness_center/Request for Fee Proposal (West Point).pdf",
+      "type": "sow",
+      "sha256": "533e17a5bc74082e834981f2defe1aa10f214b76b34b35ed2e405887255bdbc6",
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/dma/west_point_readiness_center/20188-04_Mechanical_BOD.doc",
+      "type": "bod",
+      "sha256": "9c2bb77e4019a9f9754010c70bdb7253eee65f5c6111229ce3c5359533fba804",
+      "included": false,
+      "notes": "File corrupt — pandoc failed to unpack DOCX container. Not readable."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/west_point_readiness_center/West Point LCCA Narrative.pdf",
+      "type": "report",
+      "sha256": "fd99215efc45030ce64b9db8839b6ad340ca809211fbb84e730bba9464862c03",
+      "included": true,
+      "notes": "Life Cycle Cost Analysis and engineering calculations (TRACE 700 outputs), 65% submittal June 30 2023. Contains BFA project number 22-031, system analysis and recommendation."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/west_point_readiness_center/WEST_POINT_FULL_SET-reduced.pdf",
+      "type": "drawing_set",
+      "sha256": "78fe0eea8ace5028a28fc48ec0cb926ec358a24298d0f1e8eed87cf7313cf788",
+      "included": true,
+      "notes": "4-page reduced set: cover sheet (original 1989 KDA armory drawings), topographic map, site layout C-1, grading & drainage C-2. These are the original construction documents for the armory building, not BFA's HVAC upgrade drawings."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD file is corrupt (DOCX unreadable). Drawing set present is the original 1989 armory construction drawings, not BFA HVAC upgrade design drawings. LCCA narrative serves as the closest available engineering BOD-equivalent."
+  },
+  "facts": {
+    "project_name": {
+      "value": "West Point RC HVAC Upgrades",
+      "source": "Request for Fee Proposal (West Point).pdf, title",
+      "quote": "West Point RC HVAC Upgrades",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (West Point).pdf, title",
+          "claim": "West Point RC HVAC Upgrades",
+          "value": "West Point RC HVAC Upgrades",
+          "agrees": true
+        },
+        {
+          "source": "INITIAL EMAIL.pdf, subject line",
+          "claim": "Request for Fee Proposal West Point RC HVAC Upgrades",
+          "value": "West Point RC HVAC Upgrades",
+          "agrees": true
+        },
+        {
+          "source": "West Point LCCA Narrative.pdf, header",
+          "claim": "West Point Readiness Center HVAC Upgrades",
+          "value": "West Point Readiness Center HVAC Upgrades",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Military Affairs, Commonwealth of Virginia",
+      "source": "Request for Fee Proposal (West Point).pdf, addressee",
+      "quote": "Department of Military Affairs NGVA-FMO-AE, Ken Daniel",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (West Point).pdf, addressee",
+          "claim": "Department of Military Affairs NGVA-FMO-AE, Ken Daniel",
+          "value": "Department of Military Affairs, Commonwealth of Virginia",
+          "agrees": true
+        },
+        {
+          "source": "WEST_POINT_FULL_SET-reduced.pdf, page 3 title block",
+          "claim": "Commonwealth of Virginia, Department of Military Affairs",
+          "value": "Department of Military Affairs, Commonwealth of Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Military Affairs, Commonwealth of Virginia",
+      "source": "Request for Fee Proposal (West Point).pdf, addressee",
+      "quote": "Department of Military Affairs NGVA-FMO-AE, Ken Daniel"
+    },
+    "location": {
+      "city": "West Point",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "facility_name": "West Point Readiness Center",
+      "source": "Request for Fee Proposal (West Point).pdf, title; West Point LCCA Narrative.pdf",
+      "quote": "West Point RC HVAC Upgrades"
+    },
+    "project_number_internal": {
+      "value": "22-031",
+      "source": "West Point LCCA Narrative.pdf, cover page",
+      "quote": "BFA Project #22-031"
+    },
+    "project_number_client": {
+      "value": "VAFM PN 22-0016",
+      "source": "Request for Fee Proposal (West Point).pdf",
+      "quote": "VAFM PN 22-0016",
+      "corroboration": [
+        {
+          "source": "Request for Fee Proposal (West Point).pdf",
+          "claim": "VAFM PN 22-0016",
+          "value": "VAFM PN 22-0016",
+          "agrees": true
+        },
+        {
+          "source": "Request for Fee Proposal (West Point).pdf",
+          "claim": "State PN 123-18578-013",
+          "value": "State PN 123-18578-013",
+          "agrees": true,
+          "note": "Secondary state project number also present"
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 20491,
+      "unit": "gsf",
+      "source": "WEST_POINT_FULL_SET-reduced.pdf, cover sheet title block",
+      "quote": null,
+      "notes": "Cover sheet states 'Gross Sq. Ft. = 20,491'. Use groups: Assembly A-3 6,798 SF, Educational E 7,363 SF, Storage S-1 5,560 SF. TRACE 700 model uses ~10,857 SF which likely reflects conditioned floor area only.",
+      "corroboration": [
+        {
+          "source": "WEST_POINT_FULL_SET-reduced.pdf, cover sheet title block",
+          "claim": "Gross Sq. Ft. = 20,491",
+          "value": 20491,
+          "agrees": true
+        },
+        {
+          "source": "West Point LCCA Narrative.pdf, Energy Cost Budget Report",
+          "claim": "Floor Area 10,857 ft2",
+          "value": 10857,
+          "agrees": false,
+          "note": "TRACE model floor area 10,857 SF likely represents conditioned spaces only, not total gross SF"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "construction_budget": {
+      "value": 967000,
+      "currency": "USD",
+      "source": "Request for Fee Proposal (West Point).pdf",
+      "quote": "The not-to-exceed construction budget is $967,000.00."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP requested design fee proposals; actual awarded fee not in sources"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP required design within 210 days of NTP. 65% submittal dated June 30, 2023 suggests design was progressing in mid-2023."
+      },
+      "contractual_duration_days": {
+        "value": 210,
+        "source": "Request for Fee Proposal (West Point).pdf, Section V",
+        "quote": "Design shall be completed within 210 days after NTP is given."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "state"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_armory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_central_plant",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "plumbing_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "state_qbs"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": null,
+      "source": "sources do not address SWaM participation",
+      "quote": null,
+      "status": "missing"
+    }
+  ],
+  "tenant_freeform_tags": [
+    "dma",
+    "virginia_national_guard",
+    "readiness_center",
+    "hvac_replacement",
+    "pathogen_mitigation",
+    "vrf_alternative",
+    "vav_system",
+    "condensing_boiler",
+    "propane",
+    "lcca",
+    "west_point_va",
+    "king_william_county"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "Cover",
+        "title": "West Point Virginia Armory — Cover Sheet / List of Drawings / Symbols / Code Information",
+        "discipline": "architecture",
+        "reading_notes": "Original 1989 armory construction drawings by KDA Planners Architects Designers for the Department of Military Affairs. Cover sheet lists a full set of civil, architectural, structural, mechanical, plumbing, and electrical drawings. Code information: 1987 Virginia Uniform Statewide Building Code. Use groups: Assembly A-3 (6,798 SF), Educational E (7,363 SF), Storage S-1 (5,560 SF). Construction Type 4 Heavy Timber. Total gross SF = 20,491. This is the original armory design set — NOT BFA's HVAC upgrade drawings."
+      },
+      {
+        "sheet_number": "Topo",
+        "title": "Map Showing Topographical Features — 5.175 Acres, West Point VA",
+        "discipline": "civil_engineering",
+        "reading_notes": "Topographic map of the 5.175 acre site. Site fronts on King William Avenue / State Route 30 and Thompson Avenue. Surveyed by J.K. Timmons & Associates. Date: 12-16-88. Shows 'Open Plowed Field' and 'Woods' areas on site prior to armory construction."
+      },
+      {
+        "sheet_number": "C-1",
+        "title": "Layout — Virginia Army National Guard, West Point Armory",
+        "discipline": "civil_engineering",
+        "reading_notes": "Site layout plan at 1\"=30'. Shows armory building footprint, off-street parking lot (Additions 6 and 9 noted), military vehicle parking lot, utility storage building, wash platform with double swing gates, gas pump with concrete pad, fuel tank (gasoline, 1000 gallon noted), concrete dumpster pad. Site address context: King William Avenue (State Route 30) frontage, Thompson Avenue (50' R/W) along north edge. Title block: Department of Military Affairs, IFB-NGB-44-89-B-0120, Capital Outlay C-214(88-89), Project Code 13714, Agency Code 123. KDA firm with SMDI engineering subsidiary. Date 06.05.89."
+      },
+      {
+        "sheet_number": "C-2",
+        "title": "Grading & Drainage — Virginia Army National Guard, West Point Armory",
+        "discipline": "civil_engineering",
+        "reading_notes": "Grading and drainage plan at 1\"=30'. Shows building FF = 30.00. Storm drainage with 24\" RCP and 18\" RCP structures. Detail of earth ditch shown. Note: 'All pipe shall be RCP Class III'. Structure schedule partially legible — some structures deleted as noted. Confirms same site layout as C-1."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 20491,
+        "unit": "gsf",
+        "source": "WEST_POINT_FULL_SET-reduced.pdf, cover sheet title block",
+        "quote": null,
+        "sheets": [
+          "Cover"
+        ]
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings in set are civil/site only (C-1, C-2) and original 1989 cover sheet. No floor plan drawings in this reduced set to determine floor count. Cover sheet indicates full set includes A-1 Floor Plan sheet."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing HVAC system being completely replaced per RFP scope",
+          "Recommended new system (per LCCA): Rooftop VAV air handling units with UV lighting, supply/return fans, energy recovery wheel, shut-off VAV boxes with reheat HW coils",
+          "Condensing boiler for heating water (propane fuel)",
+          "Propane service regulator upgrade required",
+          "BAS upgrade for humidity and temperature controls",
+          "HVAC zoning to reduce airborne particle migration",
+          "Pathogen mitigation technologies: bipolar ionization, high efficiency filtration, UV lighting, cold fusion",
+          "TRACE 700 analysis performed for West Point, VA climate (summer DB 97F, winter DB 19F)"
+        ],
+        "electrical": [
+          "Minor associated electrical work noted in RFP scope",
+          "UV lighting systems for pathogen mitigation"
+        ],
+        "plumbing": [
+          "Not explicitly addressed in available sources beyond incidental scope"
+        ],
+        "fire_protection": [
+          "Not addressed in available sources"
+        ]
+      },
+      "site_area_acres": {
+        "value": 5.175,
+        "source": "WEST_POINT_FULL_SET-reduced.pdf, topographic map sheet",
+        "quote": null,
+        "sheets": [
+          "Topo"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "WEST_POINT_FULL_SET-reduced.pdf, cover sheet",
+          "value": 20491
+        },
+        {
+          "source": "West Point LCCA Narrative.pdf, Energy Cost Budget Report",
+          "value": 10857
+        }
+      ],
+      "resolution_chosen": "WEST_POINT_FULL_SET-reduced.pdf, cover sheet",
+      "rationale": "The 20,491 GSF from the original construction drawings represents true gross building area across all use groups (assembly, educational, storage). The 10,857 SF in TRACE 700 likely represents the conditioned floor area only — the model only simulates occupied/conditioned spaces. The conflict is explained by different measurement methodology (gross vs. conditioned), not a data error."
+    }
+  ]
+}

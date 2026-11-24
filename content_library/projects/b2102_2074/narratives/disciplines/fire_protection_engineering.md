@@ -1,0 +1,7 @@
+# Fire Protection Engineering — Building 2102 and Building 2074 SCIF/Secured Facility Conversion, NAS Patuxent River
+
+Fire protection engineering was listed as a required discipline in the NAWCAD Scope of Work for this project, with the Scope specifying a fire alarm drawing requirement and directing the construction contractor to notify the Contracting Officer's Representative at least 10 days in advance before engaging fire alarm subcontractors — a SCIF-specific protocol reflecting the access-controlled nature of the work environment.
+
+The nature of ICD-705-compliant SCIF construction adds fire protection complexity beyond conventional projects: fire alarm system penetrations through the SCIF boundary must preserve the acoustic and RF shielding properties of the 6-sided enclosure, and all alarm system connections are subject to TEMPEST review. The SOW references a "Secured Fire Alarm" requirement explicitly.
+
+BFA's confirmed design scope on this project — as documented in the available Basis of Design — covers mechanical and plumbing disciplines. No fire protection BOD or fire alarm design documents are present in the project intake files. Fire protection engineering is listed in the project taxonomy because the SOW identifies it as a required construction discipline, but BFA's direct role in fire protection design on this project cannot be confirmed from the available record. A Pass 1 re-run with any fire protection design documents would clarify this.

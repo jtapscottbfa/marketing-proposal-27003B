@@ -1,0 +1,295 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "shaw",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/usace/shaw/SHAW AFB BASIS OF DESIGN.docx",
+      "type": "bod",
+      "sha256": "0b199e8ea03964978312145bb1aa808706d35eb8876638346b3919fd6f4611bb",
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Dental Clinic Exhaust Fan Installation, Building 1046, Shaw AFB, SC",
+      "source": "BOD title page",
+      "quote": "Dental Clinic Exhaust Fan Installation Building 1046, Shaw AFB, SC",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "Dental Clinic Exhaust Fan Installation, Building 1046, Shaw AFB, SC",
+          "value": "Dental Clinic Exhaust Fan Installation, Building 1046, Shaw AFB, SC",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Defense Health Agency (DHA) / US Army Corps of Engineers",
+      "source": "BOD General — Scope of Work",
+      "quote": "the DHA Infrastructure Condition Assessment Survey-Dental Clinic",
+      "corroboration": [
+        {
+          "source": "BOD General — Scope of Work",
+          "claim": "DHA Infrastructure Condition Assessment Survey-Dental Clinic",
+          "value": "Defense Health Agency (DHA)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Air Force / Defense Health Agency",
+      "source": "BOD title page",
+      "quote": "Shaw AFB, SC",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "Shaw AFB, SC — Air Force installation",
+          "value": "United States Air Force / Defense Health Agency",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Sumter",
+      "state": "SC",
+      "country": "US",
+      "facility_name": "Shaw Air Force Base",
+      "facility_address": "Building 1046, Shaw AFB, SC",
+      "source": "BOD title page",
+      "quote": "Building 1046, Shaw AFB, SC"
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "corroboration": [
+        {
+          "source": "BOD (only source)",
+          "claim": "Not stated anywhere in the document",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "healthcare_military_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "shaw_afb",
+    "south_carolina",
+    "dental_clinic",
+    "crawlspace_exhaust",
+    "dha",
+    "usace",
+    "air_force",
+    "small_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "no drawings present",
+        "quote": null,
+        "sheets": []
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "source": "no drawings present",
+        "quote": null,
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Inline direct-drive centrifugal cabinet exhaust fan (~4,000 CFM) in crawl space",
+          "Fire damper at floor penetration between crawl space and clinic",
+          "Insulated intake and exhaust ductwork routed through building to roof",
+          "Intake and relief hoods with roof curbs (2 hoods)",
+          "Fan controller integrated with existing building automation control system (BAS)",
+          "Sealed crawl space vents"
+        ],
+        "electrical": [
+          "Power connection for EF-1 (exhaust fan)",
+          "THHN/THWN copper conductors",
+          "Grounding to match existing per NFPA 70"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Fire damper at floor penetration"
+        ]
+      }
+    }
+  },
+  "scope_narrative": {
+    "value": "Installation of exhaust fans in the crawlspace of Building 1046 (Dental Clinic), Shaw AFB, SC to correct pressurization deficiencies identified in the DHA Infrastructure Condition Assessment Survey. Scope includes approximately 4,000 CFM exhaust fan with BAS integration, fire damper, ductwork to roof, and intake/exhaust hoods. Electrical scope connects EF-1 to power. Design references UFC 3-401-01, UFC 3-410-01, IMC-2010, ASHRAE 62.1-2007, NFPA 70, and UFC 4-510-01.",
+    "source": "BOD — Mechanical and Electrical sections",
+    "quote": null
+  },
+  "design_criteria": {
+    "codes_standards": [
+      "UFC 3-400-02 Design: Engineering Weather Data",
+      "UFC 3-401-01 Mechanical Engineering",
+      "UFC 3-410-01 Heating, Ventilating, and Air Conditioning Systems",
+      "UFC 3-430-01FA Heating and Cooling Distribution Systems",
+      "IMC-2010 International Mechanical Code",
+      "ASHRAE Standard 55-2008 Thermal Environmental Conditions for Human Occupancy",
+      "ASHRAE 62.1-2007 Ventilation for Acceptable Indoor Air Quality",
+      "ASHRAE Handbooks Latest Editions (2007-2016)",
+      "NFPA 70 National Electrical Code (NEC)",
+      "FC 1-300-09N Navy and Marine Corps Design Procedures",
+      "UFC 3-501-01 Electrical Engineering",
+      "UFC 3-520-01 Interior Electrical Systems",
+      "UFC 4-510-01 Design: Military Medical Facilities"
+    ],
+    "source": "BOD — Mechanical Design Criteria and Electrical Design Criteria sections",
+    "quote": null
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

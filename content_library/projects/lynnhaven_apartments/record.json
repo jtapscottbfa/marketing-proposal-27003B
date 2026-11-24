@@ -1,0 +1,494 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "lynnhaven_apartments",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/lynnhaven_apartments/Lynnhaven Apartments Contract.pdf",
+      "type": "contract",
+      "sha256": "79f0f45c4fe0dce18e17df525667ebe998ee5b505d2f264da1813150b9f00f28",
+      "page_count": 5,
+      "included": true,
+      "notes": "Image-based scanned PDF; rendered to images for text extraction. Professional Services Agreement between Architectural Concepts (client) and Bowman, Foster & Associates, Inc. (provider/BFA). Signed 11/12/2021 (BFA) and 11/19/2021 (Architectural Concepts)."
+    },
+    {
+      "path": "00_admin/reference_projects/lynnhaven_apartments/Lynnhaven Apartments Preliminary 02.pdf",
+      "type": "drawing_set",
+      "sha256": "43b67caeb0cacf3c6e4cb428d1720d06d3253b35f8ad02226a7f3071a9b954ad",
+      "page_count": 8,
+      "included": true,
+      "notes": "Architectural preliminary drawings by Architectural Concepts. Address: 1301 Sanderson Road. Sheets: A0.0 (second floor plan), A1.0 (first floor plan), A1.2 (third floor plan), A2.0 (front/rear elevations), A2.1 (right/left elevations), plus roof plan. 3-story apartment building with multiple units. pdftotext yielded raw dimension data; visual rendering not performed (architectural drawings, text extraction yielded usable location and sheet info)."
+    },
+    {
+      "path": "00_admin/reference_projects/lynnhaven_apartments/PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+      "type": "drawing_set",
+      "sha256": "d0e136ffe28c4cc8e69a7363bfd9ab517b52acb23612b0f1d87984ab7373b8e6",
+      "page_count": 6,
+      "included": true,
+      "notes": "BFA-authored plumbing drawings for apartment building renovation at 3148 Hunters Chase, Virginia Beach, VA. BFA Job #DM5-21. Pre-final submittal dated 11-26-21. 6 sheets: P0.0 (legend/notes/equipment list), P1.0 (overall plan new work), P1.1 (typical unit plumbing plans), P5.0 (details), P5.1 (fire-resistive assembly details), P5.2 (wall/fire assembly details). Second round of responses — indicates this was a submittal review/response package."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Lynnhaven Apartments (Hunters Chase Apartment Building Renovation)",
+      "source": "contract title + drawing title block",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "Contract cover/title",
+          "claim": "Professional Services Agreement — Architectural Concepts and BFA; project referenced as 'Lynnhaven Apartments' in folder/file naming",
+          "value": "Lynnhaven Apartments",
+          "agrees": true
+        },
+        {
+          "source": "MEP drawing P0.0 title block",
+          "claim": "3148 Hunters Chase, Virginia Beach, VA — Apartment Building Renewal",
+          "value": "3148 Hunters Chase Apartment Building Renewal",
+          "agrees": false,
+          "note": "Title block uses different project name/address than folder name. Corroboration conflict flagged."
+        },
+        {
+          "source": "Architectural preliminary drawing title block",
+          "claim": "1301 Sanderson Road — Architectural Concepts",
+          "value": "1301 Sanderson Road apartment",
+          "agrees": false,
+          "note": "Architectural prelims show a different address than MEP drawings. Two addresses present in project documents."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Architectural Concepts",
+      "source": "Contract p.1",
+      "quote": "THIS PROFESSIONAL SERVICES AGREEMENT (Agreement) is made in Norfolk VA, by and between Architectural Concepts and Bowman, Foster & Associates, Inc.",
+      "corroboration": [
+        {
+          "source": "Contract p.1",
+          "claim": "Architectural Concepts",
+          "value": "Architectural Concepts",
+          "agrees": true
+        },
+        {
+          "source": "MEP drawing P0.0 title block (OWNER field)",
+          "claim": "OWNER field is blank on drawings",
+          "value": null,
+          "agrees": false,
+          "note": "Owner field on BFA drawings is blank — contract client (Architectural Concepts) is the prime consultant, not the building owner."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": null,
+      "status": "missing",
+      "source": "sources do not identify ultimate building owner",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "Contract p.1",
+          "claim": "References 'Owner' as entity above Architectural Concepts, but does not name the Owner",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "3148 Hunters Chase, Virginia Beach, VA",
+      "source": "MEP drawing P0.0 title block",
+      "quote": null,
+      "notes": "MEP drawings title block shows '3148 Hunters Chase, Virginia Beach, VA'. Architectural preliminary drawings show '1301 Sanderson Road' with no city. Contract states agreement made 'in Norfolk VA' but this refers to execution locale. Virginia Beach is the project location per MEP drawings. Conflict flagged.",
+      "corroboration": [
+        {
+          "source": "MEP drawing P0.0 title block",
+          "claim": "3148 Hunters Chase, Virginia Beach, VA",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "Architectural preliminary drawing title block",
+          "claim": "1301 Sanderson Road (city not stated)",
+          "value": "1301 Sanderson Road",
+          "agrees": false,
+          "note": "Different address. May represent a different building in same project, or a different project foldered together."
+        },
+        {
+          "source": "Contract p.1",
+          "claim": "Agreement made in Norfolk VA",
+          "value": "Norfolk, VA",
+          "agrees": false,
+          "note": "Norfolk is likely execution locale (BFA office address), not project location."
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing",
+      "source": "BFA internal records not provided",
+      "quote": null
+    },
+    "project_number_client": {
+      "value": "DM5-21",
+      "source": "MEP drawing title block (JOB # field)",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "MEP drawing title block, all sheets (P0.0–P5.2)",
+          "claim": "JOB # DM5-21",
+          "value": "DM5-21",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "source": "Contract does not assign a contract number",
+      "quote": null
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "source": "sources do not reference a task order",
+      "quote": null
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "source": "No GSF stated in available documents",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "MEP drawing P1.0 (overall plan)",
+          "claim": "Multi-unit apartment floor plan shows approx 8 units per floor (mix of 1BR and 2BR) but no total area noted",
+          "value": null,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "source": "No program budget stated in available documents",
+      "quote": null
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": 9834.0,
+        "currency": "USD",
+        "source": "Contract p.2, §4",
+        "quote": "Architectural Concepts shall pay to Bowman Foster & Associates a fee of $9,834.00 for Services shall be computed and paid, as the Services are completed.",
+        "corroboration": [
+          {
+            "source": "Contract p.2, §4",
+            "claim": "$9,834.00",
+            "value": 9834.0,
+            "agrees": true
+          }
+        ]
+      },
+      "awarded_date": {
+        "value": "2021-11-12",
+        "source": "Contract p.5, BFA signature block",
+        "quote": null,
+        "notes": "BFA signed 11/12/2021. Architectural Concepts signed 11-19-21. Using BFA execution date as awarded_date; contract fully executed by 11/19/2021."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "source": "NTP not specified in contract documents",
+        "quote": null
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "source": "No completion date stated in available documents",
+        "quote": null
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "source": "Contract does not specify duration",
+        "quote": null
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": 9834.0,
+        "currency": "USD",
+        "source": "computed",
+        "quote": null,
+        "notes": "No change orders identified; actual value equals contract value."
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "missing",
+      "notes": "BFA scope was design/engineering only (subconsultant). No construction contract data available."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "residential_multifamily"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_storm",
+      "plumbing_natural_gas",
+      "fire_suppression_wet"
+    ],
+    "building_systems": [
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_storm",
+      "hvac_air_distribution",
+      "fp_wet_sprinkler"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "mechanical_hvac",
+      "fire_suppression_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_negotiated"
+    ],
+    "award_type": [
+      "negotiated_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "virginia_beach",
+    "multifamily_residential",
+    "apartment_renovation",
+    "subconsultant_to_architect",
+    "mep_plumbing"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Blair Davis",
+      "role_on_project": "electrical_department_head",
+      "source": "Contract p.5 signature block",
+      "note": "Signed contract as 'Electrical Department Head' — apparent BFA signatory for MEP subconsultant scope"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "A0.0",
+        "title": "SECOND FLOOR PLAN",
+        "discipline": "architecture",
+        "source_pdf": "Lynnhaven Apartments Preliminary 02.pdf",
+        "reading_notes": "Second floor plan for a 3-story apartment building at 1301 Sanderson Road. Architectural Concepts logo in title block. Scale 3/16\" = 1'-0\". Shows multiple apartment unit layouts. Proposed sprinkler room indicated. This sheet number (A0.0) reused for second floor plan — unusual. Title block shows address as 1301 Sanderson Road, not the Virginia Beach address shown in MEP drawings. Drawing set is prelim/preliminary."
+      },
+      {
+        "sheet_number": "A1.0",
+        "title": "FIRST FLOOR PLAN",
+        "discipline": "architecture",
+        "source_pdf": "Lynnhaven Apartments Preliminary 02.pdf",
+        "reading_notes": "First floor plan, same building. Scale 3/16\" = 1'-0\". Shows proposed sprinkler rooms at both ends of the building. Unit numbering visible. Multiple unit types visible."
+      },
+      {
+        "sheet_number": "A1.2",
+        "title": "THIRD FLOOR PLAN",
+        "discipline": "architecture",
+        "source_pdf": "Lynnhaven Apartments Preliminary 02.pdf",
+        "reading_notes": "Third floor plan. Scale 3/16\" = 1'-0\". Building overall width approximately 151'-3\". Confirms 3-story building. Unit layouts similar to floors 1 and 2."
+      },
+      {
+        "sheet_number": "A2.0",
+        "title": "FRONT AND REAR ELEVATION PROPOSED",
+        "discipline": "architecture",
+        "source_pdf": "Lynnhaven Apartments Preliminary 02.pdf",
+        "reading_notes": "Front and rear elevations. Building shows 3 stories, pitched/hip roof system with composition shingles implied. Scale 3/16\" = 1'-0\". Typical residential apartment building form."
+      },
+      {
+        "sheet_number": "A2.1",
+        "title": "RIGHT AND LEFT ELEVATION PROPOSED",
+        "discipline": "architecture",
+        "source_pdf": "Lynnhaven Apartments Preliminary 02.pdf",
+        "reading_notes": "Right and left elevations. Roof pitch visible — 12:12 on main elements, 4:12 on elements. Confirms residential pitched roof construction."
+      },
+      {
+        "sheet_number": "A0.0",
+        "title": "ROOF PLAN",
+        "discipline": "architecture",
+        "source_pdf": "Lynnhaven Apartments Preliminary 02.pdf",
+        "reading_notes": "Roof plan. Hip and ridge roof system. Complex hip/valley/ridge geometry. Labeled eaves, hips, valleys, ridges. 1301 Sanderson Road in title block."
+      },
+      {
+        "sheet_number": "P0.0",
+        "title": "LEGEND, EQUIPMENT LIST, SCHEDULES AND GENERAL NOTES",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+        "reading_notes": "BFA-authored sheet. Project: 3148 Hunters Chase, Virginia Beach, VA. Job# DM5-21. Date: 11/26/2021. Pre-final submittal, second round of responses. Contains plumbing fixture connection schedule (P-1 flush tank water closet, P-2 counter mounted lavatory, P-3 counter kitchen sink, P-4 shower/tub combination, P-5 washer connection box). Equipment list specifies 47-gallon electric water heaters for 1BR units (EWH-1, 4500W, 240V, 20 GPH recovery) and 66-gallon electric water heaters for 2BR units (EWH-2, 1500W, 240V, 32 GPH recovery). Garbage disposal: 1/3 HP, 120V. Expansion tank specified. General notes reference compliance with state building codes, ASHRAE, IPC, IPC, and applicable regulatory standards."
+      },
+      {
+        "sheet_number": "P1.0",
+        "title": "OVERALL PLAN — NEW WORK",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+        "reading_notes": "Overall floor plan for new plumbing work. Multi-unit apartment building shown. Building has at least 2 end units (2BR with BEDROOM #1 and BEDROOM #2) and multiple center units (1BR with single BEDROOM #1). End units have two bathrooms (BTH 1 and BTH 2); center units have one bath. Kitchens with W.DECK (likely wood deck or wet deck). All new work. Two construction notes: (1) typical 2BR unit layout, see P1.1; (2) typical 1BR unit layout, see P1.1."
+      },
+      {
+        "sheet_number": "P1.1",
+        "title": "PLUMBING PLANS — NEW WORK (TYPICAL UNIT PLANS)",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+        "reading_notes": "Typical plumbing plans at 1/4\" = 1'-0\" scale. Left side: 2BR unit plan showing domestic cold water (3/4\" CW) and hot water (HW) distribution, EWH-1 electric water heater under AHU, sanitary/DWV, washer box (P-5), all fixture connections. Right side: 1BR unit plan showing similar system, EWH-2. Water heater mounted under air handling unit — confirms HVAC split system/AHU present. Drain for AHU condensate shown routed to sanitary. Piping size: 3/4\" CW and HW throughout unit, 1/2\" CW branch to kitchen. Existing piping noted as remaining; contractor to provide all fittings for connection to new piping."
+      },
+      {
+        "sheet_number": "P5.0",
+        "title": "DETAILS",
+        "discipline": "plumbing_engineering",
+        "source_pdf": "PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+        "reading_notes": "Three details: (1) Washing Machine Utility Box Detail — recess box with 3/4\" HW and CW lines and 2\" standpipe for wash machine drain; (2) Water Heater Piping Diagram — dielectric union, T&P relief valve, expansion tank connection, heat traps; (3) Vent Through Roof Detail — VTR pipe flashing with S.S. draw band, sealant, lap shingles over flange, wood roof truss."
+      },
+      {
+        "sheet_number": "P5.1",
+        "title": "DETAILS (FIRE-RESISTIVE ASSEMBLIES)",
+        "discipline": "fire_protection_engineering",
+        "source_pdf": "PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+        "reading_notes": "UL-listed fire-resistive assembly details for floor-ceiling and wall penetrations. Systems shown: F-C-1010 (floor-ceiling, 1-2 hr), F-C-1074 (floor-ceiling), F-C-2032 (floor-ceiling). Details show penetration sealing requirements for metallic pipe/conduit through fire-rated assemblies. References UL L500 series, L300 series floor-ceiling designs. Specified Technologies Inc. products referenced. Through-penetrant materials listed including steel pipe, copper pipe, conduit. T-ratings and F-ratings tabulated."
+      },
+      {
+        "sheet_number": "P5.2",
+        "title": "DETAILS (FIRE-RESISTIVE ASSEMBLIES — WALLS)",
+        "discipline": "fire_protection_engineering",
+        "source_pdf": "PLUMBING AND MECHANICAL DWGS 12-20-21_second round of responses.pdf",
+        "reading_notes": "UL-listed wall penetration details: F-C-2157, W-L-1040, W-L-2241. Wall assembly penetration sealing for 1-2 hr rated walls. Pipe types: PVC, CPVC, ABS, PEX, flexible metal conduit. Through-penetrant sealing materials including STI SpecSeal products, caulk, and collars. Omega Flex gastite, Ward Mfg. referenced for gas tubing. References NFPA 70 (National Electrical Code) for electrical tubing installations."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawings do not state total GSF",
+        "quote": null,
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 3,
+        "source": "Architectural preliminary drawings A1.0, A0.0, A1.2 (1st, 2nd, 3rd floor plans)",
+        "quote": null,
+        "sheets": [
+          "A1.0",
+          "A0.0",
+          "A1.2"
+        ],
+        "notes": "Three floor plans shown in architectural preliminary drawings for 1301 Sanderson Road building. MEP drawings P1.0 show multi-unit layout but floor count not stated explicitly."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Air handling units (AHU) per apartment unit — confirmed by P1.1 note 'drain for air handling unit condensate' and EWH mounted under AHU",
+          "HVAC system type not specified in plumbing drawings — mechanical drawings not present in package (title says 'Plumbing and Mechanical' but only plumbing sheets found)"
+        ],
+        "plumbing": [
+          "Domestic cold water (CW) distribution — 3/4\" throughout units, 1/2\" branch to kitchen",
+          "Domestic hot water (HW) distribution — 3/4\" throughout units with dielectric union connections",
+          "Electric water heaters: 47-gallon (1BR units, 4500W/240V, EWH-1) and 66-gallon (2BR units, 1500W/240V, EWH-2)",
+          "Sanitary waste and vent (DWV) — new piping throughout units, connections to existing underslab piping",
+          "Expansion tank for potable water system — diaphragm type, 1 gallon acceptance, 100 PSIG max, 240°F max",
+          "Washer connection boxes with 3/4\" CW/HW and 2\" standpipe",
+          "Ice maker connection boxes",
+          "Garbage disposals — 1/3 HP, 120V",
+          "Mixing valves at shower/tub combinations",
+          "Vent through roof (VTR)"
+        ],
+        "fire_protection": [
+          "Wet sprinkler system — sprinkler rooms proposed at each end of building per architectural floor plans",
+          "Fire-resistive penetration sealing for all plumbing penetrations through rated floor-ceiling and wall assemblies (UL F-C-1010, F-C-1074, F-C-2032, F-C-2157, W-L-1040, W-L-2241)"
+        ],
+        "electrical": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.facility_address",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "MEP drawing P0.0 title block",
+          "value": "3148 Hunters Chase, Virginia Beach, VA"
+        },
+        {
+          "source": "Architectural preliminary drawing title block",
+          "value": "1301 Sanderson Road (city unstated)"
+        }
+      ],
+      "resolution_chosen": "MEP drawing P0.0 title block",
+      "rationale": "BFA authored the MEP drawings; the address in BFA's own title block (3148 Hunters Chase, Virginia Beach, VA) is more likely to reflect BFA's project understanding. The architectural preliminary drawings are by Architectural Concepts and may represent a different building in the same project lot, or documents from a related but separate project foldered together. The contract makes no reference to a project address."
+    },
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Folder/file name",
+          "value": "Lynnhaven Apartments"
+        },
+        {
+          "source": "MEP drawing P0.0 title block",
+          "value": "Apartment Building Renewal — 3148 Hunters Chase, Virginia Beach, VA"
+        },
+        {
+          "source": "Architectural preliminary drawing A1.0 title block",
+          "value": "1301 Sanderson Road — Architectural Concepts"
+        }
+      ],
+      "resolution_chosen": "Folder/file name as primary display name, with MEP drawing address as project location",
+      "rationale": "The folder name 'Lynnhaven Apartments' is BFA's internal reference. MEP drawings do not use the name 'Lynnhaven Apartments' — they show 3148 Hunters Chase. These may be the same project (Lynnhaven being a community or complex name covering multiple buildings/addresses), or the folder may contain documents for multiple buildings. Without a BOD or SOW, the conflict cannot be definitively resolved."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

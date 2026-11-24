@@ -1,0 +1,472 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "tuscaloosa_dietetics",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/tuscaloosa_dietetics/36C24722R0026_1.pdf",
+      "type": "sow",
+      "sha256": "6521f1da03304be06e5168edde03c0e31a0c5e4c04f86a2a41ed9c890ff68cd0",
+      "included": true,
+      "notes": "VA solicitation/contract form SF-252 with Scope of Work (Supplement B) for AE services. Contract number 36C24722R0026. Contains complete SOW, special provisions, and contract clauses."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/tuscaloosa_dietetics/VA6298.pdf",
+      "type": "unknown",
+      "sha256": "6a7a622991bf566de4d09561897a01aa60ceac9ebbb5e84d6869e78cb0cf75ab",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "VA Form 6298 Architect-Engineer Fee Proposal — blank template, no cost data populated. No fact content extractable."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/tuscaloosa_dietetics/DESIGN NARRATIVE.doc",
+      "type": "narrative",
+      "sha256": "67ea29faddeef93da81e88c1e4fdb664af151537408bf8f20b12961fc626e1aa",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Legacy binary .doc format (not .docx). Neither pandoc nor text extraction could read it. Content unknown — likely contains BFA design narrative. Requires conversion to readable format (e.g., open in Word and save as .docx or .pdf) before re-extraction."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set present. Design narrative document (.doc) is unreadable in current binary format. Fee proposal (VA6298) is a blank template with no data. SOW is the primary source of project facts."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Replace HVAC, B143 Dietetics — Tuscaloosa VAMC",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "REPLACE HVAC, B143 DIETETICS\nTUSCALOOSA VAMC",
+      "corroboration": [
+        {
+          "source": "SOW p.1 (SF-252 project title block)",
+          "claim": "REPLACE HVAC, B143 DIETETICS / TUSCALOOSA VAMC",
+          "value": "Replace HVAC, B143 Dietetics — Tuscaloosa VAMC",
+          "agrees": true
+        },
+        {
+          "source": "SOW Supplement B header",
+          "claim": "AE-Replace HVAC B143 Dietetics",
+          "value": "Replace HVAC, B143 Dietetics",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "Network Contracting Office (NCO) 7\nAtlanta VAMC",
+      "corroboration": [
+        {
+          "source": "SOW p.1 department block",
+          "claim": "Network Contracting Office (NCO) 7 / Atlanta VAMC",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "Network Contracting Office (NCO) 7\nAtlanta VAMC",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "Department of Veterans Affairs",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Tuscaloosa",
+      "state": "AL",
+      "country": "US",
+      "facility_name": "Tuscaloosa VA Medical Center",
+      "facility_address": "3701 Loop Rd, Tuscaloosa, AL 35404",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "TUSCALOOSA VAMC\n3701 Loop Rd, Tuscaloosa, AL 35404",
+      "corroboration": [
+        {
+          "source": "SOW p.1 project title block",
+          "claim": "3701 Loop Rd, Tuscaloosa, AL 35404",
+          "value": "Tuscaloosa, AL",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "679-22-104",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "Project No: 679-22-104",
+      "corroboration": [
+        {
+          "source": "SOW p.1 project number block",
+          "claim": "Project No: 679-22-104",
+          "value": "679-22-104",
+          "agrees": true
+        },
+        {
+          "source": "SOW Supplement B header",
+          "claim": "Project No. 679-22-104",
+          "value": "679-22-104",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C24722R0026",
+      "source": "SOW (36C24722R0026_1.pdf) cover / header",
+      "quote": "36C24722R0026",
+      "corroboration": [
+        {
+          "source": "SOW document header (appears on every page)",
+          "claim": "36C24722R0026",
+          "value": "36C24722R0026",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No gross square footage stated in SOW or accessible source documents. Design narrative (.doc) unreadable. No drawings present."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated. Construction cost limitation stated separately under contract_value."
+    },
+    "scope_description": {
+      "value": "A/E design services for the replacement of the chilled water system components in Building 143 (Dietetics), Tuscaloosa VAMC. Scope includes replacement of failing cooling towers, associated equipment, and R-22 chiller. Design deliverables include 35%, 65%, 95%, and 100% submissions with specifications and drawings; construction cost estimates at each submission; site investigations; and construction period services (CPS).",
+      "source": "SOW (36C24722R0026_1.pdf) Supplement B",
+      "quote": "The A/E team, including architects, engineers, surveyors, and professional consultants shall provide design services for the development of specifications and drawings to repair or replace parts of the Chilled Water System of Building 143. Work shall include but is not limited to the replacement of the failing cooling towers, associated equipment, and R-22 chiller.",
+      "corroboration": [
+        {
+          "source": "SOW Supplement B scope paragraph",
+          "claim": "Replace chilled water system components in B143 — cooling towers, associated equipment, R-22 chiller",
+          "value": "HVAC/chilled water system replacement, Building 143 Dietetics",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1 project title block",
+          "claim": "REPLACE HVAC, B143 DIETETICS",
+          "value": "HVAC replacement, Building 143 Dietetics",
+          "agrees": true
+        }
+      ]
+    },
+    "design_period_of_performance": {
+      "value": 120,
+      "unit": "calendar_days",
+      "source": "SOW (36C24722R0026_1.pdf) Supplement B",
+      "quote": "Total: 120 Calendar Days",
+      "corroboration": [
+        {
+          "source": "SOW p.1 contract description",
+          "claim": "Period of performance for this design is 120 calendar days after receipt of Notice to proceed",
+          "value": 120,
+          "agrees": true
+        },
+        {
+          "source": "SOW Supplement B Period of Performance",
+          "claim": "Total: 120 Calendar Days",
+          "value": 120,
+          "agrees": true
+        }
+      ]
+    },
+    "ae_completion_date_target": {
+      "value": "FY2022",
+      "source": "SOW (36C24722R0026_1.pdf) Supplement B",
+      "quote": "A/E completion date: FY22",
+      "corroboration": [
+        {
+          "source": "SOW Supplement B item 1",
+          "claim": "A/E completion date: FY22",
+          "value": "FY2022",
+          "agrees": true
+        }
+      ]
+    },
+    "naics_code": {
+      "value": "541330",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "The North American industry Classification System (NAICS) code for this task order is 541330 – Engineering Services with a size standard of $16.5 million.",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "NAICS 541330 – Engineering Services, $16.5M",
+          "value": "541330",
+          "agrees": true
+        },
+        {
+          "source": "SOW Representations and Certifications §1.1",
+          "claim": "The North American Industry Classification System (NAICS) code for this acquisition is 541330",
+          "value": "541330",
+          "agrees": true
+        }
+      ]
+    },
+    "set_aside_type": {
+      "value": "100% SDVOSB",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "This acquisition is 100% Set-aside for Services Disabled Veteran Owned Small Businesses (SDVOSB) only.",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "100% Set-aside for Services Disabled Veteran Owned Small Businesses (SDVOSB) only",
+          "value": "100% SDVOSB",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.7 VAAR 852.219-10",
+          "claim": "VA Notice of Total Service-Disabled Veteran-Owned Small Business Set-Aside",
+          "value": "100% SDVOSB",
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_value": {
+      "value": 900000,
+      "currency": "USD",
+      "source": "SOW (36C24722R0026_1.pdf) §3.6 FAR 52.236-22",
+      "quote": "The estimated construction contract price for the project described in this contract is $900,000.00.",
+      "corroboration": [
+        {
+          "source": "SOW §3.6 Design Within Funding Limitations",
+          "claim": "$900,000.00 estimated construction contract price",
+          "value": 900000,
+          "agrees": true
+        }
+      ]
+    },
+    "construction_period_services": {
+      "value": "Required — 4 site visits + 1 final inspection; submittal reviews included",
+      "source": "SOW (36C24722R0026_1.pdf) Supplement B",
+      "quote": "Construction period service required: Yes\nSubmittal reviews: Yes\nSite Visits: 4\nFinal inspection: 1",
+      "corroboration": [
+        {
+          "source": "SOW Supplement B item 6",
+          "claim": "CPS: Yes, 4 site visits, 1 final inspection, submittal reviews yes",
+          "value": "4 site visits + 1 final inspection + submittal reviews",
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date": {
+      "value": "2022-05-31",
+      "source": "SOW (36C24722R0026_1.pdf) cover page",
+      "quote": "AE proposal Due Date: May 31, 2022 by 2:00 p.m. ET.",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "May 31, 2022 by 2:00 p.m. ET",
+          "value": "2022-05-31",
+          "agrees": true
+        }
+      ]
+    },
+    "contracting_office": {
+      "value": "Network Contracting Office (NCO) 7, Atlanta VAMC",
+      "source": "SOW (36C24722R0026_1.pdf) p.1",
+      "quote": "Network Contracting Office (NCO) 7\nAtlanta VAMC\n2957 Clairmont Rd, Suite 1100\nAtlanta GA 30329",
+      "corroboration": [
+        {
+          "source": "SOW p.1 department block",
+          "claim": "Network Contracting Office (NCO) 7, Atlanta VAMC, 2957 Clairmont Rd, Suite 1100, Atlanta GA 30329",
+          "value": "NCO 7, Atlanta VAMC",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Fee not negotiated/stated in solicitation documents. VA6298 fee proposal form is blank template. Design narrative (.doc) unreadable."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Target was FY22 per SOW; actual completion date not in available documents."
+      },
+      "contractual_duration_days": {
+        "value": 120,
+        "source": "SOW (36C24722R0026_1.pdf) Supplement B",
+        "quote": "Total: 120 Calendar Days"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction not yet let at time of documents. Estimated construction cost stated as $900,000 in design funding limitation clause."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "fire_protection_engineering",
+      "plumbing_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_central_plant",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "plumbing_domestic_water",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "hvac_chilled_water",
+      "hvac_air_distribution",
+      "fp_wet_sprinkler",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal_sdvosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_sdvosb",
+      "description": "100% SDVOSB set-aside under VAAR 852.219-10. At least 50% of personnel cost must be BFA's own employees.",
+      "source": "SOW (36C24722R0026_1.pdf) cover page and §3.7",
+      "quote": "This acquisition is 100% Set-aside for Services Disabled Veteran Owned Small Businesses (SDVOSB) only."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "va_healthcare",
+    "tuscaloosa_vamc",
+    "hvac_replacement",
+    "chilled_water_system",
+    "cooling_tower_replacement",
+    "r22_chiller",
+    "sdvosb_setaside",
+    "nco7",
+    "alabama",
+    "dietetics_building"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings present in intake folder. No GSF stated in SOW."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Chilled water system in Building 143 — cooling towers (failing, to be replaced)",
+          "R-22 chiller (to be replaced)",
+          "Associated cooling equipment"
+        ],
+        "electrical": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    },
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set PDF was present in the intake directory. The VA6298 fee proposal form references estimated drawing counts by discipline (Architectural, HVAC, Plumbing, Electrical, Fire Protection, Structural, Site) but the form is blank with no values filled in. MEP system inventory above is derived from the SOW scope text, not drawings."
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

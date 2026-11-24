@@ -1,0 +1,310 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "solar_liquid_flat_plate_collectors",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/nibs/solar_liquid_flat_plate_collectors/SOW.pdf",
+      "type": "sow",
+      "sha256": "5e332f3836d0450233c23c715d3998470d4bc408018ee25d80958242f3448e02",
+      "included": true,
+      "notes": "Statement of AE Services — primary project scope document. NAVFAC A-E contract N6247019D5013, task order scope for UFGS criteria development."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/solar_liquid_flat_plate_collectors/Solar Liquid Flat Plate Specification.pdf",
+      "type": "spec_book",
+      "sha256": "3e7aaf097c2a2fa35723db73912f4b08b1a95667632d699c0ed5127e9c239e98",
+      "included": true,
+      "notes": "UFGS Section 22 33 30 'Solar Water Heating Equipment' — the reference/output specification that is the subject of BFA's criteria-development work. Published under National Institute of Building Sciences (NIBS). 38 pages."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/solar_liquid_flat_plate_collectors/Attachment A.pdf",
+      "type": "report",
+      "sha256": "0fc7bf2e591d3eeb44060036e0d4f03dbbd983cdb1b4db65f3385af1ba4054b8",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "CMS (Criteria Management System) outstanding Criteria Change Request (CCR) Report referenced in SOW §1 Attachments and §5.5. PDF rendered as garbled encoded text — content could not be extracted cleanly. NIBS branding visible; multiple CCR entries present. Human review recommended."
+    },
+    {
+      "path": "00_admin/reference_projects/nibs/solar_liquid_flat_plate_collectors/Attachment B.xls",
+      "type": "unknown",
+      "sha256": "bc2e133fdbfb26a46d5385002c34e2f4dd7f73840b9ec0a010f2faadc87d54a5",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Comparison/Coordination Matrix Example referenced in SOW §1 Attachments and §5.4. XLS format — not readable by text extraction tools. Content unknown. Human review recommended."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No BOD or drawings present. Project is a specification-development (criteria writing) engagement, not a construction project, so BOD and drawings are not expected. Two attachments (CCR report PDF and comparison matrix XLS) could not be fully parsed."
+  },
+  "facts": {
+    "project_name": {
+      "value": "UFGS 48 14 13.00 20: Solar Liquid Flat Plate and Evacuated Tube Collectors",
+      "source": "SOW p.1",
+      "quote": "Project Title: UFGS 48 14 13.00 20: Solar Liquid Flat Plate and Evacuated Tube Collectors",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "UFGS 48 14 13.00 20: Solar Liquid Flat Plate and Evacuated Tube Collectors",
+          "value": "UFGS 48 14 13.00 20: Solar Liquid Flat Plate and Evacuated Tube Collectors",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC)",
+      "source": "SOW p.1",
+      "quote": "AE Contract No.: N6247019D5013",
+      "corroboration": [
+        {
+          "source": "SOW p.2",
+          "claim": "NAVFAC Project Manager (PM): Mr. Emil T. Consolacion, P.E., Code DC43/757-322-4205",
+          "value": "NAVFAC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Systems Command (NAVFAC)",
+      "source": "SOW p.2",
+      "quote": "NAVFAC Project Manager (PM): Mr. Emil T. Consolacion, P.E., Code DC43/757-322-4205"
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "SOW p.1–2",
+      "quote": "Kick-off meeting (Phone and/or Microsoft Teams/Norfolk, VA)",
+      "notes": "Norfolk VA is the meeting/delivery location per meeting list. NAVFAC Atlantic headquarters is Norfolk VA. Phone code 757 confirms Hampton Roads area.",
+      "corroboration": [
+        {
+          "source": "SOW §5.9",
+          "claim": "Kick-off meeting (Phone and/or Microsoft Teams/Norfolk, VA)",
+          "value": "Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.2",
+          "claim": "Mr. Emil T. Consolacion, P.E., Code DC43/757-322-4205",
+          "value": "Norfolk, VA area (757 area code)",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "N6247019D5013 / eProjects WON: 1755026 / ACQR#: 6000663",
+      "source": "SOW p.1",
+      "quote": "AE Contract No.: N6247019D5013\n     Task Order: New\n     eProjects WON: 1755026\n     ACQR#: 6000663",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "N6247019D5013 / eProjects WON 1755026 / ACQR 6000663",
+          "value": "N6247019D5013",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N6247019D5013",
+      "source": "SOW p.1",
+      "quote": "AE Contract No.: N6247019D5013"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW states 'Task Order: New' — task order number not yet assigned at time of SOW issuance."
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Not applicable — project is a specification/criteria development engagement, not a construction project. No building area involved."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW §7 states 'Schedule of Fees and Options: (To be filled in at conclusion of negotiations on A&E contracts)' with blank fields. Contract value was TBD at time of document."
+    },
+    "product_type": {
+      "value": "UFGS (Unified Facilities Guide Specification)",
+      "source": "SOW p.1",
+      "quote": "Type of Product: UFGS"
+    },
+    "scope_description": {
+      "value": "Merge UFGS 48 14 13.00 20 (Solar Liquid Flat Plate and Evacuated Tube Collectors) into UFGS 22 33 30.00 10 (Solar Water Heating Equipment). Update current technologies, industry standards, and energy/performance requirements. Develop matrix comparison between the two references. Review and resolve outstanding Criteria Change Requests (CCRs). Option 1: Merge UFGS 23 03 00.00 20 (Basic Mechanical Material and Methods) into the merged document. Deliverables include UFGS in Word, SpecsIntact (.sec), and PDF formats.",
+      "source": "SOW §5",
+      "quote": "This project consists of all work necessary to develop the task. The final product will serve as design/construction document for facility designers/contractors Products must include requirements for accessibility, antiterrorism, security, sustainability, corrosion protection and control, and safety as applicable."
+    },
+    "delivery_phases": {
+      "value": [
+        "Kickoff Meeting",
+        "35% Concept Outline Submittal",
+        "65% Progress Submittal",
+        "Pre-Final Draft Submittal",
+        "Final Submittal"
+      ],
+      "source": "SOW §5.8 and §8",
+      "quote": null,
+      "notes": "Five-phase iterative criteria development process with Tri-Service (Navy, Army, Air Force, USMC) and NASA review at each phase."
+    },
+    "reviewing_agencies": {
+      "value": [
+        "NAVFAC",
+        "USACE",
+        "AFCEC",
+        "USMC",
+        "NASA"
+      ],
+      "source": "SOW §4",
+      "quote": "Mr. Tim Gordon, P.E., USACE - 202-761-4125\n\n      (Internet E-Mail: timothy.d.gordon@usace.army.mil)\n\n      Mr. Tom Adams, P.E., AFCEC - 850-283-6343"
+    },
+    "navfac_pm": {
+      "value": "Emil T. Consolacion, P.E., Code DC43",
+      "source": "SOW p.2",
+      "quote": "Mr. Emil T. Consolacion, P.E., Code DC43/757-322-4205"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW §7 fee schedule is blank — to be filled at conclusion of negotiations."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW §8 states 'Specific dates will be established during negotiations.' Approximate durations are described (e.g., Kickoff ~60 days after award; 35% 30 days after Kickoff; 65% 60 days after 35% meeting, etc.) but no total duration is calculated."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "value": null,
+      "status": "explicit_null",
+      "notes": "Project is a specification/criteria development engagement (professional A-E services producing a document deliverable). No construction phase exists or is expected."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "science_research"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "specifications_writing"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "plumbing_domestic_water",
+      "fire_suppression_wet"
+    ],
+    "building_systems": [
+      "hvac_systems",
+      "plumbing_systems"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "mechanical_hvac"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac_atlantic",
+    "norfolk_va",
+    "ufgs_development",
+    "criteria_writing",
+    "solar_thermal",
+    "tri_service",
+    "nibs",
+    "specification_development",
+    "renewable_energy"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — no construction project."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — no construction project."
+      },
+      "mep_system_inventory": {
+        "notes": "Project is specification development; MEP systems are the subject of the spec being written (solar water heating), not systems in a BFA-designed facility."
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "specifications_writing": "narratives/disciplines/specifications_writing.md"
+    }
+  }
+}

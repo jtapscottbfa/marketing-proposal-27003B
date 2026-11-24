@@ -1,0 +1,7 @@
+Plumbing engineering was a named discipline on the New River Tap House Renovation permit set (Virginia Beach, Virginia, March 2022). Plumbing scope is cross-referenced on the architectural drawings and a dedicated plumbing sheet (P-101) is indexed in the permit drawing set.
+
+The second-floor renovation included a commercial plumbing fixture package serving two program areas. In the bar counter zones, a 12×12-inch bar sink and a three-compartment sink were specified on sheet A-102 (construction notes 1 and 2), confirming commercial food-and-beverage plumbing fixtures consistent with applicable health code requirements for a bar service operation. The second-floor uni-sex restroom was equipped with a toilet and lavatory as shown on the enlarged restroom plan on sheet A-101.
+
+The full plumbing system scope — including supply, waste, vent, and any floor drain layouts — is contained in sheet P-101, which was not present in the permit drawing file available for extraction. Distribution layouts, fixture schedules, and sanitary/domestic water routing cannot be characterized from the architectural cross-references alone. What is confirmed from the architectural drawings: domestic water supply and sanitary drain/waste/vent service was provided to both the restroom and bar sink locations on the second floor.
+
+<!-- INTERNAL: P-101 not in source PDF — plumbing scope is limited to fixture cross-references on architectural sheets; this is a Pass 1 source gap -->

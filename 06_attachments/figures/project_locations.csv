@@ -1,0 +1,27 @@
+id,project,client,city,state,lat,lon,value_usd,sector,bfa_role
+N7,NH-95 C2F Renovation,NSA Hampton Roads,Norfolk,VA,36.8466,-76.2917,39000000,Federal-DoD,MEP sub
+N1,Oil Switches 143/117/129 (SF6),NAVFAC / NS Norfolk,Norfolk,VA,36.8466,-76.2917,4098000,Federal-DoD,Prime A/E
+N10,West Lean Bldg V-88 (Historic),NAVFAC / NS Norfolk,Norfolk,VA,36.8466,-76.2917,3200000,Federal-DoD,Prime A/E
+N9,UAS Maintenance Facility 1103,JEB Little Creek-Fort Story,Virginia Beach,VA,36.8529,-75.9780,2400000,Federal-DoD,Prime A/E
+N2,NMC Portsmouth ER HVAC,NMC Portsmouth (USACE),Portsmouth,VA,36.8354,-76.2983,4060797,Federal-DoD,MEP sub (D-B)
+N4,DLA Secure Area Reno (SCIF),Defense Logistics Agency,Philadelphia,PA,39.9526,-75.1652,1148842,Federal-DoD,Prime A/E
+N3,Building CAD 111 Renovations,NWS Yorktown,Williamsburg,VA,37.2707,-76.7075,1105989,Federal-DoD,Prime A/E
+N6,MXG B1791 Design-Build HVAC,Joint Base Andrews,Camp Springs,MD,38.8108,-76.8670,539532,Federal-DoD,Prime A/E (D-B)
+N12,Bldg 1470 Vault Expansion,NSF Dahlgren,Dahlgren,VA,38.3293,-77.0380,,Federal-DoD,Prime A/E
+N11,Bldg 1475 HVAC Phase II,Norfolk Naval Shipyard,Portsmouth,VA,36.8354,-76.2983,,Federal-DoD,Prime A/E
+N13,York River Presbyterian Preservation,AFETA / Camp Peary,Williamsburg,VA,37.2707,-76.7075,,Federal-DoD,Prime A/E
+N5,Camp Peary Power Systems Study,AFETA / Camp Peary,Williamsburg,VA,37.2707,-76.7075,380296,Federal-DoD,Prime A/E
+N8,Harvey Point 3 Area Electrical,HPDTA,Hertford,NC,36.1907,-76.4683,,Federal-DoD,Prime A/E
+F1,Phase III Elec Distribution Repair,Seymour Johnson AFB,Goldsboro,NC,35.3849,-77.9928,2900000,Federal-DoD,Prime A/E
+V3,Central Emergency Power Distribution,Perry Point VAMC,Perry Point,MD,39.5510,-76.0788,10599471,Federal-VA-Medical,Sub A/E
+V1,Generator Capacity Upgrade,McGuire VAMC,Richmond,VA,37.5407,-77.4360,6025079,Federal-VA-Medical,Prime A/E
+V2,Pneumatic Controls to DDC,Hampton VAMC,Hampton,VA,37.0299,-76.3452,1330631,Federal-VA-Medical,Prime A/E
+H1,Site Eyewash & Safety Showers,Jefferson Lab,Newport News,VA,37.0871,-76.4730,249000,Federal-DOE,Prime A/E (IDIQ)
+H2,Additional Cooling CEBAF 109/110,Jefferson Lab,Newport News,VA,37.0871,-76.4730,40000,Federal-DOE,Prime A/E (IDIQ)
+S1,Rena B. Wright Primary HVAC,Chesapeake CPS,Chesapeake,VA,36.7682,-76.2875,4980000,K-12,Prime A/E
+S2,West Point Readiness Center HVAC,VA Dept. of Military Affairs,West Point,VA,37.5316,-76.7969,3150000,State-Local,MEP sub
+S3,Matoaka Elementary School,Williamsburg-James City CPS,Williamsburg,VA,37.2707,-76.7075,,K-12,MEP sub
+S4,Portlock Elementary School MEP,Chesapeake CPS,Chesapeake,VA,36.7682,-76.2875,,K-12,Prime A/E
+S5,Public Works Building MEP,City of Portsmouth,Portsmouth,VA,36.8354,-76.2983,,Municipal,Prime A/E
+S6,JMU CATB-26 Task Order,James Madison University,Harrisonburg,VA,38.4496,-78.8689,,Higher-Ed,Prime A/E
+H3,Gates County Schools MEP,Gates County Schools,Gatesville,NC,36.4035,-76.7494,,K-12,Prime A/E

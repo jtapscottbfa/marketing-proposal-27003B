@@ -1,0 +1,555 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "construct_door_opening",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/EXHIBIT A - SOW B9023.pdf",
+      "type": "sow",
+      "sha256": "741d3bc89a507478d4ac7d6fdec6e3c9be32f47d92334aa77319bcdad944aabe",
+      "included": true,
+      "notes": "Exhibit A — Special Provisions and Environmental Considerations plus main construction narrative SOW. Dated 06-10-2024."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/SOW PB00003-4J Construct Door Opening B9023.docx",
+      "type": "sow",
+      "sha256": "2845affd611d6f88e4d4d35780c6dad36604062f805cf21462e1791ec4f8fa37",
+      "included": true,
+      "notes": "DOCX version of the same SOW — content identical to the PDF version."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/SOW PB00003-4J Construct Door Opening B9023.pdf",
+      "type": "sow",
+      "sha256": "572781652bf19043fa4c67a99f4c1f3d7e87ee046efdb2c886b4005c0ed018aa",
+      "included": true,
+      "notes": "PDF version of the main SOW including project coordination cover sheet. Content identical to DOCX and Exhibit A."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/PLANS PB00003-4J Construct Door Opening B9023.pdf",
+      "type": "drawing_set",
+      "sha256": "ca5994d31873b0951108d97e03e1beb5e4570fa875e76eeac343e45de48f457e",
+      "included": true,
+      "notes": "Preliminary/IFC drawing set: 2 sheets — D-101 (Enlarged First Floor Demolition Plan) and A-101 (Enlarged First Floor Plan / Proposed Layout). Drawing No. 44-055- prefix. Drawn by DH, Fort Lee DPW."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/G-001 TITLE SHEET.pdf",
+      "type": "drawing_set",
+      "sha256": "83f854fe0e7fc4a817260b188f4c754bd4f078e1edcb682950f43e9d2d9ba82d",
+      "included": true,
+      "notes": "Title sheet only (G-001). Part of the record drawings set. Shows project team (Bowman Foster & Assoc. as designer, Pyramid Company LLC as record drawing preparer). Record drawings dated 1 Jun 2025."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/F-102 FIRE ALARM SYSTEM AND MASS NOIFICATION SYSTEM.pdf",
+      "type": "drawing_set",
+      "sha256": "9ba8f16b1e1cf07314fa1a10a67ede9fafbb8e78f32c4bb07c31ac22abb3898a",
+      "included": true,
+      "notes": "Fire alarm and mass notification system sheet F-102. Part of record drawing set. Drawing No. 44-055-4714. Firm address: 951 Western Lane, Irmo, South Carolina 29063 — likely Pyramid Company LLC. Text extraction yielded minimal content (coordinate grid only); fire protection plan sheet."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/construct_door_opening/2025.09.08.RENOVATE.BLDG.9023.RENOVATION.RECORD.DRAWINGS_REVISIONS_2.pdf",
+      "type": "drawing_set",
+      "sha256": "2a0dd9c605d8d3ac8f01b7ac7b061d0bc03d749031be14bc2a376bdf65877ff9",
+      "included": true,
+      "notes": "Full record drawings set, 2 pages: G-001 (Title Sheet) and D-101 (First Floor Demolition Plan). Titled 'RENOVATE BLDG 9023 RENOVATION RECORD DRAWINGS REVISIONS_2'. Dated 11 Jun 2025 (D-101 revision date) / 1 Jun 2025 (title sheet). As-built conditions shown."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Construct Door Opening — Building 9023, Fort Gregg-Adams",
+      "source": "SOW PB00003-4J p.1",
+      "quote": "SUBJECT: PB00003-4J Construct Door Opening -- Bldg. 9023",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J p.1",
+          "claim": "PB00003-4J Construct Door Opening -- Bldg. 9023",
+          "agrees": true
+        },
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "PB00003-4J RENOVATE FACILITY- BUILDING 9023, FORT GREGG-ADAMS, VIRGINIA",
+          "agrees": false,
+          "note": "Title sheet uses 'RENOVATE FACILITY' as the broader project title; SOW focuses on the door opening task order. The two names reflect scope at different levels: PB00003-4J is the task order construct door opening; the drawing set title reflects the broader renovation."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army — Fort Gregg-Adams Directorate of Public Works (DPW)",
+      "source": "SOW PB00003-4J p.1",
+      "quote": "Directorate of Public Works, Contract Management Branch (Bldg. 6005), 825 19TH Street, Fort Gregg-Adams VA 23801-1530",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J p.1",
+          "claim": "Directorate of Public Works, Contract Management Branch, Fort Gregg-Adams",
+          "agrees": true
+        },
+        {
+          "source": "EXHIBIT A - SOW B9023",
+          "claim": "CMB Fort Gregg-Adams, AMIM-LEP-G, 825 19th Street, Fort Gregg-Adams, Virginia 23801",
+          "agrees": true
+        },
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "DIRECTORATE OF PUBLIC WORKS, FORT LEE, VIRGINIA (title block references Fort Lee; building is at Fort Gregg-Adams)",
+          "agrees": true,
+          "note": "Fort Lee was renamed Fort Gregg-Adams; DPW title block pre-dates the rename but refers to the same installation."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Army — Fort Gregg-Adams Directorate of Public Works",
+      "source": "SOW PB00003-4J p.1",
+      "quote": "Directorate of Public Works, Contract Management Branch (Bldg. 6005), 825 19TH Street, Fort Gregg-Adams VA 23801-1530",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J",
+          "claim": "DPW Fort Gregg-Adams as contracting authority",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Fort Gregg-Adams",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Fort Gregg-Adams (formerly Fort Lee)",
+      "facility_address": "825 19th Street, Fort Gregg-Adams, Virginia 23801",
+      "building": "Building 9023",
+      "source": "SOW PB00003-4J p.1",
+      "quote": "825 19TH Street, Fort Gregg-Adams VA 23801-1530",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J",
+          "claim": "Building 9023, Fort Gregg-Adams, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "FORT GREGG-ADAMS, VIRGINIA — location map shows building location on installation",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "PB00003-4J",
+      "source": "SOW PB00003-4J p.1",
+      "quote": "SUBJECT: PB00003-4J Construct Door Opening -- Bldg. 9023",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J",
+          "claim": "PB00003-4J",
+          "agrees": true
+        },
+        {
+          "source": "F-102 drawing, title block",
+          "claim": "PROJECT NO. PB00003-4J",
+          "agrees": true
+        },
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "PB00003-4J",
+          "agrees": true
+        }
+      ]
+    },
+    "drawing_number": {
+      "value": "44-055-4714",
+      "source": "F-102 drawing title block",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "PLANS PDF A-101 sheet title block",
+          "claim": "DRAWING NO. 44-055-",
+          "agrees": true,
+          "note": "PLANS PDF shows prefix 44-055- on A-101; full number visible as 44-055-4714 in F-102."
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": "PB00003-4J",
+      "source": "SOW PB00003-4J p.1",
+      "quote": "SUBJECT: PB00003-4J Construct Door Opening -- Bldg. 9023",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J, F-102, G-001",
+          "claim": "PB00003-4J appears consistently across all documents as the project identifier",
+          "agrees": true
+        }
+      ]
+    },
+    "sow_date": {
+      "value": "2024-06-10",
+      "source": "SOW PB00003-4J p.2",
+      "quote": "DATE: 06-10-2024",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J PDF and DOCX",
+          "claim": "DATE: 06-10-2024",
+          "agrees": true
+        }
+      ]
+    },
+    "record_drawings_date": {
+      "value": "2025-06-01",
+      "source": "G-001 Title Sheet",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "LLTTED DATE: 1 JUN 2025 — RECORD DRAWINGS",
+          "agrees": true
+        },
+        {
+          "source": "2025.09.08 record drawings PDF, D-101 sheet",
+          "claim": "AS BUILT DATE: 11 JUN 2025",
+          "agrees": false,
+          "note": "D-101 sheet shows 11 Jun 2025 as as-built date vs title sheet's 1 Jun 2025 — minor one-week discrepancy, likely D-101 was revised slightly after title sheet issue date."
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "No GSF figure stated in SOW or drawings. Building 9023 footprint visible on demolition plan but no area tabulation shown."
+    },
+    "floor_count": {
+      "value": 1,
+      "source": "drawing D-101 / PLANS demolition floor plan",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "D-101 First Floor Demolition Plan",
+          "claim": "FIRST FLOOR — DEMOLITION PLAN; no upper floors shown or referenced",
+          "agrees": true
+        },
+        {
+          "source": "SOW construction narrative",
+          "claim": "All work references Building 9023 interior on one level; no stair or multi-floor references",
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "davis_bacon_wage_determination": {
+      "value": "VA20230170, 01/13/2023, VA170 Building",
+      "source": "SOW PB00003-4J p.2",
+      "quote": "DAVIS-BACON WAGE RATE DETERMINATION: \"VA20230170, 01/13/2023, VA170 Building\"",
+      "corroboration": [
+        {
+          "source": "SOW PB00003-4J PDF and DOCX",
+          "claim": "VA20230170, 01/13/2023, VA170 Building",
+          "agrees": true
+        }
+      ]
+    },
+    "design_firm": {
+      "value": "Bowman Foster & Associates Consulting Engineers",
+      "source": "G-001 Title Sheet — Project Team block",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "Bowman Foster & Assoc. Consulting Engineers, 6352 Center Dr., Norfolk, VA 23502 — shown as Project Team",
+          "agrees": true
+        }
+      ]
+    },
+    "record_drawing_firm": {
+      "value": "Pyramid Company LLC",
+      "source": "G-001 Title Sheet title block / F-102 title block",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "G-001 Title Sheet",
+          "claim": "PYRAMID logo visible in upper right; address 951 Western Lane, Irmo, South Carolina 29063 in F-102 title block",
+          "agrees": true
+        }
+      ]
+    },
+    "construction_scope_summary": {
+      "value": "Interior renovation of Building 9023: construct masonry wall opening for new 3'x7' door; selective demolition of partitions, flooring, ceiling, casework, cubicle system; install new metal stud partitions with GWB (40 LF); install 3 solid-core wood doors; install 1 aluminum transaction window; carpet tile and VCT flooring; ACT ceiling; interior painting (Level 4); electrical outlet rework; HVAC modification and T&B; fire alarm/mass notification system consolidation (2 systems into 1)",
+      "source": "SOW PB00003-4J construction narrative",
+      "quote": "This project should it be awarded is to furnish all labor, material, equipment, and supervision necessary to construct an opening at an existing masonry wall in Building 9023."
+    },
+    "building_occupancy_during_construction": {
+      "value": "Occupied — soldiers continue training in building during construction",
+      "source": "SOW PB00003-4J limits of work section",
+      "quote": "Soldiers will continue training in the building during construction."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "note": "Record drawings issued 1 Jun 2025; as-builts dated 11 Jun 2025 — implies design completed by this date."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "note": "Record drawings and as-builts dated Jun 2025 suggest substantial completion by mid-2025."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "note": "SOW §01 32 01.00 10 states contractor shall provide schedule recommendations; no government-set duration given."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_training"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "electrical_power_distribution",
+      "fire_alarm",
+      "structural_existing_assessment"
+    ],
+    "building_systems": [
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling",
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "electrical_lighting_interior",
+      "electrical_distribution",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "masonry_scope",
+      "openings_doors_frames",
+      "openings_windows",
+      "openings_door_hardware",
+      "finishes_drywall_plaster",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "mechanical_hvac",
+      "electrical_power",
+      "electronic_safety_security",
+      "fire_suppression_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "fort_gregg_adams",
+    "fort_lee",
+    "usace_norfolk_district",
+    "building_9023",
+    "interior_renovation",
+    "masonry_opening",
+    "occupied_construction",
+    "fire_alarm_mass_notification",
+    "davis_bacon"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "TITLE SHEET",
+        "discipline": "architecture",
+        "source_file": "G-001 TITLE SHEET.pdf / 2025.09.08...RECORD.DRAWINGS_REVISIONS_2.pdf",
+        "reading_notes": "Project title: PB00003-4J RENOVATE FACILITY- BUILDING 9023, FORT GREGG-ADAMS, VIRGINIA. Record drawings dated 1 Jun 2025. Project team shows Bowman Foster & Assoc. Consulting Engineers (6352 Center Dr., Norfolk VA 23502) as design firm. Pyramid Company LLC (Irmo, SC 29063) prepared record drawings. Drawing index lists: G-001 Title Sheet; D-101 Enlarged First Floor Demolition Plan; A-101 Enlarged First Floor Plan; F-101 through F-104 Fire Alarm and Mass Notification System sheets. Location map aerial confirms single-story building in residential/administrative area of installation. Project data block references applicable codes: IBC (latest), NFPA, SMACNA standards. AS-BUILT CONDITIONS SHOWN disclaimer box present."
+      },
+      {
+        "sheet_number": "D-101",
+        "title": "ENLARGED FIRST FLOOR DEMOLITION PLAN",
+        "discipline": "architecture",
+        "source_file": "PLANS PB00003-4J Construct Door Opening B9023.pdf / 2025.09.08...RECORD.DRAWINGS_REVISIONS_2.pdf",
+        "reading_notes": "Scale 3/16\"=1'-0\" (record drawings) / 3/8\"=1'-0\" (IFC plans). Single-story building floor plan. Rooms visible: 100 Vestibule, 101 Women, 102 Men, 103 Janitor, 104 Storage, 105 Office, 106 Reception, 107 Conference Room, 108 Toilet, 109 Storage, 110 Multi-Purpose, 111 Kitchen, 112 Open Office, 114 Corridor. Demolition notes: (1) Remove existing masonry wall and prep for new 3'-0\"x7'-0\" door; (2) Remove existing wood shelving; (3) Remove existing 3'-0\"x7'-0\" door; (4) Remove existing 6\" wood wall base; (5) Remove existing VCT tile and threshold plate and prep for new flooring; (6) Remove existing ceiling grid and acoustical tile in pantry; (7) Remove existing modular wall and door. 45-degree hatching at perimeter walls indicating exterior masonry walls. Demolition area concentrated at kitchen/open office/corridor junction. AS-BUILT DATE: 11 JUN 2025."
+      },
+      {
+        "sheet_number": "A-101",
+        "title": "ENLARGED FIRST FLOOR PLAN — PROPOSED LAYOUT",
+        "discipline": "architecture",
+        "source_file": "PLANS PB00003-4J Construct Door Opening B9023.pdf",
+        "reading_notes": "Scale 3/8\"=1'-0\". Proposed layout B9023. Shows new construction: (1) New wall — 5/8\" gypsum board and 3-5/8\" metal stud with sound batt insulation; (2) New Roppe 700 series standard toe wall base or equal; (3) New 3'-0\"x7'-0\" solid core wood door and metal frame (TYP); (4) New 24 oz 2'x2' carpet floor tiles to match existing; (5) Patch and paint Sherwin Williams SW6119 Antique White or approved equal; (6) Patch and paint walls to match new; (7) Install new wood base to match existing. Kitchen dimension noted as 12'-4\". New 3'-6\" opening visible in open office area. New corridor 114 created. Multi-purpose room 110 added/enlarged. Drawing number 44-055- visible (partial). Drawn and designed by DH for Fort Lee DPW. Legend shows: new carpet tile (hatched); new walls (thick lines); existing walls (medium lines)."
+      },
+      {
+        "sheet_number": "F-102",
+        "title": "FIRE ALARM SYSTEM AND MASS NOTIFICATION SYSTEM",
+        "discipline": "fire_protection_engineering",
+        "source_file": "F-102 FIRE ALARM SYSTEM AND MASS NOIFICATION SYSTEM.pdf",
+        "reading_notes": "Sheet F-102 of a series (F-101 through F-104 per drawing index). Titled 'FIRE ALARM SYSTEM AND MASS NOTIFICATION SYSTEM' (note: 'NOTIFICATION' misspelled as 'NOIFICATION' in filename and title block — consistent with SOW document naming). SHEET - OF X (number not fully extracted via text). Firm address: 951 Western Lane, Irmo, South Carolina 29063 — Pyramid Company LLC. Drawing No. 44-055-4714. Project No. PB00003-4J. Text extraction yielded coordinate grid labels only; fire alarm floor plan content requires visual rendering for detail. Record drawings designation. First floor plan view shown."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "No area tabulation on any drawing sheet. Building footprint visible on D-101 at 3/16\"=1'-0\" scale; estimation not performed (medium-depth protocol — no synthesized dimensions).",
+        "sheets": [
+          "D-101"
+        ]
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "D-101 / A-101 — First Floor plan with no additional floor references",
+        "quote": null,
+        "sheets": [
+          "D-101",
+          "A-101"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing HVAC system modification to support new construction area (SOW §23 05 00)",
+          "Test and balance required post-modification"
+        ],
+        "electrical": [
+          "Power outlet rework at demolished/new walls (SOW §26 01 00)",
+          "Reposition existing lighting to accommodate new layout"
+        ],
+        "fire_protection": [
+          "Fire alarm and mass notification system: consolidate two existing systems into one (SOW §28 46 11)",
+          "F-101 through F-104 drawing sheets for fire alarm/MNS system"
+        ],
+        "plumbing": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW PB00003-4J",
+          "value": "Construct Door Opening — Bldg. 9023"
+        },
+        {
+          "source": "G-001 Title Sheet",
+          "value": "RENOVATE FACILITY- BUILDING 9023"
+        }
+      ],
+      "resolution_chosen": "SOW PB00003-4J",
+      "rationale": "The SOW is the operative task-order document and 'Construct Door Opening' is the specific task identifier (PB00003-4J). The title sheet 'Renovate Facility' likely reflects the broader renovation program/drawing package that was reused for this task order. Both refer to the same physical work at Building 9023."
+    },
+    {
+      "field_path": "facts.record_drawings_date",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "G-001 Title Sheet",
+          "value": "1 Jun 2025"
+        },
+        {
+          "source": "D-101 As-Built date",
+          "value": "11 Jun 2025"
+        }
+      ],
+      "resolution_chosen": "1 Jun 2025 (title sheet)",
+      "rationale": "10-day difference between title sheet issue and D-101 as-built date. Minor; likely D-101 was finalized slightly after the title sheet. Both confirm construction was completed by mid-June 2025."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

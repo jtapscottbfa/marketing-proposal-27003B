@@ -1,0 +1,467 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "southwest_regional_generators",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/dma/southwest_regional_generators/SWVA Generator RFP.pdf",
+      "type": "sow",
+      "sha256": "56bd275e2192a406f336d61049c35a1b357df630e84780d2a2ea744f16bee68e",
+      "included": true,
+      "notes": "Request for Fee Proposal — contains scope of services, construction requirements, timeline, NTE construction budget. Includes appended GPRS utility findings maps and a draft site layout plan (civil/parking lot design for Abingdon MOV) that appear to be attachments from a related but distinct project scope."
+    },
+    {
+      "path": "00_admin/reference_projects/dma/southwest_regional_generators/VAFM PN 22-0028_BOD_12-1-2022.pdf",
+      "type": "bod",
+      "sha256": "a4f2e56de5bb9c90be6ec97d19c7efc2d0901a18835883d64613199b5fa2e26c",
+      "included": true,
+      "notes": "Basis of Design — Working Drawing Submittal 1, dated December 1, 2022. Prepared by RRMM Architects. Includes BOD sections (General, Structural, Architectural, Electrical), outline specifications, BFA equipment cut sheets (Appendix A, BFA Project No. 19-020A), and 100%-design cost estimate by OACCI (Appendix B)."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No separate drawing set PDF present. Outline specifications are embedded in BOD. RFP PDF contains appended site utility maps and a civil site layout plan for the Abingdon MOV parking lot — these appear to be supporting reference documents, not the primary A/E construction drawing set for the generators."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Southwest Virginia RRC Modernization – Construction Back-Up Generators",
+      "source": "BOD cover page",
+      "quote": "SOUTHWEST VIRGINIA RRC MODERNIZATION - CONSTRUCTION BACK-UP GENERATORS",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "SOUTHWEST VIRGINIA RRC MODERNIZATION - CONSTRUCTION BACK-UP GENERATORS",
+          "value": "Southwest Virginia RRC Modernization – Construction Back-Up Generators",
+          "agrees": true
+        },
+        {
+          "source": "RFP title block",
+          "claim": "Southwest Virginia RRC Modernization – Construction Back Up Generators",
+          "value": "Southwest Virginia RRC Modernization – Construction Back Up Generators",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "RFP header",
+      "quote": "Department of Military Affairs\nNGVA-FMO-AE Kenneth M. Daniel",
+      "corroboration": [
+        {
+          "source": "RFP header",
+          "claim": "Department of Military Affairs, NGVA-FMO-AE",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "VAFM PN 22-0028 (Virginia Army National Guard Facilities Management project number)",
+          "value": "Virginia Department of Military Affairs / Virginia Army National Guard",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Virginia Department of Military Affairs",
+      "source": "RFP header",
+      "quote": "Department of Military Affairs\nNGVA-FMO-AE Kenneth M. Daniel",
+      "corroboration": [
+        {
+          "source": "RFP header",
+          "claim": "Department of Military Affairs",
+          "value": "Virginia Department of Military Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Abingdon",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "26460 and 26502 Newbanks Road, Abingdon, VA",
+      "source": "BOD §I General",
+      "quote": "The project site is located in Abingdon, Virginia at 26460 and 26502 Newbanks Road.",
+      "corroboration": [
+        {
+          "source": "BOD §I General",
+          "claim": "Abingdon, Virginia at 26460 and 26502 Newbanks Road",
+          "agrees": true
+        },
+        {
+          "source": "RFP title block",
+          "claim": "VAFM PN 22-0028 (context establishes VA project)",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "VAFM PN 22-0028",
+      "source": "RFP title block",
+      "quote": "VAFM PN 22-0028",
+      "corroboration": [
+        {
+          "source": "RFP title block",
+          "claim": "VAFM PN 22-0028",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "VAFM PN 22-0028",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_ae_firm": {
+      "value": "RRMM Project No. 20188-03 / BFA Project No. 19-020A",
+      "source": "BOD cover page and equipment cut sheets",
+      "quote": "RRMM PROJECT NO. 20188-03",
+      "notes": "RRMM Architects is the prime A/E. BFA project number 19-020A appears on the equipment cut sheets appendix submitted by Bowman Foster & Associates."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 92058,
+      "unit": "gsf",
+      "source": "BOD §I General",
+      "quote": "The facility includes three free standing structures to include a main building (+/-72,862 GSF), storage building (+/- 4,400 GSF) and administration building (+/- 14,796 GSF).",
+      "notes": "Total computed: 72,862 + 4,400 + 14,796 = 92,058 GSF. Value is the total campus square footage served by the generators, not BFA's design scope area. Approximate values as stated with +/- qualifier.",
+      "corroboration": [
+        {
+          "source": "BOD §I General",
+          "claim": "main building +/-72,862 GSF, storage +/-4,400 GSF, administration +/-14,796 GSF",
+          "value": 92058,
+          "agrees": true
+        },
+        {
+          "source": "RFP",
+          "claim": "No square footage stated",
+          "value": null,
+          "agrees": null
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 750000,
+      "currency": "USD",
+      "source": "RFP §I General",
+      "quote": "The not-to-exceed construction budget is $750,000.",
+      "corroboration": [
+        {
+          "source": "RFP §I General",
+          "claim": "$750,000 not-to-exceed construction budget",
+          "value": 750000,
+          "agrees": true
+        },
+        {
+          "source": "BOD Appendix B cost estimate header",
+          "claim": "CONSTRUCTION FUNDS AVAILABLE, DOLLARS: $ 750,000",
+          "value": 750000,
+          "agrees": true
+        }
+      ]
+    },
+    "scope_summary": {
+      "value": "Electrical engineering design for two diesel backup generators: a 500kW unit serving the main building and storage building (served by a 500kVA transformer and 3,000A main distribution panel), and a 150kW unit serving the administration building (served by a 112.5kVA transformer and 400A main distribution panel). Each generator includes a diesel sub-base tank for 72-hour runtime, automatic transfer switch, concrete equipment pad, galvanized steel maintenance platform with stairs and railings, and BAS tie-in. Underground electrical ductbank and conduit runs connect the generators to the existing electrical service infrastructure.",
+      "source": "BOD §IV Electrical",
+      "quote": "The project includes providing electrical engineering design services for the addition of two back up generators. Generator 1 will serve the main building and storage building. Generator 2 will serve the administration building. Both generators will be sized for total building service."
+    },
+    "generator_1_capacity": {
+      "value": "500kW",
+      "source": "BOD §IV Electrical",
+      "quote": "we are proposing a 500kW generator to backup these two facilities",
+      "corroboration": [
+        {
+          "source": "BOD §IV Electrical",
+          "claim": "500kW generator",
+          "agrees": true
+        },
+        {
+          "source": "BOD Appendix B cost estimate",
+          "claim": "500 kW Generator, 3000 AMP ATS and Circuit Breaker",
+          "agrees": true
+        }
+      ]
+    },
+    "generator_2_capacity": {
+      "value": "150kW",
+      "source": "BOD §IV Electrical",
+      "quote": "we are proposing a 150kW generator to backup this facility",
+      "corroboration": [
+        {
+          "source": "BOD §IV Electrical",
+          "claim": "150kW generator",
+          "agrees": true
+        },
+        {
+          "source": "BOD Appendix B cost estimate",
+          "claim": "150 kW Generator, 400 AMP ATS and Circuit Breaker",
+          "agrees": true
+        }
+      ]
+    },
+    "design_completion_deadline": {
+      "value": "2022-11-18",
+      "source": "RFP §V Time Line",
+      "quote": "Design shall be completed within sixty (90) days after NTP is given and no later than November 18, 2022.",
+      "notes": "RFP contains a typographical error: 'within sixty (90) days.' BOD is dated December 1, 2022, which is approximately 2 weeks past the stated deadline. This may reflect a minor schedule slip or renegotiated timeline."
+    },
+    "rfp_issued_date": {
+      "value": "2022-07-26",
+      "source": "RFP header date",
+      "quote": "July 26, 2022"
+    },
+    "bod_date": {
+      "value": "2022-12-01",
+      "source": "BOD cover page",
+      "quote": "DECEMBER 1, 2022"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP is a 'Request for Fee Proposal' — the design fee was negotiated after submission. No executed contract or fee amount found in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-12-01",
+        "source": "BOD cover page (Working Drawing Submittal - 1 date)",
+        "quote": "WORKING DRAWING SUBMITTAL - 1 ... DECEMBER 1, 2022",
+        "notes": "BOD dated December 1, 2022 represents Working Drawing Submittal 1. This is the best available proxy for design completion date."
+      },
+      "contractual_duration_days": {
+        "value": 90,
+        "source": "RFP §V Time Line",
+        "quote": "Design shall be completed within sixty (90) days after NTP is given and no later than November 18, 2022.",
+        "notes": "RFP contains a typographical error — states 'sixty (90) days.' Numeric value 90 is used as it is the parenthetical clarification."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No executed construction contract found. 100%-design cost estimate is $1,029,334 (see program_budget conflict flag — estimate exceeds NTE budget of $750,000 by ~$279,334)."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "BOD cost estimate (Appendix B, OACCI, Nov 30 2022) projects $1,029,334 total construction cost. Construction start assumed approximately July 2023 per cost estimate escalation assumptions. Construction outcome/status not documented in available sources."
+    }
+  },
+  "cost_estimate": {
+    "total_ecc": {
+      "value": 1029334,
+      "currency": "USD",
+      "source": "BOD Appendix B — OACCI cost estimate, 100% design, Nov 30 2022",
+      "quote": "BASE BID: $1,029,334",
+      "breakdown": {
+        "sitework_and_utilities": 842053,
+        "general_conditions": 187282,
+        "site_preparation": 9654,
+        "site_improvements": 167049,
+        "site_electrical_distribution": 665349
+      }
+    },
+    "generator_1_estimated_cost_diesel": {
+      "value": 537000,
+      "currency": "USD",
+      "source": "BOD §IV Electrical",
+      "quote": "The estimated generator cost is; (Diesel) - $ 537,000.00"
+    },
+    "generator_1_estimated_cost_natural_gas": {
+      "value": 617500,
+      "currency": "USD",
+      "source": "BOD §IV Electrical",
+      "quote": "The estimated generator cost is; (Natural Gas) - $ 617,500.00"
+    },
+    "generator_2_estimated_cost_diesel": {
+      "value": 128000,
+      "currency": "USD",
+      "source": "BOD §IV Electrical",
+      "quote": "The estimated generator cost is; (Diesel) - $ 128,000.00"
+    },
+    "generator_2_estimated_cost_natural_gas": {
+      "value": 407500,
+      "currency": "USD",
+      "source": "BOD §IV Electrical",
+      "quote": "The estimated generator cost is; (Natural Gas) - $ 407,500.00"
+    },
+    "estimator": "OACCI (Osmundson & Associates Cost Consultants, Inc.)",
+    "pricing_database": "RS Means 2022",
+    "contracting_methodology_noted": "Design-Bid-Build, lump sum competitive bid, at least four contractors responding"
+  },
+  "taxonomy": {
+    "client_type": [
+      "state_general"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_armory"
+    ],
+    "disciplines": [
+      "electrical_engineering",
+      "structural_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_emergency_power",
+      "electrical_power_distribution",
+      "structural_foundation",
+      "civil_site_design"
+    ],
+    "building_systems": [
+      "electrical_emergency_power",
+      "electrical_systems",
+      "hvac_controls_bas"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "fire_suppression_scope",
+      "concrete_scope",
+      "metals_scope",
+      "earthwork_scope",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "state_qbs"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "virginia_army_national_guard",
+    "department_of_military_affairs",
+    "dma",
+    "emergency_generator",
+    "backup_power",
+    "abingdon",
+    "southwest_virginia",
+    "rrc",
+    "readiness_center",
+    "electrical_only",
+    "rrmm_prime"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No separate construction drawing set PDF found in the intake directory. The RFP PDF contains appended GPRS underground utility scan maps (7 sheets, for 26502 Newbanks Rd, dated June 2021, prepared for GECO) and a draft civil site layout plan for the Abingdon MOV parking lot (drawn by Cardno/Ashland Virginia, project DMAE112). These are reference/supporting documents, not BFA construction drawings for the generator project. Drawing extraction was not performed."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "phases.construction.contract_value vs program_budget",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "RFP §I General",
+          "value": 750000,
+          "description": "Not-to-exceed construction budget stated as $750,000"
+        },
+        {
+          "source": "BOD Appendix B — OACCI cost estimate (100% design, Nov 30 2022)",
+          "value": 1029334,
+          "description": "Total Estimated Construction Cost at 100% design = $1,029,334"
+        }
+      ],
+      "resolution_chosen": "Both values retained. $750,000 is the owner's stated NTE budget; $1,029,334 is the A/E's cost estimate at 100% design. These are not the same thing.",
+      "rationale": "The NTE budget was set at $750,000 in the RFP (July 2022). The 100%-design estimate came in at $1,029,334 (November 2022), exceeding budget by approximately $279,334 (~37%). This is a significant budget overrun finding. The BOD cost estimate acknowledges '$750,000 construction funds available' as a reference point. Resolution of this overrun (scope reduction, VE, additional funding) is not documented in available sources. This conflict is material to past-performance framing."
+    },
+    {
+      "field_path": "facts.scope_summary — buildings served by generators",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP §I General",
+          "value": "Generator 1: main building and paint shop; Generator 2: museum",
+          "description": "RFP describes Generator 2 as serving 'the museum'"
+        },
+        {
+          "source": "BOD §I General and §IV Electrical",
+          "value": "Generator 1: main building and storage building; Generator 2: administration building",
+          "description": "BOD describes Generator 2 as serving 'the administration building'"
+        }
+      ],
+      "resolution_chosen": "BOD description used as primary (more detailed, later document).",
+      "rationale": "The RFP was written at an early stage before detailed investigation. The BOD reflects actual site conditions at 100% design. 'Museum' in the RFP may refer to a function within the administration building, or may reflect an early understanding of the facility's program. The paint shop referenced in the RFP is likely part of the main building complex. Minor discrepancy; BOD is authoritative for construction scope."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

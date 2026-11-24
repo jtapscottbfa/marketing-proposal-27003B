@@ -1,0 +1,126 @@
+vocabulary_id: delivery_method
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: AIA/ACEC contract document categories (concept reference)
+anchor_standard_version: null
+hierarchy: flat
+multi_select: false
+governance_notes: |
+  Project delivery method captures the contractual relationship between owner,
+  designer, and constructor. Single-select per project — a project has one
+  delivery method, established at procurement.
+
+  Concepts referenced from common AIA and ACEC industry usage. Specific AIA
+  contract document numbers (e.g., A201, B101) are not embedded in this
+  vocabulary because those are AIA's protected expression. Display names
+  describe the delivery method functionally.
+future_migration: null
+
+entries:
+  - canonical_id: design_bid_build
+    display_name: Design-Bid-Build
+    definition: Owner contracts separately with designer for design and contractor for construction. Sequential.
+    parent_id: null
+    aliases:
+      - dbb
+      - traditional
+      - design_bid_build_traditional
+    standard_reference: null
+
+  - canonical_id: design_build
+    display_name: Design-Build
+    definition: Owner contracts with single design-build entity for combined design and construction.
+    parent_id: null
+    aliases:
+      - db
+      - design_build_traditional
+    standard_reference: null
+
+  - canonical_id: progressive_design_build
+    display_name: Progressive Design-Build
+    definition: Design-build with two-phase contract; design phase first, construction GMP negotiated after design progresses.
+    parent_id: null
+    aliases:
+      - progressive_db
+      - pdb
+    standard_reference: null
+
+  - canonical_id: cm_at_risk
+    display_name: Construction Manager at Risk (CMAR)
+    definition: Owner contracts separately with designer and CM. CM provides preconstruction services, then takes construction risk via GMP.
+    parent_id: null
+    aliases:
+      - cmar
+      - cm_at_risk
+      - cm_gmp
+    standard_reference: null
+
+  - canonical_id: cm_general_contractor
+    display_name: CM/General Contractor (CMGC)
+    definition: Combined CM/GC role (transportation/DOT delivery method); CM provides preconstruction then construction services.
+    parent_id: null
+    aliases:
+      - cmgc
+      - cm_gc
+    standard_reference: null
+
+  - canonical_id: cm_agency
+    display_name: Construction Manager — Agency (CMa)
+    definition: CM acts as owner's agent only, no construction risk. Owner contracts directly with trade contractors or GC.
+    parent_id: null
+    aliases:
+      - cma
+      - cm_agency
+    standard_reference: null
+
+  - canonical_id: integrated_project_delivery
+    display_name: Integrated Project Delivery (IPD)
+    definition: Multi-party agreement among owner, designer, constructor with shared risk/reward.
+    parent_id: null
+    aliases:
+      - ipd
+    standard_reference: null
+
+  - canonical_id: epc
+    display_name: Engineer-Procure-Construct (EPC)
+    definition: Single contractor handles engineering, procurement, and construction. Common for industrial and infrastructure.
+    parent_id: null
+    aliases:
+      - epc
+      - engineer_procure_construct
+    standard_reference: null
+
+  - canonical_id: epcm
+    display_name: Engineer-Procure-Construct-Manage (EPCM)
+    definition: EPCM contractor manages engineering and procurement; owner holds construction contracts.
+    parent_id: null
+    aliases:
+      - epcm
+    standard_reference: null
+
+  - canonical_id: public_private_partnership
+    display_name: Public-Private Partnership (P3)
+    definition: Long-term contractual arrangement; private partner finances, builds, and often operates a public asset.
+    parent_id: null
+    aliases:
+      - p3
+      - ppp
+      - public_private_partnership
+    standard_reference: null
+
+  - canonical_id: design_assist
+    display_name: Design-Assist
+    definition: Specialty trade contractors brought in during design to advise on constructability and pricing.
+    parent_id: null
+    aliases:
+      - design_assist
+    standard_reference: null
+
+  - canonical_id: job_order_contracting
+    display_name: Job Order Contracting (JOC)
+    definition: IDIQ-style construction delivery using pre-priced unit price book; rapid task-order execution.
+    parent_id: null
+    aliases:
+      - joc
+      - job_order_contracting
+    standard_reference: null

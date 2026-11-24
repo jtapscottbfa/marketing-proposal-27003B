@@ -1,0 +1,9 @@
+# Electrical Engineering — Building 234 / Building 184 Freight Elevator Replacement, NNSY
+
+Electrical engineering scope encompassed the analysis and redesign of power supply and distribution systems for the replacement elevators at both buildings, along with machine room power, lighting, and emergency communications.
+
+At Building 234, the existing elevator was served by a 3-phase/150A plug-in circuit breaker connected to a 480V three-phase bus duct in the second-floor ceiling space, which in turn was powered from Unit Substation "YA" (11.5 kV – 480Y/277V). The bus duct and unit substation were determined to remain in service; the existing plug-in circuit breaker and elevator feeder were replaced with new units sized appropriately for the new geared traction elevator. The existing 100A 208Y/120V machine room panel serving cab lights and power was retained and reconnected.
+
+At Building 184, the existing 3-phase/225A enclosed circuit breaker tapped to a 208Y/120V first-floor switchboard, along with the elevator feeder, main disconnect, and machine room panelboard, were replaced entirely. New enclosed circuit breaker, feeder, and panel sized for the 16,000-lb geared traction elevator were provided.
+
+At both buildings, existing telephone cables serving the elevator emergency phones were preserved up to the machine room and reconnected to the new elevator controllers. Emergency communication systems (in-car and machine-room phones) were provided in compliance with NAVFAC requirements. Shunt-trip breakers for elevator shutdown upon sprinkler activation in the machine rooms were coordinated with the fire protection discipline. Electrical designs complied with UFC 3-490-06, applicable UFC and ASME standards, and UFC 1-200-02 High Performance and Sustainable Building Requirements, with Energy Star equipment specified throughout.

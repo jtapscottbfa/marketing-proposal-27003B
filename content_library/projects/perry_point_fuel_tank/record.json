@@ -1,0 +1,498 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "perry_point_fuel_tank",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/perry_point_fuel_tank/Basis of Design-Replace Fuel Storage Tank.pdf",
+      "type": "bod",
+      "sha256": "20cbc2cc89bc5dc65e8777503fc7ef5e4b0858d6bd3b0c2917f56f642a097517",
+      "included": true,
+      "notes": "Hartigan Bowman Foster authored BOD; 2-page scope summary; identifies SDVOSB status on footer"
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/perry_point_fuel_tank/SOW_Replace 150K Gallon Fuel Tank at Boiler Plant.pdf",
+      "type": "sow",
+      "sha256": "2e95f1e2df5ae8d16779647beb1bae0c8740e30c53997e05b162a6f5c7777e9e",
+      "included": true,
+      "notes": "Full VA A/E SOW including Supplements A–D; NRM Project No. 512A5-20-302; construction budget $800,000"
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/perry_point_fuel_tank/36C24520R0091.pdf",
+      "type": "correspondence",
+      "sha256": "4facf593ef9ae012ecc8faeaff75ffba14903a3bf906087d33178a185e2d95ac",
+      "included": true,
+      "notes": "VA NCO5 RFP letter dated Sep 16 2020; selects Hartigan Bowman Foster from IDIQ pool; estimated construction price $870,000; 120-day performance period"
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/perry_point_fuel_tank/528A5-18-302_Design Narrative.pdf",
+      "type": "narrative",
+      "sha256": "26007f4fa6f7700b638b81671a41149f445e973349a136b7ae773ce040ef3704",
+      "included": true,
+      "notes": "Paradigm USA design narrative for NRM 512A5-18-302 / Change Order #1; covers PSRDM blast analysis, environmental requirements, containment design; marked CUI"
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set included in intake folder. Design narrative (528A5-18-302) includes site description and engineering analysis but is not a drawing set. BOD + SOW + RFP letter + design narrative present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Replace 150K Gallon Fuel Tank at Boiler Plant",
+      "source": "SOW p.1",
+      "quote": "Project Title: Replace 150K Gallon Fuel Tank at Boiler Plant",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "Replace 150K Gallon Fuel Tank at Boiler Plant",
+          "value": "Replace 150K Gallon Fuel Tank at Boiler Plant",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.1",
+          "claim": "REPLACE STORAGE TANK",
+          "value": "Replace Storage Tank",
+          "agrees": true
+        },
+        {
+          "source": "RFP 36C24520R0091",
+          "claim": "Fuel Tank Design",
+          "value": "Fuel Tank Design",
+          "agrees": true
+        },
+        {
+          "source": "Design Narrative 528A5-18-302 p.1",
+          "claim": "Construct Central Emergency Power Distribution – Design Fuel Tank Replacement-Design Change Order #1",
+          "value": "Fuel Tank Replacement",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "VA Maryland Healthcare System – VISN5",
+      "source": "SOW §1.1",
+      "quote": "VA Maryland HealthCare System – VISN5 – Perry Point",
+      "corroboration": [
+        {
+          "source": "SOW §1.1",
+          "claim": "VA Maryland HealthCare System – VISN5 – Perry Point",
+          "value": "VA Maryland Healthcare System – VISN5",
+          "agrees": true
+        },
+        {
+          "source": "RFP 36C24520R0091",
+          "claim": "Perry Point VA Medical Center, Perry Point, MD",
+          "value": "Perry Point VAMC",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "RFP 36C24520R0091",
+      "quote": "Department of Veterans Affairs Veteran Health Administration NETWORK CONTRACTING OFFICE 5",
+      "corroboration": [
+        {
+          "source": "RFP 36C24520R0091",
+          "claim": "Department of Veterans Affairs Veteran Health Administration NETWORK CONTRACTING OFFICE 5",
+          "value": "Department of Veterans Affairs",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Perry Point",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "Perry Point VA Medical Center",
+      "facility_address": "Perry Point, MD 21902",
+      "source": "RFP 36C24520R0091",
+      "quote": "PERRY POINT VAMC PERRY POINT, MD 21902",
+      "corroboration": [
+        {
+          "source": "RFP 36C24520R0091",
+          "claim": "PERRY POINT VAMC PERRY POINT, MD 21902",
+          "agrees": true
+        },
+        {
+          "source": "SOW §1.1",
+          "claim": "VA Maryland HealthCare System – VISN5 – Perry Point",
+          "agrees": true
+        },
+        {
+          "source": "Design Narrative 528A5-18-302 p.2",
+          "claim": "Perry Point VA Medical Center Perry Point, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "512A5-20-302",
+      "source": "SOW §1.2",
+      "quote": "Project Number: NRM Project No. 512A5-20-302",
+      "corroboration": [
+        {
+          "source": "SOW §1.2",
+          "claim": "NRM Project No. 512A5-20-302",
+          "value": "512A5-20-302",
+          "agrees": true
+        },
+        {
+          "source": "Design Narrative 528A5-18-302 p.1",
+          "claim": "NRM Project No. 512A5-18-302",
+          "value": "512A5-18-302",
+          "agrees": false,
+          "note": "Earlier project number (2018 design phase/CO) vs. 2020 design contract. Two separate contract actions for same physical work."
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C24520R0091",
+      "source": "RFP letter",
+      "quote": "Request for Proposal, 36C24520R0091, Design Fuel Tank Project located at Perry Point VA Medical Center",
+      "corroboration": [
+        {
+          "source": "RFP letter",
+          "claim": "36C24520R0091",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "512A5-20-308",
+      "source": "SOW Supplement A",
+      "quote": "Task Order: 512A5-20-308 Replace Boiler Plant Fuel Tank",
+      "corroboration": [
+        {
+          "source": "SOW Supplement A",
+          "claim": "Task Order: 512A5-20-308",
+          "value": "512A5-20-308",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Project is infrastructure/utility replacement — no building square footage applicable. Tank farm site area less than 1 acre per Design Narrative."
+    },
+    "tank_capacity_total_gallons": {
+      "value": 105000,
+      "unit": "gallons",
+      "source": "computed",
+      "quote": null,
+      "notes": "3 × 35,000 gallon tanks = 105,000 gallons total; replaces single 150,000-gallon tank",
+      "corroboration": [
+        {
+          "source": "BOD p.1",
+          "claim": "Three pre-fabricated, double wall, 35,000 gallon tanks shall replace the existing tank.",
+          "agrees": true
+        },
+        {
+          "source": "SOW §1.3",
+          "claim": "Provide replacement with (3) 35,000 gallon aboveground storage tanks.",
+          "agrees": true
+        },
+        {
+          "source": "Design Narrative 528A5-18-302 p.1",
+          "claim": "(3) 35,000 gallon horizontal fuel tanks",
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "construction_budget": {
+      "value": 800000,
+      "currency": "USD",
+      "source": "SOW Supplement A",
+      "quote": "Task Order Construction Budget: $800,000",
+      "corroboration": [
+        {
+          "source": "SOW Supplement A",
+          "claim": "$800,000",
+          "value": 800000,
+          "agrees": true
+        },
+        {
+          "source": "RFP 36C24520R0091",
+          "claim": "ESTIMATED CONSTRUCTION PRICE DESIGN MAGNITUDE: $870,000",
+          "value": 870000,
+          "agrees": false
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "A/E design fee not stated in available documents; RFP solicits fee proposal; fee not in record"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP dated Sep 16, 2020; fee proposals due Sep 22, 2020; actual award date not in documents"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 120,
+        "source": "RFP 36C24520R0091",
+        "quote": "PERFORMANCE PERIOD: 120 calendar days from kickoff meeting"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction was a separate contract; not in available documents"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW states 'Anticipated Construction Duration: TBD'"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "civil_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "environmental_engineering",
+      "structural_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_utilities",
+      "civil_grading_drainage",
+      "civil_erosion_sediment",
+      "mechanical_industrial_process",
+      "electrical_power_distribution",
+      "electrical_grounding_lightning",
+      "plumbing_natural_gas",
+      "plumbing_specialty",
+      "environmental_nepa",
+      "environmental_remediation",
+      "structural_blast"
+    ],
+    "building_systems": [
+      "plumbing_natural_gas",
+      "plumbing_systems",
+      "site_systems",
+      "site_utilities",
+      "site_grading_drainage",
+      "site_stormwater_bmps",
+      "site_walls_fencing"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "existing_assessment",
+      "concrete_cast_in_place",
+      "masonry_cmu",
+      "plumbing_scope",
+      "electrical_power",
+      "earthwork_scope",
+      "exterior_improvements",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_sdvosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "federal_sdvosb",
+      "description": "Hartigan Bowman Foster & Associates is an SDVOSB; prime A/E contract award under VA SDVOSB set-aside procurement. Firm required to be VERIFIED by CVE and VISIBLE on VetBiz prior to contract award.",
+      "proposed_pct": null,
+      "final_pct": null,
+      "source": "BOD footer + RFP 36C24520R0091",
+      "quote": "HARTIGAN BOWMAN FOSTER WWW.HBFA-ENG.COM SDVOSB COMPANY",
+      "flag_for_human_review": true,
+      "notes": "certification_scheme.yaml does not yet contain federal_sdvosb; va_swam is only entry. Flagging for vocab gap."
+    }
+  ],
+  "tenant_freeform_tags": [
+    "perry_point_vamc",
+    "maryland",
+    "fuel_tank",
+    "boiler_plant",
+    "sdvosb",
+    "visn5",
+    "environmental_compliance",
+    "blast_mitigation",
+    "psrdm"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Project is site infrastructure (fuel tank farm); no building GSF applicable"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable to tank farm infrastructure project"
+      },
+      "mep_system_inventory": {
+        "fuel_piping": [
+          "3 × 35,000-gallon aboveground double-wall horizontal fuel storage tanks",
+          "New fuel fill piping (double-wall ASTM 53 steel with insulation and aluminum jacket)",
+          "New fuel supply and return lines to 4 boilers",
+          "Existing fuel oil pumping system and tank fill pumping system to remain",
+          "Permanent fuel polishing system",
+          "Automatic tank gauge / leak detection system (MDE-approved NWGLDE method)",
+          "Fuel water separator",
+          "Tank flow meters with remote readout to boiler plant control room",
+          "Cathodic protection and tank grounding"
+        ],
+        "civil_structural": [
+          "Reinforced concrete containment pad (110% of one 35K-gallon tank + 7-day 25-year storm volume)",
+          "CMU blast mitigation screen walls (12-inch masonry, north and west sides)",
+          "Demolition of existing 150K-gallon single-wall tank and earthen containment berm",
+          "Site retention/containment wall"
+        ],
+        "electrical": [
+          "New site lighting (relocated existing underground lighting circuit)",
+          "Tank grounding"
+        ],
+        "environmental": [
+          "SWPPP / erosion control plan",
+          "Industrial hygiene services for soil contamination assessment",
+          "Lead paint sampling and disposal plan",
+          "Oil/water separator for containment drainage"
+        ]
+      }
+    },
+    "notes": "No drawing PDFs present in intake folder. System inventory derived from BOD, SOW §1.3, and Design Narrative. Design Narrative (528A5-18-302) includes site diagrams embedded as image content (satellite view, standoff diagram) but document was processed as text-bearing PDF; images were not extracted. Drawing extraction status: deferred."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.construction_budget",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW Supplement A",
+          "value": 800000,
+          "quote": "Task Order Construction Budget: $800,000"
+        },
+        {
+          "source": "RFP 36C24520R0091",
+          "value": 870000,
+          "quote": "ESTIMATED CONSTRUCTION PRICE DESIGN MAGNITUDE: $870,000"
+        }
+      ],
+      "resolution_chosen": "SOW Supplement A",
+      "rationale": "SOW Supplement A directly states the Task Order Construction Budget as $800,000. The RFP uses the phrase 'Estimated Construction Price Design Magnitude' which is a VA category/band (a design magnitude range indicator) rather than a precise budget figure. The $870,000 figure in the RFP may reflect a slightly different estimate timeframe or may include design contingency. SOW is the more operationally precise figure."
+    },
+    {
+      "field_path": "facts.project_number_client",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW §1.2",
+          "value": "512A5-20-302",
+          "quote": "Project Number: NRM Project No. 512A5-20-302"
+        },
+        {
+          "source": "Design Narrative 528A5-18-302",
+          "value": "512A5-18-302",
+          "quote": "NRM Project No. 512A5-18-302 Construct Central Emergency Power Distribution – Design Fuel Tank Replacement-Design Change Order #1"
+        }
+      ],
+      "resolution_chosen": "SOW §1.2 (512A5-20-302)",
+      "rationale": "512A5-18-302 is an earlier (2018) project number associated with an initial design phase / change order. The 2020 design contract (SOW) was issued as a new NRM project 512A5-20-302. Both numbers refer to design work for the same physical fuel tank replacement, but 512A5-20-302 is the primary contract governing the A/E services documented in the SOW."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md"
+    }
+  }
+}

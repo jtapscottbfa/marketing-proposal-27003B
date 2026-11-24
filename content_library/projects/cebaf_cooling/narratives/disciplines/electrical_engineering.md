@@ -1,0 +1,7 @@
+Electrical engineering scope for the CEBAF Center F-Wing supplemental cooling project encompassed power distribution design for the two new split-system condensing units serving Rooms F109 and F110 at Jefferson Lab, Newport News, Virginia.
+
+The electrical design provides power to both new outdoor air-cooled condensing units (ACC-3 and ACC-4) from the existing 225A, 208Y/120V panelboard RP1G. Two new 2-pole circuit breakers were added to available positions in the existing panelboard — a 15A breaker (position 30) for one unit and a 12A breaker (position 28) for the other — each served by 2-#12 THWN copper conductors with a #12 ground in 3/4-inch conduit. The panelboard schedule was updated before and after to document the new circuit additions.
+
+Two new 30A, 2-pole, non-fused NEMA 4X disconnect switches are provided outdoors at each condensing unit location, suitable for the exterior environment. Conduit routing from the interior panelboard to the exterior units transitions from 3/4-inch EMT (interior) to LFMC at the exterior wall penetration, using a plastic-waterproof-cement-sealed conduit sleeve through the exterior wall per the design detail.
+
+Electrical drawings include a conduit/sleeve exterior wall penetration detail, one-line diagram showing the existing panelboard and new circuit additions, the updated panelboard schedule, and a floor plan showing new work in Rooms F109 and F110 and the conduit routing to exterior units — covering two sheets of the eight-sheet construction document set.

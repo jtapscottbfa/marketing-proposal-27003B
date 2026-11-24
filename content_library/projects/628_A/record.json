@@ -1,0 +1,463 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": "22-071",
+    "status": "present_with_value",
+    "source": "Mechanical Equipment Log cover sheet",
+    "quote": "BFA Project #22-071"
+  },
+  "project_slug": "628_A",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/628_A/!Invitation to Bid Letter_6-28ATitle2.pdf",
+      "type": "correspondence",
+      "sha256": "6d8c3f5048f802b4a02172c0032fa55c5c019b1a03fabe71e18c8bbfb809a730",
+      "included": true,
+      "notes": "Invitation to Bid letter ITB MP-11042022-6-28ATitle2, issued by Boeing Aerospace Operations, dated 11/9/2022"
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/628_A/Exhibit B-Ref1- SOW_6-28A Title II Services.pdf",
+      "type": "sow",
+      "sha256": "9ae93c7701cf15d812ed7c9e1013deadf83304313a891079e1c8197aa08d774c",
+      "included": true,
+      "notes": "Boeing Aerospace Operations SOW Reference Number 23, dated 01 Nov 2022, Rev 0. Primary scope document."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/628_A/23-03-01.Mechanical.Equipment.Log.pdf",
+      "type": "submittal",
+      "sha256": "97d9a2a58b3cf4d115321801c6a036e67de969448892ad163d28f99a112e8359",
+      "included": true,
+      "notes": "BFA Mechanical Equipment Change Log, Pre-Final Submittal, March 01 2023. Documents updated mechanical equipment selections during Title II services."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/hpdta/628_A/Exhibit A - X33677_Request for Proposal (RFP)_6-28ATitle2.doc",
+      "type": "unknown",
+      "sha256": "2670e1fbb5b0722c74d043b722586a2e69c99fca660c03902564ce9f0df28d69",
+      "included": false,
+      "flag_for_human_review": true,
+      "notes": "Legacy binary .doc format; pandoc extraction failed. File could not be read. Classified as RFP exhibit per filename; contents unknown."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No BOD, no drawings, no spec book present in intake folder. SOW + ITB cover letter + one submittal (mech equipment log) + one unreadable RFP .doc. Meaningful extraction possible from SOW; contract value not stated."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 6-28A Title II Services",
+      "source": "SOW §1",
+      "quote": "6-28A Title II Services",
+      "corroboration": [
+        {
+          "source": "SOW §1",
+          "claim": "6-28A Title II Services",
+          "value": "Building 6-28A Title II Services",
+          "agrees": true
+        },
+        {
+          "source": "ITB cover letter",
+          "claim": "ITB MP-11042022-6-28ATitle2",
+          "value": "Building 6-28A Title II Services",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical Equipment Log cover",
+          "claim": "BUILDING 6-28A TITLE II SERVICES",
+          "value": "Building 6-28A Title II Services",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Boeing Aerospace Operations (BAO)",
+      "source": "SOW §1 / ITB cover letter",
+      "quote": "The Boeing Aerospace Operations (BAO) hereby requests your submittal of a Firm Fixed Price (FFP) proposal",
+      "corroboration": [
+        {
+          "source": "ITB cover letter §1",
+          "claim": "Boeing Aerospace Operations (BAO)",
+          "value": "Boeing Aerospace Operations (BAO)",
+          "agrees": true
+        },
+        {
+          "source": "SOW §2",
+          "claim": "Boeing Aerospace Operations (BAO) customer United States Government (Government)",
+          "value": "Boeing Aerospace Operations (BAO)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Government / Department of Defense (Harvey Point Defense Testing Activity)",
+      "source": "SOW §2",
+      "quote": "The Boeing Aerospace Operations (BAO) customer United States Government (Government) requested this service to satisfy the requirement for a contractor to provide A&E Title II services on a completed design package for the construction of a new building 6-28 Annex (6-28A), the Dynamometer Building.",
+      "corroboration": [
+        {
+          "source": "SOW §2",
+          "claim": "United States Government (Government) ... All work will take place on a Department of Defense facility, Harvey Point Defense Testing Activity (HPDTA/Base).",
+          "value": "United States Government / DoD / HPDTA",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.1",
+          "claim": "work shall be performed at 2835 Harvey Point Road, Hertford, North Carolina",
+          "value": "HPDTA",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Hertford",
+      "state": "NC",
+      "country": "US",
+      "facility_name": "Harvey Point Defense Testing Activity (HPDTA)",
+      "facility_address": "2835 Harvey Point Road, Hertford, North Carolina 27944",
+      "source": "SOW §3.1",
+      "quote": "The work shall be performed at 2835 Harvey Point Road, Hertford, North Carolina, 27944",
+      "corroboration": [
+        {
+          "source": "SOW §3.1",
+          "claim": "2835 Harvey Point Road, Hertford, North Carolina, 27944",
+          "agrees": true
+        },
+        {
+          "source": "Mechanical Equipment Log cover",
+          "claim": "HPDTA, Hertford, NC",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-071",
+      "source": "Mechanical Equipment Log cover sheet",
+      "quote": "BFA Project #22-071"
+    },
+    "project_number_client": {
+      "value": "X33677",
+      "source": "ITB cover letter, Exhibit A reference",
+      "quote": "Exhibit A – X33677 Request for Proposal",
+      "corroboration": [
+        {
+          "source": "ITB cover letter enclosures",
+          "claim": "X33677 Request for Proposal",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "ITB MP-11042022-6-28ATitle2",
+      "source": "ITB cover letter header",
+      "quote": "ITB MP-11042022-6-28ATitle2",
+      "notes": "Solicitation/ITB reference number. Executed contract number not available in source documents."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 10000,
+      "unit": "gsf",
+      "source": "SOW §2",
+      "quote": "steel pre-fabricated type building averaging around 10,000 square feet",
+      "corroboration": [
+        {
+          "source": "SOW §2",
+          "claim": "approximately 10,000 square feet",
+          "value": 10000,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in available documents."
+    },
+    "project_description": {
+      "value": "Title II A&E services for the construction of new Building 6-28A (Dynamometer Building), a ~10,000 SF steel pre-fabricated building at Harvey Point Defense Testing Activity (HPDTA), Hertford, NC. The original project design was completed in May 2017; the engineering firm of record subsequently ceased operations. BFA was engaged to review and update the existing design package, issue stamped/certified AFC drawings and specifications, and provide full construction-phase Title II services including submittal review, periodic site inspections, and building commissioning oversight.",
+      "source": "SOW §§1–2, 5",
+      "quote": "The purpose of this project is to provide professional Architectural and Engineering (A&E) services (Title II Services) for the construction of a new building."
+    },
+    "bfa_scope_description": {
+      "value": "Prime A&E consultant for Title II services: (1) review and update existing 2017 design package incorporating government-directed changes across civil, architectural, structural, mechanical, electrical, life safety, fire safety, IT/communications, and intrusion alarm systems; (2) issue 100% design package and AFC stamped/certified drawings; (3) pre-bid clarifications; (4) post-award submittal review and approval; (5) periodic discipline-specific site inspections; (6) building commissioning oversight; (7) as-built drawing preparation. BFA served as engineer of record replacing the defunct original design firm.",
+      "source": "SOW §5",
+      "quote": "The selected A&E firm shall perform as the engineer of record and issue drawings, specifications and other documents for a complete design package allowing the Government to utilize for a competitive construction solicitation."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "FFP amount not stated in available documents. ITB solicited a FFP proposal but awarded fee not recorded."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "ITB bids due 2022-11-28; award date not stated. Equipment log dated 2023-03-01 confirms award occurred."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 365,
+        "source": "SOW §3.3",
+        "quote": "The Period of Performance (POP) including submittals, procurement, delivery, mobilization, new construction, testing, commissioning, and closeout shall be three hundred sixty-five (365) calendar days after award of contract and notice to proceed.",
+        "notes": "This is the overall project POP encompassing Title II services through construction completion. Design update sub-phase: 90 calendar days from NTP per SOW §3.3.1."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract held by a separate GC under BAO. BFA scope is Title II services only."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_maintenance"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "civil_engineering",
+      "architecture",
+      "telecommunications_engineering",
+      "security_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_natural_gas",
+      "structural_existing_assessment",
+      "civil_site_design",
+      "civil_utilities",
+      "telecom_structured_cabling",
+      "security_intrusion"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_doas",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_natural_gas",
+      "telecom_structured_cabling",
+      "security_intrusion"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "plumbing_scope",
+      "communications_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "commercial_subconsultant"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "low_bid"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hpdta",
+    "harvey_point",
+    "title_ii_services",
+    "dynamometer_building",
+    "north_carolina",
+    "dod_facility",
+    "new_construction",
+    "design_update",
+    "engineer_of_record",
+    "pre_fabricated_building",
+    "boeing_aerospace_operations"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Melissa L. Pauli",
+      "role_on_project": "Boeing Procurement Agent (client-side, not BFA)",
+      "note": "Boeing POC, not BFA personnel"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 10000,
+        "unit": "gsf",
+        "source": "SOW §2",
+        "quote": "steel pre-fabricated type building averaging around 10,000 square feet",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "SOW §2 (inferred from 'pre-fabricated type building' of ~10,000 SF with no multi-story reference)",
+        "quote": null,
+        "sheets": [],
+        "notes": "Inferred single-story; no explicit floor count stated. SOW describes a steel pre-fabricated building comparable to an adjacent building 6-28 of similar size with no mention of multiple floors."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "DOAS-1: Dedicated Outside Air System (Addison PROH-720-E8XL per equipment log; SOW lists Valent VPRE 212-18J-30e-C-5DE — see conflict flag)",
+          "AC-1, AC-2: BARD W150APB18EN1XX2 packaged terminal units (per equipment log update)",
+          "AC-3, AC-4, AC-5: BARD W60ACDB15ZNXXXV packaged terminal units (per equipment log update)",
+          "AC-6: BARD W12AB-A0ZENXXXJ packaged terminal unit (per equipment log update)",
+          "UH-1: Dayton 1.8kW electric ceiling unit heater",
+          "High pressure exhaust blower: Dayton 5HP 3500 CFM 500-degree exhaust fan (dynamometer fume extraction)",
+          "Ingersoll Rand Rotary Screw Compressor 15HP RS11i (compressed air)"
+        ],
+        "electrical": [
+          "800A main distribution panel (MDP) — increased from original design per SOW §5.2.6.7",
+          "2x 45 KVA dry-type transformers 480V/208V",
+          "LED bay lights (33 ea, type A, 30,000 lm), type B and D LED fixtures",
+          "Emergency lighting with inverter",
+          "Medium voltage service from existing utility pole via concrete-encased duct bank to building 6-28A",
+          "Rotary SPO12 electric car lift (12,000 lb capacity)"
+        ],
+        "plumbing": [
+          "Domestic water service",
+          "Sanitary waste — connection to lift station (existing lift station to be replaced/relocated per SOW §5.2.5.3)",
+          "Natural gas not explicitly mentioned; compressed air system present"
+        ],
+        "fire_protection": [
+          "Wet pipe fire sprinkler system (new building + review of existing building 6-28 system)",
+          "Intelligent addressable fire alarm: Honeywell NFS 320 Notifier panel",
+          "24 ceiling horn/strobe units, 14 CO detectors, 10 manual pull stations, 2 photoelectric smoke detectors, 2 duct smoke detectors",
+          "IT/Communications fiber optic infrastructure (48-strand single-mode fiber from building 6-23)"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "drawings.facts_derived.mep_system_inventory.hvac — DOAS unit model",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW §5.2.13",
+          "value": "Valent VPRE 212-18J-30e-C-5DE"
+        },
+        {
+          "source": "Mechanical Equipment Log (March 2023 Pre-Final Submittal)",
+          "value": "Addison PROH-720-E8XL"
+        }
+      ],
+      "resolution_chosen": "Mechanical Equipment Log (Addison PROH-720-E8XL)",
+      "rationale": "The Mechanical Equipment Log is a March 2023 submittal dated after the November 2022 SOW. It is explicitly titled a 'Change Log' documenting equipment selection changes. The Addison unit replaces the originally specified Valent unit. Minor severity because both sources are internally consistent with a documented substitution process during design development."
+    },
+    {
+      "field_path": "taxonomy.award_type",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "ITB cover letter §9",
+          "value": "lowest responsible bidder (low bid)"
+        },
+        {
+          "source": "ITB cover letter §7",
+          "value": "full and open competition per FAR Part 6"
+        }
+      ],
+      "resolution_chosen": "low_bid",
+      "rationale": "ITB §9 states award normally to 'lowest responsible bidders complying with requirements.' FAR Part 6 governs the competition basis (full and open), while award basis is lowest responsible bidder. Both claims are consistent — full and open competition with low-bid award basis."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

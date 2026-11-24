@@ -1,0 +1,9 @@
+# Building 310 Chiller Replacement — NAS Oceana Dam Neck Annex
+
+This project involved the design-build replacement of two nominal 40-ton air-cooled chillers serving the Paraloft addition of Building 310 at Naval Air Station Oceana, Dam Neck Annex, Virginia Beach, Virginia. Both existing Trane chillers had failed beyond repair due to prolonged exposure to the salt-laden coastal environment. The project was executed for NAVFAC Mid-Atlantic under a design-build contract and required continuous coordination with the building's active DEVGRU tenants.
+
+Scope included demolition of the two inoperable chillers and their associated chilled water piping, housekeeping pads, and heat trace systems; installation of two new ARI-certified nominal 40-ton scroll air-cooled chillers with epoxy-coated condenser coils, BACnet interfaces, and integral disconnects; replacement of all associated exterior chilled water piping in Type L copper with electric heat trace, isolation and bypass valving, and emergency temporary-chiller connection provisions; and integration of the new chillers into the facility's existing Johnson Controls Metasys DDC system. The Paraloft addition remained occupied throughout construction, supported initially by a temporary rental chiller coordinated through Naval Station Oceana Facilities Maintenance & Shops.
+
+The project carried elevated security complexity—Building 310 is a Controlled Access Area (CAA) requiring formal DEVGRU escort coordination every week—along with stringent environmental requirements for draining and containerizing system water prior to discharge.
+
+BFA served as the Electrical Designer of Record (electrical DOR) under subconsultant agreement to the design-build prime contractor, producing four-sheet electrical For-Sale Submission (FSS) drawings under BFA project number 23-053, signed and sealed June 10, 2024, by Felix A. Pessig, PE (Virginia PE License No. 048025).

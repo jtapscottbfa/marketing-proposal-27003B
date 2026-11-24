@@ -1,0 +1,590 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nmcp_er_waiting_milk_ent",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nmcp_er_waiting_milk_ent/Basis of Design All Trades.docx",
+      "type": "bod",
+      "sha256": "9d84d5130dff5eddddeabf853b6b9313d95313d4663606256238e75107e5f04f",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nmcp_er_waiting_milk_ent/RFP_MRR-20-P-0000 008658 Replace ER Waiting Room HVAC Portsmouth.pdf",
+      "type": "sow",
+      "sha256": "d0e176d36deea76faa90f3f0da9cffe99db9d10c6e42038d468a68447ca8a7ee",
+      "included": true
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/nmcp_er_waiting_milk_ent/RFP Amendment 0001_MRR-20-P-0000 008658 Replace ER Waiting Room HVAC Portsmouth.pdf",
+      "type": "sow",
+      "sha256": "48ae52ef41705f252713720288d6642a4fdf3c8bb5c95a9bed404d2fc4f19b2d",
+      "included": true,
+      "notes": "RFP Amendment 0001 incorporating options (SOW Section 2.3.6); issued 3 September 2020"
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set included in intake folder. No executed contract or award documents present. RFP (pre-award) documents provide design intent and scope."
+  },
+  "facts": {
+    "project_name": {
+      "value": "FY 20 ER Waiting Room HVAC Replacement & Interior Renewal, Building 2, Naval Medical Center Portsmouth",
+      "source": "RFP SOW §1.1",
+      "quote": "FY 20 ER Waiting Room HVAC and Interior Renewal, Naval Medical Center Portsmouth, Building 2, Portsmouth, VA.",
+      "corroboration": [
+        {
+          "source": "RFP SOW §1.1",
+          "claim": "FY 20 ER Waiting Room HVAC and Interior Renewal, Naval Medical Center Portsmouth, Building 2, Portsmouth, VA.",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover letter subject line",
+          "claim": "Medical Repair/ Renewal Project, ER WAITING ROOM HVAC REPLACMENT & INTERIOR RENEWAL Building #2, NAVAL MEDICAL CENTER PORTSMOUTH, PORTSMOUTH, VA",
+          "agrees": true
+        },
+        {
+          "source": "BOD title",
+          "claim": "Medical repair/renewal project, ER Waiting Room HVAC, Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Medical Center Portsmouth",
+      "source": "RFP SOW §2.2.1",
+      "quote": "Naval Medical Center Portsmouth, located at 620 John Paul Jones Circle in Portsmouth, Virginia, is a Major Medical Center and hospital",
+      "corroboration": [
+        {
+          "source": "RFP SOW §2.2.1",
+          "claim": "Naval Medical Center Portsmouth",
+          "agrees": true
+        },
+        {
+          "source": "Amendment SOW §2.2.1",
+          "claim": "Naval Medical Center Portsmouth",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Army Engineering and Support Center, Huntsville (CEHNC) / Naval Medical Center Portsmouth",
+      "source": "RFP cover letter",
+      "quote": "DEPARTMENT OF THE ARMY ENGINEERING AND SUPPORT CENTER, HUNTSVILLE",
+      "notes": "CEHNC is the contracting authority and technical manager; NMCP is the facility owner/using agency. This is a federal triangulation: DoD medical facility owned by Navy, administered via USACE Huntsville MRR program."
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "620 John Paul Jones Circle, Portsmouth, VA 23708",
+      "source": "RFP SOW §2.2.1",
+      "quote": "Naval Medical Center Portsmouth, located at 620 John Paul Jones Circle in Portsmouth, Virginia",
+      "corroboration": [
+        {
+          "source": "RFP SOW §2.2.1",
+          "claim": "620 John Paul Jones Circle in Portsmouth, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "RFP submittals table",
+          "claim": "620 John Paul Jones Circle, BLDG 273, Portsmouth, VA 23708",
+          "agrees": true
+        },
+        {
+          "source": "Amendment SOW §2.2.1",
+          "claim": "620 John Paul Jones Circle in Portsmouth, Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "P2 # 492178",
+      "source": "RFP SOW cover block",
+      "quote": "P2 # 492178",
+      "corroboration": [
+        {
+          "source": "RFP SOW cover block",
+          "claim": "P2 # 492178",
+          "agrees": true
+        },
+        {
+          "source": "Amendment SOW cover block",
+          "claim": "P2 # 492178",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "W912DY-1x-D-00__ (MATOC base contract; task order number TBD at award)",
+      "source": "RFP SOW cover block",
+      "quote": "CONTRACT W912DY-1x-D-00__",
+      "notes": "The RFP was issued to four MATOC holders: W912DY-17-D-0023, W912DY-17-D-0024, W912DY-17-D-0029, W912DY-18-D-0002. The actual awarded task order number was not in source documents."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP was pre-award; executed task order number not found in source documents."
+    },
+    "solicitation_number": {
+      "value": "MRR-20-P-0000 008658",
+      "source": "RFP cover letter",
+      "quote": "RFP # MRR-2020-008658"
+    },
+    "square_footage": {
+      "value": 1863,
+      "unit": "gsf",
+      "description": "ER waiting room primary scope area",
+      "source": "RFP SOW §2.2.2",
+      "quote": "the ER waiting room is approximately 1,863 square feet",
+      "corroboration": [
+        {
+          "source": "RFP SOW §2.2.2",
+          "claim": "approximately 1,863 square feet",
+          "value": 1863,
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "the ER waiting room is approximately 1,863 square feet",
+          "value": 1863,
+          "agrees": true
+        },
+        {
+          "source": "Amendment SOW §2.2.2",
+          "claim": "the ER waiting room is approximately 1,863 square feet",
+          "value": 1863,
+          "agrees": true
+        },
+        {
+          "source": "RFP SOW §2.3.2.1 Floors",
+          "claim": "Approximately 1,863 SF",
+          "value": 1863,
+          "agrees": true
+        }
+      ]
+    },
+    "building_total_square_footage": {
+      "value": 1062644,
+      "unit": "gsf",
+      "description": "Total Building 2 gross square footage per as-built; not BFA scope",
+      "source": "RFP SOW §2.2.2",
+      "quote": "Building 2 construction was completed in 1998 consisting of 1,062,644 square feet (SF) on five levels",
+      "corroboration": [
+        {
+          "source": "RFP SOW §2.2.2",
+          "claim": "1,062,644 square feet (SF) on five levels",
+          "value": 1062644,
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "1,062,644 square feet (SF) on five levels",
+          "value": 1062644,
+          "agrees": true
+        },
+        {
+          "source": "Amendment SOW §2.2.2",
+          "claim": "1,062,644 square feet (SF) on five levels",
+          "value": 1062644,
+          "agrees": true
+        }
+      ]
+    },
+    "er_department_total_square_footage": {
+      "value": 29000,
+      "unit": "gsf",
+      "description": "Entire Emergency Department served by the AHU being replaced; not all in renovation scope",
+      "source": "RFP SOW §2.2.2",
+      "quote": "The entire Emergency Department (ER) is approximately 29,000 square feet",
+      "corroboration": [
+        {
+          "source": "RFP SOW §2.2.2",
+          "claim": "approximately 29,000 square feet",
+          "value": 29000,
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "approximately 29,000 square feet",
+          "value": 29000,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated. RFP discloses magnitude range only."
+    },
+    "disclosed_magnitude": {
+      "value": "between $500,000 and $1,000,000",
+      "source": "RFP cover letter",
+      "quote": "The disclosure of magnitude for this project is between $500,000 and $1,000,000.",
+      "corroboration": [
+        {
+          "source": "RFP cover letter",
+          "claim": "between $500,000 and $1,000,000",
+          "agrees": true
+        }
+      ]
+    },
+    "liquidated_damages_rate": {
+      "value": 900,
+      "unit": "USD/calendar day",
+      "source": "RFP SOW §2.9",
+      "quote": "Liquidated damages will be charged at a rate of $900.00 per calendar day of contractor delay until the work is accepted."
+    },
+    "rfp_date": {
+      "value": "2020-08-18",
+      "source": "RFP cover letter",
+      "quote": "18 August 2020"
+    },
+    "proposal_due_date": {
+      "value": "2020-09-16",
+      "source": "RFP Proposal Submission Instructions §1",
+      "quote": "submit a firm-fixed price proposal for the work described in the attached Scope of Work ... not later than Wednesday, September 16, 2020; Time 11:59 P.M. Central Daylight Time (CDT)"
+    },
+    "pre_proposal_site_visit_date": {
+      "value": "2020-08-25",
+      "source": "RFP cover letter §4",
+      "quote": "Pre-proposal Site Visit will be conducted Tuesday, 25 August, 2020, 09:00 hrs. EST at Naval Medical Center Portsmouth Bldg. 273"
+    },
+    "amendment_date": {
+      "value": "2020-09-03",
+      "source": "Amendment 0001 cover letter",
+      "quote": "SEPTEMBER 3, 2020"
+    },
+    "floor_count": {
+      "value": 5,
+      "description": "Building 2 total levels; primary scope area is within Building 2",
+      "source": "RFP SOW §2.2.2",
+      "quote": "Building 2 construction was completed in 1998 consisting of 1,062,644 square feet (SF) on five levels"
+    },
+    "building_year_built": {
+      "value": 1998,
+      "source": "RFP SOW §2.2.2",
+      "quote": "Building 2 construction was completed in 1998"
+    }
+  },
+  "phases": {
+    "design": {
+      "notes": "BFA authored the Basis of Design document for the project, serving as the A-E designer. The MRR program requires the construction contractor (MATOC holder) to also develop a 'Work Plan' (construction documents). BFA's role was as the Government's A-E for the Basis of Design / design criteria; the construction contractor then prepares final construction documents.",
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA's design fee not found in source documents. RFP does not disclose A-E contract value."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": []
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP discloses magnitude range $500K-$1M; actual awarded task order value not in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Contract duration not specified in source documents; schedule milestones listed as TBD."
+      },
+      "contract_type": {
+        "value": "firm-fixed-price task order",
+        "source": "RFP Attachment 2 §II Price Factor",
+        "quote": "The Offeror shall provide a firm-fixed- price proposal."
+      },
+      "change_orders": []
+    }
+  },
+  "scope_description": {
+    "primary_scope": {
+      "value": "Replace 20-year-old Buffalo Forge air handling unit (AHU) serving entire Emergency Department (29,000 SF); renew ER waiting room interior (1,863 SF) including VCT flooring, paint, LED lighting, 2x2 ACT ceiling with insulation, three new interior doors, and new seating furniture. New AHU to serve entire ER with VAV fan operation, economizer controls, hydronic heating/cooling coils, UV lighting, DDC controls integrated to BACnet BAS. Replace hydronic piping, ductwork, and air distribution system for AHU. TAB and commissioning required.",
+      "source": "RFP SOW §2.1 and BOD General section",
+      "quote": "The intent of this project is to repair by replacement the AHU servicing the entire Emergency Department (ER), and renew the interior ER waiting room, to include the space's architectural finishes features, along with installing three new interior doors inside ER department within building 2 of Naval Medical Center Portsmouth."
+    },
+    "options_not_exercised": [
+      {
+        "option": "Option #1",
+        "description": "Repair Milk Technology Room (Supply Storage Room #460901): new partition creating LDR Supply Room, sheet rubber flooring, ACT ceiling, plumbing (2 sinks), MEP, sprinkler layout modification",
+        "source": "Amendment SOW §2.3.6.1",
+        "quote": "Option #1 (not exercised) Building 2 Repair Milk Technology Room"
+      },
+      {
+        "option": "Option #2",
+        "description": "GME Building 3 space rejuvenation: carpet and VCT flooring replacement (~1,385 sq yards carpet, 167 sq yards VCT), drywall refinish/paint (~22,548 SF), cove base replacement (2,503 LF), 6 phases after hours",
+        "source": "Amendment SOW §2.3.6.2",
+        "quote": "Option #2 (not exercised) GME building 3 space rejuvenation and refresh flooring"
+      },
+      {
+        "option": "Option #3",
+        "description": "Refresh ENT Clinic Patient Rooms (Bldg 2, 2nd deck, ~9,733 SF): patch/paint, sink casework repairs, wall protection (Acrovyn), ceiling tile/grid replacement, 25 doors",
+        "source": "Amendment SOW §2.3.6.3",
+        "quote": "Option #3 (not exercised) Refresh Ear Nose and Throat Clinic Patient Rooms"
+      }
+    ]
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod",
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_military_medical"
+    ],
+    "program_subtype": [
+      "healthcare_va_medical"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "architecture",
+      "commissioning"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "commissioning_new_construction"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_ceiling"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "finishes_scope",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "specialties_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_matoc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal",
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "task_order_competition"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "NMCP is a Navy facility (federal_dod); USACE Huntsville is contracting authority. Also tagged federal_va as NMCP serves veterans, though technically Navy/DoD — primary tag is federal_dod.",
+    "program_type": "healthcare_military_medical is the best fit for NMCP (DoD MTF). No perfect vocab entry exists for 'Navy Medical Center' vs. 'VA Medical Center' — this is a DoD military treatment facility, not a VA facility.",
+    "bfa_role": "BFA authored the Basis of Design — indicating they served as the A-E design firm. The RFP is a construction RFP; BFA's A-E role was pre-procurement (design criteria / BOD). Prime_consultant used as best fit. However, it is possible BFA served under NAVFAC or CEHNC as a subconsultant for the BOD work — this is a vocab/spec gap flagged in retro.",
+    "delivery_method": "This MRR program uses a hybrid model: BFA does the BOD/design criteria, then a MATOC construction contractor provides a 'Work Plan' (essentially design-build of the construction documents) under a firm-fixed-price task order. Closest is design_bid_build (owner's A-E did design, construction contractor builds). MRR programs don't have a perfect delivery_method vocab entry.",
+    "award_type": "task_order_competition — best value among 4 MATOC holders. Technical approach rated equal to price.",
+    "procurement_type": "Federal. Competition limited to MATOC restricted pool (4 firms) — this is a 'full and open' competition within the MATOC holders; not a small business set-aside per the documents."
+  },
+  "mep_system_inventory": {
+    "hvac": [
+      "New Buffalo Forge-equivalent AHU replacing 20-year-old unit serving entire ER (29,000 SF) — VAV fan operation, economizer, hydronic heating/cooling coils, UV lighting, double-wall internally insulated",
+      "Variable air volume terminal units (new and rebalanced existing VAVs) with hydronic reheat throughout ER",
+      "Complete ductwork replacement in mechanical room; replace louvers and plenum boxes",
+      "Replace hydronic distribution piping, valves, strainers, gauges, isolation valves to AHU",
+      "ER waiting room: 12 air changes per hour, negative pressurization, 100% exhaust (no return) per UFC 4-510-01",
+      "DDC controls replacement (controllers, valves, dampers, sensors) integrated to existing Metasys/BACnet BAS",
+      "VFDs on fan motors; NEMA premium efficient motors",
+      "TAB (AABC/NEBB/TABB certified firm) and full commissioning by independent CxA",
+      "Milk Room option (not exercised): reuse existing VAV box, add diffuser and return grille"
+    ],
+    "electrical": [
+      "AHU electrical service shutdown and replacement; temporary AHU power via motor control center",
+      "ER waiting room: demolition and replacement of lighting fixtures (2x4 LED recessed, LED downlights, LED exit signs, 2x4 LED with battery pack)",
+      "Milk Room (option not exercised): new LED 2x4 recessed fixtures, new receptacles and data outlets, salvage motion sensor and card reader",
+      "EMT conduit, copper THHN/THWN conductors minimum #12 AWG power / #14 AWG control",
+      "Voltage drop: feeders ≤2%, branch circuits ≤3%, overall ≤5%",
+      "Lighting levels: Waiting Room 30 FC; Offices/Staff 50 FC per IES/UFC 3-530-01"
+    ],
+    "plumbing": [
+      "Milk Room option (not exercised only): two new sinks connected to existing water piping"
+    ],
+    "fire_protection": [
+      "Existing wet pipe sprinkler system (Simplex 4100ES fire alarm; Aurora 481BF fire pump) to remain; temporary protection and reinstatement during ceiling demo",
+      "Sprinkler layout reinstatement matching existing manufacturer/type/finish/temperature rating",
+      "Milk Room option: sprinkler layout modification per NFPA 13 (Light Hazard for Milk Room, Ordinary Hazard for LDR Supply Room)",
+      "Fire alarm smoke detectors and notification appliances: temporary removal and reinstallation at existing locations",
+      "LDR Supply Room (Milk Room option): 1-hr fire-rated smoke barrier, 45-minute self-closing door per LSC 18.3.2.1.2"
+    ]
+  },
+  "architectural_scope": {
+    "er_waiting_room": {
+      "demolition": "Remove existing ceramic tile and carpet flooring, ceiling tile/grid/insulation (6\" batt fiberglass above), three existing doors (one 3' single leaf, two 9' sliding automatic), all wall-mounted items",
+      "new_work": "VCT resilient flooring (approx. 1,863 SF) with 4\" resilient base; 5/8\" Type X gyp board on 20-ga steel studs 16\" OC new partitions; paint (prime + 2 coats); 2x2 ACT ceiling grid with new insulation; one 4070 wood interior door (triage); two trackless automatic aluminum sliding glass doors (corridor/ER waiting); new seating furniture"
+    },
+    "milk_technology_room_option_1_not_exercised": "Sheet rubber flooring with integral 4\" cove base; 2x2 ACT ceiling; new wall partition creating LDR Supply Room; 3070 wood door with HM frame; sliding glass window with SS countertop; copper-infused solid surface countertops, upper cabinets, SS shelves",
+    "gme_building3_option_2_not_exercised": "VCT and carpet tile replacement (~1,385 sq yd carpet, 167 sq yd VCT); drywall prep/prime/paint (~22,548 SF); 2,503 LF cove base; 6 phases after hours",
+    "ent_clinic_option_3_not_exercised": "Patch/paint (~9,333 SF drywall), wall protection (Acrovyn), 25 doors refinished, sink/casework repair, 2,850 SF ACT ceiling, 1,780 SF VCT, 1,250 LF resilient base; ~9,733 SF total"
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "tenant_freeform_tags": [
+    "nmcp",
+    "naval_medical_center_portsmouth",
+    "hampton_roads",
+    "ahu_replacement",
+    "mep_renovation",
+    "federal_medical",
+    "usace_huntsville_mrr",
+    "matoc_task_order",
+    "emergency_department",
+    "healthcare_renovation"
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 1863,
+        "unit": "gsf",
+        "description": "Primary ER waiting room renovation scope",
+        "source": "RFP SOW §2.2.2 and BOD General",
+        "quote": "the ER waiting room is approximately 1,863 square feet",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 5,
+        "description": "Building 2 total levels per as-built description",
+        "source": "RFP SOW §2.2.2",
+        "quote": "Building 2 construction was completed in 1998 consisting of 1,062,644 square feet (SF) on five levels",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "New AHU replacing 20-year-old Buffalo Forge unit, VAV fan operation, economizer, hydronic coils, UV lighting",
+          "12 ACH negative pressure ER waiting room per UFC 4-510-01 WRC02",
+          "VAV terminal units with hydronic reheat throughout ER",
+          "DDC/BACnet controls integrated to Metasys BAS"
+        ],
+        "electrical": [
+          "AHU electrical service replacement with temporary power via MCC",
+          "LED lighting replacement in ER waiting room and Milk Room (option)"
+        ],
+        "plumbing": [
+          "Two new sinks in Milk Room (option not exercised)"
+        ],
+        "fire_protection": [
+          "Existing wet pipe sprinkler retained/reinstated",
+          "Fire alarm (Simplex 4100ES) smoke detectors temporarily removed/reinstalled"
+        ]
+      }
+    },
+    "drawing_extraction_status": "not_applicable",
+    "notes": "No drawing set included in intake folder. Drawings referenced in RFP GFI section (6.2.8 As-Builts; Option 1 drawings A-1 through A-6 and M-1) but not provided. Drawing extraction not possible from available sources."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "taxonomy.client_type",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP cover letter",
+          "value": "Department of the Army / USACE Huntsville — contracting authority"
+        },
+        {
+          "source": "RFP SOW §2.2.1",
+          "value": "Naval Medical Center Portsmouth — using agency / facility owner"
+        }
+      ],
+      "resolution_chosen": "federal_dod (primary) — Army/USACE is contracting authority, NMCP/Navy is using agency",
+      "rationale": "Standard DoD MRR program structure: USACE Huntsville is the construction contracting vehicle for military medical facilities across services. The client relationship is triangular: NMCP (Navy/DoD) is the facility owner; USACE (Army) is the program manager/contracting authority. Both are federal DoD."
+    },
+    {
+      "field_path": "taxonomy.bfa_role",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "BOD document — authored by BFA as A-E",
+          "value": "BFA appears to be the A-E design firm providing the Basis of Design for the project"
+        },
+        {
+          "source": "RFP structure — no BFA name appears in RFP documents",
+          "value": "BFA's name does not appear in RFP or Amendment; only MATOC construction contractors are named"
+        }
+      ],
+      "resolution_chosen": "prime_consultant",
+      "rationale": "The BOD is a multi-discipline engineering document consistent with BFA's MEP engineering practice. BFA most likely served as the A-E prime consultant to CEHNC/NMCP for the design criteria/BOD phase. However, BFA's contract relationship (prime to USACE vs. subconsultant to another A-E prime) cannot be confirmed from these documents alone. Flagged for human review."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "commissioning": "narratives/disciplines/commissioning.md"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# Architecture — Building 10 Room 9N104 Renovation
+
+BFA's architectural team led the design-build fit-out of a 211 SF wet laboratory room in NIH's Building 10 Clinical Center Complex. The architectural scope encompassed complete interior renovation within an active occupied hospital wing on the 9th floor.
+
+Key architectural deliverables included: a new 1-hour fire-rated door with half-light panel (42" wide, relocated to improve room layout); a new aluminum-framed thermally-broken insulated window per NIH Building 10 standards, specified to Kawneer AA900 Series fixed casement with 1" dual-seal IGU laminated inner pane meeting GSA Window Performance Condition 3B blast-resistance criteria; window blinds; and full VCT flooring replacement. Wall surfaces were prepared and painted; the ceiling was left open/exposed per NHLBI's program requirements.
+
+Fixed metal casework with 1"-thick black phenolic resin countertops and backsplashes was installed on three walls, designed with under-counter flammable storage cabinetry, adjustable-height workstation sections (29"–36" range for three users), and four rows of black phenolic wall-mounted shelving. Casework was fabricated by Mott Manufacturing (painted steel cabinets, SEFA 8 certified) with Durcon epoxy resin and Trespa Toplab phenolic resin counter and shelf surfaces. Acrylic splash guards were installed at plumbing and equipment interfaces.
+
+The architectural design navigated the demanding NIH-CCC regulatory environment, including The Joint Commission Environment of Care requirements, NIH Architectural Design Review Board coordination, Construction Risk Assessment compliance, and the NIH Division of the Fire Marshal as Authority Having Jurisdiction. The design was developed through three formal DTR submissions (65%, 95%, Final) with the Final Submittal package accepted April 7, 2021.

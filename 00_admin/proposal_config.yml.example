@@ -1,0 +1,220 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# proposal_config.yml — per-pursuit single source of truth
+#
+# Copy this file to proposal_config.yml (gitignored) and fill in real values.
+# Scripts and templates read from this file. Do NOT commit the live version.
+#
+# This file holds PER-PURSUIT data (RFP details, submission date, win
+# strategy, key personnel for THIS pursuit, etc.). Firm-level data that
+# is stable across pursuits (firm legal name, addresses, FEINs, principal
+# POCs, ownership classifications, AE-1A insurance/SWaM narratives, AE-3
+# QA narratives) lives in `~/.bfa/firm_profile.yml` per ARCH-11. See
+# `00_admin/firm_profile.yml.example` for that schema.
+#
+# new_proposal.sh auto-fills the `firm:` block below from
+# ~/.bfa/firm_profile.yml at scaffold time when a profile is present.
+# ══════════════════════════════════════════════════════════════════════════════
+
+# ── Opportunity ───────────────────────────────────────────────────────────────
+# Note: `agency_type` here uses a different enum than
+# `content_library/projects.csv.agency_type`. This one categorizes the
+# pursuit's RFP source for proposal-style purposes (state/local mixed,
+# higher-ed, both); projects.csv uses the more granular federal/state/
+# local/higher_ed/private split for past-performance categorization.
+opportunity:
+  rfp_title:        "PLACEHOLDER: Full RFP / Solicitation Title"
+  rfp_number:       "PLACEHOLDER: RFP-2025-XXXX"
+  issuing_agency:   "PLACEHOLDER: Agency / Institution Name"
+  agency_type:      "state_local"          # state_local | higher_ed | both
+  submission_date:  "PLACEHOLDER: YYYY-MM-DD"
+  submission_time:  "PLACEHOLDER: HH:MM TZ"
+  submission_method: "PLACEHOLDER: Email / Portal / Physical"
+  contract_type:    "PLACEHOLDER: Fixed-Price / T&M / IDIQ"
+  contract_value:   "PLACEHOLDER: $X,XXX,XXX"
+  period_of_performance: "PLACEHOLDER: X years (base + X option years)"
+
+# ── Our Firm ──────────────────────────────────────────────────────────────────
+# Firm-level metadata. The `name`, `short_name`, `address`, and `website`
+# fields are denormalized copies of `~/.bfa/firm_profile.yml`'s
+# `firm.{name,short_name,addr1+addr2,website}` — `new_proposal.sh`
+# pre-fills them at scaffold time. The publish pipeline (build_docx.sh,
+# combine_volumes.sh) reads from this block; the AE-form populators
+# read firm-level data from `firm_profile.yml` directly.
+#
+# `cage_code` and `duns_uei` are federal contractor identifiers that
+# may not apply to all firms; they live here rather than firm_profile.yml
+# until ARCH-11 grows to model federal-pursuit metadata.
+firm:
+  name:             "PLACEHOLDER: Your Firm Name"
+  short_name:       "PLACEHOLDER: Acronym"
+  address:          "PLACEHOLDER: Street, City, State ZIP"
+  website:          "PLACEHOLDER: https://yourfirm.com"
+  cage_code:        "PLACEHOLDER: XXXXX (if applicable)"
+  duns_uei:         "PLACEHOLDER: UEI (if applicable)"
+
+# ── Contacts ──────────────────────────────────────────────────────────────────
+contacts:
+  proposal_manager:
+    name:           "PLACEHOLDER: Full Name"
+    title:          "PLACEHOLDER: Title"
+    email:          "PLACEHOLDER: email@firm.com"
+    phone:          "PLACEHOLDER: (XXX) XXX-XXXX"
+  principal_investigator:   # For higher-ed / research proposals
+    name:           "PLACEHOLDER: Full Name"
+    title:          "PLACEHOLDER: Title"
+    email:          "PLACEHOLDER: email@institution.edu"
+  capture_manager:
+    name:           "PLACEHOLDER: Full Name"
+
+# ── Win Strategy ──────────────────────────────────────────────────────────────
+strategy:
+  win_probability:  "PLACEHOLDER: XX%"
+  primary_discriminator: "PLACEHOLDER: One sentence"
+  incumbent:        "PLACEHOLDER: Firm name or 'None / Unknown'"
+  competitors:
+    - "PLACEHOLDER: Competitor A"
+    - "PLACEHOLDER: Competitor B"
+
+# ── Proposal Schedule (Shipley gates) ────────────────────────────────────────
+schedule:
+  kickoff:          "PLACEHOLDER: YYYY-MM-DD"
+  rfp_shred_complete: "PLACEHOLDER: YYYY-MM-DD"
+  outline_review:   "PLACEHOLDER: YYYY-MM-DD"
+  pink_team:        "PLACEHOLDER: YYYY-MM-DD"
+  red_team:         "PLACEHOLDER: YYYY-MM-DD"
+  gold_team:        "PLACEHOLDER: YYYY-MM-DD"
+  production_start: "PLACEHOLDER: YYYY-MM-DD"
+  submission:       "PLACEHOLDER: YYYY-MM-DD"
+
+# ── Key Personnel (per pursuit) ──────────────────────────────────────────────
+# Drives AE-3 Section 1 (org-chart table) AND AE-4 (one form per slot
+# whose entry has a `personnel_id`). Each named slot accepts ONE of two
+# forms:
+#
+#   personnel_id: <id>          # references content_library/personnel.csv
+#   title: "..."                # optional override of personnel.csv title
+#   duty: "..."                 # AE-4 P11 — job duties on this contract
+#   assignment: "..."           # AE-4 P14 — proposed role assignment
+#   pct: <int>                  # AE-4 AH17 — % of time committed (0-100)
+#   pursuit_projects:           # AE-4 Section 6 (up to 6 entries listed)
+#     - "S1"                    # project_ids from content_library/projects.csv
+#     - "V-1"                   # joined to personnel_projects.csv for role text
+#
+# OR (mutually exclusive — for inline subs / guests, NO AE-4 generated):
+#   name: ...
+#   title: ...
+#   firm: ...
+#
+# Empty / null = slot is left blank on AE-3 and no AE-4 generated.
+#
+# Six fixed discipline slots: pm, architect, structural, mechanical,
+# electrical, civil. Plus an optional `other` list for additional roles
+# (e.g. fire protection, commissioning) that occupy AE-3 row 17.
+key_personnel:
+  pm:           null
+  architect:    null
+  structural:   null
+  mechanical:   null
+  electrical:   null
+  civil:        null
+  other: []
+    # Inline (sub firms / guests — NO AE-4 generated):
+    # - title: "Fire Protection Engineer"
+    #   name: "Aaron Fried"
+    #   firm: "Jensen Hughes"
+    #
+    # Personnel-id reference (in-firm staff — AE-4 IS generated when
+    # all four AE-4 fields below are present):
+    # - title: "Commissioning Authority"
+    #   personnel_id: capps
+    #   duty: "Commissioning oversight; functional performance testing"
+    #   assignment: "CxA"
+    #   pct: 15
+    #   pursuit_projects:
+    #     - "S1"
+    #     - "V-1"
+
+# ── Representative Projects (per pursuit) ────────────────────────────────────
+# List of `id` values from `content_library/projects.csv` selected as the
+# pursuit's representative project portfolio. Drives:
+#   - AE-1A Section 11 (5-row summary table; takes the first 5 entries)
+#   - AE-5         (one filled form per entry; no length cap)
+# Empty list = no AE-1A Section 11 / AE-5 output (engine logs and skips).
+# Order matters: the first entry shows in slot 1, second in slot 2, etc.
+representative_projects: []
+  # - "S1"
+  # - "V-1"
+
+# ── Proposed Subconsultants (per pursuit) ────────────────────────────────────
+# List of `id` values from `content_library/firms.csv` that the prime is
+# proposing for THIS pursuit. Drives:
+#   - AE-2 (one filled "Consultant / Other Office Data" form per entry)
+# Empty list = no AE-2 forms generated. Many term-contract pursuits do
+# not submit AE-2 forms (subs are selected per project order, not at
+# proposal time) — leave empty in that case and disable AE-2 in
+# scripts/scaffold/proposal_types/<type>.yml::ae_forms.
+proposed_subconsultants: []
+  # - "jensen-hughes"
+  # - "bsg"
+
+# ── AE-6 Technical Narrative (per pursuit) ───────────────────────────────────
+# Path (relative to repo root) to the markdown file that drives AE-6 tab
+# content. Each `## Section N — Title` heading becomes one Excel tab; long
+# sections are paginated across continuation tabs. Empty / missing →
+# populator falls back to the default location below and writes a single
+# [VERIFY] placeholder tab if the file isn't there yet.
+ae6_narrative_path: "ae6_technical_narrative/ae6_narrative_draft.md"
+
+# ── Volumes (proposal sections) ──────────────────────────────────────────────
+# Single source of truth for the volume / section list. Engine scripts that
+# need to enumerate proposal content (color_team_review.sh, combine_volumes.sh,
+# publish gates) read this list rather than hardcoding folder paths.
+#
+# `id` is the stable identifier scripts use; `folder` is the on-disk path
+# relative to the repo root; `active: false` keeps a volume in the config
+# without including it in builds. `order` controls assembly sequence.
+#
+# `new_proposal.sh` populates this section automatically based on the volumes
+# you pick during scaffolding. Edit afterward to add, remove, or reorder.
+volumes:
+  - id:     "executive_summary"
+    label:  "Executive Summary"
+    folder: "01_executive_summary"
+    active: true
+    order:  01
+
+  - id:     "technical_approach"
+    label:  "Technical Approach"
+    folder: "02_technical_approach"
+    active: true
+    order:  02
+
+  - id:     "qualifications"
+    label:  "Qualifications / Firm Experience"
+    folder: "03_qualifications"
+    active: true
+    order:  03
+
+  - id:     "past_performance"
+    label:  "Past Performance / References"
+    folder: "04_past_performance"
+    active: true
+    order:  04
+
+  - id:     "key_personnel"
+    label:  "Key Personnel"
+    folder: "05_key_personnel"
+    active: true
+    order:  05
+
+  - id:     "price_volume"
+    label:  "Price / Fee Proposal"
+    folder: "06_price_volume"
+    active: true
+    order:  06
+
+  - id:     "appendices"
+    label:  "Appendices / Attachments"
+    folder: "07_appendices"
+    active: true
+    order:  07

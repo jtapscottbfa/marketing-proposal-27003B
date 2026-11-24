@@ -1,0 +1,559 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "ft_eustis",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/usace/ft_eustis/Ft.Eustis BASIS OF DESIGN.docx",
+      "type": "bod",
+      "sha256": "2052a9ff1720a072c104b64a337ff65ea34e7f9934806a5a845b75125720b3c3",
+      "included": true,
+      "notes": "Full MEP+Arch BOD — architectural, plumbing, and electrical sections. Most complete BOD; treated as primary BOD source."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/ft_eustis/ARCH-Ft.Eustis BASIS OF DESIGN.docx",
+      "type": "bod",
+      "sha256": "ce9f96e136f3ea54a07f56602b18794621b68a555d56a9935970d1ed85c36754",
+      "included": true,
+      "notes": "Architecture-only BOD. Slightly earlier draft; architectural section content substantially matches primary BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/ft_eustis/Fort Eustis, SCOPE OF WORK.docx",
+      "type": "sow",
+      "sha256": "85176b4c4bf65607dd7ecab62164628f945e124d622586681d73b3f4eef7cf1b",
+      "included": true,
+      "notes": "USACE HNC SOW for FY22 Eastern Region Miscellaneous Projects, P2 #507741. Contains CLIN 0003 for Fort Eustis restroom renovation."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/ft_eustis/RFP Eastern.pdf",
+      "type": "sow",
+      "sha256": "8a6f546a0f15b11514898ac6686804048abd4ff7ff259ff8706fbd00909693c5",
+      "included": true,
+      "notes": "Solicitation W912DY22R0073, SF 1442, 39 pages. Image-based PDF (scanned); first 6 pages rendered. Contains CLIN structure and 8(a) sole-source set-aside statement. Full text of remaining 33 pages not extracted."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/ft_eustis/RFP Amendment 1 Eastern.pdf",
+      "type": "correspondence",
+      "sha256": "c13ad9acbb3788c9fbe44e61482282facb345c0e42ae9eea77fbc79664b10587",
+      "included": true,
+      "notes": "Amendment U0001 (20-Sep-2022): extended proposal due date from 21-Sep to 22-Sep-2022."
+    },
+    {
+      "path": "00_admin/reference_projects/usace/ft_eustis/RFP Amendment 2 Eastern.pdf",
+      "type": "correspondence",
+      "sha256": "0d646bd8ccbe5ebb5fdb8cc2d8beff3549628a2e5b0f4b2e96f8bf87fdf45a6b",
+      "included": true,
+      "notes": "Amendment U0002 (22-Sep-2022): extended proposal due date from 22-Sep 3:00PM to 22-Sep 11:59PM."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set PDF present in intake folder. Two BOD files present (arch-only draft and full MEP BOD). RFP is image-based; only first 6 of 39 pages visually extracted."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Upgrade Restroom Finishes and Fixtures, McDonald Army Health Center, Bldg 576, Fort Eustis, VA",
+      "source": "SOW §2.1 / RFP CLIN 0003",
+      "quote": "Upgrade Restroom Finishes and Fixtures, McDonald Army Health Center, Bldg. 576 Fort Eustis, Va.",
+      "corroboration": [
+        {
+          "source": "SOW §2.1",
+          "claim": "Upgrade Restroom Finishes and Fixtures, McDonald Army Health Center, Bldg. 576 Fort Eustis, Va.",
+          "agrees": true
+        },
+        {
+          "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) title block",
+          "claim": "Upgrade Restroom Finishes and Fixtures, McDonald Army Health Center, Bldg 576 Fort Eustis, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFP Eastern.pdf CLIN 0003 (p.5)",
+          "claim": "Upgrade Restroom Fort Eustis, VA — Restroom Finishes and Fixtures, McDonald Army Health Center, Bldg. 576",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "US Army / Department of Defense — USACE Huntsville Engineering & Support Center",
+      "source": "RFP Eastern.pdf p.1, Item 7",
+      "quote": "US ARMY ENGINEERING & SUPPORT CENTER HUNTSVILLE ENGINEERING & SUPPORT CENTER P.O. BOX 1600 HUNTSVILLE AL 35807-4301",
+      "corroboration": [
+        {
+          "source": "RFP Eastern.pdf p.1",
+          "claim": "US Army Engineering & Support Center, Huntsville, Code W912DY",
+          "agrees": true
+        },
+        {
+          "source": "SOW header",
+          "claim": "CONTRACT W912DY-22-C-00[__]",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "US Army — Defense Health Agency (DHA) / McDonald Army Health Center",
+      "source": "SOW §6.1",
+      "quote": "The contractor shall strategize collaboratively with DHA, each Facility Management staff, and others as appropriate to minimize and coordinate required utility disruptions",
+      "corroboration": [
+        {
+          "source": "SOW §6.1",
+          "claim": "DHA (Defense Health Agency) as facility stakeholder",
+          "agrees": true
+        },
+        {
+          "source": "BOD title block",
+          "claim": "McDonald Army Health Center",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Fort Eustis",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Building 576, Fort Eustis, Virginia",
+      "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) Architectural scope",
+      "quote": "McDonald Army Health Center Building 576 is a 134,984 square foot three story facility constructed in 1962 with single story addition in 1973 and serves as an outpatient clinic located on Fort Eustis Army Base, Fort Eustis, Virginia.",
+      "corroboration": [
+        {
+          "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx)",
+          "claim": "Fort Eustis Army Base, Fort Eustis, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.2",
+          "claim": "Building 576, Fort Eustis, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFP CLIN 0003 (p.5)",
+          "claim": "Upgrade Restroom Fort Eustis, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "P2 #507741",
+      "source": "SOW header",
+      "quote": "P2 #507741",
+      "corroboration": [
+        {
+          "source": "SOW header",
+          "claim": "P2 #507741",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "W912DY-22-C-00[blank]",
+      "source": "SOW header",
+      "quote": "CONTRACT W912DY-22-C-00[__]",
+      "notes": "Contract number partially blank in source — task order number not yet filled at time of document creation."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW header shows 'TASK ORDER [____]' — blank at time of document."
+    },
+    "solicitation_number": {
+      "value": "W912DY22R0073",
+      "source": "RFP Eastern.pdf p.1, Item 1",
+      "quote": "W912DY22R0073",
+      "corroboration": [
+        {
+          "source": "RFP Eastern.pdf p.1",
+          "claim": "W912DY22R0073",
+          "agrees": true
+        },
+        {
+          "source": "RFP Amendment 1",
+          "claim": "W912DY22R0073",
+          "agrees": true
+        },
+        {
+          "source": "RFP Amendment 2",
+          "claim": "W912DY22R0073",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 134984,
+      "unit": "gsf",
+      "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) Architectural scope",
+      "quote": "McDonald Army Health Center Building 576 is a 134,984 square foot three story facility",
+      "notes": "This is the total building GSF; the area of renovation (23 restrooms) is much smaller. Renovation footprint approx. 900-1000 SF based on individual room areas listed in SOW.",
+      "corroboration": [
+        {
+          "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx)",
+          "claim": "134,984 square foot three story facility",
+          "value": 134984,
+          "agrees": true
+        },
+        {
+          "source": "ARCH BOD (ARCH-Ft.Eustis BASIS OF DESIGN.docx)",
+          "claim": "134,984 square foot three story facility",
+          "value": 134984,
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.2",
+          "claim": "McDonald Army Health Center Building 576 is a 134,984 square foot three story facility",
+          "value": 134984,
+          "agrees": true
+        }
+      ]
+    },
+    "plant_replacement_value": {
+      "value": 137340000,
+      "currency": "USD",
+      "source": "SOW §3.2",
+      "quote": "The Plant Replacement Value of the building is estimated at $137.34M."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No explicit program budget stated. RFP states FAR 36.204 magnitude disclosure: between $1,000,000 and $2,000,000 for the overall multi-CLIN solicitation. Individual CLIN 0003 budget not broken out."
+    },
+    "contract_value_magnitude": {
+      "value_min": 1000000,
+      "value_max": 2000000,
+      "currency": "USD",
+      "source": "RFP Eastern.pdf p.1",
+      "quote": "In accordance with FAR 36.204, the disclosure of magnitude is between $1,000,000.00 and $2,000,000.00.",
+      "notes": "This is the solicitation-wide magnitude for all 6 CLINs combined. CLIN 0003 (Ft. Eustis) individual value not stated separately.",
+      "corroboration": [
+        {
+          "source": "RFP Eastern.pdf p.1",
+          "claim": "between $1,000,000.00 and $2,000,000.00",
+          "agrees": true
+        }
+      ]
+    },
+    "liquidated_damages_rate": {
+      "value": 560,
+      "currency": "USD",
+      "unit": "per calendar day",
+      "source": "SOW §6.6",
+      "quote": "Liquidated damages will be charged at a rate of $560.00 per calendar day of contractor delay until the work is accepted."
+    },
+    "building_construction_year": {
+      "value": 1962,
+      "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) Architectural scope",
+      "quote": "three story facility constructed in 1962 with single story addition in 1973",
+      "corroboration": [
+        {
+          "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx)",
+          "claim": "constructed in 1962 with single story addition in 1973",
+          "agrees": true
+        },
+        {
+          "source": "ARCH BOD",
+          "claim": "constructed in 1962 with single story addition in 1973",
+          "agrees": true
+        },
+        {
+          "source": "SOW §3.2",
+          "claim": "The building was built in 1962 & is the building has 3 stories",
+          "agrees": true
+        }
+      ]
+    },
+    "restroom_count_renovated": {
+      "value": 23,
+      "source": "SOW §4.1.3.1",
+      "quote": "twenty-two (22) restrooms located on the 1st floor and one (1) on the 2nd floor of Building 576, 23 restrooms total",
+      "corroboration": [
+        {
+          "source": "SOW §4.1.3.1",
+          "claim": "23 restrooms total",
+          "agrees": true
+        },
+        {
+          "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) General",
+          "claim": "There are 23 restrooms in total that will undergo the renovation.",
+          "agrees": true
+        },
+        {
+          "source": "ARCH BOD General",
+          "claim": "There are 23 restrooms in total that will undergo the renovation.",
+          "agrees": true
+        }
+      ]
+    },
+    "fy_funded": {
+      "value": "FY22",
+      "source": "SOW header",
+      "quote": "FY22 EASTERN REGION MISCELLANEOUS PROJECTS",
+      "corroboration": [
+        {
+          "source": "SOW header",
+          "claim": "FY22",
+          "agrees": true
+        }
+      ]
+    },
+    "solicitation_issue_date": {
+      "value": "2022-09-13",
+      "source": "RFP Eastern.pdf p.1, Item 3",
+      "quote": "13-Sep-2022",
+      "corroboration": [
+        {
+          "source": "RFP Eastern.pdf",
+          "claim": "13-Sep-2022",
+          "agrees": true
+        },
+        {
+          "source": "RFP Amendment 1",
+          "claim": "9B. DATED: 13-Sep-2022",
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date_final": {
+      "value": "2022-09-22",
+      "source": "RFP Amendment 2",
+      "quote": "The required response date/time has changed from 22-Sep-2022 03:00 PM to 22-Sep-2022 11:59 PM.",
+      "corroboration": [
+        {
+          "source": "RFP Amendment 1",
+          "claim": "extended to 22 September 2022",
+          "agrees": true
+        },
+        {
+          "source": "RFP Amendment 2",
+          "claim": "22-Sep-2022 11:59 PM (final)",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design is CLIN 0001 under the task order; specific design fee not stated in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "BOD documents represent completed design deliverables; exact design completion date not stated."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "CLIN 0003 construction cost not stated. FAR 36.204 magnitude for entire 6-CLIN solicitation is $1M–$2M."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP p.1 states contractor shall begin within 14 calendar days of NTP; total duration blank in RFP form (to be submitted in proposal)."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "healthcare_military_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "architecture",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "interior_construction",
+      "interior_partitions",
+      "interior_doors",
+      "interior_finishes",
+      "finishes_flooring",
+      "finishes_wall",
+      "finishes_ceiling",
+      "plumbing_systems",
+      "plumbing_domestic_water",
+      "electrical_systems",
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "fire_protection_systems",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "finishes_tile",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "specialties_toilet_partitions",
+      "openings_doors_frames",
+      "openings_door_hardware",
+      "plumbing_scope",
+      "electrical_lighting_scope",
+      "mechanical_hvac"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order",
+      "federal_matoc"
+    ],
+    "procurement_type": [
+      "federal_8a_sole_source"
+    ],
+    "award_type": [
+      "sole_source_award"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "proposed_pct": null,
+      "final_pct": null,
+      "description": "8(a) sole-source set-aside through SBA. SBA Acceptance No.: GD1662672615W. BFA's specific SWaM participation not stated in source documents.",
+      "source": "RFP Eastern.pdf p.1",
+      "quote": "This action is a sole-source 8(a) set-aside through Small Business Administration. SBA Acceptance No.: GD1662672615W"
+    }
+  ],
+  "tenant_freeform_tags": [
+    "fort_eustis",
+    "mcdonald_army_health_center",
+    "usace_huntsville",
+    "military_medical",
+    "restroom_renovation",
+    "design_build",
+    "8a_sole_source",
+    "fy22",
+    "eastern_region_misc_projects",
+    "healthcare_facility"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 134984,
+        "unit": "gsf",
+        "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) Architectural scope",
+        "quote": "134,984 square foot three story facility",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 3,
+        "source": "BOD (Ft.Eustis BASIS OF DESIGN.docx) Architectural scope",
+        "quote": "three story facility",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "HVAC systems to be replaced/modified/augmented per SOW §5.4.1",
+          "Thermostats and temperature sensors to be relocated per revised floor plans",
+          "TAB required (AABC/NEBB/TABB certified firm)"
+        ],
+        "electrical": [
+          "Occupancy sensor lighting controls (wall switch and ceiling-mounted)",
+          "LED lighting fixtures (wall-mounted, recessed, ceiling-mounted)",
+          "Existing conduit and conductors to remain and be re-used",
+          "No new emergency power required"
+        ],
+        "plumbing": [
+          "Motion-activated battery-operated flush valves for toilets and urinals",
+          "Motion-activated battery-operated faucets",
+          "Existing water piping to remain; new service to new required fixtures"
+        ],
+        "fire_protection": [
+          "Fire alarm horn/strobes in some bathrooms (noted as code question in SOW)",
+          "Fire suppression per UFC 3-600-01"
+        ]
+      }
+    },
+    "notes": "No drawing PDFs present in intake folder. Building area data and MEP system inventory derived from BOD and SOW text documents only."
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

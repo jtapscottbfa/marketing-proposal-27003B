@@ -1,0 +1,561 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "replace_deperming_station",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/replace_deperming_station/20-075.2021.06.21.FINAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "f5acf84991d7abcfca4d0f934056935438e3b6ca2633a04e910c63bde3365a02",
+      "included": true,
+      "notes": "Final Basis of Design, dated June 21, 2021, BFA Project #20-075. Covers Civil, Structural, and Electrical disciplines. No drawings embedded."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/replace_deperming_station/SAES 1582345_ST 17-1605_DS20.pdf",
+      "type": "sow",
+      "sha256": "7ac56d669f321c89a3308312d3b8694778b08ae1c4cc9029b0bd46993d9a0f30",
+      "included": true,
+      "notes": "Statement of A-E Services (SAES) for Task Order ST 17-1605 under IDIQ contract N40085-20-D-0005. Prepared by NAVFAC Mid-Atlantic. Includes scope, schedule, cost, and PCAS requirements. Rev17 / FEB 2020."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing-set PDFs present in the intake folder. BOD and SAES both present. Drawing extraction status set to 'complete' per rule 9 (no drawings = nothing to extract); no drawings block generated."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Replace Deperming Station Substation DS-20",
+      "source": "BOD cover page",
+      "quote": "REPLACE DEPERMING STATION SUBSTATION DS-20",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "REPLACE DEPERMING STATION SUBSTATION DS-20",
+          "value": "Replace Deperming Station Substation DS-20",
+          "agrees": true
+        },
+        {
+          "source": "SAES cover page",
+          "claim": "REPLACE DEPERMING STATION SUBSTATION DS-20",
+          "value": "Replace Deperming Station Substation DS-20",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) Mid-Atlantic",
+      "source": "SAES §A general introduction",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES cover page",
+          "claim": "NAVFAC Mid-Atlantic, Public Works Department Norfolk, Facilities Engineering and Acquisition Division",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A general introduction",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Station Norfolk",
+      "source": "SAES §A general introduction + contract identification",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES §A general introduction",
+          "claim": "NAVFAC MIDLANT administers T.O.; activity representative from Naval Station Norfolk Building P-65",
+          "value": "Department of the Navy / Naval Station Norfolk",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "West Norfolk Road, Portsmouth, VA",
+      "source": "BOD Civil section + SAES §A2",
+      "quote": "The existing substation site is located near the end of West Norfolk Road in Portsmouth, Virginia.",
+      "notes": "BOD cover header reads 'Naval Station – Norfolk, Virginia' which is the administering command's home base; the physical project site is consistently described in both documents as Portsmouth, VA on private property leased by the government adjacent to the Elizabeth River. Minor conflict flagged in conflict_flags.",
+      "corroboration": [
+        {
+          "source": "BOD cover header",
+          "claim": "Naval Station – Norfolk, Virginia",
+          "value": "Norfolk, VA",
+          "agrees": false
+        },
+        {
+          "source": "BOD Civil section",
+          "claim": "The existing substation site is located near the end of West Norfolk Road in Portsmouth, Virginia.",
+          "value": "Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES cover page",
+          "claim": "Portsmouth, Virginia",
+          "value": "Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2",
+          "claim": "The project site is located on private property leased by the government in the West Norfolk neighborhood of Portsmouth, Virginia",
+          "value": "Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-075",
+      "source": "BOD cover page",
+      "quote": "BFA Project #20-075",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BFA Project #20-075",
+          "value": "20-075",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "1582345",
+      "source": "BOD cover page",
+      "quote": "EPROJECT #1582345",
+      "notes": "NAVFAC eProjects Work Order number. Both documents confirm this as the government project tracking number.",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "EPROJECT #1582345",
+          "value": "1582345",
+          "agrees": true
+        },
+        {
+          "source": "SAES cover page",
+          "claim": "WORK ORDER NO. 1582345",
+          "value": "1582345",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2",
+          "claim": "eProjects Work Order number 1582345",
+          "value": "1582345",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-20-D-0005",
+      "source": "SAES §A1",
+      "quote": "Contract Identification: N40085-20-D-0005",
+      "notes": "This is the base IDIQ A-E contract number. The task order is ST 17-1605.",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Contract Identification: N40085-20-D-0005",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "N40085-20-D-0005 (in structural scope reference)",
+          "value": "N40085-20-D-0005",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": "ST 17-1605",
+      "source": "SAES §A1",
+      "quote": "Task Order No. FY21 SPECIAL PROJECT ST 17-1605",
+      "corroboration": [
+        {
+          "source": "SAES §A1",
+          "claim": "Task Order No. FY21 SPECIAL PROJECT ST 17-1605",
+          "value": "ST 17-1605",
+          "agrees": true
+        },
+        {
+          "source": "SAES header throughout",
+          "claim": "FY 21 SPECIAL PROJECT ST 17-1605",
+          "value": "ST 17-1605",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 3000,
+      "unit": "gsf",
+      "source": "BOD Civil section",
+      "quote": "The site is approximately 3000SF in area.",
+      "notes": "This is site area, not building gross square footage — this is an outdoor electrical substation with no enclosed building. The 3000 SF figure describes the fenced compound footprint.",
+      "corroboration": [
+        {
+          "source": "BOD Civil section",
+          "claim": "The site is approximately 3000SF in area.",
+          "value": 3000,
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2 geotechnical",
+          "claim": "topographic survey with a total survey area of approximately 0.42 acres",
+          "value": 18295,
+          "agrees": false,
+          "note": "0.42 acres = ~18,295 SF is the survey area, which is larger than the substation compound — includes adjacent property for survey access. Not a direct contradiction of compound size."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 3522000,
+      "currency": "USD",
+      "source": "SAES §C1",
+      "quote": "Project Cost/Program Amount: $3,522,000",
+      "corroboration": [
+        {
+          "source": "SAES §C1",
+          "claim": "Project Cost/Program Amount: $3,522,000",
+          "value": 3522000,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 3000000,
+      "currency": "USD",
+      "source": "SAES §C2",
+      "quote": "Estimated Construction Cost (ECC): $3,000,000",
+      "corroboration": [
+        {
+          "source": "SAES §C2",
+          "claim": "Estimated Construction Cost (ECC): $3,000,000",
+          "value": 3000000,
+          "agrees": true
+        }
+      ]
+    },
+    "project_description_brief": {
+      "value": "Replace and upgrade existing DS-20 transformer and secondary switchgear at the deperming station substation; modernize substation protection for 34.5 kV and 13.8 kV distribution equipment; provide shoreline stabilization improvements; bring substation devices up to flood codes.",
+      "source": "SAES §A2",
+      "quote": "Replace and upgrade the existing DS-20 transformer and secondary switchgear. Modernize substation protection for 34.5KV and 13.8KV distribution equipment. Refer to DS-20 Substation Photos (Attachment 6). Provide shoreline stabilization improvements and bring substation devices up to flood codes.",
+      "corroboration": [
+        {
+          "source": "SAES §A2",
+          "claim": "Replace and upgrade the existing DS-20 transformer and secondary switchgear. Modernize substation protection for 34.5KV and 13.8KV distribution equipment.",
+          "agrees": true
+        },
+        {
+          "source": "BOD Electrical section",
+          "claim": "Due to station DS-20 equipment condition there is required replacement and upgrading the existing DS-20 transformer and secondary switchgear, modernization substation protection for 34.5 kV and 13.8 kV distribution equipment.",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES §A4 states fee will be negotiated at time of issue; no design fee dollar amount stated in either document."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "BOD is dated June 21, 2021 (Final submittal), indicating design was complete by that date, but no formal design completion date stated."
+      },
+      "bod_date": {
+        "value": "2021-06-21",
+        "source": "BOD cover page",
+        "quote": "FINAL SUBMITTAL June 21, 2021"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design schedule in SAES Attachment 1 gives milestone durations in relative calendar days from T.O. award but no absolute start date."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "ECC = $3,000,000 per SAES §C2; construction contract has not been awarded as of BOD date."
+      },
+      "estimated_construction_cost": {
+        "value": 3000000,
+        "currency": "USD",
+        "source": "SAES §C2",
+        "quote": "Estimated Construction Cost (ECC): $3,000,000"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2022-06-30",
+        "source": "SAES cover page",
+        "quote": "Estimated Construction Completion Date 30JUN2022"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": {
+      "values": [
+        "federal_navfac"
+      ],
+      "corroboration": [
+        {
+          "source": "SAES cover page",
+          "claim": "NAVFAC Mid-Atlantic, Public Works Department Norfolk",
+          "agrees": true
+        }
+      ]
+    },
+    "program_type": {
+      "values": [
+        "utilities_substation"
+      ],
+      "notes": "Outdoor electrical substation replacement. No enclosed building program. Closest vocab entry is utilities_substation (electrical substation or distribution facility).",
+      "corroboration": [
+        {
+          "source": "BOD Electrical section",
+          "claim": "Replace and upgrade the existing DS-20 transformer and secondary switchgear — outdoor substation",
+          "agrees": true
+        }
+      ]
+    },
+    "program_subtype": {
+      "values": [],
+      "status": "missing",
+      "notes": "No applicable subtype in program_type.yaml for military/NAVFAC electrical substation. utilities_substation has no sub-entries."
+    },
+    "disciplines": {
+      "values": [
+        "electrical_engineering",
+        "structural_engineering",
+        "civil_engineering",
+        "geotechnical_engineering"
+      ],
+      "corroboration": [
+        {
+          "source": "BOD sections",
+          "claim": "BOD organized into Civil, Structural, and Electrical sections",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A2 + H1",
+          "claim": "Design team includes Civil, Structural, Electrical, Geotechnical engineers; kick-off meeting attendees",
+          "agrees": true
+        }
+      ]
+    },
+    "sub_disciplines": {
+      "values": [
+        "electrical_substation_utility",
+        "electrical_power_distribution",
+        "electrical_grounding_lightning",
+        "structural_foundation",
+        "civil_site_design",
+        "civil_grading_drainage",
+        "civil_erosion_sediment"
+      ]
+    },
+    "building_systems": {
+      "values": [
+        "electrical_service",
+        "electrical_distribution",
+        "electrical_grounding",
+        "superstructure_concrete_frame",
+        "foundations_deep"
+      ]
+    },
+    "construction_scope": {
+      "values": [
+        "electrical_power",
+        "concrete_cast_in_place",
+        "metals_structural_steel",
+        "earthwork_scope",
+        "exterior_improvements",
+        "utilities_scope"
+      ],
+      "notes": "Steel sheet pile bulkhead, cast-in-place concrete platforms and mat foundations, helical piles, electrical equipment installation, site grading and fencing."
+    },
+    "delivery_method": {
+      "values": [
+        "design_bid_build"
+      ],
+      "source": "SAES §D2",
+      "quote": "The project(s) covered by this T.O. require(s) the preparation of a DBB construction contract package",
+      "corroboration": [
+        {
+          "source": "SAES §D2",
+          "claim": "preparation of a DBB construction contract package",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_vehicle": {
+      "values": [
+        "federal_aedc",
+        "federal_task_order"
+      ],
+      "notes": "BFA A-E services performed under NAVFAC IDIQ A-E contract N40085-20-D-0005, Task Order ST 17-1605.",
+      "corroboration": [
+        {
+          "source": "SAES §A general introduction",
+          "claim": "The Scope of Architect-Engineer (A-E) Services (SAES) for this Task Order (T.O.) is described herein and in the Basic Indefinite Delivery / Indefinite Quantity (IDIQ) A-E Services Contract.",
+          "agrees": true
+        }
+      ]
+    },
+    "procurement_type": {
+      "values": [
+        "federal",
+        "federal_full_and_open"
+      ],
+      "notes": "Federal A-E IDIQ contract; task order issued under NAVFAC Mid-Atlantic IDIQ. Brooks Act QBS governs A-E selection for the IDIQ."
+    },
+    "award_type": {
+      "values": [
+        "qualifications_based"
+      ],
+      "notes": "NAVFAC A-E IDIQ contracts are awarded via QBS per Brooks Act. Task order fees negotiated per SAES §A4.",
+      "corroboration": [
+        {
+          "source": "SAES §A4",
+          "claim": "The fee for this T.O will be negotiated at the time of issue based on the Basic IDIQ Contract pre-negotiated prices",
+          "agrees": true
+        }
+      ]
+    },
+    "project_status": {
+      "values": [
+        "design_complete"
+      ],
+      "notes": "BOD dated June 21, 2021 is the Final submittal. Estimated construction completion was 30 JUN 2022. Project status at time of BOD issuance = design complete / likely went to bid. Actual construction status unknown from available documents.",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "FINAL SUBMITTAL June 21, 2021",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_role": {
+      "values": [
+        "prime_consultant"
+      ],
+      "source": "BOD cover page",
+      "quote": "CONSULTING ENGINEERS 6353 Center Drive, Suite 101 Norfolk, VA 23502",
+      "notes": "BFA (Bowman Foster Associates) authored the BOD as prime A-E consultant under NAVFAC IDIQ task order.",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BOWMAN FOSTER — CONSULTING ENGINEERS — authored BOD",
+          "agrees": true
+        },
+        {
+          "source": "SAES §A general introduction",
+          "claim": "A-E Services under Basic IDIQ A-E Services Contract",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "navfac",
+    "naval_station_norfolk",
+    "portsmouth_virginia",
+    "deperming_station",
+    "electrical_substation",
+    "waterfront_construction",
+    "flood_mitigation",
+    "sheet_pile_bulkhead",
+    "34_5kv",
+    "13_8kv",
+    "military_electrical",
+    "ufc"
+  ],
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing-set PDFs present in the project intake folder. Only text-bearing PDFs (BOD and SAES) were available. Drawing extraction not applicable for this project."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD cover header",
+          "value": "Naval Station – Norfolk, Virginia"
+        },
+        {
+          "source": "BOD Civil section body text",
+          "value": "Portsmouth, Virginia — near the end of West Norfolk Road"
+        },
+        {
+          "source": "SAES cover page and §A2",
+          "value": "Portsmouth, Virginia — West Norfolk neighborhood, private property leased by the government"
+        }
+      ],
+      "resolution_chosen": "Portsmouth, Virginia",
+      "rationale": "BOD cover header 'Naval Station – Norfolk, Virginia' refers to the administering command's home base (NAVFAC Mid-Atlantic / Naval Station Norfolk), not the physical project site. Both the BOD body text and the SAES consistently and specifically locate the physical site at West Norfolk Road, Portsmouth, VA on leased private property adjacent to the Elizabeth River. Minor severity because the conflict is easily explained by contracting-vs-physical-site distinction and poses no risk to downstream pursuit accuracy."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "geotechnical_engineering": "narratives/disciplines/geotechnical_engineering.md"
+    }
+  }
+}

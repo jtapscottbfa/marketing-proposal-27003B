@@ -1,0 +1,9 @@
+Environmental engineering was a substantive discipline on this project, driven by the regulatory requirements governing aboveground petroleum storage in Maryland and by the contamination and hazardous materials conditions associated with the existing fuel tank and site.
+
+The SWPPP and erosion and sediment control plan addressed stormwater management for construction disturbance in and around the existing tank farm. The containment drainage design included an oil/water separator to treat runoff from the secondary containment area before discharge — a Maryland Department of the Environment (MDE) compliance requirement for petroleum storage facilities.
+
+The environmental scope included NEPA compliance services appropriate to a VA facility infrastructure project and MDE permit coordination for the aboveground storage tank replacement. MDE approval of the automatic tank gauge and leak detection system (NWGLDE method) was a regulatory milestone integrated into the design process.
+
+Industrial hygiene services addressed the potential for soil contamination in the vicinity of the existing single-wall tank, which had been in service for an extended period and posed a realistic risk of subsurface petroleum impacts. An industrial hygiene assessment was performed to characterize existing soil conditions and inform contractor requirements for excavation and waste handling during demolition. A separate lead paint sampling and disposal plan was prepared for materials associated with the existing tank infrastructure — a standard requirement when demolishing older aboveground steel storage tanks that may have been coated with lead-based paint.
+
+The environmental discipline's work directly enabled the demolition contractor to bid and execute the tank removal scope with defined environmental baseline data and regulatory compliance requirements in hand.

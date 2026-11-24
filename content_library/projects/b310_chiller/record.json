@@ -1,0 +1,421 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b310_chiller",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b310_chiller/Bldg 310 (15).pdf",
+      "type": "sow",
+      "sha256": "dffd107ade30654e59c6ee35c46918d486b3a8d6508725fd3f52a64a141a829c",
+      "page_count": 5,
+      "included": true,
+      "notes": "NAVFAC Design-Build RFP for Replace Chillers 1 and 2 for Paraloft DN 310. Contains cover page, Table of Contents, Part 2 General Requirements, Part 3 Statement of Work/Project Program, Part 4 Min Materials Requirements, Part 5 Prescriptive Specs, and Part 6 Attachments (reference JCI control drawings). eProjects WO# 1732054. The large file size (46MB) is due to embedded reference drawings including JCI DDC control drawings and mechanical/electrical reference documents in Part 6."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/b310_chiller/2024.06.10 23-053 Building 310 Chiller - Electrical FSS.pdf",
+      "type": "drawing_set",
+      "sha256": "8beb5e43e9ddfae805e92876bbf58f4e83507e84dec4b9459ba571b5e5154071",
+      "page_count": 4,
+      "included": true,
+      "notes": "BFA-produced electrical For-Sale Submission (FSS) drawings. BFA project 23-053, dated June 10, 2024. Signed and sealed by Felix A. Pessig, PE (VA Lic. 048025). 4 sheets: E-001 (Legend/Abbreviations), ED101 (Electrical Demo Floor Plan - Power), E-101 (Electrical New Work Floor Plan - Power), E-601 (Panelboard Schedule and One-Line Riser Diagram). Prepared under NAVFAC Mid-Atlantic, NAVFAC drawing no. N40085-1909195, project 12901782."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No separate BOD document available — the NAVFAC RFP (Part 3 SOW) serves as the design requirements document. BFA-produced electrical FSS drawings present. No contract document, cost estimate, or narrative present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Replace Chillers 1 and 2 for Paraloft DN 310",
+      "source": "RFP cover page",
+      "quote": "REPLACE CHILLERS 1 AND 2 FOR PARALOFT DN 310",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "REPLACE CHILLERS 1 AND 2 FOR PARALOFT DN 310",
+          "value": "Replace Chillers 1 and 2 for Paraloft DN 310",
+          "agrees": true
+        },
+        {
+          "source": "Electrical FSS drawings E-001, ED101, E-101, E-601",
+          "claim": "REPLACE CHILLERS 1 AND 2 FOR PARALOFT DN 310",
+          "value": "Replace Chillers 1 and 2 for Paraloft DN 310",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC Mid-Atlantic)",
+      "source": "RFP cover page",
+      "quote": "NAVFAC MID-ATLANTIC, PWD OCEANA FEAD, PM&E PRA211/214",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "NAVFAC MID-ATLANTIC, PWD OCEANA FEAD, PM&E PRA211/214",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        },
+        {
+          "source": "Electrical FSS drawings title block",
+          "claim": "NAVAL FACILITIES ENGINEERING COMMAND ~ MID-ATLANTIC",
+          "value": "NAVFAC Mid-Atlantic",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Systems Command Mid-Atlantic (NAVFAC Mid-Atlantic) on behalf of NAS Oceana Dam Neck Annex (NSWDG/DEVGRU facility user)",
+      "source": "RFP cover page and Part 2 §1.3 security requirements",
+      "quote": "NAS Oceana, 953 Hornet Drive, Building 820, Suite 210 Virginia Beach, Virginia 23460-2197",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Naval Air Station Oceana, Dam Neck Annex, Virginia Beach, Virginia",
+          "value": "NAS Oceana Dam Neck Annex",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Virginia Beach",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Air Station Oceana, Dam Neck Annex, Building 310 (Paraloft)",
+      "facility_address": "NAS Oceana Dam Neck Annex, Virginia Beach, Virginia",
+      "source": "RFP cover page",
+      "quote": "Naval Air Station Oceana, Dam Neck Annex Virginia Beach, Virginia",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "Naval Air Station Oceana, Dam Neck Annex Virginia Beach, Virginia",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "RFP header throughout",
+          "claim": "NAS OCEANA, DAM NECK ANNEX, VIRGINIA BEACH, VIRGINIA",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        },
+        {
+          "source": "Electrical FSS drawings title block",
+          "claim": "NAV. AIR STATION OCEANA DAM NECK ANNEX, VIRGINIA",
+          "value": "Virginia Beach, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "eProjects WO# 1732054",
+      "source": "RFP cover page",
+      "quote": "eProjects WO#: 1732054",
+      "corroboration": [
+        {
+          "source": "RFP cover page",
+          "claim": "eProjects WO#: 1732054",
+          "value": "1732054",
+          "agrees": true
+        },
+        {
+          "source": "RFP header throughout document",
+          "claim": "eProjects WO#: 1732054",
+          "value": "1732054",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "(W)20863995(C)FXLMMT",
+      "source": "RFP cover page header",
+      "quote": "(W)20863995(C)FXLMMT",
+      "corroboration": [
+        {
+          "source": "RFP cover page header (upper right corner)",
+          "claim": "(W)20863995(C)FXLMMT",
+          "value": "(W)20863995(C)FXLMMT",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP appears to be a small project under NAVFAC FEAD; no explicit task order number visible in source documents"
+    },
+    "bfa_project_number": {
+      "value": "23-053",
+      "source": "Electrical FSS drawings title block",
+      "quote": "2024.06.10 23-053 Building 310 Chiller - Electrical FSS",
+      "notes": "BFA internal project number visible in FSS filename and drawing title block"
+    },
+    "navfac_drawing_number": {
+      "value": "N40085-1909195",
+      "source": "Electrical FSS drawings title block E-001",
+      "quote": "N40085-1909195",
+      "corroboration": [
+        {
+          "source": "Electrical FSS drawings E-001 title block",
+          "claim": "N40085-1909195",
+          "value": "N40085-1909195",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Building 310 (Paraloft addition) square footage not stated in source documents. Scope is limited to mechanical room chiller replacement; building area not relevant to this scope and not mentioned."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP Part 3 §4 states 'The design-build contract must not exceed the available funding limit as set forth by the Contracting Officer' but no dollar figure is stated in the provided documents."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA served as electrical DOR subconsultant; BFA design fee not stated in source documents"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-06-10",
+        "source": "Electrical FSS drawings filename and title block",
+        "quote": "2024.06.10 23-053 Building 310 Chiller - Electrical FSS.pdf",
+        "notes": "FSS (For Sale Submission) drawing date; likely represents final design submission date for BFA electrical drawings"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract value not stated in source documents"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP prepared August 2022; award date not in source documents"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP references 'Small Project Construction Progress Schedules' (UFGS 01 32 16.00 20) but no specific duration stated"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_motor_control"
+    ],
+    "building_systems": [
+      "hvac_chilled_water",
+      "electrical_distribution",
+      "hvac_controls_bas"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "nas_oceana",
+    "dam_neck",
+    "chiller_replacement",
+    "mechanical_room",
+    "design_build",
+    "small_project",
+    "virginia_beach",
+    "paraloft",
+    "devgru",
+    "jci_controls",
+    "controlled_access_area",
+    "electrical_dor"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Felix A. Pessig",
+      "role_on_project": "electrical_designer_of_record",
+      "notes": "Signed and sealed electrical FSS drawings. VA PE License No. 048025."
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND, ABBREVIATIONS, AND GENERAL NOTES",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2024.06.10 23-053 Building 310 Chiller - Electrical FSS.pdf",
+        "reading_notes": "Electrical legend and abbreviations sheet. Contains two legend sections: standard floor plan symbols (new/existing/demo distinction via line weight) and one-line diagram legend. Title block confirms NAVFAC Mid-Atlantic client, BFA project 23-053, PE Felix A. Pessig VA Lic. 048025, drawing no. N40085-1909195, project 12901782. Sheet is scale N/A. Status: PROGRESS PRINT. Revision date notation visible. No site-specific content on this sheet — purely reference symbols."
+      },
+      {
+        "sheet_number": "ED101",
+        "title": "ELECTRICAL DEMOLITION FLOOR PLAN - POWER",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2024.06.10 23-053 Building 310 Chiller - Electrical FSS.pdf",
+        "reading_notes": "Scale 1/2\" = 1'-0\". Shows existing mechanical room with two existing air-cooled chillers (CH-1, CH-2) shown as dashed (to be removed), each with dual compressor modules. Demo scope includes: remove existing chiller 208V 3-phase feeds; remove existing chiller warmer 120V feeds; remove existing heat trace thermostat and power supply 120V. Existing equipment shown to remain: HVAC control panel, unit heater, gas boiler, heating pump, chilled water pump, louvers. Existing panelboards SP1, SP2, SP3, EP1 shown at bottom of plan. Key plan shows area of work within building context. Demolition notes: (1) Intercept 3-#3/0 AWG, 1-#6 AWG GND - 2\"C feeder at existing panelboard SP1 at nearest accessible J-box and retain for reuse; (2) Intercept existing feeder connected to panelboard SP2 at existing heat trace thermostat and retain for reuse."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "ELECTRICAL NEW WORK FLOOR PLAN - POWER",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2024.06.10 23-053 Building 310 Chiller - Electrical FSS.pdf",
+        "reading_notes": "Scale 1/2\" = 1'-0\". Shows new chiller installation: Chiller CH-1 and Chiller CH-2 (each with dual compressor modules, shown as new/heavy lines). Each new chiller served by: 3-#3/0 AWG, 1-#6 AWG GND - 2\"C power conductors from SP1; 194 MCA, 208V, 3-phase per chiller. Each chiller also has brazed plate heater (120V) and heat trace circuits. SP2-23 and SP2-25 circuit designations shown. Existing equipment shown to remain identical to demo sheet: HVAC control panel, unit heater, gas boiler, heating pump, chilled water pump. Construction notes reference intercepting feeders at SP1 and SP2 and extending for new work. BACNet interface noted for new chillers per mechanical requirements."
+      },
+      {
+        "sheet_number": "E-601",
+        "title": "PANELBOARD SCHEDULE AND ONE-LINE RISER DIAGRAM",
+        "discipline": "electrical_engineering",
+        "source_pdf": "2024.06.10 23-053 Building 310 Chiller - Electrical FSS.pdf",
+        "reading_notes": "Contains: (1) Existing Panelboard SP1 Schedule — 800A MLO, 208Y/120V, 3-phase, 4-wire, 18 kAIC, surface mount. Shows CH-1 at 155.2A (200A 3P breaker), AHU feeds, air handler loads, parachute hoist feeder, SPARES. Total: 308.9A. (2) Existing Panelboard SP2 Schedule — 200A MLO, 208Y/120V, 3-phase, 4-wire, 18 kAIC, surface mount. Shows CH-2 brazed plate heater (1.0A), chiller piping heat tracing (VF-1 circuit). (3) One-Line Riser Diagram showing connection to existing 2000A switchboard (208Y/120V, 3-phase, 4-wire). SP1 feeds CH-1 (194 MCA, 208V, 3-phase via 200A-3P, NF, NEMA 4X disconnect) and CH-2 (same rating). SP2 feeds brazed plate heaters and heat trace. Feeder schedule table: X1 = 2 sets 4-600 KCMIL + 1-#1/0 AWG GND in (2) 4\" conduits; X2 = 3-#3/0 AWG + 1-#6 AWG GND in 2\" conduit; B = 2-#12 AWG + 1-#12 AWG GND in 3/4\" conduit. Note: legend on E-001 uses generic abbreviations; sheet E-601 is more detailed but self-consistent."
+      },
+      {
+        "sheet_number": "RFP-PART6-JCI-NET-1-1",
+        "title": "JCI DDC Network Riser (Reference Drawing)",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "Bldg 310 (15).pdf",
+        "reading_notes": "Part 6 attachment — Johnson Controls Inc. reference control drawing NET-1-1 from contract 90590077. Shows existing NAE-5512 controller (located in M103, Bldg P301-1) on Ethernet backbone (government-provided switch connected to Building 820). Five FEC/IOM controllers on MS/TP BUS serving: CHWS (addr 4), HWS (addr 5), AHU-1 (addr 6), AHU-2 (addr 7), AHU-3 (addr 8). New chillers must integrate into existing JCI Metasys BACNet FC Bus architecture. This context is critical for the DDC controls scope of the chiller replacement."
+      },
+      {
+        "sheet_number": "RFP-PART6-JCI-CHWS-1-1",
+        "title": "JCI DDC Chilled Water System Flow Layout (Reference Drawing)",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "Bldg 310 (15).pdf",
+        "reading_notes": "Part 6 attachment — JCI reference drawing CHWS-1-1. Shows existing chilled water system: two chillers (CH1, CH2) in series, chilled water pumps CWP1 and CWP2 (with VFDs), 500-gallon inertia storage tank (confirmed from Part 3 SOW). FEC/IOM controller at addr 4 on CHWS trunk. Control sequences: lead/lag pump via lowest runtime; chillers staged in series (CH2 setpoint 41°F, CH1 setpoint 49°F). CHW supply temperature (CWS-T), return (CWR-T), entering (CWE-T), leaving (CWL-T) sensors, and flow meter (CW-F) all integrated into existing JCI system. New chillers must maintain this control architecture."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Project is limited to mechanical room area of Building 310 (Paraloft addition). Floor count of full building not addressed in source documents."
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Building 310 area not stated; scope is limited to exterior mechanical room/chiller yard. Key plan on ED101/E-101 shows area of work in relation to building but no square footage."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "2x nominal 40-ton air-cooled chillers (new, ARI-certified scroll type, galvanized steel, epoxy-coated condenser coils for salt environment, BACNet interface, dual refrigerant circuits)",
+          "Existing 500-gallon chilled water inertia storage tank (to remain)",
+          "Existing CWP-1 and CWP-2 chilled water pumps with VFDs (to remain)",
+          "Existing AHU-1 (with CDQ wheel, 2 cooling circuits, reheat coil), AHU-2, AHU-3 (to remain)",
+          "Chilled water piping — Type L copper, butterfly isolation/bypass valves, electric heat tracing on exterior piping (5W/ft self-regulating, separate supply and return circuits)",
+          "Existing gas boiler and hot water pumps HWP-1, HWP-2 (to remain)",
+          "Existing unit heater and heating pump (to remain)",
+          "Existing WC-1 packaged DX unit (to remain)",
+          "JCI Metasys DDC system (existing NAE-5512, FEC/IOM controllers) — new chillers to integrate via BACNet FC Bus"
+        ],
+        "electrical": [
+          "Existing Panelboard SP1: 800A MLO, 208Y/120V, 3-phase, 4-wire, 18 kAIC (surface mount) — feeds new chillers from existing SP1",
+          "Existing Panelboard SP2: 200A MLO, 208Y/120V, 3-phase, 4-wire, 18 kAIC — feeds heat trace and brazed plate heaters",
+          "New chiller power: 194 MCA, 208V, 3-phase each; 3-#3/0 AWG + 1-#6 AWG GND in 2\" conduit from SP1",
+          "200A-3P, NF, NEMA 4X integral disconnect at each new chiller",
+          "Brazed plate heater circuits (120V) for each chiller",
+          "Electric heat trace: 5W/ft self-regulating on exterior chilled water piping, supply and return circuits from SP2"
+        ],
+        "plumbing": [
+          "Chilled water piping system (Type L copper, butterfly isolation/bypass/emergency connection valves for temporary chiller hookup)",
+          "Flexible elastomeric cellular pipe insulation with aluminum jacket on exterior CW piping"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "project_description_summary": "Design-build project at Building 310 Paraloft, NAS Oceana Dam Neck Annex, Virginia Beach, VA to replace two inoperable nominal 40-ton air-cooled chillers (Trane Model CGAFC40EARA1000DEGH00N00000W00S) serving the Paraloft addition (DEVGRU facility). Both existing chillers failed due to salt-environment exposure. Scope includes chiller demolition and replacement, associated chilled water piping, housekeeping pads, DDC controls integration into existing Johnson Controls Metasys system, and coordinated electrical work. Building 310 remained operational throughout construction using a temporary rental chiller. BFA served as the electrical Designer of Record (subconsultant to the design-build prime contractor), producing electrical FSS drawings under BFA project 23-053. NAVFAC RFP prepared August 2022; BFA electrical drawings dated June 2024.",
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

@@ -1,0 +1,12 @@
+description: "SLED qualifications-based — no price (QBS)"
+# Qualifications-Based Selection — common for A/E services
+
+sections:
+  - executive_summary
+  - qualifications
+  - technical_approach
+  - past_performance
+  - staffing_plan
+  - project_schedule
+  - subconsultant
+  - appendices

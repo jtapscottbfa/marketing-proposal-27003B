@@ -1,0 +1,377 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "replace_boilers_pax_river",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/replace_boilers_pax_river/20-018 Final_.BASIS OF DESIGN_ALL TRADES.pdf",
+      "type": "bod",
+      "sha256": "fdc2802094e53636c356df1fdeac52db06c987992382c9ab3f7a6ec47eecf167",
+      "page_count": 5,
+      "included": true
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/replace_boilers_pax_river/B101A, B2641 & B2865 REPLACE BOILERS ACQR#5768527 6-PART RFP.pdf",
+      "type": "sow",
+      "sha256": "dbc4f4d688f1f3055d9e14b1fede980dea185bbbb5dda556f31e245c7c8cc1ca",
+      "page_count": null,
+      "included": true
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "RFP Part 6 references room layout photos/floor plans for each building, but these are embedded as low-resolution images within the PDF and are not extractable as drawing sheets. No separate drawing-set PDF was present in the intake folder. Part 5 (Prescriptive Technical Specifications) is explicitly marked 'Not Used' in the RFP."
+  },
+  "facts": {
+    "project_name": {
+      "value": "B101A, B2641 & B2865 Replace Boilers – NAS Patuxent River",
+      "source": "BOD cover page",
+      "quote": "B101A, B2641 AND B2865 REPLACE BOILERS",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "B101A, B2641 AND B2865 REPLACE BOILERS",
+          "value": "B101A, B2641 AND B2865 REPLACE BOILERS",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover/title",
+          "claim": "B101A, B2641, B2865 Replace Boiler Plants",
+          "value": "B101A, B2641, B2865 Replace Boiler Plants",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "NAVFAC / Naval Air Station Patuxent River",
+      "source": "BOD cover page and RFP cover",
+      "quote": "NAWC/NAS Patuxent River, MD",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "NAWC/NAS Patuxent River, MD",
+          "value": "NAWC/NAS PATUXENT RIVER, MD",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover",
+          "claim": "Naval Air Station, Patuxent River, MD",
+          "value": "Naval Air Station, Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Air Station Patuxent River / NAVFAC",
+      "source": "RFP Part 2 §00 00 00 General Requirements",
+      "quote": "Contracting Officer (KO): The individual designated to administer the contract.",
+      "corroboration": [
+        {
+          "source": "RFP Part 2 §00 00 00",
+          "claim": "Federal government (Navy) contract; KO and COR referenced throughout",
+          "value": "NAVFAC / NAS Patuxent River",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_address": null,
+      "source": "BOD cover page",
+      "quote": "NAWC/NAS Patuxent River, MD"
+    },
+    "project_number_internal": {
+      "value": "20-018",
+      "source": "BOD cover page",
+      "quote": "BFA Project #20-018"
+    },
+    "project_number_client": {
+      "value": "1639149",
+      "source": "RFP cover",
+      "quote": "B101A, B2641, B2865 Replace Boiler Plants  1639149",
+      "corroboration": [
+        {
+          "source": "RFP cover",
+          "claim": "Work Order / Project Number 1639149",
+          "value": "1639149",
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 6 B2641 Attachments header",
+          "claim": "WO# 1639149",
+          "value": "1639149",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": "ACQR#5768527",
+      "source": "RFP filename / RFP cover",
+      "quote": "REPLACE BOILERS ACQR#5768527 6-PART RFP",
+      "corroboration": [
+        {
+          "source": "RFP filename",
+          "claim": "ACQR#5768527",
+          "value": "ACQR#5768527",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No gross square footage provided in either BOD or RFP. Scope is limited to boiler room/mechanical room replacements in three separate buildings."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "scope_summary": {
+      "value": "Design-build replacement of existing boiler plants in three buildings (B2641, B2865, B101A) at NAS Patuxent River, MD. Scope includes removal of existing boilers and associated equipment, installation of new high-efficiency hot water boilers, replacement of pumps and piping, controls integration with existing DDC systems, electrical power modifications, and potential asbestos abatement in Building 101A. Buildings remain occupied during construction; temporary heating service required. Three separate CLINs correspond to the three buildings.",
+      "source": "BOD §Scope of Work and RFP Part 3 §1.0 Project Description",
+      "quote": "Remove existing fuel oil boilers, pumps, and all associated equipment, provide, and install new high efficiency boilers, pumps, and all associated equipment to building 2641.",
+      "corroboration": [
+        {
+          "source": "BOD §Scope of Work",
+          "claim": "Boiler replacement in B2641, B2865, B101A with new high efficiency boilers",
+          "value": "Boiler replacement in three buildings",
+          "agrees": true
+        },
+        {
+          "source": "RFP Part 3 §1.0 Project Description",
+          "claim": "CLIN 0001-0003 describe identical scope per building",
+          "value": "Boiler replacement in three buildings",
+          "agrees": true
+        }
+      ]
+    },
+    "building_descriptions": {
+      "value": [
+        {
+          "building_id": "B2641",
+          "description": "Occupied building. Existing: two Smith 19A-51W-03 cast iron fuel oil boilers, each 810 MBH. New: oil-fired packaged non-condensing boiler with flexible tubes, minimum 2 boilers each at 67% load. Requires crane for boiler removal/replacement. Control system tied to existing DDC system.",
+          "source": "BOD §Mechanical Design, RFP Part 3 CLIN 0001",
+          "quote": "The existing boilers are two Smith 19A-51W-03 (cast iron)."
+        },
+        {
+          "building_id": "B2865",
+          "description": "Occupied building. Existing: Fulton Gas-Fired Pulse Combustion Boiler, Model PHw-1000 (1,000,000 Btu/hr). New: 2 gas-fired cast iron modular condensing boilers, 650 MBH each, minimum 92.7% efficiency. Permit to Construct (PTC) required from Maryland MDE. Control system tied to existing DDC.",
+          "source": "BOD §Mechanical Design, RFP Part 3 CLIN 0002",
+          "quote": "The existing boiler is a Fulton™ Gas-Fired Pulse Combustion Boiler, Model PHw-1000."
+        },
+        {
+          "building_id": "B101A",
+          "description": "Boiler room serving Hangar 101 (H101). Building not occupied during renovation but H101 is. Located adjacent to taxiway; FOD protocols required. Existing: two Hurst 4.2-MMBH gas-fired boilers (Title V permit), hot water pumps, steam converter. Boiler type clarified in BOD as two Weil McLain BGL-988-SF-PF-LO-UL. New: 2 high-efficiency gas-fired condensing hot water boilers. Asbestos abatement may be required; testing required. Roll-up door for access. PTC required from Maryland MDE.",
+          "source": "BOD §Mechanical Design, RFP Part 3 CLIN 0003, RFP §Air Quality notes",
+          "quote": "The existing boilers are two Weil McLain BGL-988-SF-PF-LO-UL."
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "Design-build contract; design and construction are combined. BOD is dated August 13, 2020 (final level submittal), suggesting design was complete or near-complete at that point. RFP finalized 1/16/2020."
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_central_plant",
+      "hvac_controls",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "hvac_hot_water",
+      "hvac_controls_bas",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "existing_demolition",
+      "existing_hazmat_abatement"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nas_patuxent_river",
+    "boiler_replacement",
+    "design_build",
+    "mechanical_systems",
+    "navy",
+    "maryland",
+    "occupied_building_construction",
+    "asbestos_abatement",
+    "ddc_controls"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "No drawing set present; no square footage stated in BOD or RFP"
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "B2641: New oil-fired packaged non-condensing hot water boilers (2 minimum, each 67% of load); replacement pumps; new control system tied to existing DDC; shot-type chemical feeder",
+          "B2865: 2 new gas-fired cast iron modular condensing boilers, 650 MBH each, min 92.7% efficiency; new pumps; control system tied to existing DDC",
+          "B101A: 2 new high-efficiency gas-fired condensing hot water boilers; replacement of all associated equipment including pumps, steam converter, piping; new control panel"
+        ],
+        "electrical": [
+          "Modifications to existing 480Y/277V or 208Y/120V 3-phase electrical distribution to support new mechanical equipment",
+          "Individual motor starters with separate disconnect switches for each motor",
+          "New conduit (IMC/rigid metallic) and copper THHN/THWN conductors"
+        ],
+        "plumbing": [
+          "Dam installation around floor drains in B2641 for fuel leak/contamination prevention",
+          "Domestic water insulation on hot supply and recirculation piping",
+          "Replacement of air separator, make-up water assembly, and expansion tank in each building"
+        ],
+        "fire_protection": []
+      }
+    },
+    "extraction_notes": "No drawing-set PDF was present in the intake directory. The RFP Part 6 attachments include embedded photographs and labeled room-layout sketches for each building, but these are rasterized within the PDF and do not constitute engineering drawing sheets. Consequently no per-sheet drawing inventory could be produced. MEP system inventory above is derived entirely from text sources (BOD and RFP Part 3/6)."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.building_descriptions[B101A].existing_boiler_make_model",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "RFP Part 3 CLIN 0003 and RFP Air Quality notes",
+          "value": "Two Hurst 4.2-MMBH gas-fired boilers (Title V permit)"
+        },
+        {
+          "source": "BOD §Mechanical Design – Building 101A",
+          "value": "Two Weil McLain BGL-988-SF-PF-LO-UL"
+        }
+      ],
+      "resolution_chosen": "BOD §Mechanical Design – Building 101A",
+      "rationale": "The BOD is BFA's design document and is more likely to reflect verified field conditions. The RFP Air Quality note references 'Hurst 4.2-MMBH gas-fired units' as the equipment included in the NAX PAX Title V Operating Permit, while the BOD text (authored by BFA after field investigation) identifies Weil McLain units. Possible explanation: Hurst may refer to the original/older boilers under the air permit, while Weil McLain are what BFA found installed at time of design. Both values are retained in building_descriptions; conflict flagged for human verification.",
+      "notes": "This discrepancy may indicate a prior replacement occurred between permit issuance and BFA's field investigation, or the RFP and BOD reference different equipment in the same space."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

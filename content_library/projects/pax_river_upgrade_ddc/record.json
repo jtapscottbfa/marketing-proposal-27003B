@@ -1,0 +1,447 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "pax_river_upgrade_ddc",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_upgrade_ddc/19-019.2020.03.26.CONTROL SPEC FINAL EXECUTEDpdf.pdf",
+      "type": "spec_book",
+      "sha256": "2cbf3354d596245d82e70afad997e8cbab9f42624c7f51b20c2cc6dbcf528b7b",
+      "included": true,
+      "notes": "Executed control specification for P-140 Communication Engineering Facility, Webster Field, Patuxent River MD, under contract N40080-10-D-0498-013. Execution date 2020-03-26 inferred from filename. Contains UFGS spec sections 23 09 00, 23 09 13, 23 09 23.02 (BACnet DDC), 25 05 11 (cybersecurity), 25 10 10 (UMCS front end)."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_river_upgrade_ddc/Attachment A GOV SOW B2187, B2185, B2855 Upgrade DDC System Parts 1-6.pdf",
+      "type": "sow",
+      "sha256": "46098e9c9ee1914350c3c32a5d22198597aa1689988accaeabe57eb7b8e6a213",
+      "included": true,
+      "notes": "Government SOW / RFP for Design-Build: Replace DDC Controls in Buildings B2185, B2187, and B2855 at NAS Patuxent River, MD. Dated 13 February 2019, project number 1621445. Contains project description, site analysis with existing HVAC inventories per building, engineering systems requirements, and general requirements."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "SOW/RFP and executed technical specs present. No BOD, no drawings, no contract document with pricing. The SOW references Record Drawings as Part 6 attachments but they are not present in the intake folder."
+  },
+  "facts": {
+    "project_name": {
+      "value": "B2185, B2187, B2855 Replace DDC Controls — NAS Patuxent River",
+      "source": "SOW cover page",
+      "quote": "B2185, B2187, B2855 Replace DDC Controls",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "B2185, B2187, B2855 Replace DDC Controls",
+          "value": "B2185, B2187, B2855 Replace DDC Controls",
+          "agrees": true
+        },
+        {
+          "source": "Control Spec cover page",
+          "claim": "P-140 COMMUNICATION ENGINEERING FACILITY",
+          "value": "P-140 Communication Engineering Facility",
+          "agrees": false,
+          "note": "Control spec identifies facility as 'P-140 Communication Engineering Facility, Webster Field' under a separate contract number (N40080-10-D-0498-013). This may be a related but distinct contract instrument covering one of the three buildings, or a task order issued after the 2019 RFP. The slug pax_river_upgrade_ddc encompasses both documents."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC)",
+      "source": "SOW Part 2, Administrative Requirements",
+      "quote": "NAVFAC's Electronic Construction and Facility Support Contract Management System (eCMS)",
+      "corroboration": [
+        {
+          "source": "SOW Part 2",
+          "claim": "NAVFAC",
+          "value": "Naval Facilities Engineering Command (NAVFAC)",
+          "agrees": true
+        },
+        {
+          "source": "Control Spec, contract header",
+          "claim": "Contract N40080-10-D-0498-013",
+          "value": "NAVFAC (N40080 = NAVFAC Mid-Atlantic contract prefix)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Air Station Patuxent River",
+      "source": "SOW, Site Analysis section",
+      "quote": "The HVAC equipment and automatic temperature control systems are operated and maintained through a multi-year base operating support services (BOS) contract.",
+      "corroboration": [
+        {
+          "source": "SOW Site Analysis",
+          "claim": "NAS Patuxent River buildings B2185, B2187, B2855",
+          "value": "Department of the Navy / NAS Patuxent River",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "NAS Patuxent River (Naval Air Station), Patuxent River, MD",
+      "source": "SOW cover page and Control Spec header",
+      "quote": "Patuxent River, MD",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "Patuxent River, MD",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "Control Spec, building header",
+          "claim": "WEBSTER FIELD, PATUXENT RIVER, MD",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "1621445",
+      "source": "SOW cover page",
+      "quote": "1621445",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "1621445",
+          "value": "1621445",
+          "agrees": true
+        },
+        {
+          "source": "Control Spec, contract header",
+          "claim": "N40080-10-D-0498-013",
+          "value": "N40080-10-D-0498-013",
+          "agrees": false,
+          "note": "Control spec carries a different contract number. This is a major-severity conflict: the two documents reference different contract/project identifiers. See conflict_flags."
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40080-10-D-0498-013",
+      "source": "Control Spec, document header",
+      "quote": "N40080-10-D-0498-013",
+      "corroboration": [
+        {
+          "source": "Control Spec header",
+          "claim": "N40080-10-D-0498-013",
+          "value": "N40080-10-D-0498-013",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "project number 1621445",
+          "value": "1621445 (RFP/project number, not contract number)",
+          "agrees": false,
+          "note": "SOW uses project number 1621445; no contract number appears in SOW. The control spec contract number (N40080-10-D-0498-013) could be the IDIQ or task order number from which the DDC work was issued."
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "Individual building areas are documented: B2187 = 467,530 SF, B2185 = 268,000 SF, B2855 = 49,464 SF. Total is 784,994 SF but scope is DDC/controls replacement only, not construction of the buildings. Aggregate area is presented in sub-field below rather than as a single square_footage value.",
+      "corroboration": [
+        {
+          "source": "SOW Section 3.0, Site Analysis, CLIN 001",
+          "claim": "Building 2187 is a 467,530 square feet R&D facility",
+          "value": 467530,
+          "agrees": true
+        },
+        {
+          "source": "SOW Section 3.0, Site Analysis, CLIN 002",
+          "claim": "Building 2185 is a 268,000 square feet office",
+          "value": 268000,
+          "agrees": true
+        },
+        {
+          "source": "SOW Section 3.0, Site Analysis, CLIN 003",
+          "claim": "Building 2855 is a 49,464 square feet office",
+          "value": 49464,
+          "agrees": true
+        }
+      ]
+    },
+    "building_areas_by_building": {
+      "B2187": {
+        "value": 467530,
+        "unit": "gsf",
+        "description": "R&D facility",
+        "source": "SOW Section 3.0 CLIN 001",
+        "quote": "Building 2187 is a 467,530 square feet R&D facility, comprised of open plan and private offices, an atrium, raised floor computer rooms, high bay laboratories, secure facilities, support and utility spaces."
+      },
+      "B2185": {
+        "value": 268000,
+        "unit": "gsf",
+        "description": "Office building",
+        "source": "SOW Section 3.0 CLIN 002",
+        "quote": "Building 2185 is a 268,000 square feet office, comprised of open plan and private offices, secure facilities, support and utility spaces."
+      },
+      "B2855": {
+        "value": 49464,
+        "unit": "gsf",
+        "description": "Office building",
+        "source": "SOW Section 3.0 CLIN 003",
+        "quote": "Building 2855 is a 49,464 square feet office, comprised of open plan and private offices, secure facilities, support and utility spaces."
+      }
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "notes": "Design-build delivery; DOR is a subconsultant to the prime. No fee schedule in source documents."
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "commissioning",
+      "telecommunications_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_controls",
+      "hvac_design",
+      "electrical_power_distribution",
+      "commissioning_new_construction"
+    ],
+    "building_systems": [
+      "hvac_controls_bas",
+      "hvac_air_distribution",
+      "hvac_chilled_water",
+      "hvac_hot_water",
+      "hvac_packaged",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electronic_safety_security",
+      "communications_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac",
+    "navfac_mid_atlantic",
+    "pax_river",
+    "nas_patuxent_river",
+    "ddc_controls",
+    "bacnet",
+    "niagara",
+    "umcs",
+    "controls_upgrade",
+    "design_build",
+    "occupied_renovation",
+    "cybersecurity",
+    "webster_field",
+    "p140"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "commissioning": "narratives/disciplines/commissioning.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md"
+    }
+  },
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "note": "No drawings in intake folder. Individual building areas from SOW text (B2187: 467,530 SF; B2185: 268,000 SF; B2855: 49,464 SF)."
+      }
+    },
+    "notes": "No drawing PDFs present in intake folder. SOW Part 6 lists record drawing sheet indices for all three buildings but the actual drawings are not included in the provided source documents."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_client / facts.contract_number",
+      "severity": "major",
+      "claims": [
+        {
+          "source": "SOW cover page",
+          "value": "Project number 1621445 (RFP / design-build project number)"
+        },
+        {
+          "source": "Control Spec document header",
+          "value": "Contract N40080-10-D-0498-013"
+        }
+      ],
+      "resolution_chosen": "Both values retained in separate fields",
+      "rationale": "The two source documents appear to be related instruments for the same overall DDC upgrade scope at NAS Patuxent River. The SOW (Feb 2019, project 1621445) is the RFP for the design-build contract covering all three buildings. The executed control spec (filename dated 2020-03-26, contract N40080-10-D-0498-013) is a NAVFAC UFGS-based technical specification that was incorporated into the executed contract. Contract N40080-10-D-0498-013 is likely the IDIQ or task order number. The P-140 building name in the spec header may refer to Building 2187 (the large R&D facility). Human review needed to confirm these are the same project or distinct related projects."
+    },
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW cover page",
+          "value": "B2185, B2187, B2855 Replace DDC Controls"
+        },
+        {
+          "source": "Control Spec document header",
+          "value": "P-140 COMMUNICATION ENGINEERING FACILITY, WEBSTER FIELD, PATUXENT RIVER, MD"
+        }
+      ],
+      "resolution_chosen": "SOW name used as primary; control spec name noted",
+      "rationale": "SOW covers the full three-building scope; control spec may specifically cover the P-140 / B2187 building or may be the project-wide technical spec. The SOW name is more descriptive of the overall project."
+    }
+  ],
+  "scope_summary": {
+    "description": "Design-build replacement and upgrade of Direct Digital Control (DDC) / Building Automation System (BAS) across three occupied buildings at NAS Patuxent River, Maryland: B2187 (467,530 SF R&D facility), B2185 (268,000 SF office), and B2855 (49,464 SF office). Scope includes new BACnet-compliant DDC controllers, integration of existing CRAC units and VAV boxes, connection to base-wide Niagara 4.x UMCS network, cybersecurity implementation per DoD/NAVFAC requirements, performance verification testing (PVT), commissioning, and training. Buildings remained occupied throughout construction. Existing wiring reused where adequate. Government-furnished facility point of connection (FPOC) panels installed by contractor for B2187 and B2855.",
+    "clin_breakdown": {
+      "CLIN_001_B2187": "Replace/upgrade DDC system in 467,530 SF R&D facility; add CRAC units to new DDC; correct nuisance alarms; energy savings controls (OA resets, economizer, scheduling, chiller/boiler optimization); connect to base-wide Niagara network; install government-furnished FPOC panel.",
+      "CLIN_002_B2185": "Replace aging Automated Logic DDC system in 268,000 SF office; add CRAC units; scheduling and optimization features; maintain existing base-wide network connectivity.",
+      "CLIN_003_B2855": "Upgrade existing JCI Metasys DDC to meet current UFC standards; replace CO2, OA, and humidity sensors; clean heat exchange coils in RTUs and VAV boxes; TAB of HVAC system; commission new and existing HVAC systems."
+    },
+    "existing_systems_B2187": {
+      "chillers": "3 water-cooled 650-ton Trane centrifugal chillers",
+      "chilled_water_pumps": "3 primary constant-speed + 2 variable-speed secondary",
+      "cooling_towers": "3 updraft with gear-driven multi-speed fans",
+      "boilers": "4 gas-fired low pressure hot water boilers",
+      "hot_water_pumps": "4 parallel variable-speed",
+      "AHUs": "15 variable-speed cooling-only AHUs + 27 constant-volume makeup AHUs",
+      "CRAC_units": "56 Pomona Air CRACs with hot water/chilled water coils and standalone DDC",
+      "VAV_boxes": "332 with hot water coils + 110 cooling-only",
+      "DDC_system": "JCI Metasys fully integrated"
+    },
+    "existing_systems_B2185": {
+      "chillers": "3 chillers",
+      "boilers": "4 hot water boilers",
+      "AHUs": "24 AHUs",
+      "VAV_boxes": "225 VAV terminal units",
+      "CRAC_units": "90 computer room units",
+      "DDC_system": "Automated Logic DDC (original installation, approaching obsolescence)"
+    },
+    "existing_systems_B2855": {
+      "boilers": "2 500 MBTU/H hot water boilers",
+      "RTUs": "3 rooftop DX AHUs",
+      "CRAC_units": "4 computer room ACs with remote air-cooled condensers",
+      "VAV_boxes": "81 fan-powered VAV + 20 VAV with reheat + 5 fan-powered CAV",
+      "DDC_system": "JCI Metasys (original installation, approaching obsolescence)"
+    }
+  },
+  "technical_requirements": {
+    "protocol": "BACnet ASHRAE 135 (open, non-proprietary)",
+    "network": "BACnet/IP backbone + MS/TP field networks",
+    "base_wide_integration": "Niagara 4.x UMCS (installed by 3eTI); BFA/contractor responsible for providing all necessary DDC system information; integration to base-wide network performed by government personnel",
+    "cybersecurity": "UFC 4-010-06; DoD RMF; NIST 800-82; password management; no wireless unless approved; IP network physical security; DoD DBIDS access for contractor personnel",
+    "commissioning": "UFGS 01 91 00.15 Total Building Commissioning required; independent CxA; HVAC and BAS systems",
+    "pvt": "Performance Verification Testing per UFGS 23 09 00; endurance testing; government-witnessed",
+    "tab": "CLIN 003 (B2855): full TAB per NEBB/AABC standards",
+    "design_standards": [
+      "UFC 3-410-01 HVAC Systems",
+      "UFC 3-410-02 Direct Digital Control for HVAC",
+      "UFC 4-010-06 Cybersecurity of Facility-Related Control Systems",
+      "UFGS 23 09 00 Instrumentation and Control for HVAC",
+      "UFGS 23 09 13 Instrumentation and Control Devices for HVAC",
+      "UFGS 23 09 23.02 BACnet DDC for HVAC",
+      "UFGS 25 05 11 Cybersecurity for Facility-Related Control Systems",
+      "UFGS 25 10 10 UMCS Front End and Integration"
+    ]
+  }
+}

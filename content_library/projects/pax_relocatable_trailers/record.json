@@ -1,0 +1,608 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "pax_relocatable_trailers",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/2024.05.12 LR-168 BOD.pdf",
+      "type": "bod",
+      "sha256": "b8963c404d9ead8bf15c016a52067ebc0c8e88a4057561dc02a7d61442f91b58",
+      "included": true,
+      "notes": "BFA Project #21-042J, 65% submittal, May 09 2024. Covers LR-168 general + LR-167 general (cover). Discipline sections: General, Architectural, Structural, Fire Alarm/Sprinkler, Plumbing, Mechanical, Electrical."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Section - C - Description Specification Work Statement.pdf",
+      "type": "sow",
+      "sha256": "d4c9426f90ccb9068425a80a7970b6ee24522603476ae6ac0c9483b3ce524cb1",
+      "included": true,
+      "notes": "Contract N40080-11-D-3019. Sections C through J. Covers both LR-167 and LR-168 requirements in detail."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Section - C - Description Specification Work Statement.docx",
+      "type": "sow",
+      "sha256": "bc41ae7e9b6dd9175976a241f267f4330dfde41b2349afb6d7ea9cb33ef1d05e",
+      "included": true,
+      "notes": "DOCX version of Section C SOW — duplicate of PDF version. Included for completeness."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Section - J - Documents, Exhibit, and Other Attachments Table of Contents.pdf",
+      "type": "sow",
+      "sha256": "38966ad4b263c656bf924430ec1e675883236064dd29a501c696ee5d01ceb221",
+      "included": true,
+      "notes": "Section J table of contents plus attachment specs (J-1501001-05 Relocatable Technical Specs, secure specs). Additional technical spec content for both LR-167 and LR-168."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Basis of Design Template.docx",
+      "type": "unknown",
+      "sha256": "93b9298ab5700a4c6d5aef334e0549221c972303a6017e0e32450e297c9bf92e",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "BFA internal BOD template with lorem ipsum placeholder text. Not a project-specific document. No project data extracted."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/ARCH.pdf",
+      "type": "bod",
+      "sha256": "e328046cf987aba98473da7ce1b6760f26da68c2f63edae36557027ee1c4097a",
+      "included": true,
+      "notes": "Architectural discipline BOD section for LR-167 (2 pages). Confirms LR-167 is also ~37,586 SF two-story relocatable. Design criteria same as LR-168 BOD."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/MECHANICAL.pdf",
+      "type": "bod",
+      "sha256": "d6a7e1c41c6748b83505959d65d16a78dc3350921aed767b8b6410f947862b58",
+      "included": true,
+      "notes": "Plumbing discipline BOD section (2 pages). Covers electric water heater, flush-valve fixtures, sump pump in elevator shaft."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/ELECTRICAL.pdf",
+      "type": "bod",
+      "sha256": "827052dac70fb03cd6ad839ae073262d8f0e05b6bbd56c89cb7f1a289e2038de",
+      "included": true,
+      "notes": "Electrical discipline BOD — cover page + full BOD for both LR-167 & LR-168. 208Y/120V 3-phase service, 36,000 SF per electrical scope."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/FIRE PROTECTION.pdf",
+      "type": "bod",
+      "sha256": "516e5583bc4345cb24e0d89d60fb35815628e9d000f5c5f2f38310ad1703b618",
+      "included": true,
+      "notes": "Fire protection discipline BOD section (2 pages). Wet pipe sprinkler system, fire alarm/MNS per UFC 3-600-01."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/STRUCTURAL.pdf",
+      "type": "bod",
+      "sha256": "17c618c002d58498c4a36c27327f653716e5efe37a579ae18db2e67c17ce03ae",
+      "included": true,
+      "notes": "Structural discipline BOD section. Foundation design: continuous CMU on reinforced concrete spread footings."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/J-1501001-4a.pdf",
+      "type": "drawing_set",
+      "sha256": "43760cb591bf73b6c352ea0f29a20eaa5aac1866c686f4b8d61015d6faf6d15e",
+      "included": true,
+      "notes": "Attachment J-1501001-4a: LR-167 floor plans, 2 sheets (First Floor + Second Floor). NAWCAD 7.10 Infrastructure Business Operations Dept drawings dated 08/15/2012. 'FOR OFFICIAL USE ONLY.'"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/J-1501001-4b - B168 Floor Plans (Revised 10.27.21).pdf",
+      "type": "drawing_set",
+      "sha256": "cb821e19135347aa478795e98e298da022380172e701cdbad58128fc9f5d7b7a",
+      "included": true,
+      "notes": "Attachment J-1501001-4b: LR-168 floor plans, revised 10/27/2021. Building 168 floor layout attachment."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Power_Data Layout LR167.pdf",
+      "type": "drawing_set",
+      "sha256": "1a5ecb6c16f57cae560ea1980cb5b6001b8e92dbb7e7b7c20ea0be8bd3ce67aa",
+      "included": true,
+      "notes": "Power and data layout drawing for LR-167. Telecom/electrical layout reference."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Void-J-1501001-4a_William Wisilosky.pdf",
+      "type": "unknown",
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "included": false,
+      "notes": "4-byte file — voided/superseded placeholder. No content. Excluded from extraction."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/pax_relocatable_trailers/Void-J-1501001-4b - B168 Floor Plans (Revised 10.2_William Wisilosky.pdf",
+      "type": "unknown",
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "included": false,
+      "notes": "4-byte file — voided/superseded placeholder. Same hash as other void file. No content. Excluded from extraction."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "full",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "Provide 2 Relocatable Trailers LR-167 & LR-168",
+      "source": "BOD cover page",
+      "quote": "PROVIDE 2 RELOCATABLE TRAILERS LR-168",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "PROVIDE 2 RELOCATABLE TRAILERS LR-168",
+          "value": "Provide 2 Relocatable Trailers LR-167 & LR-168",
+          "agrees": true
+        },
+        {
+          "source": "SOW Section C.1",
+          "claim": "LR-167 & LR-168 - The Contractor shall furnish all labor, management, supervision, tools, materials, equipment, Space Planning Service, engineering, and transportation necessary to provide the delivery, set-up in place, and leasing",
+          "value": "Provide 2 Relocatable Trailers LR-167 & LR-168",
+          "agrees": true
+        },
+        {
+          "source": "ARCH.pdf cover",
+          "claim": "PROVIDE 2 RELOCATABLE TRAILERS / Patuxent River, Maryland",
+          "value": "Provide 2 Relocatable Trailers LR-167 & LR-168",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Air Systems Command (NAVAIR), Naval Air Station Patuxent River",
+      "source": "BOD p.5 / SOW Section F.1",
+      "quote": "Located in Patuxent River, Maryland (also known as \"Pax River\"), the U.S. Naval Air Systems Command (NAVAIR) is building a new leased relocatable (LR).",
+      "corroboration": [
+        {
+          "source": "BOD p.5",
+          "claim": "U.S. Naval Air Systems Command (NAVAIR)",
+          "value": "Naval Air Systems Command (NAVAIR)",
+          "agrees": true
+        },
+        {
+          "source": "SOW Section F.1",
+          "claim": "The work shall be located at the Naval Air Station, Patuxent River, Maryland.",
+          "value": "Naval Air Station Patuxent River",
+          "agrees": true
+        },
+        {
+          "source": "J-1501001-4a drawing title block",
+          "claim": "NAWCAD 7.10 Infrastructure Business Operations Department, Patuxent River, MD 20670-5499",
+          "value": "Naval Air Warfare Center Aircraft Division (NAWCAD)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / NAVFAC",
+      "source": "SOW Section C.1 / drawing title block",
+      "quote": "The Authority Having Jurisdiction (AHJ) is Naval Facilities Engineering Command (NAVFAC).",
+      "corroboration": [
+        {
+          "source": "BOD p.5",
+          "claim": "The Authority Having Jurisdiction (AHJ) is Naval Facilities Engineering Command (NAVFAC).",
+          "value": "NAVFAC",
+          "agrees": true
+        },
+        {
+          "source": "J-1501001-4a title block",
+          "claim": "DEPARTMENT OF THE NAVY, PATUXENT RIVER, Naval Air Warfare Center Aircraft Division",
+          "value": "Department of the Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_address": null,
+      "facility_name": "Naval Air Station Patuxent River",
+      "source": "BOD cover page",
+      "quote": "PATUXENT RIVER, MARYLAND",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "PATUXENT RIVER, MARYLAND",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "SOW Section F.1",
+          "claim": "The work shall be located at the Naval Air Station, Patuxent River, Maryland.",
+          "value": "Naval Air Station Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-042J",
+      "source": "BOD cover page",
+      "quote": "BFA Project #21-042J",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "BFA Project #21-042J",
+          "value": "21-042J",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "notes": "No client project number found in sources; contract number N40080-11-D-3019 is the IDIQ base contract number."
+    },
+    "contract_number": {
+      "value": "N40080-11-D-3019",
+      "source": "SOW Section C.1 header",
+      "quote": "N40080-11-D-3019",
+      "corroboration": [
+        {
+          "source": "SOW Section C.1 header",
+          "claim": "N40080-11-D-3019",
+          "value": "N40080-11-D-3019",
+          "agrees": true
+        },
+        {
+          "source": "SOW Section G invoicing block",
+          "claim": "Contract Number N40080-11-D-3019",
+          "value": "N40080-11-D-3019",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW is the base IDIQ contract. Individual task orders for LR-167 and LR-168 not identified in available sources."
+    },
+    "square_footage": {
+      "value": 37586,
+      "unit": "gsf",
+      "source": "BOD general section p.1",
+      "quote": "The building is approximately 37,586 square feet.",
+      "corroboration": [
+        {
+          "source": "BOD general section p.1",
+          "claim": "approximately 37,586 square feet",
+          "value": 37586,
+          "agrees": true
+        },
+        {
+          "source": "ARCH.pdf p.2 (LR-167 architectural BOD)",
+          "claim": "The building is approximately 37,586 square feet.",
+          "value": 37586,
+          "agrees": true
+        },
+        {
+          "source": "SOW Section C.1",
+          "claim": "The facility shall be 36,000 square feet which excludes the thickness of the exterior walls.",
+          "value": 36000,
+          "agrees": false
+        },
+        {
+          "source": "BOD p.16 (Electrical scope)",
+          "claim": "The facilities shall be 36,000 square feet, which excludes the thickness of the exterior walls.",
+          "value": 36000,
+          "agrees": false
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "liquidated_damages_rate": {
+      "value": 800,
+      "currency": "USD",
+      "unit": "per_calendar_day",
+      "source": "SOW Section I, FAR 52.211-11",
+      "quote": "the Contractor shall, in place of actual damages, pay to the Government liquidated damages of $800.00 per calendar day of delay"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "BFA's design fee not stated in available source documents. BOD is a 65% submittal product. Lease-based contract structure makes design fee separation ambiguous."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "BOD dated May 09 2024 at 65% submittal; project still in design at time of BOD."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Lease-based IDIQ contract. Per-unit monthly lease rates not disclosed in source documents. Total construction/lease value not stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW states unit shall be ready for occupancy 240 days after date of award."
+      },
+      "contractual_duration_days": {
+        "value": 240,
+        "source": "SOW Section C.1",
+        "quote": "The unit shall be complete, set-up in place and ready for occupancy on site by 240 days after date of award.",
+        "notes": "This is setup/delivery duration, not a design or construction phase duration in traditional sense."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac",
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "architecture",
+      "structural_engineering",
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "structural_foundation",
+      "hvac_design",
+      "hvac_controls",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "electrical_grounding_lightning",
+      "fire_suppression_wet",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_service",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "electrical_lighting_controls",
+      "electrical_emergency_power",
+      "electrical_grounding",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "security_acs",
+      "security_video",
+      "telecom_structured_cabling",
+      "foundations_shallow",
+      "envelope_roofing",
+      "envelope_exterior_walls"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "communications_scope",
+      "special_construction_pre_engineered",
+      "finishes_scope",
+      "openings_scope",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_idiq",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "navair",
+    "nas_patuxent_river",
+    "pax_river",
+    "relocatable_trailers",
+    "icd_705",
+    "scif",
+    "secure_facility",
+    "leased_facility",
+    "modular_construction",
+    "maryland",
+    "nawcad"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "J-1501001-4a-F1",
+        "title": "LR-167 FIRST FLOOR PLAN",
+        "discipline": "architecture",
+        "source_file": "J-1501001-4a.pdf",
+        "page": 1,
+        "reading_notes": "NAWCAD 7.10 Infrastructure Business Operations Dept drawing dated 08/15/2012. 'FOR OFFICIAL USE ONLY.' LR-167 Building 167, First Floor. Overall building footprint approximately 156'-7 1/16\" x 138'-1 5/16\". Layout shows: 14 private offices (136 SF each typical), open office areas with cubicles, 5 conference rooms (largest 400 SF), 1 Main POP room (135 SF), 2 server rooms (200 SF one noted), reception area (239 SF), Mother's Room, Cell Locker, Vending room, Electrical room (73 SF), Mechanical room. Color-coded wall types by ICD-705 Wall Type A. System legend shows IDS, Noise Gen, ACS, CCTV, Combo, Wall IPS, TV/Displays. Wall ratings STC-45, STC-50, STC-45 w/shielding. Secure door locations (SEC DR) throughout. Multiple SEC DR vestibule arrangements for secure areas. Note: 'Wall thickness is approximate, based on typical construction for each building type. NOT FOR CONSTRUCTION.'"
+      },
+      {
+        "sheet_number": "J-1501001-4a-F2",
+        "title": "LR-167 SECOND FLOOR PLAN",
+        "discipline": "architecture",
+        "source_file": "J-1501001-4a.pdf",
+        "page": 2,
+        "reading_notes": "LR-167 Building 167, Second Floor. Date drawn 08/15/2012. 'FOR OFFICIAL USE ONLY.' Scale 1/8\" = 1'-0\". Layout shows: 6 private offices (144 SF), 1 large Conference Room 1 (814 SF), 1 Conference Room 2 (250 SF), 1 IDF Room (135 SF), Electrical room (73 SF), open office areas with cubicles (Room 1: 60 cubicles shown, Room 2: 25 cubicles, Room 3: 20 cubicles), Office 8 (229 SF), Office 9/10/11 (144 SF each), Mother's Room, Vending area. Multiple SEC DR vestibule arrangements. Stairwells at ends of building. Same ICD-705 Wall Type A color-coding throughout."
+      },
+      {
+        "sheet_number": "J-1501001-4b",
+        "title": "LR-168 FLOOR PLANS (REVISED 10.27.21)",
+        "discipline": "architecture",
+        "source_file": "J-1501001-4b - B168 Floor Plans (Revised 10.27.21).pdf",
+        "page": 1,
+        "reading_notes": "LR-168 floor plans, revised 10/27/2021. Not rendered — file available but not imaged in this pass. Per SOW Section J Attachment spec, Level 1 has 7 open office areas, 2 private offices, 4 conference rooms, 1 POP room, 2 security rooms, reception, Mother's Room, restrooms, vending, mechanical, electrical rooms. Level 2 has 7 open office areas, 6 private offices, 1 conference room, 1 IDF room, restroom, vending/kitchen, mechanical, utility, electrical rooms."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 37586,
+        "unit": "gsf",
+        "source": "BOD general section p.1 (interior dimensions); LR-167 floor plan confirms large open-plan two-story footprint",
+        "quote": null,
+        "sheets": [
+          "J-1501001-4a-F1",
+          "J-1501001-4a-F2"
+        ],
+        "notes": "Approximate floor plan dimensions from J-1501001-4a LR-167 plan: ~156' x 138' per floor = ~21,528 SF per floor x 2 floors ≈ 43,000 SF gross. However this may include crawlspace/foundation area. BOD states 37,586 SF; electrical scope states 36,000 SF (net, excluding wall thickness). The 37,586 value from BOD is used as primary."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "BOD general section, J-1501001-4a floor plans",
+        "quote": null,
+        "sheets": [
+          "J-1501001-4a-F1",
+          "J-1501001-4a-F2"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Ground-mounted air handling units on steel stands (first floor)",
+          "Roof-mounted air handling units (second floor)",
+          "Ductless split systems for conference rooms (additional cooling)",
+          "Ductless split systems for elevator machine room, POP room, server room",
+          "Electric baseboard heaters for stairwells, mechanical room, restrooms",
+          "Roof-mounted centrifugal exhaust fan for restrooms",
+          "Sidewall direct-drive exhaust fan with motorized louver for mechanical and electrical rooms",
+          "Stand-alone DDC controls with 7-day programmable thermostats"
+        ],
+        "electrical": [
+          "208Y/120V, 3-phase, 4-wire main distribution panel (MDP) with TVSS/SPD",
+          "Multiple subpanels throughout facility",
+          "CT cabinet exterior for SMECO utility connection",
+          "400W metal halide exterior floodlight at main entrance",
+          "Recessed 2x4 LED interior fixtures (60 fc at desk height; 75 fc in POP/IDF rooms)",
+          "Emergency lighting with 30-min battery backup",
+          "Dimming switches in conference rooms; motion sensors in kitchens, storage, restrooms",
+          "Backup generator (minimum 24-hour capacity per J-1501001-05 spec)"
+        ],
+        "plumbing": [
+          "Electric tankless water heaters for restrooms, kitchen areas, janitorial mop sinks",
+          "Flush-valve toilets and urinals",
+          "Sinks with hot and cold water",
+          "Showers (fold-down seats) in restrooms",
+          "Cold-water drinking fountains (ADA-compliant, bottle-refill)",
+          "Water meter on domestic water line",
+          "Sump pump in elevator shaft",
+          "1.5\" copper domestic water service from gov-furnished 6\" stub-up",
+          "4\" PVC sanitary drain connection to existing manhole"
+        ],
+        "fire_protection": [
+          "Wet pipe automatic sprinkler system per NFPA 13 (UFC 3-600-01 required)",
+          "Combined Fire Alarm and Mass Notification System (FMCU/FAMNS) per NFPA 72 and UFC 4-021-01",
+          "ADT/DMP dialer reporting to base Regional Dispatch Center",
+          "Combination voice/strobe notification appliances throughout",
+          "Manual pull stations at all exterior egress doors",
+          "System smoke detectors above panels and per code locations",
+          "Duct detectors at supply/return ductwork >2,000 CFM",
+          "Knox Box near main entrance (gov furnished, contractor installed)",
+          "AED units with wall cabinets (one per floor per J-1501001-05)",
+          "Fire extinguishers in recessed/semi-recessed cabinets"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD general section p.1",
+          "value": 37586,
+          "note": "Stated as 'approximately 37,586 square feet'"
+        },
+        {
+          "source": "SOW Section C.1",
+          "value": 36000,
+          "note": "States '36,000 square feet which excludes the thickness of the exterior walls'"
+        },
+        {
+          "source": "BOD p.16 (Electrical scope)",
+          "value": 36000,
+          "note": "Electrical BOD states 'The facilities shall be 36,000 square feet, which excludes the thickness of the exterior walls'"
+        }
+      ],
+      "resolution_chosen": "BOD general section p.1",
+      "rationale": "The 37,586 SF figure from the BOD General section represents gross building area including wall thickness. The 36,000 SF figure from the SOW and Electrical BOD represents net interior area excluding wall thickness. The discrepancy is ~4.5% and is explicitly explained by the SOW language 'excludes the thickness of the exterior walls.' Both claims are consistent with each other when the measurement basis is understood. Chose 37,586 GSF as the primary gross area figure.",
+      "recommended_fact_value": 37586,
+      "recommended_fact_unit": "gsf"
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

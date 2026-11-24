@@ -1,0 +1,9 @@
+Fire protection engineering services for the Building 2611 SCIF renovation focused on fire alarm and mass notification system design, replacing the existing fire alarm system with a new addressable system that meets both life safety requirements and the electromagnetic security constraints of the SCIF/SAPF designation.
+
+The new fire alarm and mass notification system includes one addressable fire alarm control panel (FACP) with voice evacuation capability and battery backup. The existing DMP digital communicator panel was retained and integrated with the new FACP. A Federal Signal UVRI-B radio transmitter with antenna provides remote notification capability. Mass notification components include three programmable text message signs supporting both alerting and informational messaging.
+
+Detection and notification devices distributed throughout the facility include four addressable manual pull stations, twelve addressable smoke detectors, six duct smoke detectors, five self-amplifying speakers serving secure spaces, seven alert strobes, and three weatherproof exterior speakers.
+
+A critical design requirement was SCIF/SAPF electromagnetic security compliance: all fire alarm circuits crossing the secure space perimeter incorporate dielectric breaks to prevent signal leakage or intrusion through electrical pathways, consistent with ICD 705 requirements applied across all building systems. This constraint governed the routing and termination design for all fire alarm wiring at the SCIF boundary, requiring coordination with the electrical and mechanical disciplines on perimeter penetration locations.
+
+The existing building does not meet the occupancy and area thresholds requiring a wet-pipe fire suppression sprinkler system under UFC 3-600-01; accordingly, no sprinkler system was designed or installed for this project.

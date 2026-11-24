@@ -1,0 +1,576 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-20T12:00:00Z",
+  "project_id": {
+    "value": "24-064D",
+    "status": "present_with_value",
+    "source": "BOD cover page",
+    "quote": "BFA Project #24-064D"
+  },
+  "project_slug": "area_11",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/hpdta/area_11/11 Area Electrical Utility Upgrade Design SOW - Final.pdf",
+      "type": "sow",
+      "sha256": "d7eac0b3eaf17d681e25bff9f3a1892e3472dd795a6903b8507714c7f24df126",
+      "included": true,
+      "notes": "Statement of Work dated March 14, 2025; 17 pages; UNCLASSIFIED"
+    },
+    {
+      "path": "00_admin/reference_projects/hpdta/area_11/2026.02.11.100% SUBMITTAL AREA 11 BOD.pdf",
+      "type": "bod",
+      "sha256": "84b905069293c25088904cd41183a4a775262a5a52dd90a80b2f65da81f4098d",
+      "included": true,
+      "notes": "Basis of Design, 100% Submittal dated February 13, 2026; covers Architecture, Structural, Electrical, Civil disciplines"
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set PDF present in intake directory. No specification book present. BOD at 100% submittal level is substantive."
+  },
+  "facts": {
+    "project_name": {
+      "value": "HPDTA 11 Area Electrical Utility Upgrade",
+      "source": "BOD cover page",
+      "quote": "HPDTA 11 AREA ELECTRICAL UTILITY UPGRADE",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "HPDTA 11 AREA ELECTRICAL UTILITY UPGRADE",
+          "value": "HPDTA 11 Area Electrical Utility Upgrade",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "11 AREA ELECTRICAL UTILITY UPGRADE SURVEY AND DESIGN PROJECT",
+          "value": "11 Area Electrical Utility Upgrade Survey and Design Project",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Harvey Point Defense Testing Activity (HPDTA)",
+      "source": "SOW §3",
+      "quote": "Harvey Point Defense Testing Activity (HPDTA) for the 11 Area Electrical Utility Upgrade Project",
+      "corroboration": [
+        {
+          "source": "SOW §3",
+          "claim": "Harvey Point Defense Testing Activity (HPDTA)",
+          "value": "Harvey Point Defense Testing Activity (HPDTA)",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "HARVEY POINT DEFENSE TESTING ACTIVITY",
+          "value": "Harvey Point Defense Testing Activity",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.2 header",
+          "claim": "Boeing Aerospace Operations",
+          "value": "Boeing Aerospace Operations",
+          "agrees": false,
+          "note": "Page 2 header shows 'Boeing Aerospace Operations' — appears to be a document template artifact; all substantive text references HPDTA as the client/owner."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Department of Defense / Harvey Point Defense Testing Activity",
+      "source": "SOW cover page",
+      "quote": "UNITED STATES DEPARTMENT OF DEFENSE",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "UNITED STATES DEPARTMENT OF DEFENSE",
+          "value": "United States Department of Defense",
+          "agrees": true
+        },
+        {
+          "source": "SOW §13a",
+          "claim": "The Contractor's work in the USG facilities",
+          "value": "USG (US Government)",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Hertford",
+      "state": "NC",
+      "country": "US",
+      "facility_address": "2835 Harvey Point Road, Hertford, North Carolina 27944",
+      "facility_name": "Harvey Point Defense Testing Activity",
+      "source": "SOW cover page",
+      "quote": "2835 HARVEY POINT ROAD HERTFORD, NORTH CAROLINA, 27944",
+      "corroboration": [
+        {
+          "source": "SOW cover page",
+          "claim": "2835 HARVEY POINT ROAD HERTFORD, NORTH CAROLINA, 27944",
+          "value": "Hertford, NC 27944",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "HARPERS FERRY, NC",
+          "value": "Harpers Ferry, NC",
+          "agrees": false,
+          "note": "BOD cover page states 'HARPERS FERRY, NC' — this appears to be a copy-paste error. All other references in both documents consistently identify location as Harvey Point, Hertford NC. SOW is authoritative."
+        },
+        {
+          "source": "BOD civil section",
+          "claim": "The site is located within the HPDTA property along the security fence.",
+          "value": "HPDTA property, Harvey Point NC",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-064D",
+      "source": "BOD cover page",
+      "quote": "BFA Project #24-064D"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing",
+      "note": "No client-assigned project number found in either source document."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 1250,
+      "unit": "gsf",
+      "description": "Area 11 Substation PEMB building only. Four (4) additional Electrical Control Buildings at 144 SF each (12'×12') also in scope. Total new enclosed area approximately 1,826 SF.",
+      "source": "BOD architecture section",
+      "quote": "The scope of services for this project includes the design of an approximately 1,250 square foot covered building for the Area 11 generator, switchgear, and transformers.",
+      "corroboration": [
+        {
+          "source": "BOD architecture section",
+          "claim": "approximately 1,250 square foot covered building",
+          "value": 1250,
+          "agrees": true
+        },
+        {
+          "source": "BOD general section (first page)",
+          "claim": "approximately 1,250 square foot covered building for Area 11 generator, switch gear and transformers",
+          "value": 1250,
+          "agrees": true
+        },
+        {
+          "source": "BOD architecture section",
+          "claim": "buildings will be 12 feet by 12 feet in size",
+          "value": 144,
+          "agrees": false,
+          "note": "Four control buildings at 12'x12' = 144 SF each; these are separately scoped from the 1,250 SF PEMB. BOD general section initially stated '10 foot X 10 foot' — minor internal conflict resolved to 12'x12' per the architecture-specific section."
+        }
+      ]
+    },
+    "linear_infrastructure": {
+      "value": 19000,
+      "unit": "linear_feet",
+      "description": "Duct bank length for security camera fiber/power conduit runs",
+      "source": "BOD civil section",
+      "quote": "The scope includes the design of an +/- 19,000 linear feet duct bank.",
+      "corroboration": [
+        {
+          "source": "BOD civil section",
+          "claim": "+/- 19,000 linear feet duct bank",
+          "value": 19000,
+          "agrees": true
+        },
+        {
+          "source": "SOW §4.1",
+          "claim": "covering a total distance of 12,160 feet",
+          "value": 12160,
+          "agrees": false,
+          "note": "SOW §4.1 describes existing camera system spanning 12,160 feet (fence line). BOD civil section states 19,000 LF duct bank (the roadway is 19,000' total; BOD notes the roadway is 3.6 miles). These measure different things — fence perimeter vs. road conduit routing length. Not a direct conflict but different scopes."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "note": "Neither SOW nor BOD states a project budget or program budget figure."
+    },
+    "period_of_performance": {
+      "value": "180 calendar days from NTP",
+      "source": "SOW §14",
+      "quote": "The period of performance is 180 calendar days to include accounting for Title II Services cost proposal."
+    },
+    "design_codes": [
+      {
+        "code": "NCBC 2018",
+        "description": "North Carolina Building Code",
+        "source": "BOD architecture section",
+        "quote": "NCBC 2018 North Carolina Building Code"
+      },
+      {
+        "code": "IBC 2018",
+        "description": "International Building Code",
+        "source": "BOD architecture section",
+        "quote": "IBC 2018 International Building Code"
+      },
+      {
+        "code": "UFC-1-300-09N",
+        "description": "Navy and Marine Corps Design Procedures, with Change 1",
+        "source": "BOD architecture section",
+        "quote": "UFC-1-300-09N Navy and Marine Corps Design Procedures, with Change 1"
+      },
+      {
+        "code": "UFC 3-101-01",
+        "description": "Architecture, with Change 4",
+        "source": "BOD architecture section",
+        "quote": "UFC 3-101-01 Architecture, with Change 4"
+      },
+      {
+        "code": "ABA 2015",
+        "description": "Architectural Barriers Act",
+        "source": "BOD architecture section",
+        "quote": "ABA 2015 Architectural Barriers Act"
+      },
+      {
+        "code": "UFC 3-301-01",
+        "description": "Structural Engineering",
+        "source": "BOD structural section",
+        "quote": "UFC specification 3-301-01, \"Structural Engineering.\""
+      },
+      {
+        "code": "NFPA 70",
+        "description": "National Electrical Code",
+        "source": "BOD electrical section",
+        "quote": "NFPA 70 National Electrical Code"
+      },
+      {
+        "code": "UFC 3-501-01",
+        "description": "Electrical Engineering Design and Analysis",
+        "source": "BOD electrical section",
+        "quote": "UFC 3-501-01, Electrical Engineering Design and Analysis"
+      },
+      {
+        "code": "UFC 3-520-01",
+        "description": "Interior Electrical Systems",
+        "source": "BOD electrical section",
+        "quote": "UFC 3-520-01, Interior Electrical Systems"
+      },
+      {
+        "code": "UFC 3-201-01",
+        "description": "Civil Engineering",
+        "source": "BOD civil section",
+        "quote": "UFC 3-201-01 Civil Engineering"
+      },
+      {
+        "code": "ANSI C2",
+        "description": "National Electrical Safety Code",
+        "source": "BOD electrical section",
+        "quote": "ANSI C2 National Electrical Safety Code"
+      }
+    ],
+    "key_technical_features": {
+      "security_camera_system": {
+        "value": "40 pole-mounted cameras along base southside perimeter, approx. 12,160 LF coverage across three roadways",
+        "source": "SOW §4.1",
+        "quote": "The existing 11 area base security camera surveillance system consists of 40 pole mounted cameras within the base secured perimeter fence line covering a total distance of 12,160 feet."
+      },
+      "area_11_substation_pemb": {
+        "value": "Approximately 1,250 SF pre-engineered metal building for generator, switchgear, and transformers",
+        "source": "BOD architecture section",
+        "quote": "The scope of services for this project includes the design of an approximately 1,250 square foot covered building for the Area 11 generator, switchgear, and transformers. The building is a pre-engineered metal building supported by a concrete foundation and slab-on-grade."
+      },
+      "electrical_control_buildings": {
+        "value": "Four (4) Electrical Control Buildings, 12'×12' (144 SF each), CMU exterior walls, conditioned, with UPS, fiber optic camera equipment, and exterior generator with screen wall",
+        "source": "BOD architecture section",
+        "quote": "In addition to the electrical shelter for Area 11, we will be providing architectural design for four (4) Electrical Control Buildings at various locations. These buildings will be 12 feet by 12 feet in size and will contain electrical equipment for cameras (fiber optic), as well as UPS, surveillance, and communication equipment."
+      },
+      "duct_bank": {
+        "value": "~19,000 LF concrete-encased Schedule 40 PVC conduit duct bank along roadway with manholes every 400 ft for fiber cable",
+        "source": "BOD civil section",
+        "quote": "The scope includes the design of an +/- 19,000 linear feet duct bank."
+      },
+      "generator_belly_tank": {
+        "value": "New generator and belly tank (~52,750 lbs) on thickened concrete foundation",
+        "source": "BOD general section",
+        "quote": "The new generator and belly tank (approxiamtely 52,750 Lbs. ) will be supported by a thickened foundation."
+      }
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "Design fee/contract value not stated in either source document."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2026-02-13",
+        "note": "100% BOD submittal date; represents completion of design documents",
+        "source": "BOD cover page",
+        "quote": "100% SUBMITTAL February 13, 2026"
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "SOW §14",
+        "quote": "The period of performance is 180 calendar days to include accounting for Title II Services cost proposal."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "deliverable_schedule": {
+        "onsite_survey_kickoff": "15 calendar days after award",
+        "first_conceptual_design": "50 calendar days after award",
+        "second_conceptual_design": "70 calendar days after award",
+        "design_35pct": "100 calendar days after award",
+        "design_90pct": "140 calendar days after award",
+        "design_100pct_ifc": "180 calendar days after award",
+        "source": "SOW §11 CDRL table"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "Construction contract is future work; Title II services included as Bid Option #1 in design contract. No construction value stated."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "architecture",
+      "civil_engineering",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "civil_site_design",
+      "civil_utilities",
+      "civil_grading_drainage",
+      "structural_foundation",
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "electrical_grounding_lightning",
+      "telecom_structured_cabling",
+      "security_video_surveillance",
+      "construction_administration"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_distribution",
+      "electrical_emergency_power",
+      "hvac_packaged",
+      "superstructure",
+      "foundations_shallow",
+      "telecom_systems",
+      "telecom_structured_cabling",
+      "security_systems",
+      "security_video"
+    ],
+    "construction_scope": [
+      "concrete_scope",
+      "masonry_scope",
+      "metals_structural_steel",
+      "special_construction_pre_engineered",
+      "electrical_power",
+      "mechanical_hvac",
+      "utilities_scope",
+      "earthwork_scope",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "hpdta",
+    "harvey_point",
+    "north_carolina",
+    "security_surveillance",
+    "dod_installation",
+    "duct_bank",
+    "pemb",
+    "camera_system_upgrade",
+    "electrical_utility_upgrade",
+    "title_ii_services",
+    "ufc_design_standards",
+    "atfp"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 1250,
+        "unit": "gsf",
+        "description": "Area 11 Substation PEMB only; four 144 SF control buildings separately quantified",
+        "source": "BOD architecture section",
+        "quote": null,
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "BOD architecture section — single-story PEMB and CMU control buildings",
+        "quote": null,
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "HVAC conditioning required in four Electrical Control Buildings due to electrical equipment heat loads",
+          "Mechanical services for engine generator fuel venting per SOW §5.12"
+        ],
+        "electrical": [
+          "New power distribution system with backup generator for Area 11",
+          "Raceway system (concrete-encased Schedule 40 PVC conduit) for security camera fiber cables — ~19,000 LF",
+          "Manholes every 400 ft for fiber cable pulling",
+          "Empty conduit only (no conductors in duct bank scope)",
+          "Grounding: separate green insulated equipment-grounding conductor in all circuits",
+          "New electrical panelboard for camera system with dedicated power circuit per camera",
+          "UPS in each Electrical Control Building"
+        ],
+        "plumbing": [],
+        "fire_protection": [
+          "Life safety calculations required per SOW deliverables",
+          "Fire sprinkler/alarm testing referenced in SOW §5.8e (Title II periodic visits)"
+        ]
+      }
+    },
+    "extraction_status": "deferred",
+    "notes": "No drawing set PDF present in intake directory. MEP inventory derived from BOD text descriptions only."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD cover page",
+          "value": "HARPERS FERRY, NC"
+        },
+        {
+          "source": "SOW cover page",
+          "value": "2835 Harvey Point Road, Hertford, North Carolina 27944"
+        }
+      ],
+      "resolution_chosen": "SOW cover page",
+      "rationale": "All substantive text in both documents consistently identifies HPDTA Harvey Point at Hertford, NC. The BOD cover page 'HARPERS FERRY, NC' appears to be a copy-paste error from a prior document template. SOW is definitive on address."
+    },
+    {
+      "field_path": "facts.client_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD p.2 header",
+          "value": "Boeing Aerospace Operations"
+        },
+        {
+          "source": "SOW §3 and BOD cover page and body",
+          "value": "Harvey Point Defense Testing Activity (HPDTA)"
+        }
+      ],
+      "resolution_chosen": "SOW §3 and BOD cover and body text",
+      "rationale": "The 'Boeing Aerospace Operations' text appears only in a page header that was likely carried over from an unrelated document template. All contractual and technical text in both documents identifies HPDTA (a DoD installation) as the client. Note: HPDTA has historical Boeing involvement as a contractor/operator but DoD/USG is the contracting entity."
+    },
+    {
+      "field_path": "facts.square_footage (control buildings)",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD general section (first page)",
+          "value": "10 foot X 10 foot"
+        },
+        {
+          "source": "BOD architecture section and structural section",
+          "value": "12 feet by 12 feet"
+        }
+      ],
+      "resolution_chosen": "BOD architecture section and structural section",
+      "rationale": "The architecture-specific and structural-specific sections of the BOD consistently state 12'×12' (144 SF) for the four Electrical Control Buildings. The general section's '10 foot X 10 foot' appears to be an early draft value not updated in that paragraph. The discipline-specific sections supersede the general introductory paragraph."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    },
+    "aspects": {
+      "schedule": null,
+      "technical": null,
+      "teaming": null
+    }
+  }
+}

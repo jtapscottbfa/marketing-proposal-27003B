@@ -1,0 +1,451 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "kislak",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/Goppion_Library of Congress_Kislay Display_Lighting Components.pdf",
+      "type": "submittal",
+      "sha256": "058f9da82824bb3a8597b2c2807f7053f13b0cd68e93fdc4ca90ca4b08c0d406",
+      "included": true,
+      "notes": "Product data / component cut sheets for display case lighting controls — European manufacturers (Vimar, PowerMe, Lovato, MeanWell, ABB, ETELEC). Title block reads: BOWMAN FOSTER / BFA-ENG.COM / Library of Congress Kislak Display / Components for Lighting Controls & Display / Final March 6th 2025. This is a BFA-assembled submittal package of manufacturer data sheets for the Goppion display cases."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/J-1 Kislak_Design drawings.pdf",
+      "type": "drawing_set",
+      "sha256": "584c9ff7d76373f662e3bdb4885d2038d627b61eef0841b86979b50d1dd44ddc",
+      "page_count": 4,
+      "included": true,
+      "notes": "RFP 030ADV23Q0282 Attachment J-1. Voices of the Early Americas / The Jay I. Kislak Collection — Final Design Phase Exhibit Design Drawings, April 2023, by Ralph Appelbaum Associates for Library of Congress. Contains: cover sheet, drawing/document register (X-0001), notes & abbreviations (X-0005), legend sheet (X-0006). Project No. 2212."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/J-4 Kislak Lighting Drawings.pdf",
+      "type": "drawing_set",
+      "sha256": "15137a1bfa218aa27483f0c8deb83c4b8c94d23c73b8a46a0c00408be6ad516c",
+      "page_count": 2,
+      "included": true,
+      "notes": "RFP 030ADV23Q0282 Attachment J-4. Voices of the Early Americas / The Jay I. Kislak Collection — Final Design Revision 1 Lighting Report, July 2023, by Lighting Workshop (subconsultant) for Library of Congress. Contains: cover sheet and L101 Floor Plan Lighting Layout (3/16\"=1'-0\", dated 7/14/2023, drawn by BZ, checked by AR). Shows all fixture types F2–F14 distributed across gallery floor plan including circular Rotunda Gallery and linear exhibit hall."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/J-5 Kislak Lighting Cut Sheets and Schedule_Part1.pdf",
+      "type": "submittal",
+      "sha256": "a31f2fd6e7efed07f3fef9a63e21593c190b9f738ea12459e3f3f47a24b94d2e",
+      "included": true,
+      "notes": "RFP 030ADV23Q0282 Attachment J-5 Part 1. Lighting Fixture Schedule Final Design Phase Rev 01 (July 14 2023) and cut sheets for fixture types F2–F5. Prepared by Lighting Workshop, 20 Jay Street Suite 504, Brooklyn NY 11201. Also contains lighting report cover. 14 fixture types total (F2–F14). All LED, 3000K CCT (except F10 at 6000K and F14 at 6500K)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/J-5 Kislak Lighting Cut Sheets and Schedule_Part2.pdf",
+      "type": "submittal",
+      "sha256": "c3c38bd908e806c94c2d9de0b7207c7af85add5cacb65983d129c535fd1b2a92",
+      "included": true,
+      "notes": "RFP 030ADV23Q0282 Attachment J-5 Part 2. Lighting cut sheets continuation — fixture types F6H, F6W, F6T, F7, F7A, F7B, F8 (LUXAM and Q-TRAN products)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/J-5 Kislak Lighting Cut Sheets and Schedule_Part3.pdf",
+      "type": "submittal",
+      "sha256": "1dbf9234b77c0d4d161b6e52481bdf3e391742a945da5356a36440a1ca0e67fb",
+      "included": true,
+      "notes": "RFP 030ADV23Q0282 Attachment J-5 Part 3. Lighting cut sheets continuation — fixture types F9–F14 (BEULUX, SEG Systems, LUXAM, Q-TRAN, EVOLITE products)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/J-6 Kislak Structural Drawings.pdf",
+      "type": "drawing_set",
+      "sha256": "4deac08436cfcc8a8a476ae149796ebd3d8f1421999332e36ae56cb768009037",
+      "page_count": 2,
+      "included": true,
+      "notes": "RFP 030ADV23Q0282 Attachment J-6. Voices of the Early Americas / The Jay I. Kislak Collection — Final Design Revision 1 Structural Report, July 2023, by Ralph Appelbaum Associates for Library of Congress. Structural engineering for exhibit casework and display structures."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/library_of_congress/kislak/RE_ Library of Congress Projects.msg",
+      "type": "correspondence",
+      "sha256": "385f639817e3b73d1be3bb3f7c66746e975a4981f4b3e18825e5a7544a9a387d",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": ".msg email file — not extractable with available tools. Content unknown. Title suggests email thread re Library of Congress projects (may contain context on BFA role, project value, or scope). Human review recommended."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD, SOW, contract, or specification book present. Source documents are design-phase drawings and submittal packages only. The .msg email may contain additional context but was not extractable. Contract value, schedule, and most financial facts are missing."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Voices of the Early Americas — The Jay I. Kislak Collection",
+      "source": "J-1 Kislak_Design drawings.pdf cover sheet",
+      "quote": "Voices of the Early Americas The Jay I. Kislak Collection",
+      "corroboration": [
+        {
+          "source": "J-1 Kislak_Design drawings.pdf cover sheet",
+          "claim": "Voices of the Early Americas The Jay I. Kislak Collection",
+          "agrees": true
+        },
+        {
+          "source": "J-4 Kislak Lighting Drawings.pdf cover sheet",
+          "claim": "Voices of the Early Americas The Jay I. Kislak Collection",
+          "agrees": true
+        },
+        {
+          "source": "J-5 Part 1 lighting schedule header",
+          "claim": "Voices of the Early Americas / The Jay I. Kislak Collection",
+          "agrees": true
+        },
+        {
+          "source": "J-6 Kislak Structural Drawings.pdf cover sheet",
+          "claim": "Voices of the Early Americas The Jay I. Kislak Collection",
+          "agrees": true
+        },
+        {
+          "source": "Goppion PDF title block",
+          "claim": "Library of Congress Kislak Display",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Library of Congress",
+      "source": "J-1 Kislak_Design drawings.pdf drawing register, client field",
+      "quote": "Library of Congress",
+      "corroboration": [
+        {
+          "source": "J-1 Kislak_Design drawings.pdf drawing register",
+          "claim": "Library of Congress",
+          "agrees": true
+        },
+        {
+          "source": "J-4 Kislak Lighting Drawings.pdf cover sheet",
+          "claim": "Library of Congress",
+          "agrees": true
+        },
+        {
+          "source": "J-6 Kislak Structural Drawings.pdf cover sheet",
+          "claim": "Library of Congress",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Library of Congress",
+      "source": "J-1 Kislak_Design drawings.pdf drawing register, client field",
+      "quote": "Library of Congress",
+      "corroboration": [
+        {
+          "source": "J-1 Kislak_Design drawings.pdf drawing register",
+          "claim": "Library of Congress",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Washington",
+      "state": "DC",
+      "country": "US",
+      "facility_address": "101 Independence Ave SE, Washington DC",
+      "source": "J-1 Kislak_Design drawings.pdf cover sheet RAA address block",
+      "quote": "101 Independence Ave SE",
+      "corroboration": [
+        {
+          "source": "J-1 Kislak_Design drawings.pdf RAA logo / address block on drawings",
+          "claim": "101 Independence Ave SE, Washington DC (Library of Congress address shown)",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "2212",
+      "source": "J-1 Kislak_Design drawings.pdf drawing register sheet X-0001, project no. field",
+      "quote": "2212",
+      "corroboration": [
+        {
+          "source": "J-1 Kislak_Design drawings.pdf sheet X-0001",
+          "claim": "Project No. 2212 (RAA internal project number)",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "030ADV23Q0282",
+      "source": "J-5 Part 1 header / all drawing set headers",
+      "quote": "RFP - 030ADV23Q0282",
+      "corroboration": [
+        {
+          "source": "J-5 Part 1 header",
+          "claim": "RFP - 030ADV23Q0282",
+          "agrees": true
+        },
+        {
+          "source": "J-1 drawing set header",
+          "claim": "RFQ - 030ADV23Q0282",
+          "agrees": true,
+          "note": "Headers alternate between 'RFP' and 'RFQ' label — same number"
+        },
+        {
+          "source": "J-4 lighting drawings header",
+          "claim": "RFP - 030ADV23Q0282",
+          "agrees": true
+        },
+        {
+          "source": "J-6 structural drawings header",
+          "claim": "RFP - 030ADV23Q0282",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No square footage statement found in any source document. The gallery occupies a portion of the Library of Congress building; exact GSF not stated in available sources."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Documents dated April 2023 (J-1 design drawings) and July 2023 (J-4, J-5, J-6 final design revision 1). This suggests design phase active through at least July 2023."
+      },
+      "design_stage_at_documents": {
+        "value": "Final Design Phase / Final Design Revision 1",
+        "source": "J-1 Kislak_Design drawings.pdf cover sheet",
+        "quote": "Final Design Phase Exhibit Design Drawings April 2023"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "cultural"
+    ],
+    "program_subtype": [
+      "cultural_museum"
+    ],
+    "disciplines": [
+      "electrical_engineering",
+      "lighting_design",
+      "structural_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_lighting",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_lighting_interior",
+      "electrical_lighting_controls",
+      "electrical_systems"
+    ],
+    "construction_scope": [
+      "electrical_lighting_scope",
+      "electrical_power",
+      "specialties_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "library_of_congress",
+    "museum_exhibit",
+    "exhibit_lighting",
+    "kislak_collection",
+    "ralph_appelbaum_associates",
+    "washington_dc",
+    "display_case_lighting",
+    "federal_cultural"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "X-0001",
+        "title": "Drawing and Document Register",
+        "discipline": "architecture",
+        "source_pdf": "J-1 Kislak_Design drawings.pdf",
+        "reading_notes": "Full sheet list for RFP 030ADV23Q0282 Attachment J-1. Client: Library of Congress. Project Number: 2212. Stage: Design Development → Final Design. Issue dates range from 4/27/22 through 22/23. RAA (Ralph Appelbaum Associates) is exhibit designer. Client team: Cynthia Wayne, David Mandel, Karen Werth, Raymond Leo. Sheet set spans ~150+ sheets covering: General (X-series), Level 2 Pavilion (X-1100s), Zones 1-2, Zones 3-5, Frieze, Distribution, and Mount Details. BFA role appears to be electrical/MEP subconsultant referenced in power & data sheets and MEP coordination notes."
+      },
+      {
+        "sheet_number": "X-0005",
+        "title": "Notes and Abbreviations",
+        "discipline": "architecture",
+        "source_pdf": "J-1 Kislak_Design drawings.pdf",
+        "reading_notes": "General notes for exhibit design package. Key notes: (1) exhibit design drawings represent RAA's Stage 4 technical design delivery; (2) contractor to verify all dimensions; (4) drawings not to be appropriated by third parties without RAA permission; (8) all design elements to be verified for compliance with local codes; (9) structural steel: A36; (10) aluminum: AISC spec; (11) contractor to verify all drawings for coordination between trades; (14) all exhibit cases to be lockable and accessible for routine maintenance; (15) AV equipment provided by AV integrator unless noted. Abbreviations list shows HVAC noted (heating, ventilation, A/C) — suggests MEP consultant in the team."
+      },
+      {
+        "sheet_number": "X-0006",
+        "title": "Legend",
+        "discipline": "architecture",
+        "source_pdf": "J-1 Kislak_Design drawings.pdf",
+        "reading_notes": "Legend sheet showing key plan symbols, exhibit content codes, power plan symbols, floor finishes plan notation, and reflected ceiling plan notation. Exhibit content types: IAV (audio visual), TAC (tactile), SCN (scenic display/model), DSC (display showcase), LAD (live animal display), GTP (graphic treatment - panel), GTR (graphic treatment - reader rail). Power symbols include: single and double power outlets at partition walls at 12\" AFFL or 40\" AFFL; data outlets; floor-mounted data outlets; ceiling-mounted waterproof double power socket; 'J' outlet to be mounted in exhibit joinery. Ceiling heights noted as 14'-0\" (typical) and 12'-0\" (closed room). RCP notes: contractor to paint back of house areas black where lighting controls exposed."
+      },
+      {
+        "sheet_number": "L101",
+        "title": "Floor Plan Lighting Layout",
+        "discipline": "electrical_engineering",
+        "source_pdf": "J-4 Kislak Lighting Drawings.pdf",
+        "reading_notes": "Scale 3/16\"=1'-0\". FINAL DESIGN PHASE. Date 7/14/2023. Drawn: BZ, Checked: AR. Prepared by Lighting Workshop, Brooklyn NY. Shows the full Library of Congress gallery layout at level 1. Two major spaces visible: (left) large circular/octagonal Rotunda Gallery with concentric exhibit cases and totems; (right) long rectangular exhibition hall with multiple casework zones and display walls. All 14 fixture types (F2–F14) distributed across the plan: F2 flexible LED tape in coves; F3 adjustable monopoints in rotunda; F5 linear grazers at totems; F6H/F6W/F6T/F7/F7A/F7B/F11/F12 various casework-mounted track and display fixtures; F8/F13 linear wall-mounted fixtures; F9 inscribed feature wall uplights; F10 window graphic lightboxes; F14 edge-lit reader panels. No square footage dimension directly readable at this scale. Floor plan shows the gallery occupies a significant footprint within the LOC building."
+      },
+      {
+        "sheet_number": "J-6 Cover",
+        "title": "Final Design Revision 1 Structural Report Cover",
+        "discipline": "structural_engineering",
+        "source_pdf": "J-6 Kislak Structural Drawings.pdf",
+        "reading_notes": "Cover sheet only reviewed. Voices of the Early Americas / The Jay I. Kislak Collection / Final Design Revision 1 Structural Report / July 2023 / Ralph Appelbaum Associates / Library of Congress. Second page not reviewed (page 2 of 2). Structural scope relates to exhibit casework, display structures, and mount details per drawing register in J-1."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "source": "drawing extraction",
+        "quote": null,
+        "sheets": [
+          "L101"
+        ],
+        "notes": "Floor plan (L101) shows a substantial gallery footprint — two connected spaces (circular rotunda and linear hall) — but no GSF callout or code summary block readable at medium depth."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawing extraction — L101 legend and key plan",
+        "quote": null,
+        "sheets": [
+          "L101",
+          "X-0001"
+        ],
+        "notes": "Drawing register in X-0001 references 'Level 2' pavilion areas and 'Level 1' layout in L101. The gallery appears to occupy a single floor level. 'Level 2' in drawing register refers to a pavilion exhibit zone designation, not a building floor. Extraction confidence: moderate — requires confirmation by human review."
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "All-LED exhibit lighting system — 14 fixture types (F2–F14)",
+          "Low-voltage 24VDC track and display lighting (LUXAM, Q-TRAN systems)",
+          "120V line-voltage adjustable monopoint fixtures (BK Lighting F3, 36W)",
+          "Phase-dimming and 0-10V dimming controls throughout",
+          "80W plug-in LED drivers (Q-Tran iQ-PH-80-120-24VDC-QD1) per fixture group",
+          "Display case power outlets (cord-and-plug systems throughout exhibit casework)",
+          "Goppion display case internal lighting controls: PWM LED dimmers (PowerMe DLV24A8/P), MeanWell XLG-150 and HDR-60 power supplies, Vimar NEMA 2P+T 15A outlets, Lovato TM-series time relays, ABB M2SS1-10B selector switches, Etelec heat-shrink components",
+          "Lighting control zones per lighting plan with dimming provisions",
+          "Emergency lighting — not explicitly stated in available documents",
+          "AV power provisions (AV integrator responsible per general note 15)"
+        ],
+        "hvac": [],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.contract_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "J-1 design drawings header",
+          "value": "RFQ - 030ADV23Q0282"
+        },
+        {
+          "source": "J-5 Part 1 header",
+          "value": "RFP - 030ADV23Q0282"
+        }
+      ],
+      "resolution_chosen": "030ADV23Q0282",
+      "rationale": "Same procurement number in all documents; prefix differs between 'RFQ' (J-1 header) and 'RFP' (J-4, J-5, J-6 headers). The solicitation number is consistent; label likely changed from RFQ to RFP at different procurement stages. Minor conflict — the number is unambiguous."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "lighting_design": "narratives/disciplines/lighting_design.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md"
+    }
+  }
+}

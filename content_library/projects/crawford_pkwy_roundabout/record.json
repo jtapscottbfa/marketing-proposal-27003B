@@ -1,0 +1,444 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "crawford_pkwy_roundabout",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/20-056.2021.06.28.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "6aab01795a73bbc8c13cdbb81ba7d1889b81713baf6c0bf3cf76a94a0d7e111b",
+      "page_count": 4,
+      "included": true,
+      "notes": "4-page subset of a 14-sheet drawing set. Title block confirms BFA (Bowman Foster & Associates) as EOR. Final drawings dated 2021-06-28 per filename; revision date 2021-08-23 on title block. Sheets P001 (performance specs), P401 (enlarged fountain plan - primary plumbing), P501 (cut sheets: DBVB vault, geyser nozzle, vee nozzle), P502 (cut sheets: ball valve, wall overflow/sensor, anti-vortex plate, floor drain, skimmer)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/45136-004-905V-XPTOPO.pdf",
+      "type": "report",
+      "sha256": "5bcedd72526938893fb76a7c21860e5c3d6ef6786c316dacfc36af9fd22528e1",
+      "page_count": 1,
+      "included": true,
+      "notes": "Topographic survey drawing. Title block: City of Portsmouth Virginia, Date 4/9/2020, Scale 1\"=20', Sheet 1 of 1, J.N. 45136.004, Drawn by W. Lewis, Checked by T. French. Referenced as incoming drawing in BFA project G:\\2020\\20-056 Crawford Parkway Roundabout\\INCOMING DRAWINGS."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/CrawFord_Circle_Day_Final.pdf",
+      "type": "narrative",
+      "sha256": "92c603577385e640cd07e7899155d1be6885d352e83fa064cebf4bebf8b9b9c8",
+      "page_count": 1,
+      "included": true,
+      "notes": "Photorealistic rendering (daytime) of the completed Crawford Circle roundabout with decorative fountain and central sculptural element. Image-based PDF; no extractable text."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/CrawFord_Circle_Night_Final.pdf",
+      "type": "narrative",
+      "sha256": "d4be56e3a58533268016571ab36be5d06690047b617c74ddafce5bcd2e4a6be4",
+      "page_count": 1,
+      "included": true,
+      "notes": "Photorealistic rendering (nighttime) of the Crawford Circle roundabout. Image-based PDF; no extractable text."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/221116 SF - Domestic Water Piping.DOC",
+      "type": "spec_book",
+      "sha256": "608a32a41f48fd6a0345bb820282cd42cb61e66f33d94cddeced31fc5aed37f8",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 22 11 16 Domestic Water Piping. DOC file unreadable by pandoc (corrupt/old-format container). Content partially captured via drawing PDF embedded text."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/260519 SF - Low-Voltage Electrical Power Conductors and Cables.DOC",
+      "type": "spec_book",
+      "sha256": "275ce154125b9ee29f245f9921e65b0d04dc3bba571e8fb3652a6f5b74eae214",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 05 19 Low-Voltage Electrical Power Conductors and Cables. DOC file unreadable by pandoc."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/260526 SF - Grounding and Bonding for Electrical Systems.DOC",
+      "type": "spec_book",
+      "sha256": "932be028cafc6d006d1cac322055f0c9511b44cb69863cea622a941ac8c9720d",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 05 26 Grounding and Bonding for Electrical Systems. DOC file unreadable by pandoc."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/260533 SF - Raceway and Boxes for Electrical Systems.DOC",
+      "type": "spec_book",
+      "sha256": "7c6ac747d0e40b0f37ed4ab00b76a74d07151516809db2c4ece990f474b236d9",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 05 33 Raceway and Boxes for Electrical Systems. DOC file unreadable by pandoc."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/260544 SF - Sleeves and Sleeve Seals for Electrical Raceways and Cabling.DOC",
+      "type": "spec_book",
+      "sha256": "3c604d55c2bf3e0be89b4193c3587194c1ae41fff29f80d564849ad12269e434",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 05 44 Sleeves and Sleeve Seals for Electrical Raceways and Cabling. DOC file unreadable by pandoc."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/260553 SF - Identification for Electrical Systems.DOC",
+      "type": "spec_book",
+      "sha256": "4ed91349ee61b75e5414c372ac96848990c798d46101dd6f2a2e060195de2cb3",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 05 53 Identification for Electrical Systems. DOC file unreadable by pandoc."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/262726 SF - Wiring Devices.doc",
+      "type": "spec_book",
+      "sha256": "94843630875b1339273426fa0bfccb18e28f8253b55cdbad01bb3256d62b7a0c",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 27 26 Wiring Devices. DOC file unreadable by pandoc."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/city_of_portsmouth/crawford_pkwy_roundabout/265619 SF - LED Exterior Lighting.DOC",
+      "type": "spec_book",
+      "sha256": "e04460bc3a96120d7ebb3535d27ed71dc1beeb0c025c16b43a418a526870b489",
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Specification section 26 56 19 LED Exterior Lighting. DOC file unreadable by pandoc."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD or SOW present. Specs present as DOC files but all are unreadable (corrupt container). Drawing set present (4 of 14 sheets). Photorealistic renderings present. Key project facts derived from drawings only."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Crawford Circle Downtown Gateway Project",
+      "source": "drawing title block, all sheets",
+      "quote": "CRAWFORD CIRCLE DOWNTOWN GATEWAY PROJECT",
+      "corroboration": [
+        {
+          "source": "drawing title block, all sheets",
+          "claim": "CRAWFORD CIRCLE DOWNTOWN GATEWAY PROJECT",
+          "value": "Crawford Circle Downtown Gateway Project",
+          "agrees": true
+        },
+        {
+          "source": "drawing P401 plan title",
+          "claim": "CRAWFORD CIRCLE",
+          "value": "Crawford Circle",
+          "agrees": true
+        },
+        {
+          "source": "BFA internal folder name",
+          "claim": "crawford_pkwy_roundabout",
+          "value": "Crawford Parkway Roundabout",
+          "agrees": true,
+          "notes": "Folder name uses 'Parkway Roundabout' while drawings consistently say 'Circle Downtown Gateway Project'. Both refer to the same project."
+        }
+      ]
+    },
+    "client_name": {
+      "value": "City of Portsmouth, Virginia",
+      "source": "topo survey title block (45136-004-905V-XPTOPO.pdf)",
+      "quote": "City of Portsmouth  Virginia",
+      "corroboration": [
+        {
+          "source": "topo survey title block",
+          "claim": "City of Portsmouth  Virginia",
+          "value": "City of Portsmouth, Virginia",
+          "agrees": true
+        },
+        {
+          "source": "BFA internal folder path",
+          "claim": "city_of_portsmouth",
+          "value": "City of Portsmouth",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "City of Portsmouth, Virginia",
+      "source": "topo survey title block",
+      "quote": "City of Portsmouth  Virginia"
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "Crawford Circle (intersection of Crawford Street and Bart Street), Portsmouth, VA",
+      "source": "drawing P401 plan — street labels visible",
+      "quote": null,
+      "notes": "Street labels 'Crawford Circle', 'Crawford Street', 'Bart Street' legible on plan P401."
+    },
+    "project_number_internal": {
+      "value": "20-056",
+      "source": "drawing filename: 20-056.2021.06.28.FINAL DRAWINGS.pdf; also file path G:\\2020\\20-056 Crawford Parkway Roundabout per topo PDF embedded path",
+      "quote": null
+    },
+    "project_number_client": {
+      "value": "45136.004",
+      "source": "topo survey title block: J.N.: 45136.004",
+      "quote": "J.N.: 45136.004",
+      "notes": "This appears to be the survey firm's job number, not a City of Portsmouth project number."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Not applicable — this is a site civil/landscape project (roundabout with fountain), not a building. No square footage stated in available documents."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": "2020-04-09",
+        "source": "topo survey dated 4/9/2020 — earliest date in project record",
+        "quote": "Date: 4/9/2020",
+        "notes": "Topo survey date is the earliest known project date. Actual design start may have been before or concurrent with survey. Approximate only."
+      },
+      "completion_date": {
+        "value": "2021-08-23",
+        "source": "drawing title block revision date on final drawing set",
+        "quote": null,
+        "notes": "Drawing filename shows 2021-06-28, title block shows 8-23-21. Used later date as more likely final completion."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local"
+    ],
+    "program_type": [
+      "civic_government",
+      "transportation"
+    ],
+    "program_subtype": [
+      "civic_community_center"
+    ],
+    "disciplines": [
+      "plumbing_engineering",
+      "electrical_engineering",
+      "structural_engineering"
+    ],
+    "sub_disciplines": [
+      "plumbing_domestic_water",
+      "plumbing_specialty",
+      "electrical_lighting",
+      "electrical_power_distribution",
+      "electrical_grounding_lightning"
+    ],
+    "building_systems": [
+      "plumbing_domestic_water",
+      "electrical_systems",
+      "electrical_lighting_exterior",
+      "electrical_grounding",
+      "site_systems"
+    ],
+    "construction_scope": [
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "portsmouth",
+    "roundabout",
+    "fountain",
+    "downtown_gateway",
+    "civic_amenity",
+    "streetscape",
+    "urban_design",
+    "crawford_circle",
+    "decorative_fountain"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Richard A. Rejune, PE",
+      "role_on_project": "engineer_of_record",
+      "notes": "Virginia PE seal No. 046502 visible on drawing title block."
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "P001",
+        "title": "Performance Specifications",
+        "discipline": "plumbing_engineering",
+        "sheet_in_full_set": "Sheet 5 of 14",
+        "reading_notes": "Specifications sheet embedded in the drawing set. Contains full text of specification sections for Hydronic Pumps and Domestic Water Piping (Sec. 22 11 16). McPherson Design Group (Structural Engineers) listed in title block alongside BFA. Confirms plumbing and hydronic systems scope. References cross-sections for wiring per 260519 and 260526. Sheet date 8-23-21."
+      },
+      {
+        "sheet_number": "P401",
+        "title": "Enlarged Fountain Plan — Primary Plumbing Layout",
+        "discipline": "plumbing_engineering",
+        "sheet_in_full_set": "Sheet 7 of 14",
+        "reading_notes": "Plan of Crawford Circle roundabout island at 1/8\"=1'-0\" scale. Circular fountain island with inner and outer distribution manifolds (Type K flexible copper piping). Multiple numbered spray nozzle locations (Types 1-6 typical). Existing electrical vault shown. Construction notes: contractor to engage fountain consultant to design entire system; sand filter pump, ventilation, main circulation pump, sump pump, double-check valve backflow preventer, water meter, and water fill piping per DBVB vault; Type K rigid copper piping to spray nozzles; nozzles produce spray 10'-0\" and 4'-0\" high; ball valve manifold to control spray height; wailer line scuppers. Street labels confirm Crawford Circle / Crawford Street / Bart Street. BFA seal in title block."
+      },
+      {
+        "sheet_number": "P501",
+        "title": "Cut Sheets",
+        "discipline": "plumbing_engineering",
+        "sheet_in_full_set": "Sheet 8 of 14",
+        "reading_notes": "Product cut sheets for: (1) DBVB-Series Direct Burial Vault System — fully pre-assembled RCF80 PVC heated vault for fountain pumping and electrical controls with stainless steel top-access grates; (2) GEY-Series Geyser Nozzle — machined cast-bronze with female-threaded inlet, various heights/flow rates; (3) VEN-Series Vee Nozzle — thin-blade V-shaped fan spray, one-piece brass construction, water-level-independent, NPT connection. Notes instruct contractor to engage fountain consultant for entire system design and proper equipment per manufacturer's recommendations."
+      },
+      {
+        "sheet_number": "P502",
+        "title": "Details",
+        "discipline": "plumbing_engineering",
+        "sheet_in_full_set": "Sheet 9 of 14",
+        "reading_notes": "Additional product cut sheets and details: Ball Valve (Brass) for fountain water system flow regulation; CWL-002WD Wall Mounted Overflow/Sensor — combined overflow drain and water-level sensor, concealed behind face plate; FAS-08 Anti-Vortex/Diverter Plate and Sump — heavy-duty sump with 2\" threaded side connections, cast bronze anti-vortex/diverter plate, requires 4\" thick concrete around sump body; FDF-Series Floor Drain Fitting with plug — flush-mount, in-pool connection; FSK-150J Front Access Skimmer (2 of 2 sheets) — heavy-duty ABS housing with removable trash basket and lid, for fountain surface debris collection. All fountain equipment from Fountain People, Inc. (San Marcos, TX)."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not a building project; no GSF applicable."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not a building project."
+      },
+      "mep_system_inventory": {
+        "plumbing": [
+          "Decorative fountain with copper Type K rigid piping to spray nozzles",
+          "Inner and outer distribution manifolds (Type K flexible copper)",
+          "DBVB Direct Burial Vault System with sand filter pump, circulation pump, sump pump, backflow preventer, water meter, water fill line",
+          "GEY-Series Geyser Nozzles (multiple, spray 10'-0\" high)",
+          "VEN-Series Vee Nozzles (multiple, spray 4'-0\" high)",
+          "FAS-08 Anti-Vortex/Diverter Plate and Sump",
+          "CWL-002WD Wall Mounted Overflow/Sensor",
+          "FDF-Series Floor Drain Fittings",
+          "FSK-150J Front Access Skimmers",
+          "Brass Ball Valve manifold for spray height control",
+          "Wailer line scuppers",
+          "Spec section 22 11 16 Domestic Water Piping (copper and PVC)",
+          "Hydronic pump sections (base-mounted end-suction and vertical in-line centrifugal)"
+        ],
+        "electrical": [
+          "LED exterior lighting (Spec 26 56 19)",
+          "Low-voltage electrical power conductors and cables (Spec 26 05 19)",
+          "Grounding and bonding for electrical systems (Spec 26 05 26)",
+          "Raceway and boxes for electrical systems (Spec 26 05 33)",
+          "Sleeves and sleeve seals for electrical raceways (Spec 26 05 44)",
+          "Identification for electrical systems (Spec 26 05 53)",
+          "Wiring devices including GFCI receptacles (Spec 26 27 26)",
+          "Existing electrical vault (shown on P401 plan)"
+        ],
+        "hvac": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing title block (all sheets)",
+          "value": "Crawford Circle Downtown Gateway Project"
+        },
+        {
+          "source": "BFA internal folder name",
+          "value": "crawford_pkwy_roundabout / Crawford Parkway Roundabout"
+        }
+      ],
+      "resolution_chosen": "drawing title block",
+      "rationale": "The drawing title block is the authoritative design document. The folder name 'Crawford Parkway Roundabout' may reflect a different phase or earlier project name; the completed design is consistently titled 'Crawford Circle Downtown Gateway Project' on all 4 drawing sheets."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md"
+    }
+  }
+}

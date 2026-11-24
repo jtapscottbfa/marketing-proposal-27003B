@@ -1,0 +1,617 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "new_office",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/blackwater/new_office/2019-10-24_Blackwater_100% Permit Drawings.pdf",
+      "type": "drawing_set",
+      "sha256": "425d1faa2b5c4ad820e3c899f7935fba02b80215f3a377a6f03914c4e1fda50d",
+      "page_count": 4,
+      "included": true,
+      "notes": "Civil/architectural title sheet and civil sheets (G-001, C0.0, C1.0, C2.0). Full architectural/structural sheets referenced in index but not present in this PDF volume. Date: 2019-10-24. Architect: RRMM Architects PC."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/blackwater/new_office/19-142 BLACKWATER ELECTRIC VRF.pdf",
+      "type": "drawing_set",
+      "sha256": "6256032f13f96fb0a5d39406b04ae7633f9f89674c783f019d55521b48fba67b",
+      "page_count": 3,
+      "included": true,
+      "notes": "Mechanical drawings (M-1 through M-3) by Elizabeth River Mechanical / Infinity Design Group. Project No. 19-142, dated 2/18/20. Stamped PROGRESS PRINT — NOT TO BE USED FOR CONSTRUCTION on all sheets."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/blackwater/new_office/20-004.2020.03.10.ELECTRICAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "85ddae2cdb8027858d6d0d3121cf511fd36fa907afb686d18b47c3beb7e3f30a",
+      "page_count": 3,
+      "included": true,
+      "notes": "Electrical drawings (E-101 legend/notes, E-101 first floor plan new work, E-102 second floor/roof plan new work) by Bowman Foster & Associates. Project No. 19/43-00, dated 3/9/2020. RRMM Architects PC architect of record."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Source documents consist entirely of drawing sets — no BOD, SOW, contract, narrative, or specification documents present. All facts derived from drawings only. Architectural/structural sheets referenced in G-001 sheet index (S-001 through A-801) not present in provided PDFs. Mechanical drawings stamped PROGRESS PRINT."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Office and Warehouse Facility for Blackwater Electric",
+      "source": "drawing G-001 title block",
+      "quote": "OFFICE AND WAREHOUSE FACILITY",
+      "corroboration": [
+        {
+          "source": "drawing G-001 title block",
+          "claim": "OFFICE AND WAREHOUSE FACILITY",
+          "value": "Office and Warehouse Facility",
+          "agrees": true
+        },
+        {
+          "source": "drawing C0.0 title block",
+          "claim": "CIVIL SITE PLAN FOR BLACKWATER ELECTRIC",
+          "value": "Office and Warehouse Facility for Blackwater Electric",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-1 title block",
+          "claim": "OFFICE AND WAREHOUSE FACILITY FOR BLACKWATER ELECTRIC",
+          "value": "Office and Warehouse Facility for Blackwater Electric",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-101 title block",
+          "claim": "OFFICE & WAREHOUSE FACILITY BLACKWATER ELECTRIC",
+          "value": "Office and Warehouse Facility for Blackwater Electric",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Blackwater Electric",
+      "source": "drawing G-001, owner block",
+      "quote": "BLACKWATER ELECTRIC",
+      "corroboration": [
+        {
+          "source": "drawing G-001, owner block",
+          "claim": "BLACKWATER ELECTRIC",
+          "value": "Blackwater Electric",
+          "agrees": true
+        },
+        {
+          "source": "drawing C0.0, owner/developer block",
+          "claim": "BLACKWATER ELECTRIC CORP.",
+          "value": "Blackwater Electric",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Blackwater Electric Corp.",
+      "source": "drawing C0.0, owner/developer block",
+      "quote": "BLACKWATER ELECTRIC CORP.",
+      "corroboration": [
+        {
+          "source": "drawing C0.0, owner/developer block",
+          "claim": "BLACKWATER ELECTRIC CORP.",
+          "value": "Blackwater Electric Corp.",
+          "agrees": true
+        },
+        {
+          "source": "drawing G-001, owner block",
+          "claim": "BLACKWATER ELECTRIC / 807 PROFESSIONAL PLACE WEST / CHESAPEAKE, VA 23320",
+          "value": "Blackwater Electric",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Chesapeake",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "400 Network Station, Chesapeake, VA 23320",
+      "source": "drawing C0.0, site data block",
+      "quote": "PROPERTY ADDRESS: 400 NETWORK STATION, CHESAPEAKE, VA 23320",
+      "corroboration": [
+        {
+          "source": "drawing C0.0, site data block",
+          "claim": "PROPERTY ADDRESS: 400 NETWORK STATION, CHESAPEAKE, VA 23320",
+          "value": "400 Network Station, Chesapeake VA 23320",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-1 title block",
+          "claim": "400 NETWORK STATION, CHESAPEAKE, VA 23283",
+          "value": "400 Network Station, Chesapeake VA 23283",
+          "agrees": false,
+          "note": "Zip code discrepancy: C0.0 says 23320, M-1 says 23283. C0.0 (civil/permit set) treated as authoritative."
+        },
+        {
+          "source": "drawing E-101 title block",
+          "claim": "CHESAPEAKE, VA 23320",
+          "value": "Chesapeake VA 23320",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "designer_project_number": {
+      "value": "19-142",
+      "source": "drawing M-1 title block",
+      "quote": "PROJECT: 19-142",
+      "corroboration": [
+        {
+          "source": "drawing M-1 title block",
+          "claim": "PROJECT: 19-142",
+          "value": "19-142",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-101 title block",
+          "claim": "PROJECT 19/43-00",
+          "value": "19/43-00",
+          "agrees": false,
+          "note": "Electrical subconsultant (Bowman Foster) uses different project number 19/43-00. These are likely different firms' internal numbering. Not a conflict about project identity."
+        }
+      ]
+    },
+    "city_permit_number": {
+      "value": "194109_00",
+      "source": "drawing C0.0 title block",
+      "quote": "AC# 194109_00",
+      "corroboration": [
+        {
+          "source": "drawing C0.0 title block",
+          "claim": "AC# 194109_00",
+          "value": "194109_00",
+          "agrees": true
+        }
+      ]
+    },
+    "square_footage": {
+      "value": 16551,
+      "unit": "gsf",
+      "source": "drawing C0.0, site area calculations",
+      "quote": null,
+      "notes": "C0.0 states: TOTAL BUILDING FOOTPRINT: 16,551 SF. Breakdown: OFFICE SPACE 10,963 SF; WAREHOUSE 5,588 SF. Value is footprint area. Building has two floors for office portion (mezzanine visible in drawings) so total occupied area may exceed footprint.",
+      "corroboration": [
+        {
+          "source": "drawing C0.0, site area calculations",
+          "claim": "TOTAL BUILDING FOOTPRINT: 16,551 SF (OFFICE 10,963 SF + WAREHOUSE 5,588 SF)",
+          "value": 16551,
+          "agrees": true
+        }
+      ]
+    },
+    "building_footprint_office_sf": {
+      "value": 10963,
+      "unit": "sf",
+      "source": "drawing C0.0, site area calculations",
+      "quote": null,
+      "notes": "Office space footprint per site area calculations table."
+    },
+    "building_footprint_warehouse_sf": {
+      "value": 5588,
+      "unit": "sf",
+      "source": "drawing C0.0, site area calculations",
+      "quote": null,
+      "notes": "Warehouse space footprint per site area calculations table."
+    },
+    "site_area": {
+      "value": 144305,
+      "unit": "sf",
+      "value_acres": 3.31,
+      "source": "drawing C0.0, site area calculations",
+      "quote": null,
+      "notes": "TOTAL SITE AREA: 144,305 SF / 3.31 AC per C0.0."
+    },
+    "floor_count": {
+      "value": 2,
+      "source": "drawings M-2, M-3, E-101, E-102",
+      "quote": null,
+      "notes": "M-2 is titled 'MECHANICAL FIRST FLOOR PLAN'; M-3 is titled 'MECHANICAL SECOND FLOOR PLAN'. E-101 shows electrical first floor, E-102 shows electrical second floor and roof plan. Second floor appears to be a mezzanine level over the office portion only; warehouse is single-story. C0.0 site data notes MAX. BUILDING HEIGHT: 75 FT.",
+      "corroboration": [
+        {
+          "source": "drawing M-2, title",
+          "claim": "MECHANICAL FIRST FLOOR PLAN",
+          "value": "has first floor",
+          "agrees": true
+        },
+        {
+          "source": "drawing M-3, title",
+          "claim": "MECHANICAL SECOND FLOOR PLAN",
+          "value": "has second floor",
+          "agrees": true
+        },
+        {
+          "source": "drawing E-102",
+          "claim": "ELECTRICAL SECOND FLOOR PLAN - NEW WORK",
+          "value": "has second floor",
+          "agrees": true
+        }
+      ]
+    },
+    "max_building_height": {
+      "value": 75,
+      "unit": "feet",
+      "source": "drawing C0.0, site data",
+      "quote": "MAX. BUILDING HEIGHT: 75 FT."
+    },
+    "parking_spaces": {
+      "value": 76,
+      "source": "drawing C0.0, site data",
+      "quote": "PARKING PROVIDED: 76 TOTAL (4 HANDICAPPED SPACES (2 VAN ACCESSIBLE))",
+      "notes": "Parking required per C0.0: 72 spaces (USE: OFFICE 1 SPACE/200SF, WAREHOUSE 0.5 SPACE/1,000 SF = 54.815 + 200/1,000 x 3.5/1,000 = 71 spaces rounded up to 72 per calculation note); provided: 75 + 1 = 76."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_value_design": {
+      "value": null,
+      "status": "missing"
+    },
+    "permit_date": {
+      "value": "2019-09-18",
+      "source": "drawing C0.0 title block",
+      "quote": "09/18/2019",
+      "notes": "Date shown on civil cover sheet. Permit drawings set dated 2019-10-24 per filename; C0.0 shows 09/18/2019 as the date in title block."
+    },
+    "mechanical_drawing_date": {
+      "value": "2020-02-18",
+      "source": "drawing M-1 title block",
+      "quote": "DATE: 2/18/20",
+      "notes": "Progress print date for VRF mechanical drawings by Elizabeth River Mechanical."
+    },
+    "electrical_drawing_date": {
+      "value": "2020-03-09",
+      "source": "drawing E-101 title block",
+      "quote": null,
+      "notes": "Date inferred from filename 20-004.2020.03.10.ELECTRICAL DRAWINGS.pdf; title block confirms project 19/43-00 by Bowman Foster & Associates."
+    },
+    "zoning": {
+      "value": "PUD (Planned Unit Development)",
+      "source": "drawing C0.0, site data",
+      "quote": "ZONING: PUD (PLANNED UNIT DEVELOPMENT)"
+    },
+    "parcel_number": {
+      "value": "0482010000240",
+      "source": "drawing C0.0, site data",
+      "quote": "PARCEL NUMBER: 0482010000240 (M.B. 152, P. 129)"
+    },
+    "utilities": {
+      "value": "City water and sewer available",
+      "source": "drawing C0.0, site data",
+      "quote": "UTILITIES: CITY WATER AND SEWER AVAILABLE"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Permit drawings dated 2019-10-24; mechanical progress prints dated 2020-02-18; electrical dated 2020-03-09. Design timeline inferred as 2019-2020 but no formal completion date in source documents."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "commercial_office",
+      "industrial_warehouse"
+    ],
+    "program_subtype": [
+      "commercial_corporate_hq"
+    ],
+    "disciplines": [
+      "architecture",
+      "civil_engineering",
+      "structural_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "architectural_design",
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "hvac_design",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_natural_gas",
+      "site_utilities",
+      "site_paving",
+      "site_grading_drainage"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_paving"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "blackwater_electric",
+    "chesapeake_va",
+    "hampton_roads",
+    "office_warehouse",
+    "vrf_system",
+    "private_client",
+    "new_construction"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "TITLE SHEET",
+        "discipline": "architecture",
+        "source_pdf": "2019-10-24_Blackwater_100% Permit Drawings.pdf",
+        "reading_notes": "Project title: Office and Warehouse Facility for Blackwater Electric. Architect of record: RRMM Architects, PC, 1317 Executive Blvd Suite 200, Chesapeake VA 23320 (757-622-2828). Civil: Timmons Group, Virginia Beach VA. Structural: Broyles and Associates, 508 Baylor Ct Suite C, Chesapeake VA 23320. Owner: Blackwater Electric, 807 Professional Place West, Chesapeake VA 23320, 757-549-9422. Contact: David Hart, db@blackwaterelectric.com. Sheet index spans Civil (C0.0–L2.0), Structural (S-001–S-402), Architectural (A-001–A-801). Only 4 civil/cover sheets present in this PDF. Perspective rendering shown: two-story office building with metal panel/masonry exterior, attached single-story warehouse. Volume 1 of 1 noted."
+      },
+      {
+        "sheet_number": "C0.0",
+        "title": "COVER SHEET (Civil)",
+        "discipline": "civil_engineering",
+        "source_pdf": "2019-10-24_Blackwater_100% Permit Drawings.pdf",
+        "reading_notes": "Site data: Property Address 400 Network Station, Chesapeake VA 23320. Parcel 0482010000240 (M.B. 152, P. 129). Zoning PUD. Existing use: Commercial-Vacant. Proposed use: Office Building. Max building height: 75 ft. City water and sewer available. No wetlands within project limits. Flood zone 'X' per Map 51003C4030D, December 15, 2014. Total site area 144,305 SF (3.31 AC). Total building footprint 16,551 SF: office 10,963 SF, warehouse 5,588 SF. Future expansion noted: 6,286 SF. Total impervious with expansion: 61,440 SF (1.41 AC). Disturbed area: 112,285 SF (2.58 AC). Parking required: 72; provided: 76 total (4 handicapped, 2 van accessible). BMP data: private only, allowable C=0.75, designed C=0.53 without expansion / 0.56 with expansion. AC# 194109_00 (City of Chesapeake permit). Engineer: Timmons Group, John Zaszewski PE. Architect: RRMM Architects PC, Josh Gerloff. Surveyor: Timmons Group, Eric Patterson LS. Civil cover sheet for permit set dated 09/18/2019."
+      },
+      {
+        "sheet_number": "C1.0",
+        "title": "GENERAL NOTES",
+        "discipline": "civil_engineering",
+        "source_pdf": "2019-10-24_Blackwater_100% Permit Drawings.pdf",
+        "reading_notes": "City of Chesapeake general construction notes and demolition/drainage/utility notes. Confirms jurisdiction: City of Chesapeake, VA. References VDOT Road Design Manual (2007) and Hampton Roads Planning District Commission (HRPDC) regional standards. Notes reference storm drainage structures sized per Chesapeake BMP standards. General contractor obligations for as-built drawings. Referenced topographic notes. Fire hydrant requirements: NFPA 291."
+      },
+      {
+        "sheet_number": "C2.0",
+        "title": "EXISTING CONDITIONS",
+        "discipline": "civil_engineering",
+        "source_pdf": "2019-10-24_Blackwater_100% Permit Drawings.pdf",
+        "reading_notes": "Topographic survey / existing conditions plan. Field survey by Mid-Atlantic Surveying and Land Design, June 26, 2019. Scale 1'=100'. Shows site boundaries, adjacent parcels (Industrial Development Authority and others), wetland buffers (52' wetland buffer shown twice on north edge), easements, setbacks. Front parking setback 25', rear building setback 15', side building setback 15'. Key adjacent parcels: Network Station LLC (parcel 0482010000023), several Industrial Development Authority parcels. Survey certification signed by Beth Anne G. Campbell PE/LS, dated 06-25-2019. Topographic benchmark reference: City of Chesapeake geodetic control network, NAVD88. Topography shows relatively flat site with slight grade changes."
+      },
+      {
+        "sheet_number": "M-1",
+        "title": "MECHANICAL NOTES AND DETAILS",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "19-142 BLACKWATER ELECTRIC VRF.pdf",
+        "reading_notes": "Mechanical details sheet for VRF/ductless split system. Designer: Elizabeth River Mechanical / Infinity Design Group (IDG), 758 Thimble Shoals Blvd Suite 804, Newport News VA 23606, (757) 877-9033. Drawn by WHL, checked by WHL. Project No. 19-142. Date 2/18/20. PROGRESS PRINT stamp — not for construction. System types shown: wall-mounted ductless AHU (split system/VRF), RTU condensate trap, intake louver, wall exhaust fan, ductwork diffuser/return grille details. Legend: condensate drain, refrigerant suction, refrigerant liquid, natural gas. Mechanical abbreviations include VRF. General notes reference 2015 Virginia Mechanical Code and 2012 International Energy Code. Equipment tag format: AHU-2/WAITING ROOM/5 TON. Gas meter demand schedule: RTU-1=150 MBH, UH-1=200, UH-2=200, UH-3=200, UH-4=200, Water Heater=N/A (Electric), Future=300; Total=1,250 MBH. Natural gas service for unit heaters (warehouse)."
+      },
+      {
+        "sheet_number": "M-2",
+        "title": "MECHANICAL FIRST FLOOR PLAN",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "19-142 BLACKWATER ELECTRIC VRF.pdf",
+        "reading_notes": "Scale 1/8\"=1'-0\". Shows VRF outdoor unit layout (OU-1 through multiple outdoor units on roof), wall-mounted ductless AHU units throughout office spaces on first floor. Unit heater symbols (UH-1, UH-2) in warehouse area. Gas meter on exterior. Supply plenum 16/12 in common area corridor. Ductwork routing (flex duct) to diffusers per schedule. AHU tags identify individual room assignments and tonnage (e.g., AHU-1-5 at various sizes, AHU-2 series). Multiple branch refrigerant lines to ductless units. Gas piping routing from meter to unit heaters. Swing joints at gas connections. First floor shows both the large open-plan office and the attached warehouse. PROGRESS PRINT stamp."
+      },
+      {
+        "sheet_number": "M-3",
+        "title": "MECHANICAL SECOND FLOOR PLAN",
+        "discipline": "mechanical_engineering",
+        "source_pdf": "19-142 BLACKWATER ELECTRIC VRF.pdf",
+        "reading_notes": "Scale 1/8\"=1'-0\". Second floor (mezzanine level over office portion). AHU-3 series units shown for second floor offices. Gas piping routing 20/10 up to RTU-1 and/or mezzanine. RTU-1 referenced (150 MBH gas — this may be a rooftop unit for common areas). Refrigerant piping routed up to outdoor units. Notes: 'DUCT CHASE' labeled for vertical routing between floors. Warehouse section is single story — no second floor over warehouse on this plan. Common area AHU detail shown. PROGRESS PRINT stamp. Gas Piping Notes: all gas piping shall be Schedule 40 black steel pipe; pressure regulators gas-operated 5 lbs. with vent limiter."
+      },
+      {
+        "sheet_number": "E-101 (notes)",
+        "title": "LEGEND, ABBREVIATIONS AND GENERAL NOTES",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-004.2020.03.10.ELECTRICAL DRAWINGS.pdf",
+        "reading_notes": "Electrical legend, abbreviations, and 11 general notes. Engineer: Bowman Foster & Associates, 6203 Sun Dr #301 (likely Richmond VA). Architect of record: RRMM Architects PC. Project 19/43-00, dated 3/9/2020. Notes: per UFC, NEC, and local jurisdiction. Circuitry is diagrammatic. Conduit in concrete slabs to be in middle third. All new work concealed in ceilings/walls. General contractor responsibilities for coordination. Mechanical room/electrical room lighting to be provided with fixtures coordinated with trade. Legend shows: disconnect switch 240V NEMA 1, electrical panelboard (20BY/120V), manual transfer switch (MTS), homeruns to panel with circuit designation."
+      },
+      {
+        "sheet_number": "E-101 (floor plan)",
+        "title": "ELECTRICAL FIRST FLOOR PLAN — NEW WORK",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-004.2020.03.10.ELECTRICAL DRAWINGS.pdf",
+        "reading_notes": "Scale 1/8\"=1'-0\". First floor electrical new work. Panelboards shown: Panel A1 (labeled), Panel B1 (labeled), Panel MOP (labeled). 400A GEN 'TAP BOX' shown — suggests generator connection point or meter CT cabinet nearby. Meter/CT cabinet called out. Unit heater connections UH-1 and UH-2 in warehouse area (2P-30A feeds). Multiple AHU connections throughout first floor (2P-20A and 2P-30A feeds). Branch circuit wiring to AHU units per VRF system. B1 circuits: B1-2 (2 #10 & 1 #10 GND - 3/4\"C), B1-14,16, B1-18,20, B1-10. Note at top: CONNECT TO FIRST FLOOR LIGHTING CIRCUIT. Scale 1/8\"=1'-0\"."
+      },
+      {
+        "sheet_number": "E-102",
+        "title": "ELECTRICAL SECOND FLOOR AND ROOF PLAN — NEW WORK",
+        "discipline": "electrical_engineering",
+        "source_pdf": "20-004.2020.03.10.ELECTRICAL DRAWINGS.pdf",
+        "reading_notes": "Scale 1/8\"=1'-0\". Two plans on sheet: Second floor plan and roof plan. Second floor: AHU-3 series units (AHU-3-1 through AHU-3-5 approximately), panel B1 circuit feeds. Wall-mounted outdoor unit module connections (OU-1, OU-2). Roof plan: shows RTU-1, HF-1 (heat/exhaust fan), OU-1 and OU-2 (outdoor VRF units). RTU-1 feed: 3P 60A NEMA 3R disconnect, B1-29 (4 #3 & 1 #8 GND-3/4\"C) and B1-17 (4 #5 & 1 #8 GND-1\"C). OU-1/OU-2: 3P 60A NEMA 3R disconnects, circuits from Panel B1. HF-1: 2P-20, B1-6. Note: CONNECT TO SECOND FLOOR LIGHTING CIRCUIT. Confirms 3-phase service for VRF outdoor units."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 16551,
+        "unit": "gsf",
+        "source": "drawing C0.0, site area calculations",
+        "quote": null,
+        "sheets": [
+          "C0.0"
+        ],
+        "notes": "Footprint area. Building has 2 floors for office section; total occupied/gross area likely larger. No separate gross floor area schedule found in available drawings."
+      },
+      "floor_count": {
+        "value": 2,
+        "source": "drawings M-2, M-3, E-101, E-102",
+        "quote": null,
+        "sheets": [
+          "M-2",
+          "M-3",
+          "E-101",
+          "E-102"
+        ],
+        "notes": "Office section is 2 floors (first floor + mezzanine/second floor). Warehouse section is single story. Building is mixed-height."
+      },
+      "max_building_height_ft": {
+        "value": 75,
+        "unit": "ft",
+        "source": "drawing C0.0, site data",
+        "quote": "MAX. BUILDING HEIGHT: 75 FT.",
+        "sheets": [
+          "C0.0"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "VRF (Variable Refrigerant Flow) ductless split system serving office areas — multiple wall-mounted indoor AHU units throughout 1st and 2nd floor offices (AHU-1 through AHU-3 series, various tonnages up to 5 tons per unit)",
+          "RTU-1: rooftop unit for common areas (150 MBH gas input per gas meter demand schedule)",
+          "Unit heaters UH-1 through UH-4 (200 MBH each, gas-fired) in warehouse areas",
+          "Exhaust fans (wall-mounted) for restrooms/utility rooms",
+          "Natural gas service: total gas meter demand 1,250 MBH",
+          "Flex duct distribution to supply diffusers (D-1, D-2, R-1, R-2 types per schedule)"
+        ],
+        "electrical": [
+          "Panelboard Panel A1 (120/208V per legend), Panel B1, Panel MOP",
+          "400A generator tap box / CT cabinet at first floor electrical room",
+          "3-phase 60A NEMA 3R disconnects for VRF outdoor units (OU-1, OU-2) and RTU-1",
+          "Unit heater branch circuits: 2P-30A feeds to UH-1 and UH-2",
+          "AHU branch circuits: 2P-20A and 2P-30A throughout",
+          "HF-1 exhaust fan: 2P-20A",
+          "Lighting circuits (first floor and second floor noted)"
+        ],
+        "plumbing": [
+          "Electric domestic water heater (per gas demand schedule: Water Heater = N/A / Electric)",
+          "City water and sewer service (per C0.0 site data)",
+          "Plumbing scope present but no dedicated plumbing drawings in provided set"
+        ],
+        "fire_protection": [
+          "Fire protection drawings not present in provided drawing set",
+          "No explicit fire suppression or fire alarm details found in available sheets"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.facility_address",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "drawing C0.0, site data",
+          "value": "400 Network Station, Chesapeake VA 23320"
+        },
+        {
+          "source": "drawing M-1 title block",
+          "value": "400 Network Station, Chesapeake VA 23283"
+        }
+      ],
+      "resolution_chosen": "drawing C0.0, site data",
+      "rationale": "C0.0 is a permit document prepared by the civil engineer of record (Timmons Group) specifically for the City of Chesapeake and is the most authoritative source for site address. Zip code 23320 confirmed by E-101 title block as well. 23283 on M-1 (progress print) is likely a drafting error."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

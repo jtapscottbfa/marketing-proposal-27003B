@@ -1,0 +1,362 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "laurel_parking_lot",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/laurel_parking_lot/RFP Letter.pdf",
+      "type": "sow",
+      "sha256": "77fe7cf0dad80c86fafbe9ee09a67a3db70fedafd3914386018da637a8a6911c",
+      "page_count": 3,
+      "included": true,
+      "notes": "Image-based PDF; rendered to images for reading. Contains RFP cover letter (3 pp) + references attached 12-page SOW titled 'Architectural and Engineering Services Laurel Parking Lot' dated 15 July 2022 (SOW body not present as separate document in intake). Also includes Non-Publicity clause."
+    },
+    {
+      "path": "00_admin/reference_projects/laurel_parking_lot/22-052.11.04.FINAL ELECTRICAL BASIS OF DESIGN.docx",
+      "type": "bod",
+      "sha256": "4887c48d5f97a737f2e80b129f622bdaf3a23d726bcfa8cf646f07f408d66407",
+      "page_count": null,
+      "included": true,
+      "notes": "Electrical Basis of Design for Laurel Parking Lot. BFA project number 22-052 embedded in filename."
+    },
+    {
+      "path": "00_admin/reference_projects/laurel_parking_lot/Laurel Parking Expansion Concept.pdf",
+      "type": "drawing_set",
+      "sha256": "c949b31f386e6e9d81475c5fab37c3660c5cff8757b018e696ea90c2c8690bee",
+      "page_count": 1,
+      "included": true,
+      "notes": "Site concept drawing (1 sheet). Shows existing parking lots and proposed 40-space expansion area (highlighted yellow) at Camp Peary."
+    },
+    {
+      "path": "00_admin/reference_projects/laurel_parking_lot/A-E Services Appendix I_version 2022.01.docx",
+      "type": "sow",
+      "sha256": "623b05e90797f869d88ee27c0369113bbf4a238e30336214c9aa94606a21ba7d",
+      "page_count": null,
+      "included": true,
+      "notes": "Appendix I to AFETA A-E Services contract: Specific and General Codes, Standards, Regulations and Laws applicable to design projects at AFETA. Version 2022.01."
+    },
+    {
+      "path": "00_admin/reference_projects/laurel_parking_lot/A-E Services Appendix II_version 2022.01.docx",
+      "type": "sow",
+      "sha256": "882062cb3659466a8efb44fd985f988f278b642ff11c73fd71d9e87d9c993bad",
+      "page_count": null,
+      "included": true,
+      "notes": "Appendix II to AFETA A-E Services contract: A/E Submission Instructions and Requirements for A/E Design Projects. Version 2022.01. Covers all disciplines (site, arch, fire protection, structural, plumbing, sanitary, HVAC, electrical, equipment, specs)."
+    },
+    {
+      "path": "00_admin/reference_projects/laurel_parking_lot/FW Laurel Parking Lot .msg",
+      "type": "correspondence",
+      "sha256": "41d2f2201e5a23243771063bd51d6019446166d080b1eb326379c0a226f03c32",
+      "page_count": null,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "Outlook .msg email file. Content not extractable by available tools. Likely forwarded project correspondence. Flagged for human review."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "RFP cover letter present; referenced 12-page SOW body is not present as a separate file in intake (it is referenced as an attachment in the RFP letter). Electrical BOD present. 1-page concept site drawing present. Full construction drawing set not present — this is a design services solicitation, not a completed project package."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Laurel Parking Lot — Architectural and Engineering Services",
+      "source": "RFP Letter p.1; Electrical BOD header",
+      "quote": "Architectural and Engineering Services Laurel Parking Lot",
+      "corroboration": [
+        {
+          "source": "RFP Letter p.1",
+          "claim": "Architectural and Engineering Services Laurel Parking Lot",
+          "value": "Laurel Parking Lot — Architectural and Engineering Services",
+          "agrees": true
+        },
+        {
+          "source": "Electrical BOD header",
+          "claim": "Laurel Parking Lot",
+          "value": "Laurel Parking Lot",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Defense, AFETA Camp Peary",
+      "source": "RFP Letter p.1",
+      "quote": "DEPARTMENT OF DEFENSE AFETA CAMP PEARY 1100 EXECUTIVE DRIVE WILLIAMSBURG, VA 23188",
+      "corroboration": [
+        {
+          "source": "RFP Letter p.1",
+          "claim": "DEPARTMENT OF DEFENSE AFETA CAMP PEARY 1100 EXECUTIVE DRIVE WILLIAMSBURG, VA 23188",
+          "value": "Department of Defense, AFETA Camp Peary",
+          "agrees": true
+        },
+        {
+          "source": "Electrical BOD header",
+          "claim": "AFETA WILLIAMSBURG, VA",
+          "value": "AFETA, Williamsburg VA",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Defense, AFETA Camp Peary",
+      "source": "RFP Letter p.1",
+      "quote": "DEPARTMENT OF DEFENSE AFETA CAMP PEARY 1100 EXECUTIVE DRIVE WILLIAMSBURG, VA 23188"
+    },
+    "location": {
+      "city": "Williamsburg",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Camp Peary (AFETA)",
+      "facility_address": "1100 Executive Drive, Williamsburg, VA 23188",
+      "source": "RFP Letter p.1",
+      "quote": "A.F.E.T.A., CAMP PEARY, CONTRACTING OFFICE 1100 EXECUTIVE DRIVE • WILLIAMSBURG, VIRGINIA 23188"
+    },
+    "project_number_internal": {
+      "value": "22-052",
+      "source": "Electrical BOD filename (22-052.11.04.FINAL ELECTRICAL BASIS OF DESIGN.docx)",
+      "quote": null,
+      "notes": "BFA project number extracted from BOD filename; not stated in body text."
+    },
+    "project_number_client": {
+      "value": "2225095346",
+      "source": "RFP Letter p.1",
+      "quote": "RFP No. 2225095346"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "RFP stage documents only; no executed contract in intake."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No building GSF applicable — this is a surface parking lot expansion. The new lot contains approximately 40 parking spaces per concept drawing. No area measurement stated in sources."
+    },
+    "parking_spaces_new": {
+      "value": 40,
+      "source": "Laurel Parking Expansion Concept drawing",
+      "quote": null,
+      "notes": "Concept drawing shows new lot (highlighted yellow) labeled '40 Spaces'. Corroborated by text extracted from concept PDF: '40 Spaces'. This is a spec gap — schema has no field for parking space count."
+    },
+    "parking_spaces_existing_context": {
+      "value": "38 spaces (existing lot north of new), 35 spaces (lot with 3 removed for drive aisle) noted on concept drawing",
+      "source": "Laurel Parking Expansion Concept drawing",
+      "quote": null,
+      "notes": "Contextual information from concept drawing only. Schema gap."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in RFP or BOD. Fee proposal requested but no budget figure present."
+    },
+    "rfp_issue_date": {
+      "value": "2022-07-19",
+      "source": "RFP Letter p.1",
+      "quote": "DATE ISSUED: 19 July 2022"
+    },
+    "rfp_due_date": {
+      "value": "2022-07-28",
+      "source": "RFP Letter p.1",
+      "quote": "DATE DUE: 28 July 2022"
+    },
+    "sow_date": {
+      "value": "2022-07-15",
+      "source": "RFP Letter p.1",
+      "quote": "Statement of Work (SOW), titled \"Architectural and Engineering Services Laurel Parking Lot\" dated 15 July 2022"
+    },
+    "contracting_officer": {
+      "value": "David J. Dixon",
+      "source": "RFP Letter p.2",
+      "quote": "David J. Dixon Contracting Officer"
+    },
+    "project_poc": {
+      "value": "Emily Stabeno",
+      "source": "RFP Letter p.2",
+      "quote": "contact Emily Stabeno at (757) 808-1757 or via email emily.stabeno@afeta.net"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "RFP requested fee proposal; no award value in intake documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design services solicitation only; construction contract not in scope of available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "transportation_parking"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_lighting",
+      "electrical_power_distribution",
+      "civil_site_design",
+      "civil_paving"
+    ],
+    "building_systems": [
+      "electrical_lighting_exterior",
+      "site_paving",
+      "site_utilities"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope",
+      "exterior_paving",
+      "earthwork_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "camp_peary",
+    "afeta",
+    "williamsburg",
+    "parking_lot",
+    "site_lighting",
+    "federal_dod",
+    "virginia"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "C-1",
+        "title": "Laurel Parking Expansion Concept Site Plan",
+        "discipline": "civil_engineering",
+        "reading_notes": "Single-sheet site plan (PDF, 1 page) at scale 0-200 feet. Shows existing building cluster (Bldg 1602, 1604, 1649, 1639, 1601, 1657, 1658, 1659) and three parking areas. Northern existing lot: '38 Spaces Available'. Middle existing lot: '35 Spaces Available' (note states 'Remove 3 spaces for drive aisle' with red X marker at motor pool vans only area). New proposed lot: '40 Spaces', shown in yellow highlight to the south. Scale bar provided. North arrow present. No sheet number formally printed; designated C-1 here as descriptor. No title block with project number visible at this rendering."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Not applicable — surface parking lot, no building footprint."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "explicit_null",
+        "notes": "Surface parking lot; floor count is not a meaningful metric."
+      },
+      "parking_spaces_new": {
+        "value": 40,
+        "unit": "spaces",
+        "source": "Laurel Parking Expansion Concept drawing",
+        "quote": null,
+        "sheets": [
+          "C-1"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "7 light poles total: 1 replacement pole at existing location + 6 new poles in new lot (Valmont DS330-400Q200-D1-DB-FBC-AB, 20' soft square steel, bronze)",
+          "Lighting fixtures: CREE ARE-EDG-3M-DA-06-E-UL-BZ-700-R The Edge Series, Type III Medium, 4000K, bronze",
+          "Underground conduit (Schedule 40 PVC); copper THHN/THWN conductors",
+          "Minimum 1 foot-candle illumination required across new lot"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

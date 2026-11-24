@@ -1,0 +1,249 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "raw_water_2",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/gloucester/raw_water_2/2024.05.17 Gloucester County WTP Electrical Study.pdf",
+      "type": "report",
+      "sha256": "262e889fc60c8f8357058733c889a7fb1c75cd9dd495a390f16599bf096b3276",
+      "page_count": 30,
+      "included": true,
+      "notes": "Electrical coordination study report. Contains analytical TCC graphs and data tables as non-extractable appendix content; no separate drawing set present."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "Single source document: an engineering study report. No BOD, SOW, contract, or separate drawing set present. Appendices contain TCC graphs and data tables (analytical outputs) rendered as non-text pages in the PDF — text extraction captured section headers only."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Raw Water No. 2 Treatment Plant Electrical Coordination Study",
+      "source": "Study cover page",
+      "quote": "ELECTRICAL COORDINATION STUDY … RAW WATER NO. 2 TREATMENT PLANT",
+      "corroboration": [
+        {
+          "source": "Study cover page",
+          "claim": "RAW WATER NO. 2 TREATMENT PLANT",
+          "value": "Raw Water No. 2 Treatment Plant",
+          "agrees": true
+        },
+        {
+          "source": "Study introduction",
+          "claim": "coordination study on the electrical distribution system for the Gloucester Water Treatment Plant Pump #2, 3, & 4",
+          "value": "Gloucester Water Treatment Plant — Raw Water No. 2",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Gloucester County",
+      "source": "Study title and header (implied by facility name)",
+      "quote": null,
+      "status": "present_with_value",
+      "notes": "Not explicitly named as client in document text; inferred from facility name 'Gloucester Water Treatment Plant' and file path context. No contract or SOW present to corroborate.",
+      "corroboration": [
+        {
+          "source": "Study cover page / all pages header",
+          "claim": "Raw Water No. 2 Treatment Plant – Gloucester, VA",
+          "value": "Gloucester County",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Gloucester County",
+      "source": "Study title (inferred)",
+      "quote": null,
+      "status": "present_with_value",
+      "notes": "Same as client_name; inferred from facility name. No contract document present to confirm owner entity."
+    },
+    "location": {
+      "city": "Gloucester",
+      "state": "VA",
+      "country": "US",
+      "facility_address": null,
+      "source": "Study headers (all pages)",
+      "quote": "Raw Water No. 2 Treatment Plant – Gloucester, VA"
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Electrical coordination study; square footage not relevant or mentioned."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "report_date": {
+      "value": "2024-05-17",
+      "source": "Study cover page",
+      "quote": "MAY 17TH, 2024"
+    },
+    "scope_description": {
+      "value": "Electrical coordination study for the pump electrical distribution system at the Raw Water No. 2 Treatment Plant. Scope included: (1) field survey of Pumps #2, #3, and #4 and generation of system model using SKM Power Tools; (2) short-circuit study of the pump electrical system; (3) coordination of tripping characteristics of overcurrent protective devices. Study followed ANSI/NEMA MTS-2019 paragraph on Coordination Studies scope. Key finding: selective coordination is impossible with existing devices; compromised coordination is the achievable objective. Recommendations: set 200A MCB instantaneous trip to High/maximum position; upgrade to 200A MCB with adjustable/static trip for near-coordinated system.",
+      "source": "Study introduction and Recommended System Modifications section",
+      "quote": "Bowman, Foster & Associates, Inc. (BFA) was tasked with performing a coordination study on the electrical distribution system for the Gloucester Water Treatment Plant Pump #2, 3, & 4."
+    },
+    "key_equipment_surveyed": {
+      "value": [
+        "Three pole-mounted 50 kVA transformers/transformer bank with 480V secondary",
+        "Low-voltage ATS with 200A main circuit breaker (Square D type JGL-36200T), adjustable instantaneous trip",
+        "Pump #2 and #3: 50A circuit breakers, GE type TED13050, fixed setting",
+        "Pump #4: 100A circuit breaker, GE type TED13100, fixed setting"
+      ],
+      "source": "Study introduction and Time Current Curves section",
+      "quote": "The existing system is comprised of a utility feed serving the three pole mounted 50 kVA transformers/transformer bank with 480 V secondary. This transformer bank feeds low voltage ATS with the main circuit breaker (MCB). Pumps circuit breakers are connected to the ATS through the wireway."
+    },
+    "utility_assumption": {
+      "value": "3-phase 100 MVA utility contribution; single line ground (SLG) 30 MVA",
+      "source": "Study Input Data section",
+      "quote": "the Utility Contribution was assumed as 3-phase 100 MVA and Single Line Ground (SLG) as 30 MVA"
+    },
+    "key_finding": {
+      "value": "Selective coordination is impossible with the existing 200A MCB and pump branch circuit breakers. Compromised coordination per ANSI/NEMA MTS-2019 is the achievable objective. No equipment failed the Equipment Evaluation (all fault currents within ratings).",
+      "source": "Time Current Curves section and Equipment Evaluation Report",
+      "quote": "Pumps circuit breakers cannot be selectively coordinated with 200 A main circuit breaker (MCB) at all."
+    },
+    "recommendation": {
+      "value": "1) Set 200A MCB instantaneous trip to High/maximum position for best compromised coordination. 2) Replace existing 200A MCB with a 200A MCB with adjustable/static trip to achieve near-coordinated system.",
+      "source": "Recommended System Modifications section",
+      "quote": "BFA recommends set the 200 A MCB Instantaneous trip to High/ maximum position to achieve the Compromised coordination. … BFA recmmends using the 200 A MCB with the Adjustable/ static trip to achieve the almost Coordinated system."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2024-05-17",
+        "source": "Study cover page (date of report = completion of study deliverable)",
+        "quote": "MAY 17TH, 2024"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "notes": "This is a study-only engagement; construction phase not in scope or referenced."
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local_special_district"
+    ],
+    "program_type": [
+      "utilities_water_treatment"
+    ],
+    "program_subtype": [
+      "utilities_pump_station"
+    ],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "electrical_systems",
+      "electrical_distribution"
+    ],
+    "construction_scope": [],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "study_only"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "Gloucester County water utility; classified as local_special_district (county water/utility authority). Could also be local_general if operated directly by county government. Flagged as ambiguous — no contract document to confirm.",
+    "program_type": "Water treatment facility pump station. utilities_water_treatment is the top-level fit; utilities_pump_station added as subtype given the explicit pump station scope.",
+    "delivery_method": "Unknown from sources; defaulted to design_bid_build as placeholder. No contract document present.",
+    "contract_vehicle": "Unknown from sources; defaulted to standalone_project.",
+    "procurement_type": "Unknown; defaulted to local_competitive. Flag for human review.",
+    "award_type": "Unknown from source documents.",
+    "bfa_role": "study_only — BFA performed an electrical coordination study; no full design or construction administration services described."
+  },
+  "tenant_freeform_tags": [
+    "gloucester_county",
+    "water_treatment_plant",
+    "electrical_coordination_study",
+    "pump_station",
+    "skm_power_tools",
+    "short_circuit_study",
+    "protective_device_coordination"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No separate drawing set present. The PDF appendices contain Time Current Curve (TCC) graphs and data block tables (SKM Power Tools analytical output) that are graphical/tabular rather than engineering drawings. These were not rendered as separate PNG images — they do not contain building or system layout information. The one-line diagrams referenced in the Table of Contents (sheets E-601 through E-604) are embedded within the PDF but rendered as non-text graphical content; text extraction produced only headers."
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

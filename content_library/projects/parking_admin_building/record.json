@@ -1,0 +1,578 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "parking_admin_building",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/CONCEPT 1_25-0501.pdf",
+      "type": "drawing_set",
+      "sha256": "82f5e270d38771e9d9b9c8140d8ca417be9532fa3efe6af58cf5c36caa128d53",
+      "page_count": 1,
+      "included": true,
+      "notes": "Architectural concept floor plan and elevation — Concept Layout 1, 3,895 SF. Project 25-0501. Designer: Andre + Marquez Architects."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/OPTION 2.2.pdf",
+      "type": "drawing_set",
+      "sha256": "d72ccb2beea13eb71ebe60e4a9036e6fa97ac7b5b9edb06ddb72589026440c2a",
+      "page_count": 1,
+      "included": true,
+      "notes": "ORF CONRAC TNC Options — Restroom Facility Option 2.2 only. Separate smaller sub-program (standalone restroom facility for TNC staging). Not part of main admin building scope."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/25.10.15.25-026_MECHANICAL..pdf",
+      "type": "drawing_set",
+      "sha256": "cb25d2ebe28bd1ff2ce83706dd4a19b17873017e019586a06421ba0c11bccb6b",
+      "page_count": 3,
+      "included": true,
+      "notes": "100% submittal mechanical drawing set (dated 10/15/2025). Proj. No. 25-F-02. Sheets M-001 (legend/notes), M-101 (first floor plan — ductwork), M-102 (first floor plan — piping). Client: Norfolk Airport Authority. Location: 2200 Norview Ave, Norfolk VA. Designer: Andre + Marquez Architects."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/25.10.13.25-026_ELECTRICAL.pdf",
+      "type": "drawing_set",
+      "sha256": "d4fd30f42a03fe16dca47bcf2e39830e196959894f06f9e2a329bafd79351500",
+      "page_count": 3,
+      "included": true,
+      "notes": "65% submittal electrical drawing set (dated 10/13/2025). Proj. No. 25-F-02. Sheets E-001 (legend/lighting fixture schedule/general notes), E-101 (floor plan — lighting), ES101 (electrical site lighting plan). Arc flash warning label UFC 3-560-01 reference included — indicates federal facility context."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/25.10.13.25-026_PLUMBING.pdf",
+      "type": "drawing_set",
+      "sha256": "45ecfb53399afff6116c341635c35373a7d8b50025a08a1e116dacc1fff02621",
+      "page_count": 2,
+      "included": true,
+      "notes": "65% submittal plumbing drawing set (dated 10/13/2025). Proj. No. 25-F-02. Sheets P-001 (legend, fixture schedule, equipment schedules) and P-101 (first floor plan — domestic water). Electric water heater 4,500W/208V/30 gal, thermostatic mixing valve, backflow preventer, recirculation pump."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/25.10.08.25-026_PLUMBING.pdf",
+      "type": "drawing_set",
+      "sha256": "411f8244eb5a7a45f2bf0ce5e51dd7dec6bf894243967328b08161858907cd86",
+      "page_count": null,
+      "included": true,
+      "notes": "Earlier version (10/08/2025) plumbing drawing set. Superseded by 10/13 version. Included for completeness/version tracking."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/25.10.13.MECHANICAL CALCS.pdf",
+      "type": "report",
+      "sha256": "1368f05577203f0870b82d679804e9e5f96d9b493267fb47f4ed96615f1e508f",
+      "page_count": null,
+      "included": true,
+      "notes": "TRACE 700 v6.3.5 mechanical load calculations by Bowman, Foster & Associates. System checksums and room checksums for all spaces. Calculated 10/06/2025. Project name confirmed as 'ORF PARKING ADMINISTRATION BUILDING'. Three HVAC systems: AHU-1 (VAV with baseboard), IT Closet Mini-Split, MEP-119 Mini-Split. Total building cooling approx. 7.7 + 0.6 + 1.2 = 9.5 tons across 3,272 SF floor area (AHU-1 system area)."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/VAV HEATING COIL CALCS.pdf",
+      "type": "report",
+      "sha256": "067c681b938ad2525cc222d3f8a55c917a4e9cefbf9940413af33756ff2099c6",
+      "page_count": null,
+      "included": true,
+      "notes": "VAV heating coil calculations — image-based PDF, not text-extractable. Supplemental mechanical calculations."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/25.10.13.ELECTRICAL CALCS AND CUTSHEETS.pdf",
+      "type": "report",
+      "sha256": "977b31f4d6c56025f5304d57a3a6a931d1cee78a9bac0d4afd5e5ae63c674626",
+      "page_count": null,
+      "included": true,
+      "notes": "Electrical calculations and cutsheets — large PDF (3.3MB). Not extracted (image-heavy). Supplemental electrical support documentation."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/ORF Parking Admin Building - 100% - Electrical Lighting Fixture Cutsheets.pdf",
+      "type": "submittal",
+      "sha256": "c88b6269958a9717f2bf6db6108bd420f7e6813b4c4c93c03008320a5e17afcd",
+      "page_count": null,
+      "included": true,
+      "notes": "100% submittal electrical lighting fixture cutsheets (Lithonia Lighting products per schedule on E-001). Title confirms '100%' design phase."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/ORF Parking Admin Building - 100% - Mechanical Equipment Selections & Cutsheets.pdf",
+      "type": "submittal",
+      "sha256": "8bb6f521bc20d7b0ce941ead77cdc70925e647994c39f6eddcd2631bfc62d5f0",
+      "page_count": null,
+      "included": true,
+      "notes": "100% submittal mechanical equipment selections and cutsheets. Large PDF (9.5MB). Supports AHU-1, mini-split units, exhaust fans identified in drawings."
+    },
+    {
+      "path": "00_admin/reference_projects/orf/parking_admin_building/ORF Parking Admin Building - 100% - Plumbing Equipment Selections.pdf",
+      "type": "submittal",
+      "sha256": "3d9a95722219ea4345c6bd72ba9527e5b06c6377336e4ab48bba25c4f691ab15",
+      "page_count": null,
+      "included": true,
+      "notes": "100% submittal plumbing equipment selections. Large PDF (9.4MB). Supports water heater, TMV, pump, backflow preventer identified in drawings."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "sparse",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD, SOW, contract, or specs present. Source documents are drawing sets (65% and 100% submittals), mechanical/electrical/plumbing calcs, equipment submittals, and an early concept layout. Key project facts derived entirely from drawing title blocks and calculation reports. Contract value unknown."
+  },
+  "facts": {
+    "project_name": {
+      "value": "ORF Parking Administration Building",
+      "source": "mechanical calc report header",
+      "quote": "ORF PARKING ADMINISTRATION BUILDING",
+      "corroboration": [
+        {
+          "source": "mechanical calc report header",
+          "claim": "ORF PARKING ADMINISTRATION BUILDING",
+          "value": "ORF Parking Administration Building",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block M-001, M-101, M-102",
+          "claim": "ORF PARKING ADMINISTRATION BUILDING",
+          "value": "ORF Parking Administration Building",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block E-001, E-101, ES101",
+          "claim": "ORF PARKING ADMINISTRATION BUILDING",
+          "value": "ORF Parking Administration Building",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block P-001, P-101",
+          "claim": "ORF PARKING ADMINISTRATION BUILDING",
+          "value": "ORF Parking Administration Building",
+          "agrees": true
+        },
+        {
+          "source": "CONCEPT 1_25-0501.pdf title",
+          "claim": "PARKING ADMINISTRATION BUILDING",
+          "value": "Parking Administration Building",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Norfolk Airport Authority",
+      "source": "drawing title block (all drawing sets)",
+      "quote": "NORFOLK AIRPORT AUTHORITY",
+      "corroboration": [
+        {
+          "source": "drawing title block — mechanical sheets M-001, M-101, M-102",
+          "claim": "NORFOLK AIRPORT AUTHORITY",
+          "value": "Norfolk Airport Authority",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block — electrical sheets E-001, E-101, ES101",
+          "claim": "NORFOLK AIRPORT AUTHORITY",
+          "value": "Norfolk Airport Authority",
+          "agrees": true
+        },
+        {
+          "source": "drawing title block — plumbing sheets P-001, P-101",
+          "claim": "NORFOLK AIRPORT AUTHORITY",
+          "value": "Norfolk Airport Authority",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Norfolk Airport Authority",
+      "source": "drawing title block (all drawing sets)",
+      "quote": "NORFOLK AIRPORT AUTHORITY",
+      "corroboration": [
+        {
+          "source": "drawing title block — all MEP sheets",
+          "claim": "NORFOLK AIRPORT AUTHORITY",
+          "value": "Norfolk Airport Authority",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "2200 Norview Ave, Norfolk, VA",
+      "source": "drawing title block (mechanical sheets M-001, M-101, M-102)",
+      "quote": "2200 NORVIEW AVE  NORFOLK, VA",
+      "corroboration": [
+        {
+          "source": "mechanical drawing title block",
+          "claim": "2200 NORVIEW AVE  NORFOLK, VA",
+          "value": "2200 Norview Ave, Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "electrical drawing title block",
+          "claim": "2200 NORVIEW AVE  NORFOLK, VA",
+          "value": "2200 Norview Ave, Norfolk, VA",
+          "agrees": true
+        },
+        {
+          "source": "concept layout title block",
+          "claim": "NORFOLK INTERNATIONAL AIRPORT / NORFOLK, VIRGINIA",
+          "value": "Norfolk, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "25-F-02",
+      "source": "drawing title block PROJ. NO. field (all MEP sheets)",
+      "quote": "PROJ. NO.: 25-F-02",
+      "corroboration": [
+        {
+          "source": "mechanical drawing title block",
+          "claim": "PROJ. NO.: 25-F-02",
+          "value": "25-F-02",
+          "agrees": true
+        },
+        {
+          "source": "electrical drawing title block",
+          "claim": "PROJ. NO.: 25-F-02",
+          "value": "25-F-02",
+          "agrees": true
+        },
+        {
+          "source": "plumbing drawing title block",
+          "claim": "PROJ. NO.: 25-F-02",
+          "value": "25-F-02",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 3895,
+      "unit": "gsf",
+      "source": "CONCEPT 1_25-0501.pdf — concept layout title",
+      "quote": "CONCEPT LAYOUT 1 AND ELEVATION - 3,895 SQ FT",
+      "corroboration": [
+        {
+          "source": "CONCEPT 1_25-0501.pdf title block",
+          "claim": "3,895 SQ FT",
+          "value": 3895,
+          "agrees": true
+        },
+        {
+          "source": "TRACE mechanical calcs — AHU-1 system floor area",
+          "claim": "Floor: 3,272 ft² (AHU-1 system area only, excludes IT closet 72 SF and MEP room 268 SF)",
+          "value": 3272,
+          "agrees": false,
+          "note": "3,272 SF is the conditioned area served by AHU-1 system only; adding mini-split areas (IT closet 72 SF + MEP room 268 SF) yields ~3,612 SF of directly modeled space vs. 3,895 SF gross. Difference likely represents restrooms/unconditioned areas not individually summed in TRACE. No direct conflict — TRACE room areas are mechanical system assignments, not total GSF."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings dated 07/07/2025 (concept/preliminary), 10/13/2025 (65% submittal), 10/15/2025 (100% submittal for mechanical). Design was active through at least October 2025."
+      },
+      "design_phase_milestone": {
+        "value": "100% submittal (mechanical); 65% submittal (electrical, plumbing)",
+        "source": "drawing title blocks and submittal cutsheet filenames",
+        "quote": null,
+        "notes": "Mechanical sheets labeled as dated 10/15/2025 (100% submittal per equipment cutsheet filename). Electrical and plumbing sheets at 65% submittal per title block stamp '65% SUBMITTAL 10/17/2025'. Some discrepancy in submittal stage between disciplines."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "local_special_district"
+    ],
+    "program_type": [
+      "transportation"
+    ],
+    "program_subtype": [
+      "transportation_aviation"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_systems",
+      "electrical_lighting_interior",
+      "electrical_lighting_exterior",
+      "plumbing_systems",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "site_systems"
+    ],
+    "construction_scope": [
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "local"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "norfolk_international_airport",
+    "orf",
+    "airport_authority",
+    "parking_operations",
+    "mep_design",
+    "bowman_foster_associates",
+    "hampton_roads",
+    "andre_marquez_architects",
+    "new_construction"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "M-001",
+        "title": "MECHANICAL LEGEND, ABBREVIATIONS AND NOTES",
+        "discipline": "mechanical_engineering",
+        "source_file": "25.10.15.25-026_MECHANICAL..pdf",
+        "reading_notes": "Legend and general notes sheet. Confirms project is 'ORF PARKING ADMINISTRATION BUILDING' at '2200 NORVIEW AVE, NORFOLK, VA'. Date 07/07/2025. Labeled as '65% SUBMITTAL 10/17/2025'. Proj. No. 25-F-02. Designer: Andre + Marquez Architects. Client: Norfolk Airport Authority. Sheet 1 of 4 (but only 3 pages in PDF — sheet 4 likely M-103 or M-schedule not included). HVAC systems vocabulary: AHU, VAV, MSO (Mini-Split Outdoor), MSI (Mini-Split Indoor), EF (Exhaust Fan), ACCU (Condensing Unit). Note specifies flexible duct runs shall not exceed 5 feet — standard SMACNA practice. General note item 12 requires compliance with municipal, state, federal codes, NFPA, SMACNA."
+      },
+      {
+        "sheet_number": "M-101",
+        "title": "FIRST FLOOR PLAN — DUCTWORK",
+        "discipline": "mechanical_engineering",
+        "source_file": "25.10.15.25-026_MECHANICAL..pdf",
+        "reading_notes": "Single-story building floor plan showing HVAC ductwork layout. Central AHU-1 with VAV boxes (VAV-1 through VAV-6 visible) serving admin suite, offices, break room, parking operations, sign storage, and corridor zones. IT Closet served by MSI-1/MSO-1 mini-split. MEP room (L1019) served by MSI-2/MSO-2 mini-split and ACCU-1 condensing unit. EF-1 exhaust fan visible serving restroom/toilet areas. L-1 possibly a louver. Two ACOU units shown — possibly VAV with electric heat. Main supply duct is 24x16 inches on interior spine, branching to zones. Ductwork is clearly all new construction. Scale 1/8' = 1'-0'. Date 07/07/2025, submittal stamp 65% 10/17/2025. Building footprint confirms roughly 94'-8' x 52'-6' from concept layout = ~4,970 SF exterior but 3,895 SF net — consistent with wall thickness and interstitial areas. One story."
+      },
+      {
+        "sheet_number": "M-102",
+        "title": "FIRST FLOOR PLAN — PIPING",
+        "discipline": "mechanical_engineering",
+        "source_file": "25.10.15.25-026_MECHANICAL..pdf",
+        "reading_notes": "Hydronic/refrigerant piping plan. Shows mini-split refrigerant lines (3/8' refrigerant suction and 1/4' liquid lines) from IT closet MSI-1 to MSO-1 unit and MEP room MSI-2 to MSO-2. Built-up AHU-1 with electric heat. Indicates condensate drain piping. Notes reference 'BUILT-UP AHU ELECTRIC HEAT DETAIL' — AHU-1 is an electric-heat air handler, not gas or hot water. Sheet largely blank on plan drawing (appears reduced/very faint in render). Notes column matches M-101. Sheet is M-102 of 4."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "ELECTRICAL SYMBOLS, LEGEND, ABBREVIATIONS AND NOTES",
+        "discipline": "electrical_engineering",
+        "source_file": "25.10.13.25-026_ELECTRICAL.pdf",
+        "reading_notes": "Electrical legend, lighting fixture schedule, and general notes. Confirms project identity. Date 07/07/2025. 65% SUBMITTAL 10/17/2025. Proj. No. 25-F-02. IMPORTANT: Arc flash hazard warning label references UFC 3-560-01 — this is a US Department of Defense Unified Facilities Criteria document for arc flash protection. Presence suggests either this is a DoD-controlled facility or the NAA has adopted UFC standards, OR the A-E team routinely uses UFC reference for arc flash regardless of client. NAA is a regional authority, not federal DoD, but airports under TSA jurisdiction sometimes reference UFC. Flag for human review. Lighting fixture schedule lists Lithonia Lighting products throughout — LED, MVOLT fixtures ranging from 3,000 to 6,000 lumens. Types include recessed, surface, and pole-mounted (area/site lighting). Emergency battery pack fixtures included. Emergency LED unit (LQM) at .71W — likely exit sign type."
+      },
+      {
+        "sheet_number": "E-101",
+        "title": "FLOOR PLAN — LIGHTING",
+        "discipline": "electrical_engineering",
+        "source_file": "25.10.13.25-026_ELECTRICAL.pdf",
+        "reading_notes": "Interior lighting floor plan. Shows panelboards PB-36, PB-38, PB-40 serving different zones of the building. All lighting fixture types from schedule visible distributed across rooms. LED recessed fixtures in offices and admin suite; surface-mounted in break room and storage; downlights in corridor. Emergency/exit lighting units at entrance and egress paths. Single-story plan matches M-101 footprint exactly. Occupancy sensor switches (So) visible at office doorways. Scale 1/4' = 1'-0'. Panelboard PB-40 in northeast corner, PB-38 mid-building, PB-36 in admin suite area — likely separate panels for different portions/circuits."
+      },
+      {
+        "sheet_number": "ES101",
+        "title": "ELECTRICAL SITE LIGHTING PLAN",
+        "discipline": "electrical_engineering",
+        "source_file": "25.10.13.25-026_ELECTRICAL.pdf",
+        "reading_notes": "Site lighting plan showing parking lot and access road context. Building shown at center of site within parking structure environment — consistent with 'Parking Administration Building' at ORF. Pole-mounted site lights (Type A, per fixture schedule: DSX2 LED P1 40K 70CR TZM MVOLT) distributed around site. Site shows surface parking adjacent to building. Scale 1' = 20'-0'. New work notes placeholder text (XXXXXX) suggesting this sheet may be incomplete at 65% stage."
+      },
+      {
+        "sheet_number": "P-001",
+        "title": "PLUMBING LEGEND, ABBREVIATIONS AND NOTES",
+        "discipline": "plumbing_engineering",
+        "source_file": "25.10.13.25-026_PLUMBING.pdf",
+        "reading_notes": "Plumbing legend and equipment schedules. Date 07/07/2025. 65% SUBMITTAL 10/17/2025. Proj. No. 25-F-02. PLUMBING FIXTURE CONNECTION SCHEDULE: P-1 Flush Valve Water Closet (HC), P-2 Flush Valve Water Closet, P-3 Lavatory, P-4 Lavatory, P-5 2-Compartment Kitchen Sink, P-6 Ice Maker Connection Box, P-7 Drinking Fountain (Bi-Level), P-8 Flush Valve Urinal, P-9 Mop Sink. ELECTRIC WATER HEATER SCHEDULE: EWH-1 — 30 GAL, 4,500W, 208V/3PH/60Hz, 140°F HW temp. PUMP SCHEDULE: RCP-1 — recirculation pump, Bell & Gossett ECOICIRC XL, 3 GPM, 15 FT head, 208V/1PH. THERMOSTATIC MIXING VALVE: TMV-1 — master, mechanical room, high-low flow 26/3 GPM, 140°F in / 105°F out. BACKFLOW PREVENTER: BFP-1 — 2' RZBP domestic CW supply. Plumbing scope confirms domestic cold and hot water, sanitary/DWV, with recirculation. No natural gas plumbing shown (all electric heat). Handicap accessible fixtures per ADA/ABAAG."
+      },
+      {
+        "sheet_number": "P-101",
+        "title": "FIRST FLOOR PLAN — DOMESTIC WATER",
+        "discipline": "plumbing_engineering",
+        "source_file": "25.10.13.25-026_PLUMBING.pdf",
+        "reading_notes": "Domestic water piping plan. Cold water (CW) main entering building at 2-1/2' pipe, distributing to men's/women's restrooms, break room (kitchen sink, ice maker, drinking fountain), mechanical room (EWH-1, TMV-1, BFP-1, RCP-1). Hot water (HW) and hot water return (HWR) distribution visible. Wall hydrants (WH) at multiple exterior locations. Single-story. Restrooms in center of building per concept layout match. Balancing valve to break room set at 3 GPM per note. No sanitary/DWV plan shown in this 65% submittal package (separate sheet likely)."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 3895,
+        "unit": "gsf",
+        "source": "CONCEPT 1_25-0501.pdf title annotation",
+        "quote": null,
+        "sheets": [
+          "CONCEPT 1_25-0501.pdf"
+        ]
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "drawings M-101, E-101, P-101 — all single-story floor plans; concept layout shows single level",
+        "quote": null,
+        "sheets": [
+          "M-101",
+          "E-101",
+          "P-101"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "AHU-1: built-up air handling unit with electric heating coil, VAV distribution system; serves main occupied spaces (~3,272 SF per TRACE calcs); 7.7-ton cooling",
+          "VAV-1 through VAV-6 (minimum): VAV terminal boxes with baseboard heating serving offices, admin suite, parking operations, break room, sign storage, corridor",
+          "IT Closet Mini-Split: MSI-1/MSO-1 mini-split system, 0.6-ton cooling; dedicated IT closet cooling",
+          "MEP Room Mini-Split: MSI-2/MSO-2 mini-split system, 1.2-ton cooling; mechanical/electrical room conditioning",
+          "EF-1: exhaust fan serving restrooms",
+          "ACCU-1: condensing unit (MEP room area)",
+          "Design heating OA: 22°F; design cooling OA: 90-91°F DB — consistent with Norfolk, VA climate"
+        ],
+        "electrical": [
+          "MVOLT LED lighting throughout (Lithonia Lighting); types A through ++ per fixture schedule including recessed, surface, pole-mounted",
+          "Panelboards PB-36, PB-38, PB-40 serving interior lighting zones",
+          "Emergency/exit lighting with battery backup (Lithonia LQM, TWS products)",
+          "Occupancy sensor switching at offices",
+          "Site/pole-mounted LED area lighting (DSX2, 135W MVOLT)",
+          "Arc flash hazard warning label included per UFC 3-560-01"
+        ],
+        "plumbing": [
+          "Domestic cold and hot water distribution; 2-1/2' main service",
+          "Electric water heater EWH-1: 30-gal, 4,500W, 208V/3PH/60Hz",
+          "Recirculation pump RCP-1: B&G ECOICIRC XL, 3 GPM",
+          "Thermostatic mixing valve TMV-1: 140°F/105°F",
+          "Backflow preventer BFP-1: 2' RZBP",
+          "Plumbing fixtures: water closets (flush valve), lavatories, 2-compartment sink, ice maker, bi-level drinking fountain, urinal, mop sink",
+          "Exterior frost-proof wall hydrants (multiple locations)",
+          "ADA/ABAAG-compliant accessible fixtures"
+        ],
+        "fire_protection": []
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage / drawings.facts_derived.gross_square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "CONCEPT 1_25-0501.pdf — concept layout title",
+          "value": "3,895 SF (gross)"
+        },
+        {
+          "source": "TRACE mechanical calcs — AHU-1 floor area",
+          "value": "3,272 SF (AHU-1 system conditioned area)"
+        }
+      ],
+      "resolution_chosen": "CONCEPT 1_25-0501.pdf — 3,895 SF GSF",
+      "rationale": "3,272 SF is the floor area assigned to the AHU-1 mechanical system in TRACE calculations, excluding IT closet (72 SF) and MEP room (268 SF) served by mini-splits. Summing all TRACE room floor areas gives ~3,612 SF of directly modeled space, still below 3,895 SF gross likely because restrooms, janitor closet, and interstitial areas are partially modeled or excluded from zone-level calcs. The concept layout's stated GSF is the authoritative building area figure. No true data conflict."
+    },
+    {
+      "field_path": "source_documents — submittal stage consistency",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "25.10.15.25-026_MECHANICAL..pdf title block stamp",
+          "value": "65% SUBMITTAL 10/17/2025"
+        },
+        {
+          "source": "ORF Parking Admin Building - 100% - Mechanical Equipment Selections & Cutsheets.pdf filename",
+          "value": "100% (per filename)"
+        }
+      ],
+      "resolution_chosen": "Not resolved — submittal stage was evolving between 10/13 and 10/17/2025",
+      "rationale": "The mechanical drawing set title block reads '65% SUBMITTAL 10/17/2025' but the equipment cutsheet filename says '100%'. The VAV heating coil calcs and equipment selections may represent 100% design deliverable while the stamped drawings had not yet been updated. Alternatively, two simultaneous submittals at different stages. This is a document-management observation rather than a data conflict. Project status coded as 'in_design'."
+    }
+  ]
+}

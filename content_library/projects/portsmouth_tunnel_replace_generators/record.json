@@ -1,0 +1,553 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "20-014B",
+    "status": "present_with_value",
+    "source": "Cost Estimate cover page; Specifications cover page",
+    "quote": "BFA Project No.: 20-014B"
+  },
+  "project_slug": "portsmouth_tunnel_replace_generators",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/ercopco/portsmouth_tunnel_replace_generators/20-014A.2020.09.18.100% PORTSMOUTH COST ESTIMATE.pdf",
+      "type": "cost_estimate",
+      "sha256": "e340743ab1d633aa5b7ee5bb9ab1aea1f2fa72149ee153f2025fcee8b2fdf82f",
+      "included": true,
+      "notes": "100% submittal cost estimate dated 8/27/2020 (cover shows final submittal November 5, 2020). Contains itemized electrical scope and marked-up construction cost."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/portsmouth_tunnel_replace_generators/20-014B.2020.11.05.FINAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "af22b5cee82255453ceed860b742b10058cb6239d0fde7125a773f18e86a3fc7",
+      "included": true,
+      "page_count": 6,
+      "notes": "Final drawing set dated 11/05/2020. Sheets: G-001 (cover), C-101 (civil site plan), S-001 (structural notes), S-101 (foundation & slab plans), S-201 (sections & details), E-001 (electrical legend & phasing sequence)."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/portsmouth_tunnel_replace_generators/20-014B.2020.11.05.FINAL SPECIFICATIONS.pdf",
+      "type": "spec_book",
+      "sha256": "2a25ed1b36bdbe11c35a20c7055c7ad8d4882f90d974ce178df5e8d716be182a",
+      "included": true,
+      "notes": "Final specifications dated 11/05/2020. Includes DGS General Conditions CO-7, Division 1 through Division 26 electrical specs, geotechnical report (Appendix B), and equipment submittals (Caterpillar 3512C, ASCO Series 300 ATSs)."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": false,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "has_cost_estimate": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No BOD or SOW present; project documented by specifications, drawings, and cost estimate. Scope described in Section 011000 Summary of specifications. No executed contract or award documents present."
+  },
+  "facts": {
+    "project_name": {
+      "value": "ERC DTT Portsmouth West Vent Building – Emergency Generator Replacement",
+      "source": "Drawing G-001 title block; Specifications cover page",
+      "quote": "ERC DTT PORTSMOUTH WEST VENT BUILDING- EMERGENCY GENERATOR REPLACEMENT",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "ERC DTT PORTSMOUTH WEST VENT BUILDING- EMERGENCY GENERATOR REPLACEMENT",
+          "agrees": true
+        },
+        {
+          "source": "Specifications cover page",
+          "claim": "ERC DTT PORTSMOUTH WEST VENT BUILDING- EMERGENCY GENERATOR REPLACEMENT",
+          "agrees": true
+        },
+        {
+          "source": "CO-6a Special Inspections form",
+          "claim": "DTT Portsmouth West Vent Building Generator Replacements",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Elizabeth River Crossings",
+      "source": "CO-6a Special Inspections form; Specifications Section 011000",
+      "quote": "Institution/Agency: Elizabeth River Crossings",
+      "corroboration": [
+        {
+          "source": "CO-6a Special Inspections form",
+          "claim": "Elizabeth River Crossings",
+          "agrees": true
+        },
+        {
+          "source": "Specifications Section 011000 §1.7.B",
+          "claim": "authorized by ERC in writing",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 seal/title block",
+          "claim": "elizabeth river crossings",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Elizabeth River Crossings",
+      "source": "CO-6a Special Inspections form",
+      "quote": "Owner's Project Manager: Doug Wood, PE (Elizabeth River Crossings)",
+      "corroboration": [
+        {
+          "source": "CO-6a Special Inspections form",
+          "claim": "Elizabeth River Crossings",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Downtown Tunnel (DTT) Portsmouth West Vent Building",
+      "source": "Drawing G-001 cover sheet; Drawing C-101 site plan",
+      "quote": "PORTSMOUTH, VA",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 title block",
+          "claim": "PORTSMOUTH",
+          "agrees": true
+        },
+        {
+          "source": "Geotechnical Report, cover page",
+          "claim": "Portsmouth, VA",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "501-B0501-015",
+      "source": "Specifications cover page; Drawing G-001",
+      "quote": "PROJECT CODE: 501-B0501-015",
+      "corroboration": [
+        {
+          "source": "Specifications cover page (Portsmouth Building section)",
+          "claim": "BCOM Project Code: 501-B0501-015",
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001",
+          "claim": "PROJECT CODE: 501-B0501-015",
+          "agrees": true
+        },
+        {
+          "source": "CO-6a form",
+          "claim": "501-B0501-015",
+          "agrees": true
+        }
+      ],
+      "notes": "Virginia BCOM (Bureau of Capital Outlay Management) project code. Indicates state-managed capital project. ERC internal project number: 20-1-27(P) per specifications."
+    },
+    "project_number_erc_internal": {
+      "value": "20-1-27(P)",
+      "source": "Specifications page 2 (Portsmouth Building header)",
+      "quote": "ERC Project Number: 20-1-27(P)"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "No executed contract present in source documents."
+    },
+    "square_footage": {
+      "value": 8418,
+      "unit": "gsf",
+      "source": "Drawing G-001 Building Data block",
+      "quote": null,
+      "notes": "Cover sheet Building Data block shows 'TOTAL FLOOR AREA (INCLUDING ROOF): EXISTING 44,983 SF; RENOVATED 8,418 SF'. The 8,418 SF is the renovated (project) scope; 44,983 SF is total building area including roof. The scope of work affects primarily the generator pad area outside the building plus selective electrical work inside.",
+      "corroboration": [
+        {
+          "source": "Drawing G-001 Building Data",
+          "claim": "RENOVATED: 8418 SF (total floor area including roof)",
+          "value": 8418,
+          "agrees": true
+        },
+        {
+          "source": "Drawing G-001 Building Data — total building",
+          "claim": "EXISTING: 44,983 SF (total floor area including roof)",
+          "value": 44983,
+          "agrees": false,
+          "notes": "This is total building area, not project scope"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in source documents. Construction cost estimate is available."
+    },
+    "construction_cost_estimate": {
+      "value": 1260260.48,
+      "currency": "USD",
+      "source": "Cost Estimate — SMRY sheet (marked-up total)",
+      "quote": "TOTAL FOR BUILDING ... $1,260,260.48",
+      "corroboration": [
+        {
+          "source": "Cost Estimate SMRY sheet (prime/sub composite mark-up)",
+          "claim": "$1,260,260.48 total marked-up cost",
+          "value": 1260260.48,
+          "agrees": true
+        }
+      ],
+      "notes": "BFA-prepared construction cost estimate at 100% submittal. Composite marked-up cost including material ($1,177,541.88), labor ($77,331.75), equipment ($5,386.86). This is BFA's estimated construction cost, not the awarded contract value."
+    },
+    "final_submittal_date": {
+      "value": "2020-11-05",
+      "source": "Specifications cover page; Drawing title blocks",
+      "quote": "FINAL SUBMITTAL November 5, 2020"
+    },
+    "generator_equipment": {
+      "manufacturer": "Caterpillar",
+      "model": "3512C",
+      "power_kw": 1500,
+      "power_kva": 1875,
+      "voltage": "480V",
+      "frequency_hz": 60,
+      "phase": "Three-phase, four wire, wye",
+      "fuel": "Diesel (ASTM D975, Grade 2-D S15)",
+      "fuel_tank_hours": 48,
+      "rating_type": "Standby",
+      "weight_lbs": 115000,
+      "source": "Specifications Section 263213.13; Cost Estimate ELEC sheet; Drawing S-001 notes",
+      "quote": "1500 kW Generator, 480V",
+      "corroboration": [
+        {
+          "source": "Specifications Section 263213.13 §2.3.E",
+          "claim": "Service Load: 1875 kVA",
+          "agrees": true
+        },
+        {
+          "source": "Cost Estimate ELEC sheet",
+          "claim": "1500 kW Generator, 480V",
+          "agrees": true
+        },
+        {
+          "source": "Drawing S-001 — General Notes",
+          "claim": "CAT 3512C GENERATOR (TOTAL WEIGHT): 115,000 LBS",
+          "agrees": true
+        },
+        {
+          "source": "Caterpillar technical spec sheet (Appendix C)",
+          "claim": "3512C 1500 ekW/1875 kVA/60 Hz/1800 rpm/480 V/0.8 Power Factor — Standby",
+          "agrees": true
+        }
+      ]
+    },
+    "switchgear": {
+      "description": "4000A switchgear with (2) 800A breakers, (1) 400A breaker, and (1) 600A ATS",
+      "main_bus_amps": 4000,
+      "voltage": "480Y/277V",
+      "source": "Cost Estimate ELEC sheet",
+      "quote": "4000A Switchgear w/ (2) 800 & (1) 400A Brks and (1) 600A ATS"
+    },
+    "transfer_switches": {
+      "description": "Two ASCO Series 300 automatic transfer switches: 800A/4-pole and 400A/4-pole",
+      "units": [
+        {
+          "catalog": "H03ATSB30800NGXL",
+          "amps": 800,
+          "poles": 4,
+          "transition": "Open",
+          "voltage": "480V/60Hz"
+        },
+        {
+          "catalog": "J03ATSB30400NGXL",
+          "amps": 400,
+          "poles": 4,
+          "transition": "Open",
+          "voltage": "480V/60Hz"
+        }
+      ],
+      "source": "ASCO Transfer Switch Submittal (Appendix in Specifications)",
+      "quote": "BERKLEY & PORTSMOUTH BUILDINGS TRANSFER SWITCH SUBMITTAL"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No design contract or fee document present in source files."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2020-11-05",
+        "source": "Specifications cover page; Drawing G-001",
+        "quote": "FINAL SUBMITTAL November 5, 2020",
+        "notes": "100% Final Design Submittal date. This is the design completion date."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "No awarded construction contract present. BFA cost estimate of $1,260,260.48 is the estimated construction cost."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_institutional"
+    ],
+    "client_type_notes": "Elizabeth River Crossings is a public-private partnership entity operating the Downtown Tunnel toll road in Hampton Roads. It is not a government agency but operates under a P3 concession agreement. Closest vocab match is private_institutional; a 'public_private_partnership' subtype does not exist in client_type.yaml — flagged as vocab gap.",
+    "program_type": [
+      "utilities_infrastructure",
+      "transportation"
+    ],
+    "program_type_notes": "West Vent Building is a tunnel ventilation/support facility for the Elizabeth River Downtown Tunnel (vehicular tunnel under the Elizabeth River). Primary program is transportation infrastructure support; classified also as utilities_infrastructure (emergency power/critical systems).",
+    "program_subtype": [
+      "transportation_port_marine"
+    ],
+    "program_subtype_notes": "Closest available subtype. This is a vehicular tunnel infrastructure support building, not a port/marine facility. Flagged as vocab gap — no tunnel_infrastructure subtype exists.",
+    "disciplines": [
+      "electrical_engineering",
+      "structural_engineering",
+      "civil_engineering"
+    ],
+    "disciplines_notes": "BFA was electrical engineer of record (Mike Dixon per CO-6a). Structural (Broyles and Associates P.C.) and civil (Hoggard/Eure Associates P.C.) were subconsultants.",
+    "sub_disciplines": [
+      "electrical_emergency_power",
+      "electrical_power_distribution",
+      "civil_site_design",
+      "structural_foundation"
+    ],
+    "building_systems": [
+      "electrical_emergency_power",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "concrete_scope",
+      "existing_demolition",
+      "earthwork_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "delivery_method_notes": "Single prime contract, Virginia DGS CO-7 General Conditions. Standard DBB procurement per Virginia BCOM process.",
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "state_competitive"
+    ],
+    "procurement_type_notes": "Virginia BCOM/DGS-administered project using CO-7 General Conditions, state building code (VUSBC), and state special inspection forms. Indicates state capital procurement process despite ERC being a P3 entity.",
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "award_type_notes": "No RFP/SOQ or award documentation present. Source documents do not specify award basis. The BCOM project code and DGS forms suggest QBS or competitive selection but cannot confirm.",
+    "project_status": [
+      "complete"
+    ],
+    "project_status_notes": "100% Final Submittal drawings and specifications dated November 2020. Project is complete from design standpoint; construction status unknown from available documents but design is complete.",
+    "bfa_role": [
+      "prime_consultant"
+    ],
+    "bfa_role_notes": "BFA (Bowman Foster & Associates, Inc.) is listed as A/E of Record on CO-6a form. Mike Dixon (BFA) is listed as A/E of Record signatory. Subconsultants (Broyles and Associates structural; Hoggard/Eure civil) worked under BFA."
+  },
+  "tenant_freeform_tags": [
+    "elizabeth_river_crossings",
+    "downtown_tunnel",
+    "hampton_roads",
+    "tunnel_infrastructure",
+    "emergency_generator_replacement",
+    "caterpillar_3512c",
+    "p3_client",
+    "portsmouth_virginia",
+    "virginia_bcom",
+    "standby_power",
+    "1500kw_generator"
+  ],
+  "key_personnel_pending": [
+    {
+      "name": "Mike Dixon",
+      "role_on_project": "electrical_engineer_of_record",
+      "source": "CO-6a Special Inspections form — A/E of Record block"
+    },
+    {
+      "name": "Blair Fisher",
+      "title": "EIT, LEED AP",
+      "role_on_project": "project_engineer",
+      "source": "Geotechnical Report — authorized geotechnical services",
+      "notes": "Listed as ELECTRICAL DEPARTMENT HEAD in geotech report authorization"
+    },
+    {
+      "name": "Doug Wood, PE",
+      "organization": "Elizabeth River Crossings",
+      "role_on_project": "client_project_manager",
+      "source": "CO-6a Special Inspections form",
+      "quote": "Owner's Project Manager: Doug Wood, PE (Elizabeth River Crossings)"
+    }
+  ],
+  "subconsultants": [
+    {
+      "firm": "Broyles and Associates, P.C.",
+      "role": "Structural Engineer of Record",
+      "location": "508 Baylor Court, Suite C, Chesapeake, VA 23320",
+      "source": "CO-6a Special Inspections form"
+    },
+    {
+      "firm": "Hoggard/Eure Associates, P.C.",
+      "role": "Civil Engineer",
+      "location": "901 ParisCentre Parkway, Suite 110, Portsmouth, VA 23704",
+      "source": "Drawing G-001 design team block"
+    },
+    {
+      "firm": "GeoEnvironmental Resources, Inc.",
+      "role": "Geotechnical Engineer",
+      "location": "2712 Southern Boulevard, Suite 101, Virginia Beach, VA 23452",
+      "source": "Geotechnical Report — Appendix B of Specifications"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Drawing G-001 Building Data — RENOVATED scope",
+          "value": 8418,
+          "notes": "Renovated square footage attributed to this project"
+        },
+        {
+          "source": "Drawing G-001 Building Data — TOTAL building area",
+          "value": 44983,
+          "notes": "Total building area including roof, not project scope"
+        }
+      ],
+      "resolution_chosen": "Drawing G-001 — 8,418 SF (renovated scope)",
+      "rationale": "Project scope is limited to generator replacement and associated electrical work. The 8,418 SF 'renovated' figure represents areas affected by this project. The 44,983 SF is total building floor area including roof slab, existing areas not in project scope."
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Project cover sheet. Shows design team (BFA, Broyles structural, Hoggard/Eure civil), index of drawings, building data table, code information, asbestos/lead statements. Building Data: Use Groups S2/B, Construction Type IIB, 2-story building height 42'-3\". Floor areas: Below Roadway 5,097 SF existing/0 renovated; Roadway level 4,726 SF existing/0 renovated; Basement 9,945 SF existing/0 renovated; 1st Floor 9,945 SF existing/3,471 SF renovated; 2nd Floor 5,525 SF existing/3,609 SF renovated; Roof Plan 9,945 SF existing; Total 44,983 SF existing/8,418 SF renovated. Occupant load totals: 15 roadway, 11 basement, 34 first floor, 62 second floor = 151 total. Fully sprinklered: NO. Fire alarm: YES."
+      },
+      {
+        "sheet_number": "C-101",
+        "title": "DOWNTOWN TUNNEL (PORTSMOUTH) PUMP BUILDING SITE PLAN",
+        "discipline": "civil_engineering",
+        "reading_notes": "Site plan at 1'=10' scale. Shows existing building footprint adjacent to Elizabeth River/downtown tunnel portal area in Portsmouth. New electric generator shown on platform (top of concrete platform elevation 7.50). Concrete pad elevation 10.00. New underground electrical conduit shown running from generator pad to building (see Sheet ES101). Fuel fill connection shown (fuel fill elevation 4.37). Generator sits outside the support building in a weatherproof enclosure. Site is within floodplain (base flood elevation noted as 8.00', bottom of generator elevation 11.00'). Flood vent locations noted on existing building."
+      },
+      {
+        "sheet_number": "S-001",
+        "title": "COVER SHEET (STRUCTURAL)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Structural general notes and cast-in-place concrete notes. Confirms CAT 3512C generator total weight 115,000 lbs. Seismic design category D, site class D. Wind: 125 mph (3-second gust). Allowable soil bearing 1,000 psf per geotech report. Foundation designed as mat slab. Structure designed per 2015 VUSBC."
+      },
+      {
+        "sheet_number": "S-101",
+        "title": "FOUNDATION AND SLAB PLANS",
+        "discipline": "structural_engineering",
+        "reading_notes": "Foundation plan and elevated slab plan at 1/4\"=1'-0\" scale. Shows mat foundation approximately 32' x 12.5' (per geotech report). 1'-0\" thick concrete mat foundation with reinforcing. Elevated slab at elevation +7.5 for generator platform. Stairs to generator level. Anchor bolt locations coordinated with generator manufacturer (Chillicothe Metal Company identified in notes). Generator support frame sits on 8\" concrete walls below the slab platform."
+      },
+      {
+        "sheet_number": "S-201",
+        "title": "SECTIONS AND DETAILS",
+        "discipline": "structural_engineering",
+        "reading_notes": "Structural sections and reinforcing details at 3/4\"=1'-0\" scale. Shows concrete wall reinforcing, mat foundation interface, stair details, handrail post embedment. Galvanized steel railing at stairs and platform. 8\" concrete foundation walls. Generator support frame detail with anchor bolts."
+      },
+      {
+        "sheet_number": "E-001",
+        "title": "LEGEND AND ABBREVIATIONS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Electrical legend (new/existing/demolition symbols for 208V/120V and 480V/277V equipment) and 19-step project phasing sequence. Key phasing: (1) Site preparation; (2) Install underground conduit; (3) Install emergency generator pad and switchboard MDPE housekeeping pad; (4-5) Conduit runs external to building; (6) Continue emergency generator feed conduits to new switchboard MDPE; (7) Install new ATS units; (8) Install conduit from new switchboard MDPE to new ATSs; (9-10) Install and connect emergency feed cabling from switchboard to ATSs; (11) Install and connect cabling from emergency generator to switchboard MDPE; (12) Install new control wiring for auto start emergency generator; (13) Transfer and polish fuel from underground fuel storage to new emergency generator fuel tank; (14-15) Modify existing normal feeders from switchgear to ATSs #2 and #3; (16) Commission new emergency diesel generator; (17) Modify existing panel TDP conduit and wiring back to new switchboard MDPE; (18) Abandon existing underground fuel tank; (19) Abandon existing emergency generator, supply/exhaust ducts, day tank, and all associated fuel piping."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 4,
+        "source": "Drawing G-001 Building Data",
+        "quote": null,
+        "sheets": [
+          "G-001"
+        ],
+        "notes": "Building has 4 occupied levels: Below Roadway, Roadway Level, 1st Floor, 2nd Floor, plus Roof Plan. Height 42'-3\"."
+      },
+      "gross_square_footage_total_building": {
+        "value": 44983,
+        "unit": "gsf",
+        "source": "Drawing G-001 Building Data",
+        "quote": null,
+        "sheets": [
+          "G-001"
+        ],
+        "notes": "Total existing building area including roof slab. Project scope (renovated) is 8,418 SF."
+      },
+      "gross_square_footage_project_scope": {
+        "value": 8418,
+        "unit": "gsf",
+        "source": "Drawing G-001 Building Data",
+        "quote": null,
+        "sheets": [
+          "G-001"
+        ]
+      },
+      "generator_pad_dimensions": {
+        "value": "approximately 32 ft x 12.5 ft",
+        "unit": "feet",
+        "source": "Geotechnical Report (Appendix B); Drawing S-101",
+        "quote": "approximately 32 feet by 12½ feet",
+        "sheets": [
+          "S-101"
+        ]
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "New 1500 kW / 1875 kVA Caterpillar 3512C diesel generator, 480V, 3-phase, 4-wire",
+          "New 4000A main switchgear (MDPE) with (2) 800A circuit breakers, (1) 400A breaker, (1) 600A ATS",
+          "New 800A ASCO Series 300 automatic transfer switch (4-pole, open transition)",
+          "New 400A ASCO Series 300 automatic transfer switch (4-pole, open transition)",
+          "48-hour subbase diesel fuel tank",
+          "New underground conduit/ductbank from generator pad to building",
+          "Demolition/abandonment of existing generator, fuel tank, exhaust systems"
+        ]
+      }
+    }
+  },
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

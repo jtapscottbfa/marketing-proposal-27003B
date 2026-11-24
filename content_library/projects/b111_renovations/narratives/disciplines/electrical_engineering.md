@@ -1,0 +1,7 @@
+# Electrical Engineering — Building 111 Renovations
+
+Electrical engineering scope for Building 111 at NSF Indian Head, Maryland was defined under Option 1 of the multi-option Performance Work Statement. The work addressed an obsolete and undersized electrical distribution system throughout the three-story historic structure.
+
+The scope called for demolition of the existing 120/208V panels and transformers in the basement locker room and shop area, and the existing sub-panel on the second floor. Replacements included a new 480V feed from the existing electrical service to the shop area with a new 480V panel; a new transformer and 120/208V panel in the shop; a new feed and sub-panel on the second floor; and a new disconnect, transformer, and 120/208V panel in the locker room. New circuits were specified to serve all new HVAC equipment under Option 2. New LED lighting was designed for the entire building, with new code-compliant switches and receptacles throughout, and replacement of BX wiring where feasible.
+
+The source record (BOD) covers only the mechanical design scope; the electrical engineering Basis of Design section was not present in the intake documents. The scope description above is derived from the NAVFAC Performance Work Statement (Option 1) and represents the defined construction scope for electrical work. Specific design details — load calculations, panel schedules, circuit layouts — are not captured in the source record and would require the electrical BOD or drawing set to characterize further.

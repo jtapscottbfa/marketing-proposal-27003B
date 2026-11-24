@@ -1,0 +1,7 @@
+Plumbing engineering on this project addressed specialty fuel piping and natural gas systems associated with the fuel storage tank replacement at the Perry Point VA Medical Center boiler plant.
+
+The plumbing discipline's scope covered the specialty piping systems integral to the new tank farm: the fuel fill, supply, and return line network connecting the three new 35,000-gallon aboveground storage tanks to the facility's four boilers falls within plumbing specialty and industrial fluid piping. The design specified double-wall ASTM 53 steel piping with insulation and aluminum jacket for new fuel fill lines, representing a plumbing specialty scope item with secondary containment requirements embedded in the pipe specification itself.
+
+Natural gas is identified as a plumbing sub-discipline on this project, consistent with the boiler plant context. The boiler plant at Perry Point operates on fuel oil, and the fuel oil distribution system design — including the interface between the storage tanks and boiler burner equipment — constitutes the primary plumbing scope. Specific natural gas system modifications, if any, are not detailed in the available source record.
+
+The plumbing scope was closely coordinated with mechanical engineering, which led the fuel system design. The plumbing discipline's role included specialty piping sizing, material specification, and code compliance review for the petroleum fluid handling systems — areas where plumbing and mechanical disciplines overlap in industrial process contexts.

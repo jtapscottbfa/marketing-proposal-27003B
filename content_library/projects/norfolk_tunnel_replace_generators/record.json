@@ -1,0 +1,510 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "norfolk_tunnel_replace_generators",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/20-014.SOW.pdf",
+      "type": "sow",
+      "sha256": "e1ecb4740ca18ea8296905705c36d739e080b7e0a1839c9cbb3150be36bb5297",
+      "page_count": 4,
+      "included": true,
+      "notes": "Scanned (image-based) PDF; rendered to PNG for extraction. Contains Scope of Services, Technical Approach, Schedule, and Drawing/Specification list. BFA project no. 20-014 handwritten annotation."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/2026-02-12 - 501-B0501-014 CO-6a_6b - Approved.pdf",
+      "type": "submittal",
+      "sha256": "7082561b8f269b400e51310d57b264c1d065ae800b31f4ef9f1cdc682f501cfa",
+      "page_count": null,
+      "included": true,
+      "notes": "Docusign-signed CO-6a and CO-6b forms (VUSBC Special Inspections), approved 2/12/2026. Limited extractable text — primarily Docusign envelope metadata."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/2026.03.05 RESPONSE-wd4-a-c01-wdp-501-B0501-014 ERC DTT Norfolk Vent Bldg - Generator Repl - 2021 code update w-2026-01-27 A-Resp.docx",
+      "type": "correspondence",
+      "sha256": "f00376b9ef2ea1ff539e23a254e26512850397069f37594cce5c39a9a76d1b8b",
+      "page_count": null,
+      "included": true,
+      "notes": "DEB architectural code review (Reviewer: Bill Pisa, RA, DGS) with A/E team responses. Final WD4 review round dated 3/5/2026. Contains detailed project scope description, building data, and drawing comments."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/2026.03.05.RESPONSE-wd4-c-c01-jrs-501-B0501-014.docx",
+      "type": "correspondence",
+      "sha256": "0418bbaa2e7b20da58f65d41a6cdbfe8cfd1ff2fbf255227a2ada9759a8ba650",
+      "page_count": null,
+      "included": true,
+      "notes": "DEB civil/structural code review (Reviewer: John R. Swecker, P.E., DGS) with A/E team responses. WD4 review round dated 3/5/2026. Covers floodplain permit, CO-6b special inspections, structural observations."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/2026.03.05.20-014AR.FINAL SUBMITTAL DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "315c9e30a1c68ff76f7980b3310ea25a8fa0c8a2cbdf607f67cdecade50a44f9",
+      "page_count": 6,
+      "included": true,
+      "notes": "Final submittal drawing set (REFINAL, 3/5/2026). 6 PDF pages rendered. Full drawing set is 12 sheets per list of drawings; this PDF contains sheets G-001, C-101, S-001, S-101, S-201, S-301 (general/civil/structural sheets). Electrical sheets not in this PDF."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/2026.03.05.20-014AR.FINAL SUBMITTAL SPECIFICATIONS.pdf",
+      "type": "spec_book",
+      "sha256": "be08e6f1d7a95774d8095c63b590e57d95af015e3e967b9002921ae504fc10a9",
+      "page_count": null,
+      "included": true,
+      "notes": "Full project manual / specifications. BFA Project No. 20-014A. Includes DGS general conditions (CO-7), Division 1, Division 2 (Selective Demolition), Division 3 (Concrete), Division 5 (Structural Steel, Metal Fabrications, Metal Grating Stairs), Division 26 (Electrical). Also includes geotechnical report (GeoEnvironmental Resources), CAT 3512C equipment submittals, and ASCO transfer switch submittals as appendices."
+    },
+    {
+      "path": "00_admin/reference_projects/ercopco/norfolk_tunnel_replace_generators/2026.03.05.20-014AR.FINAL SUBMITTAL PERMIT.pdf",
+      "type": "correspondence",
+      "sha256": "d4d2725e7413bcfc899e3a719ae27aba62d1dfb9b589acacce2b4e2091fa361b",
+      "page_count": null,
+      "included": true,
+      "notes": "City of Norfolk Floodplain Administrator compliance letter (Tristian Barnes, 3/5/2026) confirming project complies with Section 3.9.7 FPCH-O (Flood Plain and Coastal Hazard Overlay). Generator finished flood elevation is above required design flood elevation of 12 ft."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete"
+  },
+  "facts": {
+    "project_name": {
+      "value": "ERC DTT Norfolk East Vent Building — Emergency Generator Replacement",
+      "source": "FINAL SUBMITTAL DRAWINGS cover sheet G-001",
+      "quote": "ERC DTT NORFOLK EAST VENT BUILDING - EMERGENCY GENERATOR REPLACEMENT",
+      "corroboration": [
+        {
+          "source": "FINAL SUBMITTAL DRAWINGS cover sheet G-001",
+          "claim": "ERC DTT NORFOLK EAST VENT BUILDING - EMERGENCY GENERATOR REPLACEMENT",
+          "agrees": true
+        },
+        {
+          "source": "FINAL SUBMITTAL SPECIFICATIONS cover",
+          "claim": "ERC DTT NORFOLK EAST VENT BUILDING- EMERGENCY GENERATOR REPLACEMENT",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1 (handwritten annotation)",
+          "claim": "REPLACE GENERATORS TUNNEL",
+          "agrees": true
+        },
+        {
+          "source": "FINAL SUBMITTAL PERMIT cover",
+          "claim": "ERC DTT NORFOLK EAST VENT BUILDING- EMERGENCY GENERATOR REPLACEMENT",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Elizabeth River Crossings (ERC)",
+      "source": "SOW p.1",
+      "quote": "ERC desires replacement of their existing generator plant at the Downtown Tunnel Portsmouth and Berkley support buildings.",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "ERC desires replacement of their existing generator plant",
+          "value": "Elizabeth River Crossings",
+          "agrees": true
+        },
+        {
+          "source": "DEB architectural review DOCX",
+          "claim": "Stephen Seger, Senior Project Manager, Elizabeth River Crossings",
+          "value": "Elizabeth River Crossings",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Elizabeth River Crossings (ERC)",
+      "source": "FINAL SUBMITTAL PERMIT letter",
+      "quote": "Stephen Seger / Senior Project Manager / Elizabeth River Crossings",
+      "corroboration": [
+        {
+          "source": "FINAL SUBMITTAL PERMIT letter",
+          "claim": "Elizabeth River Crossings",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_address": "114 Ligon St, Norfolk, VA 23523",
+      "source": "FINAL SUBMITTAL DRAWINGS cover sheet G-001",
+      "quote": "ADDRESS: 114 LIGON ST, NORFOLK, VA 23523"
+    },
+    "project_number_internal": {
+      "value": "20-014A",
+      "source": "FINAL SUBMITTAL SPECIFICATIONS cover; FINAL SUBMITTAL PERMIT cover",
+      "quote": "BFA Project No.: 20-014A",
+      "corroboration": [
+        {
+          "source": "FINAL SUBMITTAL SPECIFICATIONS cover",
+          "claim": "BFA Project No.: 20-014A",
+          "value": "20-014A",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.1 (handwritten annotation)",
+          "claim": "# 20-014",
+          "value": "20-014",
+          "agrees": false,
+          "note": "Handwritten annotation shows '20-014'; formal documents show '20-014A'. Minor variant — likely base vs. revised project number."
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "501-B0501-014",
+      "source": "FINAL SUBMITTAL DRAWINGS cover sheet G-001",
+      "quote": "PROJECT CODE: 501-B0501-014",
+      "corroboration": [
+        {
+          "source": "FINAL SUBMITTAL DRAWINGS cover sheet G-001",
+          "claim": "PROJECT CODE: 501-B0501-014",
+          "agrees": true
+        },
+        {
+          "source": "FINAL SUBMITTAL SPECIFICATIONS cover",
+          "claim": "BCOM Project Code: 501-B0501-014",
+          "agrees": true
+        },
+        {
+          "source": "DEB architectural review DOCX",
+          "claim": "501-B0501-014",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "note": "No single scope square footage stated. Generator pad/support structure is approx 380-400 sf (32 ft × 12.5 ft mat per geotech/drawings). Existing vent building is approx 47,133 sf total per floor area schedule on G-001, but building renovation is not BFA scope — only the generator enclosure support structure and electrical work is in scope."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": "2020-05-05",
+        "source": "SOW p.1",
+        "quote": "through discussion with Stephen Seger from ERC on Tuesday, May 5th, 2020",
+        "note": "Date of scope kickoff discussion; actual design contract start not documented in sources."
+      },
+      "completion_date": {
+        "value": "2026-03-05",
+        "source": "FINAL SUBMITTAL SPECIFICATIONS cover; FINAL SUBMITTAL DRAWINGS",
+        "quote": "REFINAL SUBMITTAL / March 05, 2026",
+        "note": "Date of final (REFINAL) submittal to DGS/DEB. Design appears complete at this submittal."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "private_commercial"
+    ],
+    "program_type": [
+      "transportation"
+    ],
+    "program_subtype": [
+      "transportation_transit"
+    ],
+    "disciplines": [
+      "electrical_engineering",
+      "structural_engineering",
+      "civil_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "structural_foundation",
+      "structural_steel",
+      "civil_site_design"
+    ],
+    "building_systems": [
+      "electrical_emergency_power",
+      "electrical_distribution"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "concrete_cast_in_place",
+      "metals_structural_steel",
+      "existing_demolition"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "commercial_competitive"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "tenant_freeform_tags": [
+    "hampton_roads",
+    "norfolk",
+    "elizabeth_river_crossings",
+    "tunnel_ventilation",
+    "generator_replacement",
+    "emergency_power",
+    "floodplain_construction",
+    "downtown_tunnel",
+    "erc",
+    "private_owner_infrastructure",
+    "cat_3512c",
+    "dgs_review_project"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Michael Dixon",
+      "role_on_project": "vice_president",
+      "note": "BFA Vice President; email correspondence with ERC on 6/25/2020 re: load sheets"
+    },
+    {
+      "name": "Blair Fisher, EIT, LEED AP",
+      "role_on_project": "electrical_department_head",
+      "note": "Electrical Department Head; primary BFA contact to geotechnical consultant per geotech report"
+    }
+  ],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "G-001",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Cover sheet with project title, vicinity map, location map, index of drawings (12 total sheets), design team info, building data table, code information, asbestos/lead disclosure, and DIG notice. Building data shows existing vent building: construction type IIB, use group U (support facility), 2-story with basement. Floor areas: roadway level 5097 sf (existing, 0 renovated), first floor 9945 sf (existing, 3671 sf renovated), second floor 5325 sf (existing, 3809 sf renovated), roof 9945 sf (existing, 0 renovated). The generator support structure is not a 2-story building — it is a separate outdoor structure noted as 380 sf footprint per building data block. Generator floor elevation noted as +15.3 ft. Project date 01/23/2026 per drawing title block; REFINAL submittal 03/05/2026 per spec cover."
+      },
+      {
+        "sheet_number": "C-101",
+        "title": "DOWNTOWN TUNNEL (NORFOLK) PUMP BUILDING SITE PLAN",
+        "discipline": "civil_engineering",
+        "reading_notes": "Site plan at 1\"=10' scale. Shows existing building footprint, new generator enclosure location outside the ventilation support building, new underground electric, new generator on platform with concrete slab. Flood zone AE note embedded: 'THIS PROJECT IS LOCATED IN FLOOD ZONE AE AND IS IN A SEA LEVEL RISE INUNDATION AREA. BASE FLOOD ELEVATION = 8.00'. Generator floor elevation = 15.30 ft (high point of concrete slab +7.00; slab perimeter elevation = 6.75). Survey by Hoggard/Eure Associates. National Flood Hazard Layer FIRMette insert shown. Water storage and fuel fill cap shown on site plan."
+      },
+      {
+        "sheet_number": "S-001",
+        "title": "GENERAL NOTES",
+        "discipline": "structural_engineering",
+        "reading_notes": "Structural general notes, concrete notes, structural steel notes, and abbreviation legend. Key facts: generator is CAT 3512C model, total operating weight 115,000 lbs. Flood zone category AE; base flood elevation 8.0 ft; top of generator support frame set at +12.0 ft (allows for 4-ft freeboard above BFE of 8.0); generator floor elevation = +11.4 (U.O.N.). Seismic site class D. Design codes: ASCE 7-2022, ACI 318-2019, AISC 360-2016. Notes state structural observations not required per DEB. Structural engineer of record: Don Broyles, P.E. / Broyles and Associates, PC."
+      },
+      {
+        "sheet_number": "S-101",
+        "title": "FOUNDATION PLAN AND ELEVATIONS",
+        "discipline": "structural_engineering",
+        "reading_notes": "Foundation/framing plan at 1/4\"=1'-0\" and elevation at 1/4\"=1'-0\". Mat foundation: 2'-0\" thick concrete mat, approx 34 ft (overall length) × 22.5 ft (with stair extending off side). Generator support frame: steel W8 and HSS4×4 columns, W8×31 beams, C12×20.7 stringers. Generator floor elevation = +15.3 ft. Bottom of concrete foundation = -12.0 ft (U.O.N.). Elevation view shows generator on elevated steel structure with fuel tank below; stair and landing for access. Weight of generator + enclosure + tank: 115,000 lbs. Foundation footprint approximately 34 ft × 11 ft (not including stair). Soil boring GB-1 data shown inset (GeoEnvironmental Resources, Inc. — project 110-7766)."
+      },
+      {
+        "sheet_number": "S-201",
+        "title": "ELEVATIONS AND DETAILS (TYPICAL DETAILS)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Braced frame elevation views (3/4\"=1'-0\") and connection details (1-1/2\"=1'-0\"). Shows X-bracing configuration in two bays. Key elevations: T.O. steel +12.0 ft; B.O. lowest horizontal member +11.4 ft; T.O. FDG. +6.75 (perimeter). Connection details include HSS4×4 columns to W8×31 beams with HSS3×3×3/8 horizontal braces; bolted connections; anchor bolts at base plates. Generator not shown in detail views for clarity per notes."
+      },
+      {
+        "sheet_number": "S-301",
+        "title": "SECTIONS AND DETAILS (SECTIONS)",
+        "discipline": "structural_engineering",
+        "reading_notes": "Section cuts through foundation at 3/4\"=1'-0\" showing concrete reinforcing details, stair framing, and base plate connection details. Generator floor elevation = +15.25 ft per section. Base flood elevation = 8.0 ft noted. Stair features: steel bar grating treads (galvanized), 1-bar grating, McMichols galv. vert riser panel. Handrail details per 2021 VCC. Stair design revised per phone conversation 3/5/2026 with Bill Pisa (DEB) — approved. HSS4×4 base plate details shown, W8×28 cap plate details shown."
+      }
+    ],
+    "facts_derived": {
+      "generator_type": {
+        "value": "Caterpillar 3512C diesel engine-driven generator set",
+        "source": "S-001 general notes; specifications section 263213.13",
+        "quote": "CAT 3512C GENERATOR (TOTAL OPERATING WEIGHT)...........115,000 LBS",
+        "sheets": [
+          "S-001"
+        ],
+        "corroboration": [
+          {
+            "source": "S-001 general notes",
+            "claim": "CAT 3512C GENERATOR",
+            "agrees": true
+          },
+          {
+            "source": "specifications section 263213.13",
+            "claim": "Caterpillar / 3512C",
+            "agrees": true
+          },
+          {
+            "source": "Caterpillar equipment submittal in specs appendix",
+            "claim": "3512C, 1500 ekW/1875 kVA/60 Hz/1800 rpm/480V, Standby",
+            "agrees": true
+          }
+        ]
+      },
+      "generator_rating_kw": {
+        "value": 1500,
+        "unit": "ekW (standby)",
+        "source": "specifications section 263213.13; SOW p.1; DEB architectural review",
+        "quote": "The scope of work for this project is to provide a new generator at approximately 1500kW, 480V at the Berkley Building.",
+        "sheets": []
+      },
+      "generator_fuel_tank_capacity": {
+        "value": "48 hours at 100% load",
+        "source": "SOW p.1; specifications section 263213.13",
+        "quote": "The generator will be diesel fueled with 48 hours of fuel in the sub-base tank.",
+        "sheets": []
+      },
+      "foundation_mat_footprint_sf": {
+        "value": 400,
+        "unit": "sf (approximate)",
+        "source": "Geotechnical report (spec appendix B); S-101 foundation plan",
+        "quote": "The generator site is planned to be approximately 550 square feet with the mat foundation being approximately 32 feet by 12½ feet.",
+        "sheets": [
+          "S-101"
+        ],
+        "note": "Geotechnical report states 550 sf site / 32 ft × 12.5 ft mat = 400 sf. Drawing S-101 overall dimension is ~34 ft including stair overhang."
+      },
+      "mep_system_inventory": {
+        "electrical": [
+          "New 1500 ekW / 1875 kVA Caterpillar 3512C diesel generator, 480V/277V, 3-phase, standby rating",
+          "New emergency distribution panel (EMDP) inside building near generator",
+          "New ASCO Series 300 automatic transfer switches (2 total): 800A/4P and 400A/4P, 480V",
+          "New 4000A main switchboard, 480Y/277V",
+          "ATSs provided for each jet fan with bypass isolation for maintenance",
+          "New EMDP panels also feed existing EMDP panels",
+          "Existing generators (400kW) disconnected but remain in place",
+          "8 tunnel jet fans per building (100 HP each): 4 eastbound bore, 4 westbound bore"
+        ],
+        "structural": [
+          "New structural steel support frame (W8 columns/beams, HSS4×4 columns, C12×20.7 stringers)",
+          "New 2'-0\" thick reinforced concrete mat foundation (approx 32 ft × 12.5 ft)",
+          "Stair and landing access to generator platform",
+          "Steel bar grating treads (galvanized)",
+          "Seismic restraint vibration isolators"
+        ],
+        "civil": [
+          "Floodplain construction — site in Flood Zone AE",
+          "Generator concrete slab perimeter elevation 6.75 ft; generator floor elevation 15.30 ft (above BFE 8.0 ft and above design flood elevation of 12 ft)",
+          "New underground electrical conduit",
+          "Site survey by Hoggard/Eure Associates"
+        ],
+        "demolition": [
+          "Demolition of existing 400kW generator inside East Vent Building first floor",
+          "Selective demolition per specifications section 024119"
+        ]
+      }
+    }
+  },
+  "socioeconomic_participation": [],
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_internal",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW p.1 (handwritten annotation)",
+          "value": "20-014"
+        },
+        {
+          "source": "FINAL SUBMITTAL SPECIFICATIONS cover",
+          "value": "20-014A"
+        }
+      ],
+      "resolution_chosen": "20-014A (from final formal documents)",
+      "rationale": "The handwritten 'A' suffix on the scanned SOW page and the formal printed specs both indicate 20-014A is the final BFA project number. '20-014' is the base number without the revision suffix. Minor variant; no impact on project identification."
+    },
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "G-001 building data (floor areas)",
+          "value": "47133 sf (existing vent building)"
+        },
+        {
+          "source": "Geotechnical report",
+          "value": "550 sf (generator site); 400 sf (mat foundation 32 ft × 12.5 ft)"
+        },
+        {
+          "source": "DEB architectural review (comment 4 on G-001)",
+          "value": "DEB noted confusion — generator enclosure support structure is NOT a 2-story building; reviewer requested separate tabulation"
+        }
+      ],
+      "resolution_chosen": "No single project square footage captured; two distinct structures in scope",
+      "rationale": "The project involves (1) selective demolition within the existing ~47,133 sf vent building and (2) a new ~400 sf outdoor generator support structure. These are fundamentally different scopes. DEB specifically flagged the confusion. For BFA pursuit purposes, the most relevant scope metric is the new generator pad (~400 sf) plus the electrical scope inside the existing building."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md"
+    }
+  }
+}

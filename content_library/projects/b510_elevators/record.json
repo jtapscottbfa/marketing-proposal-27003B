@@ -1,0 +1,960 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "20-007J",
+    "status": "present_with_value",
+    "source": "1741405 BOD cover page; 1741675 BOD cover page",
+    "quote": "BFA Project No. 20-007J",
+    "corroboration": [
+      {
+        "source": "1741405 BOD cover page",
+        "claim": "BFA Project No. 20-007J",
+        "value": "20-007J",
+        "agrees": true
+      },
+      {
+        "source": "1741675 BOD cover page",
+        "claim": "BFA Project No. 20-007J",
+        "value": "20-007J",
+        "agrees": true
+      }
+    ]
+  },
+  "project_slug": "b510_elevators",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b510_elevators/1741405_BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "9bab02e43296a4a4d586172bdcba954002c5d0e2f45b34046f8a257a6a2f3ea0",
+      "included": true,
+      "notes": "BOD for Elevator #64 replacement, WO 1741405, Final Design Submittal 08 December 2023"
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b510_elevators/1741675_BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "39159c1b3b369ac1c55a1095508fbb221c6cd118880b6ddf4912de5e3b26214a",
+      "included": true,
+      "notes": "BOD for Elevators #63 & #67 replacement, WO 1741675, Final Design Submittal 08 December 2023. Includes Hollister-Whitney equipment layouts (VT-01 through VT-06) and 3D laser scan data as appendices."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b510_elevators/SAES-1741675 R1.pdf",
+      "type": "sow",
+      "sha256": "611b1184f07aba93b947a0f60baf19caedbb66f24c938648bf4eebccc73074a2",
+      "included": true,
+      "notes": "Statement of A-E Services, Revision 1 (09/26/22), covering both WO 1741405 (Elev #64) and WO 1741675 (Elevs #63 & #67) under IDIQ Contract N40085-20-D0005. Document identifier 'R1' in filename indicates Revision 1."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b510_elevators/SAES-1741675.pdf",
+      "type": "sow",
+      "sha256": "78cf335dce003ec5da8c351560c8fb6795c58bfbd361e6e2fcd2cac292990f24",
+      "included": true,
+      "notes": "Statement of A-E Services (original, undated revision), covering both WO 1741405 and WO 1741675. Contract number differs from R1: 'N40085-20-D0005 / X003' vs. 'N40085-20-D0005'. Substantively identical to R1 except for minor formatting."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No standalone drawing-set PDFs present in intake directory. Drawing data (elevator layouts, hoistway sections, machine room plans) is embedded as appendices within the BOD PDFs (sheets VT-01 through VT-06 in 1741675 BOD; similar in 1741405 BOD). These are elevator consultant layouts by Hollister-Whitney / James Lawrence & Associates — extracted at medium depth from BOD text extraction. No separate specifications PDFs provided."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 510 — Replace Elevators #63, #64 & #67",
+      "source": "SAES-1741675 R1 §A1",
+      "quote": "Building 510 Replace Elevators #63 & #67 / Building 510 Replace Elevator #64",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "claim": "Building 510 Replace Elevators #63 & #67 / Building 510 Replace Elevator #64",
+          "value": "Building 510 — Replace Elevators #63, #64 & #67",
+          "agrees": true
+        },
+        {
+          "source": "1741405 BOD cover page",
+          "claim": "BUILDING 510 - REPLACE ELEVATOR #64",
+          "value": "Building 510 — Replace Elevators #63, #64 & #67",
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD cover page",
+          "claim": "BUILDING 510 - REPLACE ELEVATOR #63 & #67",
+          "value": "Building 510 — Replace Elevators #63, #64 & #67",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+      "source": "1741405 BOD cover page; SAES-1741675 R1 §A general header",
+      "quote": "Naval Facilities Engineering Command, PWD Portsmouth",
+      "corroboration": [
+        {
+          "source": "1741405 BOD cover page",
+          "claim": "Naval Facilities Engineering Command, PWD Portsmouth",
+          "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 header",
+          "claim": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth will administer this T.O.",
+          "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 §B2",
+          "claim": "NAVFAC Project Manager: Ms. Valerie Rottink, Address: 1500 Pennock Street, Bldg. T32, Portsmouth, VA 23709",
+          "value": "Naval Facilities Engineering Command (NAVFAC) PWD Portsmouth",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Facilities Engineering Command Mid-Atlantic (NAVFAC MIDLANT) / Norfolk Naval Shipyard",
+      "source": "1741405 BOD cover page; SAES-1741675 R1 §A general header",
+      "quote": "Naval Facilities Engineering Command, PWD Portsmouth / Norfolk Naval Shipyard, Portsmouth, VA",
+      "corroboration": [
+        {
+          "source": "1741405 BOD cover page",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "value": "NAVFAC MIDLANT / Norfolk Naval Shipyard",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 §A2",
+          "claim": "Building 510 is a warehouse building located on the Norfolk Naval Shipyard.",
+          "value": "NAVFAC MIDLANT / Norfolk Naval Shipyard",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Portsmouth",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Norfolk Naval Shipyard, Building 510",
+      "facility_address": null,
+      "source": "1741405 BOD cover page",
+      "quote": "Norfolk Naval Shipyard, Portsmouth, VA",
+      "corroboration": [
+        {
+          "source": "1741405 BOD cover page",
+          "claim": "Norfolk Naval Shipyard, Portsmouth, VA",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "claim": "Project Location: Norfolk Naval Shipyard, Portsmouth",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "20-007J",
+      "source": "1741405 BOD cover page",
+      "quote": "BFA Project No. 20-007J"
+    },
+    "project_number_client": {
+      "value": "1741405 (Elev #64) / 1741675 (Elevs #63 & #67)",
+      "source": "SAES-1741675 R1 §A1",
+      "quote": "eProjects Work Order number Elevators #63 & #67 - 1741675 / Elevator #64 - 1741405",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "claim": "eProjects Work Order number Elevators #63 & #67 - 1741675 / Elevator #64 - 1741405",
+          "agrees": true
+        },
+        {
+          "source": "1741405 BOD cover page",
+          "claim": "Elevator #64: 1741405",
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD cover page",
+          "claim": "Elevator #63 & #67: 1741675",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N40085-20-D0005",
+      "source": "SAES-1741675 R1 §A1",
+      "quote": "Contract No. N40085-20-D0005 – Bowman Foster & Associates",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "claim": "N40085-20-D0005",
+          "agrees": true
+        },
+        {
+          "source": "1741405 BOD cover page",
+          "claim": "A/E Contract No.: N40085-20-D0005",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675.pdf (original) §A1",
+          "claim": "N40085-20-D0005 / X003",
+          "agrees": false,
+          "note": "Original SAES adds '/X003' modifier — likely a task order or modification number. Minor discrepancy."
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "note": "Task order number field blank in both SAES documents. '/X003' in original SAES filename may indicate task order identifier but not confirmed."
+    },
+    "square_footage": {
+      "value": 372031,
+      "unit": "gsf",
+      "source": "SAES-1741675 R1 §A2a",
+      "quote": "the building was originally constructed in 1956 and it is approximately 372,031 square feet in area",
+      "note": "This is the overall Building 510 area, not the elevator work area. The elevator work areas per BOD are: Elev #64 approx. 300 SF per floor + 667 SF machine room; Elevs #63/#67 approx. 500 SF per floor + 687 SF machine room.",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §A2a",
+          "claim": "approximately 372,031 square feet in area",
+          "value": 372031,
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675.pdf (original) §A2a",
+          "claim": "approximately 372,031 square feet in area",
+          "value": 372031,
+          "agrees": true
+        },
+        {
+          "source": "1741405 BOD Sustainable Design checklist",
+          "claim": "Facility Area: 372,031 SF",
+          "value": 372031,
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD Sustainable Design checklist",
+          "claim": "Facility Area: 372,031 SF",
+          "value": 372031,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "note": "No overall program budget (design + construction combined) stated. Construction program amounts (ECC) are documented separately per work order."
+    },
+    "scope_description": {
+      "value": "Complete design for replacement of three geared traction elevators in Building 510 at Norfolk Naval Shipyard: freight elevator #64 (20,000 lb, Class C2, 5 stops, WO 1741405) and freight elevator #63 (20,000 lb, Class C2, 7 stops) plus passenger elevator #67 (2,500 lb, Class A, 6 stops) (WO 1741675). Scope includes new cabs, machines, controllers, hoistway doors, fire protection modifications, ductless split HVAC for machine rooms, sump pumps, electrical service modifications, hazardous materials abatement (ACM, LBP, PCBs), structural reinforcement of machine beams, and all code upgrades per UFC 3-490-06 and ASME A17.1–2019.",
+      "source": "SAES-1741675 R1 §A2; 1741405 BOD General; 1741675 BOD General",
+      "quote": "the project scope is a total replacement of two geared traction freight elevators (#63 and #64) and a geared traction passenger elevator (#67) which date to 1956, rehabilitated in 1984"
+    },
+    "building_description": {
+      "value": "Building 510, Norfolk Naval Shipyard — warehouse building, cast-in-place concrete construction, originally constructed 1956, approximately 372,031 SF. Six-story industrial facility classified as mixed-use Group A-3/B/F-1/S-1 occupancies per IBC. Controlled Industrial Area of NNSY.",
+      "source": "SAES-1741675 R1 §A2a; 1741405 BOD Architectural Design",
+      "quote": "Building 510 is a warehouse building located on the Norfolk Naval Shipyard. According to records, the building was originally constructed in 1956 and it is approximately 372,031 square feet in area. The construction is cast-in-place concrete."
+    },
+    "floor_count": {
+      "value": 6,
+      "source": "1741405 BOD VT Report §II-B, Elevator Data",
+      "quote": "Elevator #64 serves landings 1, 2, 3, 4, 5, and 6. The elevator has front entrances at each landing and a rear entrance at the 1st floor.",
+      "note": "Building has at least 6 stories plus roof (Elev #63 serves floors 1–6 and roof). Machine room is overhead/rooftop level.",
+      "corroboration": [
+        {
+          "source": "1741405 BOD VT Report §II-B",
+          "claim": "Elevator #64 serves landings 1, 2, 3, 4, 5, and 6",
+          "value": 6,
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD VT Report §II-B",
+          "claim": "Elevator #63 serves landings 1, 2, 3, 4, 5, 6, and Roof",
+          "value": "6+ roof",
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD Architectural Design",
+          "claim": "Elevator #63 is a geared traction type freight elevator traveling seven stops, with front and rear openings at the first floor and roof access on the seventh.",
+          "agrees": true
+        }
+      ]
+    },
+    "construction_value_elevator_64": {
+      "value": 2500000,
+      "currency": "USD",
+      "source": "SAES-1741675 R1 §C2",
+      "quote": "Project Cost/Program Amount: Elevator #64 $2,500,000",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §C2",
+          "claim": "Elevator #64 $2,500,000",
+          "value": 2500000,
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675.pdf (original) §C2",
+          "claim": "Elevator #64 $2,500,000",
+          "value": 2500000,
+          "agrees": true
+        },
+        {
+          "source": "1741405 BOD VT Report §I-C, Budget Pricing",
+          "claim": "Elevator work listed above in item 1: $2,000,000 – $4,000,000",
+          "value": "2000000–4000000",
+          "agrees": false,
+          "note": "VT consultant range for elevator-contractor work only ($2M–$4M); SAES $2.5M is total ECC including all trades. Minor conflict — different scope boundaries."
+        }
+      ]
+    },
+    "construction_value_elevators_63_67": {
+      "value": 4500000,
+      "currency": "USD",
+      "source": "SAES-1741675 R1 §C2",
+      "quote": "Project Cost/Program Amount: Elevators #63 & #67 $4,500,000",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §C2",
+          "claim": "Elevators #63 & #67 $4,500,000",
+          "value": 4500000,
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675.pdf (original) §C2",
+          "claim": "Elevators #63 & #67 $4,500,000",
+          "value": 4500000,
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD VT Report §I-C, Budget Pricing",
+          "claim": "$1,500,000 – $4,000,000 per elevator",
+          "value": "1500000–4000000 per elevator (2 elevators)",
+          "agrees": false,
+          "note": "VT consultant range is per elevator for elevator-contractor work only; SAES $4.5M is total ECC for both elevators including all trades. Minor conflict — different scope boundaries."
+        }
+      ]
+    },
+    "total_construction_value": {
+      "value": 7000000,
+      "currency": "USD",
+      "source": "computed",
+      "quote": null,
+      "note": "Sum of SAES ECC: $2.5M (Elev #64) + $4.5M (Elevs #63 & #67) = $7.0M total"
+    },
+    "design_fee": {
+      "value": null,
+      "status": "missing",
+      "note": "SAES states fee will be negotiated per IDIQ pre-negotiated rates. No design fee value stated in source documents."
+    },
+    "contract_award_date": {
+      "value": null,
+      "status": "missing",
+      "note": "SAES task order award date not populated in documents. SAES revision dated 09/26/22. Construction contract award anticipated 5/1/2024 per construction schedules in BODs."
+    },
+    "construction_start_date": {
+      "value": "2024-05-01",
+      "source": "1741405 BOD Appendix D Construction Schedule",
+      "quote": "Contract Award 57 Weeks 5/1/2024 5/2/2025",
+      "note": "Mobilization start date per #64 schedule. Consistent with #63/#67 schedule (5/2/2024 mobilization start for that package).",
+      "corroboration": [
+        {
+          "source": "1741405 BOD Appendix D",
+          "claim": "Contract Award 5/1/2024",
+          "value": "2024-05-01",
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD Appendix D",
+          "claim": "Contract Award 57 Weeks 5/1/2024 11/2/2025",
+          "value": "2024-05-01",
+          "agrees": true
+        }
+      ]
+    },
+    "completion_date_elevator_64": {
+      "value": "2025-05-01",
+      "source": "1741405 BOD Appendix D Construction Schedule",
+      "quote": "Final Completion/TABS, Closeout 4 Weeks 4/3/2025 5/1/2025",
+      "corroboration": [
+        {
+          "source": "1741405 BOD Appendix D",
+          "claim": "Final Completion/TABS, Closeout ... 5/1/2025",
+          "value": "2025-05-01",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "claim": "Estimated Construction Completion Date SEPT 2025",
+          "value": "2025-09",
+          "agrees": false,
+          "note": "SAES gives Sept 2025 as estimated completion for the combined project; individual schedule in BOD shows Elev #64 completing May 2025 earlier. This is a minor conflict: SAES is the combined package estimate; BOD schedules are elevator-specific."
+        }
+      ]
+    },
+    "completion_date_elevators_63_67": {
+      "value": "2025-11-02",
+      "source": "1741675 BOD Appendix D Construction Schedule",
+      "quote": "Contract Award 57 Weeks 5/1/2024 11/2/2025",
+      "corroboration": [
+        {
+          "source": "1741675 BOD Appendix D",
+          "claim": "Contract Award ... 11/2/2025",
+          "value": "2025-11-02",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "claim": "Estimated Construction Completion Date SEPT 2025",
+          "value": "2025-09",
+          "agrees": false,
+          "note": "SAES says Sept 2025; detailed #63/#67 BOD schedule shows Nov 2, 2025. Minor conflict — SAES was drafted before final schedule was developed."
+        }
+      ]
+    },
+    "original_elevator_installation_year": {
+      "value": "1955",
+      "source": "1741405 BOD VT Report §II-A",
+      "quote": "Elevator originally installed in 1955",
+      "corroboration": [
+        {
+          "source": "1741405 BOD VT Report §II-A",
+          "claim": "Elevator originally installed in 1955",
+          "agrees": true
+        },
+        {
+          "source": "1741675 BOD VT Report §II-A",
+          "claim": "Elevators originally installed in 1955",
+          "agrees": true
+        },
+        {
+          "source": "SAES-1741675 R1 §A2a",
+          "claim": "which date to 1956, rehabilitated in 1984",
+          "value": "1956",
+          "agrees": false,
+          "note": "SAES says 1956; VT reports say 1955. One-year discrepancy — VT consultant performed physical inspection and reviewed equipment data tags. SAES appears to reference building construction records. Minor conflict; VT consultant value treated as more authoritative for elevator age."
+        }
+      ]
+    },
+    "prior_alteration_year": {
+      "value": "1980s",
+      "source": "1741405 BOD VT Report §II-A",
+      "quote": "Elevators have had alterations of controls and safeties in 1980s",
+      "corroboration": [
+        {
+          "source": "SAES-1741675 R1 §A2a",
+          "claim": "rehabilitated in 1984",
+          "value": "1984",
+          "agrees": false,
+          "note": "SAES says 1984 specifically; VT reports say 1980s generally. Minor, consistent."
+        }
+      ]
+    },
+    "hazardous_materials": {
+      "value": [
+        "asbestos_containing_materials",
+        "lead_based_paint",
+        "pcb_ballasts",
+        "mercury_lamps"
+      ],
+      "source": "SAES-1741675 R1 §D5-6; 1741405 BOD Hazardous Materials Design",
+      "quote": "ACM floor tiles, sealant, pipe insulation / Lead paint / PCB ballasts"
+    },
+    "elevator_data": {
+      "elevator_64": {
+        "type": "freight",
+        "loading_class": "Class C2",
+        "capacity_lbs": 20000,
+        "rated_speed_fpm": 100,
+        "travel_ft": 68,
+        "landings": [
+          "1",
+          "1R",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "stops": 7,
+        "door_type": "vertical_bi_parting",
+        "door_opening_width": "9'-8\" wide x 10'-0\" high",
+        "machine_room_location": "overhead/rooftop",
+        "machine_room_area_sf": 667,
+        "new_machine": "Hollister-Whitney #74",
+        "new_controller": "MCE",
+        "motor_hp": 75
+      },
+      "elevator_63": {
+        "type": "freight",
+        "loading_class": "Class C2",
+        "capacity_lbs": 20000,
+        "rated_speed_fpm": 100,
+        "travel_ft": 118.75,
+        "landings": [
+          "1",
+          "1R",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "Roof"
+        ],
+        "stops": 8,
+        "door_type": "vertical_bi_parting",
+        "door_opening_width": "9'-0\" wide x 10'-0\" high",
+        "machine_room_location": "overhead/rooftop",
+        "machine_room_area_sf": 687,
+        "new_machine": "Hollister-Whitney #74",
+        "new_controller": "MCE",
+        "motor_hp": 75
+      },
+      "elevator_67": {
+        "type": "passenger",
+        "loading_class": "Class A",
+        "capacity_lbs": 2500,
+        "rated_speed_fpm": 350,
+        "landings": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "stops": 6,
+        "door_type": "two_speed_side_slide",
+        "door_opening_width": "3'-2\" wide x 7'-0\" high",
+        "machine_room_location": "overhead/rooftop (shared with #63)",
+        "new_machine": "Hollister-Whitney #54",
+        "new_controller": "MCE Motion 4000",
+        "motor_hp": 25
+      }
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "note": "A-E fee negotiated per IDIQ pre-negotiated rates; no lump-sum design fee stated in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing",
+        "note": "Kick-off meeting scheduled within 5 days of task order award. Award date not in documents."
+      },
+      "completion_date": {
+        "value": "2023-12-08",
+        "source": "1741405 BOD cover page; 1741675 BOD cover page",
+        "quote": "FINAL DESIGN SUBMITTAL 08 December 2023"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "note": "Per design schedule: 80 days (35% DD) + 110 days (pre-final) + 60 days (final) = 250 calendar days after report acceptance, plus review periods."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "elevator_64": {
+          "value": 2500000,
+          "currency": "USD",
+          "source": "SAES-1741675 R1 §C3",
+          "quote": "Estimated Construction Cost (ECC): Elevator #64 $2,500,000"
+        },
+        "elevators_63_67": {
+          "value": 4500000,
+          "currency": "USD",
+          "source": "SAES-1741675 R1 §C3",
+          "quote": "Estimated Construction Cost (ECC): Elevators #63 & #67 $4,500,000"
+        }
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "note": "Construction contract award anticipated ~5/1/2024 per BOD schedules but not yet awarded at time of design submittal (12/8/2023)."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "elevator_64": "2025-05-01",
+        "elevators_63_67": "2025-11-02",
+        "source": "BOD Appendix D construction schedules",
+        "note": "Projected dates from design-phase schedules, not as-built."
+      },
+      "contractual_duration_days": {
+        "elevator_64": {
+          "value": 365,
+          "source": "1741405 BOD Appendix D",
+          "quote": "Contract Award 57 Weeks 5/1/2024 5/2/2025"
+        },
+        "elevators_63_67": {
+          "value": 551,
+          "source": "1741675 BOD Appendix D",
+          "quote": "Contract Award 57 Weeks 5/1/2024 11/2/2025",
+          "note": "Duration from 5/1/2024 to 11/2/2025 = approximately 551 calendar days (about 78 weeks)"
+        }
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense",
+      "industrial"
+    ],
+    "program_subtype": [
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "structural_engineering",
+      "architecture",
+      "environmental_engineering",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "fire_suppression_wet",
+      "fire_alarm",
+      "structural_existing_assessment",
+      "structural_concrete",
+      "environmental_remediation"
+    ],
+    "building_systems": [
+      "conveying_elevators",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "plumbing_systems",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "electrical_systems",
+      "electrical_emergency_power"
+    ],
+    "construction_scope": [
+      "conveying_scope",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "electronic_safety_security",
+      "existing_demolition",
+      "existing_hazmat_abatement"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "navfac_midlant",
+    "norfolk_naval_shipyard",
+    "nnsy",
+    "elevator_replacement",
+    "vertical_transportation",
+    "historic_preservation_shpo",
+    "cybersecurity_ufc",
+    "hampton_roads",
+    "controlled_industrial_area",
+    "hazmat_abatement"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Ian Peralta",
+      "role_on_project": "project_manager_electrical_lead",
+      "organization": "Bowman Foster & Associates",
+      "source": "1741405 BOD Appendix E"
+    },
+    {
+      "name": "Anna Campbell",
+      "role_on_project": "mechanical_lead",
+      "organization": "Dills Architects",
+      "source": "1741405 BOD Appendix E"
+    },
+    {
+      "name": "Rick O'Berry",
+      "role_on_project": "mechanical_lead",
+      "organization": "Bowman Foster & Associates",
+      "source": "1741405 BOD Appendix E"
+    },
+    {
+      "name": "Don Broyles",
+      "role_on_project": "structural_lead",
+      "organization": "Broyles & Associates",
+      "source": "1741405 BOD Appendix E"
+    },
+    {
+      "name": "James Lawrence",
+      "role_on_project": "elevator_consultant_lead",
+      "organization": "James Lawrence & Associates LLC",
+      "source": "1741405 BOD Appendix E"
+    },
+    {
+      "name": "Matthew Lawrence",
+      "role_on_project": "elevator_consultant",
+      "organization": "James Lawrence & Associates LLC",
+      "source": "1741405 BOD Appendix E"
+    }
+  ],
+  "drawings": {
+    "notes": "No standalone drawing-set PDFs present in intake directory. Drawing data (elevator consultant layouts, machine room plans, hoistway sections, 3D scan elevation data) is embedded as appendices within the BOD PDFs. Sheets VT-01 through VT-06 in 1741675 BOD and corresponding sheets in 1741405 BOD contain Hollister-Whitney elevator layout drawings prepared by James Lawrence & Associates LLC. 3D laser scan data (elevation sections A100, A101, A102 sheets) also embedded in BODs.",
+    "sheets": [
+      {
+        "sheet_number": "VT-01",
+        "title": "General Data / Hoistway Plan / Pit Plan — Elevator #63",
+        "discipline": "conveying_elevators",
+        "source_document": "1741675 BOD Appendix C",
+        "reading_notes": "Shows Class C2 freight elevator #63 data block: 20,000 lb capacity, 100 FPM, 75 HP motor, 2:1 roping, 9 hoist cables at 3/4\". Machine Hollister-Whitney #74. Hoistway plan shows 21'-1\" clear hoistway width, 11'-8\" clear depth. Pit plan shows 6'3\" pit depth. Car guide rail loads tabulated with static/dynamic values (R1–R5). Buffer loads shown. Seismic Design Category A (provisions not required)."
+      },
+      {
+        "sheet_number": "VT-02",
+        "title": "Machine Room Plan — Elevators #63 & #67",
+        "discipline": "conveying_elevators",
+        "source_document": "1741675 BOD Appendix C",
+        "reading_notes": "Combined machine room plan for #63 and #67 (shared room). Machine room approximately 24'-0\" x 24'-10\" as noted in VT report text. Shows HW #74 overhead traction machine, MCE controller, overspeed governor new location, dead-end assemblies, fused disconnect locations. Custom base modification to avoid machine room wall noted. Estimated heat gain Elev #63: 20,265 BTU/hr."
+      },
+      {
+        "sheet_number": "VT-03",
+        "title": "Sling & Platform / Section A-A / Section B-B — Elevator #63",
+        "discipline": "conveying_elevators",
+        "source_document": "1741675 BOD Appendix C",
+        "reading_notes": "Shows car sling structure (W10x45 stiles, MC13x31.8 crosshead and safety plank), platform (3/8\" steel raised pattern floor plate), 68' travel (Elev #64 per comparison). Counterweight runby 2'-0\" initial / 1'-6\" final. Guide rail schedule: car rails 30 lb, CWT rails 15 lb. Floor elevation table: floors 1–7 + roof, 17'-0\" floor-to-floor (floors 2–7). Pit FL at 96'-8-3/4\" elevation."
+      },
+      {
+        "sheet_number": "VT-04",
+        "title": "General Data / Machine Room Plan / Elevator #64",
+        "discipline": "conveying_elevators",
+        "source_document": "1741405 BOD Appendix C",
+        "reading_notes": "Data block for Elev #64: Class C2, 20,000 lb, 100 FPM, 75 HP, 2:1 roping. Machine room plan (different from #63/#67 machine room): approximately 17'-6\" x 22'-9\" per VT text. Shows HW #74 machine location, MCE controller, overspeed governor, dead-end assemblies. Estimated heat gain Elev #64: 20,265 BTU/hr. 68'-0\" total travel. 9'-0.5\" clear hoistway (N/S direction) x 13'-8\" (E/W direction)."
+      },
+      {
+        "sheet_number": "VT-05",
+        "title": "Sling & Platform / Sections / Head & Sill — Elevator #64",
+        "discipline": "conveying_elevators",
+        "source_document": "1741405 BOD Appendix C",
+        "reading_notes": "Car sling detail (W10x45 stiles, MC13x31.8 crosshead), 3/8\" floor plate, 10'-0\" cab height. 72'-2\" clear overhead in hoistway. 6'-3.5\" pit depth. Total travel 68'-0\". Floor schedule: 6 floors, 17'-0\" floor-to-floor (floors 2–6), 6'-3.25\" pit clearance. Pit floor at 96'-7-3/4\". Head and sill detail shows power bi-parting door: 10'-2-3/4\" clear opening, truckable sill."
+      },
+      {
+        "sheet_number": "VT-06",
+        "title": "Counterweight Rail Bracket / Pit Rail Bracket Detail — Elevator #64",
+        "discipline": "conveying_elevators",
+        "source_document": "1741405 BOD Appendix C",
+        "reading_notes": "Rail bracket details for new installation. New car rails welded to horizontal I-beams with 3/4\" post-installed anchor. Bracket spacing not to exceed 3'-0\" between rail clips. Horizontal beam spacing varies from 2'-10\" to 4'-0\" (existing). Shows counterweight rail bracket elevations and new car rail attachment method. Note: Maximum bracket spacing 3'-0\"; tie brackets required for spans >12'-2\"."
+      },
+      {
+        "sheet_number": "Elev #67 Sheets (6 sheets)",
+        "title": "Passenger Elevator #67 Layout Sheets (1 of 6 through 6 of 6)",
+        "discipline": "conveying_elevators",
+        "source_document": "1741675 BOD Appendix C",
+        "reading_notes": "Complete 6-sheet layout package for Elev #67 by Hollister-Whitney (Layout L-9143-1). Sheet 1: General data (2,500 lb, 350 FPM, Class A, 6 landings), car construction (C8x11.5 crosshead, C7x9.8 stiles), estimated weights (total car 5,400 lb, total CWT 6,400 lb), overhead reactions (R1=12,507#, R2=7,971#, R3=9,545#, R4=5,450#). Sheet 2: Pit plan (6'-3\" pit depth). Sheet 3: Hoistway plan (6'-10\" B-B rails, 3'-2\" D.B.G., 6'-3\" D.B.G.). Sheet 4: Machine room overall plan (shares room with #63, machine room 24'-0\"x24'-10\"). Sheet 5: Machine room detail — HW #54 OH machine, 25 HP motor, MCE Motion 4000 controller, rope gripper HW #622. Sheet 6: Hoistway section (84'-5\" travel, 6'-3\" pit, 12'-2\" clear headroom). Note: Preliminary drawings, labeled 'NOT FOR FABRICATION OR CONSTRUCTION', dated 05-22-2023."
+      },
+      {
+        "sheet_number": "A100/A101/A102 (3D Scan)",
+        "title": "3D Laser Scan Elevation Sections — Elevator #63 and #64",
+        "discipline": "mechanical_engineering",
+        "source_document": "1741675 BOD (Elevator #63 scans); 1741405 BOD (Elevator #64 scans)",
+        "reading_notes": "3D point cloud and model elevation sections for Elevs #63 and #64 by WadeLynn Geospatial LLC, dated 6/23/2023 (#63) and 6/29/2023 (#64). Color-coded deviation maps show as-built vs. plumb line. Overall max deviation: 0'-1-11/32\" at corners (#63); 0'-1-29/32\" at corners (#64). Elevation sections show floor-to-floor heights confirming 17'-0\" typical and pit depths. Reading notes: #64 hoistway shows larger plumb deviation (nearly 2 inches at corners) which may have influenced structural analysis and new bracket sizing."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 372031,
+        "unit": "gsf",
+        "source": "SAES-1741675 R1 §A2a",
+        "quote": "approximately 372,031 square feet in area",
+        "sheets": []
+      },
+      "floor_count": {
+        "value": 6,
+        "source": "1741405 BOD VT Report §II-B; 1741675 BOD VT Report §II-B",
+        "quote": "Elevator #64 serves landings 1, 2, 3, 4, 5, and 6",
+        "note": "6 occupied floors + roof level",
+        "sheets": [
+          "VT-01",
+          "VT-04"
+        ]
+      },
+      "elevator_pit_depth": {
+        "value": "6'-3\"",
+        "source": "1741405 BOD VT Report §II-A",
+        "quote": "The pit depth is 75\" at the front entrance opening",
+        "sheets": [
+          "VT-01",
+          "VT-04"
+        ]
+      },
+      "machine_room_area_elevator_64": {
+        "value": 667,
+        "unit": "sf",
+        "source": "1741405 BOD Architectural Design",
+        "quote": "the Machine Room is 667-SF",
+        "sheets": [
+          "VT-04"
+        ]
+      },
+      "machine_room_area_elevators_63_67": {
+        "value": 687,
+        "unit": "sf",
+        "source": "1741675 BOD Architectural Design",
+        "quote": "the Machine Room is 687-SF",
+        "sheets": [
+          "VT-02"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Ductless split air conditioning system (outdoor unit + wall-mounted fan coil) for each elevator machine room (Elevs #63/#67 machine room: one unit; Elev #64 machine room: one unit). Design conditions: 72°F / 50% RH cooling, 50°F heating. Estimated heat gain: 20,265 BTU/hr per machine room.",
+          "Existing steam radiators to be demolished; steam and condensate piping removed to point outside machine rooms.",
+          "DDC controls required per SAES, connecting to NNSY base-wide DDC system."
+        ],
+        "electrical": [
+          "Elev #64: 460V/3-phase/60Hz, 75HP motor, 106A full load. Fed from Substation 510-B (1000/1120 KVA, 11.5kV-480Y/277V transformer, 1600A switchboard), bucket 510-B-3 (Westinghouse 800A DS-206, 400A rated).",
+          "Elevs #63/#67: 460V/3-phase/60Hz. Elev #63: 75HP motor, 106A. Elev #67: 25HP motor. Fed from Substation 510-A (1500 KVA, 11.5kV-480Y/277V, 1600A switchboard), bucket #3 (Westinghouse 800A DS-206, 400A).",
+          "LED lighting (4000K, min 80 CRI): machine room min 19 fc, elevator shaft min 10 fc.",
+          "Cat-6 copper telephone cables for emergency elevator phone service.",
+          "Two-way emergency communications: master intercom in each machine room + lobby station at first floor.",
+          "Security (Elev #63): roll-up door with keypad access controller and fire-rated sight glass at first floor interior landing."
+        ],
+        "plumbing": [
+          "Submersible sump pump for each elevator pit (discharge to building exterior via schedule 40 PVC). Automatic, electric motor-driven.",
+          "Required discharge: 50 GPM per elevator per UFC 3-490-06."
+        ],
+        "fire_protection": [
+          "Fire alarm modifications to coordinate with Mircom FX-MNS system being installed by concurrent Project P-256. Heat detectors at exterior landings (1st floor Elev #64; 1st and 7th floor Elev #63). Control modules relocated within 3' of elevator controller for FEO relay.",
+          "Dedicated sprinkler line from 6th floor to each machine room, with supervised shut-off valve, check valve, waterflow switch (no time delay), and test valve located outside machine room. Sprinklers in machine rooms with guards.",
+          "Waterflow switch directly connected to elevator shunt trip breaker (instantaneous)."
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.original_elevator_installation_year",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "1741405 BOD VT Report §II-A; 1741675 BOD VT Report §II-A",
+          "value": "1955"
+        },
+        {
+          "source": "SAES-1741675 R1 §A2a",
+          "value": "1956"
+        }
+      ],
+      "resolution_chosen": "1741405 BOD VT Report",
+      "rationale": "VT consultant (James Lawrence & Associates) physically inspected the equipment, reviewed data tags, and dated original installation to 1955. SAES references building construction records and likely conflates building construction year (1956) with elevator installation year. VT inspection-based finding is more authoritative for elevator age."
+    },
+    {
+      "field_path": "facts.completion_date_elevators_63_67",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "1741675 BOD Appendix D",
+          "value": "2025-11-02"
+        },
+        {
+          "source": "SAES-1741675 R1 §A1",
+          "value": "2025-09 (Sept 2025)"
+        }
+      ],
+      "resolution_chosen": "1741675 BOD Appendix D",
+      "rationale": "Detailed construction schedule in the Final Design BOD (December 2023) supersedes the SAES estimate (September 2022). The BOD schedule was developed after design completion and reflects more accurate scheduling."
+    },
+    {
+      "field_path": "facts.contract_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES-1741675 R1 §A1; 1741405 BOD cover",
+          "value": "N40085-20-D0005"
+        },
+        {
+          "source": "SAES-1741675.pdf (original) header",
+          "value": "N40085-20-D0005 / X003"
+        }
+      ],
+      "resolution_chosen": "SAES-1741675 R1 §A1",
+      "rationale": "R1 is the later document (Revision 1, dated 09/26/22). The '/X003' modifier in the original SAES may represent a draft task order identifier that was dropped in the final revision. The base IDIQ contract number N40085-20-D0005 is consistent across all documents."
+    },
+    {
+      "field_path": "facts.construction_value_elevator_64",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES-1741675 R1 §C2",
+          "value": 2500000,
+          "note": "Total ECC for all trades"
+        },
+        {
+          "source": "1741405 BOD VT Report §I-C",
+          "value": "2000000–4000000",
+          "note": "Elevator contractor work only"
+        }
+      ],
+      "resolution_chosen": "SAES-1741675 R1 §C2",
+      "rationale": "SAES ECC of $2.5M is the government-approved program amount for all construction trades combined. VT consultant range of $2M–$4M is for elevator contractor work only, which is typically 60–80% of total ECC for this type of project. Values are not directly comparable. SAES value used as design contract value."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "environmental_engineering": "narratives/disciplines/environmental_engineering.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    }
+  }
+}

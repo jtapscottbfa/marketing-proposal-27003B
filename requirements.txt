@@ -1,0 +1,13 @@
+# Python runtime dependencies for engine scripts.
+# Install with: pip install -r requirements.txt
+#
+# Kept minimal on purpose — the engine is bash-first, with Python in a
+# supporting role. Add a dep here only when a script genuinely needs it.
+
+# scripts/publish/sanity_check.py — reads proposal_config.yml + sanity_config.yml
+# scripts/lib/firm_profile.py     — reads ~/.bfa/firm_profile.yml
+pyyaml>=6.0
+
+# scripts/lib/ae_form_helpers.py  — DGS AE-form .xlsx population
+# scripts/populate_ae_forms.py    — orchestrates AE-form fill
+openpyxl>=3.1

@@ -1,0 +1,396 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-15T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "b2102_2074",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/b2102_2074/22-047.2023.04.07.FINAL BOD.pdf",
+      "type": "bod",
+      "sha256": "a606da6a0690f2bf343cb1f18c92b9d1e267c18f68bf059d316c21e531c89c77",
+      "page_count": 3,
+      "included": true,
+      "notes": "Mechanical and Plumbing Basis of Design only; pages 4-6 in original document numbering (cover/electrical pages absent). BFA internal project number 22-047 derived from filename."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b2102_2074/SOW.pdf",
+      "type": "sow",
+      "sha256": "3070f75d11bd9edcfa6d495612c3a427a70923cda5c135db12d9aac0a0901a8c",
+      "page_count": 5,
+      "included": true,
+      "notes": "Image-based PDF (scanned); rendered to PNG for extraction. Construction contractor SOW issued by NAWCAD (ISE). No design fee or contract value stated."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b2102_2074/2074 Requirements.pdf",
+      "type": "unknown",
+      "sha256": "5b0d44faeee4ac1b9eaa576eeebefded3df0d58ae5f13e71f0995105ed0f838d",
+      "page_count": 1,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "User requirements sketch/matrix for Building 2074 SCIF conversion. Layout, power, IT, and construction requirement notes. Not a formal BFA document type — classified as 'unknown'; closest type is a client requirements document."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/b2102_2074/2102  Requirements.pdf",
+      "type": "unknown",
+      "sha256": "81f4e56bbeacec02f8d70d1a504afe7a0f8bbd485669dc48cdb8737f848c39c4",
+      "page_count": 1,
+      "included": true,
+      "flag_for_human_review": true,
+      "notes": "User requirements sketch/matrix for Building 2102 'Open Secret' conversion. Includes rough cooling estimate (330,583.814 BTU/h). Not a formal BFA document type — classified as 'unknown'."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "BOD covers Mechanical and Plumbing disciplines only; no Electrical or Fire Protection BOD pages present. No contract document, no cost estimate, no design drawings (only owner requirement sketches). Two user-requirement matrices present but not formal design documents."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Building 2102 and Building 2074 SCIF/Secured Facility Conversion, NAS Patuxent River",
+      "source": "SOW p.1",
+      "quote": "Project Title: Building-2102 and Building-2074, Convert buildings to meet Secured Facility Criteria",
+      "corroboration": [
+        {
+          "source": "SOW p.1",
+          "claim": "Building-2102 and Building-2074, Convert buildings to meet Secured Facility Criteria",
+          "value": "Building 2102 and Building 2074 SCIF/Secured Facility Conversion",
+          "agrees": true
+        },
+        {
+          "source": "SOW header",
+          "claim": "Building 2074 and building 2102 - Convert existing buildings space to meet Secured Facility requirements / Per- ICD-705-1. And ICD 705 Tech Specs, Wall type A sound group 4 and Radio Frequency Shielding, CNSSAM TEMPEST/1-13",
+          "value": "Building 2102 and Building 2074 SCIF/Secured Facility Conversion",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.5 (Mechanical Design)",
+          "claim": "Buildings 2102 and 2074",
+          "value": "Building 2102 and Building 2074 SCIF/Secured Facility Conversion",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Air Warfare Center Aircraft Division (NAWCAD), NAS Patuxent River",
+      "source": "SOW p.2 §1.3–§1.4",
+      "quote": "NAS Patuxent River MD building 2074 and building 2102",
+      "corroboration": [
+        {
+          "source": "SOW p.2 §1.3",
+          "claim": "NAWCAD ISE Infrastructure, Safety & Environmental Department (ISE)",
+          "value": "NAWCAD ISE, NAS Patuxent River",
+          "agrees": true
+        },
+        {
+          "source": "SOW p.2 §1.4",
+          "claim": "NAS Patuxent River MD building 2074 and building 2102",
+          "value": "NAS Patuxent River, MD — NAWCAD",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / NAVFAC",
+      "source": "SOW p.1 §1.2 item 1",
+      "quote": "Work to be performed in accordance with scope of work, Technical specifications and the ICD 705-1 and ICD 705-1 Tech Spec guidelines",
+      "corroboration": [
+        {
+          "source": "SOW general conditions",
+          "claim": "NAWCAD (ISE) Project Manager (Dale Wathen)",
+          "value": "NAWCAD / Department of the Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Patuxent River",
+      "state": "MD",
+      "country": "US",
+      "facility_name": "NAS Patuxent River, Buildings 2102 and 2074",
+      "facility_address": null,
+      "source": "SOW p.2 §1.4",
+      "quote": "Location: NAS Patuxent River MD building 2074 and building 2102 See Site Map (Attachment 2).",
+      "corroboration": [
+        {
+          "source": "SOW p.2 §1.4",
+          "claim": "NAS Patuxent River MD",
+          "value": "Patuxent River, MD",
+          "agrees": true
+        },
+        {
+          "source": "BOD p.5, HVAC Design Conditions",
+          "claim": "Outside: Pax River",
+          "value": "NAS Patuxent River, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "22-047",
+      "source": "BOD filename (22-047.2023.04.07.FINAL BOD.pdf)",
+      "quote": null,
+      "notes": "Derived from BOD filename convention; not explicitly stated within document body."
+    },
+    "project_number_client": {
+      "value": null,
+      "status": "missing"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No explicit square footage stated in any source document. Building 2102 requirements document includes a rough cooling estimate of 330,583.814 BTU/h which could imply significant floor area but no GSF figure is given.",
+      "corroboration": [
+        {
+          "source": "2102 Requirements.pdf",
+          "claim": "Cooling: We did a very rough estimate of 330583.814 BTU/h for the space.",
+          "value": null,
+          "agrees": false,
+          "notes": "Cooling load only; no area derived."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2023-04-07",
+        "source": "BOD filename",
+        "quote": null,
+        "notes": "BOD dated 2023-04-07 per filename (FINAL BOD). Represents design completion date at minimum; actual design start date unknown."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW §1.5 states duration in calendar days but does not give a specific number: 'Work shall be prosecuted diligently and shall be completed for use within the time indicated in the award document.'"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_secure",
+      "military_operations"
+    ],
+    "program_subtype": [
+      "military_secure"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "electrical_engineering",
+      "fire_protection_engineering"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_air_distribution",
+      "hvac_controls",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "electrical_power_distribution",
+      "fire_alarm",
+      "security_scif_classified"
+    ],
+    "building_systems": [
+      "hvac_packaged",
+      "hvac_air_distribution",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "fp_fire_alarm",
+      "security_acs"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "finishes_scope",
+      "openings_doors_frames",
+      "interior_partitions"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "taxonomy_notes": {
+    "client_type": "federal_navfac confirmed. NAWCAD is an activity under NAVFAC. SOW references NAWCAD ISE as the project authority.",
+    "program_type": "military_secure is the primary type (ICD-705 SCIF requirements for B2074; TEMPEST/RF shielding). military_operations chosen for B2102 ('Open Secret' — classified but below SCIF level). No exact vocab entry for 'Open Secret' classified facility — military_operations used as closest fit; flagged as vocab gap.",
+    "sub_disciplines": "security_scif_classified added from sub_discipline.yaml — this project is precisely ICD-705 SCIF design work.",
+    "bfa_role": "BOD is authored by Bowman Foster & Associates. The SOW is a construction contractor SOW issued by NAWCAD — BFA's role was as the engineering design consultant for mechanical and plumbing systems. The SOW was issued to construction contractor, not BFA. BFA role is subconsultant (design engineering subconsultant, likely under a prime designer or under NAVFAC's design-build contractor). Prime consultant cannot be confirmed; subconsultant used.",
+    "delivery_method": "Likely design-bid-build based on separate design BOD and construction SOW. SOW directs contractor to provide as-built CAD drawings and execute pre-work design management procedures, but overall delivery structure is design then construction. No explicit design-build contract language.",
+    "project_status": "BOD is dated FINAL 2023-04-07 and SOW was issued; design appears complete. Construction completion unknown. design_complete chosen as conservative status.",
+    "contract_vehicle": "No IDIQ/MACC/task order number cited, but federal construction at a naval installation strongly suggests task order vehicle. federal_task_order used with low confidence — flag for human review."
+  },
+  "scope_description": {
+    "value": "Convert existing Buildings 2102 and 2074 at NAS Patuxent River, MD into Accredited Secured Facilities. Building 2074 to be converted to an ICD-705-1 SCIF (Sensitive Compartmented Information Facility) with Wall Type A Sound Group 4, RF shielding per CNSSAM TEMPEST/1-13, man trap, secure doors, and related TEMPEST countermeasures. Building 2102 to be converted to an 'Open Secret' (below-SCIF classified) operational workspace. Both buildings to receive new split-system heat pumps with spiral ductwork (replacing existing), new plumbing (removal of restroom fixtures and water heater), electrical power distribution (400Hz 3-phase, 28VDC conversion/generation systems), LED lighting, VCT flooring, data/communications infrastructure, and fire alarm. Interior demolition of all existing systems, walls, ceilings, and finishes. Contractor to provide design-build CAD drawings at 30%/60%/100% government review milestones.",
+    "source": "SOW §2.0 and BOD",
+    "quote": "Modify existing Office space to meet the current version of ICD-705.1and ICD 705 Technical Specifications for Construction and Management of Sensitive Compartmented Information Facilities (Tech Spec) \"Wall type A, Sound Group 4\" as determined by the AO / LSO."
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "REQ-2074",
+        "title": "Building 2074 User Requirements Matrix",
+        "discipline": "unknown",
+        "source_file": "2074 Requirements.pdf",
+        "reading_notes": "Single-page user requirements sketch/matrix for Building 2074. Shows conceptual floor layout with TV monitor placements (3x wall-mounted 60-inch TVs in multiple locations). Documents SCIF construction requirements: Wall Type Alpha (2 layers inside block meeting exterior requirements), 60dB ultra-radiant RF shielding (Chapter 3), 6-sided box with STC-50 ceiling, metal hollow doors meeting RF requirements, man trap, non-conductive breaks, grounding. Power requirements: 400Hz 3-phase AC and 28VDC conversion/generation systems with 13 connections, power track/outlets every 5 feet, outlets at 5.5-ft AFF for monitors (11 total). IT/communications: 16 unclassified drops (3-port) + 16 classified drops (3-port), conference room Teams + classified VTC. Other: LED lights, kitchenette (fridge, sink, millwork), VCT flooring. Note: asks whether the two buildings can share power via duct bank. Not a formal drawing — a client requirements capture document."
+      },
+      {
+        "sheet_number": "REQ-2102",
+        "title": "Building 2102 User Requirements Matrix",
+        "discipline": "unknown",
+        "source_file": "2102 Requirements.pdf",
+        "reading_notes": "Single-page user requirements sketch/matrix for Building 2102, designated 'Open Secret' (below-SCIF classified space). Shows TV monitor placements (5x 60-inch TVs on one wall, 3x and 3x on others, 8-ft garage door). Power requirements: 400Hz 3-phase AC and 28VDC with 9 connections, similar power track layout. Mechanical: rough cooling estimate 330,583.814 BTU/h (flagged as very rough). IT/communications: 15 unclassified + 15 classified drops, conference room Teams + classified VTC. Other: LED lights, open ceiling painted black, add 8-ft wide garage door at rear, sound-deadening wall material, frost windows, VCT flooring, block walls with patch and paint, kitchenette. Not a formal drawing — a client requirements capture document."
+      }
+    ],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No area dimensions on requirements sketches. Building 2102 cooling load of ~330,000 BTU/h suggests a mid-size facility (rough estimate ~1,500-3,000 SF) but not derivable with confidence from the data given."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "SOW §2.0 Building 2074 description",
+        "quote": null,
+        "notes": "SOW §2.0 describes Building 2074 as 'single level, CMU structure'. Inferred single-story for both buildings; no multi-floor references anywhere.",
+        "sheets": [
+          "REQ-2074",
+          "REQ-2102"
+        ]
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing split-system heat pumps, motorized outside air dampers, wall-mounted 7-day programmable thermostats — to be removed (Buildings 2102 and 2074)",
+          "New split-system heat pumps with electric supplemental heat — to be installed in both buildings",
+          "New spiral ductwork below ceiling (uninsulated in conditioned spaces)",
+          "Motorized outside air louver, per ASHRAE 62.1",
+          "Design conditions (Pax River): Cooling 91°F DB / 80°F WB outside; 78°F DB / 50% RH inside. Heating 19°F DB outside; 70°F DB inside"
+        ],
+        "plumbing": [
+          "Remove existing restroom fixtures: flush tank water closets, wall-mounted lavatories, water heater (Buildings 2102 and 2074)",
+          "Kitchenette addition: refrigerator, sink, millwork with upper and lower storage (both buildings)"
+        ],
+        "electrical": [
+          "400Hz 3-phase AC and 28VDC power conversion/generation systems — B2074: 13 connections; B2102: 9 connections",
+          "Power track/outlets along all walls (120V, 120/208VAC, 115VAC, 60Hz, 28VDC) — outlets every 5 feet on bus bar",
+          "Power outlets at 5.5 ft AFF for TV monitors (11 total per building)",
+          "LED lighting throughout",
+          "Grounding (non-conductive breaks) — SCIF requirement"
+        ],
+        "fire_protection": [
+          "Fire alarm system (SCIF secured fire alarm — contractor to notify COR 10 days in advance)",
+          "SOW references secured fire alarm requirement; fire alarm cited as a required discipline in §2.0 drawing list"
+        ],
+        "communications_security": [
+          "Unclassified drops with 3 ports — B2074: 16 total; B2102: 15 total",
+          "Classified drops with 3 ports — B2074: 16 total; B2102: 15 total",
+          "Conference room: Teams (unclassified) and classified VTC",
+          "RF shielding to CNSSAM TEMPEST/1-13 (B2074 SCIF)",
+          "ICD-705 Tech Spec CNSSI 5002 telephony isolation"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md"
+    }
+  }
+}

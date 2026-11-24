@@ -1,0 +1,288 @@
+vocabulary_id: tag_aliases
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+tenant_scope: bfa
+governance_notes: |
+  Alias map for normalizing tenant freeform tags at write time. Variants on the
+  left, canonical form on the right.
+
+  Per the v0.0.2 build digest: freeform tags are reviewed monthly. Useful tags
+  promote into a controlled vocabulary (with their own canonical_id and
+  aliases). Aliases here cover only the gap between tenant-typed variants and
+  the canonical freeform tag.
+
+  This file is a STARTER seed only. Most aliases will be added incrementally as
+  the corpus grows and patterns emerge. The extractor and reviewer can suggest
+  new alias entries when they encounter variants not yet mapped.
+
+  Distinct from the per-vocabulary aliases inside each controlled vocabulary
+  YAML — those map source-document text into controlled vocabulary entries.
+  This map normalizes the OPEN tenant_freeform_tags space.
+
+  Alias resolution is case-insensitive. Whitespace is normalized to underscores.
+
+# ============ STRUCTURE ============
+# Each entry maps one or more variants to a canonical tag.
+#
+# canonical_tag: <snake_case canonical form>
+#   variants:
+#     - <variant string 1>
+#     - <variant string 2>
+#   notes: <optional context>
+
+aliases:
+
+  # ============ CLIENT ORGANIZATIONS — FEDERAL ============
+  - canonical_tag: us_army_corps_of_engineers
+    variants:
+      - usace
+      - corps_of_engineers
+      - army_corps
+      - us_army_corps
+      - corps
+    notes: USACE is also captured at the client_type level. Use this freeform tag for project-level corps references in narratives.
+
+  - canonical_tag: navfac
+    variants:
+      - naval_facilities
+      - naval_facilities_engineering_systems_command
+      - navfac_atlantic
+      - navfac_pacific
+      - navfac_mid_atlantic
+    notes: Capture NAVFAC subordinate command in a separate tag if relevant (e.g., navfac_mid_atlantic as its own tag).
+
+  - canonical_tag: afcec
+    variants:
+      - air_force_civil_engineer_center
+      - af_civil_engineer
+    notes: null
+
+  - canonical_tag: department_of_veterans_affairs
+    variants:
+      - va
+      - veterans_affairs
+      - vha
+      - veterans_health_administration
+    notes: Capture specific VAMC name as a separate tag where applicable.
+
+  - canonical_tag: general_services_administration
+    variants:
+      - gsa
+      - gsa_pbs
+      - gsa_public_buildings_service
+    notes: null
+
+  # ============ CLIENT ORGANIZATIONS — VIRGINIA ============
+  - canonical_tag: virginia_department_of_transportation
+    variants:
+      - vdot
+      - va_dot
+      - virginia_dot
+    notes: null
+
+  - canonical_tag: virginia_department_of_general_services
+    variants:
+      - dgs
+      - va_dgs
+      - virginia_dgs
+    notes: null
+
+  - canonical_tag: williamsburg_james_city_county_schools
+    variants:
+      - wjcc
+      - wjcc_schools
+      - wjccps
+      - williamsburg_james_city
+    notes: null
+
+  - canonical_tag: norfolk_public_schools
+    variants:
+      - nps
+      - norfolk_schools
+    notes: Disambiguate from National Park Service in context.
+
+  - canonical_tag: virginia_beach_city_public_schools
+    variants:
+      - vbcps
+      - vb_schools
+      - virginia_beach_schools
+    notes: null
+
+  - canonical_tag: chesapeake_public_schools
+    variants:
+      - cps_chesapeake
+      - chesapeake_schools
+    notes: Disambiguate from other CPS abbreviations.
+
+  - canonical_tag: hampton_city_schools
+    variants:
+      - hcs
+      - hampton_schools
+    notes: null
+
+  - canonical_tag: newport_news_public_schools
+    variants:
+      - nnps
+      - newport_news_schools
+    notes: null
+
+  - canonical_tag: york_county_school_division
+    variants:
+      - ycsd
+      - york_county_schools
+    notes: null
+
+  # ============ MILITARY INSTALLATIONS — HAMPTON ROADS ============
+  - canonical_tag: naval_station_norfolk
+    variants:
+      - ns_norfolk
+      - norfolk_naval_station
+      - nob_norfolk
+    notes: null
+
+  - canonical_tag: naval_air_station_oceana
+    variants:
+      - nas_oceana
+      - oceana
+    notes: null
+
+  - canonical_tag: joint_base_langley_eustis
+    variants:
+      - jble
+      - langley_afb
+      - fort_eustis
+      - langley_eustis
+    notes: null
+
+  - canonical_tag: naval_amphibious_base_little_creek
+    variants:
+      - little_creek
+      - jeb_little_creek_fort_story
+      - jeb_lcfs
+      - joint_expeditionary_base
+    notes: null
+
+  - canonical_tag: naval_weapons_station_yorktown
+    variants:
+      - nws_yorktown
+      - yorktown_nws
+    notes: null
+
+  - canonical_tag: naval_medical_center_portsmouth
+    variants:
+      - nmcp
+      - portsmouth_naval_hospital
+      - portsmouth_naval_medical
+    notes: null
+
+  - canonical_tag: norfolk_naval_shipyard
+    variants:
+      - nns
+      - norfolk_shipyard
+      - portsmouth_naval_shipyard
+    notes: Officially located in Portsmouth despite the name.
+
+  # ============ GEOGRAPHY — REGIONS ============
+  - canonical_tag: hampton_roads
+    variants:
+      - tidewater
+      - hr_metro
+      - hampton_roads_metro
+      - seven_cities
+    notes: Greater Hampton Roads metropolitan area.
+
+  - canonical_tag: northern_virginia
+    variants:
+      - nova
+      - n_va
+      - northern_va
+    notes: null
+
+  - canonical_tag: richmond_metro
+    variants:
+      - rva
+      - richmond_va_metro
+    notes: null
+
+  # ============ COMMON CERTIFICATIONS / RATING SYSTEMS ============
+  - canonical_tag: leed_certified
+    variants:
+      - leed_cert
+      - leed_basic
+    notes: null
+
+  - canonical_tag: leed_silver
+    variants:
+      - leed_silver_certified
+    notes: null
+
+  - canonical_tag: leed_gold
+    variants:
+      - leed_gold_certified
+    notes: null
+
+  - canonical_tag: leed_platinum
+    variants:
+      - leed_platinum_certified
+    notes: null
+
+  - canonical_tag: well_certified
+    variants:
+      - well_certification
+      - well_building_standard
+    notes: null
+
+  - canonical_tag: net_zero_energy
+    variants:
+      - nze
+      - net_zero
+      - zero_energy_building
+      - zeb
+    notes: null
+
+  - canonical_tag: living_building_challenge
+    variants:
+      - lbc
+      - living_building
+    notes: null
+
+  # ============ COMMON PROCUREMENT / PROGRAM REFERENCES ============
+  - canonical_tag: design_build_institute_of_america
+    variants:
+      - dbia
+    notes: Often appears as certification reference (DBIA-certified personnel).
+
+  - canonical_tag: gsa_design_excellence
+    variants:
+      - design_excellence
+      - gsa_de
+    notes: null
+
+  - canonical_tag: anti_terrorism_force_protection
+    variants:
+      - atfp
+      - at_fp
+      - ufc_4_010_01
+    notes: References UFC 4-010-01.
+
+  # ============ DELIVERY / PHASE QUALIFIERS ============
+  - canonical_tag: fast_track
+    variants:
+      - fast_tracked
+      - fasttrack
+      - accelerated_delivery
+    notes: null
+
+  - canonical_tag: phased_delivery
+    variants:
+      - phased_construction
+      - multi_phase
+    notes: null
+
+  - canonical_tag: occupied_renovation
+    variants:
+      - occupied_during_construction
+      - active_occupancy
+      - phased_renovation_occupied
+    notes: null

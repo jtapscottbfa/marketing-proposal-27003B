@@ -1,0 +1,694 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "uscbp_infrastructure_improvement_study",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/harpers_ferry/uscbp_infrastructure_improvement_study/CBP IIA Report - 95% Submission.pdf",
+      "type": "report",
+      "sha256": "6f93ff814c216abe67551ced5195bc6ae57dd7c1a6305faceb2053255b91400b",
+      "included": true,
+      "notes": "Primary deliverable: 95% submission of the Infrastructure Improvements Analysis (IIA), May 2021. Prepared by GORDON and Bowman Foster & Associates under contract to IntegriWard LLC."
+    },
+    {
+      "path": "00_admin/reference_projects/harpers_ferry/uscbp_infrastructure_improvement_study/compressed2018_05_31 CBP ATC ADEP Final.pdf",
+      "type": "report",
+      "sha256": "8c56ef7f16e0757e1a7441d777415baa1c983f54f0adc475bfc5c3042a8e5238",
+      "included": true,
+      "notes": "Area Development Execution Plan (ADEP), September 2017. Prepared by Michael Baker Jr. Inc. under contract to US Army Corps of Engineers Fort Worth District. Base planning document driving the IIA scope."
+    },
+    {
+      "path": "00_admin/reference_projects/harpers_ferry/uscbp_infrastructure_improvement_study/DRAFT Statement of Work - Infrastructure Improvements.docx",
+      "type": "sow",
+      "sha256": "ffbc7565ac196530c87f61830275752ef0e85d3d8d22967d03a1cc56ed76319c",
+      "included": true,
+      "notes": "DRAFT SOW for the Infrastructure Improvements Study; describes work scope and deliverables."
+    },
+    {
+      "path": "00_admin/reference_projects/harpers_ferry/uscbp_infrastructure_improvement_study/FINAL REPORT DRAWINGS.pdf",
+      "type": "drawing_set",
+      "sha256": "674ab9357f34dfcd568dabf8fdc9854401c7f93ef08a36cf9928101da1f79b7a",
+      "included": true,
+      "notes": "7-sheet drawing set: sheets ES-101, ES-102, E-501 through E-505. Electrical site plans and manhole/handhole details. Prepared by Bowman Foster & Associates and GORDON."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": true,
+    "has_narrative_documents": true,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No separate BOD file; project is a planning/study deliverable — the IIA report itself serves as the primary technical document. No construction spec book present; project is a study, not a design."
+  },
+  "facts": {
+    "project_name": {
+      "value": "U.S. Customs & Border Protection Advanced Training Center Infrastructure Improvements Analysis",
+      "source": "IIA Report cover page",
+      "quote": "U.S. CUSTOMS & BORDER PROTECTION ADVANCED TRAINING CENTER INFRASTRUCTURE IMPROVEMENTS ANALYSIS",
+      "corroboration": [
+        {
+          "source": "IIA Report cover page",
+          "claim": "U.S. CUSTOMS & BORDER PROTECTION ADVANCED TRAINING CENTER INFRASTRUCTURE IMPROVEMENTS ANALYSIS",
+          "value": "U.S. Customs & Border Protection Advanced Training Center Infrastructure Improvements Analysis",
+          "agrees": true
+        },
+        {
+          "source": "DRAFT SOW §Part 1.A",
+          "claim": "US Customs and Border Protection (CBP) Advanced Training Center (ATC) requires a comprehensive study to determine the installations of total energy, water and waste current/projected requirements",
+          "value": "CBP ATC Infrastructure Improvements Study",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "U.S. Customs and Border Protection (CBP)",
+      "source": "IIA Report cover page",
+      "quote": "U.S. CUSTOMS & BORDER PROTECTION",
+      "corroboration": [
+        {
+          "source": "IIA Report cover page",
+          "claim": "U.S. CUSTOMS & BORDER PROTECTION",
+          "value": "U.S. Customs and Border Protection (CBP)",
+          "agrees": true
+        },
+        {
+          "source": "DRAFT SOW §Part 1.A",
+          "claim": "US Customs and Border Protection (CBP) Advanced Training Center (ATC)",
+          "value": "U.S. Customs and Border Protection (CBP)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "U.S. Customs and Border Protection (CBP) / Department of Homeland Security",
+      "source": "IIA Report cover page; Utility Charrette Minutes",
+      "quote": "U.S. CUSTOMS & BORDER PROTECTION",
+      "corroboration": [
+        {
+          "source": "IIA Report cover page",
+          "claim": "U.S. CUSTOMS & BORDER PROTECTION",
+          "value": "U.S. Customs and Border Protection",
+          "agrees": true
+        }
+      ]
+    },
+    "prime_contractor": {
+      "value": "IntegriWard, LLC",
+      "source": "IIA Report cover page",
+      "quote": "Under Contract To: IntegriWard, LLC",
+      "corroboration": [
+        {
+          "source": "IIA Report cover page",
+          "claim": "Under Contract To: IntegriWard, LLC",
+          "value": "IntegriWard, LLC",
+          "agrees": true
+        },
+        {
+          "source": "Utility Charrette Minutes, Integriward Team attendees list",
+          "claim": "Matt Viveiros, Integriward Team",
+          "value": "IntegriWard, LLC",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_subconsultant_role": {
+      "value": "BFA (Bowman Foster & Associates) performed as subconsultant under GORDON/IntegriWard team, responsible for electrical and communications systems analysis",
+      "source": "IIA Report cover page; Utility Charrette Minutes",
+      "quote": "Prepared By: GORDON and Bowman Foster & Associates",
+      "corroboration": [
+        {
+          "source": "IIA Report cover page",
+          "claim": "Prepared By: GORDON and Bowman Foster & Associates",
+          "value": "BFA (Bowman Foster & Associates) as named preparer",
+          "agrees": true
+        },
+        {
+          "source": "Utility Charrette Minutes, Infrastructure Analysis Team list",
+          "claim": "Ian Peralta, BFA",
+          "value": "BFA provided Ian Peralta on infrastructure analysis team",
+          "agrees": true
+        },
+        {
+          "source": "50% Submission Minutes",
+          "claim": "Peralta provided an overview of electrical and communications systems",
+          "value": "BFA's scope covered electrical and communications",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Harpers Ferry",
+      "state": "WV",
+      "country": "US",
+      "facility_name": "CBP Advanced Training Center (ATC)",
+      "facility_address": "440 Koonce Road, Harpers Ferry, WV 25425",
+      "source": "DRAFT SOW §Part 3.B",
+      "quote": "CBP Advanced Training Center\n440 Koonce Road\nHarpers Ferry, WV 25425",
+      "corroboration": [
+        {
+          "source": "DRAFT SOW §Part 3.B",
+          "claim": "440 Koonce Road, Harpers Ferry, WV 25425",
+          "value": "Harpers Ferry, WV",
+          "agrees": true
+        },
+        {
+          "source": "IIA Report header/title page",
+          "claim": "HARPERS FERRY, WEST VIRGINIA",
+          "value": "Harpers Ferry, WV",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "2566-0112",
+      "source": "Utility Charrette Minutes header; Cost Estimate cover",
+      "quote": "Project Number: 2566-0112",
+      "corroboration": [
+        {
+          "source": "Utility Charrette Minutes header",
+          "claim": "Project Number: 2566-0112",
+          "value": "2566-0112",
+          "agrees": true
+        },
+        {
+          "source": "Cost Estimate cover",
+          "claim": "OCMI JOB #: 20406.000",
+          "value": "20406.000 (OCMI cost estimator's job number — different from GORDON project number)",
+          "agrees": false
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "This is a planning/study project, not a building design project. No single GSF metric applies; the study covers the entire ATC campus (~116 acres)."
+    },
+    "campus_area": {
+      "value": 116,
+      "unit": "acres",
+      "source": "IIA Report Part 2, Irrigation section",
+      "quote": "The approximate area of the campus, excluding the wooded areas and the expansion south of the firing range is 116 acres.",
+      "corroboration": [
+        {
+          "source": "IIA Report Part 2, Irrigation section",
+          "claim": "116 acres",
+          "value": 116,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No single program budget stated. Infrastructure improvements total cost is $4,502,466 (FY2022-FY2042 construction) per cost estimate. This is the study deliverable, not a design contract."
+    },
+    "infrastructure_improvements_total_cost": {
+      "value": 4502466,
+      "currency": "USD",
+      "source": "IIA Cost Estimate, Project Summary",
+      "quote": "TOTAL CONSTRUCTION COST $4,502,466",
+      "notes": "Total infrastructure improvements cost FY2022-FY2042, 26 capital projects, design-bid-build basis with Davis-Bacon wages.",
+      "corroboration": [
+        {
+          "source": "IIA Cost Estimate, Project Summary",
+          "claim": "$4,502,466",
+          "value": 4502466,
+          "agrees": true
+        },
+        {
+          "source": "IIA Report Executive Summary",
+          "claim": "IIA Costs FY2022-FY2042: $4,502,466",
+          "value": 4502466,
+          "agrees": true
+        }
+      ]
+    },
+    "optional_wwtp_expansion_cost": {
+      "value": 177620,
+      "currency": "USD",
+      "source": "IIA Cost Estimate, Project Summary",
+      "quote": "WASTE WATER TREATMENT PLANT - OPTiON 1 (WWTP EXPANSION) $177,620",
+      "corroboration": [
+        {
+          "source": "IIA Cost Estimate, Project Summary",
+          "claim": "$177,620",
+          "value": 177620,
+          "agrees": true
+        }
+      ]
+    },
+    "optional_offsite_wwtp_cost": {
+      "value": 219415,
+      "currency": "USD",
+      "source": "IIA Cost Estimate, Project Summary",
+      "quote": "WASTE WATER TREATMENT PLANT - OPT: 2 (OFFSITE WWTP) $219,415",
+      "corroboration": [
+        {
+          "source": "IIA Cost Estimate, Project Summary",
+          "claim": "$219,415",
+          "value": 219415,
+          "agrees": true
+        }
+      ]
+    },
+    "optional_water_treatment_expansion_cost": {
+      "value": 191102,
+      "currency": "USD",
+      "source": "IIA Cost Estimate, Project Summary",
+      "quote": "WATER TREATMENT SYSTEM IMPROVEMENTS $191,102",
+      "corroboration": [
+        {
+          "source": "IIA Cost Estimate, Project Summary",
+          "claim": "$191,102",
+          "value": 191102,
+          "agrees": true
+        },
+        {
+          "source": "IIA Report Part 3",
+          "claim": "The estimated cost for the water treatment system expansion is $191,102",
+          "value": 191102,
+          "agrees": true
+        }
+      ]
+    },
+    "delivery_type": {
+      "value": "planning_study",
+      "source": "IIA Report cover; DRAFT SOW §Part 2.A",
+      "quote": "The Contractor shall conduct an infrastructure improvements study",
+      "notes": "This is a planning/infrastructure analysis study, not a design or construction contract. The cost estimate is for future capital improvements to be programmed, not for BFA's study contract."
+    },
+    "study_completion_date": {
+      "value": "2021-05",
+      "source": "IIA Report cover page",
+      "quote": "MAY 2021\n95% SUBMISSION",
+      "corroboration": [
+        {
+          "source": "IIA Report cover page",
+          "claim": "MAY 2021, 95% SUBMISSION",
+          "value": "2021-05",
+          "agrees": true
+        },
+        {
+          "source": "50% Submission Minutes Schedule",
+          "claim": "Final Submission 04/05/21 – 04/19/21; To CBP 04/19/21",
+          "value": "approximately April-May 2021",
+          "agrees": true
+        }
+      ]
+    },
+    "study_period_of_performance": {
+      "value": "180 days after NTP",
+      "source": "DRAFT SOW §Part 3.C",
+      "quote": "Period of Performance. PoP is 180 days after NTP.",
+      "corroboration": [
+        {
+          "source": "DRAFT SOW §Part 3.C",
+          "claim": "180 days after NTP",
+          "value": "180 calendar days",
+          "agrees": true
+        }
+      ]
+    },
+    "wwtp_capacity": {
+      "value": 40000,
+      "unit": "gpd",
+      "source": "IIA Report Part 2, Sanitary Sewer section",
+      "quote": "Sanitary sewer is collected and treated onsite at a 40,000 Gallon Per Day (GPD) Wastewater Treatment Plant (WWTP) constructed as part of the Phase 5 infrastructure expansion.",
+      "corroboration": [
+        {
+          "source": "IIA Report Part 2",
+          "claim": "40,000 GPD WWTP",
+          "value": 40000,
+          "agrees": true
+        },
+        {
+          "source": "IIA Cost Estimate drawing legend note",
+          "claim": "WASTE WATER TREATMENT PLANT (40,000 GPD CAPACITY)",
+          "value": 40000,
+          "agrees": true
+        }
+      ]
+    },
+    "electrical_service": {
+      "value": "12.5kV 3-phase overhead distribution from Potomac Edison (First Energy), entering campus at north side; current circuit at/near capacity",
+      "source": "IIA Report Part 2, Electrical System section",
+      "quote": "the primary service is a 12.5kV, 3-phase service from the overhead distribution system that parallels US Route 340",
+      "corroboration": [
+        {
+          "source": "IIA Report Part 2",
+          "claim": "12.5kV, 3-phase service",
+          "value": "12.5kV 3-phase",
+          "agrees": true
+        },
+        {
+          "source": "IIA Report Part 2",
+          "claim": "the current circuit serving the campus is nearing/reached capacity",
+          "value": "at/near capacity",
+          "agrees": true
+        }
+      ]
+    },
+    "communications_providers": {
+      "value": [
+        "Comcast (coax and fiber)",
+        "Frontier/Verizon (copper, analog telephone)"
+      ],
+      "source": "IIA Report Part 2, Communications System section",
+      "quote": "Comcast (coax & fiber service); Frontier/Verizon (copper service)",
+      "corroboration": [
+        {
+          "source": "IIA Report Part 2",
+          "claim": "Comcast (coax & fiber service); Frontier/Verizon (copper service)",
+          "value": [
+            "Comcast",
+            "Frontier/Verizon"
+          ],
+          "agrees": true
+        }
+      ]
+    },
+    "adep_planning_horizon": {
+      "value": "FY2022–FY2042 (25-year build-out)",
+      "source": "IIA Report Part 4",
+      "quote": "Infrastructure improvements have been grouped into projects to be completed in fiscal year (FY) 2022, 2027, 2032, 2037, and 2042, respectively.",
+      "corroboration": [
+        {
+          "source": "IIA Report Executive Summary",
+          "claim": "IIA Costs FY2022-FY2042: $4,502,466",
+          "value": "FY2022-FY2042",
+          "agrees": true
+        },
+        {
+          "source": "ADEP September 2017",
+          "claim": "Short Range (0-10 years), Mid Range (10-20 years), Long Range (20+ years)",
+          "value": "25-year planning horizon",
+          "agrees": true
+        }
+      ]
+    },
+    "adep_total_new_facility_projects": {
+      "value": 26,
+      "source": "IIA Report Part 4 project listing",
+      "quote": "Note that projects have been re-numbered from the ADEP to correspond to the newly established CBP priorities.",
+      "notes": "26 infrastructure-affecting projects across 5 fiscal year segments: #2-5 (FY2022), #6-13 (FY2027), #14-21 (FY2032), #22 (FY2037), #23-26 (FY2042). Some ADEP projects excluded (no infrastructure impact).",
+      "corroboration": [
+        {
+          "source": "IIA Report Cost Estimate, Project Summary",
+          "claim": "15 projects listed with costs",
+          "value": "15 infrastructure-improvement work packages",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "notes": "This is a planning/study engagement, not a traditional design phase. The study (IIA) was produced under a contract to IntegriWard LLC, with GORDON and BFA as subconsultants. Contract value not stated in source documents.",
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-05",
+        "source": "IIA Report cover page",
+        "quote": "MAY 2021\n95% SUBMISSION"
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "DRAFT SOW §Part 3.C",
+        "quote": "Period of Performance. PoP is 180 days after NTP."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "notes": "Not applicable. This is a planning study; construction of the recommended improvements would be separate future projects.",
+      "contract_value": {
+        "value": null,
+        "status": "explicit_null",
+        "source": "IIA Report cover page",
+        "quote": "95% SUBMISSION"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dhs"
+    ],
+    "program_type": [
+      "military_training",
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [
+      "military_training"
+    ],
+    "disciplines": [
+      "civil_engineering",
+      "electrical_engineering",
+      "mechanical_engineering",
+      "plumbing_engineering",
+      "telecommunications_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_utilities",
+      "electrical_power_distribution",
+      "electrical_substation_utility",
+      "hvac_design",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "telecom_structured_cabling"
+    ],
+    "building_systems": [
+      "site_utilities",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "electrical_service",
+      "electrical_distribution",
+      "telecom_structured_cabling",
+      "site_stormwater_bmps"
+    ],
+    "construction_scope": [
+      "utilities_scope",
+      "plumbing_scope",
+      "electrical_power",
+      "communications_scope",
+      "existing_conditions"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ],
+    "notes": "BFA served as subconsultant under GORDON (prime A/E) which was subcontracted to IntegriWard LLC (prime contractor to CBP). Delivery method reflects cost estimate basis (design-bid-build for future capital improvements); the study itself was procured as a service contract."
+  },
+  "tenant_freeform_tags": [
+    "harpers_ferry",
+    "west_virginia",
+    "cbp_atc",
+    "infrastructure_study",
+    "campus_master_plan",
+    "federal_dhs",
+    "utility_analysis",
+    "planning_study",
+    "potable_water",
+    "sanitary_sewer",
+    "electrical_distribution",
+    "telecom",
+    "gordon_joint_venture",
+    "integriward",
+    "adep"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Ian Peralta",
+      "role_on_project": "BFA project representative, electrical and communications systems analysis",
+      "source": "Utility Charrette Minutes and 50% Submission Minutes attendee lists"
+    }
+  ],
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "ES-101",
+        "title": "ELECTRICAL SITE PLAN — EXISTING CONDITIONS (Upper Campus / North)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Overall electrical and communications site plan at 1\"=80' scale, upper campus area. Shows existing power manholes (numbered P1-P##) and communication manholes/handholes (CP##) distributed throughout the upper campus buildings: Warehouse/Receiving, Maintenance Yard, Welcome Center, Medical Services, White House, Potomac Hall, Dining Facility, Lodge & Conference Center, Pump Building, Helipad, and surrounding areas. Buildings shown in solid black fill. US Route 340 along northern edge. Electrical ductbank infrastructure mapped throughout campus. Prepared by Bowman Foster & Associates (BFA) and GORDON, June 2021, Job 2566-0112."
+      },
+      {
+        "sheet_number": "ES-102",
+        "title": "ELECTRICAL SITE PLAN — EXISTING CONDITIONS (Lower Campus / South / Training Area)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of electrical site plan (matchline from ES-101) at 1\"=80' scale. Shows lower training campus: Tactical Training Center, Admin Building, Land Border Training facility, Shoot House/Armory area, WWTP, Indoor Range, and Outdoor Range. Communication handholes (CP13-CP24 area) and power handholes (P25-P65 area) distributed throughout. WWTP visible at lower left. North arrow shown. This is the section of campus with the firing ranges, training buildings, and the planned expansion area."
+      },
+      {
+        "sheet_number": "E-501",
+        "title": "POWER MANHOLE AND HANDHOLE DETAILS",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Detail sheet showing cross-section plans of 3 power manholes (#1, #2, #3) and power handholes #P1 through #P25. Scale 1/4\"=1' for manholes, 3/8\"=1' for handholes. Each manhole plan shows conduit stub-outs with reference to nearby buildings (Welcome Center, Potomac Blvd., Dining Facility, Pump House). Handholes appear as simple box outlines with conduit knock-outs. Confirms multiple ductbank runs throughout campus connecting facilities."
+      },
+      {
+        "sheet_number": "E-502",
+        "title": "POWER HANDHOLE DETAILS (Continued)",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Continuation of power handhole detail sheet, handholes P25A through P63. Scale 3/8\"=1'. One handhole (P40) is labeled as 'COMMUNICATION HANDHOLE' suggesting a labeling discrepancy or mixed-use handhole. Detail level consistent with E-501. Large number of handholes (63+ units) reflects extensive campus underground ductbank infrastructure."
+      },
+      {
+        "sheet_number": "E-503",
+        "title": "COMMUNICATION MANHOLE DETAILS",
+        "discipline": "telecommunications_engineering",
+        "reading_notes": "Communication manhole detail plans at 1/4\"=1' scale. Shows manholes A through G2. Each manhole shows conduit stub-outs with labels referencing nearby buildings (Welcome Center, Allegiant Compound, Dining Facility, Potomac Bldg., White House, Medical Bldg., Pump House). Manholes are the 12'Lx8'Wx8'H minimum size referenced in the IIA report. Confirms Comcast/Frontier service topology with Potomac Hall as main hub."
+      },
+      {
+        "sheet_number": "E-504",
+        "title": "COMMUNICATION MANHOLE DETAILS (Continued)",
+        "discipline": "telecommunications_engineering",
+        "reading_notes": "Communication manhole details, manholes H through S (including L1, L2, L3, G1, G2 variants). References buildings served: Dorm Bldg., Dining Facility, Admin Bldg., Shower/Locker Room Bldg., Warehouse/Receiving Bldg. Confirms dormitory and dining facility connectivity in communications infrastructure. Transformer (XFMR) referenced near Communication Manhole #P on this sheet."
+      },
+      {
+        "sheet_number": "E-505",
+        "title": "COMMUNICATION HANDHOLE DETAILS",
+        "discipline": "telecommunications_engineering",
+        "reading_notes": "Communication handhole details at 3/8\"=1' scale, handholes CP1 through CP24, M, N, O, and P. Most handholes show fiber/coax entries with connectors visible in the plans. Buildings referenced: Dorm Bldg., Shower/Locker Room Bldg., Admin Bldg. (beside Shower/Locker Room Bldg.). Handhole P shows a transformer (XFMR) connection between Dining Facility and Dorm Bldg. — suggests campus distribution hub configuration."
+      }
+    ],
+    "facts_derived": {
+      "campus_area_acres": {
+        "value": 116,
+        "unit": "acres",
+        "source": "IIA Report Part 2",
+        "quote": "The approximate area of the campus, excluding the wooded areas and the expansion south of the firing range is 116 acres.",
+        "sheets": []
+      },
+      "total_infrastructure_cost_projected": {
+        "value": 4502466,
+        "unit": "USD",
+        "source": "IIA Cost Estimate Project Summary",
+        "quote": "TOTAL CONSTRUCTION COST $4,502,466",
+        "sheets": []
+      },
+      "wwtp_capacity": {
+        "value": 40000,
+        "unit": "gpd",
+        "source": "IIA Report Part 2",
+        "quote": "40,000 Gallon Per Day (GPD) Wastewater Treatment Plant (WWTP)",
+        "sheets": []
+      },
+      "electrical_service_voltage": {
+        "value": "12.5kV, 3-phase",
+        "source": "IIA Report Part 2",
+        "quote": "the primary service is a 12.5kV, 3-phase service from the overhead distribution system",
+        "sheets": [
+          "ES-101",
+          "ES-102"
+        ]
+      },
+      "potable_water_supply": {
+        "value": "Jefferson Utilities 8\" water main; water softening treatment at pump building",
+        "source": "IIA Report Part 2",
+        "quote": "Jefferson Utilities - 8\" water main",
+        "sheets": []
+      },
+      "mep_system_inventory": {
+        "utilities": [
+          "Potable water: Jefferson Utilities 8\" supply, water softening at pump building, 40,000 GPD average demand design",
+          "Fire suppression: Shared 8\" main with potable; minimum 500 GPM fire flow requirement",
+          "Irrigation: 4\" irrigation main loop (partially installed); grey water system non-functional",
+          "Sanitary sewer: 40,000 GPD on-site WWTP; central pump station 45,000 GPD capacity; 8\" gravity mains",
+          "Electrical: 12.5kV 3-phase Potomac Edison service; at/near capacity; 63+ power manholes/handholes documented",
+          "Communications: Comcast coax/fiber + Frontier/Verizon copper; Potomac Hall as main hub; extensive ductbank infrastructure"
+        ]
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.project_number_client",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "GORDON project documentation (Utility Charrette Minutes, drawing sheets)",
+          "value": "2566-0112"
+        },
+        {
+          "source": "OCMI Cost Estimate cover",
+          "value": "20406.000 (OCMI's own job number)"
+        }
+      ],
+      "resolution_chosen": "GORDON project number 2566-0112",
+      "rationale": "GORDON project number (2566-0112) appears across most documents including meeting minutes and drawing sheets. 20406.000 is the cost estimator's (OCMI) own internal reference, not the client project number."
+    },
+    {
+      "field_path": "facts.adep_total_new_facility_projects",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "ADEP 2017 (original)",
+          "value": "28 total projects"
+        },
+        {
+          "source": "IIA Report 95% submission (2021)",
+          "value": "26 projects with infrastructure improvements (renumbered from ADEP)"
+        }
+      ],
+      "resolution_chosen": "26 (IIA 95% report)",
+      "rationale": "Several ADEP projects were determined to have no infrastructure improvement impacts (items #1, #3, #5, #6, #7 in the IIA's renumbering) and were excluded from the cost estimate. The IIA reflects current CBP priorities as of 2021."
+    }
+  ],
+  "project_narrative_summary": "This project involved BFA (Bowman Foster & Associates) as a subconsultant to GORDON Engineering and IntegriWard LLC to perform an Infrastructure Improvements Analysis (IIA) for the U.S. Customs and Border Protection Advanced Training Center (ATC) in Harpers Ferry, West Virginia. The IIA evaluated the ATC campus's existing utility infrastructure — potable water, fire suppression, irrigation, sanitary sewer, electrical, and communications systems — and developed a phased improvement plan to support the campus's 25-year build-out as defined in the 2017 Area Development Execution Plan (ADEP). BFA's specific scope was the electrical and communications systems analysis. The study identified a significant electrical capacity constraint (the existing 12.5kV Potomac Edison circuit at/near capacity), developed a ductbank mapping of over 63 power manholes/handholes and numerous communications infrastructure nodes, and recommended phased electrical infrastructure improvements costing approximately $4.5 million across five fiscal year windows (FY2022–FY2042). The 95% submission was delivered in May 2021.",
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md"
+    }
+  }
+}

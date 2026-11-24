@@ -1,0 +1,7 @@
+The fire protection engineering scope addressed life safety continuity within an active hospital environment throughout the ceiling demolition and replacement work in the ER waiting room.
+
+The existing wet pipe sprinkler system — served by a Simplex 4100ES fire alarm panel and Aurora 481BF fire pump — was designed to remain in service. The design required coordinated temporary fire protection measures and formal reinstatement procedures to govern the ceiling demolition phase, ensuring the active Emergency Department maintained continuous fire suppression coverage throughout construction. Upon completion of ceiling work, sprinkler heads were reinstated with heads matching the existing manufacturer, type, finish, and temperature rating — a requirement that maintained system consistency and avoided mixed-vintage head conditions in a healthcare occupancy.
+
+Fire alarm smoke detectors and notification appliances were temporarily removed and reinstalled at existing locations in coordination with the ceiling replacement sequence.
+
+For Option 1 (Milk Technology Room, not exercised), the design specified a sprinkler layout modification per NFPA 13 — Light Hazard classification for the Milk Room area and Ordinary Hazard for the new LDR Supply Room created by the partition work. A 1-hour fire-rated smoke barrier and a 45-minute self-closing door were specified for the LDR Supply Room per Life Safety Code (LSC) 18.3.2.1.2. This option was not exercised and these modifications were not constructed.

@@ -1,0 +1,1060 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "wichita_gamma_camera",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/36C25525R0048_2 MoonTree 7-14-2025.pdf",
+      "type": "contract",
+      "sha256": "0c95f9442a57c6947f55f0082869ad8be547de57df07d01f5e701e8b32e38699",
+      "included": true,
+      "notes": "SF-252 A-E contract + Supplement B scope of work, solicitation clauses, price schedule. Primary source for project name, client, location, scope, budget, procurement type, and design schedule."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/25-042A.2026.03.17.100% SUBMITTAL LOAD ANALYSIS CALCULATION.pdf",
+      "type": "submittal",
+      "sha256": "a4299f5c062a749c5c3e7de55468855dadcc80faee5363380cb45b6b4061d463",
+      "included": true,
+      "notes": "100% submittal electrical load analysis by Bowman, Foster & Associates. Project No. 25-042A, prepared by IEP, date 02/12/26. Confirms project number, firm, and electrical panel loads for cath lab spaces."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/25-042A.2026.03.17.100% SUBMITTAL WICHITA CATH LAB HVAC LOAD CALCULATION OUTPUT.pdf",
+      "type": "submittal",
+      "sha256": "5a2cb73c00528b69f2654598bb8c6a26fc35e40d717977d12ce9b8c0101a4813",
+      "included": true,
+      "notes": "TRACE 700 HVAC load calculation output. Confirms rooms served: 215-2 Sterile Supplies, C-2-3 Corridor, 217-2 Control Room, 217A-2 Clean Utility, 216A-2 Equipment Room, 218-2 Cath Lab 1, 216-2 Cath Lab 2. Total floor area ~1,638 SF in model. AHU-1 serves system."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/25-042A.2026.03.17.100% SUBMITTAL VOLTAGE DROP CALCULATION.pdf",
+      "type": "submittal",
+      "sha256": "bfff9ebd40df2990884961838911a032ea1808335e01a159e1dc581449a03f20",
+      "included": true,
+      "notes": "100% submittal voltage drop calculations. Confirms 75kVA UPS units for Cath Lab #1 and Cath Lab #2, 480V 3-phase feeds."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/25-042A.2026.03.17.100% SUBMITTAL MECHANICAL EQUIPMENT CATALOG CUTS.pdf",
+      "type": "submittal",
+      "sha256": "100073bd3b984cf7a72c927ccd39ef2e19fdcb1f16cb0b1594a3c3d7883f640e",
+      "included": true,
+      "notes": "Mechanical equipment catalog cuts for 100% submittal."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/25-042A.2026.03.17.100% SUBMITTAL LIGHTING CALCULATIONS.pdf",
+      "type": "submittal",
+      "sha256": "8f729e2b21e591b3e6a0fd984d5a8c6bdf075e3917dc536703c283e8f1f98ec7",
+      "included": true,
+      "notes": "100% submittal lighting calculations."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/25-042A.2026.03.17.100% SUBMITTAL LIGHTING FIXTURE CUTSHEETS.pdf",
+      "type": "submittal",
+      "sha256": "afec53dcd29e967c79530c35aeb0410a2567d6f1fcc45a21e1bb4a605efa8406",
+      "included": true,
+      "notes": "100% submittal lighting fixture cut sheets."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/230923 - Direct Digital Control for HVAC.pdf",
+      "type": "spec_book",
+      "sha256": "4ba14bc47fbb66a08d84f7dd77a7e7678d3c87618c217fe9c5d28c7e53db9221",
+      "included": true,
+      "notes": "VA spec section 23 09 23, DDC/BAS for HVAC. Confirms VAMC Wichita, KS. Native BACnet/IP, integration with existing DDC system."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/238100 - Decentralized Unitary HVAC Equipment.pdf",
+      "type": "spec_book",
+      "sha256": "0174ca0f6d24406657b82e50fb342d428807bfcf6b55fb1524ce38c4b2f6bc43",
+      "included": true,
+      "notes": "VA spec section 238100, decentralized unitary HVAC equipment (FCU, split systems)."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/230593 - Testing, Adjusting and Balancing for HVAC.pdf",
+      "type": "spec_book",
+      "sha256": "b3ca611a733d2a3d8178f29e08fef35df7b361da4aa04fcd91fc1ff6f1a975b3",
+      "included": true,
+      "notes": "VA spec section 230593, TAB for HVAC."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/230711 - HVAC and Boiler Plant Insulation.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 230711, HVAC/boiler insulation. Not individually hashed."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/232300 - Refrigerant Piping.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 232300, refrigerant piping."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/233100 - HVAC Ducts and Casings.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 233100, HVAC ductwork."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/233700 - Air Outlets and Inlets.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 233700, air outlets and inlets."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/226200 - Vacuum Systems for Healthcare Facilities.pdf",
+      "type": "spec_book",
+      "sha256": "45b47ba2b3c189b785e08ccfdad4b3dc2477cc010279b6c09723ccf8effa248d",
+      "included": true,
+      "notes": "VA spec section 226200, medical vacuum systems."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/226300 - Gas Systems for Healthcare Facilities.pdf",
+      "type": "spec_book",
+      "sha256": "b06d9924c57b43cd45bdeacd3ba83e0f3164cea945a58a51754f0c2750c476fc",
+      "included": true,
+      "notes": "VA spec section 226300, medical gas systems."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/260511 - Requirements for Electrical Installation.pdf",
+      "type": "spec_book",
+      "sha256": "57a9d74de0ae4e5b5fba6331b961ad295b0da10b0be198bafdeec6e07c762500",
+      "included": true,
+      "notes": "VA spec section 260511, general electrical installation requirements."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/260519 - Low-Voltage Electrical Power Conductors and Cables.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 260519."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/260526 - Grounding and Bonding for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 260526, grounding and bonding."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/260533 - Raceway and Boxes for Electrical Systems.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 260533, raceway and boxes."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/262416 - Panelboards.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 262416, panelboards."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/262726 - Wiring Devices.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 262726, wiring devices."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/262921 - Enclosed Switches and Circuit Breakers.pdf",
+      "type": "spec_book",
+      "sha256": null,
+      "included": true,
+      "notes": "VA spec section 262921, enclosed switches and circuit breakers."
+    },
+    {
+      "path": "00_admin/reference_projects/veterans_affairs/wichita_gamma_camera/265100 - Interior Lighting.pdf",
+      "type": "spec_book",
+      "sha256": "519b486b48fb6087fee6ffbcb21f94ff18515ff1259740eb82b94924ba402c00",
+      "included": true,
+      "notes": "VA spec section 265100, interior lighting."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No separate BOD present; Supplement B within the contract document serves as the scope/design basis. No drawing PDFs in folder — drawings are referenced in submittals but not staged here. Spec book sections (23 files) and calculation submittals (5 files) are the primary technical content. The 100% submittal calculation PDFs are text-bearing and fully extracted."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Prepare Site for Cath Lab Equipment, Robert J. Dole VA Medical Center",
+      "source": "Contract 36C25525R0048, SF-252 item 5",
+      "quote": "589A7-25-503 Prepare Site for Cath Lab Equipment\nRobert J. Dole VA Medical Center",
+      "corroboration": [
+        {
+          "source": "Contract 36C25525R0048, SF-252 item 5",
+          "claim": "589A7-25-503 Prepare Site for Cath Lab Equipment, Robert J. Dole VA Medical Center",
+          "agrees": true
+        },
+        {
+          "source": "Supplement B cover, CONTRACT NUMBER 589A7-25-503",
+          "claim": "Prepare Site for Cath Lab Equipment",
+          "agrees": true
+        },
+        {
+          "source": "Load Analysis Calculation, Project Name field",
+          "claim": "WICHITA CATH LABS",
+          "agrees": true,
+          "note": "Shortened name consistent with same project"
+        },
+        {
+          "source": "HVAC Load Calc Output, Project Name field",
+          "claim": "WITCHITA VA CATH LAB PROJECT",
+          "agrees": true,
+          "note": "Misspelling of Wichita in TRACE 700 dataset; same project"
+        },
+        {
+          "source": "Folder slug",
+          "claim": "wichita_gamma_camera",
+          "agrees": false,
+          "note": "Folder name references 'gamma camera' but all documents consistently reference 'Cath Lab' — see conflict flag"
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Department of Veterans Affairs",
+      "source": "Contract 36C25525R0048, SF-252 item 4",
+      "quote": "Department of Veterans Affairs\nNetwork Contracting Office (NCO) 15\n3450 S 4th Street Trafficway\nLeavenworth KS 66048",
+      "corroboration": [
+        {
+          "source": "Contract 36C25525R0048, SF-252 item 4",
+          "claim": "Department of Veterans Affairs, NCO 15",
+          "agrees": true
+        },
+        {
+          "source": "Spec section 23 09 23 header",
+          "claim": "VAMC Wichita, KS",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of Veterans Affairs — Robert J. Dole VA Medical Center",
+      "source": "Contract 36C25525R0048, SF-252 item 5 and Supplement B",
+      "quote": "Robert J. Dole VA Medical Center\n5500 E Kellogg Dr\nWichita, KS 67218",
+      "corroboration": [
+        {
+          "source": "Contract 36C25525R0048, SF-252 item 5",
+          "claim": "Robert J. Dole VA Medical Center, 5500 E Kellogg Dr, Wichita KS 67218",
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calc Output, Building Owner field",
+          "claim": "VETERANS ADMINISTRATION",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Wichita",
+      "state": "KS",
+      "country": "US",
+      "facility_address": "5500 E Kellogg Dr, Wichita, KS 67218",
+      "facility_name": "Robert J. Dole VA Medical Center",
+      "source": "Contract 36C25525R0048, SF-252 item 5",
+      "quote": "Robert J. Dole VA Medical Center\n5500 E Kellogg Dr\nWichita, KS 67218",
+      "corroboration": [
+        {
+          "source": "Contract 36C25525R0048, SF-252 item 5",
+          "claim": "5500 E Kellogg Dr, Wichita, KS 67218",
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calc Output, Location field",
+          "claim": "Wichita, Kansas",
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calc Output, Latitude field",
+          "claim": "37.7 deg (consistent with Wichita, KS)",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "589A7-25-503",
+      "source": "Contract 36C25525R0048, Supplement B cover",
+      "quote": "PROJECT NUMBER 589A7-25-503",
+      "corroboration": [
+        {
+          "source": "Contract 36C25525R0048, SF-252 item 5",
+          "claim": "589A7-25-503 Prepare Site for Cath Lab Equipment",
+          "agrees": true
+        },
+        {
+          "source": "All Supplement B headers",
+          "claim": "PROJECT NUMBER 589A7-25-503",
+          "agrees": true
+        }
+      ]
+    },
+    "bfa_project_number": {
+      "value": "25-042A",
+      "source": "Load Analysis Calculation submittal, Project No. field",
+      "quote": "Project No.: 25-042A",
+      "corroboration": [
+        {
+          "source": "Load Analysis Calculation",
+          "claim": "Project No.: 25-042A",
+          "agrees": true
+        },
+        {
+          "source": "Voltage Drop Calculation",
+          "claim": "Project No.: 25-042A",
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calculation Output",
+          "claim": "Project No.: 25-042A",
+          "agrees": true
+        },
+        {
+          "source": "Submittal file name prefix",
+          "claim": "25-042A",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "36C25525R0048",
+      "source": "Contract 36C25525R0048, SF-252 item 1",
+      "quote": "36C25525R0048",
+      "corroboration": [
+        {
+          "source": "Contract SF-252 item 1",
+          "claim": "36C25525R0048",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Contract references IDIQ/task order structure (NCO 15) but no specific task order number is visible in the documents staged — the SF-252 contract number appears to be the award instrument."
+    },
+    "square_footage": {
+      "value": 1500,
+      "unit": "gsf",
+      "source": "Contract Supplement B, Section I",
+      "quote": "The renovation will renovate approximately 1500 SF of space to be used as image guided catheterization laboratory suites.",
+      "corroboration": [
+        {
+          "source": "Supplement B Section I",
+          "claim": "approximately 1500 SF",
+          "value": 1500,
+          "agrees": true
+        },
+        {
+          "source": "Supplement B Section II.1",
+          "claim": "This design will renovate approximately 1500 SF of space",
+          "value": 1500,
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calc (TRACE 700), Load/Airflow Summary",
+          "claim": "Total modeled floor area: ~1,638 SF (sum of room areas in model)",
+          "value": 1638,
+          "agrees": false,
+          "note": "Load calc model sums: 99+313+412+205+70+275+275+100+100+100+436+436+415+1638 SF — the top-level entry '1638 SF' appears to be a sub-system sum. The modeled space area is approximately consistent with 1500 SF for primary procedure spaces plus support rooms. Minor discrepancy; see conflict flag."
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 850000,
+      "currency": "USD",
+      "source": "Contract 36C25525R0048, Supplement B Design Funding Limitation header and FAR 52.236-22",
+      "quote": "CONSTRUCTION BUDGET/DESIGN LIMITATION: $850,000",
+      "corroboration": [
+        {
+          "source": "Supplement B header",
+          "claim": "$850,000",
+          "value": 850000,
+          "agrees": true
+        },
+        {
+          "source": "FAR 52.236-22 clause (c)",
+          "claim": "The estimated construction contract price for the project described in this contract is $850,000.",
+          "value": 850000,
+          "agrees": true
+        }
+      ]
+    },
+    "design_completion_period_days": {
+      "value": 209,
+      "source": "Contract Supplement B, Design Timeframe section",
+      "quote": "DESIGN TIMEFRAME: A/E shall deliver final construction documents No Later Than (NLT) 209 days after the Award/Notice to Proceed Letter.",
+      "corroboration": [
+        {
+          "source": "Supplement B Design Timeframe",
+          "claim": "209 days after NTP",
+          "agrees": true
+        },
+        {
+          "source": "SF-252 contract body",
+          "claim": "Design completion period: 209 calendar days after Notice to Proceed (NTP).",
+          "agrees": true
+        },
+        {
+          "source": "Supplement B B5 schedule table",
+          "claim": "Record Document Submittal: 209 calendar days from NTP",
+          "agrees": true
+        }
+      ]
+    },
+    "proposal_due_date": {
+      "value": "2025-07-21",
+      "source": "Contract 36C25525R0048, contract body",
+      "quote": "Price proposal and Letter of Understanding due July 21, 2025 at 2:00 PM Central.",
+      "corroboration": [
+        {
+          "source": "SF-252 contract body",
+          "claim": "July 21, 2025 at 2:00 PM Central",
+          "agrees": true
+        }
+      ]
+    },
+    "awarded_date": {
+      "value": null,
+      "status": "missing",
+      "notes": "SF-252 item 2 (Date of Contract) is blank in the staged document; no executed contract date visible."
+    },
+    "submittal_date_100pct": {
+      "value": "2026-03-17",
+      "source": "Submittal file names",
+      "quote": "25-042A.2026.03.17.100% SUBMITTAL",
+      "corroboration": [
+        {
+          "source": "All five 100% submittal PDFs, file name prefix",
+          "claim": "2026.03.17 = March 17, 2026",
+          "agrees": true
+        }
+      ]
+    },
+    "prime_contractor": {
+      "value": "Moon Tree LLC",
+      "source": "Contract 36C25525R0048, SF-252 item 3A",
+      "quote": "MOON TREE LLC",
+      "corroboration": [
+        {
+          "source": "SF-252 item 3A",
+          "claim": "MOON TREE LLC",
+          "agrees": true
+        },
+        {
+          "source": "SF-252 item 3C",
+          "claim": "1808 DEEP CREEK RD, OKLAHOMA CITY OK 73131",
+          "agrees": true,
+          "note": "Address of Moon Tree LLC"
+        }
+      ]
+    },
+    "design_subconsultant_mep": {
+      "value": "Bowman, Foster & Associates, PC",
+      "source": "Load Analysis Calculation submittal header",
+      "quote": "BOWMAN, FOSTER & ASSOCIATES, PC\n5544 Greenwich Rd., Ste. 310\nVirginia Beach, VA 23462",
+      "corroboration": [
+        {
+          "source": "Load Analysis Calculation",
+          "claim": "BOWMAN, FOSTER & ASSOCIATES, PC, Virginia Beach VA",
+          "agrees": true
+        },
+        {
+          "source": "Voltage Drop Calculation",
+          "claim": "Bowman, Foster & Associates, PC",
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calc Output",
+          "claim": "Bowman, Foster & Associates, Inc.",
+          "agrees": true,
+          "note": "Slight variation: 'Inc.' vs 'PC' — likely same firm; see minor conflict flag"
+        }
+      ]
+    },
+    "building_number": {
+      "value": "Building 2",
+      "source": "Contract Supplement B, Section II.1",
+      "quote": "A/E shall design the renovation of existing space in building 2.",
+      "corroboration": [
+        {
+          "source": "Supplement B Section II.1",
+          "claim": "building 2",
+          "agrees": true
+        },
+        {
+          "source": "Supplement B Section VII.1",
+          "claim": "The existing drawings for building 24, 51, and 53 included within the limits of this project",
+          "agrees": false,
+          "note": "Sec VII also references buildings 24, 51, 53 as having reference drawings for context; primary work is in building 2 per Sec II. Minor conflict — buildings 24/51/53 appear to be adjacent reference buildings, not the work location. See conflict flag."
+        }
+      ]
+    },
+    "scope_description": {
+      "value": "Renovation of approximately 1,500 SF of existing space in Building 2 to create image-guided catheterization laboratory suites including associated control room and equipment rooms. Scope includes removal of existing cath lab imaging equipment and site preparation for new imaging equipment installation. Includes mechanical, electrical, plumbing, fire protection, architectural, structural, and hazardous materials abatement (asbestos and lead) design.",
+      "source": "Contract Supplement B, Sections I and II",
+      "quote": "The renovation will renovate approximately 1500 SF of space to be used as image guided catheterization laboratory suites.",
+      "corroboration": [
+        {
+          "source": "Supplement B Section I",
+          "claim": "approximately 1500 SF... image guided catheterization laboratory suites",
+          "agrees": true
+        },
+        {
+          "source": "Supplement B Section II.1",
+          "claim": "will include the associated control room and equipment rooms... removal of existing image guided catheterization laboratory equipment... prepare the site for the installation of new image guided catheterization laboratory equipment",
+          "agrees": true
+        }
+      ]
+    },
+    "rooms_in_scope": {
+      "value": [
+        "Cath Lab 1 (218-2)",
+        "Cath Lab 2 (216-2)",
+        "Control Room (217-2)",
+        "Clean Utility (217A-2)",
+        "Equipment Room (216A-2)",
+        "Sterile Supplies (215-2)",
+        "Corridor (C-2-3)"
+      ],
+      "source": "HVAC Load Calc Output (TRACE 700), Load/Airflow Summary",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "HVAC Load Calc Output — space names in model",
+          "claim": "215-2 Sterile Supplies, C-2-3 Corridor, 217-2 Control Room, 217A-2 Clean Utility, 216A-2 Equipment Room, 218-2 Cath Lab 1, 216-2 Cath Lab 2",
+          "agrees": true
+        },
+        {
+          "source": "Load Analysis Calculation (Electrical)",
+          "claim": "CATH LAB #1 LTS, CATH LAB #2 LTS, CONTROL, CLEAN, STOR LTS, RECOVERY BEDS, PREP BEDS",
+          "agrees": true
+        }
+      ]
+    },
+    "hvac_system": {
+      "value": "AHU-1 serving cath lab suite via VAV system; split system fan coil units (FCU-1) and air-cooled condensing units (ACCU-1) for supplemental cooling; DDC/BAS integration with existing BACnet/IP system",
+      "source": "Load Analysis Calculation (PNL 2Q3) and HVAC Load Calc Output",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "Load Analysis Calculation, PNL 2Q3",
+          "claim": "BCU-1, AHU-1 (480V 3-phase), RF-1, FCU-1, ACCU-1 connected to existing panel",
+          "agrees": true
+        },
+        {
+          "source": "HVAC Load Calc Output",
+          "claim": "AHU-1 serves system at 4,003 CFM peak cooling; 50,098 Btu/h sensible coil cooling load",
+          "agrees": true
+        },
+        {
+          "source": "Spec 23 09 23 DDC",
+          "claim": "Native BACnet/IP DDC integration with existing VAMC system",
+          "agrees": true
+        },
+        {
+          "source": "Spec 238100 Decentralized Unitary HVAC Equipment",
+          "claim": "FCU and split system equipment specified",
+          "agrees": true
+        }
+      ]
+    },
+    "electrical_system": {
+      "value": "Existing panels PNL 2Q3 (100A, 480Y/277V 3-phase) and PNL 2X (200A, 208Y/120V 3-phase) fed; two 75kVA UPS units for Cath Lab #1 and Cath Lab #2 on 480V feeds; isolation panels IP-CL1 and IP-CL2 (30A, 208Y/120V 1-phase) for procedure room power; interior lighting per spec 265100",
+      "source": "Load Analysis Calculation and Voltage Drop Calculation submittals",
+      "quote": null,
+      "corroboration": [
+        {
+          "source": "Load Analysis Calculation, PNL 2Q3",
+          "claim": "100A, 480Y/277V, 3-phase, 4W; 36,134W total connected load; 28.9 kVA demand",
+          "agrees": true
+        },
+        {
+          "source": "Load Analysis Calculation, PNL 2X",
+          "claim": "200A, 208Y/120V, 3-phase, 4W; 49,083W total connected load; 39.3 kVA demand",
+          "agrees": true
+        },
+        {
+          "source": "Voltage Drop Calculation",
+          "claim": "75kVA UPS for Cath Lab #1, 80A/3P fed from UPS to cath lab on 4 AWG CU; 75kVA UPS for Cath Lab #2 similarly",
+          "agrees": true
+        }
+      ]
+    },
+    "medical_gas_system": {
+      "value": "Medical vacuum and medical gas systems per VA spec sections 226200 and 226300; monitoring integrated with BAS (low pressure/high pressure alarms per DDC spec 23 09 23)",
+      "source": "Spec sections 226200 and 226300; DDC spec 23 09 23 Section 1.1",
+      "quote": "Medical gas systems (if not bottled at point of use): low pressure and status alarms. Medical vacuum systems: high pressure and status alarms. Medical compressed air systems: low pressure and status alarms.",
+      "corroboration": [
+        {
+          "source": "Spec 226200 Vacuum Systems for Healthcare Facilities",
+          "claim": "Medical vacuum systems in scope",
+          "agrees": true
+        },
+        {
+          "source": "Spec 226300 Gas Systems for Healthcare Facilities",
+          "claim": "Medical gas systems in scope",
+          "agrees": true
+        },
+        {
+          "source": "Load Analysis Calculation, PNL 2X",
+          "claim": "MED GAS AREA ALARM load listed (120V, 1-phase, 2.5A = 300W)",
+          "agrees": true
+        }
+      ]
+    },
+    "procurement_set_aside": {
+      "value": "SDVOSB — Service-Disabled Veteran-Owned Small Business total set-aside",
+      "source": "Contract 36C25525R0048, contract body and VAAR 852.219-73",
+      "quote": "This procurement is restricted to Service-Disabled Veteran Owned Small Business (SDVOSB).",
+      "corroboration": [
+        {
+          "source": "SF-252 contract description block",
+          "claim": "restricted to Service-Disabled Veteran Owned Small Business (SDVOSB)",
+          "agrees": true
+        },
+        {
+          "source": "VAAR 852.219-73 heading",
+          "claim": "VA NOTICE OF TOTAL SET-ASIDE FOR CERTIFIED SERVICE-DISABLED VETERAN-OWNED SMALL BUSINESSES",
+          "agrees": true
+        }
+      ]
+    },
+    "naics_code": {
+      "value": "541310",
+      "source": "Contract 36C25525R0048, contract body",
+      "quote": "The NAICS Code for this acquisition is 541310 - ARCHITECTURAL SERVICES.",
+      "corroboration": [
+        {
+          "source": "SF-252 contract description",
+          "claim": "NAICS 541310 - ARCHITECTURAL SERVICES",
+          "agrees": true
+        },
+        {
+          "source": "FAR 52.204-8(a)(1)",
+          "claim": "NAICS code for this acquisition is 541310",
+          "agrees": true
+        }
+      ]
+    },
+    "small_business_size_standard": {
+      "value": "$12.5 Million",
+      "source": "Contract 36C25525R0048, FAR 52.204-8(a)(2)",
+      "quote": "The small business size standard is $12.5 Million.",
+      "corroboration": [
+        {
+          "source": "FAR 52.204-8(a)(2)",
+          "claim": "$12.5 Million",
+          "agrees": true
+        }
+      ]
+    },
+    "contracting_office": {
+      "value": "VA Network Contracting Office (NCO) 15",
+      "source": "Contract 36C25525R0048, SF-252 item 4",
+      "quote": "Network Contracting Office (NCO) 15\n3450 S 4th Street Trafficway\nLeavenworth KS 66048",
+      "corroboration": [
+        {
+          "source": "SF-252 item 4",
+          "claim": "NCO 15, Leavenworth KS",
+          "agrees": true
+        }
+      ]
+    },
+    "contracting_officer": {
+      "value": "Jennifer Hill",
+      "source": "Contract 36C25525R0048, contract body",
+      "quote": "The contracting Officer is Jennifer Hill, email: Jennifer.Hill@va.gov, phone number: (913) 946-1142.",
+      "corroboration": [
+        {
+          "source": "SF-252 contract body COR/CO paragraph",
+          "claim": "Jennifer Hill, Jennifer.Hill@va.gov",
+          "agrees": true
+        }
+      ]
+    },
+    "cor_name": {
+      "value": "Nick Howard",
+      "source": "Contract 36C25525R0048, contract body",
+      "quote": "The COR for this project is Nick Howard, email: nicholas.howard1@va.gov, Phone number:316-685-2221 x58005",
+      "corroboration": [
+        {
+          "source": "SF-252 contract body",
+          "claim": "Nick Howard, nicholas.howard1@va.gov",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_type": {
+      "value": "Firm-Fixed-Price",
+      "source": "Contract 36C25525R0048, FAR 52.216-1",
+      "quote": "The Government contemplates award of a Firm-Fixed-Price contract resulting from this solicitation.",
+      "corroboration": [
+        {
+          "source": "FAR 52.216-1 Type of Contract",
+          "claim": "Firm-Fixed-Price",
+          "agrees": true
+        }
+      ]
+    },
+    "asbestos_lead_abatement_required": {
+      "value": true,
+      "source": "Contract Supplement B, Sections I, II, B2",
+      "quote": "Hazardous materials (Asbestos, Lead, Mold, heavy metal and etc…) ARE included in this task order amendment.",
+      "corroboration": [
+        {
+          "source": "Supplement B B2 Industrial Hygiene Services",
+          "claim": "Asbestos, Lead, Mold ARE included",
+          "agrees": true
+        },
+        {
+          "source": "Supplement B Section III.4.b VPIH",
+          "claim": "This project will remove all lead and asbestos in areas being renovated.",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "A-E fee not filled in on SF-252 item 7 in the staged document; NCO 15 Form 10-6298 fee proposal referenced but not staged. Construction budget $850,000 but A-E design fee is separate and not captured."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "SF-252 item 2 (Date of Contract) is blank in staged document."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "209 days after NTP; NTP date unknown. Proposal due date was 2025-07-21. 100% submittal date of 2026-03-17 suggests design completion was approximately March 2026, consistent with ~8 months from award."
+      },
+      "contractual_duration_days": {
+        "value": 209,
+        "source": "Contract Supplement B, Design Timeframe",
+        "quote": "DESIGN TIMEFRAME: A/E shall deliver final construction documents No Later Than (NLT) 209 days after the Award/Notice to Proceed Letter."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "design_milestones": {
+        "35pct_schematic": {
+          "calendar_days_from_ntp": 30,
+          "source": "Supplement B B5 schedule",
+          "quote": "35% Schematic Design Submittal and Asbestos, Lead and Mold testing reports: 30 calendar days from NTP"
+        },
+        "65pct_cds": {
+          "calendar_days_from_ntp": 74,
+          "source": "Supplement B B5 schedule",
+          "quote": null
+        },
+        "95pct_cds": {
+          "calendar_days_from_ntp": 95,
+          "source": "Supplement B B5 schedule",
+          "quote": null
+        },
+        "100pct_cds_for_bidding": {
+          "calendar_days_from_ntp": 125,
+          "source": "Supplement B B5 schedule",
+          "quote": null
+        }
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction is a separate Firm-Fixed-Price contract to be awarded by VA to a GC. Construction budget/design limitation is $850,000. No construction contract documents staged."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Period of Performance Letter per Supplement B B4.7 to be provided by A-E at end of design period. Not in staged documents."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_va"
+    ],
+    "program_type": [
+      "healthcare_va_medical"
+    ],
+    "program_subtype": [
+      "healthcare_ambulatory"
+    ],
+    "disciplines": [
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "fire_protection_engineering",
+      "architecture",
+      "structural_engineering",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "hvac_design",
+      "hvac_controls",
+      "hvac_air_distribution",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "plumbing_medical_gas",
+      "fire_suppression_wet",
+      "fire_alarm"
+    ],
+    "building_systems": [
+      "hvac_air_distribution",
+      "hvac_controls_bas",
+      "hvac_packaged",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "plumbing_domestic_water",
+      "plumbing_sanitary_dwv",
+      "plumbing_medical_gas",
+      "fp_wet_sprinkler",
+      "fp_fire_alarm"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "mechanical_hvac",
+      "plumbing_scope",
+      "fire_suppression_scope",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "finishes_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal_sdvosb"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [
+    {
+      "scheme": "va_swam",
+      "description": "Prime contractor Moon Tree LLC is SDVOSB-certified. VA SDVOSB total set-aside per VAAR 852.219-73 and 38 U.S.C. 8127. BFA (Bowman, Foster & Associates) participates as MEP subconsultant under Moon Tree LLC.",
+      "source": "Contract 36C25525R0048, contract body and VAAR clauses",
+      "quote": "This procurement is restricted to Service-Disabled Veteran Owned Small Business (SDVOSB).",
+      "proposed_pct": null,
+      "final_pct": null
+    }
+  ],
+  "tenant_freeform_tags": [
+    "va_healthcare",
+    "cath_lab",
+    "wichita",
+    "kansas",
+    "nco15",
+    "sdvosb_prime",
+    "medical_imaging",
+    "renovation",
+    "hazmat_abatement",
+    "unistrut_healthcare",
+    "bowman_foster"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "IEP (initials only)",
+      "role_on_project": "engineer_of_record_electrical",
+      "notes": "Initials 'IEP' appear as 'Prepared By' on Load Analysis, Voltage Drop, and HVAC Load Calc submittals from Bowman, Foster & Associates."
+    }
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": 1500,
+        "unit": "gsf",
+        "source": "Contract Supplement B, Section I",
+        "quote": "The renovation will renovate approximately 1500 SF of space",
+        "sheets": [],
+        "notes": "No drawing PDFs staged. Square footage from text sources only."
+      },
+      "floor_count": {
+        "value": 1,
+        "source": "Supplement B Section II.1 and HVAC load calc room numbers (all prefix '2' indicating a single floor within Building 2)",
+        "quote": null,
+        "sheets": [],
+        "notes": "Inferred: all rooms in load calc carry Building 2 floor prefix; no evidence of multi-floor scope."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "AHU-1 central air handler serving cath lab suite (~4,003 CFM peak supply, ~50,098 Btu/h sensible cooling coil)",
+          "FCU-1 fan coil unit (480V 3-phase, connected to panel 2Q3)",
+          "ACCU-1 air-cooled condensing unit (277V 1-phase)",
+          "RF-1 refrigerant circuit/fan unit (480V 3-phase)",
+          "BCU-1 booster/cooling unit (480V 3-phase)",
+          "DDC/BAS: Native BACnet/IP integration with existing VAMC ECC (spec 23 09 23)",
+          "VAV system with terminal units per spec 23 36 00",
+          "HVAC insulation per spec 23 07 11",
+          "Refrigerant piping per spec 23 23 00",
+          "Ductwork per spec 23 31 00",
+          "Air outlets and inlets per spec 23 37 00",
+          "TAB per spec 23 05 93"
+        ],
+        "electrical": [
+          "Existing panel PNL 2Q3 (100A, 480Y/277V 3-phase) — loads added",
+          "Existing panel PNL 2X (200A, 208Y/120V 3-phase) — loads added",
+          "Two 75kVA UPS units (one per cath lab, 480V 3-phase feed)",
+          "Two isolation panels IP-CL1 and IP-CL2 (30A, 208Y/120V 1-phase) for procedure rooms",
+          "Interior lighting per spec 265100 (new fixtures for cath lab suites)",
+          "Panelboards per spec 262416",
+          "Wiring devices per spec 262726",
+          "Grounding and bonding per spec 260526",
+          "Raceway and boxes per spec 260533"
+        ],
+        "plumbing": [
+          "Medical vacuum systems per spec 226200",
+          "Medical gas systems per spec 226300",
+          "Domestic hot and cold water (implied by cath lab renovation scope)",
+          "Sanitary DWV (implied)"
+        ],
+        "fire_protection": [
+          "Fire suppression per referenced VA master specs (wet sprinkler modification implied by renovation scope)",
+          "Fire alarm integration referenced in DDC spec 23 09 23 (smoke detector shutdown interlocks)"
+        ]
+      }
+    },
+    "extraction_notes": "No drawing PDFs were staged in the project folder. All MEP system inventory is derived from calculation submittals and specification sections, not from drawing sheets. The absence of drawings is a significant gap — floor plans, demolition plans, mechanical/electrical plans would corroborate room counts, system layouts, and area figures. The folder name 'wichita_gamma_camera' may indicate that gamma camera equipment was considered (or is present on the same floor/area) but all contract documents consistently reference 'image guided catheterization laboratory' equipment — not a standalone gamma camera suite."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "project_slug vs. project_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Folder/slug name",
+          "value": "wichita_gamma_camera"
+        },
+        {
+          "source": "All contract documents",
+          "value": "Prepare Site for Cath Lab Equipment"
+        }
+      ],
+      "resolution_chosen": "Contract documents",
+      "rationale": "Every source document in the folder consistently refers to this as a catheterization lab (cath lab) project. The folder name 'wichita_gamma_camera' may reflect BFA's internal filing system for a related or predecessor project (gamma camera equipment is used in nuclear medicine, adjacent to cardiac cath labs in VA medical centers), OR the folder may have been misnamed. No document references a gamma camera. Using the contract project name as canonical."
+    },
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Contract Supplement B",
+          "value": 1500
+        },
+        {
+          "source": "HVAC Load Calc (TRACE 700) sum of room floor areas",
+          "value": "~1,638 (model internal sum)"
+        }
+      ],
+      "resolution_chosen": "Contract Supplement B (1,500 SF)",
+      "rationale": "The 1,500 SF figure is from the governing contract document and is explicitly stated as 'approximately'. The TRACE 700 load calc shows 1,638 SF as a total floor area entry for the AHU-1 system, but individual room areas in the model (99+313+412+70+205+275+275+100+100+436+415+100 = 2,800 SF listed items) suggest the 1,638 figure is a sub-system or partial zone sum, not a discrepant area. The discrepancy is within the 'approximately' qualifier and is architecturally plausible (1,500 SF net renovated vs. slightly larger served zone area). Minor severity."
+    },
+    {
+      "field_path": "facts.design_subconsultant_mep",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Load Analysis Calculation",
+          "value": "BOWMAN, FOSTER & ASSOCIATES, PC"
+        },
+        {
+          "source": "HVAC Load Calc Output (TRACE 700)",
+          "value": "Bowman, Foster & Associates, Inc."
+        }
+      ],
+      "resolution_chosen": "Bowman, Foster & Associates (either PC or Inc.)",
+      "rationale": "Same firm, same address (Virginia Beach, VA 23462). The 'PC' vs. 'Inc.' discrepancy is likely a data entry variation within the same organization (professional corporation vs. incorporated designation). Minor severity; no factual impact on firm identity."
+    },
+    {
+      "field_path": "facts.building_number",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "Supplement B Section II.1",
+          "value": "Building 2 (primary work location)"
+        },
+        {
+          "source": "Supplement B Section VII.1",
+          "value": "Buildings 24, 51, and 53 (reference drawings provided)"
+        }
+      ],
+      "resolution_chosen": "Building 2",
+      "rationale": "Section II clearly states the renovation is in 'building 2'. Section VII references buildings 24, 51, and 53 only as sources for reference/as-built drawings 'included within the limits of this project' — these appear to be adjacent buildings whose as-built drawings are provided as context for the A-E, not as buildings where construction work occurs. Minor severity."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    }
+  }
+}

@@ -1,0 +1,606 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": "24-068B",
+    "status": "present_with_value",
+    "source": "BOD cover page",
+    "quote": "BFA Project #24-068B"
+  },
+  "project_slug": "power_line_access_road",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/hpdta/power_line_access_road/2025.12.08 FINAL SUBMITTAL HPDTA Power Line Access Road Design BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "1385e118b097a82484a0ffe7814658030119a63bc8aa7d50f4192443697a32ea",
+      "included": true,
+      "notes": "Final Submittal BOD dated December 8, 2025. Covers General, Civil, Structural, and Electrical sections."
+    },
+    {
+      "path": "00_admin/reference_projects/hpdta/power_line_access_road/Exhibit D - SOW - Power Line Access Road Design_dated17Sept2024.pdf",
+      "type": "sow",
+      "sha256": "6e44a6555576f222afea3837057206d6186e2eada62ea303dc12ca5297b1daa5",
+      "included": true,
+      "notes": "Boeing Aerospace Operations SOW, Reference Number H-02-2025. Includes Attachment 01 (Koth Consulting drawings), Attachment 02 (Boeing drawings), Attachment 03 (NWP 14), Attachment 04 (Stormwater Permit). Original issue Sept 17, 2024; Rev 0 Oct 31, 2024."
+    },
+    {
+      "path": "00_admin/reference_projects/hpdta/power_line_access_road/Exhibit D - SOW Ref 2 - 2024 HPDTA EH&S Guide For Contractors_dated 1 JUNE 2024_Rev3.pdf",
+      "type": "unknown",
+      "flag_for_human_review": true,
+      "sha256": "c1b745c9ba266a6f3a4c95a70d2217311ab8f9f2edfe2c765137ce355d0de877",
+      "included": true,
+      "notes": "HPDTA Environmental, Health and Safety Guide for Contractors, Rev 3.0, June 1 2024. Referenced as an attachment to the SOW. Classified as 'unknown' as it is a base EHS guide, not a project-specific document type in the controlled list. Content is contractor safety and environmental requirements; not a material source of project facts."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "BOD and SOW present. SOW references Koth Consulting drawings (2012) and Boeing drawings (July 2024) as attachments, but those drawing files were not provided in the intake folder — only the SOW PDF which contains text descriptions and title-block content extracted from embedded drawing sheets. No separate drawing set PDF was available for medium-depth extraction."
+  },
+  "facts": {
+    "project_name": {
+      "value": "HPDTA Power Line Access Road Design",
+      "source": "BOD cover page",
+      "quote": "HPDTA POWER LINE ACCESS ROAD DESIGN",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "HPDTA POWER LINE ACCESS ROAD DESIGN",
+          "value": "HPDTA Power Line Access Road Design",
+          "agrees": true
+        },
+        {
+          "source": "SOW cover page",
+          "claim": "Power Line Access Road Design",
+          "value": "Power Line Access Road Design",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Boeing Aerospace Operations (BAO) / Harvey Point Defense Testing Activity (HPDTA)",
+      "source": "SOW §1 Introduction and §2 Background",
+      "quote": "The Boeing Aerospace Operations (BAO) Customer requested this service to satisfy the requirement for an A/E to provide design documents (IFC) for upgrading the existing overhead power line access road",
+      "corroboration": [
+        {
+          "source": "BOD cover page",
+          "claim": "Boeing Aerospace Operations, Harvey Point, NC",
+          "value": "Boeing Aerospace Operations",
+          "agrees": true
+        },
+        {
+          "source": "SOW §2 Background",
+          "claim": "The Boeing Aerospace Operations (BAO) Customer requested this service",
+          "value": "Boeing Aerospace Operations (BAO)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Harvey Point Defense Testing Activity (HPDTA) / US Government",
+      "source": "SOW §2 Background",
+      "quote": "All work will take place on a Department of Defense facility, Harvey Point Defense Testing Activity (HPDTA/Base), located at 2835 Harvey Point Road, Hertford, North Carolina.",
+      "corroboration": [
+        {
+          "source": "SOW §2 Background",
+          "claim": "Department of Defense facility, Harvey Point Defense Testing Activity (HPDTA/Base)",
+          "value": "DoD / HPDTA",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Hertford",
+      "state": "NC",
+      "country": "US",
+      "facility_name": "Harvey Point Defense Testing Activity (HPDTA)",
+      "facility_address": "2835 Harvey Point Road, Hertford, North Carolina 27944",
+      "source": "SOW §3 Place and Period of Performance",
+      "quote": "The work shall be performed in 2835 Harvey Point Road, Hertford, North Carolina, 27944",
+      "corroboration": [
+        {
+          "source": "SOW §3",
+          "claim": "2835 Harvey Point Road, Hertford, North Carolina, 27944",
+          "value": "2835 Harvey Point Road, Hertford, NC 27944",
+          "agrees": true
+        },
+        {
+          "source": "BOD cover page",
+          "claim": "Harvey Point, NC",
+          "value": "Harvey Point, NC",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-068B",
+      "source": "BOD cover page",
+      "quote": "BFA Project #24-068B"
+    },
+    "project_number_client": {
+      "value": "H-02-2025",
+      "source": "SOW cover page",
+      "quote": "Reference Number: H-02-2025"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Linear infrastructure project (access road); no building gross square footage applicable."
+    },
+    "linear_feet_roadway": {
+      "value": 1190,
+      "unit": "lf",
+      "source": "BOD Civil section",
+      "quote": "The scope includes the design of an 1,190 linear feet roadway.",
+      "corroboration": [
+        {
+          "source": "BOD Civil section",
+          "claim": "1,190 linear feet roadway",
+          "value": 1190,
+          "agrees": true
+        },
+        {
+          "source": "BOD General section",
+          "claim": "approximate 1,500 +/- LF access road extension",
+          "value": 1500,
+          "agrees": false,
+          "note": "General scope section cites 1,500 LF as the approximate total road extension from apron to roundabout; Civil section cites 1,190 LF as the civil design scope (gravel road + bridge portions). The 1,500 LF figure is the total corridor including the roundabout connection; the 1,190 LF is the designed roadway. Minor conflict — different scope boundaries."
+        },
+        {
+          "source": "SOW §5",
+          "claim": "The approximate new gravel roadway is 1,500 +/- LF (VIF)",
+          "value": 1500,
+          "agrees": false,
+          "note": "SOW cites 1,500 LF; BOD Civil finalizes 1,190 LF designed scope. BOD as final design document is authoritative for constructed length."
+        }
+      ]
+    },
+    "gravel_road_lf": {
+      "value": 657.5,
+      "unit": "lf",
+      "source": "BOD Civil section",
+      "quote": "This includes 657.5 L.F. of 20\" thick gravel roadway and 532.5 L.F. of bridge crossing the wetlands."
+    },
+    "bridge_total_lf": {
+      "value": 532.5,
+      "unit": "lf",
+      "source": "BOD Civil section",
+      "quote": "657.5 L.F. of 20\" thick gravel roadway and 532.5 L.F. of bridge crossing the wetlands."
+    },
+    "bridge_spans": {
+      "value": [
+        35,
+        175,
+        315
+      ],
+      "unit": "feet",
+      "count": 3,
+      "source": "BOD General section",
+      "quote": "three bridges are planned along the road with spans of 35 feet, 175 feet, and 315 feet.",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "three bridges are planned along the road with spans of 35 feet, 175 feet, and 315 feet",
+          "agrees": true
+        },
+        {
+          "source": "BOD Structural section",
+          "claim": "three bridges are planned along the road with spans of 35 feet, 175 feet, and 315 feet",
+          "agrees": true
+        }
+      ]
+    },
+    "vehicle_load_requirement": {
+      "value": 91000,
+      "unit": "lbs",
+      "source": "BOD General section",
+      "quote": "designed for heavy vehicles (minimum 91,000 LBS per the RFP)",
+      "corroboration": [
+        {
+          "source": "BOD General section",
+          "claim": "minimum 91,000 LBS per the RFP",
+          "value": 91000,
+          "agrees": true
+        },
+        {
+          "source": "SOW §5",
+          "claim": "The gravel road weight requirements for heavy equipment traffic shall be a minimum of 91K lbs.",
+          "value": 91000,
+          "agrees": true
+        },
+        {
+          "source": "BOD Structural section",
+          "claim": "designed for heavy vehicles (AASHTO HL-93 loading)",
+          "value": "AASHTO HL-93",
+          "agrees": true,
+          "note": "Structural section translates 91K lbs requirement to AASHTO HL-93 loading standard."
+        }
+      ]
+    },
+    "ductbank_conduits": {
+      "value": "4 × 4-inch PVC concrete encased ductbank, approximately 1,400 LF, with 7 manhole pull boxes",
+      "source": "SOW §5 Concrete Ductbank, PVC Conduits, and Pull Boxes",
+      "quote": "a four (4) 4\" dia. PVC conduits encased in a concrete ductbank (approx. 1,400 LF +/-) with seven (7) 2' x 2' manhole pull boxes (NCDOT traffic rated)",
+      "corroboration": [
+        {
+          "source": "SOW §5",
+          "claim": "four (4) 4\" dia. PVC conduits, approx. 1,400 LF, seven (7) pull boxes",
+          "agrees": true
+        },
+        {
+          "source": "BOD Electrical section",
+          "claim": "Will design a raceway system for future Fiber cable. The raceway will run the entire length of the roadway with manholes every 400 ft",
+          "agrees": true,
+          "note": "BOD specifies manholes every 400 ft; SOW specifies boxes every 200 ft. Minor discrepancy in pull-box spacing between BOD and SOW — BOD is the later document (Dec 2025); SOW is the solicitation document (Sept 2024). BOD may reflect design resolution."
+        }
+      ]
+    },
+    "period_of_performance": {
+      "value": 180,
+      "unit": "calendar_days",
+      "source": "SOW §3 Period of Performance",
+      "quote": "The Period of Performance (POP), including permits, submittals, procurement, delivery, mobilization, demolition, new construction, testing, inspections, and closeout shall be one hundred and eighty (180) calendar days after award of contract and notice to proceed."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "design_completion_date": {
+      "value": "2025-12-08",
+      "source": "BOD cover page",
+      "quote": "FINAL SUBMITTAL December 8, 2025",
+      "notes": "BOD is marked Final Submittal; this is the design phase completion date. Construction completion date is not known."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2025-12-08",
+        "source": "BOD cover page",
+        "quote": "FINAL SUBMITTAL December 8, 2025"
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "SOW §3 Period of Performance",
+        "quote": "one hundred and eighty (180) calendar days after award of contract and notice to proceed"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "services_included": {
+        "base_bid": "Design documents (IFC), specifications, calculations, construction cost estimate, permits",
+        "option_1": "Structural bridge(s) to span wetland areas in lieu of culverts",
+        "option_2": "Title II Services (construction bidding, submittal, construction phase, inspections, closeout)",
+        "source": "SOW §1 Introduction",
+        "quote": "design documents, project specifications/calculations, deliverables, design schedules, construction cost estimate (Base Bid), design options (Option #1), and Title II Services (Option #2)"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod"
+    ],
+    "program_type": [
+      "transportation",
+      "utilities_infrastructure"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "civil_engineering",
+      "structural_engineering",
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_grading_drainage",
+      "civil_utilities",
+      "civil_erosion_sediment",
+      "structural_concrete",
+      "structural_foundation",
+      "electrical_power_distribution"
+    ],
+    "building_systems": [
+      "site_utilities",
+      "site_systems"
+    ],
+    "construction_scope": [
+      "earthwork_scope",
+      "concrete_scope",
+      "concrete_cast_in_place",
+      "concrete_precast",
+      "exterior_improvements",
+      "exterior_paving",
+      "utilities_scope",
+      "communications_scope"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "low_bid"
+    ],
+    "project_status": [
+      "design_complete"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "hpdta",
+    "harvey_point",
+    "north_carolina",
+    "boeing_aerospace_operations",
+    "wetland_bridges",
+    "access_road",
+    "dod_facility",
+    "gravel_road",
+    "ductbank",
+    "davis_bacon",
+    "nwp_14",
+    "title_ii_services"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [
+      {
+        "sheet_number": "C1.0",
+        "title": "Cover Sheet",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01 (Koth Consulting, P.C., 2/9/12). Not physically present in intake folder — only title extracted from SOW text listing."
+      },
+      {
+        "sheet_number": "C2.0",
+        "title": "Plan and Profile for Stations 10+00 to 21+00",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01 (Koth Consulting 2012). Not physically present."
+      },
+      {
+        "sheet_number": "C2.1",
+        "title": "Plan and Profile for Stations 21+00 to 36+50",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01. Not physically present."
+      },
+      {
+        "sheet_number": "C2.2",
+        "title": "Plan and Profile for Stations 36+50 to Roundabout",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01. Not physically present."
+      },
+      {
+        "sheet_number": "C3.0",
+        "title": "Roundabout Plan and Erosion Control Notes and Details",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01. SOW notes: roundabout on C3.0 is NOT required per the current design scope; new gravel access road ties into existing asphalt apron off Towers Road instead."
+      },
+      {
+        "sheet_number": "C4.0",
+        "title": "Construction Notes and Details",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01. Not physically present."
+      },
+      {
+        "sheet_number": "C5.0",
+        "title": "Engineering Calculations",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01. Not physically present."
+      },
+      {
+        "sheet_number": "C5.1",
+        "title": "Engineering Calculations",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 01. Not physically present."
+      },
+      {
+        "sheet_number": "G1-01",
+        "title": "Cover Sheet",
+        "discipline": "civil_engineering",
+        "reading_notes": "Referenced in SOW Attachment 02 (Boeing, July 29, 2024). Title block content extracted from text in SOW. Scale: None."
+      },
+      {
+        "sheet_number": "G2-01",
+        "title": "General Notes & Area of Work",
+        "discipline": "civil_engineering",
+        "reading_notes": "Boeing sheet. Shows power line access road continuation area of work."
+      },
+      {
+        "sheet_number": "G3-01",
+        "title": "Detail – Area of Work",
+        "discipline": "civil_engineering",
+        "reading_notes": "Align new gravel access road with existing asphalt road apron (per embedded annotation in SOW text)."
+      },
+      {
+        "sheet_number": "G4-01",
+        "title": "Elevations – Grade Markings/Locations",
+        "discipline": "civil_engineering",
+        "reading_notes": "Grade marking/elevation information. Not physically available for image review."
+      },
+      {
+        "sheet_number": "G5-01",
+        "title": "Wetlands – Area of Work",
+        "discipline": "civil_engineering",
+        "reading_notes": "Shows wetland areas crossed by proposed road/bridge alignment."
+      },
+      {
+        "sheet_number": "G6-01",
+        "title": "Existing Conditions – Area of Work",
+        "discipline": "civil_engineering",
+        "reading_notes": "Existing conditions documentation."
+      },
+      {
+        "sheet_number": "G6-02",
+        "title": "Proposed Plan – Area of Work",
+        "discipline": "civil_engineering",
+        "reading_notes": "Proposed plan showing gravel access road alignment. Annotation: 'Align new gravel access road with existing asphalt road apron on Towers Blvd approach side. Duct Bank Pull Boxes NCDOT Traffic Rated 2x2, Installed every 200 ft parallel with newly installed gravel roadway.'"
+      },
+      {
+        "sheet_number": "G6-03",
+        "title": "Concrete Ductbank Detail – (4) 4\" PVC",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Shows 4 × 4-inch Sch 40 PVC conduits in concrete encasement, 18 inches below grade minimum. NCDOT Traffic Rated 2x2 pull box shown."
+      },
+      {
+        "sheet_number": "G6-04",
+        "title": "Concrete Ductbank Path and Pull Box Locations – Approx. 1,275 LF",
+        "discipline": "electrical_engineering",
+        "reading_notes": "Shows ductbank path alongside new gravel roadway. Total ductbank approx. 1,275 LF per sheet title (vs. 1,400 LF per SOW text — minor discrepancy, likely VIF)."
+      }
+    ],
+    "facts_derived": {
+      "road_length": {
+        "value": 1190,
+        "unit": "lf",
+        "source": "BOD Civil section",
+        "quote": null,
+        "notes": "1,190 LF total civil scope: 657.5 LF gravel road + 532.5 LF bridge crossings. Sheets not directly image-read (drawings embedded in SOW as text references only)."
+      },
+      "bridge_count": {
+        "value": 3,
+        "source": "BOD General and Structural sections",
+        "quote": null,
+        "sheets": [
+          "G5-01"
+        ]
+      },
+      "bridge_spans_ft": {
+        "value": [
+          35,
+          175,
+          315
+        ],
+        "source": "BOD General section",
+        "quote": null
+      },
+      "bridge_width_ft": {
+        "value": 24,
+        "source": "BOD General section",
+        "quote": null
+      },
+      "road_width_ft": {
+        "value": 20,
+        "source": "BOD Civil section",
+        "quote": null
+      },
+      "road_thickness_in": {
+        "value": 20,
+        "source": "BOD Civil section",
+        "quote": null
+      }
+    }
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.linear_feet_roadway",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Civil section (final design, Dec 2025)",
+          "value": "1,190 LF"
+        },
+        {
+          "source": "BOD General section",
+          "value": "~1,500 LF"
+        },
+        {
+          "source": "SOW §5 (solicitation, Sept 2024)",
+          "value": "~1,500 LF (VIF)"
+        }
+      ],
+      "resolution_chosen": "BOD Civil section — 1,190 LF",
+      "rationale": "The BOD Civil section (Final Submittal, Dec 2025) specifically breaks down the 1,190 LF as 657.5 LF gravel road + 532.5 LF bridge. The 1,500 LF figure in the General section and SOW is the approximate total corridor length stated at solicitation time with VIF qualifier. The Civil section represents the final engineered scope. Minor conflict."
+    },
+    {
+      "field_path": "facts.ductbank_conduits (pull box spacing)",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "BOD Electrical section (Dec 2025)",
+          "value": "manholes every 400 ft"
+        },
+        {
+          "source": "SOW §5 (Sept 2024)",
+          "value": "pull boxes spaced approximately 200 ft on center"
+        },
+        {
+          "source": "G6-04 sheet title",
+          "value": "ductbank approx. 1,275 LF"
+        },
+        {
+          "source": "SOW §5",
+          "value": "ductbank approx. 1,400 LF"
+        }
+      ],
+      "resolution_chosen": "BOD Electrical section for spacing (400 ft); length discrepancy flagged for human review",
+      "rationale": "BOD is the final design document; SOW is the solicitation/scope document. Spacing change from 200 ft to 400 ft may reflect design optimization. Length difference (1,275 vs. 1,400 LF) is small (approx. 9%) and both documents use approximate qualifiers. Minor conflict overall."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

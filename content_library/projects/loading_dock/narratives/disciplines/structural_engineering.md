@@ -1,0 +1,7 @@
+Structural engineering scope on this design-build project involved modifying the existing concrete loading dock at Building 2484, Kimbrough Ambulatory Care Center (KACC), Fort George G. Meade, Maryland, to accommodate a new dock lift system.
+
+The structural scope of work consisted of modifying the existing concrete loading dock at one of the overhead door openings for the installation of the new dock lift. This required demolition of a portion of the existing concrete slab, subgrade, and loading dock wall at Bay-1, followed by construction of a reinforced concrete pit to receive the dock lift mechanism. Pit construction included sloped drainage at the pit floor and steel edge angle protection around the pit perimeter to protect the exposed concrete edges.
+
+Design criteria for the structural scope included UFC 1-200-01 (DoD Building Code), IBC 2018, IEBC 2018, ASCE 7-16 (Minimum Design Loads and Associated Criteria for Buildings and Other Structures), and ACI 318-14 (Building Code Requirements for Structural Concrete). Structural work was delivered under the design-build contract administered by USACE Huntsville Engineering and Support Center, with the Final Basis of Design issued October 17, 2023.
+
+<!-- INTERNAL: Structural pit dimensions (3'-6" deep, 8" RC walls, 10" RC slab) confirmed from BOD source re-read; these parameters are not captured as JSON fact fields — Pass 1 gap. -->

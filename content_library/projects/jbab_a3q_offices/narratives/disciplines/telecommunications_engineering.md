@@ -1,0 +1,7 @@
+# Telecommunications Engineering — B520 Renovate A3Q Offices
+
+Telecommunications engineering services on the B520 A3Q Offices renovation at Joint Base Anacostia-Bolling encompassed structured cabling design for voice and data systems serving the renovated office suites in Building 520. The telecommunications scope provided the communications infrastructure necessary to support the reconfigured office layout resulting from the renovation.
+
+The structured cabling design was coordinated with the architectural partition layout and with the security engineering scope for Suite 220. Within a SCIF environment, telecommunications infrastructure is subject to ICD 705 requirements governing cabling pathways, penetrations through the SCIF envelope, and conduit fill — considerations that required close coordination between the telecommunications design and the SCIF construction approach developed under the architectural and security engineering disciplines.
+
+Telecommunications discipline was part of the Design-Build team assembled by BFA as prime consultant. Specific system details — outlet counts, pathway schedules, telecommunications room configuration, and SCIF-specific cabling treatment — are not captured in the source record and reside in the construction documents. BFA documented the telecommunications scope and design criteria in the Basis of Design submitted to NAVFAC Washington as a Final Submittal in December 2020.

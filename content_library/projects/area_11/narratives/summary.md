@@ -1,0 +1,9 @@
+# HPDTA 11 Area Electrical Utility Upgrade — Summary
+
+Bowman Foster & Associates (BFA) served as prime consultant on a full A/E design engagement for the Harvey Point Defense Testing Activity (HPDTA), a U.S. Department of Defense installation in Hertford, North Carolina. The project—designated BFA Project #24-064D—addressed critical security deficiencies in the base's southside perimeter surveillance system by replacing aging, overhead-utility-fed camera infrastructure with a hardened, underground electrical and communications network.
+
+The design scope encompassed five engineering disciplines and two primary facility types. BFA designed an approximately 1,250-square-foot pre-engineered metal building (PEMB) to house the Area 11 generator, switchgear, and transformers, along with four 12-foot by 12-foot Electrical Control Buildings at distributed locations along the fence line. These buildings were constructed of split-face CMU with conditioned interiors to protect fiber-optic camera equipment, UPS systems, and communications gear. Adjacent exterior generators with screen walls were designed for each control building.
+
+The civil and electrical scope included design of approximately 19,000 linear feet of concrete-encased Schedule 40 PVC conduit duct bank running the length of an 18-foot-wide gravel access road (approximately 3.6 miles), with manholes placed every 400 feet to facilitate future fiber cable pulls. The existing 40-camera aerial system serving 12,160 feet of perimeter fence line along three roadways will be re-supported from the upgraded VCC substation, with all existing aerial cabling removed.
+
+BFA delivered the 100% Release for Construction package in February 2026 within the 180-calendar-day period of performance, with Title II construction administration services included as Bid Option #1. Design was executed to UFC and NAVFAC standards.

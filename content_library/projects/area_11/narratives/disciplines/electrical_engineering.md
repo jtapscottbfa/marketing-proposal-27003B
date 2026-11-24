@@ -1,0 +1,11 @@
+# Electrical Engineering — HPDTA 11 Area Electrical Utility Upgrade
+
+Electrical engineering was the primary design discipline on the HPDTA 11 Area Electrical Utility Upgrade, addressing a foundational security deficiency: the base's 40-camera perimeter surveillance system had no backup power capability and relied on overhead aerial cabling for both electrical supply and communications—an operationally vulnerable configuration HPDTA sought to eliminate.
+
+BFA's electrical scope centered on designing a complete underground raceway system to re-support the existing camera surveillance infrastructure from the Area 11 Visitor Control Center (VCC) substation. The raceway system consists of Schedule 40 PVC conduit encased in concrete, running the full approximately 19,000-foot (3.6-mile) length of the installation's access road corridor, integrated with bridge structures along the route, with manholes every 400 feet for future fiber cable installation. The conduit system carries empty conduit only; fiber cable installation is a follow-on activity. This approach replaces all existing overhead aerial electrical and communication cabling, which is to be removed in its entirety.
+
+New power distribution infrastructure includes a backup generator and associated switchgear and transformers at the Area 11 substation, providing the uninterruptible power capability the existing system lacked. A new electrical panelboard supports the camera system with a dedicated power circuit for each of the 40 cameras spanning Goose Neck Road (24 cameras, 6,964 feet), Osprey Road (4 cameras, 1,000 feet), and Harvey Neck Road (12 cameras, 3,696 feet). Each Electrical Control Building along the route also receives a UPS installation.
+
+The camera communication upgrade includes two separate fiber cables per camera and a tamper device on each camera pole with a dedicated analog cable back to the VCC substation. Grounding design specifies a separate green insulated equipment-grounding conductor in all feeder and branch circuits, in addition to conduit-based grounding paths.
+
+Design was executed to NFPA 70, ANSI C2, UFC 3-501-01 (Electrical Engineering Design and Analysis), and UFC 3-520-01 (Interior Electrical Systems).

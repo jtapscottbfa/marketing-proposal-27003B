@@ -1,0 +1,7 @@
+# Plumbing Engineering — Building 111 Renovations
+
+Plumbing engineering scope for Building 111 at NSF Indian Head, Maryland was defined under Option 3 of the multi-option Performance Work Statement. The scope addressed aging and failed plumbing infrastructure throughout the historic 1899 structure.
+
+The defined construction scope included: demolition and replacement of fixtures in the first-floor Private restroom; full fixture replacement in the basement locker room (lavatory countertop, sinks, faucets, toilets, and urinals) plus addition of a new shower; construction of a new Women's restroom on the first floor with two toilet stalls and two lavatories and all accessories, designed to support the workforce needs of both Buildings 111 and 113; and complete demolition and replacement of all exposed waste piping and water distribution piping in the basement area.
+
+As with the electrical discipline, the plumbing Basis of Design document was not present in the source intake — the BOD provided covers mechanical (HVAC) scope only. The plumbing scope description is derived from the NAVFAC Performance Work Statement (Option 3). Specific design details — pipe sizing, fixture schedules, isometrics — are not captured in the source record and would require the plumbing BOD or drawing set for further characterization. The new Women's restroom addition is notable context: it was driven by future personnel growth anticipated across Buildings 111 and 113, not merely a like-for-like replacement.

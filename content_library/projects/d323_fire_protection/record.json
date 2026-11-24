@@ -1,0 +1,422 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "d323_fire_protection",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/d323_fire_protection/DB_SOW_ECMP.pdf",
+      "type": "sow",
+      "sha256": "0159a0c533252f8a16c9089454b4d4a17ab0f4a3beab5048eec93c8ee31139a0",
+      "included": true,
+      "notes": "Design-Build Statement of Work for D323 Server Room Fire Protection System Modernization, ECMP 1204. Includes hazmat assessment reports, halon inspection reports, floor plans, calculations, and conceptual sequence of operations as appendices."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/d323_fire_protection/Electrical Basis of Design.docx",
+      "type": "bod",
+      "sha256": "f5882e45923ac5180d2b3f0294f1e36748a03a0cb94fcdb622e470484a7dca9c",
+      "included": true,
+      "notes": "Electrical Basis of Design for exhaust system variant — new circuits for exhaust fans, disconnect switch replacement, clean release panel, air sampling detector, dampers/louvers."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/d323_fire_protection/MECHANICAL Basis of Design.docx",
+      "type": "bod",
+      "sha256": "0d5d95b7a2ca0bd5b0b721aab543a9eb2a9fedae9d3f33560e5d9984b0db2cdd",
+      "included": true,
+      "notes": "Mechanical Basis of Design for exhaust system variant — new inline exhaust fans, exhaust ductwork, intake/exhaust air louvers with motorized dampers, underfloor grilles."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set PDFs present in intake folder. Two Basis of Design DOCX files present for the exhaust system variant. SOW PDF is the primary project document and includes extensive appendices (hazmat reports, inspection reports, floor plans embedded as images, calculations)."
+  },
+  "facts": {
+    "project_name": {
+      "value": "D323 Server Room Fire Protection System Modernization",
+      "source": "DB_SOW_ECMP.pdf title page",
+      "quote": "Design Build Statement of Work for D323 Server Room Fire Protection System Modernization",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf title page",
+          "claim": "D323 Server Room Fire Protection System Modernization",
+          "value": "D323 Server Room Fire Protection System Modernization",
+          "agrees": true
+        },
+        {
+          "source": "Electrical Basis of Design.docx header",
+          "claim": "SERVER ROOM FIRE PROTECTION SYSTEM MODERNIZATION (EXHAUST)",
+          "value": "D323 Server Room Fire Protection System Modernization (Exhaust variant)",
+          "agrees": true
+        },
+        {
+          "source": "MECHANICAL Basis of Design.docx header",
+          "claim": "SERVER ROOM FIRE PROTECTION SYSTEM MODERNIZATION (EXHAUST)",
+          "value": "D323 Server Room Fire Protection System Modernization (Exhaust variant)",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Surface Warfare Center Indian Head Division (NSWC IHD) / Naval Support Facility Indian Head",
+      "source": "DB_SOW_ECMP.pdf title page and Part 3 §1.0",
+      "quote": "Naval Surface Warfare Center (NSWC), Indian Head Division",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf title page",
+          "claim": "Naval Surface Warfare Center (NSWC), Indian Head Division",
+          "value": "NSWC Indian Head Division",
+          "agrees": true
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf hazmat report section",
+          "claim": "Naval Support Facility (NSF) Indian Head",
+          "value": "NSF Indian Head",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Naval Surface Warfare Center Indian Head Division (NSWC IHD)",
+      "source": "DB_SOW_ECMP.pdf title page",
+      "quote": "NSWC Indian Head Division| Facility Branch Code 102",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf title page",
+          "claim": "NSWC Indian Head Division",
+          "value": "NSWC Indian Head Division",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Indian Head",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "3838 Strauss Avenue, Indian Head, MD 20640",
+      "installation": "Naval Support Facility Indian Head",
+      "building": "Building D323, Farragut Hall, Basement Server Room (Room 003)",
+      "source": "DB_SOW_ECMP.pdf Part 3 §4.0 and hazmat report",
+      "quote": "The site is located at Building D323 Farragut Hall Basement Server Room (Room 003).",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf Part 3 §4.0",
+          "claim": "Building D323 Farragut Hall Basement Server Room (Room 003)",
+          "value": "Building D323, Farragut Hall, Basement, Room 003, Indian Head MD 20640",
+          "agrees": true
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf halon inspection report",
+          "claim": "3838 Strauss Avenue, Indian Head, MD 20640",
+          "value": "3838 Strauss Avenue, Indian Head, MD 20640",
+          "agrees": true
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf hazmat building assessment",
+          "claim": "Building D323 is a 32,645-ft2 facility... located at 3817 Strauss Avenue",
+          "value": "3817 Strauss Avenue (alternate address per hazmat report)",
+          "agrees": false,
+          "note": "Minor discrepancy: halon inspection report lists 3838 Strauss Avenue; Leidos hazmat report lists 3817 Strauss Avenue. Same building D323. Address discrepancy likely a transcription error in one report."
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "ECMP 1204",
+      "source": "DB_SOW_ECMP.pdf title page",
+      "quote": "ECMP ID 1204",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf title page",
+          "claim": "ECMP ID 1204",
+          "value": "ECMP 1204",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "SOW references 'Naval Support Facility Indian Head Kekolu Design-Build Job Order Contract' as the parent contract but does not state a contract number. Task order number not specified."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 1980,
+      "unit": "gsf",
+      "source": "DB_SOW_ECMP.pdf calculations appendix, floor area calculation by Jemmel A. Pursoo, PE, dated 4/15/2025",
+      "quote": "Combined Area: 1,980",
+      "scope_notes": "Server room scope area only (Room 003 data processing 1,817 SF + H002 existing corridor addition 163 SF). Total building D323 area is 32,645 SF per hazmat report.",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf calculations appendix (floor area)",
+          "claim": "Combined Area 1,980 SF (Room 003 Data Processing 1,817 SF + H002 Existing Corridor Addition 163 SF)",
+          "value": 1980,
+          "agrees": true
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf hazmat building assessment executive summary",
+          "claim": "Building D323 is a 32,645-ft2 facility",
+          "value": 32645,
+          "agrees": false,
+          "note": "Total building area vs. project scope area — not a conflict, different quantities for different extents"
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf nitrogen conceptual design calculations",
+          "claim": "Floor Area: 1,980 SF",
+          "value": 1980,
+          "agrees": true
+        }
+      ]
+    },
+    "total_building_area": {
+      "value": 32645,
+      "unit": "gsf",
+      "source": "DB_SOW_ECMP.pdf hazmat building assessment executive summary",
+      "quote": "Building D323 is a 32,645-ft2 Naval Operations Center (NOC) Headquarters/Information Services facility",
+      "corroboration": [
+        {
+          "source": "DB_SOW_ECMP.pdf hazmat building assessment executive summary",
+          "claim": "32,645-ft2",
+          "value": 32645,
+          "agrees": true
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf floor area calculations appendix",
+          "claim": "Total Building Area from Project Requirements: 32,645 SF",
+          "value": 32645,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing",
+      "notes": "No program budget stated in source documents."
+    },
+    "sow_date": {
+      "value": "2025-08-13",
+      "source": "DB_SOW_ECMP.pdf header",
+      "quote": "August 13, 2025"
+    },
+    "building_construction_year": {
+      "value": 1941,
+      "source": "DB_SOW_ECMP.pdf hazmat building assessment §1.3",
+      "quote": "Building D323 is a 32,645-ft2 facility constructed in 1941"
+    },
+    "bfa_role_on_project": {
+      "value": null,
+      "status": "missing",
+      "notes": "Source documents do not identify BFA's role. Documents are government-authored SOW and BOD packages. BFA role (prime design-builder, subconsultant, etc.) not discernible from available sources."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "data_mission_critical",
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "fire_protection_engineering",
+      "electrical_engineering",
+      "mechanical_engineering"
+    ],
+    "sub_disciplines": [
+      "fire_suppression_clean_agent",
+      "fire_alarm",
+      "electrical_power_distribution",
+      "electrical_emergency_power",
+      "hvac_design"
+    ],
+    "building_systems": [
+      "fp_clean_agent",
+      "fp_fire_alarm",
+      "electrical_service",
+      "electrical_emergency_power",
+      "hvac_air_distribution"
+    ],
+    "construction_scope": [
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "electrical_power",
+      "mechanical_hvac",
+      "existing_demolition",
+      "existing_hazmat_abatement",
+      "interior_construction"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "state_on_call",
+      "federal_task_order"
+    ],
+    "procurement_type": [
+      "federal"
+    ],
+    "award_type": [
+      "task_order_competition"
+    ],
+    "project_status": [
+      "pursuing"
+    ],
+    "bfa_role": []
+  },
+  "tenant_freeform_tags": [
+    "navfac",
+    "nswc_indian_head",
+    "maryland",
+    "server_room",
+    "clean_agent_suppression",
+    "halon_replacement",
+    "fire_protection",
+    "design_build",
+    "job_order_contract",
+    "historic_building_1941",
+    "federal_dod",
+    "hazmat_abatement",
+    "very_early_warning_smoke_detection",
+    "epo_emergency_power_off",
+    "raised_floor"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Matthew Baker, P.E., CFPS",
+      "role_on_project": "Design Manager (Government side) / Fire Protection"
+    },
+    {
+      "name": "Merid Teklyohannes, PMP",
+      "role_on_project": "Architectural (Government side)"
+    },
+    {
+      "name": "Jemmel A. Pursoo, PE",
+      "role_on_project": "Calculations Engineer (Government side)"
+    }
+  ],
+  "project_description": {
+    "summary": "Design-Build project to demolish an existing Halon 1301 fire suppression system in the basement server room (Room 003) of Building D323 (Farragut Hall) at Naval Support Facility Indian Head, Maryland, and replace it with a modern clean agent fire detection and suppression system. The project also includes exhaust system upgrades (addressed in separate BOD) to allow fire services safe reentry after agent discharge. Building D323 is a 32,645 SF historic 1941 structure serving as the Naval Operations Center / Information Services facility for NSWC Indian Head.",
+    "scope_details": {
+      "fire_suppression": "New clean agent suppression system (inert gas, e.g., nitrogen or Novec 1230 per calculations) protecting below the raised floor in Room 003. Pre-engineered NFPA 2001 compliant system replacing halon cylinders (Kidde KPH-60, DOT stamp 1982) and obsolete control panel (Fire Lite Sensiscan 1000).",
+      "fire_detection": "New Fire Alarm Releasing Control Panel with Very Early Warning Smoke Detection (VEWSD) under raised floor; above-floor smoke detectors; EPO switch supervision; relay interface with CRAC units; connection to main building FACP (System 3, 1st floor lobby); radio transmitter to Emergency Operations Center in Building D327 via AES radio mesh network.",
+      "exhaust_system": "New inline exhaust fans, exhaust ductwork, intake/exhaust air louvers with motorized dampers, underfloor grilles (per MECHANICAL and Electrical BOD).",
+      "demolition": "Remove existing halon suppression piping, cylinders, detectors, and control panel. Halon cylinders to be turned in to DLA Distribution Richmond per DoD ODS procedures.",
+      "hazmat_context": "ACM present in building (floor tile mastic, pipe insulation); LBP present on concrete surfaces. Disturbance to be minimized; sampling/abatement plans required if ACM disturbed during installation of conduit straps or penetrations.",
+      "room_integrity": "Fan pressurization leak test per NFPA 2001 required. Pressure relief vent to be installed on wall between Corridor H002 and Vestibule V002.",
+      "calculations": "Nitrogen conceptual design by Jemmel A. Pursoo, PE (5/23/2025): ~39 total cylinders for combined under-floor and above-floor protection at 30% design concentration. Pressure relief calculation (4/30/2025): 0.06 atm / 136 psf differential. Hold time test (Harris Fire, 5/13/2025): 12.13 minutes at 7-ft minimum height for Novec 1230 at 4.5% concentration."
+    }
+  },
+  "socioeconomic_participation": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage_scope": {
+        "value": 1980,
+        "unit": "gsf",
+        "source": "DB_SOW_ECMP.pdf calculations appendix",
+        "quote": null,
+        "sheets": []
+      }
+    },
+    "notes": "No drawing set PDFs present in intake directory. Floor plans are embedded as image fragments in the SOW PDF appendix but are not a structured drawing set. The embedded floor plan shows basement layout with room areas labeled; Room 003 (server room) raised floor outlined in red showing the area to be protected by clean agent system (approximately 1,817 SF). These are reference floor plans included as SOW attachments, not BFA-produced design drawings."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.location.facility_address",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "DB_SOW_ECMP.pdf halon inspection report (2021)",
+          "value": "3838 Strauss Avenue, Indian Head, MD 20640"
+        },
+        {
+          "source": "DB_SOW_ECMP.pdf Leidos hazmat building assessment (July 2021)",
+          "value": "3817 Strauss Avenue, Indian Head, MD 20640"
+        }
+      ],
+      "resolution_chosen": "DB_SOW_ECMP.pdf halon inspection report",
+      "rationale": "3838 Strauss Avenue appears in multiple sources including the halon inspection report header and the preliminary enclosure integrity test (Harris Fire, 2025). The 3817 address in the Leidos report is likely a transcription error. Both sources refer to Building D323 without ambiguity."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md"
+    }
+  }
+}

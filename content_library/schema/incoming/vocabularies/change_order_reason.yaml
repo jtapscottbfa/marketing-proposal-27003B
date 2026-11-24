@@ -1,0 +1,173 @@
+vocabulary_id: change_order_reason
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+anchor_standard_version: null
+hierarchy: flat
+multi_select: true
+governance_notes: |
+  Change order reason categories. Used to tag the reason for each change order
+  on a project so that BFA can analyze patterns (e.g., "what fraction of our
+  CO value came from owner-directed scope additions vs. design errors").
+
+  Multi-select per change order — a single CO can have multiple contributing
+  reasons (scope addition triggered by an unforeseen condition).
+
+  This taxonomy is intentionally honest, including categories like
+  design_error_omission. The library's value depends on accurate categorization
+  not defensive categorization. Internal use only; not all categories should
+  surface in client-facing past performance writeups.
+future_migration: null
+
+entries:
+  - canonical_id: scope_addition
+    display_name: Scope Addition
+    definition: Owner-requested addition of work not in original scope.
+    parent_id: null
+    aliases:
+      - added_scope
+      - additional_scope
+    standard_reference: null
+
+  - canonical_id: scope_deletion
+    display_name: Scope Deletion / Credit
+    definition: Owner-directed deletion of work; typically a credit change order.
+    parent_id: null
+    aliases:
+      - deductive_co
+      - scope_credit
+      - deleted_scope
+    standard_reference: null
+
+  - canonical_id: owner_directed_change
+    display_name: Owner-Directed Change
+    definition: Owner-directed modification to existing scope (substitution, alternative).
+    parent_id: null
+    aliases:
+      - owner_directive
+      - owner_change
+    standard_reference: null
+
+  - canonical_id: design_error_omission
+    display_name: Design Error or Omission
+    definition: Change required because of an error or omission in design documents.
+    parent_id: null
+    aliases:
+      - e_and_o
+      - design_error
+      - design_omission
+      - errors_omissions
+    standard_reference: null
+
+  - canonical_id: unforeseen_condition
+    display_name: Unforeseen Existing Condition
+    definition: Change required by discovery of an unforeseen condition during construction (concealed condition in renovation).
+    parent_id: null
+    aliases:
+      - unforeseen
+      - concealed_condition
+      - hidden_condition
+    standard_reference: null
+
+  - canonical_id: differing_site_condition
+    display_name: Differing Site Condition
+    definition: Change required by site/subsurface conditions materially different from those indicated in contract documents.
+    parent_id: null
+    aliases:
+      - dsc
+      - differing_site_condition
+      - subsurface_change
+    standard_reference: null
+
+  - canonical_id: regulatory_change
+    display_name: Regulatory or Code Change
+    definition: Change required by an agency or code interpretation/change after design completion.
+    parent_id: null
+    aliases:
+      - code_change
+      - regulatory_compliance
+      - ahj_directive
+    standard_reference: null
+
+  - canonical_id: value_engineering
+    display_name: Value Engineering
+    definition: Change made to reduce cost or improve value through alternative means/methods/materials.
+    parent_id: null
+    aliases:
+      - ve
+      - value_engineering
+    standard_reference: null
+
+  - canonical_id: schedule_acceleration
+    display_name: Schedule Acceleration
+    definition: Change to accelerate schedule (overtime, additional crews, sequencing changes).
+    parent_id: null
+    aliases:
+      - acceleration
+      - schedule_compression
+    standard_reference: null
+
+  - canonical_id: schedule_extension
+    display_name: Time Extension Only
+    definition: Change extending schedule with no cost impact (or minimal cost impact).
+    parent_id: null
+    aliases:
+      - time_extension
+      - no_cost_co
+      - schedule_only
+    standard_reference: null
+
+  - canonical_id: owner_furnished_equipment_change
+    display_name: Owner-Furnished Equipment Change
+    definition: Change resulting from modification, delay, or coordination of owner-furnished equipment.
+    parent_id: null
+    aliases:
+      - ofe_change
+      - ofci_change
+    standard_reference: null
+
+  - canonical_id: utility_coordination
+    display_name: Utility Coordination
+    definition: Change required by utility company coordination, relocation, or service availability.
+    parent_id: null
+    aliases:
+      - utility_change
+      - utility_relocation
+    standard_reference: null
+
+  - canonical_id: weather_force_majeure
+    display_name: Weather / Force Majeure
+    definition: Change resulting from abnormal weather, natural disaster, or other force majeure event.
+    parent_id: null
+    aliases:
+      - weather
+      - force_majeure
+    standard_reference: null
+
+  - canonical_id: third_party_directive
+    display_name: Third-Party Directive
+    definition: Change required by directive from a third party (DEQ, DEP, historical commission, neighborhood agreement).
+    parent_id: null
+    aliases:
+      - agency_directive
+      - third_party
+    standard_reference: null
+
+  - canonical_id: contractor_initiated_substitution
+    display_name: Contractor-Initiated Substitution
+    definition: Change initiated by contractor for product or means/methods substitution (often no-cost or small).
+    parent_id: null
+    aliases:
+      - contractor_substitution
+      - product_substitution
+    standard_reference: null
+
+  - canonical_id: administrative_clarification
+    display_name: Administrative / Clarification
+    definition: No-cost or small-cost change for administrative cleanup or clarification of intent.
+    parent_id: null
+    aliases:
+      - administrative
+      - clarification_co
+      - cleanup_co
+    standard_reference: null

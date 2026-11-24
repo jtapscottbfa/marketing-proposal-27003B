@@ -1,0 +1,7 @@
+<!-- project_slug: eye_wash | narrative_type: discipline | discipline: plumbing_engineering | pass: 2-v2 | generated: 2026-05-07 -->
+
+## Plumbing Engineering — Site Eyewash and Safety Shower Stations, Jefferson Lab
+
+Plumbing engineering was the lead technical discipline for this site-wide safety infrastructure upgrade at Jefferson Laboratory in Newport News, Virginia. The scope covered domestic water supply and sanitary drain, waste, and vent (DWV) systems for new and replacement ANSI Z358.1-2014-compliant eyewash and safety shower stations at approximately 20-plus locations across the Jefferson Lab campus — including experimental halls (Hall C, Hall D, LERF) and support buildings spanning Buildings 36, 38, 55, 57, 58, 67, 90, 96, 201, and others.
+
+Each installation location required assessment of existing domestic water and sanitary infrastructure within the affected building to determine the feasibility, configuration, and routing of new connections. The multi-building character of the project meant that no two locations were identical — building age, construction type, and available utility infrastructure varied across the campus. Governing standards included ANSI Z358.1-2014, the International Plumbing Code, and Jefferson Lab's own Design Standard. The plumbing design formed the backbone of the construction-ready Basis of Design (BOD) issued as a Final Submittal in March 2024.

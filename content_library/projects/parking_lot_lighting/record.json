@@ -1,0 +1,379 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "parking_lot_lighting",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/nih/parking_lot_lighting/21-009.2021.12.01.FINAL ELECTRICAL BASIS OF DESIGN.pdf",
+      "type": "bod",
+      "sha256": "10e321a1991deb95c888758f27f8e8a71a6d98f16b40e643b6bfe80b26e84784",
+      "included": true,
+      "notes": "Electrical Basis of Design, Final Submittal, dated December 1, 2021. BFA Project No. 21-009."
+    },
+    {
+      "path": "00_admin/reference_projects/nih/parking_lot_lighting/NIH C101656_SOW (002).pdf",
+      "type": "sow",
+      "sha256": "302bc55a48ca4f4fbc8eccdc9c876bc7ba5fd5dcbf0d85a981ffcc3749fb5bc9",
+      "included": true,
+      "notes": "NIH Contract C101656 Statement of Work, dated February 25, 2021. Includes Davis-Bacon wage determination appendix."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": false,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No drawing set provided in intake. BOD references Sheet E-501 (Lighting Fixture Schedule) but drawings not included."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Demolition of Buildings 18, 18T, 32 & 32T and Construct Surface Parking Lot",
+      "source": "SOW C101656 cover",
+      "quote": "DEMOLITION OF BUILDINGS 18, 18T, 32 & 32T AND CONSTRUCT SURFACE PARKING LOT",
+      "corroboration": [
+        {
+          "source": "SOW C101656 cover",
+          "claim": "DEMOLITION OF BUILDINGS 18, 18T, 32 & 32T AND CONSTRUCT SURFACE PARKING LOT",
+          "value": "Demolition of Buildings 18, 18T, 32 & 32T and Construct Surface Parking Lot",
+          "agrees": true
+        },
+        {
+          "source": "BOD title page",
+          "claim": "DEMOLITION OF BUILDINGS 18, 18T, 32 & 32T AND CONSTRUCT SURFACE PARKING LOT",
+          "value": "Demolition of Buildings 18, 18T, 32 & 32T and Construct Surface Parking Lot",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "National Institutes of Health (NIH)",
+      "source": "SOW C101656 §1",
+      "quote": "Office of Research Facilities\nDivision of Design and Construction Management",
+      "corroboration": [
+        {
+          "source": "SOW C101656 header",
+          "claim": "NIH Office of Research Facilities, Division of Design and Construction Management",
+          "value": "National Institutes of Health (NIH)",
+          "agrees": true
+        },
+        {
+          "source": "BOD title page",
+          "claim": "NIH BETHESDA, MD",
+          "value": "National Institutes of Health (NIH)",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "National Institutes of Health (NIH), Office of Research Facilities",
+      "source": "SOW C101656 header",
+      "quote": "Office of Research Facilities\nDivision of Design and Construction Management",
+      "corroboration": [
+        {
+          "source": "SOW C101656 header",
+          "claim": "Office of Research Facilities, Division of Design and Construction Management",
+          "value": "National Institutes of Health (NIH), Office of Research Facilities",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Bethesda",
+      "state": "MD",
+      "country": "US",
+      "facility_address": "9000 Rockville Pike, Bethesda, MD 20892",
+      "source": "SOW C101656 §1.B and §2.C",
+      "quote": "Meetings which occur onsite will be held on the NIH Bethesda Campus at 9000 Rockville Pike, Bethesda, Maryland.",
+      "corroboration": [
+        {
+          "source": "SOW C101656 §2.C",
+          "claim": "NIH Bethesda Campus, southern end",
+          "value": "Bethesda, MD",
+          "agrees": true
+        },
+        {
+          "source": "BOD title page",
+          "claim": "NIH BETHESDA, MD",
+          "value": "Bethesda, MD",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "21-009",
+      "source": "BOD title page",
+      "quote": "BFA Project No.: 21-009",
+      "corroboration": [
+        {
+          "source": "BOD title page",
+          "claim": "BFA Project No.: 21-009",
+          "value": "21-009",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_client": {
+      "value": "C101656",
+      "source": "SOW C101656 cover",
+      "quote": "C101656",
+      "corroboration": [
+        {
+          "source": "SOW C101656 cover",
+          "claim": "C101656",
+          "value": "C101656",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "C101656",
+      "source": "SOW C101656 cover",
+      "quote": "C101656",
+      "corroboration": [
+        {
+          "source": "SOW C101656 cover",
+          "claim": "C101656",
+          "value": "C101656",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": 30400,
+      "unit": "gsf",
+      "source": "SOW C101656 §2.A",
+      "quote": "NIH Buildings 18, 18T, 32 & 32T were research buildings, single floor, total combined area 30,400 GSF.",
+      "notes": "This is the area of the demolished buildings whose footprint was converted to parking. The resulting parking lot is approximately 0.75 acres. The 30,400 GSF refers to demolished building area, not parking lot area.",
+      "corroboration": [
+        {
+          "source": "SOW C101656 §2.A",
+          "claim": "total combined area 30,400 GSF",
+          "value": 30400,
+          "agrees": true
+        }
+      ]
+    },
+    "site_area_acres": {
+      "value": 0.75,
+      "unit": "acres",
+      "source": "SOW C101656 §2.B.3.a",
+      "quote": "Maximize parking spaces within the approx. 0.75-acre area available.",
+      "corroboration": [
+        {
+          "source": "SOW C101656 §2.B.3.a",
+          "claim": "approx. 0.75-acre area available",
+          "value": 0.75,
+          "agrees": true
+        }
+      ]
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "desired_completion_date": {
+      "value": "2021-12-31",
+      "source": "SOW C101656 §2.B.4",
+      "quote": "Desired construction completion is no later than December 31, 2021.",
+      "corroboration": [
+        {
+          "source": "SOW C101656 §2.B.4",
+          "claim": "Desired construction completion is no later than December 31, 2021",
+          "value": "2021-12-31",
+          "agrees": true
+        }
+      ]
+    },
+    "scope_summary": {
+      "value": "Electrical design for new parking lot LED lighting and 200A exterior panelboard to support new surface parking lot constructed on the footprint of demolished NIH Buildings 18, 18T, 32 & 32T. Included new gate booth power supply.",
+      "source": "BOD Scope of Work",
+      "quote": "Provide power to parking lot lights to support the new paved parking lot where NIH Buildings 18, 18T, 32 & 32T were demolished.",
+      "corroboration": [
+        {
+          "source": "BOD Scope of Work",
+          "claim": "Provide power to parking lot lights to support the new paved parking lot where NIH Buildings 18, 18T, 32 & 32T were demolished.",
+          "value": "Electrical parking lot lighting scope",
+          "agrees": true
+        },
+        {
+          "source": "BOD Description of Work",
+          "claim": "Provide new parking lot LED lights in the new paved parking lot being constructed. Provide a new 200A Exterior Panelboard next to the existing Transformer \"AT-3\" to power the new parking lot LED lights and the new gate booth.",
+          "value": "New LED lights + 200A panelboard + gate booth power",
+          "agrees": true
+        },
+        {
+          "source": "SOW C101656 §2.B.3.g",
+          "claim": "Provide energy-efficient utilities and lighting to support safe and secure continuous use of parking lot.",
+          "value": "Energy-efficient exterior lighting",
+          "agrees": true
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": "2021-12-01",
+        "source": "BOD title page",
+        "quote": "FINAL SUBMITTAL\nDecember 1, 2021",
+        "notes": "December 1, 2021 is the date of the Final Electrical BOD submittal. Treated as approximate design completion."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "SOW desired completion was December 31, 2021; actual completion date not in available documents."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "transportation_parking"
+    ],
+    "program_subtype": [],
+    "disciplines": [
+      "electrical_engineering"
+    ],
+    "sub_disciplines": [
+      "electrical_power_distribution",
+      "electrical_lighting"
+    ],
+    "building_systems": [
+      "electrical_lighting_exterior",
+      "electrical_distribution",
+      "electrical_service"
+    ],
+    "construction_scope": [
+      "electrical_power",
+      "electrical_lighting_scope",
+      "exterior_improvements"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "nih",
+    "bethesda",
+    "federal_campus",
+    "parking_lot",
+    "led_lighting",
+    "demolition_followon",
+    "montgomery_county_md"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "notes": "No drawing set included in intake folder. BOD references Sheet E-501 (Lighting Fixture Schedule) but drawings were not provided. Drawing extraction not possible.",
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawings available. 30,400 GSF refers to demolished buildings; parking lot SF not stated."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing",
+        "notes": "Surface parking lot — not applicable as a building floor count."
+      },
+      "mep_system_inventory": {
+        "hvac": [],
+        "electrical": [
+          "New parking lot LED light fixtures (per NIH fixture schedule, Sheet E-501 — not available)",
+          "New 200A exterior panelboard adjacent to existing Transformer AT-3",
+          "New gate booth power supply",
+          "Underground Schedule 40 PVC conduit, minimum 1-1/2\"",
+          "Minimum #6 AWG copper conductors for parking lot lighting circuits",
+          "THHN/THWN insulation rated 600V",
+          "Equipment grounding conductors on all feeder and branch circuits; all lighting poles grounded"
+        ],
+        "plumbing": [],
+        "fire_protection": []
+      }
+    }
+  },
+  "conflict_flags": [],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md"
+    }
+  }
+}

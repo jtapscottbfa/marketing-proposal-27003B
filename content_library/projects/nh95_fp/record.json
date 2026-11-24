@@ -1,0 +1,621 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "nh95_fp",
+  "source_documents": [
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_fp/NAVFAC SAES-1687420-NH95-Full Design+attachments.pdf",
+      "type": "sow",
+      "sha256": "a867f132a2945038c7fe5559c84baf54bfeb027220d1aed95f69f36742923623",
+      "included": true,
+      "notes": "NAVFAC Statement of A-E Services (SAES) for Task Order under Contract N4008517D0347. Includes scope, DD Form 1391, project schedule, submittal requirements, SID/DQC requirements, PCAS requirements."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_fp/NH-95 PME Outline Specs.docx",
+      "type": "spec_book",
+      "sha256": "91a1e4e85d135b5c0f468c5e37134b7c8cbac15481cf55413240ec5c91392f9e",
+      "included": true,
+      "notes": "Outline specifications for plumbing, HVAC, electrical, communications, and utilities divisions (Divisions 22, 23, 25, 26, 27, 33)."
+    },
+    {
+      "path": "Z:/marketing-proposal-26023/00_admin/reference_projects/navfac/nh95_fp/PME_20220207 NH95 BOD 2-24-22.docx",
+      "type": "bod",
+      "sha256": "2009809a466ced57be1986d74c1fbacfb27b6c3f1ec56bf96f9a74d69466e82a",
+      "included": true,
+      "notes": "Basis of Design (35% submittal, dated January 2022 / Feb 2022). Prepared by Jensen Hughes (fire protection subconsultant). Contains FP design analysis, structural notes, civil/site notes, HAZMAT survey results, architectural/MEP scope descriptions, and test boring appendix."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "deferred",
+    "notes": "No drawing set PDF present in intake folder. SAES references existing reference drawings (Attachment 7 — site plan, zoning floor plans, sprinkler zoning floor plans) but these were not included in source files. BOD notes CAD floor plans available on request."
+  },
+  "facts": {
+    "project_name": {
+      "value": "FY22 Fire Protection Repairs, Ops Center, Bldg NH95",
+      "source": "SAES Section A1",
+      "quote": "FY22 FIRE PROTECTION REPAIRS, OPS CENTER, BLDG NH95",
+      "corroboration": [
+        {
+          "source": "SAES Section A1 Project Title",
+          "claim": "FY22 FIRE PROTECTION REPAIRS, OPS CENTER, BLDG NH95",
+          "value": "FY22 Fire Protection Repairs, Ops Center, Bldg NH95",
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 4",
+          "claim": "FIRE PROTECTION SYSTEM REPAIRS, NH95 NSA HR",
+          "value": "Fire Protection System Repairs, NH95 NSA HR",
+          "agrees": true,
+          "note": "Minor variation in title wording — 'System Repairs' vs. 'Repairs'; both refer to same project"
+        },
+        {
+          "source": "BOD title page",
+          "claim": "FY22 FIRE PROTRECTION REPAIRS, OPS CENTER, BLDG NH95",
+          "value": "FY22 Fire Protection Repairs, Ops Center, Bldg NH95",
+          "agrees": true,
+          "note": "Typo in BOD ('PROTRECTION') — clearly same project"
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Command (NAVFAC) MIDLANT",
+      "source": "SAES p.1",
+      "quote": "Naval Facilities Engineering Command (NAVFAC) MIDLANT will administer this T.O.",
+      "corroboration": [
+        {
+          "source": "SAES p.1",
+          "claim": "NAVFAC MIDLANT will administer this T.O.",
+          "value": "NAVFAC MIDLANT",
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 3",
+          "claim": "NAVSUPPACT HAMPTON ROADS VA",
+          "value": "Naval Station Norfolk / NAVSUPPACT Hampton Roads",
+          "agrees": true,
+          "note": "DD Form 1391 lists installation command (NAVSUPPACT Hampton Roads); NAVFAC MIDLANT is the contracting authority — both are accurate in different senses"
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "United States Navy / Department of the Navy",
+      "source": "DD Form 1391 Block 1",
+      "quote": "NAVY",
+      "corroboration": [
+        {
+          "source": "DD Form 1391 Block 1",
+          "claim": "NAVY",
+          "value": "United States Navy",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Norfolk",
+      "state": "VA",
+      "country": "US",
+      "facility_name": "Naval Station Norfolk (NSA Norfolk), Building NH95",
+      "facility_address": "NSA NORFOLK, VIRGINIA",
+      "source": "SAES Section A1",
+      "quote": "NSA NORFOLK, VIRGINIA",
+      "corroboration": [
+        {
+          "source": "SAES Section A1",
+          "claim": "NSA NORFOLK, VIRGINIA",
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 3",
+          "claim": "NAVSUPPACT HAMPTON ROADS VA NORFOLK, VIRGINIA",
+          "agrees": true
+        },
+        {
+          "source": "BOD Introduction",
+          "claim": "NSA Norfolk, Virginia",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": null,
+      "status": "missing"
+    },
+    "project_number_client": {
+      "value": "ST 19-0641",
+      "source": "SAES Section A1 / DD Form 1391 Block 7",
+      "quote": "ST 19-0641",
+      "corroboration": [
+        {
+          "source": "SAES header",
+          "claim": "ST 19-0641",
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 7",
+          "claim": "ST 19-0641",
+          "agrees": true
+        }
+      ]
+    },
+    "contract_number": {
+      "value": "N4008517D0347",
+      "source": "SAES Section A1",
+      "quote": "Contract No. N4008517D0347",
+      "corroboration": [
+        {
+          "source": "SAES Section A1",
+          "claim": "N4008517D0347",
+          "agrees": true
+        },
+        {
+          "source": "BOD title page",
+          "claim": "Contract No. N4008517D0347",
+          "agrees": true
+        }
+      ]
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "explicit_null",
+      "source": "SAES Section A1",
+      "quote": "Task Order No. TBD"
+    },
+    "eprojects_work_order": {
+      "value": "1687420",
+      "source": "SAES Section A1",
+      "quote": "eProjects Work Order number 1687420"
+    },
+    "square_footage": {
+      "value": 275400,
+      "unit": "gsf",
+      "source": "DD Form 1391 cost estimate table",
+      "quote": "HDQTRS OPCON CENTER FAC#NH95 275,400 SF",
+      "corroboration": [
+        {
+          "source": "DD Form 1391 cost estimate table",
+          "claim": "275,400 SF",
+          "value": 275400,
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Facility Data block (Fac No NH95)",
+          "claim": "275,400 SF",
+          "value": 275400,
+          "agrees": true
+        },
+        {
+          "source": "BOD FP Analysis §2.1 (Jensen Hughes, 35% submittal)",
+          "claim": "a footprint of approximately 148,219 ft2",
+          "value": 148219,
+          "agrees": false,
+          "note": "148,219 is the building footprint (single floor plate); 275,400 is total area across all floors. Not a true conflict — different measurements. Total area chosen as primary."
+        },
+        {
+          "source": "BOD FP Analysis occupant load table",
+          "claim": "Overall Total 276,133 SF",
+          "value": 276133,
+          "agrees": false,
+          "note": "FP analysis occupant load calculation sums to 276,133 SF (floor 1 + floor 2 gross areas). Minor discrepancy vs 275,400; likely rounding/exclusion of basement."
+        }
+      ]
+    },
+    "floor_count": {
+      "value": 3,
+      "source": "BOD FP Analysis §2.1",
+      "quote": "a three-story facility with a footprint of approximately 148.219 ft2",
+      "corroboration": [
+        {
+          "source": "BOD FP Analysis §2.1",
+          "claim": "three-story facility",
+          "value": 3,
+          "agrees": true
+        },
+        {
+          "source": "BOD FP Analysis Construction Requirements Table 1",
+          "claim": "3 stories (Actual Height)",
+          "value": 3,
+          "agrees": true
+        },
+        {
+          "source": "BOD FP Analysis §2.1",
+          "claim": "Its lowest story is an unoccupied basement.",
+          "agrees": true,
+          "note": "3 stories including unoccupied basement (basement + 2 occupied floors)"
+        }
+      ]
+    },
+    "program_budget": {
+      "value": 31645000,
+      "currency": "USD",
+      "source": "SAES Section C1 / DD Form 1391 Block 8",
+      "quote": "$31,645,000",
+      "corroboration": [
+        {
+          "source": "SAES Section C1",
+          "claim": "$31,645,000",
+          "value": 31645000,
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 8",
+          "claim": "$31,645 (000)",
+          "value": 31645000,
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 cost table Total Funded Cost",
+          "claim": "31,645",
+          "value": 31645000,
+          "agrees": true
+        }
+      ]
+    },
+    "estimated_construction_cost": {
+      "value": 26637000,
+      "currency": "USD",
+      "source": "SAES Section C2",
+      "quote": "Estimated Construction Cost (ECC): $26,637,000",
+      "corroboration": [
+        {
+          "source": "SAES Section C2",
+          "claim": "$26,637,000",
+          "value": 26637000,
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 cost table Subtotal",
+          "claim": "26,637",
+          "value": 26637000,
+          "agrees": true
+        }
+      ]
+    },
+    "design_to_ecc": {
+      "value": 23973000,
+      "currency": "USD",
+      "source": "SAES Section C3",
+      "quote": "Design-To ECC: $23,973,000",
+      "corroboration": [
+        {
+          "source": "SAES Section C3",
+          "claim": "$23,973,000",
+          "value": 23973000,
+          "agrees": true
+        }
+      ]
+    },
+    "building_year_built": {
+      "value": 1959,
+      "source": "DD Form 1391 Facility Data block",
+      "quote": "Built 1959",
+      "corroboration": [
+        {
+          "source": "DD Form 1391 Facility Data block (NH95 facility row)",
+          "claim": "Built 1959",
+          "value": 1959,
+          "agrees": true
+        }
+      ]
+    },
+    "facility_mdi": {
+      "value": 99,
+      "source": "DD Form 1391 Facility Data block / Notes",
+      "quote": "Building NH95 has an MDI of 99 one of the highest rated facilities in service to the Atlantic Fleet",
+      "corroboration": [
+        {
+          "source": "DD Form 1391 Notes paragraph",
+          "claim": "MDI of 99",
+          "value": 99,
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Facility Data block",
+          "claim": "MDI 99",
+          "value": 99,
+          "agrees": true
+        }
+      ]
+    },
+    "fund_type": {
+      "value": "O&MN (Operation & Maintenance, Navy)",
+      "source": "SAES header / DD Form 1391 Block 5",
+      "quote": "FY 22 O&MN",
+      "corroboration": [
+        {
+          "source": "SAES header",
+          "claim": "FY 22 O&MN",
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 5",
+          "claim": "O&MN",
+          "agrees": true
+        }
+      ]
+    },
+    "primary_scope_description": {
+      "value": "Fire protection system repairs, replacements, and new installations throughout Building NH95, including wet sprinkler system repair/replacement, conversion of dry/preaction systems to wet-pipe, new fire alarm and mass notification system, hazardous materials abatement (ACM, lead paint, PCBs), common space interior finish repairs (floors, walls, ceilings, doors), emergency lighting replacement, and provision of temporary SCIF-capable modular offices on adjacent NH5 site.",
+      "source": "SAES Section A2 / DD Form 1391 Block 10",
+      "quote": "Replace existing sprinkler heads throughout older sections of NH95 to include finish repairs. Repair/replace standpipes, risers and pump systems. In un-sprinkled areas provide sprinkler system or other fire suppression systems to include making repairs to substrates and finishes. Repair fire detection system and provide new detection system, link Giant Voice to system annunciation with new panels and software.",
+      "corroboration": [
+        {
+          "source": "SAES Section A2",
+          "claim": "fire sprinkler zones repair, phased construction, SCIF trailers",
+          "agrees": true
+        },
+        {
+          "source": "DD Form 1391 Block 10",
+          "claim": "Replace existing sprinkler heads throughout older sections of NH95...",
+          "agrees": true
+        },
+        {
+          "source": "BOD Introduction",
+          "claim": "Replace existing sprinkler heads throughout older sections of NH95 to include finish repairs...",
+          "agrees": true
+        }
+      ]
+    },
+    "phasing_required": {
+      "value": true,
+      "source": "SAES Section A2",
+      "quote": "Design this project so all work is phased. This phasing includes: All building tenants must be able to continue work during construction. Complete construction after working hours and on weekends to prevent disrupting work"
+    },
+    "scif_requirement": {
+      "value": true,
+      "source": "SAES Section A2.a.iii.2",
+      "quote": "SCIF construction as defined by users. Within SCIF areas provide network access to NIPR, SIPR, and any other classified networks as required."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "SAES Section A4 states fee will be negotiated at time of T.O. issue. No fee amount stated in available documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Task order TBD at time of SAES (dated July 1, 2021). Actual award date not in documents."
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design schedule shows milestones in relative durations from T.O. award, not absolute dates."
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing",
+        "notes": "Schedule defined in relative durations (91 days from interviews to DD submittal, 100 days to pre-final, etc.) but no total stated."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "design_submittals": [
+        "Design Development (35-50%)",
+        "Pre-Final (100%)",
+        "Final Design"
+      ],
+      "construction_procurement_strategy": {
+        "value": "Competitive Bid (Firm-Fixed-Price)",
+        "source": "SAES Section D2.f",
+        "quote": "Competitive Bid (Firm-Fixed-Price)"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Construction contract not yet awarded at time of source documents. ECC $26,637,000 is the estimated construction cost."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_dod",
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_operations"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "fire_protection_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering",
+      "structural_engineering",
+      "civil_engineering",
+      "architecture",
+      "hazardous_materials"
+    ],
+    "sub_disciplines": [
+      "fire_suppression_wet",
+      "fire_alarm",
+      "hvac_design",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water",
+      "plumbing_sanitary",
+      "structural_existing_assessment",
+      "civil_site_design",
+      "architectural_design"
+    ],
+    "building_systems": [
+      "fp_wet_sprinkler",
+      "fp_fire_alarm",
+      "fp_clean_agent",
+      "hvac_air_distribution",
+      "electrical_systems",
+      "electrical_lighting_interior",
+      "electrical_emergency_power",
+      "plumbing_systems",
+      "telecom_systems"
+    ],
+    "construction_scope": [
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "plumbing_scope",
+      "existing_hazmat_abatement",
+      "existing_demolition",
+      "finishes_scope",
+      "finishes_drywall_plaster",
+      "finishes_acoustical_ceilings",
+      "finishes_flooring",
+      "finishes_painting_wallcovering",
+      "openings_doors_frames",
+      "special_construction"
+    ],
+    "delivery_method": [
+      "design_bid_build"
+    ],
+    "contract_vehicle": [
+      "federal_idiq",
+      "federal_task_order",
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "prime_consultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [
+    {
+      "name": "Macklin Smith, R.A.",
+      "role_on_project": "NAVFAC Project Manager (Government)",
+      "organization": "NAVFAC MIDLANT"
+    },
+    {
+      "name": "Loreto Pantano, EIT",
+      "role_on_project": "NAVFAC Design Manager (Government)",
+      "organization": "NAVFAC MIDLANT"
+    }
+  ],
+  "tenant_freeform_tags": [
+    "navfac",
+    "nsa_norfolk",
+    "fire_protection",
+    "mass_notification",
+    "hazmat_abatement",
+    "scif",
+    "phased_construction",
+    "ops_center",
+    "navy_o_and_m",
+    "idiq_task_order",
+    "jensen_hughes_subconsultant"
+  ],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {},
+    "notes": "No drawing set PDF present in intake folder. SAES Attachment 7 references existing reference drawings (NH5 site plan, activity zoning floor plans, sprinkler zoning floor plans) as separate files. BOD references drawings HM101-HM122 for hazmat and cadillac floor plans were to be provided on request. Drawing extraction deferred — drawings not available in intake."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.square_footage",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "DD Form 1391 cost estimate / Facility Data",
+          "value": 275400,
+          "unit": "gsf total"
+        },
+        {
+          "source": "BOD FP Analysis §2.1 (Jensen Hughes)",
+          "value": 148219,
+          "unit": "sq ft footprint"
+        },
+        {
+          "source": "BOD FP Analysis occupant load table",
+          "value": 276133,
+          "unit": "gsf (sum of floors used in occupant load calc)"
+        }
+      ],
+      "resolution_chosen": "DD Form 1391 — 275,400 GSF total building area",
+      "rationale": "275,400 SF is the total floor area of the building per the authoritative government project document. 148,219 SF is the building footprint (per-floor area), not the total. The occupant load sum of 276,133 SF is a close-enough match to 275,400 (difference likely reflects exclusion of basement from occupant load but inclusion in total area). No material conflict."
+    },
+    {
+      "field_path": "facts.project_name / BOD typo",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SAES and DD Form 1391",
+          "value": "NH95"
+        },
+        {
+          "source": "BOD Introduction first sentence",
+          "value": "NH65 (apparent typo for NH95)"
+        }
+      ],
+      "resolution_chosen": "NH95 — all other references consistent",
+      "rationale": "BOD introduction says 'The existing building is NH65 at the Naval Station Norfolk' — this is a clear typographic error; all remaining BOD content, all SAES content, and all DD Form 1391 content consistently refer to NH95. No substantive conflict."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "architecture": "narratives/disciplines/architecture.md",
+      "hazardous_materials": "narratives/disciplines/hazardous_materials.md"
+    }
+  }
+}

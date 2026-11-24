@@ -1,0 +1,133 @@
+vocabulary_id: role_on_project
+vocabulary_version: 1.0.0
+last_updated: 2026-05-04
+anchor_standard: twt-original
+anchor_standard_version: null
+hierarchy: flat
+multi_select: true
+governance_notes: |
+  Captures BFA's role on a project. Used for both the project-level
+  bfa_role field and (in future personnel library) for individual
+  personnel role-on-project tagging.
+
+  Multi-select because BFA's role can span multiple categories (prime
+  consultant on design AND owner's representative during construction;
+  joint venture partner AND specialty consultant for one discipline).
+
+  Distinct from key personnel ROLE assignments within a project (PM,
+  Principal in Charge, Lead Architect) which are personnel-specific titles.
+future_migration: null
+
+entries:
+  - canonical_id: prime_consultant
+    display_name: Prime Consultant
+    definition: BFA holds the prime design contract directly with the owner.
+    parent_id: null
+    aliases:
+      - prime
+      - prime_designer
+      - prime_ae
+    standard_reference: null
+
+  - canonical_id: prime_design_builder
+    display_name: Prime Design-Builder
+    definition: BFA holds the prime design-build contract directly with the owner (combined design + construction responsibility).
+    parent_id: null
+    aliases:
+      - prime_db
+      - design_builder
+    standard_reference: null
+
+  - canonical_id: subconsultant
+    display_name: Subconsultant
+    definition: BFA serves as subconsultant under another prime designer or design-builder.
+    parent_id: null
+    aliases:
+      - sub
+      - sub_consultant
+      - subconsultant
+    standard_reference: null
+
+  - canonical_id: sub_to_contractor
+    display_name: Subconsultant to Contractor
+    definition: BFA serves as design subconsultant to a general contractor or design-builder (DB delivery).
+    parent_id: null
+    aliases:
+      - sub_to_gc
+      - sub_to_db
+      - sub_to_design_builder
+    standard_reference: null
+
+  - canonical_id: joint_venture_partner
+    display_name: Joint Venture Partner
+    definition: BFA participates as a JV partner sharing risk and reward with one or more firms.
+    parent_id: null
+    aliases:
+      - jv
+      - joint_venture
+    standard_reference: null
+
+  - canonical_id: teaming_partner
+    display_name: Teaming Partner
+    definition: BFA participates as a teaming partner under a teaming agreement (less integrated than JV).
+    parent_id: null
+    aliases:
+      - team_member
+      - teaming
+    standard_reference: null
+
+  - canonical_id: specialty_consultant
+    display_name: Specialty Consultant
+    definition: BFA provides a single specialty discipline (commissioning, lighting, security, etc.) under another prime.
+    parent_id: null
+    aliases:
+      - specialty
+      - specialty_sub
+    standard_reference: null
+
+  - canonical_id: peer_reviewer
+    display_name: Peer Reviewer
+    definition: BFA provides independent peer review of another firm's design.
+    parent_id: null
+    aliases:
+      - peer_review
+      - third_party_review
+    standard_reference: null
+
+  - canonical_id: owners_representative
+    display_name: Owner's Representative
+    definition: BFA serves as owner's representative or program management consultant.
+    parent_id: null
+    aliases:
+      - owners_rep
+      - pm_consultant
+      - program_manager
+    standard_reference: null
+
+  - canonical_id: design_assist_consultant
+    display_name: Design-Assist Consultant
+    definition: BFA provides design-assist services to a contractor during preconstruction or construction.
+    parent_id: null
+    aliases:
+      - design_assist
+    standard_reference: null
+
+  - canonical_id: commissioning_authority
+    display_name: Commissioning Authority (CxA)
+    definition: BFA serves as third-party commissioning authority.
+    parent_id: null
+    aliases:
+      - cxa
+      - cx_authority
+      - third_party_cx
+    standard_reference: null
+
+  - canonical_id: study_only
+    display_name: Study / Investigation Only
+    definition: BFA performed a study, assessment, or investigation only (no full design or construction services).
+    parent_id: null
+    aliases:
+      - study
+      - feasibility_study
+      - investigation
+    standard_reference: null

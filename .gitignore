@@ -1,0 +1,53 @@
+# ── Build output ──────────────────────────────────────────────────────────────
+_output/
+*.docx
+# Exception: brand reference template is tracked
+!templates/docx_reference/reference.docx
+# Exception: versioned deliverables under output/ are tracked (CLAUDE.md section 6)
+!output/**/*.docx
+!output/**/*.pdf
+*.pdf
+
+# ── OS & Editor ───────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+*.swp
+*~
+
+# ── Secrets / Config with real data ───────────────────────────────────────────
+00_admin/proposal_config.yml
+00_admin/sanity_config.yml
+
+# ── RFP intake (per-proposal content — never committed to template) ───────────
+00_admin/rfp_intake/original_rfp/*
+!00_admin/rfp_intake/original_rfp/.gitkeep
+00_admin/rfp_intake/addendums/*
+!00_admin/rfp_intake/addendums/.gitkeep
+00_admin/rfp_intake/attachments/*
+!00_admin/rfp_intake/attachments/.gitkeep
+
+# ── Sensitive attachments (add explicit exceptions with !) ────────────────────
+06_attachments/letters_of_support/*.pdf
+06_attachments/data/*.xlsx
+06_attachments/data/*.csv
+
+# ── Node / Python tooling ─────────────────────────────────────────────────────
+node_modules/
+__pycache__/
+*.pyc
+.env
+
+# ── Pandoc intermediates and scratch ──────────────────────────────────────────
+*.tmp.md
+# Pandoc image-extraction sidecars (produced when converting PDFs with images)
+media-*/
+media/
+# Manual scratch / work-in-progress folders (agents, drafts, experiments)
+_scratch/
+_tmp/
+# Customer-zip output from scripts/ship/package_zip.sh
+_ship/
+
+# ── Claude Code per-user overrides (project-shared settings.json IS tracked) ──
+.claude/settings.local.json

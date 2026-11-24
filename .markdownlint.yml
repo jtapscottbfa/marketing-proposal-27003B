@@ -1,0 +1,33 @@
+# .markdownlint.yml
+# Markdownlint configuration for proposal Markdown files
+# Docs: https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+
+default: true
+
+# MD013: Line length — disable for prose (long sentences are fine in proposals)
+MD013: false
+
+# MD033: Inline HTML — allow <br>, non-breaking spaces, etc. in tables
+MD033: false
+
+# MD041: First line should be a top-level heading
+# Disable: YAML front matter files don't start with a heading
+MD041: false
+
+# MD024: No duplicate headings — allow in separate sections/files
+MD024: false
+
+# MD026: Trailing punctuation in headings — allow colons (common in proposals)
+MD026:
+  punctuation: ".,;!?"
+
+# MD007: Unordered list indentation
+MD007:
+  indent: 2
+
+# MD029: Ordered list item prefix — use ordered numbering
+MD029:
+  style: ordered
+
+# MD060: Table column style — disable to allow compact |---|---| separator style
+MD060: false

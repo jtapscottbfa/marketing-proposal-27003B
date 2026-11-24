@@ -1,0 +1,648 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T00:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "baghdad_embassy",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf",
+      "type": "sow",
+      "sha256": "172ba5cf09387382d7cc34437f7e4df942191b093e0f9027875eb042459939d2",
+      "included": true,
+      "notes": "Primary government SOW, Section C, April 17 2023. DOS OBO solicitation 19AQMM23RBAGHDADFIRE."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx",
+      "type": "sow",
+      "sha256": "8170f408d9c6e27438aaf035c230a79257dfe46c3b2e84cf99c032b5cee88723",
+      "included": true,
+      "notes": "SOW for FPLS Engineering design services under prime contractor Futron; dated April 15, 2024. Reveals BFA role as subconsultant designer under Futron."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/2025.04.24.24-022.CD-3 SUBMITTAL MECHANICAL CALCULATIONS.pdf",
+      "type": "submittal",
+      "sha256": "c34e20971d5ddb8f9301529870787f2a11cbb4eaa3f44fea68a56e770acd5611",
+      "included": true,
+      "notes": "CD-3 submittal – TRACE 700 mechanical load calculations by Bowman, Foster & Associates, Inc., dated 04/23/2025. Mini-split sizing for existing and new fire pump houses."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/2025.04.24.24-022.CD-3 SUBMITTAL LIGHTING CALCULATION.pdf",
+      "type": "submittal",
+      "sha256": "dadd31c2253ace0aa163b204d9f187e364786d55904f63ab7935af0a8d3cedd4",
+      "included": true,
+      "notes": "CD-3 submittal – lighting calculations for B602 corridors, Lithonia 2x2 LED fixtures, dated 04/24/2025. Designer listed as IEP."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/2025.04.24.24-022.CD-3 SUBMITTAL LIGHTING FIXTURE CUTSHEET.pdf",
+      "type": "submittal",
+      "sha256": "6eafcd87a3b4b745283b57f8a736781917c8e01c15068c542e41acec37be1139",
+      "included": true,
+      "notes": "CD-3 submittal – lighting fixture product cutsheets."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/2025.04.24.24-022.CD-3 SUBMITTAL MECHANICAL EQUIPMENT CUTSHEETS.pdf",
+      "type": "submittal",
+      "sha256": "08237beca81846af02a1f4e54a0a2f68a0f67a19c00d01f789fedcc946b8e3f7",
+      "included": true,
+      "notes": "CD-3 submittal – mechanical equipment product cutsheets."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/230593_Testing-Adjusting-Balancing_HVAC_Jan21.docx",
+      "type": "spec_book",
+      "sha256": "911bc08665b53cd04a0d063d653ec778f9918dd2c04e138bfe4274a47e0f4cd0",
+      "included": true,
+      "notes": "Spec Section 230593 – Testing, Adjusting, and Balancing for HVAC, OBO standard, Jan 2021."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/230719_HVAC_Piping_Insulation_Jan21.docx",
+      "type": "spec_book",
+      "sha256": "e04079982c7c8727e8e5e4beaccd75c12700b77a99b243401a06f51e33dbc0a4",
+      "included": true,
+      "notes": "Spec Section 230719 – HVAC Piping Insulation, OBO standard, Jan 2021."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/230805_Commissioning_of_HVAC_Jan21.docx",
+      "type": "spec_book",
+      "sha256": "cb11f122d05d9083bfe7ef3331ac519be656a79febc60d9fa36aec71bb25b26e",
+      "included": true,
+      "notes": "Spec Section 230805 – Commissioning of HVAC, OBO standard, Jan 2021."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/230905 Instrumentation-Controls HVAC Jan22.docx",
+      "type": "spec_book",
+      "sha256": "2af7a7a040df4724a20c4af3279dc210452fe8c98941fed5756c21c2d7f90417",
+      "included": true,
+      "notes": "Spec Section 230905 – Instrumentation and Controls for HVAC, OBO standard, Jan 2022."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/238126 FL - Split-System Air-Conditioners.doc",
+      "type": "spec_book",
+      "sha256": "cad619dd177ccfb74c5b11c8d33263187dfbf73b177eb5c206a63fa835319df8",
+      "included": true,
+      "notes": "Spec Section 238126 – Split-System Air-Conditioners, OBO standard."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/260508_Common_Work_Elec-Comm_Jan22.docx",
+      "type": "spec_book",
+      "sha256": "2c009dd135db8349d7750bbc4ab4815da3b6cef24de2cd982c4d865f7db900b2",
+      "included": true,
+      "notes": "Spec Section 260508 – Common Work Results for Electrical and Communications, OBO standard, Jan 2022."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/260518_Low-Volt_Power_Conductors_Jan22.docx",
+      "type": "spec_book",
+      "sha256": "907104bf29d5c48c926add749150461443bc64e710a4e6ef2b7c684c1e835751",
+      "included": true,
+      "notes": "Spec Section 260518 – Low-Voltage Power Conductors and Cables, OBO standard, Jan 2022."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/262417_Panelboards_Jan22.docx",
+      "type": "spec_book",
+      "sha256": "34fe8c8d96f9b42a0a8fbf3038e44f21d9bbaee4f6baeea1e62f6e9c74ccb491",
+      "included": true,
+      "notes": "Spec Section 262417 – Panelboards, OBO standard, Jan 2022."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/262725_Wiring_Devices_Jan20.docx",
+      "type": "spec_book",
+      "sha256": "b01e543a0836ebd8f6933dd58140fb5ef2bd213ab9995992e0afc758b344ff0c",
+      "included": true,
+      "notes": "Spec Section 262725 – Wiring Devices, OBO standard, Jan 2020."
+    },
+    {
+      "path": "00_admin/reference_projects/dos/baghdad_embassy/337105_Underground_Ducts_and_Raceways_Jan19.docx",
+      "type": "spec_book",
+      "sha256": "b0dcbde5f23a2ca29ab195c4802e5c1eb7df95b07fe9d5a64871acd6bb0be3bc",
+      "included": true,
+      "notes": "Spec Section 337105 – Underground Ducts and Raceways, OBO standard, Jan 2019."
+    }
+  ],
+  "completeness": {
+    "has_bod": false,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": false,
+    "has_narrative_documents": false,
+    "completeness_tier": "partial",
+    "drawing_extraction_status": "complete",
+    "notes": "No formal BOD document present. Two SOWs present (government prime SOW and subconsultant SOW for FPLS/BFA under Futron). Thirteen OBO spec sections present. CD-3 submittals (mechanical calcs, lighting calcs, equipment cutsheets) present. No drawing set PDFs in intake folder — drawings referenced but not provided."
+  },
+  "facts": {
+    "project_name": {
+      "value": "Baghdad Diplomatic Support Center – Upgrade Fire Protection System",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.1",
+      "quote": "Baghdad Diplomatic Support Center\nUpgrade Fire Protection System",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.1",
+          "claim": "Baghdad Diplomatic Support Center – Upgrade Fire Protection System",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "claim": "Baghdad Diplomatic Support Center Upgrade Fire Protection System",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "U.S. Department of State, Bureau of Overseas Buildings Operations (OBO)",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.1",
+      "quote": "U.S. Department of State, Bureau of Overseas Buildings Operations",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.1",
+          "claim": "U.S. Department of State, Bureau of Overseas Buildings Operations",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "claim": "Futron requires design services for an Upgrade Fire Protection System project",
+          "agrees": true,
+          "notes": "Client to the prime (Futron) is DOS OBO; BFA/FPLS is sub to Futron."
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "U.S. Department of State, Bureau of Overseas Buildings Operations (OBO)",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+      "quote": "The United States Government (USG), Department of State (DOS), Bureau of Overseas Buildings Operations (OBO) requires design and construction services",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+          "claim": "The United States Government (USG), Department of State (DOS), Bureau of Overseas Buildings Operations (OBO)",
+          "agrees": true
+        }
+      ]
+    },
+    "prime_contractor_name": {
+      "value": "Futron",
+      "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+      "quote": "Futron requires design services for an Upgrade Fire Protection System project at the Baghdad Diplomatic Support Center in Baghdad, Iraq. This Statement of Work (SOW) defines the services to be performed by FPLS Engineering the project development Design Designer",
+      "corroboration": [
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "claim": "Futron is the prime contractor; FPLS Engineering (BFA) is the designer sub",
+          "agrees": true
+        },
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+          "claim": "SOW defines services to be performed by the project development Design Build Contractor",
+          "agrees": true,
+          "notes": "Prime SOW names only 'the Contractor' generically; Futron identity confirmed by sub-SOW."
+        }
+      ]
+    },
+    "location": {
+      "city": "Baghdad",
+      "state": null,
+      "country": "Iraq",
+      "facility_name": "Baghdad Diplomatic Support Center (BDSC)",
+      "facility_description": "147-hectare (364-acre) compound adjacent to Baghdad International Airport (BIAP), acquired by State Department from US DoD",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+      "quote": "The project is located on 147 hectares (364 acres). The site is developed as an existing compound that the State Department acquired from the US DoD, which situated adjacent to the Baghdad International Airport (BIAP).",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+          "claim": "Baghdad, Iraq; 147 hectares, adjacent to BIAP",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "claim": "Baghdad, Iraq; 147 hectares, adjacent to BIAP",
+          "agrees": true
+        }
+      ]
+    },
+    "solicitation_number": {
+      "value": "19AQMM23RBAGHDADFIRE",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.1",
+      "quote": "19AQMM23RBAGHDADFIRE",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.1",
+          "claim": "19AQMM23RBAGHDADFIRE",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "claim": "19AQMM23RBAGHDADFIRE April 15th, 2024",
+          "agrees": true
+        }
+      ]
+    },
+    "project_number_internal": {
+      "value": "24-022",
+      "source": "CD-3 submittal filenames (2025.04.24.24-022.*)",
+      "quote": null,
+      "notes": "Project number inferred from CD-3 submittal file naming convention '24-022'. Verify against BFA internal records."
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "No overall GSF figure given. Compound is 147 hectares / 364 acres. Eight buildings of mixed type (pre-engineered, warehouse, hangar, modular). Individual pump house floor areas derivable from mechanical calcs (195 SF and 406 SF per TRACE calculations for two pump house spaces) but not a project-wide area."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "period_of_performance_design_months": {
+      "value": 8,
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+      "quote": "Design: Eight (8) Months",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+          "claim": "Design: Eight (8) Months",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.2",
+          "claim": "Design shall be completed within a period of performance of Eight (8) Months.",
+          "agrees": true
+        }
+      ]
+    },
+    "period_of_performance_total_months": {
+      "value": 24,
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+      "quote": "Design and construction shall be completed within a period of performance of 24 months.",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+          "claim": "24 months total (design 8 months, procurement/shipping 7 months, construction 9 months)",
+          "agrees": true
+        }
+      ]
+    },
+    "project_scope_description": {
+      "value": "Design and construction services for fire protection system upgrades across eight buildings at the Baghdad Diplomatic Support Center compound, including fire alarm replacement, wet pipe sprinkler installation, new fire pump house, underground fire main replacement and extension, sitework tie-ins, and AFFF system removal. Compound occupies 147 hectares adjacent to Baghdad International Airport.",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+      "quote": "The project involves the Fire Protection System upgrades for eight (8) buildings on the Baghdad BDSC compound to include fire alarms and fire suppression in compliance with OBO International Building Code.",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+          "claim": "Fire protection upgrades for 8 buildings including alarms and suppression",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "claim": "Fire protection upgrades for 8 buildings; also includes foam suppression in 606/610",
+          "agrees": true,
+          "notes": "FPLS sub-SOW adds foam suppression CLINs 004/005 for hangars not in prime SOW baseline"
+        }
+      ]
+    },
+    "buildings_in_scope": {
+      "value": [
+        "Building 278 – PAX Outbound Terminal",
+        "Building 279 – PAX Inbound Terminal/Office Building",
+        "Building 306 – Dining Facility (DFAC) [Option CLIN 003]",
+        "Sully Compound – Temporary Housing",
+        "Building 602 – Sather Building – Office and Warehouse",
+        "Building 606 – Kirby Hangar",
+        "Building 610 – Kirby Hangar",
+        "Modular Firing Range",
+        "Existing Fire Pump House",
+        "New Fire Pump House (new construction)"
+      ],
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.3.1.3.1",
+      "quote": "Building 278 – PAX Outbound Terminal\nBuilding 279 – PAX Inbound Terminal/Office Building\nBuilding 306 – Dining Facility (also referenced as DFAC)\nSully Compound – Temporary Housing\nBuilding 602 – Sather Building – Office and Warehouse\nBuilding 606 – Kirby Hangar\nBuilding 610 – Kirby Hangar\nModular Firing Range",
+      "corroboration": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.3.1.3.1",
+          "claim": "8 buildings listed",
+          "agrees": true
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx §C.2.3.1.3.2",
+          "claim": "Same 8 buildings; DFAC (306) omitted from FPLS sub-scope baseline but included as optional CLIN",
+          "agrees": true
+        }
+      ]
+    },
+    "key_systems_scope": {
+      "fire_alarm": {
+        "value": "New fire alarm systems in all eight buildings; connected via fiber optic network to Tactical Operations Center (TOC) in Building 602; Notifier system extended in Building 602; IR3 flame detectors in hangars",
+        "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.3.1.3.2",
+        "quote": "Remove existing fire alarm system, dispose, and replace with a new fire alarm system. Connect new system to existing fiber network to transmit alarm, supervisory and trouble conditions back to the Tactical Operations Center (TOC) in Building 602."
+      },
+      "fire_suppression_wet_sprinkler": {
+        "value": "New wet pipe sprinkler systems in Buildings 278, 279, 306, 602, 606, 610; replacement of upright sprinklers; new underground fire mains; new fire pump house",
+        "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.3.1.3.2",
+        "quote": "Provide new fire sprinkler system for the entire building."
+      },
+      "fire_suppression_foam": {
+        "value": "AFFF removal from Building 610; new low-level high-expansion foam systems in Buildings 606 and 610 (CLIN 004, optional per FPLS sub-SOW)",
+        "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx §C.2.3.1.3.2 B.6",
+        "quote": "CLIN 004: Provide new low level, high expansion foam system for the entire building."
+      },
+      "hvac_mini_splits": {
+        "value": "New mini-split AC units for existing fire pump house and PAX Terminal fire pump house; sized per TRACE 700 calculations at approximately 1.2 and 1.6 tons respectively",
+        "source": "2025.04.24.24-022.CD-3 SUBMITTAL MECHANICAL CALCULATIONS.pdf",
+        "quote": null,
+        "notes": "Derived from TRACE 700 calculations: Existing Fire Pump House 195 SF, 1.2 ton / 14.9 MBh cooling; PAX Term Fire Pump House 406 SF, 1.6 ton / 19.0 MBh cooling. Calculated by Bowman, Foster & Associates, Inc."
+      },
+      "electrical": {
+        "value": "Electrical connections to existing panelboards for mini-splits and fire alarm control panels; new underground conduit and fiber optic cable for fire alarm network; panelboard replacements as needed",
+        "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.3.1.3.2",
+        "quote": "Connect electrical to nearest existing panelboard as necessary."
+      },
+      "lighting_interior": {
+        "value": "Replacement lighting in B602 corridors (northwest and northeast); Lithonia 2GTL2 2x2 LED fixtures at 18.39W; lighting calculations show 17.2 fc avg NW corridor and 17.4 fc avg NE corridor",
+        "source": "2025.04.24.24-022.CD-3 SUBMITTAL LIGHTING CALCULATION.pdf",
+        "quote": null,
+        "notes": "From CD-3 lighting calculation: B602 Northwest Corridor – 24 fixtures, avg 17.2 fc; B602 Northeast Corridor – 18 fixtures, avg 17.4 fc. Lighting design by IEP. Minor scope item associated with ceiling work for sprinkler installation."
+      }
+    },
+    "design_phase_description": {
+      "value": "Design-Build delivery; design phases CD-1, CD-3, and DIFC (Design Issued for Construction); Integrated Design Review (IDR) process with OBO Subject Matter Experts; QFPE-stamped submittals required; BIM/CAD per OBO ODR standards",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.3.5.5",
+      "quote": "Working (Construction) Drawing Documents (CD-1) requirements are defined by phase and the level of effort for each submittal."
+    },
+    "design_submittals_completed": {
+      "value": "CD-3 submittal completed approximately April 24, 2025 (per submittal file dates)",
+      "source": "CD-3 submittal filenames and dates",
+      "quote": null,
+      "notes": "Submittal files dated 2025.04.24 indicate CD-3 completion."
+    },
+    "security_classification": {
+      "value": "Unclassified with classified components",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.1.1",
+      "quote": "This scope of work requires that the Contractor shall perform both unclassified and classified work. The Contractor shall provide Secret Level cleared personnel for areas and tasks specified in Division 01 Specifications."
+    },
+    "codes_standards": {
+      "value": [
+        "OBO International Building Code (OBO-IBC)",
+        "OBO International Code Supplements (OBO-ICS)",
+        "NFPA 11 (Foam Systems)",
+        "NFPA 13 (Sprinkler Systems)",
+        "NFPA 20 (Fire Pumps)",
+        "NFPA 24 (Private Fire Service Mains)",
+        "NFPA 25 (ITM of Water-Based Fire Protection)",
+        "NFPA 70 (National Electrical Code, as amended by OBO)",
+        "NFPA 72 (Fire Alarm and Signaling Code)",
+        "NFPA 409 (Aircraft Hangars)",
+        "OBO Standard Specifications",
+        "OBO Deliverable Requirements (ODR suite)",
+        "ANSI/ASHRAE Standard 111-2008 (TAB)"
+      ],
+      "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx §C.2.2",
+      "quote": "NFPA Standards 11, 13, 20, 24, 25, 70, 72, and 409"
+    },
+    "special_requirements": {
+      "value": "SPOT database registration for all personnel in Iraq; Electronic Country Clearance (eCC); Secret-level personnel clearances; Iraqi visa processing 30-60 days; Synchronized Pre-Deployment Operational Tracker compliance; PFAS/AFFF disposal plan per ITRC guidance",
+      "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.1.1.1-C.2.1.1.2",
+      "quote": "The Contractor is required to train employees traveling to Post and follow the DOS procedures for S.P.O.T training."
+    }
+  },
+  "phases": {
+    "design": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design fee not stated in available documents. FPLS sub-SOW does not include contract value."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing",
+        "notes": "CD-3 submittal dated April 24, 2025; DIFC not yet complete at time of that submittal."
+      },
+      "contractual_duration_days": {
+        "value": 240,
+        "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.4",
+        "quote": null,
+        "notes": "Calculated from C.4 schedule: DIFC submittal backcheck complete at NTP+240 calendar days (8 months design schedule per §C.1.1.2)."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing"
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 270,
+        "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf p.3",
+        "quote": "Construction: Nine (9) Months",
+        "notes": "9 months = approximately 270 calendar days."
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_civilian"
+    ],
+    "program_type": [
+      "civic_government",
+      "military_defense"
+    ],
+    "program_subtype": [
+      "civic_office",
+      "military_maintenance"
+    ],
+    "disciplines": [
+      "fire_protection_engineering",
+      "mechanical_engineering",
+      "electrical_engineering",
+      "plumbing_engineering"
+    ],
+    "sub_disciplines": [
+      "fire_suppression_wet",
+      "fire_suppression_dry",
+      "fire_suppression_clean_agent",
+      "fire_alarm",
+      "hvac_design",
+      "hvac_controls",
+      "electrical_power_distribution",
+      "electrical_lighting",
+      "plumbing_domestic_water"
+    ],
+    "building_systems": [
+      "fp_wet_sprinkler",
+      "fp_clean_agent",
+      "fp_fire_alarm",
+      "hvac_packaged",
+      "hvac_controls_bas",
+      "electrical_distribution",
+      "electrical_lighting_interior",
+      "site_utilities"
+    ],
+    "construction_scope": [
+      "fire_suppression_scope",
+      "electronic_safety_security",
+      "mechanical_hvac",
+      "electrical_power",
+      "electrical_lighting_scope",
+      "existing_demolition",
+      "utilities_scope"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "standalone_project"
+    ],
+    "procurement_type": [
+      "federal_full_and_open"
+    ],
+    "award_type": [
+      "unknown_award_type"
+    ],
+    "project_status": [
+      "in_design"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "tenant_freeform_tags": [
+    "dos_obo",
+    "overseas_facility",
+    "baghdad",
+    "iraq",
+    "fire_protection",
+    "hangar",
+    "compound",
+    "afff_removal",
+    "security_clearance_required",
+    "design_build",
+    "bowman_foster_associates",
+    "fpls_engineering",
+    "futron"
+  ],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "drawings": {
+    "sheets": [],
+    "facts_derived": {
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "No drawing set provided in intake. Pump house floor areas derivable from mechanical calcs only (195 SF existing pump house; 406 SF PAX pump house). Overall compound area is 147 hectares."
+      },
+      "floor_count": {
+        "value": null,
+        "status": "missing"
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Mini-split AC, existing fire pump house: 1.2 ton / 14.9 MBh cooling (TRACE 700, 195 SF floor area)",
+          "Mini-split AC, PAX Terminal fire pump house: 1.6 ton / 19.0 MBh cooling (TRACE 700, 406 SF floor area)",
+          "Design conditions: ODB 84°F / WB 62°F summer; 33°F winter"
+        ],
+        "electrical": [
+          "Connections to existing panelboards for mini-splits",
+          "New fire alarm control panel power circuits",
+          "Distribution panelboards: 600V and below, NFPA 70 as amended by OBO",
+          "Underground conduit and fiber optic cable for fire alarm network (multiple buildings)"
+        ],
+        "plumbing": [
+          "Domestic plumbing not in scope — fire suppression piping only"
+        ],
+        "fire_protection": [
+          "New wet pipe sprinkler systems: Buildings 278, 279, 306 (option), 602, 606, 610",
+          "New fire alarm systems: all 8 buildings, fiber-networked to TOC in Building 602",
+          "New fire pump house with redundant fire pump configuration (primary + existing as secondary)",
+          "Underground fire main replacement: Building 241 to Building 278",
+          "New underground fire mains: to Buildings 306, 606, 610",
+          "Fire hydrants at new fire main branches",
+          "AFFF removal from Building 610 (PFAS disposal per ITRC guidance)",
+          "High-expansion foam systems: Buildings 606 and 610 (CLIN 004, optional)",
+          "IR3 flame detectors: Buildings 606 and 610 (large hangar areas)",
+          "Notifier fire alarm system extension: Building 602",
+          "Smoke detectors in Sully Compound sleeping units",
+          "Four existing water tanks (250,000 gallons each) ITM per NFPA 25"
+        ]
+      }
+    },
+    "reading_notes": "No drawing set PDFs present in intake folder. The CD-3 submittal lighting calculation and mechanical calculation PDFs (dated April 24, 2025) appear to be design calculation submittals rather than drawing sheets. Calculations by Bowman, Foster & Associates, Inc. (mechanical) and IEP (lighting) — these appear to be design firm sub-team members or the BFA team name in use. Lighting calcs reference Drawing No. E101 for B602 corridor areas. No architectural, structural, or fire protection drawing sheets are present."
+  },
+  "conflict_flags": [
+    {
+      "field_path": "facts.key_systems_scope.fire_suppression_foam",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf §C.2.3.1.3.2 B.7",
+          "value": "Remove AFFF from Building 610; replace with wet sprinkler. No foam in Building 606."
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx §C.2.3.1.3.2 B.6-7",
+          "value": "Remove AFFF from Building 610 (CLIN 005). Add new high-expansion foam systems in Buildings 606 AND 610 (CLIN 004). Foam system for 606 and 610 is an additional CLIN not in prime SOW."
+        }
+      ],
+      "resolution_chosen": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx",
+      "rationale": "The FPLS sub-SOW is dated April 2024 (later than the April 2023 prime SOW) and reflects evolved scope including new CLINs 004 and 005. The foam systems in the hangars are an expansion of scope via additional CLINs. The prime SOW represents the baseline; the sub-SOW represents the current executed scope. Not a true conflict — scope was expanded."
+    },
+    {
+      "field_path": "facts.prime_contractor_name",
+      "severity": "minor",
+      "claims": [
+        {
+          "source": "SOW_Baghdad_BDSC_Upgrade_Fire_Prot_Sys_Sect_C_230417.pdf",
+          "value": "Contractor identity not stated in prime SOW — referred to only as 'the Contractor'"
+        },
+        {
+          "source": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx p.1",
+          "value": "Futron is named as the prime contractor; FPLS Engineering is the designer sub"
+        }
+      ],
+      "resolution_chosen": "FUTRON and FPLS ENGINEERING STATEMENT OF WORK FOR DESIGN SERVICES FPLS Markup.docx",
+      "rationale": "Sub-SOW is a definitive source for the contracting structure. Futron is clearly named as the entity issuing requirements to FPLS/BFA."
+    }
+  ],
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "fire_protection_engineering": "narratives/disciplines/fire_protection_engineering.md",
+      "mechanical_engineering": "narratives/disciplines/mechanical_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "plumbing_engineering": "narratives/disciplines/plumbing_engineering.md"
+    }
+  }
+}

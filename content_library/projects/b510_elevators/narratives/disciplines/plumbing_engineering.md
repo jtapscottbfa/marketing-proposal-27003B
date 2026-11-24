@@ -1,0 +1,5 @@
+The plumbing scope on this project was limited to elevator pit sump pump systems for each of the three replacement elevators. Per UFC 3-490-06 requirements governing vertical transportation systems on NAVFAC installations, each elevator pit was provided with an automatic, electric motor-driven submersible sump pump with a minimum discharge capacity of 50 gallons per minute. Discharge piping from each pit was routed to the building exterior using Schedule 40 PVC.
+
+No domestic water, sanitary drainage, or other plumbing systems were within the scope of this elevator replacement project. The sump pump provisions are a code-mandated design element to manage potential water intrusion into the below-grade hoistway pit spaces of the 1956-era Building 510, which lacks modern below-grade waterproofing systems typical of newer construction.
+
+UFC 3-490-06 served as the primary applicable code for plumbing provisions on this NAVFAC project, alongside applicable ASME A17.1–2019 requirements for elevator pit drainage.

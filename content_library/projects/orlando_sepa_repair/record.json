@@ -1,0 +1,410 @@
+{
+  "tenant_id": "bfa",
+  "schema_version": "0.1.0",
+  "extractor_version": "0.0.3-bandaid-heavy",
+  "extracted_at": "2026-05-07T12:00:00Z",
+  "project_id": {
+    "value": null,
+    "status": "missing"
+  },
+  "project_slug": "orlando_sepa_repair",
+  "source_documents": [
+    {
+      "path": "00_admin/reference_projects/navfac/orlando_sepa_repair/N6945022R0107 SEPA REPAIR - NOSC ORLANDO.pdf",
+      "type": "sow",
+      "sha256": "a5541a510d16aa57e513dfe4ca5039f020246f67cd45dd306fd32a7f9fb40fee",
+      "included": true,
+      "notes": "Federal solicitation SF1442 / RFP N6945022R0107, 59 pages. Contains Schedule of Prices CLINs, standard clauses, SOW reference, wage determination. Primary solicitation document."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/orlando_sepa_repair/NOSC Orlando Repairs-RFP.pdf",
+      "type": "sow",
+      "sha256": "9ac49bbc1481ce04aa9bf505deb9ebee21d8962ef30b40117758e579124b1fe5",
+      "included": true,
+      "notes": "Full RFP package (design-build), 6 parts: general requirements, SOW/project program, performance specs, prescriptive specs, attachments including 2018 Basis of Design pre-final design package (LS3P / Newcomb & Boyd), drawing set (G-000 through SC-502, 58 sheets), geotechnical report (Schnabel Engineering, April 2018), site photos, FC 4-171-06N. Prepared by NAVFAC SE Capital Improvements."
+    },
+    {
+      "path": "00_admin/reference_projects/navfac/orlando_sepa_repair/22-049 SEPA Repair - NOSC Orlando SITE SURVEY REPORT.pdf",
+      "type": "report",
+      "sha256": "829eabee538dccec784d30ccfaea1befe828f7cd88eb7f0d07e2fd8d70beeb7c",
+      "included": true,
+      "notes": "BFA Site Survey Report, BFA project 22-049, survey conducted December 12-13, 2022. Disciplines: Architectural, Structural, Civil, Security, Electrical. BFA letterhead confirms BFA is designer-of-record/subconsultant for this design-build project."
+    }
+  ],
+  "completeness": {
+    "has_bod": true,
+    "has_sow": true,
+    "has_specs": true,
+    "has_drawings": true,
+    "has_narrative_documents": false,
+    "completeness_tier": "full",
+    "drawing_extraction_status": "deferred",
+    "notes": "Drawings embedded in RFP PDF (Attachment A, 58 sheets). Drawings are pre-final design vintage 2018 provided as reference; BFA site survey 2022 documents updated field conditions. No standalone drawing PDF separate from RFP."
+  },
+  "facts": {
+    "project_name": {
+      "value": "NOSC Orlando SEPA Repairs",
+      "source": "RFP Cover Sheet / Site Survey Report title",
+      "quote": "NOSC SEPA REPAIRS — NOSC ORLANDO, FL",
+      "corroboration": [
+        {
+          "source": "Solicitation SF1442 cover page",
+          "claim": "REQUEST FOR QUOTE N69450-22-R-0107, NOSC ORLANDO - SEPA REPAIRS, NSA ORLANDO, FLORIDA",
+          "agrees": true
+        },
+        {
+          "source": "RFP cover sheet",
+          "claim": "NOSC Orlando-SEPA Repairs At Naval Support Activity (NSA), Orlando, Florida",
+          "agrees": true
+        },
+        {
+          "source": "Site Survey Report title",
+          "claim": "NOSC SEPA REPAIRS — NOSC ORLANDO, FL",
+          "agrees": true
+        }
+      ]
+    },
+    "client_name": {
+      "value": "Naval Facilities Engineering Systems Command Southeast (NAVFAC SE)",
+      "source": "Solicitation SF1442 cover page, Item 7",
+      "quote": "NAVFAC ENGINEERING SYSTEMS COMMAND SE PWD ORLANDO 12211 SCIENCE DRIVE ORLANDO FL 32826-3224",
+      "corroboration": [
+        {
+          "source": "RFP cover sheet",
+          "claim": "SUBMITTED BY: NAVFAC Southeast, Capital Improvements, P.O. Box 30, Building 903, NAS Jacksonville, FL 32212",
+          "agrees": true
+        }
+      ]
+    },
+    "owner_name": {
+      "value": "Department of the Navy / Naval Facilities Engineering Systems Command Southeast",
+      "source": "Solicitation SF1442 / Drawing title block",
+      "quote": "DEPARTMENT OF THE NAVY",
+      "corroboration": [
+        {
+          "source": "Solicitation SF1442 DFARS clause 252.219-7009",
+          "claim": "This contract is issued as a direct award between the contracting office and the 8(a) Contractor pursuant to the Partnership Agreement between the Small Business Administration (SBA) and the Department of Defense.",
+          "agrees": true
+        }
+      ]
+    },
+    "location": {
+      "city": "Orlando",
+      "state": "FL",
+      "country": "US",
+      "facility_name": "Naval Support Activity (NSA) Orlando / Armed Forces Reserve Center Orlando",
+      "facility_address": "9500 Armed Forces Reserve Drive, Orlando, Florida 32827",
+      "source": "Geotechnical Report / Site Survey Report",
+      "quote": "NOSC SEPA Repairs Orlando, Florida AE Contract N69450-13-D-0100 ... 9500 Armed Forces Reserve Drive, Orlando, Florida 32827"
+    },
+    "project_number_client": {
+      "value": "N6945022R0107",
+      "source": "Solicitation SF1442 cover page",
+      "quote": "SOLICITATION NO. N6945022R0107"
+    },
+    "contract_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Solicitation only — no awarded contract number visible in source documents."
+    },
+    "task_order_number": {
+      "value": null,
+      "status": "missing",
+      "notes": "Parent IDIQ A/E contract referenced as N69450-13-D-0010; RFP work order 1560522 noted on drawing set."
+    },
+    "idiq_parent_contract": {
+      "value": "N69450-13-D-0010",
+      "source": "Drawing title block / RFP cover sheet",
+      "quote": "CONTRACT NO: N69450-13-D-0010"
+    },
+    "work_order_number": {
+      "value": "1560522",
+      "source": "RFP cover sheet / Drawing title block",
+      "quote": "WORK ORDER NO. 1560522"
+    },
+    "square_footage": {
+      "value": null,
+      "status": "missing",
+      "notes": "Project is a security upgrade/repair to an existing multi-story building. No GSF stated in source documents. Building is multi-story, multi-tenant (Navy, USMC, Army shares). Area not provided in available documents."
+    },
+    "program_budget": {
+      "value": null,
+      "status": "missing"
+    },
+    "construction_magnitude": {
+      "value": "Between $1,000,000 and $5,000,000",
+      "source": "Solicitation SF1442 cover page",
+      "quote": "The magnitude of this construction project is between $1,000,000.00 and $5,000,000.00.",
+      "corroboration": [
+        {
+          "source": "Antiterrorism narrative in RFP",
+          "claim": "The 15% Concept design cost estimate for the Orlando NOSC SEPA repairs totals $1.439M",
+          "agrees": true,
+          "note": "This is the 2018 cost estimate; 2022 solicitation magnitude band consistent."
+        }
+      ]
+    }
+  },
+  "phases": {
+    "design": {
+      "notes": "Design-build delivery; BFA is designer of record / subconsultant. Site survey completed December 2022.",
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Design fee not separately stated in source documents (design-build lump sum)."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": null,
+        "status": "missing"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    },
+    "construction": {
+      "contract_value": {
+        "value": null,
+        "status": "missing",
+        "notes": "Lump sum price from offeror; no awarded price in source documents."
+      },
+      "awarded_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "started_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "completion_date": {
+        "value": null,
+        "status": "missing"
+      },
+      "contractual_duration_days": {
+        "value": 180,
+        "source": "Solicitation SF1442, Item 11 / Section 00 72 00",
+        "quote": "complete the entire work ready for use not later than 180 days after award"
+      },
+      "change_orders": [],
+      "actual_value": {
+        "value": null,
+        "status": "missing"
+      }
+    }
+  },
+  "taxonomy": {
+    "client_type": [
+      "federal_navfac"
+    ],
+    "program_type": [
+      "military_defense"
+    ],
+    "program_subtype": [
+      "military_operations"
+    ],
+    "disciplines": [
+      "architecture",
+      "civil_engineering",
+      "structural_engineering",
+      "electrical_engineering",
+      "security_engineering",
+      "telecommunications_engineering"
+    ],
+    "sub_disciplines": [
+      "civil_site_design",
+      "civil_utilities",
+      "structural_foundation",
+      "electrical_power_distribution",
+      "security_access_control",
+      "security_video_surveillance",
+      "security_intrusion",
+      "telecom_structured_cabling"
+    ],
+    "building_systems": [
+      "security_acs",
+      "security_video",
+      "security_intrusion",
+      "electrical_distribution",
+      "site_walls_fencing",
+      "site_utilities"
+    ],
+    "construction_scope": [
+      "existing_demolition",
+      "earthwork_scope",
+      "exterior_improvements",
+      "exterior_walls_fencing",
+      "electronic_safety_security",
+      "electrical_power",
+      "openings_doors_frames"
+    ],
+    "delivery_method": [
+      "design_build"
+    ],
+    "contract_vehicle": [
+      "federal_aedc"
+    ],
+    "procurement_type": [
+      "federal_8a_sole_source"
+    ],
+    "award_type": [
+      "qualifications_based"
+    ],
+    "project_status": [
+      "complete"
+    ],
+    "bfa_role": [
+      "subconsultant"
+    ]
+  },
+  "socioeconomic_participation": [],
+  "key_personnel": [],
+  "key_personnel_pending": [],
+  "tenant_freeform_tags": [
+    "navfac_southeast",
+    "orlando",
+    "nsa_orlando",
+    "sepa_repairs",
+    "physical_security",
+    "design_build",
+    "8a_award",
+    "atfp",
+    "nosc",
+    "florida",
+    "anti_terrorism_force_protection",
+    "k_rated_vehicle_barriers",
+    "cctv",
+    "access_control_system",
+    "site_security_upgrades"
+  ],
+  "conflict_flags": [],
+  "drawings": {
+    "notes": "Drawing set (58 sheets, G-000 through SC-502) embedded in NOSC Orlando Repairs-RFP.pdf as Attachment A. Pre-final design dated 21 May 2018, prepared by LS3P Associates (Arch), ADC Engineering (Civil), Newcomb & Boyd (Elec/Security), MMSA (Structural). Not rendered to PNG — deferred per memory-safety cap and because these are 2018 reference drawings, superseded by BFA 2022 site survey findings.",
+    "sheets": [
+      {
+        "sheet_number": "G-000",
+        "title": "COVER SHEET",
+        "discipline": "architecture",
+        "reading_notes": "Drawing index lists 58 sheets across civil (C-001 through C-711), architectural (A-101 through A-604), security (SC-001 through SC-502). Project: NOSC SEPA Repairs at NSA Orlando. Contract N69450-13-D-0010, Work Order 1560522. Pre-Final Design 21 May 2018. Prepared by LS3P (arch), ADC Engineering (civil), Newcomb & Boyd (elec/security), MMSA (structural)."
+      },
+      {
+        "sheet_number": "C-001",
+        "title": "EXISTING SITE PLAN - OVERALL",
+        "discipline": "civil_engineering",
+        "reading_notes": "Overall site plan at 1\"=30'. 7-foot chain link fence perimeter, two vehicle gates off Dowden Road (east/west), dry retention pond in front of building, wooded areas east of main gate, small swamp area at northwest fence corner."
+      },
+      {
+        "sheet_number": "C-100/C-101",
+        "title": "EXIST. CONDITIONS AND DEMOLITION PLAN - WEST/EAST",
+        "discipline": "civil_engineering",
+        "reading_notes": "Existing entry cantilevered sliding gates to be demolished, pedestals demolished, existing man gate replaced with turnstile. 1\"=20' scale."
+      },
+      {
+        "sheet_number": "C-200/C-201",
+        "title": "SITE PLAN - WEST/EAST",
+        "discipline": "civil_engineering",
+        "reading_notes": "New K-rated cantilevered sliding gates at both ECPs (24' west, 20' east). K-rated cable reinforcement along north fence line (~100 LF west run, ~420 LF east run). Two ingress/egress turnstiles. K-rated manual drop arm gate at loading dock (12' wide)."
+      },
+      {
+        "sheet_number": "A-101 through A-103",
+        "title": "FLOOR PLANS FIRST/SECOND/THIRD FLOOR",
+        "discipline": "architecture",
+        "reading_notes": "Multi-story multi-tenant facility (Areas A-D). Wilson Building (W-prefix rooms), Taft Building, Smedley Building Complex. Third floor unoccupied, to be demolished under separate contract. Navy spaces in areas A-B first floor, second floor area A-B. Medical suite, gym, classrooms, admin offices, drill hall shown. Building substantially occupied."
+      },
+      {
+        "sheet_number": "A-601/A-602/A-604",
+        "title": "DOOR/WINDOW SCHEDULES AND FRAGMENTATION RETENTION FILM DETAILS",
+        "discipline": "architecture",
+        "reading_notes": "All exterior windows to receive fragmentation retention film (mechanical attachment method, 3M Ultra Night Vision S25 8-mil). Selected interior doors to receive security/privacy film. Door schedule lists ~30+ doors for security hardware work. Deadbolts added to restroom doors and exam rooms."
+      },
+      {
+        "sheet_number": "SC-001",
+        "title": "SECURITY LEGEND AND NOTES",
+        "discipline": "security_engineering",
+        "reading_notes": "ESS subsystems: ACS (Hirsch/Identiv DIGI*TRAC Model 8, CAC readers), VSS (5 PTZ IP cameras + 1 fixed dome at quarterdeck, 16-channel hybrid DVR), SCS (Aiphone speakerphones at gates and turnstiles). Electrical calculations show voltage drop within 3% for west gate (556' run, #1/0) and east gate (416' run, #1)."
+      },
+      {
+        "sheet_number": "SC-100A/SC-100B",
+        "title": "SECURITY SITE PLAN - AREA A/B",
+        "discipline": "security_engineering",
+        "reading_notes": "Site security layout showing camera locations, gate control panels, pull boxes, conduit routing. 7 monitoring locations distributed across campus (Wilson, Taft, Smedley buildings, supply bay). Emergency panel EL1-11 in Room W120/S105 serves all new circuits."
+      },
+      {
+        "sheet_number": "SC-501/SC-502",
+        "title": "SECURITY FUNCTIONAL DIAGRAM / EXISTING EQUIPMENT SCHEDULES",
+        "discipline": "security_engineering",
+        "reading_notes": "ACS functional diagram shows Hirsch Velocity system with SNIB3, RREB, uTrust readers. New 16-channel hybrid DVR (Speco D16HT). Existing panelboard L1-11 schedule (Section 2 of 2, 208Y/120V, 225A bus) shows new circuits 66/68 (30A gates), 70/72 (30A gates), 74/76 (20A turnstiles/workstation)."
+      }
+    ],
+    "facts_derived": {
+      "floor_count": {
+        "value": 3,
+        "source": "Drawing set A-101 through A-103",
+        "quote": null,
+        "sheets": [
+          "A-101",
+          "A-102",
+          "A-103"
+        ],
+        "notes": "Three floors. Third floor unoccupied/slated for demolition under separate contract. First and second floors are active Navy/USMC/Army spaces."
+      },
+      "gross_square_footage": {
+        "value": null,
+        "status": "missing",
+        "notes": "Drawings show floor plan extents but no area tabulation found in drawings or documents reviewed."
+      },
+      "mep_system_inventory": {
+        "hvac": [
+          "Existing HVAC system retained; one note to add condensate drip device below wall-mounted unit at security office to prevent drip on electrical equipment. No HVAC new work in scope."
+        ],
+        "electrical": [
+          "Existing emergency panel EL1-11 (208Y/120V, 125A MCB, 50A fed from emergency system) in Room W120 — serves existing cameras/gates",
+          "Normal power panel L1-11 (208Y/120V, 225A bus, Section 2) in Room S105 — new 30A circuits for 2 gates (CKTs 68, 72), 20A circuits for 2 turnstiles (CKTs 66, 70) and workstation (CKT 74/76)",
+          "Dedicated 20A circuit for new security headend rack in Room S109 Telecom",
+          "Conduit runs: 556' to west turnstile, 566' to west gate, 442' to east turnstile, 416' to east gate"
+        ],
+        "plumbing": [
+          "No plumbing scope."
+        ],
+        "fire_protection": [
+          "No fire protection scope noted."
+        ],
+        "security_electronic": [
+          "Hirsch/Identiv DIGI*TRAC Model 8 ACS controller",
+          "uTrust TS Government Readers (CAC-compatible scramble keypad) at 2 vehicle gates + 2 turnstiles + all exterior access doors",
+          "5 PTZ IP dome cameras (2MP, AXIS Q60-E series) on building perimeter",
+          "1 fixed IP dome camera (AXIS P3365-VE, 2MP) at quarterdeck exterior",
+          "16-channel hybrid DVR/NVR (Speco D16HT, 8TB)",
+          "Aiphone GT multi-tenant intercom/speakerphones at gates and turnstiles",
+          "Security System Workstation in Unit Commons W205A",
+          "Equipment rack in S109 Telecom Room"
+        ]
+      }
+    }
+  },
+  "project_description_summary": "Security Engineering Program Assistance (SEPA) repairs at Navy Operational Support Center (NOSC) Orlando, located within the Armed Forces Reserve Center at NSA Orlando, Florida. Following the 2015 terrorist attack at a NOSC in Chattanooga, TN, the Navy evaluated security upgrades at 21 NOSCs. This project provides physical security upgrades to the multi-tenant, multi-story facility including: (1) two new K-rated cantilevered sliding vehicle gates at both Entry Control Points off Dowden Road; (2) two ingress/egress pedestrian turnstiles with CAC card readers; (3) K-rated manual drop arm gate at rear loading dock; (4) K-rated anti-ram cable reinforcement along north perimeter fence; (5) five PTZ CCTV cameras plus one fixed quarterdeck camera with 16-channel DVR; (6) full ACS modernization with Hirsch/Identiv Velocity system and CAC-compatible readers at all exterior doors; (7) fragmentation retention film on all exterior windows and doors; and (8) interior door deadbolt/security hardware additions for shelter-in-place capability. Design-build delivery. BFA (Bowman Foster & Associates) performed site survey in December 2022 as designer of record / engineering subconsultant to the design-build prime.",
+  "narratives": {
+    "summary": "narratives/summary.md",
+    "full": "narratives/full.md",
+    "disciplines": {
+      "architecture": "narratives/disciplines/architecture.md",
+      "civil_engineering": "narratives/disciplines/civil_engineering.md",
+      "structural_engineering": "narratives/disciplines/structural_engineering.md",
+      "electrical_engineering": "narratives/disciplines/electrical_engineering.md",
+      "security_engineering": "narratives/disciplines/security_engineering.md",
+      "telecommunications_engineering": "narratives/disciplines/telecommunications_engineering.md"
+    }
+  }
+}

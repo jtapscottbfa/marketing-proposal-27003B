@@ -1,0 +1,5 @@
+Mechanical engineering was included as a design discipline on the Building 686 Renovation at Naval Weapons Station Yorktown (WPNSTA Yorktown), a NAVFAC MIDLANT FY2020 design-bid-build project in Yorktown, Virginia. The mechanical scope covered HVAC systems design for the renovated building, with construction documents produced through 35%, 100% Pre-Final, and Final design submission stages.
+
+HVAC design — including air distribution, equipment selection, and systems integration within the renovation — was within the mechanical engineering scope for this project. The construction scope included mechanical and HVAC work as part of the overall renovation package, sized and configured to serve the renovated building program.
+
+Specific mechanical system details — equipment type and capacity, system configuration, existing conditions to remain or replace, and zone-by-zone distribution — are not captured in the available source record. The Basis of Design document, which would have contained the mechanical design narrative and system selection rationale, was unreadable during extraction. No drawing set was available to supplement the text record.
